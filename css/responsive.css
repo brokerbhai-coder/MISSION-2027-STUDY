@@ -1,0 +1,40 @@
+/* ==========================================================
+   responsive.css : बड़ी screen (tablet/laptop) और बहुत छोटी screen के लिए बदलाव
+   ========================================================== */
+
+/* बहुत छोटे phone (320–360px) */
+@media (max-width: 360px) {
+  #view { padding-left: 10px; padding-right: 10px; }
+  .hero h1 { font-size: 1.25rem; }
+  .ring { width: 70px; height: 70px; }
+  .grid-3 { gap: 8px; }
+  .stat b { font-size: 1.05rem; }
+  .pill { padding: 2px 8px; font-size: 0.76rem; }
+  .gcard { font-size: 0.78rem; min-height: 76px; }
+}
+
+/* Tablet */
+@media (min-width: 640px) {
+  #view { padding-left: 20px; padding-right: 20px; }
+  .grid-cards { grid-template-columns: repeat(2, 1fr); }
+  .badges { grid-template-columns: repeat(3, 1fr); }
+  .game-board { grid-template-columns: repeat(4, 1fr); }
+  .modal-actions { flex-direction: row; justify-content: flex-end; }
+  .btn-stack { flex-direction: row; flex-wrap: wrap; }
+  .btn-stack .btn { flex: 1 1 200px; }
+}
+
+/* Laptop */
+@media (min-width: 900px) {
+  #app-shell { max-width: 860px; }
+  .bottom-nav { left: 50%; right: auto; width: 860px; transform: translateX(-50%); border-radius: 18px 18px 0 0; border-left: 1px solid var(--line); border-right: 1px solid var(--line); }
+  .toast-host { left: 50%; right: auto; width: 860px; transform: translateX(-50%); }
+  .hero h1 { font-size: 1.7rem; }
+}
+
+/* Landscape phone: bottom nav थोड़ा छोटा */
+@media (max-height: 460px) and (orientation: landscape) {
+  :root { --nav-h: 54px; }
+  .bottom-nav button small { display: none; }
+}
+
