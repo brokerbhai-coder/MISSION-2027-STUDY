@@ -62,7 +62,7 @@
       achievements: {},
       daily: newDaily(),
       stats: { mistakesFixed: 0, goalDays: 0, challengeDays: 0, correctTotal: 0, answeredTotal: 0 },
-      game: { plays: 0, wins: 0, bestMoves: null },
+      game: { plays: 0, wins: 0, bestMoves: null, best: {}, last: { mode: 'physics', diff: 'easy' } },
       lastChapter: null,
       activeQuiz: null
     };
@@ -259,6 +259,16 @@
       d.game.plays = int(raw.game.plays, 0, 0, 1e6);
       d.game.wins = int(raw.game.wins, 0, 0, 1e6);
       d.game.bestMoves = raw.game.bestMoves === null || raw.game.bestMoves === undefined ? null : int(raw.game.bestMoves, 0, 1, 10000);
+      if (isObj(raw.game.best)) {
+        Object.keys(raw.game.best).slice(0, 40).forEach(function (k) {
+          var v = raw.game.best[k];
+          if (k.length <= 30 && isObj(v)) d.game.best[k] = { moves: int(v.moves, 1, 1, 10000), seconds: int(v.seconds, 0, 0, 86400) };
+        });
+      }
+      if (isObj(raw.game.last)) {
+        var lm = str(raw.game.last.mode, 'physics', 20), ld = str(raw.game.last.diff, 'easy', 20);
+        d.game.last = { mode: ['physics', 'chem', 'hindi', 'mix'].indexOf(lm) >= 0 ? lm : 'physics', diff: ['easy', 'medium', 'hard'].indexOf(ld) >= 0 ? ld : 'easy' };
+      }
     }
     if (isObj(raw.lastChapter) && typeof raw.lastChapter.subject === 'string') {
       d.lastChapter = { subject: str(raw.lastChapter.subject, '', 40), chapter: int(raw.lastChapter.chapter, 0, 0, 999) };
