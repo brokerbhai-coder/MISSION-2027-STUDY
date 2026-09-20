@@ -1,0 +1,21 @@
+{
+  "_help": "यह सिर्फ़ नमूना (template) है, website इसे लोड नहीं करती। इस format में प्रश्न बनाकर data/physics/chapter-01.json आदि की 'questions' list में चिपकाओ। id हर प्रश्न की अलग होनी चाहिए। source में PDF, CONCEPT या PYQ लिखो।",
+  "questions": [
+    {
+      "id": "PHY01Q001",
+      "subject": "physics",
+      "chapter": 1,
+      "question": "प्रश्न यहाँ लिखो",
+      "options": {
+        "A": "विकल्प A",
+        "B": "विकल्प B",
+        "C": "विकल्प C",
+        "D": "विकल्प D"
+      },
+      "answer": "A",
+      "explanation": "उत्तर की आसान हिंदी में व्याख्या",
+      "source": "PDF",
+      "type": "objective"
+    }
+  ]
+}
