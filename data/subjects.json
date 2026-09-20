@@ -81,9 +81,122 @@
       "nameEn": "Chemistry",
       "icon": "🧪",
       "color": "#22d3ee",
-      "status": "coming_soon",
+      "status": "available",
       "progression": "sequential",
-      "chapters": []
+      "chapters": [
+        {
+          "number": 1,
+          "title": "ठोस अवस्था (The Solid State)",
+          "file": "data/chemistry/chapter-01.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 2,
+          "title": "विलयन (Solutions)",
+          "file": "data/chemistry/chapter-02.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 3,
+          "title": "वैद्युतरसायन (Electrochemistry)",
+          "file": "data/chemistry/chapter-03.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 4,
+          "title": "रासायनिक बलगतिकी (Chemical Kinetics)",
+          "file": "data/chemistry/chapter-04.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 5,
+          "title": "पृष्ठ रसायन (Surface Chemistry)",
+          "file": "data/chemistry/chapter-05.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 6,
+          "title": "तत्त्वों के निष्कर्षण के सिद्धांत एवं प्रक्रम (General Principles and Processes of Isolation of Elements)",
+          "file": "data/chemistry/chapter-06.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 7,
+          "title": "p-ब्लॉक के तत्त्व (The p-Block Elements)",
+          "file": "data/chemistry/chapter-07.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 8,
+          "title": "d एवं f-ब्लॉक के तत्त्व (The d and f-Block Elements)",
+          "file": "data/chemistry/chapter-08.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 9,
+          "title": "उपसहसंयोजन यौगिक (Coordination Compounds)",
+          "file": "data/chemistry/chapter-09.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 10,
+          "title": "हैलोएल्केन तथा हैलोएरीन (Haloalkanes and Haloarenes)",
+          "file": "data/chemistry/chapter-10.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 11,
+          "title": "ऐल्कोहॉल, फ़ीनॉल एवं ईथर (Alcohols, Phenols and Ethers)",
+          "file": "data/chemistry/chapter-11.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 12,
+          "title": "एल्डिहाइड, कीटोन एवं कार्बोक्सिलिक अम्ल (Aldehydes, Ketones and Carboxylic Acids)",
+          "file": "data/chemistry/chapter-12.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 13,
+          "title": "ऐमीन (Amines)",
+          "file": "data/chemistry/chapter-13.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 14,
+          "title": "जैव-अणु (Biomolecules)",
+          "file": "data/chemistry/chapter-14.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 15,
+          "title": "बहुलक (Polymers)",
+          "file": "data/chemistry/chapter-15.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 16,
+          "title": "दैनिक जीवन में रसायन (Chemistry in Everyday Life)",
+          "file": "data/chemistry/chapter-16.json",
+          "notesReady": false,
+          "notesUrl": null
+        }
+      ]
     },
     {
       "id": "mathematics",
@@ -91,7 +204,7 @@
       "nameEn": "Mathematics",
       "icon": "📐",
       "color": "#8b5cf6",
-      "status": "coming_soon",
+      "status": "available",
       "progression": "sequential",
       "chapters": []
     },
@@ -101,7 +214,7 @@
       "nameEn": "Biology",
       "icon": "🧬",
       "color": "#34d399",
-      "status": "coming_soon",
+      "status": "available",
       "progression": "sequential",
       "chapters": []
     },
@@ -111,9 +224,192 @@
       "nameEn": "Hindi",
       "icon": "📖",
       "color": "#f5c451",
-      "status": "coming_soon",
+      "status": "available",
       "progression": "sequential",
-      "chapters": []
+      "chapters": [
+        {
+          "number": 1,
+          "title": "Baatcheet (बातचीत)",
+          "file": "data/hindi/chapter-01.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 2,
+          "title": "Usne Kaha Tha (उसने कहा था)",
+          "file": "data/hindi/chapter-02.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 3,
+          "title": "Sampoorna Kranti (संपूर्ण क्रांति)",
+          "file": "data/hindi/chapter-03.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 4,
+          "title": "Ardhanarishwar (अर्धनारीश्वर)",
+          "file": "data/hindi/chapter-04.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 5,
+          "title": "Roz (रोज़)",
+          "file": "data/hindi/chapter-05.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 6,
+          "title": "Ek Lekh Aur Ek Patra (एक लेख और एक पत्र)",
+          "file": "data/hindi/chapter-06.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 7,
+          "title": "O Sadaneera (ओ सदानीरा)",
+          "file": "data/hindi/chapter-07.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 8,
+          "title": "Sipahi Ki Maa (सिपाही की माँ)",
+          "file": "data/hindi/chapter-08.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 9,
+          "title": "Prageet Aur Samaj (प्रगीत और समाज)",
+          "file": "data/hindi/chapter-09.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 10,
+          "title": "Jhoothan (जूठन)",
+          "file": "data/hindi/chapter-10.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 11,
+          "title": "Haste Hue Mera Akelapan",
+          "file": "data/hindi/chapter-11.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 12,
+          "title": "Tirichh",
+          "file": "data/hindi/chapter-12.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 13,
+          "title": "Shiksha",
+          "file": "data/hindi/chapter-13.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 14,
+          "title": "Kadbak (कड़बक)",
+          "file": "data/hindi/chapter-14.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 15,
+          "title": "Soordas Ke Pad (सूरदास के पद)",
+          "file": "data/hindi/chapter-15.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 16,
+          "title": "Tulsidas Ke Pad (तुलसीदास के पद)",
+          "file": "data/hindi/chapter-16.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 17,
+          "title": "Chhappay (छप्पय)",
+          "file": "data/hindi/chapter-17.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 18,
+          "title": "Kavitt (कवित्त)",
+          "file": "data/hindi/chapter-18.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 19,
+          "title": "Tumul Kolahal Kalah Mein (तुमुल कोलाहल कलह में)",
+          "file": "data/hindi/chapter-19.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 20,
+          "title": "Putra Viyog (पुत्र वियोग)",
+          "file": "data/hindi/chapter-20.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 21,
+          "title": "Usha (उषा)",
+          "file": "data/hindi/chapter-21.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 22,
+          "title": "Jan-Jan Ka Chehra Ek (जन - जन का चेहरा एक)",
+          "file": "data/hindi/chapter-22.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 23,
+          "title": "Adhinayak (अधिनायक)",
+          "file": "data/hindi/chapter-23.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 24,
+          "title": "Pyare Nanhe Bete Ko (प्यारे नन्हें बेटे को)",
+          "file": "data/hindi/chapter-24.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 25,
+          "title": "Haar - Jeet (हार - जीत)",
+          "file": "data/hindi/chapter-25.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 26,
+          "title": "Gaaon Ka Ghar (गाँव का घर)",
+          "file": "data/hindi/chapter-26.json",
+          "notesReady": false,
+          "notesUrl": null
+        }
+      ]
     },
     {
       "id": "english",
@@ -121,7 +417,7 @@
       "nameEn": "English",
       "icon": "🔤",
       "color": "#fb7185",
-      "status": "coming_soon",
+      "status": "available",
       "progression": "sequential",
       "chapters": []
     }
