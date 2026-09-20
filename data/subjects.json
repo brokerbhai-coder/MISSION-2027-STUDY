@@ -1,0 +1,129 @@
+{
+  "_help": "यहाँ विषय और Chapters की list है। नया Chapter जोड़ने के लिए उस विषय के 'chapters' में एक block जोड़ो और data/<विषय>/chapter-XX.json बनाओ। README.md देखो।",
+  "settings": {
+    "passPercent": 60
+  },
+  "subjects": [
+    {
+      "id": "physics",
+      "nameHi": "भौतिक विज्ञान",
+      "nameEn": "Physics",
+      "icon": "⚛️",
+      "color": "#4f8cff",
+      "status": "available",
+      "progression": "free",
+      "futureChapters": {
+        "from": 9,
+        "to": 15
+      },
+      "chapters": [
+        {
+          "number": 1,
+          "title": "वैद्युत आवेश तथा क्षेत्र",
+          "file": "data/physics/chapter-01.json",
+          "notesReady": true,
+          "notesUrl": null
+        },
+        {
+          "number": 2,
+          "title": "स्थिरवैद्युत विभव तथा धारिता",
+          "file": "data/physics/chapter-02.json",
+          "notesReady": true,
+          "notesUrl": null
+        },
+        {
+          "number": 3,
+          "title": "वैद्युत धारा",
+          "file": "data/physics/chapter-03.json",
+          "notesReady": true,
+          "notesUrl": null
+        },
+        {
+          "number": 4,
+          "title": "गतिमान आवेश एवं चुम्बकत्व",
+          "file": "data/physics/chapter-04.json",
+          "notesReady": true,
+          "notesUrl": null
+        },
+        {
+          "number": 5,
+          "title": "चुम्बकत्व एवं द्रव्य",
+          "file": "data/physics/chapter-05.json",
+          "notesReady": true,
+          "notesUrl": null
+        },
+        {
+          "number": 6,
+          "title": "वैद्युत चुम्बकीय प्रेरण",
+          "file": "data/physics/chapter-06.json",
+          "notesReady": true,
+          "notesUrl": null
+        },
+        {
+          "number": 7,
+          "title": "प्रत्यावर्ती धारा",
+          "file": "data/physics/chapter-07.json",
+          "notesReady": true,
+          "notesUrl": null
+        },
+        {
+          "number": 8,
+          "title": "वैद्युत चुम्बकीय तरंगें",
+          "file": "data/physics/chapter-08.json",
+          "notesReady": true,
+          "notesUrl": null
+        }
+      ]
+    },
+    {
+      "id": "chemistry",
+      "nameHi": "रसायन विज्ञान",
+      "nameEn": "Chemistry",
+      "icon": "🧪",
+      "color": "#22d3ee",
+      "status": "coming_soon",
+      "progression": "sequential",
+      "chapters": []
+    },
+    {
+      "id": "mathematics",
+      "nameHi": "गणित",
+      "nameEn": "Mathematics",
+      "icon": "📐",
+      "color": "#8b5cf6",
+      "status": "coming_soon",
+      "progression": "sequential",
+      "chapters": []
+    },
+    {
+      "id": "biology",
+      "nameHi": "जीव विज्ञान",
+      "nameEn": "Biology",
+      "icon": "🧬",
+      "color": "#34d399",
+      "status": "coming_soon",
+      "progression": "sequential",
+      "chapters": []
+    },
+    {
+      "id": "hindi",
+      "nameHi": "हिंदी",
+      "nameEn": "Hindi",
+      "icon": "📖",
+      "color": "#f5c451",
+      "status": "coming_soon",
+      "progression": "sequential",
+      "chapters": []
+    },
+    {
+      "id": "english",
+      "nameHi": "अंग्रेजी",
+      "nameEn": "English",
+      "icon": "🔤",
+      "color": "#fb7185",
+      "status": "coming_soon",
+      "progression": "sequential",
+      "chapters": []
+    }
+  ]
+}
