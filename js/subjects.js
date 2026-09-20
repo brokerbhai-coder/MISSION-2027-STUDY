@@ -17,7 +17,7 @@
     }).then(function (cfg) {
       if (!cfg || !Array.isArray(cfg.subjects)) throw new Error('subjects.json में "subjects" list नहीं मिली');
       var settings = cfg.settings || {};
-      var out = { settings: { passPercent: Number(settings.passPercent) || 60 }, subjects: [] };
+      var out = { settings: { passPercent: Number(settings.passPercent) || 70 }, subjects: [] };
       var seen = {};
       cfg.subjects.forEach(function (s) {
         if (!s || typeof s.id !== 'string' || !s.id || seen[s.id] || s.id === 'demo' || s.id === 'mixed') {
@@ -75,7 +75,7 @@
   };
   Sub.passPercent = function (id) {
     var s = Sub.get(id);
-    return (s && s.passPercent) || (Sub.config && Sub.config.settings.passPercent) || 60;
+    return (s && s.passPercent) || (Sub.config && Sub.config.settings.passPercent) || 70;
   };
   Sub.subjectName = function (id) {
     if (id === 'demo') return 'डेमो';
