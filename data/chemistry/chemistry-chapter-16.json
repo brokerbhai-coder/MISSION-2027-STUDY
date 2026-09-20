@@ -1,0 +1,8 @@
+{
+  "_help": "प्रश्न इसी 'questions' list में जोड़ो। हर प्रश्न का format data/question-template.json में देखो। अभी यह list खाली है।",
+  "subject": "chemistry",
+  "chapter": 16,
+  "title": "दैनिक जीवन में रसायन",
+  "status": "pending-pdf-questions",
+  "questions": []
+}
