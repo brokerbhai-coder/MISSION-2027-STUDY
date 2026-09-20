@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b1226">
+  <meta name="description" content="MISSION 2027 – STUDY ZONE: बिहार बोर्ड कक्षा 12 (2027) की तैयारी के लिए Chapter-wise Quiz, Progress और Rewards।">
+  <title>MISSION 2027 – STUDY ZONE</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎯%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div id="app-shell">
+    <header class="topbar" id="topbar">
+      <button class="icon-btn" id="backBtn" data-action="nav" data-to="/home" aria-label="पीछे जाओ" hidden>←</button>
+      <div class="topbar-title">
+        <div id="pageTitle">MISSION 2027</div>
+        <div id="pageSub" class="topbar-sub">STUDY ZONE</div>
+      </div>
+      <div class="pills">
+        <span class="pill" id="pillStreak" title="Streak (लगातार पढ़ाई के दिन)">🔥 0</span>
+        <span class="pill gold" id="pillXp" title="कुल XP">⭐ 0 XP</span>
+      </div>
+    </header>
+
+    <main id="view" tabindex="-1" aria-live="polite">
+      <div class="loading"><div class="spinner"></div><p>लोड हो रहा है…</p></div>
+    </main>
+
+    <nav class="bottom-nav" id="bottomNav" aria-label="मुख्य मेन्यू">
+      <button data-action="nav" data-to="/home" data-tab="home"><span>🏠</span><small>होम</small></button>
+      <button data-action="nav" data-to="/subjects" data-tab="subjects"><span>📚</span><small>विषय</small></button>
+      <button data-action="nav" data-to="/progress" data-tab="progress"><span>📊</span><small>प्रोग्रेस</small></button>
+      <button data-action="nav" data-to="/mistakes" data-tab="mistakes"><span>📒</span><small>गलतियाँ</small></button>
+      <button data-action="nav" data-to="/settings" data-tab="settings"><span>⚙️</span><small>सेटिंग</small></button>
+    </nav>
+  </div>
+
+  <div id="toastHost" class="toast-host" aria-live="polite"></div>
+  <div id="modalHost"></div>
+
+  <noscript>
+    <p style="padding:24px;color:#fff;background:#0b1226">इस website को चलाने के लिए JavaScript ज़रूरी है। कृपया browser में JavaScript चालू करें।</p>
+  </noscript>
+
+  <!-- JavaScript: क्रम बदलना मत (app.js सबसे आख़िर में) -->
+  <script src="js/storage.js"></script>
+  <script src="js/timer.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/rewards.js"></script>
+  <script src="js/mistakes.js"></script>
+  <script src="js/subjects.js"></script>
+  <script src="js/chapters.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/games.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
