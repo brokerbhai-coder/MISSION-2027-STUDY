@@ -8,9 +8,16 @@
    - पहली बार chapter Quiz पूरा: +20 XP
    - पहली बार पास (60%+): +50 XP
    - Replay bonus: 5 XP, दिन में सिर्फ़ 3 बार
-   - Daily Challenge (10 सही उत्तर): +40 XP, दिन में एक बार
-   - Daily study goal पूरा: +30 XP, दिन में एक बार
-   - Game जीत: +10 XP, दिन में ज़्यादा से ज़्यादा 20 XP
+   - Daily Challenge (10 सही उत्तर): +20 XP, दिन में एक बार
+   - Daily study goal पूरा: +15 XP, दिन में एक बार
+   - Game जीत: आसान 5 / मध्यम 8 / कठिन 10 XP, दिन में ज़्यादा से ज़्यादा 10 XP
+
+   LEVEL का नियम (धीमा और बढ़ता हुआ):
+   - कुल 50 Level हैं। Level 50 तब मिलता है जब XP_FOR_MAX_LEVEL XP हो जाए।
+   - XP_FOR_MAX_LEVEL = पूरे syllabus का लगभग 95% XP।
+     हिसाब: हर Chapter का XP ≈ (प्रश्न × 10) + 70।  जैसे 50 Chapter × 28 प्रश्न ≈ 17,500 XP → 95% ≈ 16,600।
+     Maths / Biology / English के Chapters जुड़ने पर नीचे की संख्या बढ़ा दो।
+   - जैसे-जैसे Level बढ़ता है, अगले Level के लिए XP थोड़ा-थोड़ा ज़्यादा लगता है (CURVE से तय)।
    ========================================================== */
 (function (M) {
   'use strict';
@@ -22,29 +29,60 @@
   var XP_REPLAY = 5;
   var REPLAY_DAILY_CAP = 3;
   var CHALLENGE_TARGET = 10;
-  var CHALLENGE_XP = 40;
-  var GOAL_XP = 30;
-  var GAME_XP = 10;
-  var GAME_DAILY_CAP = 20;
+  var CHALLENGE_XP = 20;
+  var GOAL_XP = 15;
+  var GAME_XP = 10;          // सबसे कठिन Game की जीत का XP (Games.js में आसान 5, मध्यम 8)
+  var GAME_DAILY_CAP = 10;
 
   R.CONST = { CHALLENGE_TARGET: CHALLENGE_TARGET, CHALLENGE_XP: CHALLENGE_XP, GOAL_XP: GOAL_XP, GAME_XP: GAME_XP, GAME_DAILY_CAP: GAME_DAILY_CAP, REPLAY_DAILY_CAP: REPLAY_DAILY_CAP };
 
-  var TITLES = ['नया खिलाड़ी', 'जिज्ञासु', 'मेहनती', 'तेज़ दिमाग़', 'बोर्ड वॉरियर', 'टॉपर', 'लीजेंड'];
-
   /* ---------- Level ---------- */
-  function levelOf(xp) { return Math.floor(Math.sqrt(xp / 50)) + 1; }
+  var MAX_LEVEL = 50;
+  var XP_FOR_MAX_LEVEL = 16500;   // ← Level 50 के लिए कुल XP (ऊपर हिसाब देखो)
+  var CURVE = 1.2;                // 1 = हर Level बराबर XP, ज़्यादा = ऊपर के Level और महँगे
+
+  // (कम से कम Level, नाम)
+  var TITLE_STEPS = [
+    [1, 'नया खिलाड़ी'], [2, 'जिज्ञासु'], [6, 'मेहनती'], [13, 'तेज़ दिमाग़'],
+    [23, 'बोर्ड वॉरियर'], [34, 'टॉपर'], [45, 'लीजेंड']
+  ];
+
+  // THRESH[i] = Level (i+1) पर पहुँचने के लिए कुल XP
+  var THRESH = [];
+  (function () {
+    for (var i = 0; i < MAX_LEVEL; i++) {
+      THRESH.push(Math.round(XP_FOR_MAX_LEVEL * Math.pow(i / (MAX_LEVEL - 1), CURVE) / 10) * 10);
+    }
+  })();
+
+  function levelOf(xp) {
+    var lv = 1;
+    for (var i = 1; i < THRESH.length; i++) { if (xp >= THRESH[i]) lv = i + 1; else break; }
+    return lv;
+  }
+
+  function titleOf(lv) {
+    var t = TITLE_STEPS[0][1];
+    TITLE_STEPS.forEach(function (s) { if (lv >= s[0]) t = s[1]; });
+    return t;
+  }
 
   R.levelInfo = function (xp) {
     var lv = levelOf(xp);
-    var cur = 50 * (lv - 1) * (lv - 1);
-    var next = 50 * lv * lv;
+    var cur = THRESH[lv - 1];
+    if (lv >= MAX_LEVEL) {
+      var extra = Math.max(1, xp - cur);
+      return { level: lv, title: titleOf(lv), into: extra, need: extra, pct: 100, toNext: 0, max: true };
+    }
+    var next = THRESH[lv];
     return {
       level: lv,
-      title: TITLES[Math.min(lv - 1, TITLES.length - 1)],
+      title: titleOf(lv),
       into: xp - cur,
       need: next - cur,
       pct: Math.round((xp - cur) * 100 / (next - cur)),
-      toNext: next - xp
+      toNext: next - xp,
+      max: false
     };
   };
 
@@ -129,13 +167,16 @@
   };
 
   /* ---------- Game XP (सीमित) ---------- */
-  R.awardGame = function () {
+  R.awardGame = function (amount) {
     var st = M.Storage.state;
     M.Storage.ensureToday();
-    if (st.daily.gameXp + GAME_XP > GAME_DAILY_CAP) return 0;
-    st.daily.gameXp += GAME_XP;
-    R.addXp(GAME_XP);
-    return GAME_XP;
+    var want = (typeof amount === 'number' && amount > 0) ? Math.floor(amount) : GAME_XP;
+    var left = GAME_DAILY_CAP - st.daily.gameXp;
+    if (left <= 0) return 0;
+    var give = Math.min(want, left);
+    st.daily.gameXp += give;
+    R.addXp(give);
+    return give;
   };
 
   /* ---------- Achievements ---------- */
@@ -158,7 +199,9 @@
     { id: 'goal_day', icon: '🎯', title: 'Goal पूरा', desc: 'किसी दिन Daily study goal पूरा करो', test: function (s) { return s.stats.goalDays >= 1; } },
     { id: 'challenge_day', icon: '⚡', title: 'Challenge जीता', desc: 'Daily Challenge पूरा करो', test: function (s) { return s.stats.challengeDays >= 1; } },
     { id: 'fixer_5', icon: '🛠️', title: 'गलती सुधारक', desc: '5 गलतियाँ सुधारो', test: function (s) { return s.stats.mistakesFixed >= 5; } },
-    { id: 'game_first', icon: '🎮', title: 'Brain Gamer', desc: 'Brain Game एक बार खेलो', test: function (s) { return s.game.plays >= 1; } }
+    { id: 'game_first', icon: '🎮', title: 'Brain Gamer', desc: 'Brain Game एक बार खेलो', test: function (s) { return s.game.plays >= 1; } },
+    { id: 'game_hard', icon: '🧩', title: 'कठिन Game विजेता', desc: 'Brain Game का कठिन स्तर जीतो', test: function (s) { return Object.keys(s.game.best || {}).some(function (k) { return /-hard$/.test(k); }); } },
+    { id: 'game_wins_10', icon: '🕹️', title: 'Game का उस्ताद', desc: 'Brain Game 10 बार जीतो', test: function (s) { return s.game.wins >= 10; } }
   ];
 
   R.achievements = function () {
