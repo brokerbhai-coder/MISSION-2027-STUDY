@@ -1,0 +1,186 @@
+/* ==========================================================
+   rewards.js
+   काम: XP, Level, Achievements, Daily Challenge, Daily Goal reward।
+   सारे reward असली activity से ही मिलते हैं।
+
+   XP के नियम (बदलना हो तो नीचे की संख्याएँ बदल दो):
+   - नया सही उत्तर: हर प्रश्न पर 10 XP  (एक प्रश्न का XP सिर्फ़ पहली बार सही करने पर)
+   - पहली बार chapter Quiz पूरा: +20 XP
+   - पहली बार पास (60%+): +50 XP
+   - Replay bonus: 5 XP, दिन में सिर्फ़ 3 बार
+   - Daily Challenge (10 सही उत्तर): +40 XP, दिन में एक बार
+   - Daily study goal पूरा: +30 XP, दिन में एक बार
+   - Game जीत: +10 XP, दिन में ज़्यादा से ज़्यादा 20 XP
+   ========================================================== */
+(function (M) {
+  'use strict';
+
+  var R = {};
+  var XP_CORRECT = 10;
+  var XP_FIRST_COMPLETE = 20;
+  var XP_FIRST_PASS = 50;
+  var XP_REPLAY = 5;
+  var REPLAY_DAILY_CAP = 3;
+  var CHALLENGE_TARGET = 10;
+  var CHALLENGE_XP = 40;
+  var GOAL_XP = 30;
+  var GAME_XP = 10;
+  var GAME_DAILY_CAP = 20;
+
+  R.CONST = { CHALLENGE_TARGET: CHALLENGE_TARGET, CHALLENGE_XP: CHALLENGE_XP, GOAL_XP: GOAL_XP, GAME_XP: GAME_XP, GAME_DAILY_CAP: GAME_DAILY_CAP, REPLAY_DAILY_CAP: REPLAY_DAILY_CAP };
+
+  var TITLES = ['नया खिलाड़ी', 'जिज्ञासु', 'मेहनती', 'तेज़ दिमाग़', 'बोर्ड वॉरियर', 'टॉपर', 'लीजेंड'];
+
+  /* ---------- Level ---------- */
+  function levelOf(xp) { return Math.floor(Math.sqrt(xp / 50)) + 1; }
+
+  R.levelInfo = function (xp) {
+    var lv = levelOf(xp);
+    var cur = 50 * (lv - 1) * (lv - 1);
+    var next = 50 * lv * lv;
+    return {
+      level: lv,
+      title: TITLES[Math.min(lv - 1, TITLES.length - 1)],
+      into: xp - cur,
+      need: next - cur,
+      pct: Math.round((xp - cur) * 100 / (next - cur)),
+      toNext: next - xp
+    };
+  };
+
+  R.addXp = function (n) {
+    if (!n || n < 0) return;
+    var st = M.Storage.state;
+    var before = levelOf(st.xp);
+    st.xp += n;
+    var after = levelOf(st.xp);
+    if (after > before) {
+      M.App.toast('🎉 Level ' + after + ' — ' + R.levelInfo(st.xp).title + '!', 'success');
+    }
+    if (M.App.refreshHeader) M.App.refreshHeader();
+  };
+
+  /* ---------- Quiz XP ---------- */
+  R.awardQuiz = function (ctx) {
+    var st = M.Storage.state;
+    M.Storage.ensureToday();
+    var items = [];
+    var total = 0;
+    var correct = 0, fresh = 0;
+    ctx.questions.forEach(function (q, i) {
+      var a = ctx.answers[i];
+      if (a && a.correct) {
+        correct += 1;
+        if (!st.awardedQuestions[q.id]) { st.awardedQuestions[q.id] = true; fresh += 1; }
+      }
+    });
+    if (fresh > 0) items.push({ label: 'नए सही उत्तर × ' + fresh, xp: fresh * XP_CORRECT });
+    if (correct - fresh > 0) items.push({ label: 'पहले सही किए प्रश्न × ' + (correct - fresh) + ' (दोबारा XP नहीं)', xp: 0 });
+
+    var bonusGiven = false;
+    if (ctx.mode !== 'retry') {
+      if (ctx.firstCompletion) { items.push({ label: 'पहली बार Quiz पूरा किया', xp: XP_FIRST_COMPLETE }); bonusGiven = true; }
+      if (ctx.firstPass) { items.push({ label: 'पहली बार पास हुए 🎯', xp: XP_FIRST_PASS }); bonusGiven = true; }
+    }
+    if (!bonusGiven) {
+      if (st.daily.replayCount < REPLAY_DAILY_CAP) {
+        st.daily.replayCount += 1;
+        items.push({ label: 'Replay bonus (आज ' + st.daily.replayCount + '/' + REPLAY_DAILY_CAP + ')', xp: XP_REPLAY });
+      } else {
+        items.push({ label: 'आज का Replay bonus पूरा हो चुका', xp: 0 });
+      }
+    }
+    items.forEach(function (it) { total += it.xp; });
+    R.addXp(total);
+    return { total: total, items: items };
+  };
+
+  /* ---------- Daily Challenge ---------- */
+  R.challenge = function () {
+    M.Storage.ensureToday();
+    var d = M.Storage.state.daily;
+    return { target: CHALLENGE_TARGET, done: Math.min(d.correct, CHALLENGE_TARGET), claimed: d.challengeClaimed, xp: CHALLENGE_XP };
+  };
+
+  R.updateChallenge = function (correctCount) {
+    var st = M.Storage.state;
+    M.Storage.ensureToday();
+    st.daily.correct += correctCount;
+    if (!st.daily.challengeClaimed && st.daily.correct >= CHALLENGE_TARGET) {
+      st.daily.challengeClaimed = true;
+      st.stats.challengeDays += 1;
+      R.addXp(CHALLENGE_XP);
+      M.App.toast('🔥 Daily Challenge पूरा! +' + CHALLENGE_XP + ' XP', 'success');
+    }
+  };
+
+  /* ---------- Daily study goal ---------- */
+  R.checkDailyGoal = function () {
+    var st = M.Storage.state;
+    M.Storage.ensureToday();
+    if (st.daily.goalClaimed) return;
+    if (M.Timer.todaySeconds() >= st.dailyGoalMinutes * 60) {
+      st.daily.goalClaimed = true;
+      st.stats.goalDays += 1;
+      R.addXp(GOAL_XP);
+      M.App.toast('🎯 आज का study goal पूरा! +' + GOAL_XP + ' XP', 'success');
+      R.checkAchievements();
+    }
+  };
+
+  /* ---------- Game XP (सीमित) ---------- */
+  R.awardGame = function () {
+    var st = M.Storage.state;
+    M.Storage.ensureToday();
+    if (st.daily.gameXp + GAME_XP > GAME_DAILY_CAP) return 0;
+    st.daily.gameXp += GAME_XP;
+    R.addXp(GAME_XP);
+    return GAME_XP;
+  };
+
+  /* ---------- Achievements ---------- */
+  function hasChapterPass(s) {
+    return Object.keys(s.chapters).some(function (k) { return k.indexOf('demo-') !== 0 && s.chapters[k].completed; });
+  }
+  function countHistory(s, fn) { return s.quizHistory.filter(fn).length; }
+
+  var LIST = [
+    { id: 'first_quiz', icon: '🚀', title: 'पहला कदम', desc: 'पहला Quiz पूरा करो', test: function (s) { return s.quizHistory.length >= 1; } },
+    { id: 'quizzes_5', icon: '📘', title: 'पाँच का पंजा', desc: '5 Quiz पूरे करो', test: function (s) { return s.quizHistory.length >= 5; } },
+    { id: 'quizzes_20', icon: '📚', title: 'Quiz मशीन', desc: '20 Quiz पूरे करो', test: function (s) { return s.quizHistory.length >= 20; } },
+    { id: 'perfect', icon: '💯', title: 'परफ़ेक्ट स्कोर', desc: '5+ प्रश्नों के Quiz में 100% लाओ', test: function (s) { return countHistory(s, function (h) { return h.accuracy === 100 && h.total >= 5; }) >= 1; } },
+    { id: 'chapter_pass', icon: '✅', title: 'Chapter फ़तह', desc: 'कोई असली Chapter पास करो', test: hasChapterPass },
+    { id: 'streak_3', icon: '🔥', title: '3 दिन की आग', desc: '3 दिन लगातार पढ़ो', test: function (s) { return s.streak.best >= 3; } },
+    { id: 'streak_7', icon: '🌋', title: '7 दिन का तूफ़ान', desc: '7 दिन लगातार पढ़ो', test: function (s) { return s.streak.best >= 7; } },
+    { id: 'xp_100', icon: '⭐', title: '100 XP क्लब', desc: 'कुल 100 XP कमाओ', test: function (s) { return s.xp >= 100; } },
+    { id: 'xp_500', icon: '🌟', title: '500 XP क्लब', desc: 'कुल 500 XP कमाओ', test: function (s) { return s.xp >= 500; } },
+    { id: 'study_hour', icon: '⏳', title: 'एक घंटा', desc: 'कुल 1 घंटा active पढ़ाई करो', test: function (s) { return s.totalStudySeconds >= 3600; } },
+    { id: 'goal_day', icon: '🎯', title: 'Goal पूरा', desc: 'किसी दिन Daily study goal पूरा करो', test: function (s) { return s.stats.goalDays >= 1; } },
+    { id: 'challenge_day', icon: '⚡', title: 'Challenge जीता', desc: 'Daily Challenge पूरा करो', test: function (s) { return s.stats.challengeDays >= 1; } },
+    { id: 'fixer_5', icon: '🛠️', title: 'गलती सुधारक', desc: '5 गलतियाँ सुधारो', test: function (s) { return s.stats.mistakesFixed >= 5; } },
+    { id: 'game_first', icon: '🎮', title: 'Brain Gamer', desc: 'Brain Game एक बार खेलो', test: function (s) { return s.game.plays >= 1; } }
+  ];
+
+  R.achievements = function () {
+    var st = M.Storage.state;
+    return LIST.map(function (a) {
+      return { id: a.id, icon: a.icon, title: a.title, desc: a.desc, date: st.achievements[a.id] || null };
+    });
+  };
+
+  R.checkAchievements = function () {
+    var st = M.Storage.state;
+    var today = M.Storage.todayStr();
+    var fresh = [];
+    LIST.forEach(function (a) {
+      if (!st.achievements[a.id] && a.test(st)) {
+        st.achievements[a.id] = today;
+        fresh.push(a);
+      }
+    });
+    fresh.forEach(function (a) { M.App.toast('🏆 Achievement: ' + a.title, 'success'); });
+    return fresh;
+  };
+
+  M.Rewards = R;
+})(window.M27 = window.M27 || {});
