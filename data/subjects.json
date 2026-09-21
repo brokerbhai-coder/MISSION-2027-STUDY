@@ -1,7 +1,7 @@
 {
   "_help": "यहाँ विषय और Chapters की list है। नया Chapter जोड़ने के लिए उस विषय के 'chapters' में एक block जोड़ो और data/<विषय>/chapter-XX.json बनाओ। README.md देखो।",
   "settings": {
-    "passPercent": 60
+    "passPercent": 70
   },
   "subjects": [
     {
