@@ -1,0 +1,5 @@
+{
+  "_help": "Fun Vault के चुटकुलों / पहेलियों की फ़ाइलें यहाँ जुड़ती हैं। हर फ़ाइल के लिए एक entry: {\"id\":\"jokes-01\",\"file\":\"data/vault/jokes-01.json\"}। नमूना: data/templates/vault-jokes-template.json",
+  "vault": []
+}
+
