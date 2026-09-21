@@ -1,0 +1,19 @@
+{
+  "_help": "Fun Vault की एक फ़ाइल का नमूना। इसे data/vault/jokes-01.json जैसे नाम से सेव करो और data/vault/manifest.json में entry जोड़ो। type: \"joke\" (सिर्फ़ text) या \"paheli\" (text + answer)। हर id पूरी website में अलग होनी चाहिए (सभी फ़ाइलों में)। नीचे के दोनों items सिर्फ़ नमूना हैं।",
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "J-0001",
+      "type": "joke",
+      "text": "यहाँ चुटकुला लिखो। पंक्तियाँ अलग करनी हों तो \\n लिखो।",
+      "tag": "school"
+    },
+    {
+      "id": "P-0001",
+      "type": "paheli",
+      "text": "यहाँ पहेली लिखो",
+      "answer": "यहाँ उसका उत्तर लिखो",
+      "tag": "paheli"
+    }
+  ]
+}
