@@ -1,0 +1,78 @@
+/* ==========================================================
+   extras.css : नए sections (Notes, PYQ, Mixed Practice) का design
+   पुराने style.css के रंग (:root variables) ही इस्तेमाल होते हैं,
+   इसलिए पुरानी website का रूप नहीं बदलता।
+   सारे class नाम "x-", "nt-", "pq-", "px-" से शुरू होते हैं।
+   ========================================================== */
+
+/* ---------- सामान्य ---------- */
+.x-new { color: var(--cyan); border-color: rgba(34, 211, 238, 0.55); background: rgba(34, 211, 238, 0.1); }
+.x-hub-card { display: flex; flex-direction: column; gap: 6px; width: 100%; text-align: left; background: var(--surface); border: 1px solid var(--line); border-left: 5px solid var(--accent, var(--blue)); border-radius: var(--radius); padding: 14px; }
+.x-hub-card strong { font-size: 1.1rem; }
+.x-hub-card .x-hub-top { display: flex; align-items: center; gap: 12px; }
+.x-hub-ico { font-size: 1.8rem; width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center; background: color-mix(in srgb, var(--accent, var(--blue)) 20%, transparent); flex: none; }
+.x-meta { color: var(--muted); font-size: 0.84rem; }
+.x-search { width: 100%; min-height: 44px; padding: 8px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); color: var(--text); font: inherit; }
+.x-search:focus { outline: 3px solid var(--cyan); outline-offset: 1px; }
+.x-list { display: flex; flex-direction: column; gap: 10px; }
+.x-row { display: flex; align-items: center; gap: 12px; width: 100%; text-align: left; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; }
+.x-row.off { opacity: 0.78; }
+.x-row-no { width: 40px; height: 40px; border-radius: 12px; flex: none; display: grid; place-items: center; font-weight: 800; background: linear-gradient(135deg, var(--blue), var(--purple)); }
+.x-row-main { display: flex; flex-direction: column; gap: 4px; min-width: 0; flex: 1; }
+.x-row-main strong { overflow-wrap: anywhere; }
+.x-row-end { color: var(--muted); font-size: 1.3rem; flex: none; }
+.x-note { font-size: 0.86rem; color: var(--muted); }
+.x-check-out { display: flex; flex-direction: column; gap: 6px; font-size: 0.86rem; }
+.x-check-out .ln { padding: 6px 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface-2); overflow-wrap: anywhere; }
+.x-check-out .ln.ok { border-color: rgba(52, 211, 153, 0.5); }
+.x-check-out .ln.bad { border-color: rgba(251, 113, 133, 0.55); }
+.x-check-out .ln.warn { border-color: rgba(245, 196, 81, 0.55); }
+
+/* ---------- Notes : Student Notebook ---------- */
+.nt-head { background: linear-gradient(135deg, rgba(79, 140, 255, 0.16), rgba(139, 92, 246, 0.12)); }
+.nt-head h2 { font-size: 1.15rem; margin: 6px 0 2px; }
+.nt-sec { display: flex; flex-direction: column; gap: 10px; }
+.nt-sheet {
+  position: relative; border-radius: 14px; padding: 14px 14px 14px 22px;
+  background:
+    linear-gradient(90deg, transparent 15px, rgba(251, 113, 133, 0.55) 15px, rgba(251, 113, 133, 0.55) 16px, transparent 16px),
+    repeating-linear-gradient(to bottom, transparent 0, transparent 30px, rgba(147, 163, 209, 0.13) 30px, rgba(147, 163, 209, 0.13) 31px),
+    var(--surface);
+  border: 1px solid var(--line);
+}
+.nt-sheet h3 { font-size: 1.06rem; margin-bottom: 6px; color: var(--gold); overflow-wrap: anywhere; }
+.nt-sheet p { font-size: 1.03rem; line-height: 1.85; overflow-wrap: anywhere; margin: 0 0 8px; }
+.nt-sheet ul { margin: 4px 0 4px; padding-left: 20px; }
+.nt-sheet li { font-size: 1.03rem; line-height: 1.8; overflow-wrap: anywhere; margin-bottom: 4px; }
+.nt-q { font-weight: 700; color: var(--cyan); }
+.nt-a { color: var(--text); }
+.nt-term { font-weight: 800; color: var(--green); }
+.nt-formula { font-family: "Cambria Math", "STIX Two Math", "Times New Roman", serif; font-size: 1.2rem; background: var(--surface-2); border: 1px dashed var(--line); border-radius: 10px; padding: 10px 12px; margin: 6px 0; overflow-x: auto; white-space: pre-wrap; overflow-wrap: anywhere; }
+.nt-media { max-width: 100%; height: auto; border-radius: 10px; background: #fff; display: block; margin: 8px auto; }
+.nt-embed { width: 100%; border: 1px solid var(--line); border-radius: 12px; background: #fff; display: block; margin: 8px 0; }
+.nt-cap { color: var(--muted); font-size: 0.86rem; text-align: center; }
+.nt-item[hidden], .nt-sec[hidden] { display: none; }
+
+/* ---------- PYQ ---------- */
+.pq-card { display: flex; flex-direction: column; gap: 8px; }
+.pq-card .q-text { font-size: 1.04rem; }
+.pq-opts { display: flex; flex-direction: column; gap: 6px; }
+.pq-opt { display: flex; gap: 10px; align-items: flex-start; padding: 8px 10px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface-2); }
+.pq-opt b { width: 26px; height: 26px; border-radius: 8px; display: grid; place-items: center; background: var(--surface); flex: none; font-size: 0.85rem; }
+.pq-opt span { flex: 1; overflow-wrap: anywhere; white-space: pre-wrap; }
+.pq-opt.right { border-color: var(--green); background: rgba(52, 211, 153, 0.14); }
+.pq-opt.right b { background: var(--green); color: #052e1c; }
+.pq-ans { border: 1px solid var(--green); background: rgba(52, 211, 153, 0.08); border-radius: 12px; padding: 10px 12px; }
+.pq-ans[hidden] { display: none; }
+.pq-ans p { margin: 0 0 6px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.pq-card[hidden] { display: none; }
+
+/* ---------- Mixed Practice / PYQ Quiz mode ---------- */
+.px-best { color: var(--gold); font-weight: 700; }
+.px-chap { display: flex; flex-direction: column; gap: 6px; }
+.px-chap .kv { margin: 0; font-size: 0.92rem; }
+
+/* बहुत छोटे phone पर नीचे के 6 बटन */
+.bottom-nav.x6 button { min-width: 0; padding-left: 2px; padding-right: 2px; }
+.bottom-nav.x6 button small { font-size: 0.66rem; white-space: nowrap; }
+.bottom-nav.x6 button span { font-size: 1.25rem; }
