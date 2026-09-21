@@ -9,6 +9,7 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎯%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/extras.css">
 </head>
 <body>
   <div id="app-shell">
@@ -28,9 +29,10 @@
       <div class="loading"><div class="spinner"></div><p>लोड हो रहा है…</p></div>
     </main>
 
-    <nav class="bottom-nav" id="bottomNav" aria-label="मुख्य मेन्यू">
+    <nav class="bottom-nav x6" id="bottomNav" aria-label="मुख्य मेन्यू">
       <button data-action="nav" data-to="/home" data-tab="home"><span>🏠</span><small>होम</small></button>
       <button data-action="nav" data-to="/subjects" data-tab="subjects"><span>📚</span><small>विषय</small></button>
+      <button data-action="nav" data-to="/extras" data-tab="extras"><span>📓</span><small>नोट्स·PYQ</small></button>
       <button data-action="nav" data-to="/progress" data-tab="progress"><span>📊</span><small>प्रोग्रेस</small></button>
       <button data-action="nav" data-to="/mistakes" data-tab="mistakes"><span>📒</span><small>गलतियाँ</small></button>
       <button data-action="nav" data-to="/settings" data-tab="settings"><span>⚙️</span><small>सेटिंग</small></button>
@@ -55,6 +57,12 @@
   <script src="js/quiz.js"></script>
   <script src="js/games.js"></script>
   <script src="js/router.js"></script>
+  <!-- नए sections (Notes / PYQ / Mixed Practice): app.js से पहले, क्रम यही रखना -->
+  <script src="js/extras-core.js"></script>
+  <script src="js/extras-quiz.js"></script>
+  <script src="js/notes.js"></script>
+  <script src="js/pyq.js"></script>
+  <script src="js/practice.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
