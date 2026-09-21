@@ -26,7 +26,8 @@
   var KINDS = {
     notes: { url: 'data/notes/manifest.json', listKey: 'notes' },
     pyq: { url: 'data/pyq/manifest.json', listKey: 'pyq' },
-    practice: { url: 'data/practice/manifest.json', listKey: 'practice' }
+    practice: { url: 'data/practice/manifest.json', listKey: 'practice' },
+    vault: { url: 'data/vault/manifest.json', listKey: 'vault' }
   };
   X.KINDS = KINDS;
 
@@ -103,6 +104,16 @@
       var tag = 'Entry ' + (i + 1);
       function warn(msg) { out.warnings.push(tag + ': ' + msg); }
       if (!e || typeof e !== 'object') { warn('format गलत है'); return; }
+      if (kind === 'vault') {
+        var vid = typeof e.id === 'string' ? e.id.trim() : '';
+        var vfile = X.safeJsonPath(e.file);
+        if (!/^[A-Za-z0-9_-]{1,40}$/.test(vid)) { warn('"id" सिर्फ़ अक्षर, अंक, - या _ से बनी होनी चाहिए'); return; }
+        if (!vfile) { warn('"file" का path सही नहीं है (relative और .json होना चाहिए)'); return; }
+        if (seen[vid]) { warn('id "' + vid + '" दोबारा है'); return; }
+        seen[vid] = true;
+        out.entries.push({ idx: i, id: vid, file: vfile });
+        return;
+      }
       var sid = typeof e.subject === 'string' ? e.subject.trim() : '';
       if (!sid || !M.Subjects.get(sid)) { warn('subject "' + sid + '" data/subjects.json में नहीं है'); return; }
       var file = X.safeJsonPath(e.file);
@@ -147,7 +158,8 @@
 
   /* ---------- अपना Storage (पुराने progress से अलग) ---------- */
   var store = null;
-  function blank() { return { v: 1, best: {}, history: [], active: null }; }
+  function blank() { return { v: 1, best: {}, history: [], active: null, read: {}, ng: {} }; }
+  function isObj(o) { return o && typeof o === 'object' && !Array.isArray(o); }
   function validActive(a) {
     if (!a || typeof a !== 'object' || !Array.isArray(a.questions) || !Array.isArray(a.answers)) return false;
     if (!a.questions.length || a.questions.length !== a.answers.length) return false;
@@ -165,6 +177,8 @@
         var p = JSON.parse(raw);
         if (p && typeof p === 'object') {
           if (p.best && typeof p.best === 'object' && !Array.isArray(p.best)) d.best = p.best;
+          if (isObj(p.read)) d.read = p.read;
+          if (isObj(p.ng)) d.ng = p.ng;
           if (Array.isArray(p.history)) d.history = p.history.filter(function (h) { return h && typeof h.id === 'string' && typeof h.total === 'number'; }).slice(-30);
           if (validActive(p.active)) d.active = p.active;
         }
@@ -269,7 +283,7 @@
   };
   X.view = function (o) {
     o.tab = 'extras';
-    o.ctx = 'chapter'; // पढ़ाई का समय गिनने के लिए (timer.js का मौजूदा नियम)
+    if (!o.ctx) o.ctx = 'chapter'; // पढ़ाई का समय गिनने के लिए (timer.js का मौजूदा नियम); Vault अलग ctx देता है
     return o;
   };
 
@@ -303,7 +317,7 @@
         return mf.entries.length ? mf.entries.length + ' ' + what + ' उपलब्ध' : 'Content जल्द जोड़ा जाएगा';
       }
       var html = '<section class="page xs">';
-      html += '<div class="banner info"><span>📌 ये तीनों sections <b>Chapter Quiz से अलग</b> हैं। इनमें XP, chapter lock या पुराना progress नहीं बदलता।</span></div>';
+      html += '<div class="banner info"><span>📌 ये सारे sections <b>Chapter Quiz से अलग</b> हैं। इनमें XP, chapter lock या पुराना progress नहीं बदलता।</span></div>';
       html += '<button class="x-hub-card" style="--accent:#4f8cff" data-action="nav" data-to="/notes"><span class="x-hub-top"><span class="x-hub-ico">📓</span>' +
         '<span><strong>My Notes</strong><br><span class="x-meta">विषय → Chapter → Notes</span></span></span>' +
         '<span class="x-meta">' + esc(cnt(n, 'Chapter के Notes')) + '</span></button>';
@@ -313,19 +327,27 @@
       html += '<button class="x-hub-card" style="--accent:#34d399" data-action="nav" data-to="/practice"><span class="x-hub-top"><span class="x-hub-ico">🎯</span>' +
         '<span><strong>Mixed Practice</strong><br><span class="x-meta">विषय के अनुसार कई Chapters मिले Objective Sets</span></span></span>' +
         '<span class="x-meta">' + esc(cnt(m, 'Practice Set')) + '</span></button>';
-      html += '<div class="card"><h3 class="card-title">🔍 Data Check</h3>' +
+      var ngm = M.NotesGame ? 'Level ' + M.NotesGame.level() + ' · ' + M.NotesGame.clearedCount() + ' Stage पूरे' : 'Notes पढ़ो, Game खेलो, Level बढ़ाओ';
+      html += '<button class="x-hub-card" style="--accent:#f472b6" data-action="nav" data-to="/ngame"><span class="x-hub-top"><span class="x-hub-ico">🎮</span>' +
+        '<span><strong>Notes Game</strong><br><span class="x-meta">Notes पढ़ो → Game खेलो → Level बढ़ाओ</span></span></span>' +
+        '<span class="x-meta">' + esc(ngm) + '</span></button>';
+      var vs = M.Vault ? M.Vault.state() : { open: false };
+      html += '<button class="x-hub-card" style="--accent:#a78bfa" data-action="nav" data-to="/vault"><span class="x-hub-top"><span class="x-hub-ico">🎁</span>' +
+        '<span><strong>Fun Vault</strong><br><span class="x-meta">Chapter Challenge में ' + (M.Vault ? M.Vault.PASS : 95) + '%+ लाओ → चुटकुले खुलते हैं</span></span></span>' +
+        '<span class="x-meta">' + (vs.open ? '🔓 खुला है — ' + M.App.fmtTime(Math.ceil(vs.left / 1000)) + ' बचे' : '🔒 अभी बंद') + '</span></button>' +
+              '<div class="card"><h3 class="card-title">🔍 Data Check</h3>' +
         '<p class="muted small">नई JSON फ़ाइलें GitHub पर डालने के बाद यहाँ जाँचो कि वे सही से पढ़ी जा रही हैं या नहीं।</p>' +
         '<button class="btn small ghost" data-action="x-check">अभी जाँचो</button><div id="xCheckOut" class="x-check-out" style="margin-top:10px"></div></div>';
       html += '</section>';
-      return X.view({ html: html, title: 'नोट्स · PYQ · Practice', sub: 'नए sections', back: null });
+      return X.view({ html: html, title: 'नोट्स · PYQ', sub: 'Practice · Game · Vault', back: null });
     });
   }
 
   /* ---------- Data Check ---------- */
   var STATUS_TXT = { missing: 'फ़ाइल नहीं मिली', error: 'गड़बड़ी', empty: 'फ़ाइल में अभी कुछ नहीं है' };
   X.checkAll = function () {
-    var kinds = ['notes', 'pyq', 'practice'];
-    var names = { notes: 'Notes', pyq: 'PYQ', practice: 'Practice' };
+    var kinds = ['notes', 'pyq', 'practice', 'vault'];
+    var names = { notes: 'Notes', pyq: 'PYQ', practice: 'Practice', vault: 'Vault' };
     return Promise.all(kinds.map(function (k) { return X.manifest(k); })).then(function (ms) {
       var jobs = [];
       var lines = [];
@@ -336,9 +358,9 @@
         else if (!mf.entries.length) lines.push({ cls: 'ok', t: names[k] + ': manifest सही है, अभी कोई entry नहीं (खाली)' });
         mf.warnings.forEach(function (w) { lines.push({ cls: 'warn', t: names[k] + ' manifest — ' + w }); });
         mf.entries.forEach(function (en) {
-          var loader = k === 'notes' ? M.Notes && M.Notes.load : k === 'pyq' ? M.Pyq && M.Pyq.load : M.Practice && M.Practice.load;
+          var loader = k === 'notes' ? M.Notes && M.Notes.load : k === 'pyq' ? M.Pyq && M.Pyq.load : k === 'vault' ? M.Vault && M.Vault.load : M.Practice && M.Practice.load;
           if (!loader) return;
-          var tag = names[k] + ' · ' + en.subject + (en.chapter ? ' · अध्याय ' + en.chapter : '') + (en.year ? ' · ' + en.year : '') + (en.id ? ' · ' + en.id : '');
+          var tag = names[k] + ' · ' + (en.subject || en.id) + (en.chapter ? ' · अध्याय ' + en.chapter : '') + (en.year ? ' · ' + en.year : '') + (en.id ? ' · ' + en.id : '');
           jobs.push(loader(en).then(function (r) {
             if (r.status === 'ok') {
               lines.push({ cls: r.skipped && r.skipped.length ? 'warn' : 'ok', t: tag + ' — ' + r.count + ' आइटम सही' + (r.skipped && r.skipped.length ? ', ' + r.skipped.length + ' छोड़े गए: ' + r.skipped.slice(0, 3).join('; ') : '') });
