@@ -1,0 +1,4 @@
+{
+  "_help": "हर Chapter की Notes फ़ाइल यहाँ एक entry से जुड़ती है। नमूना data/templates/manifest-examples.json में है। subject और chapter data/subjects.json से मेल खाने चाहिए।",
+  "notes": []
+}
