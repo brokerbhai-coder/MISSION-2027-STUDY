@@ -7,5 +7,41 @@
     "subject": "physics",
     "chapter": 1,
     "file": "data/notes/physics/chapter-01.json"
+  },
+  {
+    "subject": "physics",
+    "chapter": 2,
+    "file": "data/notes/physics/chapter-02.json"
+  },
+  {
+    "subject": "physics",
+    "chapter": 3,
+    "file": "data/notes/physics/chapter-03.json"
+  },
+  {
+    "subject": "physics",
+    "chapter": 4,
+    "file": "data/notes/physics/chapter-04.json"
+  },
+  {
+    "subject": "physics",
+    "chapter": 5,
+    "file": "data/notes/physics/chapter-05.json"
+  },
+  {
+    "subject": "physics",
+    "chapter": 6,
+    "file": "data/notes/physics/chapter-06.json"
+  },
+  {
+    "subject": "physics",
+    "chapter": 7,
+    "file": "data/notes/physics/chapter-07.json"
+  },
+  {
+    "subject": "physics",
+    "chapter": 8,
+    "file": "data/notes/physics/chapter-08.json"
   }
 ]
+
