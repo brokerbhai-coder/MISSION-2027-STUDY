@@ -1,0 +1,746 @@
+{
+  "schemaVersion": 1,
+  "subject": "physics",
+  "chapter": 4,
+  "title": "गतिमान आवेश एवं चुम्बकत्व",
+  "categories": {
+    "chapterNotes": [
+      {
+        "heading": "Chumbak, Chumbakatva Evam Oersted Ka Prayog",
+        "content": [
+          "Lagbhag 17vin shatabdi me Asia Minor ke Magnesia namak sthan par paye gaye vishesh patthar (Magnetite / Fe3O4) ke aadhar par chumbak ka naamkaran hua. Chumbak prakriti me paya jane wala aisa padarth hai jo loha, nickel, cobalt aadi chumbakiye padarthon ko apni or aakarshit karta hai.",
+          "Chumbak do prakar ke hote hain: Prakritik chumbak (anischit aakar, kam aakarshan kshamta) tatha Kritrim chumbak (manav dwara nirmit, nischit aakar jaise Dand chumbak va Naal chumbak, uchh aakarshan kshamta).",
+          "Oersted ka Prayog (1820): Hans Christian Oersted ne khoja ki jab kisi chalak taar me vidyut dhara pravahit ki jati hai, to uske nikat rakhi chumbakiye sui vikshepit ho jati hai. Dhara ki disha badalne par vikshep ki disha bhi ulat jati hai. Isse yeh nishkarsh nikalta hai ki gati-shil aavesh ya dharavahi chalak apne charon or chumbakiye kshetra utpann karta hai."
+        ],
+        "points": [
+          "Chumbak ke dono dhruvo (North va South) ko kabhi alag nahi kiya ja sakta; chumbak ko bich se todne par pratyek tukda ek purna chumbak ban jata hai.",
+          "Chumbak ke dhruvo par aakarshan kshamta sarvadhik tatha madhya me lagbhag shunya hoti hai.",
+          "Sajatiye dhruva paraspar pratikarshit karte hain tatha vijatiye dhruva aakarshit karte hain.",
+          "Sthir aavesh keval vidyut kshetra utpann karta hai, jabki ek-samaan veg se gatiman aavesh vidyut tatha chumbakiye kshetra dono utpann karta hai."
+        ]
+      },
+      {
+        "heading": "Biot-Savart Niyam Evam Anupayog",
+        "content": [
+          "San 1820 me French vaigyanik Jean-Baptiste Biot aur Felix Savart ne dharavahi chalak ke nikat kisi bindu par utpann chumbakiye kshetra (dB) ke liye niyam diya. Iske anusar alpansh khand dl ke karan r doori par chumbakiye kshetra dB = (mu_0 / 4pi) * (I * dl * sin(theta) / r^2) hota hai.",
+          "Yahan mu_0 nirvat ki chumbaksheelata (Permeability of Free Space) hai, jiska maan 4pi * 10^-7 N/A^2 (ya T*m/A) hota hai aur iska vimiy sutra [M L T^-2 A^-2] hai.",
+          "Nirvat ki chumbaksheelata (mu_0) tatha vidyutsheelata (epsilon_0) me sambandh: c = 1 / sqrt(mu_0 * epsilon_0), jahan c = 3 * 10^8 m/s (nirvat me prakash ki chaal) hai.",
+          "Chumbakiye kshetra ki disha Right Hand Thumb Rule ya Maxwell ke Corkscrew Rule se gyat ki jati hai."
+        ],
+        "points": [
+          "Vrittakar dharavahi loop ke kendra par chumbakiye kshetra: B = (mu_0 * N * I) / (2 * r).",
+          "Ardh-vrittakar chaap ke kendra par chumbakiye kshetra: B = (mu_0 * I) / (4 * r).",
+          "Kendra par theta कोण अंतरित karne wale chaap hetu: B = (mu_0 * I * theta) / (4 * pi * r).",
+          "Vrittakar dharavahi kundali ke aksh par x doori par chumbakiye kshetra: B = (mu_0 * N * I * a^2) / [2 * (a^2 + x^2)^(3/2)].",
+          "Parimit lambai ke rjurekhaye taar ke karan: B = (mu_0 * I / 4pi*a) * (sin(phi1) + sin(phi2)) ya (mu_0 * I / 4pi*a) * (cos(alpha) + cos(beta)).",
+          "Anant lambai ke seedhe dharavahi taar ke nikat a doori par: B = (mu_0 * I) / (2 * pi * a)."
+        ]
+      },
+      {
+        "heading": "Ampere Ka Paripathiya Niyam Evam Anupayog",
+        "content": [
+          "Ampere ka Paripathiya Niyam: Nirvat me kisi band samvrit path ke chumbakiye kshetra ka rekhiye samakalan (line integral) us band path dwara ghire kshetrfal se gujarne wali kul net dhara ka mu_0 guna hota hai. Ganitiye roop: oint B_vec . dl_vec = mu_0 * I_net.",
+          "Lambee Parinalika (Solenoid): Khokhale a-chalak belan par taambe ke vidyutrodhi taar ko anek phero ke roop me lapetkar banayi gayi yukti parinalika kahlati hai. Parinalika ke bheetar kendra ke paas ek-samaan chumbakiye kshetra B = mu_0 * n * I = mu_0 * (N/L) * I hota hai (sire par B_end = mu_0 * n * I / 2).",
+          "Toroid: Ek vrittakar roop me modi gayi lambee band parinalika ko toroid kahlata hai. Toroid ke aantarik core me chumbakiye kshetra B = mu_0 * n * I = (mu_0 * N * I) / (2 * pi * r) hota hai, jabki toroid ke aantarik khali sthan tatha bahari kshetra me B = 0 hota hai."
+        ],
+        "points": [
+          "Ampere ka niyam sthir-vaidyutiki me Gauss ke niyam ke samatulya hai.",
+          "Parinalika ke bahar chumbakiye kshetra lagbhag ksheen (shunya) mana jata hai.",
+          "Toroid ek anant lambai ki parinalika ke samaan hai jisme koi khula sira nahi hota."
+        ]
+      },
+      {
+        "heading": "Lorentz Bal, Cyclotron Evam Dharavahi Chalak Par Bal",
+        "content": [
+          "Lorentz Bal: Jab koi aaveshit kan q vidyut kshetra E tatha chumbakiye kshetra B dono me v veg se gati karta hai, to us par karyarat kul bal F_vec = q * [E_vec + (v_vec x B_vec)] hota hai.",
+          "Chumbakiye Bal: F_m = q * v * B * sin(theta). Yadi kan kshetra ke samantar chale (theta = 0 ya 180), to F = 0 (saral rekha gati). Yadi kan kshetra ke lambvat pravesh kare (theta = 90), to path vrittakar hota hai jahan trijya r = mv / (qB) tatha aavartkaal T = 2pi*m / (qB) veg par nirbhar nahi karta.",
+          "Yadi theta anya kon ho, to kan ka path kundalini (Helical) hota hai.",
+          "Cyclotron: E.O. Lawrence tatha M.S. Livingston (1931) dwara aavishkrit ek aisi yukti hai jo proton, deuteron, alpha-kan jaise bhari dhanaveshit kano ko ultra-high energy tak twarit karti hai. Iska sidhant cyclotron anunaad par aadharit hai.",
+          "Dharavahi Chalak Par Bal: Chumbakiye kshetra B me L lambai ke chalak par bal F_vec = I * (L_vec x B_vec) ya F = I * B * L * sin(theta) hota hai.",
+          "Do Samantar Dharavahi Taro Ke Bich Bal: Prati ekank lambai par lagne wala bal F/L = (mu_0 / 2pi) * (I1 * I2 / r). Yadi dhara saman disha me ho to aakarshan, aur viparit disha me ho to pratikarshan hota hai. Iske aadhar par 1 Ampere ki antarrashtriya manak paribhasha di jati hai."
+        ],
+        "points": [
+          "Cyclotron dwara electron (ati-halka kan hone se relativistic mass badh jata hai) tatha neutron (aaveshheen hone se) ko twarit nahi kiya ja sakta.",
+          "Veg Filter (Velocity Selector): Crossed fields (E lambvat B) me bin-vikshepit nikalne ke liye veg v = E / B hota hai.",
+          "Magnetic force dwara aaveshit kan par kiya gaya karya sadaiv shunya hota hai (W = 0), atah kan ki kinetic energy aur chaal a-parivartit rahti hai."
+        ]
+      },
+      {
+        "heading": "Dharavahi Loop Par Bal-Aaghurna Evam Chal Kundali Galvanometer",
+        "content": [
+          "Ek-samaan chumbakiye kshetra B me dharavahi loop par kul bal shunya hota hai (F_net = 0), parantu bal-yugma aaghurna karyarat hota hai: tau_vec = M_vec x B_vec ya tau = N * I * A * B * sin(theta) = M * B * sin(theta).",
+          "Chumbakiye Dwidhruva Aaghurna (M): M = N * I * A (matrak: A*m^2 ya J/T). Parikrami electron ka chumbakiye aaghurna M = (e * v * r) / 2 = (e / 2m) * L hota hai.",
+          "Chal Kundali Galvanometer (Moving Coil Galvanometer): Vidyut paripath me sukshma dhara ki upasthiti tatha mapan ke liye prayukt yukti hai. Iska sidhant: dharavahi kundali par lagne wala chumbakiye vikshepak aaghurna tau = NIAB kamani ke aainthan aaghurna C*phi ke barabar hota hai, jisse I = (C / NAB) * phi ya I proportional to phi hota hai.",
+          "Ammeter me Rupantaran: Galvanometer ke samantar kram me ek ati-alp pratirodh (Shunt - S) lagate hain: S = [Ig / (I - Ig)] * G. Adarsh ammeter ka pratirodh shunya hota hai.",
+          "Voltmeter me Rupantaran: Galvanometer ke shreni kram me ek uchh pratirodh (R) jodte hain: R = (V / Ig) - G. Adarsh voltmeter ka pratirodh anant hota hai."
+        ],
+        "points": [
+          "Trijya Chumbakiye Kshetra (Radial Magnetic Field): Belnakar narm lohe ki krod aur avtalaakar kate chumbakiye dhruvo dwara utpann kiya jata hai taaki kundali ke tal aur chumbakiye kshetra ke bich kon sadaiv 90 degree bana rahe (tau_max).",
+          "Dhara Sugrahita (Current Sensitivity): Si = phi / I = NAB / C (rad/A ya div/A).",
+          "Voltege Sugrahita (Voltage Sensitivity): Sv = phi / V = NAB / (C * G) (div/V)."
+        ]
+      }
+    ],
+    "theory": [
+      {
+        "title": "Biot-Savart Ka Niyam Evam सदिश रूप (Vector Form)",
+        "content": [
+          "Biot aur Savart ke anusar, kisi dharavahi chalak ke alpansh dl dwara r doori par kisi bindu P par utpann chumbakiye kshetra dB nimnalikhit karko par nirbhar karta hai:",
+          "1. Chalak me pravahit dhara ke anukramanupati: dB proportional to I",
+          "2. Alpansh ki lambai ke anukramanupati: dB proportional to dl",
+          "3. Alpansh tatha bindu P ko milane wali rekha ke bich ke kon ki jya ke anukramanupati: dB proportional to sin(theta)",
+          "4. Bindu P ki doori ke varg ke vyutkramanupati: dB proportional to 1 / r^2",
+          "Sanyukt roop me: dB = (mu_0 / 4pi) * [ (I * dl * sin(theta)) / r^2 ]",
+          "Sadish Roop (Vector Form): dB_vec = (mu_0 / 4pi) * [ I * (dl_vec x r_hat) / r^2 ] = (mu_0 / 4pi) * [ I * (dl_vec x r_vec) / r^3 ].",
+          "Yeh darshata hai ki dB_vec ki disha dl_vec aur r_vec dono ke tal ke lambvat hoti hai."
+        ],
+        "points": [
+          "mu_0 / 4pi = 10^-7 T*m/A ya N/A^2.",
+          "Chumbakiye kshetra ka SI matrak Tesla (T) ya Weber/m^2 ya N/(A*m) hota hai. CGS matrak Gauss (G) hai, jahan 1 Tesla = 10^4 Gauss."
+        ]
+      },
+      {
+        "title": "Vrittakar Dharavahi Kundali Ke Aksh Par Chumbakiye Kshetra Ka Nigaman",
+        "content": [
+          "Mana a trijya ki ek vrittakar kundali jisme I dhara pravahit ho rahi hai. Kundali ke kendra O se uske aksh par x doori par bindu P par chumbakiye kshetra gyat karna hai.",
+          "Kundali ke kisi alpansh dl ke karan bindu P par doori r = sqrt(a^2 + x^2) hai. dl aur r ke bich kon sadaiv 90 degree hota hai.",
+          "Biot-Savart niyam se: dB = (mu_0 / 4pi) * (I * dl * sin 90 / r^2) = (mu_0 / 4pi) * (I * dl / r^2).",
+          "dB ko do ghatako me viyojit karne par: aksh ke lambvat ghatak dB*cos(alpha) paraspar viparit hone ke karan nirasth ho jate hain, jabki aksh ke anudish ghatak dB*sin(alpha) aapas me judte jate hain.",
+          "Kul chumbakiye kshetra: B = oint dB * sin(alpha) = oint [ (mu_0 / 4pi) * (I * dl / r^2) ] * (a / r) = [ (mu_0 * I * a) / (4pi * r^3) ] * oint dl.",
+          "Chunki oint dl = 2pi*a (kundali ki paridhi), atah:",
+          "B = [ (mu_0 * I * a) / (4pi * r^3) ] * (2pi * a) = (mu_0 * I * a^2) / (2 * r^3).",
+          "r = (a^2 + x^2)^(1/2) rakhne par tatha N phero ke liye:",
+          "B = (mu_0 * N * I * a^2) / [ 2 * (a^2 + x^2)^(3/2) ] Tesla.",
+          "Vishesh Sthiti: Kendra par x = 0 rakhne par: B_center = (mu_0 * N * I) / (2 * a)."
+        ],
+        "points": [
+          "Yadi x >> a ho, to B lagbhag (mu_0 * N * I * a^2) / (2 * x^3) = (mu_0 / 4pi) * (2M / x^3) hota hai, jo chumbakiye dwidhruva jaisa vyavhar karta hai."
+        ]
+      },
+      {
+        "title": "Ampere Ke Niyam Se Lambee Dharavahi Parinalika Ke Bheetar Chumbakiye Kshetra",
+        "content": [
+          "Mana ek lambee parinalika jisme prati ekank lambai me phero ki sankhya n hai aur I dhara pravahit ho rahi hai. Bheetar chumbakiye kshetra ek-samaan aksh ke anudish hota hai tatha bahar lagbhag shunya hota hai.",
+          "Ek aayatakara Amperian loop abcd ki kalpana karte hain jahan bhuja ab (lambai L) parinalika ke aksh ke anudish bheetar hai, bc aur da lambvat hain, aur cd bahar sthit hai.",
+          "Ampere ke niyam se: oint B_vec . dl_vec = mu_0 * I_enclosed.",
+          "Rekhiye samakalan ko char bhago me baantne par:",
+          "oint B_vec . dl_vec = int_a^b B_vec . dl_vec + int_b^c B_vec . dl_vec + int_c^d B_vec . dl_vec + int_d^a B_vec . dl_vec.",
+          "1. Bhuja ab par: B aur dl ek hi disha me hain (theta = 0) => int_a^b B * dl = B * L.",
+          "2. Bhuja bc aur da par: B aur dl paraspar lambvat hain (theta = 90) => int B * dl * cos 90 = 0.",
+          "3. Bhuja cd par: Parinalika ke bahar chumbakiye kshetra B lagbhag shunya hai => int 0 * dl = 0.",
+          "Atah: oint B_vec . dl_vec = B * L.",
+          "Aayat abcd dwara paribaddh kul phero ki sankhya = n * L, atah paribaddh kul dhara I_enclosed = n * L * I.",
+          "Ampere ke niyam me maan rakhne par: B * L = mu_0 * (n * L * I) => B = mu_0 * n * I.",
+          "Yadi parinalika me kul phere N aur kul lambai L ho, to n = N/L rakhne par: B = (mu_0 * N * I) / L."
+        ],
+        "points": [
+          "Parinalika ke kisi ek sire par chumbakiye kshetra kendra ka aadha hota hai: B_end = (1/2) * mu_0 * n * I."
+        ]
+      },
+      {
+        "title": "Do Samantar Dharavahi Taro Ke Bich Bal Evam 1 Ampere Ki Paribhasha",
+        "content": [
+          "Mana do anant lambai ke seedhe samantar chalak taar 1 aur 2 hain jo paraspar r doori par nirvat me sthit hain aur jinme kramashah I1 tatha I2 dharaye pravahit ho rahi hain.",
+          "Taar 1 me dhara I1 ke karan r doori par sthit taar 2 ke kisi bindu par chumbakiye kshetra: B1 = (mu_0 * I1) / (2 * pi * r) (Right hand rule se kagat tal ke lambvat andar ki or).",
+          "Chumbakiye kshetra B1 me sthit taar 2 ki L lambai par karyarat bal: F2 = I2 * B1 * L * sin 90 = I2 * [ (mu_0 * I1) / (2 * pi * r) ] * L.",
+          "Atah taar 2 ki prati ekank lambai (L = 1 m) par lagne wala bal: f = F / L = (mu_0 / 2pi) * [ (I1 * I2) / r ] N/m.",
+          "Fleming ke baaye hath ke niyam se, yadi dono taro me dhara saman disha me ho to bal aakarshan ka hota hai; yadi dhara viparit disha me ho to bal pratikarshan ka hota hai.",
+          "1 Ampere Ki Manak Paribhasha: Yadi I1 = I2 = 1 A tatha r = 1 m ho, to f = (4pi * 10^-7 / 2pi) * (1 * 1 / 1) = 2 * 10^-7 N/m.",
+          "Paribhasha: 1 Ampere wah niyat vidyut dhara hai jo nirvat me 1 meter ki doori par sthit do anant lambai ke seedhe va samantar taro me pravahit hone par unki prati meter lambai par 2 * 10^-7 Newton ka aakarshan ya pratikarshan bal utpann kare."
+        ],
+        "points": [
+          "Saman disha me dhara => Aakarshan bal.",
+          "Viparit disha me dhara => Pratikarshan bal."
+        ]
+      },
+      {
+        "title": "Cyclotron Ka Siddhant, Sanrachna Evam Karyavidhi",
+        "content": [
+          "Karyakari Siddhant: Cyclotron is tathya par aadharit hai ki chumbakiye kshetra me aaveshit kan ki parikraman aavriti ya aavartkaal uske veg tatha vrittakar path ki trijya par nirbhar nahi karta. Isme do Dee-shaped metallic chambers (Dees) ke bich lagaye gaye uchh aavriti ke pratyavarti vidyut kshetra dwara kan ko baar-baar twarit kiya jata hai, jabki lambvat chumbakiye kshetra use vrittakar path me ghumata hai.",
+          "Ganitiye Vishleshan:",
+          "1. Vrittakar path ki trijya: Avashyak abhikendra bal = Chumbakiye Lorentz bal => m * v^2 / r = q * v * B => r = m * v / (q * B).",
+          "2. Ek Dee ko paar karne me laga samay (Ardh-chakra): t = pi * r / v = pi * m / (q * B).",
+          "3. Purna aavartkaal: T = 2 * t = 2pi * m / (q * B).",
+          "4. Cyclotron Aavriti (Resonance frequency): f = 1 / T = (q * B) / (2pi * m).",
+          "5. Kono ki adhiktam gatij urja: Jab kan Dees ki kinar (trijya R) par pahunchta hai, tab v_max = (q * B * R) / m, atah K_max = (1/2) * m * v_max^2 = (q^2 * B^2 * R^2) / (2 * m).",
+          "Simaye (Limitations):",
+          "• Yeh electron ko twarit nahi kar sakta kyunki alp dravyaman ke karan iska veg shighra hi relativistic ho jata hai (m = m0 / sqrt(1 - v^2/c^2)), jisse aavartkaal badal jata hai aur resonance toot jata hai.",
+          "• Yeh aaveshheen kano jaise neutron ko twarit nahi kar sakta."
+        ],
+        "points": [
+          "Cyclotron me vidyut kshetra kan ko twaran (urja) deta hai, jabki chumbakiye kshetra keval uski disha modkar vrittakar path pradan karta hai."
+        ]
+      },
+      {
+        "title": "Chal Kundali Galvanometer Ka Siddhant Evam Ammeter/Voltmeter Me Rupantaran",
+        "content": [
+          "Siddhant: Ek-samaan trijya chumbakiye kshetra me sthit narm lohe ki krod par lapti kundali me dhara pravahit karne par vikshepak bal-aaghurna lagta hai: tau = N * I * A * B * sin 90 = N * I * A * B.",
+          "Kundali ke ghumne par suspension strip ya spring me aainthan bal-aaghurna utpann hota hai: tau_restoring = C * phi (jahan C prati ekank aainthan marod dridhata hai).",
+          "Santulan me: N * I * A * B = C * phi => I = (C / NAB) * phi = K * phi (jahan K galvanometer sthirank hai). Atah I proportional to phi (vikshep dhara ke anukramanupati hota hai).",
+          "Ammeter Me Rupantaran: Galvanometer ko ammeter me badalne ke liye uske samantar kram me ek chhota pratirodh (Shunt - S) joda jata hai.",
+          "Chunki G aur S samantar me hain: V_G = V_S => Ig * G = (I - Ig) * S => S = [ Ig / (I - Ig) ] * G.",
+          "Ammeter ka kul prabhavi pratirodh R_A = (G * S) / (G + S) lagbhag S ke barabar (ati-alp) hota hai.",
+          "Voltmeter Me Rupantaran: Galvanometer ko voltmeter me badalne ke liye uske shreni kram me ek uchh pratirodh R joda jata hai.",
+          "Paripath ka kul pratirodh = G + R. Ohm ke niyam se: V = Ig * (G + R) => G + R = V / Ig => R = (V / Ig) - G.",
+          "Voltmeter ka kul prabhavi pratirodh R_V = G + R (ati-uchh) hota hai."
+        ],
+        "points": [
+          "Ammeter ko sadaiv vidyut paripath ke shreni kram me lagate hain (Adarsh ammeter pratirodh = 0).",
+          "Voltmeter ko sadaiv vidyut paripath ke do binduo ke bich samantar kram me lagate hain (Adarsh voltmeter pratirodh = infinity)."
+        ]
+      }
+    ],
+    "definitions": [
+      {
+        "term": "Chumbakiye Kshetra (Magnetic Field - B)",
+        "definition": "Kisi chumbak athva dharavahi chalak ke charon or ka wah kshetra jisme koi anya chumbakiye sui ya gatiman aaveshit kan chumbakiye bal ka anubhav karta hai (SI matrak: Tesla ya Weber/m^2)."
+      },
+      {
+        "term": "Lorentz Bal (Lorentz Force)",
+        "definition": "Jab koi aaveshit kan sanyukt vidyut kshetra tatha chumbakiye kshetra me gati karta hai, to us par lagne wale kul parinami bal ko Lorentz bal kahte hain (F_vec = q[E_vec + (v_vec x B_vec)])."
+      },
+      {
+        "term": "Biot-Savart Ka Niyam (Biot-Savart Law)",
+        "definition": "Kisi dharavahi chalak ke sukshma alpansh dl dwara r doori par sthit bindu par utpann chumbakiye kshetra ka niyam: dB = (mu_0 / 4pi) * (I * dl * sin(theta) / r^2)."
+      },
+      {
+        "term": "Nirvat Ki Chumbaksheelata (Permeability of Free Space - mu_0)",
+        "definition": "Nirvat me chumbakiye bal rekhaon ko gujarne dene ki kshamta ki maap; iska nirdharit maan 4pi * 10^-7 T*m/A ya N/A^2 hota hai (Vima: [M L T^-2 A^-2])."
+      },
+      {
+        "term": "Ampere Ka Paripathiya Niyam (Ampere's Circuital Law)",
+        "definition": "Kisi band samvrit path ke anudish chumbakiye kshetra ka rekhiye samakalan us path dwara ghire kshetrfal se hokar gujarne wali kul net dhara ka mu_0 guna hota hai (oint B_vec . dl_vec = mu_0 * I)."
+      },
+      {
+        "term": "Ek Ampere (1 Ampere - Standard Definition)",
+        "definition": "1 A wah niyat vidyut dhara hai jo nirvat me 1 m doori par sthit do anant lambai ke samantar dharavahi taro me pravahit hone par unki prati meter lambai par 2 * 10^-7 N ka aakarshan ya pratikarshan bal utpann kare."
+      },
+      {
+        "term": "Parinalika (Solenoid)",
+        "definition": "Ek lambi a-chalak nalika par uski lambai ke anudish kaskar paas-paas lapete gaye vidyutrodhi taambe ke phero wali kundali ko parinalika kahte hain."
+      },
+      {
+        "term": "Toroid (Toroid)",
+        "definition": "Ek vrittakar roop me modi gayi lambee band dharavahi parinalika ko toroid kahte hain; iske aantarik core me chumbakiye kshetra ek-samaan hota hai."
+      },
+      {
+        "term": "Cyclotron (Cyclotron)",
+        "definition": "Bhari dhanaveshit kano (jaise proton, alpha kan) ko uchh aavriti ke vidyut kshetra tatha prabal chumbakiye kshetra ki sahayata se ati-uchh kinetic energy tak twarit karne wali yukti."
+      },
+      {
+        "term": "Chumbakiye Dwidhruva Aaghurna (Magnetic Dipole Moment - M)",
+        "definition": "Kisi dharavahi loop me phero ki sankhya, dhara tatha uske kshetrfal ke gunanfal ko chumbakiye dwidhruva aaghurna kahte hain (M = N * I * A, matrak: A*m^2 ya J/T)."
+      },
+      {
+        "term": "Bohr Magneton (Bohr Magneton - mu_B)",
+        "definition": "Paramanu me mool urja sthar me chakkar lagate electron ke orbital magnetic dipole moment ka nyunatam maan: mu_B = (e * h) / (4pi * m_e) = 9.27 * 10^-24 A*m^2."
+      },
+      {
+        "term": "Shunt (Shunt)",
+        "definition": "Galvanometer ko prabal dhara se jalne se bachane tatha use ammeter me badalne ke liye uske samantar kram me joda gaya ati-alp pratirodh."
+      },
+      {
+        "term": "Trijya Chumbakiye Kshetra (Radial Magnetic Field)",
+        "definition": "Wah vishesh chumbakiye kshetra jisme kshetra rekhaen sadaiv kundali ke tal ke samantar (arthat kundali ke kshetrfal sadish ke lambvat) rahti hain taaki vikshepak bal-aaghurna sadaiv adhiktam rahe."
+      }
+    ],
+    "formulas": [
+      {
+        "name": "Biot-Savart Sutra",
+        "formula": "dB = (mu_0 / 4pi) * [ (I * dl * sin theta) / r^2 ]",
+        "meaning": "mu_0 = nirvat ki chumbaksheelata (4pi*10^-7), I = dhara, dl = alpansh lambai, r = doori",
+        "unit": "Tesla (T)"
+      },
+      {
+        "name": "Biot-Savart Sadish Roop",
+        "formula": "dB_vec = (mu_0 / 4pi) * [ I * (dl_vec x r_vec) / r^3 ]",
+        "meaning": "dl_vec = lambai sadish, r_vec = sthiti sadish",
+        "unit": "Tesla (T)"
+      },
+      {
+        "name": "Prakash Ki Chaal Sambandh",
+        "formula": "c = 1 / sqrt(mu_0 * epsilon_0)",
+        "meaning": "c = prakash ka veg (3 * 10^8 m/s), mu_0 = chumbaksheelata, epsilon_0 = vidyutsheelata",
+        "unit": "m/s"
+      },
+      {
+        "name": "Vrittakar Loop Ke Kendra Par Chumbakiye Kshetra",
+        "formula": "B = (mu_0 * N * I) / (2 * r)",
+        "meaning": "N = phero ki sankhya, I = dhara, r = loop ki trijya",
+        "unit": "Tesla (T)"
+      },
+      {
+        "name": "Vrittakar Chaap Ke Kendra Par Chumbakiye Kshetra",
+        "formula": "B = (mu_0 * I * theta) / (4 * pi * r)",
+        "meaning": "theta = chaap dwara kendra par banaya gaya kon (radian me)",
+        "unit": "Tesla (T)"
+      },
+      {
+        "name": "Vrittakar Kundali Ke Aksh Par Chumbakiye Kshetra",
+        "formula": "B = (mu_0 * N * I * a^2) / [ 2 * (a^2 + x^2)^(3/2) ]",
+        "meaning": "a = kundali ki trijya, x = kendra se akshiya doori",
+        "unit": "Tesla (T)"
+      },
+      {
+        "name": "Anant Lambai Ke Seedhe Taar Ka Chumbakiye Kshetra",
+        "formula": "B = (mu_0 * I) / (2 * pi * r)",
+        "meaning": "I = taar me dhara, r = taar se lambvat doori",
+        "unit": "Tesla (T)"
+      },
+      {
+        "name": "Gatiman Aavesh Ka Chumbakiye Kshetra",
+        "formula": "B = (mu_0 / 4pi) * [ (q * v * sin theta) / r^2 ]",
+        "meaning": "q = aavesh, v = veg, r = doori",
+        "unit": "Tesla (T)"
+      },
+      {
+        "name": "Ampere Ka Paripathiya Niyam",
+        "formula": "oint B_vec . dl_vec = mu_0 * I_net",
+        "meaning": "B_vec = chumbakiye kshetra, dl_vec = path alpansh, I_net = ghire kshetrfal se pravahit dhara",
+        "unit": "Tesla*meter (T*m)"
+      },
+      {
+        "name": "Lambee Parinalika Ke Bheetar Chumbakiye Kshetra",
+        "formula": "B = mu_0 * n * I = (mu_0 * N * I) / L",
+        "meaning": "n = N/L = prati ekank lambai me phero ki sankhya",
+        "unit": "Tesla (T)"
+      },
+      {
+        "name": "Toroid Ke Core Me Chumbakiye Kshetra",
+        "formula": "B = (mu_0 * N * I) / (2 * pi * r) = mu_0 * n * I",
+        "meaning": "r = madhya trijya, N = kul phere",
+        "unit": "Tesla (T)"
+      },
+      {
+        "name": "Chumbakiye Lorentz Bal",
+        "formula": "F_m = q * (v_vec x B_vec)  =>  F_m = q * v * B * sin theta",
+        "meaning": "q = aavesh, v = veg, B = chumbakiye kshetra, theta = v aur B ke bich kon",
+        "unit": "Newton (N)"
+      },
+      {
+        "name": "Vrittakar Path Ki Trijya (Lambvat Kshetra)",
+        "formula": "r = (m * v) / (q * B) = p / (q * B) = sqrt(2 * m * K) / (q * B)",
+        "meaning": "m = dravyaman, p = samveg, K = kinetic energy",
+        "unit": "meter (m)"
+      },
+      {
+        "name": "Cyclotron Aavartkaal Evam Aavriti",
+        "formula": "T = (2 * pi * m) / (q * B),  f = 1 / T = (q * B) / (2 * pi * m)",
+        "meaning": "f = cyclotron resonance frequency (veg aur trijya se swatantra)",
+        "unit": "T: second, f: Hertz (Hz)"
+      },
+      {
+        "name": "Cyclotron Me Adhiktam Gatij Urja",
+        "formula": "K_max = (q^2 * B^2 * R^2) / (2 * m)",
+        "meaning": "R = Dees ki nishchit trijya",
+        "unit": "Joule (J) ya eV"
+      },
+      {
+        "name": "Dharavahi Chalak Par Chumbakiye Bal",
+        "formula": "F = I * (L_vec x B_vec)  =>  F = I * B * L * sin theta",
+        "meaning": "I = dhara, L = chalak ki lambai, B = chumbakiye kshetra",
+        "unit": "Newton (N)"
+      },
+      {
+        "name": "Do Samantar Taro Ke Bich Prati Ekank Lambai Par Bal",
+        "formula": "f = F / L = (mu_0 / 2pi) * [ (I1 * I2) / r ] = 2 * 10^-7 * [ (I1 * I2) / r ]",
+        "meaning": "I1, I2 = taro me dharaye, r = bich ki doori",
+        "unit": "N/m"
+      },
+      {
+        "name": "Dharavahi Loop Par Bal-Aaghurna (Torque)",
+        "formula": "tau = N * I * A * B * sin theta = M * B * sin theta",
+        "meaning": "M = N*I*A (chumbakiye aaghurna), theta = abhilamb aur B ke bich kon",
+        "unit": "Newton*meter (N*m)"
+      },
+      {
+        "name": "Chumbakiye Dwidhruva Ko Ghumane Me Kiya Gaya Karya Va Sthitij Urja",
+        "formula": "W = M * B * (cos theta1 - cos theta2),  U = - M_vec . B_vec = - M * B * cos theta",
+        "meaning": "theta = 0 par U_min = -MB (sthayi samya), theta = 180 par U_max = +MB (asthayi samya)",
+        "unit": "Joule (J)"
+      },
+      {
+        "name": "Parikrami Electron Ka Chumbakiye Aaghurna",
+        "formula": "M = (e * v * r) / 2 = [ e / (2 * m_e) ] * L",
+        "meaning": "L = m_e * v * r = koniya samveg",
+        "unit": "A*m^2"
+      },
+      {
+        "name": "Galvanometer Ka Shunt Pratirodh (Ammeter Hetu)",
+        "formula": "S = [ Ig / (I - Ig) ] * G",
+        "meaning": "G = galvanometer pratirodh, Ig = purna paimane vikshep dhara, I = mapne yogya kul dhara",
+        "unit": "Ohm (Omega)"
+      },
+      {
+        "name": "Galvanometer Ka Shreni Pratirodh (Voltmeter Hetu)",
+        "formula": "R = (V / Ig) - G",
+        "meaning": "V = mapne yogya kul voltage, G = galvanometer pratirodh",
+        "unit": "Ohm (Omega)"
+      },
+      {
+        "name": "Dhara Sugrahita Evam Voltage Sugrahita",
+        "formula": "Si = phi / I = (N * A * B) / C,  Sv = phi / V = (N * A * B) / (C * G)",
+        "meaning": "phi = vikshep, C = aainthan dridhata, G = pratirodh",
+        "unit": "Si: rad/A, Sv: rad/V"
+      }
+    ],
+    "oneLiners": [
+      {
+        "question": "Chumbakiye kshetra (B) kaisi rashi hai tatha iska SI matrak kya hai?",
+        "answer": "Yeh ek sadish (vector) rashi hai aur iska SI matrak Tesla (T) ya Weber/m^2 ya N/(A*m) hota hai."
+      },
+      {
+        "question": "Chumbakiye kshetra ka CGS matrak kya hai aur 1 Tesla kitne Gauss ke barabar hota hai?",
+        "answer": "CGS matrak Gauss (G) hai, tatha 1 Tesla = 10^4 Gauss hota hai."
+      },
+      {
+        "question": "Chumbakiye kshetra (B) ka vimiy sutra kya hota hai?",
+        "answer": "[M L^0 T^-2 A^-1] ya [M T^-2 A^-1]."
+      },
+      {
+        "question": "Nirvat ki chumbaksheelata (mu_0) ka maan tatha SI matrak kya hai?",
+        "answer": "mu_0 = 4pi * 10^-7 N/A^2 ya T*m/A hota hai."
+      },
+      {
+        "question": "mu_0 (chumbaksheelata) ka vimiy sutra kya hai?",
+        "answer": "[M L T^-2 A^-2]."
+      },
+      {
+        "question": "mu_0 * epsilon_0 ka maan kiske barabar hota hai?",
+        "answer": "1 / c^2 = 1 / (9 * 10^16) s^2/m^2 ke barabar."
+      },
+      {
+        "question": "Sthir aavesh kya utpann karta hai jabki gati-shil aavesh kya utpann karta hai?",
+        "answer": "Sthir aavesh keval vidyut kshetra utpann karta hai, jabki ek-samaan veg se gatiman aavesh vidyut tatha chumbakiye kshetra dono utpann karta hai."
+      },
+      {
+        "question": "Chumbakiye bal dwara aaveshit kan par kiya gaya karya kitna hota hai?",
+        "answer": "Sadaiv shunya (W = 0), kyunki chumbakiye bal sadaiv veg ke lambvat hota hai."
+      },
+      {
+        "question": "Ek-samaan chumbakiye kshetra ke lambvat pravesh karne wale aaveshit kan ka path kaisa hota hai?",
+        "answer": "Vrittakar (Circular) hota hai."
+      },
+      {
+        "question": "Chumbakiye kshetra me aaveshit kan ke vrittakar path ki trijya ka sutra kya hai?",
+        "answer": "r = (m * v) / (q * B)."
+      },
+      {
+        "question": "Kya cyclotron me electron ko twarit kiya ja sakta hai?",
+        "answer": "Nahi, kyunki electron ka dravyaman ati-sukshma hone se uska veg shighra hi relativistic ho jata hai."
+      },
+      {
+        "question": "Do samantar taro me saman disha me dhara pravahit hone par kaisa bal lagta hai?",
+        "answer": "Aakarshan bal (Attraction force)."
+      },
+      {
+        "question": "Do samantar taro me viparit disha me dhara pravahit hone par kaisa bal lagta hai?",
+        "answer": "Pratikarshan bal (Repulsion force)."
+      },
+      {
+        "question": "Chumbakiye dwidhruva aaghurna (M) ka SI matrak aur vima kya hai?",
+        "answer": "SI matrak Ampere-meter^2 (A*m^2) ya Joule/Tesla (J/T) hai tatha vima [L^2 A] hai."
+      },
+      {
+        "question": "Adarsh Ammeter ka pratirodh kitna hota hai?",
+        "answer": "Shunya (Zero)."
+      },
+      {
+        "question": "Adarsh Voltmeter ka pratirodh kitna hota hai?",
+        "answer": "Anant (Infinity)."
+      },
+      {
+        "question": "Galvanometer ko Ammeter me badalne ke liye kya joda jata hai?",
+        "answer": "Samantar kram me ek ati-alp pratirodh (Shunt)."
+      },
+      {
+        "question": "Galvanometer ko Voltmeter me badalne ke liye kya joda jata hai?",
+        "answer": "Shreni kram me ek uchh pratirodh."
+      },
+      {
+        "question": "Moving coil galvanometer me trijya chumbakiye kshetra kiske dwara utpann kiya jata hai?",
+        "answer": "Avtalaakar kate chumbakiye dhruvo tatha narm lohe ki belnakar krod dwara."
+      },
+      {
+        "question": "Bohr Magneton (mu_B) ka nirdharit maan kitna hota hai?",
+        "answer": "mu_B = 9.27 * 10^-24 A*m^2."
+      },
+      {
+        "question": "Crossed fields me bina vikshepan gujarne wale aaveshit kan ka veg kitna hota hai?",
+        "answer": "v = E / B."
+      },
+      {
+        "question": "Lambee parinalika ke bheetar chumbakiye kshetra ka sutra kya hai?",
+        "answer": "B = mu_0 * n * I = (mu_0 * N * I) / L."
+      },
+      {
+        "question": "Toroid ke bheetar khali sthan tatha bahar chumbakiye kshetra kitna hota hai?",
+        "answer": "Shunya (B = 0)."
+      },
+      {
+        "question": "Dharavahi vrittakar loop ke kendra par chumbakiye kshetra ki disha kaisi hoti hai?",
+        "answer": "Loop ke samtal ke abhilambvat (Right hand thumb rule ke anusaar)."
+      },
+      {
+        "question": "Jab aaveshit kan chumbakiye kshetra ki disha ke samantar (theta = 0) gati kare to bal kitna hoga?",
+        "answer": "Shunya (F = 0) aur kan saral rekha me bina mude chalta rahega."
+      }
+    ],
+    "shortAnswers": [
+      {
+        "question": "Lorentz bal (Lorentz Force) kya hai? Iska ganitiye vyanjak likhiye.",
+        "answer": [
+          "**Paribhasha:** Jab koi aaveshit kan (q) aise kshetra me gati karta hai jahan vidyut kshetra E_vec tatha chumbakiye kshetra B_vec dono ek sath upasthit hon, to us par karyarat kul parinami bal ko Lorentz bal kahte hain.",
+          "**Ganitiye Vyanjak:** F_vec = F_e_vec + F_m_vec = q * E_vec + q * (v_vec x B_vec) = q * [ E_vec + (v_vec x B_vec) ].",
+          "Yahan vidyut bal F_e = qE tatha chumbakiye bal F_m = q * v * B * sin(theta) hota hai."
+        ]
+      },
+      {
+        "question": "Biot-Savart niyam ki vyakhya karein tatha iska sutra likhein.",
+        "answer": [
+          "Biot aur Savart ke niyam ke anusaar, kisi dharavahi chalak ke alpansh dl ke dwara r doori par sthit bindu P par utpann chumbakiye kshetra dB:",
+          "1. Chalak me pravahit dhara I ke anukramanupati hota hai (dB proportional to I)",
+          "2. Alpansh ki lambai dl ke anukramanupati hota hai (dB proportional to dl)",
+          "3. Alpansh tatha preakshan bindu ko jodne wali rekha ke bich ke kon ki jya ke anukramanupati hota hai (dB proportional to sin theta)",
+          "4. Doori r ke varg ke vyutkramanupati hota hai (dB proportional to 1/r^2)",
+          "**Sutra:** dB = (mu_0 / 4pi) * [ (I * dl * sin theta) / r^2 ]. Sadish roop: dB_vec = (mu_0 / 4pi) * [ I * (dl_vec x r_vec) / r^3 ]."
+        ]
+      },
+      {
+        "question": "Ampere ka paripathiya niyam (Ampere's Circuital Law) kya hai?",
+        "answer": [
+          "**Kathan:** Nirvat me kisi band samvrit path ke anudish chumbakiye kshetra B_vec ka rekhiye samakalan (line integral) us band path dwara ghire kshetrfal se gujarne wali kul net dhara I ka mu_0 guna hota hai.",
+          "**Ganitiye Roop:** oint B_vec . dl_vec = mu_0 * I_net.",
+          "Yeh niyam Gauss ke niyam ke samatulya hai aur uchh samamiti wale dharavahi chalako ka chumbakiye kshetra nikalne me prayukt hota hai."
+        ]
+      },
+      {
+        "question": "Oordhwadhar oopar ki or chumbakiye kshetra B me ek dhan aaveshit kan ko poorva ki or phenkne par lage bal ki disha kya hogi?",
+        "answer": [
+          "Dhan aaveshit kan ka veg v_vec poorva (East) ki or hai tatha chumbakiye kshetra B_vec oordhwadhar upar (Upward) ki or hai.",
+          "Chumbakiye bal F_vec = q * (v_vec x B_vec) ke niyam tatha Fleming ke baaye hath ke niyam ke anusaar:",
+          "Jab tर्जनी (forefinger) oopar ki or aur madhyama (middle finger) poorva ki or ho, to angutha **Dakshin (South)** ki or sanket karta hai.",
+          "Atah kan par lagne wale chumbakiye bal ki disha dakshin ki or hogi."
+        ]
+      },
+      {
+        "question": "Biot-Savart niyam ka upayog kar R trijya ke dharavahi ardh-vrittakar taar ke kendra par chumbakiye kshetra nikaalein.",
+        "answer": [
+          "R trijya ke ardh-vrittakar chaap dwara kendra par banaya gaya kon theta = pi radian hota hai.",
+          "Chaap ke kendra par chumbakiye kshetra ka vyanjak: B = (mu_0 * I * theta) / (4 * pi * R).",
+          "theta = pi pratishthapit karne par: B = (mu_0 * I * pi) / (4 * pi * R) = **(mu_0 * I) / (4 * R)** Tesla.",
+          "Disha: Dahine hath ke niyam se kundali ke tal ke lambvat andar ya bahar ki or hogi."
+        ]
+      },
+      {
+        "question": "Chal kundali galvanometer ka karya-siddhant kya hai?",
+        "answer": [
+          "**Siddhant:** Jab kisi dharavahi kundali ko ek-samaan chumbakiye kshetra me rakha jata hai, to us par ek vikshepak bal-aaghurna (Deflecting torque) karyarat hota hai: tau = N * I * A * B * sin(theta).",
+          "Trijya chumbakiye kshetra me theta = 90 degree hone par tau = N I A B.",
+          "Yeh aaghurna suspension patti me aainthan aaghurna C*phi dwara santulit hota hai, jisse N I A B = C phi arthat **I proportional to phi** prapt hota hai. Vikshep dhara ke anukramanupati hota hai."
+        ]
+      },
+      {
+        "question": "Shunt kya hai? Iske do mukhya upayog samjhayein.",
+        "answer": [
+          "**Paribhasha:** Galvanometer ki kundali ke samantar kram me joda gaya ati-alp pratirodh ka taar 'Shunt' kahlata hai.",
+          "**Upayog:**",
+          "1. **Galvanometer ki suraksha:** Prabal dhara aane par adhiktam dhara shunt se hokar gujar jati hai, jisse galvanometer ki kundali jalne ya tutne se bach jati hai.",
+          "2. **Ammeter me rupantaran:** Iske dwara chal kundali galvanometer ko apekshit map-seema wale ammeter me parivartit kiya jata hai."
+        ]
+      },
+      {
+        "question": "Ammeter aur Voltmeter me kya mukhya antar hain?",
+        "answer": [
+          "1. **Mapan:** Ammeter paripath me vidyut dhara ki prabalata mapta hai, jabki Voltmeter do binduo ke bich vibhavantar mapta hai.",
+          "2. **Samyojan:** Ammeter ko sadaiv paripath ke **shreni kram** me lagate hain, jabki Voltmeter ko **samantar kram** me lagate hain.",
+          "3. **Pratirodh:** Ammeter ka pratirodh ati-alp hota hai (Adarsh ammeter = 0), jabki Voltmeter ka pratirodh ati-uchh hota hai (Adarsh voltmeter = infinity).",
+          "4. **Rupantaran:** Galvanometer ke samantar me alp pratirodh (shunt) jodkar ammeter banta hai, jabki shreni me uchh pratirodh jodkar voltmeter banta hai."
+        ]
+      }
+    ],
+    "longAnswers": [
+      {
+        "question": "Biot-Savart niyam likhein aur iska upayog karke dharavahi vrittakar kundali ke aksh par sthit kisi bindu par chumbakiye kshetra ka sutra vyutpanna karein.",
+        "answer": [
+          "**Biot-Savart Niyam:** dB = (mu_0 / 4pi) * (I * dl * sin theta / r^2).",
+          "**Aksh Par Derivation:**",
+          "1. Mana a trijya ki vrittakar kundali jisme I dhara pravahit hai. Kendra O se akshiya doori x par bindu P hai.",
+          "2. Kundali ke alpansh dl ke liye bindu P ki doori r = sqrt(a^2 + x^2) hai. dl aur r ke bich kon theta = 90 degree hota hai.",
+          "3. Alpansh ke karan chumbakiye kshetra: dB = (mu_0 / 4pi) * (I * dl / r^2).",
+          "4. dB ke ghatak: aksh ke lambvat ghatak dB*cos(alpha) paraspar nirasth ho jate hain aur aksh ke anudish ghatak dB*sin(alpha) aapas me jud jate hain.",
+          "5. Kul chumbakiye kshetra B = oint dB * sin(alpha) = oint [ (mu_0 / 4pi) * (I * dl / r^2) ] * (a / r).",
+          "6. B = [ (mu_0 * I * a) / (4pi * r^3) ] * oint dl = [ (mu_0 * I * a) / (4pi * r^3) ] * (2pi * a).",
+          "7. r = (a^2 + x^2)^(1/2) rakhne par tatha N phero ke liye: **B = (mu_0 * N * I * a^2) / [ 2 * (a^2 + x^2)^(3/2) ]** Tesla.",
+          "**Kendra Par (x = 0):** B = (mu_0 * N * I) / (2 * a)."
+        ]
+      },
+      {
+        "question": "Do samantar dharavahi chalako ke bich lagne wale bal ka vyanjak prapt karein tatha iske aadhar par 1 Ampere ki manak paribhasha dein.",
+        "answer": [
+          "**Bal Ka Vyutpatti:**",
+          "1. Mana do lambe samantar taar 1 aur 2 hain jinme kramashah I1 aur I2 dharaye pravahit hain aur bich ki doori r hai.",
+          "2. Taar 1 ke karan r doori par chumbakiye kshetra: B1 = (mu_0 * I1) / (2 * pi * r).",
+          "3. Taar 2 ki L lambai par karyarat bal F2 = I2 * B1 * L * sin 90 = I2 * [ (mu_0 * I1) / (2 * pi * r) ] * L.",
+          "4. Prati ekank lambai par bal: **f = F / L = (mu_0 / 2pi) * [ (I1 * I2) / r ] = 2 * 10^-7 * [ (I1 * I2) / r ] N/m**.",
+          "5. Dhara saman disha me hone par aakarshan bal tatha viparit disha me hone par pratikarshan bal lagta hai.",
+          "**1 Ampere Ki Paribhasha:** Yadi I1 = I2 = 1 A tatha r = 1 m ho, to f = 2 * 10^-7 N/m. Atah 1 Ampere wah niyat dhara hai jo nirvat me 1 m doori par sthit do anant lambai ke seedhe samantar taro me pravahit hone par unki prati meter lambai par 2 * 10^-7 N ka bal aropit kare."
+        ]
+      },
+      {
+        "question": "Ek-samaan chumbakiye kshetra me aaveshit kan ki vrittakar gati ka varnan karein tatha vrittakar path ki trijya, aavartkaal va cyclotron aavriti ka vyanjak gyat karein.",
+        "answer": [
+          "**Vrittakar Gati:** Jab m dravyaman aur q aavesh ka kan chumbakiye kshetra B ke lambvat (theta = 90) v veg se pravesh karta hai, to chumbakiye bal F = qvB sadaiv veg ke lambvat hota hai. Yeh bal abhikendra bal pradan karta hai jisse kan vrittakar path par gati karta hai.",
+          "1. **Trijya (r):** m * v^2 / r = q * v * B => **r = (m * v) / (q * B) = p / (q * B)**.",
+          "2. **Aavartkaal (T):** Ek purna chakkar me laga samay T = (2 * pi * r) / v = (2 * pi / v) * (m * v / qB) => **T = (2 * pi * m) / (q * B)**.",
+          "3. **Aavriti (f):** f = 1 / T => **f = (q * B) / (2 * pi * m)**.",
+          "**Nishkarsh:** Aavartkaal T tatha aavriti f kan ke veg v tatha path ki trijya r par nirbhar nahi karte."
+        ]
+      },
+      {
+        "question": "Cyclotron ki rachna, siddhant aur karyavidhi ka sachitra varnan karein tatha bataiye ki iske dwara dhanaveshit kan twarit kaise hote hain.",
+        "answer": [
+          "**Siddhant:** Aaveshit kan ka parikraman aavartkaal T = 2pi*m / (qB) uske veg par nirbhar nahi karta. Chumbakiye kshetra kan ko vrittakar path me ghumata hai jabki pratyavarti vidyut kshetra Dees ke bich antaral me use baar-baar twarit karta hai.",
+          "**Rachna:** Isme D-aakar ke do khokhale dhaatvik patra (D1 aur D2) hote hain jinhe Dees kahte hain. Yeh ek prabal electromagnet ke dhruvo ke bich sthit hote hain. Dees ko ek high-frequency oscillator (10^4 - 10^5 V) se joda jata hai.",
+          "**Karyavidhi:** Kendra par sthit srot se utpann dhanayan us Dee ki or aakarshit hota hai jo us samay rin vibhav par ho. Dees ke andar vidyut kshetra shunya hota hai, atah chumbakiye kshetra use ardh-vrittakar path par ghumakar punah antaral me lata hai. Antaral me aate hi Dees ki polarity ulat jati hai aur kan punah twarit hota hai. Pratyek chakra me veg badhne se path ki trijya badhti jati hai (spiral path). Ant me deflector plate dwara kan ko target par daag diya jata hai.",
+          "**Adhiktam Urja:** K_max = (q^2 * B^2 * R^2) / (2 * m)."
+        ]
+      },
+      {
+        "question": "Ampere ka paripathiya niyam likhein tatha iski sahayata se anant lambai ki dharavahi parinalika ke bheetar chumbakiye kshetra ka sutra vyutpanna karein.",
+        "answer": [
+          "**Ampere Ka Niyam:** oint B_vec . dl_vec = mu_0 * I_net.",
+          "**Parinalika Hetu Derivation:**",
+          "1. Mana lambee parinalika me prati ekank lambai me phero ki sankhya n hai aur dhara I hai.",
+          "2. Aayatakara path abcd me oint B_vec . dl_vec = int_a^b B.dl + int_b^c B.dl + int_c^d B.dl + int_d^a B.dl.",
+          "3. Bhuja ab (lambai L) ke anudish: B * L.",
+          "4. Bhuja bc aur da par theta = 90 degree hone se samakalan = 0.",
+          "5. Bhuja cd parinalika ke bahar hone se B = 0, atah samakalan = 0.",
+          "6. oint B_vec . dl_vec = B * L.",
+          "7. Paribaddh net dhara = (n * L) * I.",
+          "8. B * L = mu_0 * (n * L * I) => **B = mu_0 * n * I** = **(mu_0 * N * I) / L**."
+        ]
+      },
+      {
+        "question": "Toroid kya hai? Ampere ke paripathiya niyam se toroid ke core ke bheetar chumbakiye kshetra ka vyanjak gyat karein.",
+        "answer": [
+          "**Paribhasha:** Vrittakar roop me modi gayi lambee band parinalika ko Toroid kahte hain.",
+          "**Derivation:**",
+          "1. Core ke bheetar r trijya ke samkendriya vrittakar Amperian loop ki kalpana karte hain.",
+          "2. Path ke pratyek bindu par B aur dl saman disha me hain (theta = 0).",
+          "3. oint B_vec . dl_vec = B * oint dl = B * (2 * pi * r).",
+          "4. Yadi toroid me kul phere N hon, to loop dwara ghire kshetrfal se gujarne wali kul dhara I_net = N * I.",
+          "5. Ampere ke niyam se: B * (2 * pi * r) = mu_0 * (N * I) => **B = (mu_0 * N * I) / (2 * pi * r)**.",
+          "6. Chunki n = N / (2 * pi * r) prati ekank lambai me phere hain, atah **B = mu_0 * n * I**.",
+          "Toroid ke aantarik khali sthan tatha bahar dhara ghire na hone ke karan B = 0 hota hai."
+        ]
+      },
+      {
+        "question": "Ek-samaan chumbakiye kshetra me swatantrata-poorvak latkaye gaye dharavahi loop par karyakari torque ka vyanjak prapt karein. Yeh kab mahattam hota hai?",
+        "answer": [
+          "**Derivation:**",
+          "1. Mana a lambai aur b chaudai ka aayatakara loop PQRS ek-samaan chumbakiye kshetra B me rakha hai aur isme I dhara pravahit ho rahi hai.",
+          "2. Bhuja QR aur SP par lagne wale bal परिमाण me barabar (F = I * B * b * sin theta) aur viparit disha me ek hi kriya-rekha ke anudish hone se nirasth ho jate hain.",
+          "3. Bhuja PQ aur RS par bal F = I * B * a hote hain. Yeh bal परिमाण me saman aur viparit hain kintu inki kriya-rekhaen alag-alag hain, atah yeh ek bal-yugma banate hain.",
+          "4. Bal-yugma aaghurna tau = Bal * Dono balo ke bich lambvat doori = (I * B * a) * (b * sin theta).",
+          "5. Chunki a * b = A (loop ka kshetrfal), atah tau = I * A * B * sin theta.",
+          "6. N phero ke liye: **tau = N * I * A * B * sin theta = M * B * sin theta** (Sadish roop: tau_vec = M_vec x B_vec).",
+          "**Mahattam Torque Ki Sthiti:** Jab loop ke tal par khincha gaya abhilamb chumbakiye kshetra ke lambvat ho (theta = 90 degree), tab **tau_max = N I A B = M B** (adhiktam) hota hai."
+        ]
+      },
+      {
+        "question": "Chal-kundali galvanometer ki sanrachna, siddhant tatha karyapranali samjhayein. Iski dhara sugrahita ka vyanjak likhein.",
+        "answer": [
+          "**Sanrachna:** Isme narm lohe ki belnakar krod C par taambe ke taar ki aayatakara kundali lapti hoti hai, jo avtalaakar kate do sthayi chumbakiye dhruvo (N-S) ke bich phosphor-bronze patti dwara latki hoti hai. Niche ek baal-kamani lagi hoti hai.",
+          "**Siddhant:** Trijya kshetra me kundali par vikshepak bal-aaghurna tau = NIAB lagta hai. Iske virodh me kamani me aainthan bal-aaghurna tau' = C * phi utpann hota hai.",
+          "Santulan ki sthiti me: NIAB = C * phi => **I = (C / NAB) * phi**.",
+          "Atah I proportional to phi (vikshep dhara ke anukramanupati hota hai).",
+          "**Dhara Sugrahita (Current Sensitivity):** Si = phi / I = **(N * A * B) / C**.",
+          "Ise badhane ke upay: N, A aur B ko badhakar tatha C (aainthan dridhata) ko ghatakar."
+        ]
+      },
+      {
+        "question": "Galvanometer ko Ammeter tatha Voltmeter me kis prakar badla jata hai? Avashyak sutro ka nigaman karein.",
+        "answer": [
+          "**(a) Ammeter Me Rupantaran:**",
+          "Galvanometer ki kundali ke samantar kram me ek ati-alp pratirodh (Shunt - S) lagate hain.",
+          "Mana galvanometer ka pratirodh G hai aur purna vikshep dhara Ig hai. Paripath ki kul dhara I mapne ke liye bachi hui dhara (I - Ig) shunt se gujarni chahiye.",
+          "Samantar me vibhavantar barabar hota hai: V_G = V_S => Ig * G = (I - Ig) * S => **S = [ Ig / (I - Ig) ] * G**.",
+          "**(b) Voltmeter Me Rupantaran:**",
+          "Galvanometer ke shreni kram me ek uchh pratirodh R joda jata hai.",
+          "Mana V volt pararas ka voltmeter banana hai. Ohm ke niyam se: V = Ig * (G + R) => G + R = V / Ig => **R = (V / Ig) - G**."
+        ]
+      },
+      {
+        "question": "PDF ke sabhi 13 numerical prashno ka purna charanbaddh hal prastut karein.",
+        "answer": [
+          "**Prashna 1:** N = 100, r = 8.0 cm = 0.08 m, I = 0.40 A. Kendra par B = (mu_0 * N * I) / (2 * r) = (4pi * 10^-7 * 100 * 0.40) / (2 * 0.08) = (4pi * 10^-7 * 40) / 0.16 = pi * 10^-4 T = **3.14 * 10^-4 T**.",
+          "**Prashna 2:** I = 35 A, r = 20 cm = 0.2 m. Anant lambai ke taar ka B = (mu_0 * I) / (2 * pi * r) = (2 * 10^-7 * 35) / 0.2 = **3.5 * 10^-5 T**.",
+          "**Prashna 3:** I = 50 A (Uttar se Dakshin), r = 2.5 m (East). B = (mu_0 * I) / (2 * pi * r) = (2 * 10^-7 * 50) / 2.5 = **4.0 * 10^-6 T**. Disha: Right hand rule se **Oordhwadhar oopar ki or (Vertically Upward)**.",
+          "**Prashna 4:** I = 90 A (East to West), r = 1.5 m (Niche). B = (2 * 10^-7 * 90) / 1.5 = **1.2 * 10^-5 T**. Disha: **Dakshin ki or (Southwards)**.",
+          "**Prashna 5:** I = 8 A, B = 0.15 T, theta = 30 degree. Prati meter bal f = F/L = I * B * sin theta = 8 * 0.15 * sin 30 = 8 * 0.15 * 0.5 = **0.6 N/m**.",
+          "**Prashna 6:** L = 3.0 cm = 0.03 m, I = 10 A, B = 0.27 T, theta = 90 degree. F = I * B * L * sin 90 = 10 * 0.27 * 0.03 * 1 = **8.1 * 10^-2 N**.",
+          "**Prashna 7:** I1 = 8.0 A, I2 = 5.0 A, r = 4.0 cm = 0.04 m, L = 10 cm = 0.1 m. F = [ (mu_0 / 2pi) * (I1 * I2 / r) ] * L = [ (2 * 10^-7 * 8 * 5) / 0.04 ] * 0.1 = [ 8 * 10^-5 / 0.04 ] * 0.1 = 2 * 10^-4 * 0.1 = **2.0 * 10^-5 N (Aakarshan)**.",
+          "**Prashna 8:** L = 80 cm = 0.8 m, 5 partein pratyek me 400 phere => kul phere N = 5 * 400 = 2000. I = 8.0 A. n = N/L = 2000 / 0.8 = 2500 turns/m. Kendra ke paas B = mu_0 * n * I = 4pi * 10^-7 * 2500 * 8.0 = 4pi * 10^-7 * 20000 = 8pi * 10^-3 T = **2.5 * 10^-2 T (ya 2.51 * 10^-2 T)**.",
+          "**Prashna 9:** Vargakar bhuja a = 10 cm = 0.1 m => A = (0.1)^2 = 0.01 m^2. N = 20, I = 12 A, B = 0.80 T, theta = 30 degree. tau = N * I * A * B * sin theta = 20 * 12 * 0.01 * 0.80 * sin 30 = 2.4 * 0.80 * 0.5 = **0.96 N*m**.",
+          "**Prashna 10:** M1: R1 = 10, N1 = 30, A1 = 3.6*10^-3, B1 = 0.25. M2: R2 = 14, N2 = 42, A2 = 1.8*10^-3, B2 = 0.50. C1 = C2. (a) Dhara sugrahita anupat (Si2 / Si1) = (N2 * A2 * B2) / (N1 * A1 * B1) = (42 * 1.8*10^-3 * 0.50) / (30 * 3.6*10^-3 * 0.25) = (37.8) / (27.0) = **1.4**. (b) Voltage sugrahita anupat (Sv2 / Sv1) = (Si2 / Si1) * (R1 / R2) = 1.4 * (10 / 14) = 1.4 * (5/7) = **1.0**.",
+          "**Prashna 11:** B = 6.5 G = 6.5 * 10^-4 T, v = 4.8 * 10^6 m/s, e = 1.6 * 10^-19 C, m = 9.1 * 10^-31 kg. Chunki F_vec sadaiv v_vec ke lambvat hai, atah path vrittakar hoga. r = (m * v) / (e * B) = (9.1 * 10^-31 * 4.8 * 10^6) / (1.6 * 10^-19 * 6.5 * 10^-4) = (43.68 * 10^-25) / (10.4 * 10^-23) = 4.2 * 10^-2 m = **4.2 cm**.",
+          "**Prashna 12:** Parikraman aavriti f = (e * B) / (2 * pi * m) = (1.6 * 10^-19 * 6.5 * 10^-4) / (2 * 3.1416 * 9.1 * 10^-31) = (1.04 * 10^-22) / (5.717 * 10^-30) = **1.82 * 10^7 Hz = 18.2 MHz**. Yeh veg par nirbhar nahi karta.",
+          "**Prashna 13:** (a) N = 30, r = 8.0 cm = 0.08 m => A = pi * (0.08)^2 = 0.0201 m^2. I = 6.0 A, B = 1.0 T, theta = 60 degree. Prati-aaghurna tau = N * I * A * B * sin theta = 30 * 6.0 * 0.0201 * 1.0 * sin 60 = 3.618 * 0.866 = **3.13 N*m**. (b) Nahi, parinam a-parivartit rahega kyunki torque keval kundali ke kshetrfal A par nirbhar karta hai, uski aakriti par nahi."
+        ]
+      }
+    ],
+    "diagrams": [
+      {
+        "title": "Biot-Savart Niyam - Dharavahi Chalak Alpansh",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 200' width='100%' height='200'><rect width='600' height='200' fill='#f8fafc'/><path d='M 120 180 Q 200 120, 220 20' stroke='#2563eb' stroke-width='3' fill='none'/><line x1='180' y1='110' x2='440' y2='60' stroke='#64748b' stroke-width='1.5' stroke-dasharray='4'/><circle cx='440' cy='60' r='5' fill='#ef4444'/><text x='455' y='65' font-size='14' font-weight='bold' fill='#ef4444'>P (dB)</text><line x1='175' y1='120' x2='190' y2='95' stroke='#dc2626' stroke-width='4'/><text x='150' y='105' font-size='13' font-weight='bold' fill='#dc2626'>I dl</text><text x='310' y='75' font-size='13' font-weight='bold' fill='#0f172a'>r</text><text x='220' y='105' font-size='13' font-weight='bold' fill='#059669'>θ</text></svg>",
+        "caption": "Dharavahi chalak ke alpansh I dl dwara r doori par chumbakiye kshetra dB = (mu_0/4pi)*(I dl sin theta / r^2)"
+      },
+      {
+        "title": "Chumbakiye Kshetra Me Aaveshit Kan Ki Vrittakar Gati",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 240' width='100%' height='240'><rect width='600' height='240' fill='#f1f5f9'/><circle cx='300' cy='120' r='75' fill='none' stroke='#3b82f6' stroke-width='2.5'/><circle cx='300' cy='45' r='7' fill='#ef4444'/><line x1='300' y1='45' x2='300' y2='85' stroke='#10b981' stroke-width='2'/><text x='305' y='75' font-size='12' fill='#10b981' font-weight='bold'>F</text><line x1='300' y1='45' x2='240' y2='45' stroke='#dc2626' stroke-width='2'/><text x='245' y='40' font-size='12' fill='#dc2626' font-weight='bold'>v</text><text x='300' y='125' font-size='13' fill='#475569' text-anchor='middle'>r = mv / qB</text><text x='300' y='225' font-size='13' fill='#0f172a' font-weight='bold' text-anchor='middle'>Chumbakiye bal kendra ki or lagta hai (Abhikendra bal)</text></svg>",
+        "caption": "Ek-samaan chumbakiye kshetra ke lambvat gatiman aavesh ka vrittakar path"
+      },
+      {
+        "title": "Chal Kundali Galvanometer Ka Siddhant Aarek",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 220' width='100%' height='220'><rect width='600' height='220' fill='#fafafa'/><path d='M 120 50 Q 180 110, 120 170' fill='#ef4444'/><text x='95' y='115' font-size='16' font-weight='bold' fill='#fff'>N</text><path d='M 480 50 Q 420 110, 480 170' fill='#3b82f6'/><text x='485' y='115' font-size='16' font-weight='bold' fill='#fff'>S</text><circle cx='300' cy='110' r='40' fill='#cbd5e1' stroke='#475569' stroke-width='2'/><text x='300' y='115' font-size='12' font-weight='bold' fill='#0f172a' text-anchor='middle'>Krod</text><line x1='300' y1='110' x2='230' y2='25' stroke='#dc2626' stroke-width='2'/><text x='210' y='20' font-size='13' font-weight='bold' fill='#dc2626'>Sanketak</text><text x='300' y='200' font-size='13' font-weight='bold' fill='#047857' text-anchor='middle'>Trijya Chumbakiye Kshetra (tau = NIAB)</text></svg>",
+        "caption": "Avtalaakar chumbakiye dhruva tatha belnakar krod dwara utpann trijya chumbakiye kshetra"
+      }
+    ],
+    "revision": [
+      {
+        "title": "Chapter 4 Quick Revision Points (Board Exam Special)",
+        "points": [
+          "Oersted Prayog: Dharavahi chalak apne charon or chumbakiye kshetra utpann karta hai.",
+          "Biot-Savart Niyam: dB = (mu_0 / 4pi) * (I * dl * sin theta / r^2) (Tesla).",
+          "mu_0 = 4pi * 10^-7 N/A^2, vimiy sutra [M L T^-2 A^-2], c = 1 / sqrt(mu_0 * epsilon_0).",
+          "Vrittakar loop ke kendra par B = (mu_0 * N * I) / (2 * r), ardh-vritt par B = (mu_0 * I) / (4 * r).",
+          "Anant lambai ke seedhe taar ka B = (mu_0 * I) / (2 * pi * r).",
+          "Ampere ka Niyam: oint B_vec . dl_vec = mu_0 * I_net.",
+          "Parinalika ke bheetar B = mu_0 * n * I, sire par B = (1/2) * mu_0 * n * I.",
+          "Toroid ke core me B = (mu_0 * N * I) / (2 * pi * r), bahar B = 0.",
+          "Lorentz bal: F_vec = q * [E_vec + (v_vec x B_vec)]. Chumbakiye bal dwara kiya gaya karya W = 0.",
+          "Lambvat kshetra me pravesh karne par path vrittakar: r = mv / (qB), aavartkaal T = 2pi*m / (qB) (veg se swatantra).",
+          "Cyclotron aavriti f = qB / (2pi*m), adhiktam urja K_max = (q^2 * B^2 * R^2) / (2m). Electron va neutron twarit nahi hote.",
+          "Dharavahi chalak par bal: F = I * B * L * sin theta.",
+          "Do samantar taro ke bich bal: f = (mu_0 / 2pi) * (I1 * I2 / r). Saman disha me aakarshan, viparit me pratikarshan.",
+          "1 Ampere: Wah dhara jo 1 m doori par taro me 2 * 10^-7 N/m ka bal utpann kare.",
+          "Dharavahi loop par torque: tau = N I A B sin theta = M B sin theta (tau_max = M B jab theta = 90).",
+          "Chumbakiye dwidhruva aaghurna M = N I A (A*m^2). Parikrami electron ka M = evr / 2.",
+          "Chal kundali galvanometer me I = (C / NAB) * phi. Trijya kshetra me tau sadaiv adhiktam rahta hai.",
+          "Ammeter banane hetu samantar me Shunt S = [Ig / (I - Ig)] * G (Adarsh ammeter pratirodh = 0).",
+          "Voltmeter banane hetu shreni me uchh pratirodh R = (V / Ig) - G (Adarsh voltmeter pratirodh = infinity)."
+        ]
+      },
+      {
+        "title": "Samanyatah Bhramit Karne Wale Bindu (Common Exam Traps)",
+        "points": [
+          "Bhram: Chumbakiye kshetra me gatiman aavesh ki kinetic energy badhti hai. Satya: Chumbakiye bal sadaiv veg ke lambvat hota hai, atah kary shunya hota hai aur chaal va kinetic energy niyat rahti hai.",
+          "Bhram: Cyclotron dwara kisi bhi kan ko twarit kiya ja sakta hai. Satya: Neutron (aaveshheen) aur electron (ati-halka dravyaman) ko twarit nahi kiya ja sakta.",
+          "Bhram: Do samantar dharavahi taar sadaiv pratikarshit karte hain. Satya: Dhara saman disha me hone par aakarshit tatha viparit hone par pratikarshit karte hain.",
+          "Bhram: Ammeter ka pratirodh anant hota hai. Satya: Ammeter ka pratirodh shunya (ati-alp) hota hai, jabki Voltmeter ka pratirodh anant hota hai."
+        ]
+      }
+    ]
+  }
+}
