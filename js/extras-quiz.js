@@ -36,11 +36,12 @@
       X.store().active = {
         id: 'x' + Date.now(), kind: o.kind, subject: o.subject, title: o.title,
         backPath: o.backPath || '/extras', introPath: o.introPath || o.backPath || '/extras', bestKey: o.bestKey || '',
-        questions: qs, answers: qs.map(function () { return null; }), index: 0, elapsed: 0,
+        ng: o.ng || null, vault: o.vault || null, questions: qs, answers: qs.map(function () { return null; }), index: 0, elapsed: 0,
         limitSec: o.limitMinutes > 0 ? Math.round(o.limitMinutes * 60) : 0, timeUp: false,
         startedAt: new Date().toISOString()
       };
       persist();
+      if (M.Sound) M.Sound.play('start');
       M.Router.go('/xquiz');
     }
     var cur = active();
@@ -130,7 +131,7 @@
     if (!a) {
       return X.view({ html: '<section class="page xs">' + X.emptyHtml('📝', 'अभी कोई अभ्यास चालू नहीं है', 'Mixed Practice या PYQ से शुरू करो।', 'नोट्स · PYQ · Practice', '/extras') + '</section>', title: 'अभ्यास', back: '/extras' });
     }
-    return X.view({ html: '<section class="page xs"><div id="xqBody">' + bodyHtml() + '</div></section>', title: a.kind === 'pyq' ? 'PYQ Quiz' : 'Mixed Practice', sub: a.title, backAction: 'xq-leave', after: ensureTicker });
+    return X.view({ html: '<section class="page xs"><div id="xqBody">' + bodyHtml() + '</div></section>', title: a.kind === 'pyq' ? 'PYQ Quiz' : a.kind === 'ngame' ? 'Notes Game' : a.kind === 'vault' ? 'Vault Challenge' : 'Mixed Practice', sub: a.title, backAction: 'xq-leave', after: ensureTicker });
   }
 
   /* ---------- Actions ---------- */
@@ -203,6 +204,8 @@
     st.history = st.history.slice(-30);
     // सिर्फ़ आख़िरी 5 की पूरी Review रखो (जगह बचाने के लिए)
     for (var i = 0; i < st.history.length - 5; i++) delete st.history[i].review;
+    if (a.kind === 'ngame' && a.ng && M.NotesGame && M.NotesGame.onFinish) entry.ngame = M.NotesGame.onFinish(a, entry);
+    if (a.kind === 'vault' && a.vault && M.Vault && M.Vault.onFinish) entry.vault = M.Vault.onFinish(a, entry);
     if (a.bestKey) {
       var b = st.best[a.bestKey] || { attempts: 0, best: 0 };
       b.attempts += 1;
@@ -235,6 +238,19 @@
     var html = '<section class="page xs">';
     html += '<div class="card result-hero ' + (h.accuracy >= 50 ? 'ok' : 'info') + '"><div class="ring" style="--p:' + h.accuracy + '"><span>' + h.accuracy + '%</span></div>' +
       '<h2>' + esc(h.title) + '</h2><p>' + esc(msg) + '</p></div>';
+    if (h.ngame) {
+      var g = h.ngame;
+      var starTxt = g.stars ? ' ' + new Array(g.stars + 1).join('⭐') : '';
+      html += g.levelUp ? '<div class="banner ok levelup"><span>🎉 <b>LEVEL UP!</b> अब तुम Level ' + g.level + ' पर हो।' + starTxt + '</span></div>'
+        : g.cleared ? '<div class="banner info"><span>✅ Stage पास' + starTxt + ' — यह Stage पहले पूरा हो चुका था, इसलिए Level वही रहा (Level ' + g.level + ')।</span></div>'
+        : '<div class="banner warn"><span>Level बढ़ाने के लिए कम से कम ' + g.pass + '% चाहिए। Notes दोबारा पढ़ो और फिर कोशिश करो।</span></div>';
+    }
+    if (h.vault) {
+      var vg = h.vault;
+      html += vg.pass
+        ? '<div class="banner ok vault-open"><span>🔓 <b>Vault खुल गया!</b> ' + vg.minutes + ' मिनट का Timer अभी शुरू हो गया है।</span><div style="margin-top:8px"><button class="btn small" data-action="nav" data-to="/vault">🔓 Vault खोलो</button></div></div>'
+        : '<div class="banner warn"><span>Vault खोलने के लिए ' + vg.total + ' में से कम से कम ' + vg.needCorrect + ' सही (' + vg.need + '%) चाहिए। तुम्हारे ' + vg.correct + ' सही रहे। Vault अभी बंद है।</span></div>';
+    }
     html += '<div class="grid-3"><div class="stat"><b>' + h.total + '</b><small>कुल प्रश्न</small></div>' +
       '<div class="stat ok"><b>' + h.correct + '</b><small>सही</small></div>' +
       '<div class="stat bad"><b>' + h.wrong + '</b><small>गलत</small></div>' +
