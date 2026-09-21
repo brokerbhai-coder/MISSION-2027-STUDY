@@ -219,6 +219,7 @@
           return '<section class="nt-sec" data-cat="' + c.key + '"' + (i === 0 ? '' : ' hidden') + '><h2 class="sec-title">' + c.icon + ' ' + esc(c.label) + '</h2>' +
             L.cats[c.key].map(function (it) { return itemHtml(c.key, it); }).join('') + '</section>';
         }).join('') + '</div><p id="ntNone" class="empty" hidden>कुछ नहीं मिला।</p>';
+        html += M.NotesGame ? M.NotesGame.readCardHtml(s.id, no) : '';
         html += X.warnHtml(L.skipped, 'कुछ आइटम छोड़े गए');
         return page(html);
       });
