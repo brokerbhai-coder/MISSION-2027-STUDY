@@ -190,3 +190,18 @@ Repository में **Add file → Create new file** → नाम वाले
 | प्रश्न नहीं दिख रहे | Data Check में लिखा कारण देखो (दोहराई ID, कोई option खाली, answer गलत) |
 | नया upload दिख नहीं रहा | लिंक के आख़िर में `?v=2` जोड़ो, या browser में hard refresh |
 | JSON में गड़बड़ | कॉमा/कोट्स जाँचो; पूरी `chapter-XX.json` को jsonlint.com पर paste करके देखो |
+
+---
+
+## 9. नए Sections: My Notes · PYQ · Mixed Practice (नया)
+
+Bottom menu के **📓 नोट्स·PYQ** बटन से तीन नए sections खुलते हैं। ये Chapter Quiz से अलग हैं और अभी खाली हैं (Content आप जोड़ोगे)।
+पूरी जानकारी, JSON templates, manifest का तरीका और GitHub upload के steps: **`NEW-FEATURES-GUIDE.md`** में।
+बदलाव की सूची: `CHANGELOG.md` · जाँच की रिपोर्ट: `TESTING-REPORT.md`
+
+| नई फ़ाइल / folder | काम |
+|---|---|
+| `js/extras-core.js`, `js/extras-quiz.js`, `js/notes.js`, `js/pyq.js`, `js/practice.js` | नए sections का code |
+| `css/extras.css` | नए sections का design |
+| `data/notes/manifest.json`, `data/pyq/manifest.json`, `data/practice/manifest.json` | नई JSON फ़ाइलों की index (हर नई फ़ाइल के लिए एक entry) |
+| `data/templates/` | Notes / PYQ / Practice के JSON नमूने |
