@@ -449,3 +449,8 @@
     ]
   }
 }
+{
+  "subject": "physics",
+  "chapter": 1,
+  "file": "data/notes/physics/chapter-01.json"
+}
