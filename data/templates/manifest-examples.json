@@ -1,0 +1,20 @@
+{
+  "_help": "यह सिर्फ़ नमूना है — website इसे लोड नहीं करती। हर example को उसकी अपनी manifest फ़ाइल की list में डालो (कॉमा से अलग करके)।",
+  "notes_manifest_entry (data/notes/manifest.json)": {
+    "subject": "physics",
+    "chapter": 1,
+    "file": "data/notes/physics/chapter-01.json"
+  },
+  "pyq_manifest_entry (data/pyq/manifest.json)": {
+    "subject": "physics",
+    "year": "2024",
+    "file": "data/pyq/physics/2024.json",
+    "label": "वैकल्पिक: Set A"
+  },
+  "practice_manifest_entry (data/practice/manifest.json)": {
+    "subject": "physics",
+    "id": "set-01",
+    "title": "Practice Set 1",
+    "file": "data/practice/physics/set-01.json"
+  }
+}
