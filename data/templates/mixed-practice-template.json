@@ -1,0 +1,36 @@
+{
+  "_help": "एक Mixed Practice Set का नमूना। इसे data/practice/<subject>/set-01.json नाम से सेव करो और data/practice/manifest.json में entry जोड़ो। सिर्फ़ Objective (A-D) प्रश्न चलते हैं। \"chapter\" हर प्रश्न में उस Chapter की संख्या है जिससे प्रश्न आया (वैकल्पिक, पर Result में Chapter-वार नतीजा दिखाने के काम आता है)। हर id इस फ़ाइल में अलग होनी चाहिए। timeLimitMinutes वैकल्पिक है (बिना लिखे count-up timer चलता है)।",
+  "schemaVersion": 1,
+  "subject": "यहाँ subject id (जैसे physics)",
+  "title": "Practice Set 1",
+  "description": "यहाँ छोटा विवरण (वैकल्पिक)",
+  "timeLimitMinutes": 30,
+  "questions": [
+    {
+      "id": "MIX-EXAMPLE-001",
+      "chapter": 1,
+      "question": "यहाँ प्रश्न लिखो",
+      "options": {
+        "A": "विकल्प A",
+        "B": "विकल्प B",
+        "C": "विकल्प C",
+        "D": "विकल्प D"
+      },
+      "answer": "A",
+      "explanation": "यहाँ उत्तर की आसान व्याख्या"
+    },
+    {
+      "id": "MIX-EXAMPLE-002",
+      "chapter": 2,
+      "question": "यहाँ प्रश्न लिखो",
+      "options": {
+        "A": "विकल्प A",
+        "B": "विकल्प B",
+        "C": "विकल्प C",
+        "D": "विकल्प D"
+      },
+      "answer": "A",
+      "explanation": "यहाँ उत्तर की आसान व्याख्या"
+    }
+  ]
+}
