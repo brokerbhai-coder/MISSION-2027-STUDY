@@ -1,0 +1,4 @@
+{
+  "_help": "हर Practice Set की फ़ाइल यहाँ एक entry से जुड़ती है। id सिर्फ़ अक्षर, अंक, - या _ (जैसे set-01)। नमूना data/templates/manifest-examples.json में है।",
+  "practice": []
+}
