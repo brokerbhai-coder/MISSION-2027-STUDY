@@ -1,0 +1,99 @@
+{
+  "_help": "एक Chapter की Notes फ़ाइल का नमूना। सिर्फ़ वही categories रखो जो उस Chapter में काम की हैं — जो खाली या गैर-ज़रूरी हों उन्हें पूरा हटा दो। इसे data/notes/<subject>/chapter-XX.json नाम से सेव करो और data/notes/manifest.json में entry जोड़ो। Text में **मोटा** लिख सकते हो।",
+  "schemaVersion": 1,
+  "subject": "यहाँ subject id (जैसे physics)",
+  "chapter": 1,
+  "title": "यहाँ Chapter का नाम",
+  "categories": {
+    "chapterNotes": [
+      {
+        "heading": "यहाँ शीर्षक",
+        "content": [
+          "पहला अनुच्छेद",
+          "दूसरा अनुच्छेद"
+        ],
+        "points": [
+          "मुख्य बिंदु 1",
+          "मुख्य बिंदु 2"
+        ]
+      }
+    ],
+    "oneLiners": [
+      {
+        "question": "यहाँ एक पंक्ति वाला प्रश्न",
+        "answer": "यहाँ एक पंक्ति का उत्तर"
+      }
+    ],
+    "theory": [
+      {
+        "title": "यहाँ Topic का नाम",
+        "content": [
+          "Topic की व्याख्या"
+        ],
+        "points": [
+          "बिंदु 1"
+        ]
+      }
+    ],
+    "shortAnswers": [
+      {
+        "question": "यहाँ लघु उत्तरीय प्रश्न",
+        "answer": [
+          "उत्तर का पहला भाग",
+          "उत्तर का दूसरा भाग"
+        ]
+      }
+    ],
+    "longAnswers": [
+      {
+        "question": "यहाँ दीर्घ उत्तरीय प्रश्न",
+        "answer": [
+          "उत्तर का पहला अनुच्छेद",
+          "उत्तर का दूसरा अनुच्छेद"
+        ]
+      }
+    ],
+    "definitions": [
+      {
+        "term": "यहाँ शब्द",
+        "definition": "यहाँ परिभाषा"
+      }
+    ],
+    "formulas": [
+      {
+        "name": "यहाँ सूत्र का नाम",
+        "formula": "यहाँ सूत्र लिखो",
+        "meaning": "यहाँ सूत्र के चिह्नों का अर्थ",
+        "unit": "यहाँ मात्रक (वैकल्पिक)"
+      }
+    ],
+    "diagrams": [
+      {
+        "title": "चित्र का नाम (फ़ाइल से)",
+        "image": "notes-assets/physics/example.png",
+        "caption": "चित्र के नीचे का वाक्य (वैकल्पिक)"
+      },
+      {
+        "title": "चित्र का नाम (SVG सीधे JSON में)",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 40'><text x='5' y='25'>यहाँ SVG</text></svg>"
+      }
+    ],
+    "revision": [
+      {
+        "title": "यहाँ Revision शीर्षक",
+        "points": [
+          "याद रखने वाला बिंदु 1",
+          "बिंदु 2"
+        ]
+      }
+    ],
+    "interactive": [
+      {
+        "title": "3D / Interactive का नाम",
+        "embed": "notes-assets/physics/example-3d.html",
+        "height": 360,
+        "caption": "वैकल्पिक"
+      }
+    ]
+  }
+}
