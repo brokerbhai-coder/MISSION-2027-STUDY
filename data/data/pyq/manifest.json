@@ -1,0 +1,4 @@
+{
+  "_help": "हर विषय-साल (या Set) की PYQ फ़ाइल यहाँ एक entry से जुड़ती है। एक साल में कई Set हों तो अलग entry और अलग \"label\" लिखो। नमूना data/templates/manifest-examples.json में है।",
+  "pyq": []
+}
