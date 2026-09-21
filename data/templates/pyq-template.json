@@ -1,0 +1,44 @@
+{
+  "_help": "एक विषय-साल (या Set) की PYQ फ़ाइल का नमूना। इसे data/pyq/<subject>/<year>.json नाम से सेव करो और data/pyq/manifest.json में entry जोड़ो। type: objective (options + answer A/B/C/D), short या long (answer text)। chapter और topic वैकल्पिक हैं। हर id इस फ़ाइल में अलग होनी चाहिए।",
+  "schemaVersion": 1,
+  "subject": "यहाँ subject id (जैसे physics)",
+  "year": "2024",
+  "title": "यहाँ प्रश्न-पत्र का नाम (वैकल्पिक)",
+  "examName": "यहाँ परीक्षा का नाम (वैकल्पिक)",
+  "questions": [
+    {
+      "id": "PYQ-EXAMPLE-001",
+      "type": "objective",
+      "chapter": 1,
+      "topic": "यहाँ Topic (वैकल्पिक)",
+      "question": "यहाँ Objective प्रश्न",
+      "options": {
+        "A": "विकल्प A",
+        "B": "विकल्प B",
+        "C": "विकल्प C",
+        "D": "विकल्प D"
+      },
+      "answer": "A",
+      "explanation": "यहाँ व्याख्या (वैकल्पिक)"
+    },
+    {
+      "id": "PYQ-EXAMPLE-002",
+      "type": "short",
+      "chapter": 1,
+      "marks": 2,
+      "question": "यहाँ लघु उत्तरीय प्रश्न",
+      "answer": "यहाँ उत्तर",
+      "explanation": "यहाँ व्याख्या (वैकल्पिक)"
+    },
+    {
+      "id": "PYQ-EXAMPLE-003",
+      "type": "long",
+      "marks": 5,
+      "question": "यहाँ दीर्घ उत्तरीय प्रश्न",
+      "answer": [
+        "उत्तर का पहला अनुच्छेद",
+        "उत्तर का दूसरा अनुच्छेद"
+      ]
+    }
+  ]
+}
