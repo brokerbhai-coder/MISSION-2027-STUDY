@@ -40,3 +40,13 @@
     "file": "data/notes/physics/chapter-08.json"
   }
 ]
+[
+  { "subject": "biology", "chapter": 1, "part": "complete", "file": "data/notes/biology/chapter-01.json" },
+  { "subject": "biology", "chapter": 2, "part": "complete", "file": "data/notes/biology/chapter-02.json" },
+  { "subject": "biology", "chapter": 3, "part": "complete", "file": "data/notes/biology/chapter-03.json" },
+  { "subject": "biology", "chapter": 4, "part": "complete", "file": "data/notes/biology/chapter-04.json" },
+  { "subject": "biology", "chapter": 5, "part": "complete", "file": "data/notes/biology/chapter-05.json" },
+  { "subject": "biology", "chapter": 6, "part": "complete", "file": "data/notes/biology/chapter-06.json" },
+  { "subject": "biology", "chapter": 7, "part": "complete", "file": "data/notes/biology/chapter-07.json" },
+  { "subject": "biology", "chapter": 8, "part": "complete", "file": "data/notes/biology/chapter-08.json" }
+]
