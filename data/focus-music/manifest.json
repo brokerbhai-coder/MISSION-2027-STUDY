@@ -1,0 +1,4 @@
+{
+  "_help": "यहाँ अपने पसंद के copyright-free गाने (mp3/ogg/wav/m4a) जोड़ो। हर गाने के लिए एक entry: {\"file\":\"data/focus-music/जैसा-नाम.mp3\",\"title\":\"गाने का नाम\"}। कोई गाना न हो (list खाली) तो website अपनी हल्की background आवाज़ बजाती है — कुछ नहीं टूटता।",
+  "tracks": []
+}
