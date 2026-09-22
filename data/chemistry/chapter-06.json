@@ -1,0 +1,8 @@
+{
+  "_help": "प्रश्न इसी 'questions' list में जोड़ो। हर प्रश्न का format data/question-template.json में देखो। अभी यह list खाली है।",
+  "subject": "chemistry",
+  "chapter": 6,
+  "title": "तत्त्वों के निष्कर्षण के सिद्धांत एवं प्रक्रम",
+  "status": "pending-pdf-questions",
+  "questions": []
+}
