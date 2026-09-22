@@ -15,7 +15,7 @@
 
   var S = { _log: [] };
   var KEY = 'mission2027_sound_v1';
-  var cfg = { on: true, focus: false };
+  var cfg = { on: true, focus: true };   // Focus आवाज़ अब पहले से चालू (default ON)
   var ctx = null, master = null, amb = null;
 
   try {
