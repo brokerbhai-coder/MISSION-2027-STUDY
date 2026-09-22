@@ -1,0 +1,8 @@
+{
+  "_help": "प्रश्न इसी 'questions' list में जोड़ो। हर प्रश्न का format data/question-template.json में देखो। अभी यह list खाली है।",
+  "subject": "mathematics",
+  "chapter": 13,
+  "title": "प्रायिकता",
+  "status": "pending-pdf-questions",
+  "questions": []
+}
