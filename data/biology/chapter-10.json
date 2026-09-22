@@ -1,0 +1,8 @@
+{
+  "_help": "प्रश्न इसी 'questions' list में जोड़ो। हर प्रश्न का format data/question-template.json में देखो। अभी यह list खाली है।",
+  "subject": "biology",
+  "chapter": 10,
+  "title": "मानव कल्याण में सूक्ष्मजीव",
+  "status": "pending-pdf-questions",
+  "questions": []
+}
