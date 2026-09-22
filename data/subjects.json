@@ -72,6 +72,55 @@
           "file": "data/physics/chapter-08.json",
           "notesReady": true,
           "notesUrl": null
+        },
+        {
+          "number": 9,
+          "title": "किरण प्रकाशिकी एवं प्रकाशिक यंत्र",
+          "file": "data/physics/chapter-09.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 10,
+          "title": "तरंग प्रकाशिकी",
+          "file": "data/physics/chapter-10.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 11,
+          "title": "विकिरण तथा द्रव्य की द्वैत प्रकृति",
+          "file": "data/physics/chapter-11.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 12,
+          "title": "परमाणु",
+          "file": "data/physics/chapter-12.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 13,
+          "title": "नाभिक",
+          "file": "data/physics/chapter-13.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 14,
+          "title": "अर्धचालक इलेक्ट्रॉनिकी: पदार्थ, युक्तियाँ तथा सरल परिपथ",
+          "file": "data/physics/chapter-14.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 15,
+          "title": "संचार व्यवस्था",
+          "file": "data/physics/chapter-15.json",
+          "notesReady": false,
+          "notesUrl": null
         }
       ]
     },
@@ -206,7 +255,99 @@
       "color": "#8b5cf6",
       "status": "available",
       "progression": "sequential",
-      "chapters": []
+      "chapters": [
+        {
+          "number": 1,
+          "title": "संबंध एवं फलन",
+          "file": "data/mathematics/chapter-01.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 2,
+          "title": "प्रतिलोम त्रिकोणमितीय फलन",
+          "file": "data/mathematics/chapter-02.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 3,
+          "title": "आव्यूह",
+          "file": "data/mathematics/chapter-03.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 4,
+          "title": "सारणिक",
+          "file": "data/mathematics/chapter-04.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 5,
+          "title": "सांतत्य तथा अवकलनीयता",
+          "file": "data/mathematics/chapter-05.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 6,
+          "title": "अवकलज के अनुप्रयोग",
+          "file": "data/mathematics/chapter-06.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 7,
+          "title": "समाकलन",
+          "file": "data/mathematics/chapter-07.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 8,
+          "title": "समाकलों के अनुप्रयोग",
+          "file": "data/mathematics/chapter-08.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 9,
+          "title": "अवकल समीकरण",
+          "file": "data/mathematics/chapter-09.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 10,
+          "title": "सदिश बीजगणित",
+          "file": "data/mathematics/chapter-10.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 11,
+          "title": "त्रिविमीय ज्यामिति",
+          "file": "data/mathematics/chapter-11.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 12,
+          "title": "रैखिक प्रोग्रामन",
+          "file": "data/mathematics/chapter-12.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 13,
+          "title": "प्रायिकता",
+          "file": "data/mathematics/chapter-13.json",
+          "notesReady": false,
+          "notesUrl": null
+        }
+      ]
     },
     {
       "id": "biology",
@@ -270,6 +411,62 @@
           "number": 8,
           "title": "मानव स्वास्थ्य एवं रोग",
           "file": "data/biology/chapter-08.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 9,
+          "title": "खाद्य उत्पादन में वृद्धि के उपाय",
+          "file": "data/biology/chapter-09.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 10,
+          "title": "मानव कल्याण में सूक्ष्मजीव",
+          "file": "data/biology/chapter-10.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 11,
+          "title": "जैव प्रौद्योगिकी: सिद्धांत एवं प्रक्रम",
+          "file": "data/biology/chapter-11.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 12,
+          "title": "जैव प्रौद्योगिकी एवं उसके उपयोग",
+          "file": "data/biology/chapter-12.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 13,
+          "title": "जीव और समष्टियाँ",
+          "file": "data/biology/chapter-13.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 14,
+          "title": "पारितंत्र",
+          "file": "data/biology/chapter-14.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 15,
+          "title": "जैव विविधता एवं संरक्षण",
+          "file": "data/biology/chapter-15.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 16,
+          "title": "पर्यावरण के मुद्दे",
+          "file": "data/biology/chapter-16.json",
           "notesReady": false,
           "notesUrl": null
         }
@@ -476,7 +673,190 @@
       "color": "#fb7185",
       "status": "available",
       "progression": "sequential",
-      "chapters": []
+      "chapters": [
+        {
+          "number": 1,
+          "title": "Poetry: Sweetest Love, I Do Not Goe",
+          "file": "data/english/chapter-01.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 2,
+          "title": "Poetry: Song of Myself",
+          "file": "data/english/chapter-02.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 3,
+          "title": "Poetry: Now the Leaves Are Falling Fast",
+          "file": "data/english/chapter-03.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 4,
+          "title": "Poetry: Ode to Autumn",
+          "file": "data/english/chapter-04.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 5,
+          "title": "Poetry: An Epitaph",
+          "file": "data/english/chapter-05.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 6,
+          "title": "Poetry: The Soldier",
+          "file": "data/english/chapter-06.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 7,
+          "title": "Poetry: Macavity: The Mystery Cat",
+          "file": "data/english/chapter-07.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 8,
+          "title": "Poetry: Fire-Hymn",
+          "file": "data/english/chapter-08.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 9,
+          "title": "Poetry: Snake",
+          "file": "data/english/chapter-09.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 10,
+          "title": "Poetry: My Grandmother's House",
+          "file": "data/english/chapter-10.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 11,
+          "title": "Prose: Indian Civilization and Culture",
+          "file": "data/english/chapter-11.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 12,
+          "title": "Prose: Bharat Is My Home",
+          "file": "data/english/chapter-12.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 13,
+          "title": "Prose: A Pinch of Snuff",
+          "file": "data/english/chapter-13.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 14,
+          "title": "Prose: I Have a Dream",
+          "file": "data/english/chapter-14.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 15,
+          "title": "Prose: Ideas That Have Helped Mankind",
+          "file": "data/english/chapter-15.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 16,
+          "title": "Prose: The Artist",
+          "file": "data/english/chapter-16.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 17,
+          "title": "Prose: A Child Is Born",
+          "file": "data/english/chapter-17.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 18,
+          "title": "Prose: How Free Is the Press",
+          "file": "data/english/chapter-18.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 19,
+          "title": "Prose: The Earth",
+          "file": "data/english/chapter-19.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 20,
+          "title": "Prose: India Through a Traveller's Eyes",
+          "file": "data/english/chapter-20.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 21,
+          "title": "Story of English: How English Began",
+          "file": "data/english/chapter-21.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 22,
+          "title": "Story of English: English Down the Ages",
+          "file": "data/english/chapter-22.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 23,
+          "title": "Story of English: Old English",
+          "file": "data/english/chapter-23.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 24,
+          "title": "Story of English: Middle English",
+          "file": "data/english/chapter-24.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 25,
+          "title": "Story of English: Modern English",
+          "file": "data/english/chapter-25.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 26,
+          "title": "Story of English: English as a World Language",
+          "file": "data/english/chapter-26.json",
+          "notesReady": false,
+          "notesUrl": null
+        }
+      ]
     }
   ]
 }
