@@ -59,9 +59,83 @@
     return p;
   };
 
-  // "**मोटा**" और नई line को सुरक्षित HTML में बदलना
+  /* ---------- गणित (LaTeX) का समर्थन ----------
+     text में  $...$  (line के अंदर) या  $$...$$  (अलग पंक्ति में बड़ा) लिखो, जैसे
+       $\frac{a}{b}$   या   $$\int_0^1 x\,dx = \frac{1}{2}$$
+     KaTeX (MIT licence) से सुंदर सूत्र बनते हैं। KaTeX पहले इंटरनेट (CDN) से आता है;
+     न आए तो अपनी लाइब्रेरी lib/katex/ से; वह भी न हो तो सूत्र सादे code-text में दिखता है (कुछ टूटता नहीं)।
+     $ चिह्न सचमुच लिखना हो तो \$ लिखो। */
+  var KATEX_CDN = 'https://cdn.jsdelivr.net/npm/katex@0.16.45/dist/';
+  var KATEX_LOCAL = 'lib/katex/';
+  var mathP = null;
+  var mathWaiters = [];
+  // Slow/कमज़ोर Internet पर KaTeX देर से (Timeout के बाद भी) Load हो सकती है।
+  // जो भी Page उस समय "Code Text" दिखा चुका है, उसे बाद में सही Formula में अपने-आप बदलने के लिए यह Callback रजिस्टर करो।
+  // अगर KaTeX पहले से मिल चुकी है तो Callback तुरंत चलेगा।
+  X.onMathReady = function (cb) {
+    if (window.katex) { try { cb(); } catch (e) { /* ignore */ } return; }
+    mathWaiters.push(cb);
+  };
+  function notifyMathReady() {
+    if (!window.katex || !mathWaiters.length) return;
+    var list = mathWaiters; mathWaiters = [];
+    list.forEach(function (cb) { try { cb(); } catch (e) { /* ignore */ } });
+  }
+  function loadKatexFrom(base) {
+    return new Promise(function (resolve) {
+      var done = false;
+      // ध्यान: Timeout के बाद भी यह Script Tag DOM में रहता है (हटाया नहीं जाता),
+      // इसलिए अगर Network धीरे-धीरे भी File पूरी Download कर ले, तो onload बाद में भी चलेगा
+      // और notifyMathReady() असली Formula दिखाने वाले Pages को जगा देगा।
+      function fin(v) { if (!done) { done = true; resolve(v); } if (v) notifyMathReady(); }
+      var css = document.createElement('link');
+      css.rel = 'stylesheet'; css.href = base + 'katex.min.css';
+      document.head.appendChild(css);
+      var js = document.createElement('script');
+      js.src = base + 'katex.min.js';
+      js.onload = function () { fin(!!window.katex); };
+      js.onerror = function () { try { css.remove(); js.remove(); } catch (e) { /* ignore */ } fin(false); };
+      // पहले 7 सेकंड था — कमज़ोर Mobile Network (2-3 KB/s जैसा) पर 270KB की Library के लिए बहुत कम पड़ता था
+      setTimeout(function () { fin(!!window.katex); }, 20000);
+      document.head.appendChild(js);
+    });
+  }
+  // गणित दिखाने से पहले बुलाओ; हमेशा resolve होता है (true = KaTeX मिला)
+  X.ensureMath = function () {
+    if (window.katex) return Promise.resolve(true);
+    if (!mathP) {
+      mathP = loadKatexFrom(KATEX_CDN).then(function (ok) { return ok ? true : loadKatexFrom(KATEX_LOCAL); }).then(function (ok) { if (!ok) mathP = null; return ok; });
+    }
+    return mathP;
+  };
+  // किसी भी data (list/object) में गणित ($) है तो ही KaTeX लोड करो
+  X.ensureMathFor = function (data) {
+    var has = false;
+    try { has = JSON.stringify(data).indexOf('$') >= 0; } catch (e) { has = false; }
+    return has ? X.ensureMath() : Promise.resolve(true);
+  };
+  function plainHtml(t) {
+    return esc(t).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>');
+  }
+  function mathHtml(tex, display) {
+    if (window.katex) {
+      try { return window.katex.renderToString(tex.trim(), { throwOnError: false, displayMode: display, strict: 'ignore', trust: false }); } catch (e) { /* नीचे सादा text */ }
+    }
+    return '<code class="x-tex">' + esc((display ? '$$' : '$') + tex + (display ? '$$' : '$')) + '</code>';
+  }
+  // "**मोटा**", नई line और $गणित$ को सुरक्षित HTML में बदलना
   X.rich = function (text) {
-    return esc(text).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>');
+    var s = String(text == null ? '' : text);
+    if (s.indexOf('$') < 0) return plainHtml(s);
+    s = s.replace(/\\\$/g, '\u0001');
+    var out = '', last = 0, m, re = /\$\$([\s\S]+?)\$\$|\$([^$\n]+?)\$/g;
+    function plain(t) { return plainHtml(t).replace(/\u0001/g, '$'); }
+    while ((m = re.exec(s))) {
+      out += plain(s.slice(last, m.index));
+      out += mathHtml((m[1] !== undefined ? m[1] : m[2]).replace(/\u0001/g, '$'), m[1] !== undefined);
+      last = re.lastIndex;
+    }
+    return out + plain(s.slice(last));
   };
   // string या string की list → paragraphs की list
   X.paras = function (v) {
@@ -122,10 +196,12 @@
       if (kind === 'notes') {
         var ch = parseInt(e.chapter, 10);
         if (!ch || !M.Subjects.chapter(sid, ch)) { warn(sid + ' का chapter ' + e.chapter + ' subjects.json में नहीं है'); return; }
-        var k = sid + '|' + ch;
-        if (seen[k]) { warn(sid + ' अध्याय ' + ch + ' दोबारा लिखा है (पहला वाला इस्तेमाल हुआ)'); return; }
+        // एक Chapter के Notes कई भागों (अलग-अलग फ़ाइलों) में हो सकते हैं — सब जुड़कर दिखते हैं
+        var k = sid + '|' + ch + '|' + file;
+        if (seen[k]) { warn(sid + ' अध्याय ' + ch + ' की यही फ़ाइल दोबारा लिखी है'); return; }
         seen[k] = true;
         en.chapter = ch;
+        en.part = typeof e.part === 'string' ? e.part.trim() : '';
       } else if (kind === 'pyq') {
         var yr = (typeof e.year === 'string' || typeof e.year === 'number') ? String(e.year).trim() : '';
         if (!yr || yr.length > 30) { warn('"year" नहीं लिखा या बहुत लंबा है'); return; }
@@ -154,6 +230,15 @@
   };
   X.entriesFor = function (mf, subject) {
     return mf.entries.filter(function (e) { return e.subject === subject; });
+  };
+  // Notes: किसी विषय के अलग-अलग Chapter नंबर (छोटे से बड़ा), भले ही Notes कई भागों में हों
+  X.notesChapters = function (mf, subject) {
+    var seen = {}, out = [];
+    X.entriesFor(mf, subject).forEach(function (e) { if (e.chapter && !seen[e.chapter]) { seen[e.chapter] = 1; out.push(e.chapter); } });
+    return out.sort(function (a, b) { return a - b; });
+  };
+  X.chapterEntries = function (mf, subject, chapter) {
+    return X.entriesFor(mf, subject).filter(function (e) { return e.chapter === chapter; });
   };
 
   /* ---------- अपना Storage (पुराने progress से अलग) ---------- */
@@ -314,7 +399,9 @@
       var n = ms[0], p = ms[1], m = ms[2];
       function cnt(mf, what) {
         if (mf.status === 'error') return 'manifest में गड़बड़ी — Data Check देखो';
-        return mf.entries.length ? mf.entries.length + ' ' + what + ' उपलब्ध' : 'Content जल्द जोड़ा जाएगा';
+        var num = mf.entries.length;
+        if (mf === n) { var seenC = {}; mf.entries.forEach(function (e) { seenC[e.subject + '|' + e.chapter] = 1; }); num = Object.keys(seenC).length; }
+        return num ? num + ' ' + what + ' उपलब्ध' : 'Content जल्द जोड़ा जाएगा';
       }
       var html = '<section class="page xs">';
       html += '<div class="banner info"><span>📌 ये सारे sections <b>Chapter Quiz से अलग</b> हैं। इनमें XP, chapter lock या पुराना progress नहीं बदलता।</span></div>';
@@ -360,7 +447,7 @@
         mf.entries.forEach(function (en) {
           var loader = k === 'notes' ? M.Notes && M.Notes.load : k === 'pyq' ? M.Pyq && M.Pyq.load : k === 'vault' ? M.Vault && M.Vault.load : M.Practice && M.Practice.load;
           if (!loader) return;
-          var tag = names[k] + ' · ' + (en.subject || en.id) + (en.chapter ? ' · अध्याय ' + en.chapter : '') + (en.year ? ' · ' + en.year : '') + (en.id ? ' · ' + en.id : '');
+          var tag = names[k] + ' · ' + (en.subject || en.id) + (en.chapter ? ' · अध्याय ' + en.chapter + (en.part ? ' (' + en.part + ')' : '') : '') + (en.year ? ' · ' + en.year : '') + (en.id ? ' · ' + en.id : '');
           jobs.push(loader(en).then(function (r) {
             if (r.status === 'ok') {
               lines.push({ cls: r.skipped && r.skipped.length ? 'warn' : 'ok', t: tag + ' — ' + r.count + ' आइटम सही' + (r.skipped && r.skipped.length ? ', ' + r.skipped.length + ' छोड़े गए: ' + r.skipped.slice(0, 3).join('; ') : '') });

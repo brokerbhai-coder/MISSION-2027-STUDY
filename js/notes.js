@@ -60,7 +60,13 @@
         o = { term: str(it.term), definition: X.paras(it.definition) };
         return o.term && o.definition.length ? o : null;
       case 'formulas':
-        o = { name: str(it.name), formula: str(it.formula), meaning: X.paras(it.meaning), unit: str(it.unit) };
+        o = { name: str(it.name), formula: str(it.formula), meaning: X.paras(it.meaning), unit: str(it.unit), examples: [] };
+        // हर सूत्र के साथ हल किए हुए उदाहरण (वैकल्पिक): { question, solution, source }
+        (Array.isArray(it.examples) ? it.examples : []).forEach(function (ex) {
+          if (!ex || typeof ex !== 'object') return;
+          var q = str(ex.question), sol = X.paras(ex.solution);
+          if (q && sol.length) o.examples.push({ question: q, solution: sol, source: str(ex.source).slice(0, 24) });
+        });
         return o.name && o.formula ? o : null;
       case 'diagrams':
         o = { title: str(it.title), caption: str(it.caption), media: media(it) };
@@ -104,6 +110,34 @@
     });
   };
 
+  // एक Chapter के सारे भागों (कई फ़ाइलें) को जोड़कर एक नतीजा
+  N.loadMany = function (entries) {
+    return Promise.all(entries.map(function (e) { return N.load(e); })).then(function (loads) {
+      var r = { status: 'ok', cats: {}, count: 0, skipped: [], error: '', title: '', file: entries[0].file };
+      var okAny = false;
+      loads.forEach(function (L, i) {
+        var tag = entries.length > 1 ? 'भाग ' + (entries[i].part || (i + 1)) + ': ' : '';
+        if (L.status === 'ok') {
+          okAny = true;
+          if (!r.title && L.title) r.title = L.title;
+          CATS.forEach(function (c) { if (L.cats[c.key]) r.cats[c.key] = (r.cats[c.key] || []).concat(L.cats[c.key]); });
+          r.count += L.count;
+          L.skipped.forEach(function (x) { r.skipped.push(tag + x); });
+        } else if (L.status === 'missing') r.skipped.push(tag + 'फ़ाइल नहीं मिली (' + entries[i].file + ')');
+        else if (L.status === 'error') r.skipped.push(tag + 'फ़ाइल पढ़ी नहीं जा सकी: ' + L.error + ' (' + entries[i].file + ')');
+        else r.skipped.push(tag + 'फ़ाइल में अभी कुछ नहीं है');
+      });
+      if (!okAny) {
+        var bad = loads.filter(function (L) { return L.status === 'error'; })[0] || loads.filter(function (L) { return L.status === 'missing'; })[0];
+        r.status = bad ? bad.status : 'empty';
+        r.error = bad && bad.error ? bad.error : '';
+        var idx = bad ? loads.indexOf(bad) : 0;
+        r.file = entries[idx].file;
+      }
+      return r;
+    });
+  };
+
   /* ---------- Rendering ---------- */
   function paraHtml(list) { return list.map(function (t) { return '<p>' + X.rich(t) + '</p>'; }).join(''); }
   function pointsHtml(list) { return list.length ? '<ul>' + list.map(function (t) { return '<li>' + X.rich(t) + '</li>'; }).join('') + '</ul>' : ''; }
@@ -111,6 +145,13 @@
     if (m.type === 'image') return '<img class="nt-media" loading="lazy" src="' + esc(m.src) + '" alt="' + esc(title) + '">';
     if (m.type === 'svg') return '<img class="nt-media" alt="' + esc(title) + '" src="data:image/svg+xml;charset=utf-8,' + encodeURIComponent(m.svg) + '">';
     return '<iframe class="nt-embed" loading="lazy" sandbox="allow-scripts" src="' + esc(m.src) + '" title="' + esc(title) + '" style="height:' + m.height + 'px"></iframe>';
+  }
+  function examplesHtml(list) {
+    if (!list || !list.length) return '';
+    return '<div class="nt-examples"><h4>✍️ उदाहरण (' + list.length + ')</h4>' + list.map(function (ex, i) {
+      return '<div class="nt-ex"><p class="nt-q">उदा. ' + (i + 1) + ': ' + X.rich(ex.question) + '</p><div class="nt-a">' + paraHtml(ex.solution) + '</div>' +
+        (ex.source ? '<span class="chip tiny">स्रोत: ' + esc(ex.source) + '</span>' : '') + '</div>';
+    }).join('') + '</div>';
   }
   function itemHtml(cat, it) {
     var inner;
@@ -124,9 +165,9 @@
       case 'longAnswers':
         inner = '<p class="nt-q">प्र. ' + X.rich(it.question) + '</p><div class="nt-a">' + paraHtml(it.answer) + '</div>'; break;
       case 'definitions':
-        inner = '<p><span class="nt-term">' + esc(it.term) + '</span></p>' + paraHtml(it.definition); break;
+        inner = '<p><span class="nt-term">' + X.rich(it.term) + '</span></p>' + paraHtml(it.definition); break;
       case 'formulas':
-        inner = '<h3>' + esc(it.name) + '</h3><div class="nt-formula">' + esc(it.formula) + '</div>' + paraHtml(it.meaning) + (it.unit ? '<p class="muted small">मात्रक / Unit: ' + esc(it.unit) + '</p>' : ''); break;
+        inner = '<h3>' + X.rich(it.name) + '</h3><div class="nt-formula">' + X.rich(it.formula) + '</div>' + paraHtml(it.meaning) + (it.unit ? '<p class="muted small">मात्रक / Unit: ' + X.rich(it.unit) + '</p>' : '') + examplesHtml(it.examples); break;
       case 'diagrams':
       case 'interactive':
         inner = '<h3>' + esc(it.title) + '</h3>' + mediaHtml(it.media, it.title) + (it.caption ? '<p class="nt-cap">' + esc(it.caption) + '</p>' : ''); break;
@@ -141,7 +182,7 @@
     return X.manifest('notes').then(function (mf) {
       var html = '<section class="page xs"><div class="banner info">📓 विषय चुनो, फिर Chapter — और Notes पढ़ो।</div>' + manifestNote(mf) + '<div class="grid-cards">';
       M.Subjects.list().forEach(function (s) {
-        var n = X.entriesFor(mf, s.id).length;
+        var n = X.notesChapters(mf, s.id).length;
         var total = s.chapters.length;
         var meta = n ? n + ' Chapter के Notes उपलब्ध' + (total ? ' (कुल ' + total + ')' : '') : (total ? 'Notes जल्द जोड़े जाएँगे' : 'Chapters और Notes जल्द जोड़े जाएँगे');
         html += X.subjectCard(s, meta, n ? 'उपलब्ध' : 'जल्द आ रहा है', n ? 'ok' : 'soon', '/notes/' + s.id);
@@ -199,14 +240,24 @@
     if (!s || !ch) return M.App.notFound('यह Chapter नहीं मिला।');
     var back = '/notes/' + s.id;
     return X.manifest('notes').then(function (mf) {
-      var en = X.entriesFor(mf, s.id).filter(function (e) { return e.chapter === no; })[0];
+      var ens = X.chapterEntries(mf, s.id, no);
       var label = M.Subjects.chapterLabel(s.id, no);
       function page(body) { return X.view({ html: '<section class="page xs">' + body + '</section>', title: 'अध्याय ' + no, sub: ch.title, back: back }); }
-      if (!en) return page(X.emptyHtml('📓', label, X.MSG_EMPTY, 'Chapter list', back));
-      return N.load(en).then(function (L) {
-        if (L.status === 'missing') return page(X.errorHtml('इस Chapter की Notes फ़ाइल नहीं मिली', 'manifest में नाम लिखा है, पर GitHub में फ़ाइल upload नहीं हुई या path गलत है।', en.file));
-        if (L.status === 'error') return page(X.errorHtml('इस Chapter की Notes फ़ाइल पढ़ी नहीं जा सकी', L.error, en.file));
+      if (!ens.length) return page(X.emptyHtml('📓', label, X.MSG_EMPTY, 'Chapter list', back));
+      return N.loadMany(ens).then(function (L) {
+        if (L.status === 'missing') return page(X.errorHtml('इस Chapter की Notes फ़ाइल नहीं मिली', 'manifest में नाम लिखा है, पर GitHub में फ़ाइल upload नहीं हुई या path गलत है।', L.file));
+        if (L.status === 'error') return page(X.errorHtml('इस Chapter की Notes फ़ाइल पढ़ी नहीं जा सकी', L.error, L.file));
         if (L.status === 'empty') return page(X.emptyHtml('📓', label, X.MSG_EMPTY, 'Chapter list', back) + X.warnHtml(L.skipped, 'कुछ आइटम छोड़े गए'));
+        return X.ensureMathFor(L.cats).then(function (mathOk) {
+          // धीमे Network पर KaTeX अभी न आई हो, तो बाद में आने पर इसी Chapter को अपने-आप फिर से बना दो (अगर विद्यार्थी अभी भी यहीं है)
+          if (!mathOk) {
+            var here = '/notes/' + p.subject + '/' + p.no;
+            X.onMathReady(function () { if (M.Router.currentPath === here) M.Router.refresh(true); });
+          }
+          return buildChapter(L);
+        });
+      });
+      function buildChapter(L) {
         var keys = CATS.filter(function (c) { return L.cats[c.key]; });
         ui.cat = keys[0].key;
         ui.text = '';
@@ -222,7 +273,7 @@
         html += M.NotesGame ? M.NotesGame.readCardHtml(s.id, no) : '';
         html += X.warnHtml(L.skipped, 'कुछ आइटम छोड़े गए');
         return page(html);
-      });
+      }
     });
   }
 
