@@ -1,8 +1,2108 @@
 {
-  "_help": "प्रश्न इसी 'questions' list में जोड़ो। हर प्रश्न का format data/question-template.json में देखो। अभी यह list खाली है।",
-  "subject": "chemistry",
-  "chapter": 7,
-  "title": "p-ब्लॉक के तत्त्व",
-  "status": "pending-pdf-questions",
-  "questions": []
+"_help": "प्रश्न इसी 'questions' list में जोड़ो।",
+"subject": "chemistry",
+"chapter": 7,
+"title": "p-ब्लॉक के तत्व (The p-Block Elements)",
+"status": "ready",
+"questions": [
+{
+"id": "CHE07Q001",
+"subject": "chemistry",
+"chapter": 7,
+"question": "आवर्त सारणी (Periodic Table) के वर्ग 15 (Group 15) के तत्वों का सामान्य संयोजकता कोश इलेक्ट्रॉनिक विन्यास (Valence Shell Electronic Configuration) क्या होता है?",
+"options": {
+"A": "ns² np¹",
+"B": "ns² np²",
+"C": "ns² np³",
+"D": "ns² np⁴"
+},
+"answer": "C",
+"explanation": "वर्ग 15 के तत्वों के संयोजकता कोश में कुल 5 इलेक्ट्रॉन होते हैं, इसलिए इनका सामान्य विन्यास ns² np³ होता है।"
+},
+{
+"id": "CHE07Q002",
+"subject": "chemistry",
+"chapter": 7,
+"question": "वर्ग 15 (Group 15) के तत्वों को सामूहिक रूप से अन्य किस नाम से भी जाना जाता है?",
+"options": {
+"A": "चाल्कोजन (Chalcogens)",
+"B": "हैलोजन (Halogens)",
+"C": "निकोजन (Pnicogens)",
+"D": "उत्कृष्ट गैसें (Noble Gases)"
+},
+"answer": "C",
+"explanation": "ग्रीक भाषा में 'निकोजन' का अर्थ दम घुटने वाला (Choking / Suffocating) होता है, अतः इस वर्ग के तत्वों को निकोजन कहा जाता है।"
+},
+{
+"id": "CHE07Q003",
+"subject": "chemistry",
+"chapter": 7,
+"question": "वायुमंडल (Atmosphere) में आयतन के अनुसार डाइनाइट्रोजन (Dinitrogen / N₂) की प्रतिशत मात्रा लगभग कितनी होती है?",
+"options": {
+"A": "21%",
+"B": "78%",
+"C": "0.03%",
+"D": "50%"
+},
+"answer": "B",
+"explanation": "पृथ्वी के वायुमंडल में आण्विक नाइट्रोजन मुक्त रूप से लगभग 78% (आयतन के आधार पर) पाई जाती है।"
+},
+{
+"id": "CHE07Q004",
+"subject": "chemistry",
+"chapter": 7,
+"question": "चिली साल्टपीटर (Chile Saltpetre) का सही रासायनिक सूत्र (Chemical Formula) क्या है?",
+"options": {
+"A": "KNO₃",
+"B": "NaNO₃",
+"C": "NH₄Cl",
+"D": "Ca(NO₃)₂"
+},
+"answer": "B",
+"explanation": "सोडियम नाइट्रेट (NaNO₃) को चिली साल्टपीटर तथा पोटैशियम नाइट्रेट (KNO₃) को इंडियन साल्टपीटर कहा जाता है।"
+},
+{
+"id": "CHE07Q005",
+"subject": "chemistry",
+"chapter": 7,
+"question": "वर्ग 15 (Group 15) में उपस्थित तत्वों में से कौन-सा तत्व एक वास्तविक धातु (Metal) है?",
+"options": {
+"A": "नाइट्रोजन (Nitrogen)",
+"B": "फॉस्फोरस (Phosphorus)",
+"C": "आर्सेनिक (Arsenic)",
+"D": "बिस्मथ (Bismuth)"
+},
+"answer": "D",
+"explanation": "वर्ग में नीचे जाने पर धात्विक गुण बढ़ता है; नाइट्रोजन व फॉस्फोरस अधातु, आर्सेनिक व ऐन्टिमनी उपधातु और बिस्मथ एक धातु है।"
+},
+{
+"id": "CHE07Q006",
+"subject": "chemistry",
+"chapter": 7,
+"question": "वर्ग 15 के तत्वों की प्रथम आयनन एन्थैल्पी (First Ionization Enthalpy) संगत वर्ग 14 के तत्वों से अधिक क्यों होती है?",
+"options": {
+"A": "अर्धभरित p-कक्षकों (Half-filled p-orbitals) के अतिरिक्त स्थायित्व के कारण",
+"B": "कम प्रभावी नाभिकीय आवेश के कारण",
+"C": "बड़े परमाणु आकार के कारण",
+"D": "d-कक्षकों की उपस्थिति के कारण"
+},
+"answer": "A",
+"explanation": "np³ विन्यास में p-उपकोश आधा भरा होने के कारण अत्यधिक स्थायी होता है, जिससे इलेक्ट्रॉन निकालने के लिए अधिक ऊर्जा चाहिए।"
+},
+{
+"id": "CHE07Q007",
+"subject": "chemistry",
+"chapter": 7,
+"question": "नाइट्रोजन (Nitrogen) की अधिकतम सहसंयोजकता (Maximum Covalency) कितनी हो सकती है?",
+"options": {
+"A": "3",
+"B": "4",
+"C": "5",
+"D": "6"
+},
+"answer": "B",
+"explanation": "दूसरे आवर्त का तत्व होने के कारण नाइट्रोजन में केवल चार कक्षक (एक 2s और तीन 2p) उपलब्ध होते हैं, अतः इसकी अधिकतम सहसंयोजकता 4 होती है।"
+},
+{
+"id": "CHE07Q008",
+"subject": "chemistry",
+"chapter": 7,
+"question": "नाइट्रोजन +5 ऑक्सीकरण अवस्था दर्शाने के बावजूद पेन्टाक्लोराइड (NCl₅) का निर्माण क्यों नहीं करता?",
+"options": {
+"A": "संयोजकता कोश में रिक्त d-कक्षकों (Vacant d-orbitals) की अनुपस्थिति के कारण",
+"B": "छोटे आकार के कारण",
+"C": "उच्च विद्युतऋणात्मकता के कारण",
+"D": "अक्रिय गैस विन्यास के कारण"
+},
+"answer": "A",
+"explanation": "नाइट्रोजन के द्वितीय कोश में रिक्त d-कक्षक नहीं होते, इसलिए यह अपने अष्टक का प्रसार करके 5 सहसंयोजक बंध नहीं बना सकता।"
+},
+{
+"id": "CHE07Q009",
+"subject": "chemistry",
+"chapter": 7,
+"question": "वर्ग 15 में नीचे जाने पर +5 ऑक्सीकरण अवस्था का स्थायित्व घटता है जबकि +3 अवस्था अधिक स्थायी होती है, इसका क्या कारण है?",
+"options": {
+"A": "आयनन एन्थैल्पी में कमी",
+"B": "अक्रिय युग्म प्रभाव (Inert Pair Effect)",
+"C": "विद्युतऋणात्मकता में वृद्धि",
+"D": "परमाणु त्रिज्या में कमी"
+},
+"answer": "B",
+"explanation": "भारी तत्वों में दुर्बल परिरक्षण के कारण s-इलेक्ट्रॉनों का युग्म बंध निर्माण में भाग नहीं लेता, जिसे अक्रिय युग्म प्रभाव कहते हैं।"
+},
+{
+"id": "CHE07Q010",
+"subject": "chemistry",
+"chapter": 7,
+"question": "डाइनाइट्रोजन (N₂) कमरे के ताप पर रासायनिक रूप से अत्यधिक अक्रिय (Inert) क्यों होती है?",
+"options": {
+"A": "कम आण्विक द्रव्यमान के कारण",
+"B": "अत्यधिक उच्च बंध वियोजन एन्थैल्पी (High Bond Dissociation Enthalpy) के कारण",
+"C": "शून्य विद्युतऋणात्मकता के कारण",
+"D": "द्विध्रुव आघूर्ण के कारण"
+},
+"answer": "B",
+"explanation": "नाइट्रोजन अणुओं के मध्य त्रि-बंध (N≡N) पाया जाता है, जिसकी बंध वियोजन ऊर्जा बहुत उच्च (941.4 kJ/mol) होती है।"
+},
+{
+"id": "CHE07Q011",
+"subject": "chemistry",
+"chapter": 7,
+"question": "वर्ग 15 के हाइड्राइडों (EH₃) में से कौन-सा हाइड्राइड सबसे प्रबल अपचायक (Strongest Reducing Agent) है?",
+"options": {
+"A": "NH₃",
+"B": "PH₃",
+"C": "AsH₃",
+"D": "BiH₃"
+},
+"answer": "D",
+"explanation": "BiH₃ में E-H बंध लंबाई सबसे अधिक और बंध सामर्थ्य सबसे कम होती है, जिससे यह आसानी से हाइड्रोजन मुक्त कर प्रबल अपचायक बनता है।"
+},
+{
+"id": "CHE07Q012",
+"subject": "chemistry",
+"chapter": 7,
+"question": "वर्ग 15 के हाइड्राइडों (Hydrides) की क्षारीय सामर्थ्य (Basic Strength) का सही घटता क्रम कौन-सा है?",
+"options": {
+"A": "NH₃ > PH₃ > AsH₃ > SbH₃ > BiH₃",
+"B": "BiH₃ > SbH₃ > AsH₃ > PH₃ > NH₃",
+"C": "PH₃ > NH₃ > AsH₃ > SbH₃ > BiH₃",
+"D": "NH₃ > BiH₃ > PH₃ > AsH₃ > SbH₃"
+},
+"answer": "A",
+"explanation": "केंद्रीय परमाणु का आकार बढ़ने से एकाकी इलेक्ट्रॉन युग्म (Lone Pair) का घनत्व घटता है, अतः इलेक्ट्रॉन त्यागने की प्रवृत्ति (क्षारीय गुण) घटती है।"
+},
+{
+"id": "CHE07Q013",
+"subject": "chemistry",
+"chapter": 7,
+"question": "फॉस्फीन (PH₃) का क्वथनांक (Boiling Point) अमोनिया (NH₃) की तुलना में कम क्यों होता है?",
+"options": {
+"A": "क्योंकि PH₃ में अंतरा-आण्विक हाइड्रोजन बंध (Hydrogen Bonding) अनुपस्थित होता है",
+"B": "क्योंकि PH₃ का अणुभार कम है",
+"C": "क्योंकि PH₃ आयनिक यौगिक है",
+"D": "क्योंकि PH₃ एक ठोस पदार्थ है"
+},
+"answer": "A",
+"explanation": "नाइट्रोजन की उच्च विद्युतऋणात्मकता के कारण NH₃ में प्रबल हाइड्रोजन बंध बनते हैं, जबकि PH₃ में हाइड्रोजन बंध नहीं पाए जाते।"
+},
+{
+"id": "CHE07Q014",
+"subject": "chemistry",
+"chapter": 7,
+"question": "अमोनिया (NH₃) एक लुईस क्षार (Lewis Base) की भाँति व्यवहार क्यों करती है?",
+"options": {
+"A": "हाइड्रोजन परमाणु के छोटे आकार के कारण",
+"B": "नाइट्रोजन पर उपस्थित एकाकी इलेक्ट्रॉन युग्म (Lone Pair) के कारण",
+"C": "इसकी त्रिकोणीय पिरामिडी संरचना के कारण",
+"D": "अम्लीय प्रकृति के कारण"
+},
+"answer": "B",
+"explanation": "नाइट्रोजन परमाणु पर एक एकाकी इलेक्ट्रॉन युग्म (Lone Pair) उपस्थित होता है जिसे यह इलेक्ट्रॉन-न्यून स्पीशीज को दान कर सकती है।"
+},
+{
+"id": "CHE07Q015",
+"subject": "chemistry",
+"chapter": 7,
+"question": "प्रयोगशाला में शुद्ध डाइनाइट्रोजन (N₂) गैस बनाने के लिए अमोनियम क्लोराइड (NH₄Cl) की क्रिया किससे कराई जाती है?",
+"options": {
+"A": "सोडियम नाइट्रेट (NaNO₃)",
+"B": "सोडियम नाइट्राइट (NaNO₂)",
+"C": "सोडियम हाइड्रॉक्साइड (NaOH)",
+"D": "सोडियम कार्बोनेट (Na₂CO₃)"
+},
+"answer": "B",
+"explanation": "NH₄Cl(aq) + NaNO₂(aq) → N₂(g) + 2H₂O(l) + NaCl(aq) अभिक्रिया द्वारा प्रयोगशाला में नाइट्रोजन गैस बनाई जाती है।"
+},
+{
+"id": "CHE07Q016",
+"subject": "chemistry",
+"chapter": 7,
+"question": "अति शुद्ध डाइनाइट्रोजन (Very Pure Dinitrogen) प्राप्त करने के लिए किस यौगिक का तापीय अपघटन (Thermal Decomposition) किया जाता है?",
+"options": {
+"A": "अमोनियम डाइक्रोमेट",
+"B": "सोडियम अथवा बेरियम ऐजाइड [Ba(N₃)₂]",
+"C": "अमोनियम सल्फेट",
+"D": "यूरिया"
+},
+"answer": "B",
+"explanation": "सोडियम अथवा बेरियम ऐजाइड के तापीय विघटन से अति शुद्ध नाइट्रोजन प्राप्त होती है: Ba(N₃)₂ → Ba + 3N₂।"
+},
+{
+"id": "CHE07Q017",
+"subject": "chemistry",
+"chapter": 7,
+"question": "औद्योगिक पैमाने पर अमोनिया (NH₃) का निर्माण किस विधि द्वारा किया जाता है?",
+"options": {
+"A": "सम्पर्क विधि (Contact Process)",
+"B": "ओस्टवाल्ड विधि (Ostwald Process)",
+"C": "हैबर विधि (Haber Process)",
+"D": "डीकन विधि (Deacon Process)"
+},
+"answer": "C",
+"explanation": "N₂(g) + 3H₂(g) ⇌ 2NH₃(g) अभिक्रिया द्वारा अमोनिया के बड़े पैमाने पर उत्पादन को हैबर विधि कहते हैं।"
+},
+{
+"id": "CHE07Q018",
+"subject": "chemistry",
+"chapter": 7,
+"question": "हैबर विधि (Haber Process) में अनुकूलतम परिस्थितियाँ (Optimum Conditions) क्या होती हैं?",
+"options": {
+"A": "निम्न दाब और उच्च ताप",
+"B": "लगभग 200 atm दाब, 700 K ताप और आयरन ऑक्साइड उत्प्रेरक",
+"C": "1 atm दाब और कमरे का ताप",
+"D": "500 atm दाब और 1500 K ताप"
+},
+"answer": "B",
+"explanation": "ला-शातालिए नियम के अनुसार अमोनिया संश्लेषण के लिए उच्च दाब (200 atm), लगभग 700 K ताप और Fe उत्प्रेरक अनुकूलतम होता है।"
+},
+{
+"id": "CHE07Q019",
+"subject": "chemistry",
+"chapter": 7,
+"question": "अमोनिया (NH₃) की संरचना और संकरण (Hybridization) क्या होता है?",
+"options": {
+"A": "sp² संकरण और समतलीय त्रिकोणीय",
+"B": "sp³ संकरण और त्रिकोणीय पिरामिडी (Trigonal Pyramidal)",
+"C": "sp संकरण और रेखीय",
+"D": "dsp² संकरण और वर्ग समतलीय"
+},
+"answer": "B",
+"explanation": "नाइट्रोजन sp³ संकरित होता है, परंतु 3 बंध युग्म और 1 एकाकी युग्म होने के कारण इसकी आकृति त्रिकोणीय पिरामिडी (बंध कोण 107.8°) होती है।"
+},
+{
+"id": "CHE07Q020",
+"subject": "chemistry",
+"chapter": 7,
+"question": "कॉपर सल्फेट (CuSO₄) के नीले जलीय विलयन में अमोनिया की अधिकता मिलाने पर गहरा नीला रंग किस संकुल आयन (Complex Ion) के बनने से आता है?",
+"options": {
+"A": "[Cu(NH₃)₄]²⁺ (टेट्राऐमीन कॉपर(II) आयन)",
+"B": "[Cu(H₂O)₄]²⁺",
+"C": "[CuCl₄]²⁻",
+"D": "[Cu(CN)₄]²⁻"
+},
+"answer": "A",
+"explanation": "Cu²⁺ आयन अमोनिया लिगैंड के साथ उपसहसंयोजक संकुल [Cu(NH₃)₄]²⁺ बनाते हैं, जिसका रंग गहरा नीला होता है।"
+},
+{
+"id": "CHE07Q021",
+"subject": "chemistry",
+"chapter": 7,
+"question": "हास्य गैस (Laughing Gas) का रासायनिक नाम और सूत्र क्या है?",
+"options": {
+"A": "नाइट्रिक ऑक्साइड (NO)",
+"B": "डाइनाइट्रोजन ऑक्साइड / नाइट्रस ऑक्साइड (N₂O)",
+"C": "नाइट्रोजन डाइऑक्साइड (NO₂)",
+"D": "डाइनाइट्रोजन ट्राइऑक्साइड (N₂O₃)"
+},
+"answer": "B",
+"explanation": "डाइनाइट्रोजन मोनोऑक्साइड (N₂O) को हास्य गैस (Laughing Gas) कहा जाता है।"
+},
+{
+"id": "CHE07Q022",
+"subject": "chemistry",
+"chapter": 7,
+"question": "नाइट्रोजन का कौन-सा ऑक्साइड विषम-इलेक्ट्रॉन अणु (Odd-electron Molecule) होने के कारण अनुचुंबकीय (Paramagnetic) और भूरे रंग (Brown Colour) का होता है?",
+"options": {
+"A": "N₂O",
+"B": "NO₂ (नाइट्रोजन डाइऑक्साइड)",
+"C": "N₂O₅",
+"D": "N₂O₃"
+},
+"answer": "B",
+"explanation": "NO₂ में संयोजकता इलेक्ट्रॉनों की कुल संख्या विषम (23) होती है, जिसके कारण यह अयुग्मित इलेक्ट्रॉन युक्त भूरी अनुचुंबकीय गैस है।"
+},
+{
+"id": "CHE07Q023",
+"subject": "chemistry",
+"chapter": 7,
+"question": "ठोस अवस्था (Solid State) में डाइनाइट्रोजन पेन्टाऑक्साइड (N₂O₅) किस आयनिक रूप (Ionic Form) में पाया जाता है?",
+"options": {
+"A": "[NO₂]⁺ [NO₃]⁻ (नाइट्रोनियम नाइट्रेट)",
+"B": "[NO]⁺ [NO₂]⁻",
+"C": "[N₂O]²⁺ [O]²⁻",
+"D": "[NO₃]⁻ केवल"
+},
+"answer": "A",
+"explanation": "ठोस प्रावस्था में N₂O₅ आयनिक क्रिस्टल के रूप में रहता है, जिसमें धनायन [NO₂]⁺ (रेखीय) और ऋणायन [NO₃]⁻ (त्रिकोणीय समतलीय) होते हैं।"
+},
+{
+"id": "CHE07Q024",
+"subject": "chemistry",
+"chapter": 7,
+"question": "औद्योगिक पैमाने पर नाइट्रिक अम्ल (HNO₃) का निर्माण किस विधि द्वारा किया जाता है?",
+"options": {
+"A": "हैबर प्रक्रम",
+"B": "ओस्टवाल्ड प्रक्रम (Ostwald's Process)",
+"C": "सम्पर्क प्रक्रम",
+"D": "हॉल प्रक्रम"
+},
+"answer": "B",
+"explanation": "ओस्टवाल्ड प्रक्रम में अमोनिया का वायुमंडलीय ऑक्सीजन द्वारा Pt-जाली उत्प्रेरक की उपस्थिति में ऑक्सीकरण करके HNO₃ बनाया जाता है।"
+},
+{
+"id": "CHE07Q025",
+"subject": "chemistry",
+"chapter": 7,
+"question": "ओस्टवाल्ड प्रक्रम (Ostwald's Process) के प्रथम पद में अमोनिया के उत्प्रेरकीय ऑक्सीकरण हेतु कौन-सा उत्प्रेरक प्रयुक्त होता है?",
+"options": {
+"A": "Fe/Mo",
+"B": "Pt/Rh जाली (Pt/Rh Gauze)",
+"C": "V₂O₅",
+"D": "Ni चूर्ण"
+},
+"answer": "B",
+"explanation": "4NH₃ + 5O₂ (Pt/Rh जाली, 500 K, 9 bar) → 4NO + 6H₂O अभिक्रिया में प्लेटिनम/रोडियम जाली उत्प्रेरक का कार्य करती है।"
+},
+{
+"id": "CHE07Q026",
+"subject": "chemistry",
+"chapter": 7,
+"question": "नाइट्रेट आयन (NO₃⁻) के परीक्षण के लिए प्रयुक्त भूरी वलय परीक्षण (Brown Ring Test) में बनने वाली भूरी वलय का रासायनिक सूत्र क्या है?",
+"options": {
+"A": "[Fe(H₂O)₅(NO)]SO₄",
+"B": "[Fe(H₂O)₆]SO₄",
+"C": "[Fe(NO)₄]SO₄",
+"D": "Fe₄[Fe(CN)₆]₃"
+},
+"answer": "A",
+"explanation": "भूरी वलय संकुल [Fe(H₂O)₅(NO)]²⁺ के बनने से उत्पन्न होती है, जिसमें आयरन की ऑक्सीकरण अवस्था +1 होती है।"
+},
+{
+"id": "CHE07Q027",
+"subject": "chemistry",
+"chapter": 7,
+"question": "तनु नाइट्रिक अम्ल (Dilute HNO₃) की कॉपर (Cu) धातु के साथ अभिक्रिया कराने पर कौन-सी गैस मुक्त होती है?",
+"options": {
+"A": "N₂O",
+"B": "NO (नाइट्रिक ऑक्साइड)",
+"C": "NO₂",
+"D": "H₂"
+},
+"answer": "B",
+"explanation": "3Cu + 8HNO₃(तनु) → 3Cu(NO₃)₂ + 2NO + 4H₂O समीकरण के अनुसार तनु अम्ल से नाइट्रिक ऑक्साइड (NO) गैस बनती है।"
+},
+{
+"id": "CHE07Q028",
+"subject": "chemistry",
+"chapter": 7,
+"question": "सान्द्र नाइट्रिक अम्ल (Concentrated HNO₃) की कॉपर (Cu) धातु से अभिक्रिया कराने पर कौन-सी गैस निकलती है?",
+"options": {
+"A": "NO",
+"B": "NO₂ (नाइट्रोजन डाइऑक्साइड)",
+"C": "N₂O",
+"D": "N₂"
+},
+"answer": "B",
+"explanation": "Cu + 4HNO₃(सान्द्र) → Cu(NO₃)₂ + 2NO₂ + 2H₂O अभिक्रिया में भूरे रंग की नाइट्रोजन डाइऑक्साइड (NO₂) गैस मुक्त होती है।"
+},
+{
+"id": "CHE07Q029",
+"subject": "chemistry",
+"chapter": 7,
+"question": "सान्द्र नाइट्रिक अम्ल (Conc. HNO₃) में क्रोमियम (Cr) और ऐलुमिनियम (Al) जैसी धातुएं अक्रिय (Passive) क्यों हो जाती हैं?",
+"options": {
+"A": "हाइड्रोजन गैस के आवरण के कारण",
+"B": "धातु की सतह पर ऑक्साइड की पतली सुरक्षात्मक परत बनने के कारण",
+"C": "अत्यधिक निम्न तापमान के कारण",
+"D": "धातु के घुल जाने के कारण"
+},
+"answer": "B",
+"explanation": "सान्द्र HNO₃ प्रबल ऑक्सीकारक होने के कारण धातु पृष्ठ पर अदृश्य, अभेद्य ऑक्साइड परत (Passivity) बना देता है।"
+},
+{
+"id": "CHE07Q030",
+"subject": "chemistry",
+"chapter": 7,
+"question": "अम्लराज (Aqua Regia) किन दो अम्लों का आयतन के अनुसार 3 : 1 में बना मिश्रण होता है?",
+"options": {
+"A": "सान्द्र HCl और सान्द्र HNO₃ (3 : 1)",
+"B": "सान्द्र HNO₃ और सान्द्र H₂SO₄ (3 : 1)",
+"C": "सान्द्र H₂SO₄ और सान्द्र HCl (3 : 1)",
+"D": "सान्द्र HCl और सान्द्र CH₃COOH (3 : 1)"
+},
+"answer": "A",
+"explanation": "3 भाग सान्द्र HCl तथा 1 भाग सान्द्र HNO₃ का मिश्रण अम्लराज कहलाता है, जो सोना और प्लैटिनम जैसी अक्रिय धातुओं को भी घोल देता है।"
+},
+{
+"id": "CHE07Q031",
+"subject": "chemistry",
+"chapter": 7,
+"question": "श्वेत फॉस्फोरस (White Phosphorus) की आण्विक संरचना कैसी होती है?",
+"options": {
+"A": "रेखीय P₂ अणु",
+"B": "चतुष्फलकीय P₄ अणु (Tetrahedral P₄ Molecule)",
+"C": "अष्टफलकीय P₆ अणु",
+"D": "द्विविमीय जालकीय परत"
+},
+"answer": "B",
+"explanation": "श्वेत फॉस्फोरस में पृथक चतुष्फलकीय P₄ अणु होते हैं, जिनमें P-P-P बंध कोण 60° का होता है।"
+},
+{
+"id": "CHE07Q032",
+"subject": "chemistry",
+"chapter": 7,
+"question": "श्वेत फॉस्फोरस को वायु में खुला छोड़ने पर यह स्वतः आग क्यों पकड़ लेता है?",
+"options": {
+"A": "60° बंध कोण के कारण अत्यधिक कोणीय तनाव (Angle Strain) होने से",
+"B": "उच्च गलनांक के कारण",
+"C": "d-कक्षक रिक्त होने के कारण",
+"D": "हाइड्रोजन बंध बनने के कारण"
+},
+"answer": "A",
+"explanation": "P₄ अणु में कोणीय तनाव (60° कोण) अत्यधिक होने के कारण यह बहुत अस्थिर व अत्यधिक क्रियाशील होता है और हवा में जल उठता है।"
+},
+{
+"id": "CHE07Q033",
+"subject": "chemistry",
+"chapter": 7,
+"question": "श्वेत फॉस्फोरस (White Phosphorus) को सुरक्षित रखने के लिए किसमें डुबोकर रखा जाता है?",
+"options": {
+"A": "केरोसिन तेल में",
+"B": "जल में (Water)",
+"C": "ऐल्कोहॉल में",
+"D": "ईथर में"
+},
+"answer": "B",
+"explanation": "श्वेत फॉस्फोरस जल में अविलेय होता है और जल के नीचे रखने से इसका वायु की ऑक्सीजन से संपर्क टूट जाता है।"
+},
+{
+"id": "CHE07Q034",
+"subject": "chemistry",
+"chapter": 7,
+"question": "श्वेत फॉस्फोरस को अक्रिय वातावरण में 573 K पर कई दिनों तक गर्म करने पर कौन-सा अपररूप (Allotrope) प्राप्त होता है?",
+"options": {
+"A": "काला फॉस्फोरस (Black Phosphorus)",
+"B": "लाल फॉस्फोरस (Red Phosphorus)",
+"C": "पीला फॉस्फोरस",
+"D": "ग्रेफाइट"
+},
+"answer": "B",
+"explanation": "अक्रिय गैस (CO₂ आदि) की उपस्थिति में 573 K पर गर्म करने पर P₄ इकाइयाँ परस्पर जुड़कर बहुलकीकृत लाल फॉस्फोरस बनाती हैं।"
+},
+{
+"id": "CHE07Q035",
+"subject": "chemistry",
+"chapter": 7,
+"question": "लाल फॉस्फोरस (Red Phosphorus) की संरचना किस प्रकार की होती है?",
+"options": {
+"A": "एकल P₄ अणु",
+"B": "P₄ चतुष्फलकों की बहुलकीकृत श्रृंखला (Polymeric Chain)",
+"C": "अष्टफलकीय जालक",
+"D": "परमाण्विक गैस"
+},
+"answer": "B",
+"explanation": "लाल फॉस्फोरस में P₄ चतुष्फलकीय इकाइयाँ सहसंयोजक बंधों द्वारा आपस में जुड़कर एक जटिल बहुलकी (Polymeric) शृंखला बनाती हैं।"
+},
+{
+"id": "CHE07Q036",
+"subject": "chemistry",
+"chapter": 7,
+"question": "फॉस्फीन (Phosphine / PH₃) गैस बनाने की प्रयोगशाला विधि में श्वेत फॉस्फोरस की क्रिया किससे कराई जाती है?",
+"options": {
+"A": "सान्द्र सल्फ्यूरिक अम्ल से",
+"B": "सान्द्र NaOH विलयन से (अक्रिय वातावरण में)",
+"C": "तनु हाइड्रोक्लोरिक अम्ल से",
+"D": "कैल्शियम ऑक्साइड से"
+},
+"answer": "B",
+"explanation": "P₄ + 3NaOH + 3H₂O → PH₃ + 3NaH₂PO₂ (सोडियम हाइपोफॉस्फाइट) अभिक्रिया द्वारा फॉस्फीन बनाई जाती है।"
+},
+{
+"id": "CHE07Q037",
+"subject": "chemistry",
+"chapter": 7,
+"question": "शुद्ध फॉस्फीन (PH₃) अज्वलनशील होती है, परंतु सामान्यतः यह किसके वाष्पों की उपस्थिति के कारण स्वतः प्रज्वलित हो जाती है?",
+"options": {
+"A": "P₂H₄ (डाइफॉस्फीन) अथवा P₄ वाष्प",
+"B": "H₂O वाष्प",
+"C": "CO₂ गैस",
+"D": "N₂ गैस"
+},
+"answer": "A",
+"explanation": "डाइफॉस्फीन (P₂H₄) की अशुद्धि की उपस्थिति के कारण प्रयोगशाला में बनी फॉस्फीन हवा के संपर्क में आते ही धुआँ देने लगती है।"
+},
+{
+"id": "CHE07Q038",
+"subject": "chemistry",
+"chapter": 7,
+"question": "फॉस्फीन (PH₃) गैस की गंध किस प्रकार की होती है?",
+"options": {
+"A": "तीक्ष्ण सड़ी हुई मछली जैसी (Rotten Fish Odour)",
+"B": "सड़े हुए अंडे जैसी",
+"C": "गुलाब जैसी मीठी",
+"D": "गंधहीन"
+},
+"answer": "A",
+"explanation": "फॉस्फीन एक अत्यधिक विषैली गैस है जिसकी गंध सड़ी हुई मछली अथवा सड़े हुए लहसुन जैसी होती है।"
+},
+{
+"id": "CHE07Q039",
+"subject": "chemistry",
+"chapter": 7,
+"question": "समुद्री जहाजों द्वारा संकेत देने हेतु प्रयुक्त होल्म्स संकेत (Holmes Signals) में किन दो पदार्थों का मिश्रण काम में लिया जाता है?",
+"options": {
+"A": "CaC₂ और Ca₃P₂ (कैल्शियम कार्बाइड और कैल्शियम फॉस्फाइड)",
+"B": "NaCl और NaNO₃",
+"C": "KNO₃ और सल्फर",
+"D": "CaCO₃ और P₄"
+},
+"answer": "A",
+"explanation": "जल से क्रिया कर CaC₂ से ऐसीटिलीन और Ca₃P₂ से PH₃ बनती है, जो स्वतः आग पकड़कर प्रकाश और धुआँ उत्पन्न करती है।"
+},
+{
+"id": "CHE07Q040",
+"subject": "chemistry",
+"chapter": 7,
+"question": "फॉस्फोरस ट्राइक्लोराइड (PCl₃) की ज्यामिति (Geometry) और संकरण क्या होता है?",
+"options": {
+"A": "sp² संकरण और समतलीय",
+"B": "sp³ संकरण और त्रिकोणीय पिरामिडी (Trigonal Pyramidal)",
+"C": "sp³d संकरण और टी-आकृति",
+"D": "sp³d² संकरण और अष्टफलकीय"
+},
+"answer": "B",
+"explanation": "PCl₃ में केंद्रीय P परमाणु पर 3 बंध युग्म और 1 एकाकी युग्म होने से sp³ संकरण और पिरामिडी ज्यामिति होती है।"
+},
+{
+"id": "CHE07Q041",
+"subject": "chemistry",
+"chapter": 7,
+"question": "गैसीय और द्रव अवस्था में फॉस्फोरस पेन्टाक्लोराइड (PCl₅) की आण्विक ज्यामिति क्या होती है?",
+"options": {
+"A": "अष्टफलकीय (Octahedral)",
+"B": "त्रिकोणीय द्विपिरामिडी (Trigonal Bipyramidal)",
+"C": "वर्ग पिरामिडी",
+"D": "चतुष्फलकीय"
+},
+"answer": "B",
+"explanation": "PCl₅ में P परमाणु sp³d संकरित होता है, जिससे इसकी ज्यामिति त्रिकोणीय द्विपिरामिडी होती है।"
+},
+{
+"id": "CHE07Q042",
+"subject": "chemistry",
+"chapter": 7,
+"question": "PCl₅ अणु में अक्षीय बंध (Axial Bonds), निरक्षीय बंधों (Equatorial Bonds) की तुलना में लंबे और दुर्बल क्यों होते हैं?",
+"options": {
+"A": "निरक्षीय बंध युग्मों द्वारा अधिक प्रतिकर्षण के कारण",
+"B": "विद्युतऋणात्मकता अंतर के कारण",
+"C": "आकार में परिवर्तन के कारण",
+"D": "अक्रिय युग्म प्रभाव के कारण"
+},
+"answer": "A",
+"explanation": "दो अक्षीय बंधों पर तीन निरक्षीय बंध युग्मों द्वारा 90° पर अधिक प्रतिकर्षण बल लगता है, जिससे वे लंबे और दुर्बल हो जाते हैं।"
+},
+{
+"id": "CHE07Q043",
+"subject": "chemistry",
+"chapter": 7,
+"question": "ठोस अवस्था (Solid State) में PCl₅ किस आयनिक संरचना (Ionic Structure) के रूप में विद्यमान रहता है?",
+"options": {
+"A": "[PCl₄]⁺ [PCl₆]⁻",
+"B": "[PCl₃]²⁺ [PCl₆]²⁻",
+"C": "[PCl₂]⁺ [PCl₄]⁻",
+"D": "P₂Cl₁₀ सहसंयोजक जालक"
+},
+"answer": "A",
+"explanation": "ठोस अवस्था में PCl₅ आयनिक होता है, जिसमें चतुष्फलकीय [PCl₄]⁺ धनायन और अष्टफलकीय [PCl₆]⁻ ऋणायन उपस्थित होते हैं।"
+},
+{
+"id": "CHE07Q044",
+"subject": "chemistry",
+"chapter": 7,
+"question": "हाइपोफॉस्फोरस अम्ल (H₃PO₂) की क्षारकता (Basicity) कितनी होती है?",
+"options": {
+"A": "एकक्षारकीय (Monobasic)",
+"B": "द्विक्षारकीय (Dibasic)",
+"C": "त्रिक्षारकीय (Tribasic)",
+"D": "चतुःक्षारकीय"
+},
+"answer": "A",
+"explanation": "H₃PO₂ की संरचना में केवल एक आयननीय P-OH बंध होता है (तथा दो P-H बंध होते हैं), अतः इसकी क्षारकता 1 होती है।"
+},
+{
+"id": "CHE07Q045",
+"subject": "chemistry",
+"chapter": 7,
+"question": "फॉस्फोरस अम्ल (H₃PO₃) की क्षारकता (Basicity) कितनी होती है?",
+"options": {
+"A": "1",
+"B": "2 (द्विक्षारकीय / Dibasic)",
+"C": "3",
+"D": "4"
+},
+"answer": "B",
+"explanation": "H₃PO₃ में दो विस्थापनशील P-OH बंध और एक P-H बंध होता है, इसलिए यह द्विक्षारकीय अम्ल है।"
+},
+{
+"id": "CHE07Q046",
+"subject": "chemistry",
+"chapter": 7,
+"question": "ऑर्थोफॉस्फोरिक अम्ल (H₃PO₄) की क्षारकता (Basicity) कितनी होती है?",
+"options": {
+"A": "1",
+"B": "2",
+"C": "3 (त्रिक्षारकीय / Tribasic)",
+"D": "4"
+},
+"answer": "C",
+"explanation": "H₃PO₄ में तीनों हाइड्रोजन परमाणु ऑक्सीजन से जुड़े होते हैं (तीन P-OH बंध), अतः यह त्रिक्षारकीय अम्ल है।"
+},
+{
+"id": "CHE07Q047",
+"subject": "chemistry",
+"chapter": 7,
+"question": "फॉस्फोरस के ऑक्सोअम्लों (Oxoacids) में अपचायक व्यवहार (Reducing Character) मुख्य रूप से किस बंध की उपस्थिति के कारण होता है?",
+"options": {
+"A": "P-OH बंध",
+"B": "P=O बंध",
+"C": "P-H बंध",
+"D": "P-O-P बंध"
+},
+"answer": "C",
+"explanation": "सीधे फॉस्फोरस से जुड़े हाइड्रोजन परमाणु (P-H बंध) आसानी से टूटकर अपचायक का कार्य करते हैं (जैसे H₃PO₂ प्रबल अपचायक है)।"
+},
+{
+"id": "CHE07Q048",
+"subject": "chemistry",
+"chapter": 7,
+"question": "पायरोफॉस्फोरिक अम्ल (Pyrophosphoric Acid / H₄P₂O₇) में कौन-सा सेतु बंध (Bridge Bond) पाया जाता है?",
+"options": {
+"A": "P-P बंध",
+"B": "P-O-P बंध",
+"C": "P-H बंध",
+"D": "P-O-O-P बंध"
+},
+"answer": "B",
+"explanation": "दो H₃PO₄ अणुओं से जल का एक अणु निकलने पर H₄P₂O₇ बनता है, जिसमें दो फॉस्फोरस परमाणु एक ऑक्सीजन परमाणु (P-O-P बंध) द्वारा जुड़े होते हैं।"
+},
+{
+"id": "CHE07Q049",
+"subject": "chemistry",
+"chapter": 7,
+"question": "अमोनियम नाइट्रेट (NH₄NO₃) को सावधानीपूर्वक गर्म करने पर कौन-सी गैस प्राप्त होती है?",
+"options": {
+"A": "N₂",
+"B": "NO",
+"C": "N₂O (डाइनाइट्रोजन ऑक्साइड)",
+"D": "NH₃"
+},
+"answer": "C",
+"explanation": "NH₄NO₃(s) → N₂O(g) + 2H₂O(g) समीकरण के अनुसार नाइट्रस ऑक्साइड (N₂O) गैस बनती है।"
+},
+{
+"id": "CHE07Q050",
+"subject": "chemistry",
+"chapter": 7,
+"question": "अमोनियम डाइक्रोमेट [(NH₄)₂Cr₂O₇] के तापीय अपघटन (Thermal Decomposition) से कौन-सी गैस उत्पन्न होती है?",
+"options": {
+"A": "NH₃",
+"B": "N₂ (डाइनाइट्रोजन)",
+"C": "O₂",
+"D": "NO₂"
+},
+"answer": "B",
+"explanation": "(NH₄)₂Cr₂O₇ → N₂ + Cr₂O₃ + 4H₂O अभिक्रिया में हरे रंग के Cr₂O₃ के साथ नाइट्रोजन गैस निकलती है।"
+}
+{
+"id": "CHE07Q051",
+"subject": "chemistry",
+"chapter": 7,
+"question": "वर्ग 16 (Group 16) के तत्वों को सामान्यतः किस नाम से जाना जाता है?",
+"options": {
+"A": "निकोजन (Pnicogens)",
+"B": "चाल्कोजन (Chalcogens)",
+"C": "हैलोजन (Halogens)",
+"D": "क्षारीय मृदा धातुएँ (Alkaline Earth Metals)"
+},
+"answer": "B",
+"explanation": "वर्ग 16 के तत्वों (O, S, Se, Te, Po) को चाल्कोजन (Chalcogens) कहा जाता है, jiska arth 'ayask banane wale' (Ore forming) hota hai[span_2](start_span)[span_2](end_span)।"
+},
+{
+"id": "CHE07Q052",
+"subject": "chemistry",
+"chapter": 7,
+"question": "वर्ग 16 के तत्वों का सामान्य संयोजकता कोश इलेक्ट्रॉनिक विन्यास (Valence Shell Electronic Configuration) क्या होता है?",
+"options": {
+"A": "ns² np³",
+"B": "ns² np⁴",
+"C": "ns² np⁵",
+"D": "ns¹ np⁵"
+},
+"answer": "B",
+"explanation": "Chalcogens ke bahytam kosh mein kul 6 electrons hote hain, isliye inka samanya vinyas ns² np⁴ hota hai[span_3](start_span)[span_3](end_span)।"
+},
+{
+"id": "CHE07Q053",
+"subject": "chemistry",
+"chapter": 7,
+"question": "ऑक्सीजन (Oxygen) की तुलना में सल्फर (Sulphur) की इलेक्ट्रॉन लब्धि एन्थैल्पी (Electron Gain Enthalpy) अधिक ऋणात्मक क्यों होती है?",
+"options": {
+"A": "सल्फर के बड़े आकार के कारण",
+"B": "ऑक्सीजन के 2p-उपकोश में अत्यधिक अंतर-इलेक्ट्रॉनिक प्रतिकर्षण (Inter-electronic Repulsion) होने के कारण",
+"C": "सल्फर में d-कक्षक न होने के कारण",
+"D": "ऑक्सीजन की कम विद्युतऋणात्मकता के कारण"
+},
+"answer": "B",
+"explanation": "Oxygen ka chhota aakar hone ke karan 2p-kosh mein electron ghantva adhik hota hai, jisse aane wala electron pratikarshan anubhav karta hai[span_4](start_span)[span_4](end_span)।"
+},
+{
+"id": "CHE07Q054",
+"subject": "chemistry",
+"chapter": 7,
+"question": "कमरे के तापमान पर जल (H₂O) एक द्रव (Liquid) है जबकि हाइड्रोजन सल्फाइड (H₂S) एक गैस है, इसका मुख्य कारण क्या है?",
+"options": {
+"A": "जल में अंतरा-आण्विक हाइड्रोजन बंध (Intermolecular Hydrogen Bonding) की उपस्थिति",
+"B": "H₂S का अधिक आण्विक द्रव्यमान",
+"C": "H₂O का रेखीय आकार",
+"D": "सल्फर की उच्च विद्युतऋणात्मकता"
+},
+"answer": "A",
+"explanation": "Oxygen ki ucch vidyut-rinatmakta ke karan H₂O mein majboot hydrogen bonding banti hai, jabki H₂S mein hydrogen bonding anupasthit hoti hai[span_5](start_span)[span_5](end_span)।"
+},
+{
+"id": "CHE07Q055",
+"subject": "chemistry",
+"chapter": 7,
+"question": "वर्ग 16 के हाइड्राइडों (H₂O, H₂S, H₂Se, H₂Te) में अम्लीय सामर्थ्य (Acidic Strength) का सही बढ़ता क्रम क्या है?",
+"options": {
+"A": "H₂Te < H₂Se < H₂S < H₂O",
+"B": "H₂O < H₂S < H₂Se < H₂Te",
+"C": "H₂S < H₂O < H₂Te < H₂Se",
+"D": "H₂O < H₂Se < H₂S < H₂Te"
+},
+"answer": "B",
+"explanation": "Varg mein neeche jaane par H-E bandh lambai badhti hai aur bandh viyojaan urja ghat-ti hai, jisse H⁺ aasaani se mukt hota hai[span_6](start_span)[span_6](end_span)।"
+},
+{
+"id": "CHE07Q056",
+"subject": "chemistry",
+"chapter": 7,
+"question": "वर्ग 16 के हाइड्राइडों में तापीय स्थायित्व (Thermal Stability) का सही घटता क्रम कौन-सा है?",
+"options": {
+"A": "H₂O > H₂S > H₂Se > H₂Te > H₂Po",
+"B": "H₂Po > H₂Te > H₂Se > H₂S > H₂O",
+"C": "H₂S > H₂O > H₂Te > H₂Se > H₂Po",
+"D": "H₂Te > H₂Se > H₂S > H₂O > H₂Po"
+},
+"answer": "A",
+"explanation": "Bandh viyojaan enthalpi (H-E) ka maan E ka aakar badhne ke saath ghat-ta hai, isliye H₂O sabse adhik sthayi hota hai[span_7](start_span)[span_7](end_span)।"
+},
+{
+"id": "CHE07Q057",
+"subject": "chemistry",
+"chapter": 7,
+"question": "डाइऑक्सीजन (Dioxygen / O₂) अणु की चुंबकीय प्रकृति (Magnetic Nature) कैसी होती है?",
+"options": {
+"A": "प्रतिचुंबकीय (Diamagnetic)",
+"B": "अनुचुंबकीय (Paramagnetic)",
+"C": "लौहचुंबकीय (Ferromagnetic)",
+"D": "अचुंबकीय"
+},
+"answer": "B",
+"explanation": "Molecular Orbital Theory (MOT) ke anusaar, O₂ ke viprit-bandhi (π*2px aur π*2py) kakshakon mein 2 ayugmit electron hote hain, jisse yeh anuchumbakiya hota hai[span_8](start_span)[span_8](end_span)।"
+},
+{
+"id": "CHE07Q058",
+"subject": "chemistry",
+"chapter": 7,
+"question": "निम्नलिखित में से कौन-सा एक उभयधर्मी ऑक्साइड (Amphoteric Oxide) है?",
+"options": {
+"A": "SO₂",
+"B": "CaO",
+"C": "Al₂O₃",
+"D": "CO"
+},
+"answer": "C",
+"explanation": "Al₂O₃ aml aur kshaar dono ke saath abhikriya karta hai, isliye yeh ek ubhaydharmi oxide hai[span_9](start_span)[span_9](end_span)।"
+},
+{
+"id": "CHE07Q059",
+"subject": "chemistry",
+"chapter": 7,
+"question": "निम्नलिखित में से कौन-सा एक उदासीन ऑक्साइड (Neutral Oxide) का उदाहरण है?",
+"options": {
+"A": "NO₂",
+"B": "N₂O",
+"C": "SO₃",
+"D": "BaO"
+},
+"answer": "B",
+"explanation": "N₂O, NO aur CO aadi oxide na toh amliya hote hain aur na hi kshaariya, isliye yeh udaaseen oxide kehlaate hain[span_10](start_span)[span_10](end_span)।"
+},
+{
+"id": "CHE07Q060",
+"subject": "chemistry",
+"chapter": 7,
+"question": "ओजोन (Ozone / O₃) ऑक्सीजन का एक कैसा रूप है?",
+"options": {
+"A": "समस्थानिक (Isotope)",
+"B": "अपररूप (Allotrope)",
+"C": "समावयवी (Isomer)",
+"D": "समभारिक (Isobar)"
+},
+"answer": "B",
+"explanation": "Ozone oxygen ka ek apraroop (allotrope) hai, jo samatapmandal mein suraksha aavran banata hai[span_11](start_span)[span_11](end_span)।"
+},
+{
+"id": "CHE07Q061",
+"subject": "chemistry",
+"chapter": 7,
+"question": "प्रयोगशाला में ओजोन (Ozone / O₃) बनाने के लिए शुष्क ऑक्सीजन में कौन-सा प्रक्रम उपयोग किया जाता है?",
+"options": {
+"A": "तीव्र दहन (Rapid Combustion)",
+"B": "नीरव विद्युत विसर्जन (Silent Electric Discharge)",
+"C": "विद्युत अपघटन (Electrolysis)",
+"D": "उत्प्रेरकीय ऑक्सीकरण (Catalytic Oxidation)"
+},
+"answer": "B",
+"explanation": "Neerav vidyut visarjan ka upyog kiya jata hai taaki utpann taap se ozone ka vighatan wapas oxygen mein na ho[span_12](start_span)[span_12](end_span)।"
+},
+{
+"id": "CHE07Q062",
+"subject": "chemistry",
+"chapter": 7,
+"question": "ओजोन (O₃) एक शक्तिशाली ऑक्सीकारक (Powerful Oxidising Agent) की तरह कार्य क्यों करती है?",
+"options": {
+"A": "क्योंकि यह आसानी से नवजात ऑक्सीजन (Nascent Oxygen) मुक्त करती है",
+"B": "उच्च क्वथनांक के कारण",
+"C": "अम्लीय प्रकृति के कारण",
+"D": "रंगीन होने के कारण"
+},
+"answer": "A",
+"explanation": "O₃ ushmiya roop se asthayi hokar O₂ aur navjaat oxygen (O) mein vighatit hoti hai: O₃ → O₂ + [O][span_13](start_span)[span_13](end_span)।"
+},
+{
+"id": "CHE07Q063",
+"subject": "chemistry",
+"chapter": 7,
+"question": "ओजोन गैस द्वारा काले लेड सल्फाइड (PbS) को किस रंगहीन/सफेद यौगिक में ऑक्सीकृत किया जाता है?",
+"options": {
+"A": "PbSO₄ (लेड सल्फेट)",
+"B": "PbO",
+"C": "Pb(NO₃)₂",
+"D": "PbCl₂"
+},
+"answer": "A",
+"explanation": "PbS(s) + 4O₃(g) → PbSO₄(s) + 4O₂(g) abhikriya dwara kala PbS safed PbSO₄ mein badal jata hai[span_14](start_span)[span_14](end_span)।"
+},
+{
+"id": "CHE07Q064",
+"subject": "chemistry",
+"chapter": 7,
+"question": "ओजोन (Ozone) के मात्रात्मक आकलन (Quantitative Estimation) में इसे किस विलयन के साथ अभिकृत किया जाता है?",
+"options": {
+"A": "पोटैशियम आयोडाइड (KI, बोरेट बफर युक्त)",
+"B": "सोडियम क्लोराइड (NaCl)",
+"C": "कॉपर सल्फेट (CuSO₄)",
+"D": "फेरस सल्फेट (FeSO₄)"
+},
+"answer": "A",
+"explanation": "Ozone KI se I₂ mukt karti hai, jise standard sodium thiosulphate (hypo) solution ke saath titrate kiya jata hai[span_15](start_span)[span_15](end_span)।"
+},
+{
+"id": "CHE07Q065",
+"subject": "chemistry",
+"chapter": 7,
+"question": "सुपरसोनिक जेट विमानों से निकलने वाली कौन-सी गैस ओजोन परत के क्षरण (Depletion of Ozone Layer) के लिए उत्तरदायी है?",
+"options": {
+"A": "नाइट्रोजन डाइऑक्साइड / नाइट्रिक ऑक्साइड (NO)",
+"B": "हीलियम (He)",
+"C": "सल्फर डाइऑक्साइड (SO₂)",
+"D": "मीथेन (CH₄)"
+},
+"answer": "A",
+"explanation": "Jet vimanon ke dhuen se nikli NO gas ozone se teevrata se kriya karke NO₂ aur O₂ banati hai: NO + O₃ → NO₂ + O₂[span_16](start_span)[span_16](end_span)।"
+},
+{
+"id": "CHE07Q066",
+"subject": "chemistry",
+"chapter": 7,
+"question": "कमरे के तापमान पर सल्फर का सबसे स्थायी अपररूप (Most Stable Allotrope) कौन-सा है?",
+"options": {
+"A": "विषमलम्बाक्ष सल्फर / पीला सल्फर (Rhombic / α-Sulphur)",
+"B": "एकनताक्ष सल्फर (Monoclinic / β-Sulphur)",
+"C": "प्लास्टिक सल्फर (Plastic Sulphur)",
+"D": "कोलाइडल सल्फर"
+},
+"answer": "A",
+"explanation": "Kamre ke taap par rhombic (α) sulphur sabse sthayi hota hai; ise 369 K se upar garam karne par yeh monoclinic (β) mein badalta hai[span_17](start_span)[span_17](end_span)।"
+},
+{
+"id": "CHE07Q067",
+"subject": "chemistry",
+"chapter": 7,
+"question": "विषमलम्बाक्ष (Rhombic) और एकनताक्ष (Monoclinic) सल्फर का संक्रमण ताप (Transition Temperature) कितना होता है?",
+"options": {
+"A": "273 K",
+"B": "369 K",
+"C": "393 K",
+"D": "444 K"
+},
+"answer": "B",
+"explanation": "369 K par dono apraroop sthayi hote hain, isliye 369 K ko sankraman taap (Transition Temperature) kehte hain[span_18](start_span)[span_18](end_span)।"
+},
+{
+"id": "CHE07Q068",
+"subject": "chemistry",
+"chapter": 7,
+"question": "ठोस अवस्था में रोम्बिक सल्फर में S₈ अणु की ज्यामितीय संरचना कैसी होती है?",
+"options": {
+"A": "समतलीय वलय",
+"B": "पुटकित वलय / किरीट संरचना (Puckered Ring / Crown Shape)",
+"C": "कुर्सी रूप (Chair Form)",
+"D": "रेखीय शृंखला"
+},
+"answer": "B",
+"explanation": "S₈ anu crown (kirīṭ) aakar ki ring sanrachna banata hai jismein aath sulphur parmanu puckered form mein jude hote hain[span_19](start_span)[span_19](end_span)।"
+},
+{
+"id": "CHE07Q069",
+"subject": "chemistry",
+"chapter": 7,
+"question": "उच्च ताप (~1000 K) पर वाष्प प्रावस्था में सल्फर मुख्य रूप से S₂ के रूप में रहता है, यह किसकी तरह अनुचुंबकीय (Paramagnetic) व्यवहार दर्शाता है?",
+"options": {
+"A": "N₂ की तरह",
+"B": "O₂ की तरह",
+"C": "Cl₂ की तरह",
+"D": "CO₂ की तरह"
+},
+"answer": "B",
+"explanation": "O₂ ki tarah S₂ ke antibonding π* kakshakon mein bhi 2 ayugmit electron hote hain, jisse yeh anuchumbakiya hota hai[span_20](start_span)[span_20](end_span)।"
+},
+{
+"id": "CHE07Q070",
+"subject": "chemistry",
+"chapter": 7,
+"question": "प्रयोगशाला में सल्फाइट लवण पर तनु सल्फ्यूरिक अम्ल की क्रिया द्वारा कौन-सी गैस बनाई जाती है?",
+"options": {
+"A": "H₂S",
+"B": "SO₂ (सल्फर डाइऑक्साइड)",
+"C": "SO₃",
+"D": "O₂"
+},
+"answer": "B",
+"explanation": "SO₃²⁻ + 2H⁺ → H₂O + SO₂ abhikriya dwara prayogshala mein sulphur dioxide gas prapt ki jaati hai[span_21](start_span)[span_21](end_span)।"
+},
+{
+"id": "CHE07Q071",
+"subject": "chemistry",
+"chapter": 7,
+"question": "सल्फर डाइऑक्साइड (SO₂) की अम्लीकृत पोटैशियम परमैंगनेट (KMnO₄) विलयन के साथ अभिक्रिया कराने पर विलयन के रंग पर क्या प्रभाव पड़ता है?",
+"options": {
+"A": "गुलाबी/बैंगनी रंग उड़ जाता है (गुलाबी से रंगहीन)",
+"B": "हरा हो जाता है",
+"C": "नीला हो जाता है",
+"D": "पीला हो जाता है"
+},
+"answer": "A",
+"explanation": "SO₂ ek apchayak hai jo MnO₄⁻ (baingani) ko Mn²⁺ (rangheen) mein apchayit kar deti hai[span_22](start_span)[span_22](end_span)।"
+},
+{
+"id": "CHE07Q072",
+"subject": "chemistry",
+"chapter": 7,
+"question": "सल्फर डाइऑक्साइड (SO₂) द्वारा नमी की उपस्थिति में विरंजन (Bleaching Action) किस गुण के कारण होता है?",
+"options": {
+"A": "ऑक्सीकरण के कारण",
+"B": "अपचयन के कारण (By Reduction)",
+"C": "उदासीनीकरण के कारण",
+"D": "अवशोषण के कारण"
+},
+"answer": "B",
+"explanation": "SO₂ ka bleaching action apchayan (reduction) par aadharit hota hai aur yeh asthayi (temporary) hota hai[span_23](start_span)[span_23](end_span)।"
+},
+{
+"id": "CHE07Q073",
+"subject": "chemistry",
+"chapter": 7,
+"question": "औद्योगिक पैमाने पर सल्फ्यूरिक अम्ल (H₂SO₄) का निर्माण किस विधि द्वारा किया जाता है?",
+"options": {
+"A": "सम्पर्क प्रक्रम (Contact Process)",
+"B": "ओस्टवाल्ड प्रक्रम",
+"C": "हैबर प्रक्रम",
+"D": "सॉल्वे प्रक्रम"
+},
+"answer": "A",
+"explanation": "H₂SO₄ ka audyogik utpadan Sampark Vidhi (Contact Process) dwara V₂O₅ utprerak ki upasthiti mein kiya jata hai[span_24](start_span)[span_24](end_span)।"
+},
+{
+"id": "CHE07Q074",
+"subject": "chemistry",
+"chapter": 7,
+"question": "सम्पर्क प्रक्रम (Contact Process) में SO₂ के SO₃ में उत्प्रेरकीय ऑक्सीकरण के लिए कौन-सा उत्प्रेरक उपयोग किया जाता है?",
+"options": {
+"A": "Fe चूर्ण",
+"B": "वेनेडियम पेन्टाऑक्साइड (V₂O₅)",
+"C": "Ni चूर्ण",
+"D": "CuCl₂"
+},
+"answer": "B",
+"explanation": "2SO₂ + O₂ ⇌ 2SO₃ abhikriya hetu V₂O₅ ek mukhya aur sasta vishmangi utprerak hota hai[span_25](start_span)[span_25](end_span)।"
+},
+{
+"id": "CHE07Q075",
+"subject": "chemistry",
+"chapter": 7,
+"question": "ओलियम (Oleum / Fuming Sulphuric Acid) का सही रासायनिक सूत्र क्या है?",
+"options": {
+"A": "H₂SO₃",
+"B": "H₂S₂O₇",
+"C": "H₂S₂O₈",
+"D": "H₂SO₅"
+},
+"answer": "B",
+"explanation": "SO₃ ko saandra H₂SO₄ mein avshoshit karane par Pyrosulphuric acid / Oleum (H₂S₂O₇) banta hai[span_26](start_span)[span_26](end_span)।"
+},
+{
+"id": "CHE07Q076",
+"subject": "chemistry",
+"chapter": 7,
+"question": "मार्शल अम्ल (Marshall's Acid) किसे कहा जाता है?",
+"options": {
+"A": "कैरो अम्ल (H₂SO₅)",
+"B": "परऑक्सोडाइसल्फ्यूरिक अम्ल (H₂S₂O₈)",
+"C": "पायरोसल्फ्यूरिक अम्ल (H₂S₂O₇)",
+"D": "थायोसल्फ्यूरिक अम्ल (H₂S₂O₃)"
+},
+"answer": "B",
+"explanation": "Peroxodisulphuric acid (H₂S₂O₈) ko Marshall's acid kaha jata hai, jismein peroxy (-O-O-) aabandh paya jata hai[span_27](start_span)[span_27](end_span)।"
+},
+{
+"id": "CHE07Q077",
+"subject": "chemistry",
+"chapter": 7,
+"question": "कैरो अम्ल (Caro's Acid) का सही रासायनिक सूत्र क्या है?",
+"options": {
+"A": "H₂SO₅ (परऑक्सोमोनोसल्फ्यूरिक अम्ल)",
+"B": "H₂S₂O₇",
+"C": "H₂S₂O₆",
+"D": "H₂S₂O₈"
+},
+"answer": "A",
+"explanation": "Peroxomonosulphuric acid (H₂SO₅) ko Caro's acid kehte hain[span_28](start_span)[span_28](end_span)।"
+},
+{
+"id": "CHE07Q078",
+"subject": "chemistry",
+"chapter": 7,
+"question": "सान्द्र सल्फ्यूरिक अम्ल (Conc. H₂SO₄) की शर्करा (इक्षु-शर्करा / Sucrose) पर क्रिया कराने से काला कोयला (Charcoal) बन जाता है, यह H₂SO₄ के किस गुण को प्रदर्शित करता है?",
+"options": {
+"A": "ऑक्सीकारक गुण",
+"B": "प्रबल निर्जलीकारक गुण (Strong Dehydrating Agent)",
+"C": "अम्लीय गुण",
+"D": "अपचायक गुण"
+},
+"answer": "B",
+"explanation": "H₂SO₄ sucrose (C₁₂H₂₂O₁₁) se jal ke 11 anu kheench leta hai aur spongy carbon chhodta hai (Charring of Sugar)[span_29](start_span)[span_29](end_span)।"
+},
+{
+"id": "CHE07Q079",
+"subject": "chemistry",
+"chapter": 7,
+"question": "सल्फ्यूरिक अम्ल (H₂SO₄) को 'रसायनों का राजा' (King of Chemicals) क्यों कहा जाता है?",
+"options": {
+"A": "इसकी अत्यधिक अम्लता के कारण",
+"B": "औद्योगिक स्तर पर इसके व्यापक उपयोग और उत्पादन के कारण",
+"C": "सोने को घोलने के कारण",
+"D": "इसकी दुर्लभता के कारण"
+},
+"answer": "B",
+"explanation": "Kisi desh ki aarthik aur audyogik samriddhi wahan hone wale H₂SO₄ ke khapat par aaki jaati hai[span_30](start_span)[span_30](end_span)।"
+},
+{
+"id": "CHE07Q080",
+"subject": "chemistry",
+"chapter": 7,
+"question": "सल्फ्यूरिक अम्ल के जलीय विलयन में Ka₁ का मान Ka₂ की तुलना में अत्यधिक बड़ा (Ka₁ >> Ka₂) क्यों होता है?",
+"options": {
+"A": "उदासीन H₂SO₄ से प्रोटॉन निकलना ऋणावेशित HSO₄⁻ की तुलना में बहुत सरल होता है",
+"B": "सल्फर के आकार के कारण",
+"C": "ऑक्सीजन की उच्च विद्युतऋणात्मकता के कारण",
+"D": "जल के घनत्व के कारण"
+},
+"answer": "A",
+"explanation": "Pehle se rinaveshit HSO₄⁻ aayan se doosra dhanaveshit H⁺ nikaalna astitva ke pratikarshan ke karan kathin hota hai[span_31](start_span)[span_31](end_span)।"
+},
+{
+"id": "CHE07Q081",
+"subject": "chemistry",
+"chapter": 7,
+"question": "SF₆ अणु की अष्टफलकीय संरचना (Octahedral Structure) में केंद्रीय सल्फर परमाणु पर कौन-सा संकरण (Hybridization) होता है?",
+"options": {
+"A": "sp³",
+"B": "sp³d",
+"C": "sp³d²",
+"D": "dsp²"
+},
+"answer": "C",
+"explanation": "SF₆ mein 6 bandh yugm hote hain aur 0 ekaki yugm, isliye iska sankaran sp³d² hota hai[span_32](start_span)[span_32](end_span)।"
+},
+{
+"id": "CHE07Q082",
+"subject": "chemistry",
+"chapter": 7,
+"question": "SF₆ अत्यधिक अक्रिय (Inert) और जलअपघटन (Hydrolysis) के प्रति प्रतिरोधी क्यों होता है?",
+"options": {
+"A": "सल्फर के चारों ओर 6 फ्लोरीन परमाणुओं के त्रिविमीय रक्षण (Steric Hindrance) के कारण",
+"B": "दुर्बल S-F बंध के कारण",
+"C": "अध्रुवीय होने के कारण केवल",
+"D": "गैस होने के कारण"
+},
+"answer": "A",
+"explanation": "Sulphur 6 chhote fluorine parmanuon dwara puri tarah ghir jata hai, jisse aakramankari jal ke anu is tak nahi pahunch paate[span_33](start_span)[span_33](end_span)।"
+},
+{
+"id": "CHE07Q083",
+"subject": "chemistry",
+"chapter": 7,
+"question": "SF₄ (सल्फर टेट्राफ्लोराइड) अणु की आण्विक आकृति (Molecular Geometry) कैसी होती है?",
+"options": {
+"A": "चतुष्फलकीय",
+"B": "ढेकुली / सी-सॉ आकृति (See-saw Shape)",
+"C": "वर्ग समतलीय",
+"D": "त्रिकोणीय समतलीय"
+},
+"answer": "B",
+"explanation": "SF₄ mein sp³d sankaran ke saath 4 bonding pairs aur 1 lone pair hota hai, jisse iska aakar see-saw (dhekuli) hota hai[span_34](start_span)[span_34](end_span)।"
+},
+{
+"id": "CHE07Q084",
+"subject": "chemistry",
+"chapter": 7,
+"question": "डाइक्लोरोमोनोसल्फेन / सल्फर मोनोक्लोराइड (S₂Cl₂) की संरचना किस अणु के समान होती है?",
+"options": {
+"A": "H₂O₂ (खुली पुस्तक सदृश संरचना)",
+"B": "CO₂",
+"C": "C₂H₂",
+"D": "CH₄"
+},
+"answer": "A",
+"explanation": "S₂Cl₂ ki sanrachna non-planar open book (khuli kitaab) jaise H₂O₂ ke saman hoti hai[span_35](start_span)[span_35](end_span)।"
+},
+{
+"id": "CHE07Q085",
+"subject": "chemistry",
+"chapter": 7,
+"question": "सल्फर डाइऑक्साइड (SO₂) अणु में सल्फर परमाणु का संकरण क्या होता है?",
+"options": {
+"A": "sp",
+"B": "sp²",
+"C": "sp³",
+"D": "sp³d"
+},
+"answer": "B",
+"explanation": "SO₂ mein 2 σ-aabandh aur 1 lone pair hota hai, atah steric sankhya 3 hone se sp² sankaran hota hai (Koniya aakriti)[span_36](start_span)[span_36](end_span)।"
+},
+{
+"id": "CHE07Q086",
+"subject": "chemistry",
+"chapter": 7,
+"question": "ओजोन (O₃) अणु में दोनों O-O बंध लंबाइयाँ समान (128 pm) क्यों होती हैं?",
+"options": {
+"A": "अनुनाद (Resonance) के कारण",
+"B": "हाइड्रोजन बंध के कारण",
+"C": "उच्च दाब के कारण",
+"D": "sp³ संकरण के कारण"
+},
+"answer": "A",
+"explanation": "Ozone anu do anunaadi sanrachnaon ka anunaadi sankar hota hai, jisse dono O-O aabandhon mein aashik dvibandh lakshan aa jata hai[span_37](start_span)[span_37](end_span)।"
+},
+{
+"id": "CHE07Q087",
+"subject": "chemistry",
+"chapter": 7,
+"question": "ओजोन गैस का जलीय KI विलयन के साथ स्टार्च पेपर को किस रंग में परिवर्तित करना इसका प्रमुख परीक्षण है?",
+"options": {
+"A": "नीला (Blue)",
+"B": "लाल",
+"C": "पीला",
+"D": "हरा"
+},
+"answer": "A",
+"explanation": "O₃ dwara KI se mukt iodine starch se judkar gehra neela rang utpann karti hai[span_38](start_span)[span_38](end_span)।"
+},
+{
+"id": "CHE07Q088",
+"subject": "chemistry",
+"chapter": 7,
+"question": "पारे (Mercury) की सतह का टेलिंग (Tailing of Mercury) किस गैस के संपर्क में आने से होता है?",
+"options": {
+"A": "O₃ (ओजोन)",
+"B": "SO₂",
+"C": "Cl₂",
+"D": "N₂"
+},
+"answer": "A",
+"explanation": "Ozone se kriya karke mercurous oxide (Hg₂O) banta hai, jisse paara kanch ki deewar par chipakne lagta hai (Meniscus kho deta hai)[span_39](start_span)[span_39](end_span)।"
+},
+{
+"id": "CHE07Q089",
+"subject": "chemistry",
+"chapter": 7,
+"question": "पायरोसल्फ्यूरिक अम्ल (H₂S₂O₇) में कौन-सा सेतु बंध (Bridge Bond) उपस्थित होता है?",
+"options": {
+"A": "S-S बंध",
+"B": "S-O-S बंध",
+"C": "S-O-O-S बंध",
+"D": "S-H बंध"
+},
+"answer": "B",
+"explanation": "Oleum (H₂S₂O₇) mein do tetrahedral sulphur parmanu ek oxygen parmanu dwara jude hote hain (S-O-S bridge)[span_40](start_span)[span_40](end_span)।"
+},
+{
+"id": "CHE07Q090",
+"subject": "chemistry",
+"chapter": 7,
+"question": "सान्द्र सल्फ्यूरिक अम्ल (Conc. H₂SO₄) कॉपर धातु को किसमें ऑक्सीकृत करता है?",
+"options": {
+"A": "CuSO₄ और SO₂ में",
+"B": "Cu₂O और H₂ में",
+"C": "केवल CuO में",
+"D": "CuCl₂ में"
+},
+"answer": "A",
+"explanation": "Cu + 2H₂SO₄(saandra) → CuSO₄ + SO₂ + 2H₂O abhikriya mein Cu ka oxidation hota hai[span_41](start_span)[span_41](end_span)।"
+},
+{
+"id": "CHE07Q091",
+"subject": "chemistry",
+"chapter": 7,
+"question": "सल्फर के किस ऑक्सोअम्ल में सल्फर की ऑक्सीकरण अवस्था +4 होती है?",
+"options": {
+"A": "सल्फ्यूरस अम्ल (H₂SO₃)",
+"B": "सल्फ्यूरिक अम्ल (H₂SO₄)",
+"C": "पायरोसल्फ्यूरिक अम्ल (H₂S₂O₇)",
+"D": "परऑक्सोडाइसल्फ्यूरिक अम्ल (H₂S₂O₈)"
+},
+"answer": "A",
+"explanation": "H₂SO₃ mein: 2(+1) + x + 3(-2) = 0 ⇒ x = +4 hota hai[span_42](start_span)[span_42](end_span)।"
+},
+{
+"id": "CHE07Q092",
+"subject": "chemistry",
+"chapter": 7,
+"question": "ऑक्सीजन परिवार में पोलोनियम (Po) किस प्रकार का तत्व है?",
+"options": {
+"A": "अधातु",
+"B": "उपधातु",
+"C": "रेडियोधर्मी धातु (Radioactive Metal)",
+"D": "गैस"
+},
+"answer": "C",
+"explanation": "Polonium ek alp-aayu radioactive d鉱tu hai jiska nirmaan uranium kshay shrinkhla se hota hai[span_43](start_span)[span_43](end_span)।"
+},
+{
+"id": "CHE07Q093",
+"subject": "chemistry",
+"chapter": 7,
+"question": "वर्ग 16 के डाइऑक्साइडों में SO₂ एक गैस है जबकि SeO₂ किस भौतिक अवस्था में पाया जाता है?",
+"options": {
+"A": "गैस",
+"B": "द्रव",
+"C": "ठोस (त्रिविमीय बहुलकी संरचना)",
+"D": "प्लाज्मा"
+},
+"answer": "C",
+"explanation": "SO₂ ekal gas anu hai jabki SeO₂ thos avastha mein bahulakeekrit (polymeric) chain sanrachna banata hai[span_44](start_span)[span_44](end_span)।"
+},
+{
+"id": "CHE07Q094",
+"subject": "chemistry",
+"chapter": 7,
+"question": "ओजोन छिद्र (Ozone Hole) का मुख्य कारण अंटार्कटिका के ऊपर किन रसायनों का संचय होना है?",
+"options": {
+"A": "क्लोरोफ्लोरोकार्बन (CFCs / Freons)",
+"B": "CO₂ गैस",
+"C": "सल्फर पाउडर",
+"D": "अमोनिया"
+},
+"answer": "A",
+"explanation": "Freons (CFCs) ultraviolet kiranon dwara vighatit hokar chlorine mukt moolak (Cl•) banate hain jo ozone ko nasht karte hain[span_45](start_span)[span_45](end_span)।"
+},
+{
+"id": "CHE07Q095",
+"subject": "chemistry",
+"chapter": 7,
+"question": "सल्फ्यूरिक अम्ल का क्वथनांक और श्यानता (Viscosity) अत्यधिक उच्च होने का मुख्य कारण क्या है?",
+"options": {
+"A": "व्यापक अंतरा-आण्विक हाइड्रोजन आबंधन (Extensive Intermolecular Hydrogen Bonding)",
+"B": "अधिक घनत्व",
+"C": "सल्फर का बड़ा आकार",
+"D": "अध्रुवीय प्रकृति"
+},
+"answer": "A",
+"explanation": "H₂SO₄ ke anu aapas mein majboot aur shringkhlabadh hydrogen bandhon se jude hote hain[span_46](start_span)[span_46](end_span)।"
+}
+{
+"id": "CHE07Q096",
+"subject": "chemistry",
+"chapter": 7,
+"question": "वर्ग 17 (Group 17) के तत्वों को सामूहिक रूप से किस नाम से जाना जाता है?",
+"options": {
+"A": "चाल्कोजन (Chalcogens)",
+"B": "हैलोजन (Halogens)",
+"C": "निकोजन (Pnicogens)",
+"D": "उत्कृष्ट गैसें (Noble Gases)"
+},
+"answer": "B",
+"explanation": "हैलोजन ग्रीक शब्द 'हेलो' (लवण / Salt) और 'जन' (उत्पादक / Producer) से बना है, जिसका अर्थ लवण उत्पादक होता है।"
+},
+{
+"id": "CHE07Q097",
+"subject": "chemistry",
+"chapter": 7,
+"question": "वर्ग 17 के तत्वों का सामान्य संयोजकता कोश इलेक्ट्रॉनिक विन्यास (Valence Shell Electronic Configuration) क्या होता है?",
+"options": {
+"A": "ns² np⁴",
+"B": "ns² np⁵",
+"C": "ns² np⁶",
+"D": "ns¹ np⁶"
+},
+"answer": "B",
+"explanation": "हैलोजनों के संयोजकता कोश में कुल 7 इलेक्ट्रॉन उपस्थित होते हैं, अतः इनका सामान्य विन्यास ns² np⁵ होता है।"
+},
+{
+"id": "CHE07Q098",
+"subject": "chemistry",
+"chapter": 7,
+"question": "फ्लोरीन की तुलना में क्लोरीन (Chlorine) की इलेक्ट्रॉन लब्धि एन्थैल्पी (Electron Gain Enthalpy) अधिक ऋणात्मक क्यों होती है?",
+"options": {
+"A": "क्लोरीन का आकार छोटा होने के कारण",
+"B": "फ्लोरीन के सघन 2p-उपकोश में अत्यधिक अंतर-इलेक्ट्रॉनिक प्रतिकर्षण (Inter-electronic Repulsion) के कारण",
+"C": "क्लोरीन की उच्च विद्युतऋणात्मकता के कारण",
+"D": "फ्लोरीन में d-कक्षकों की उपस्थिति के कारण"
+},
+"answer": "B",
+"explanation": "फ्लोरीन के अत्यंत छोटे आकार के कारण 2p-कक्षक में इलेक्ट्रॉन घनत्व अधिक होता है, जिससे आने वाला नया इलेक्ट्रॉन प्रबल प्रतिकर्षण अनुभव करता है।"
+},
+{
+"id": "CHE07Q099",
+"subject": "chemistry",
+"chapter": 7,
+"question": "हैलोजनों (X₂) में बंध वियोजन एन्थैल्पी (Bond Dissociation Enthalpy) का सही घटता क्रम कौन-सा है?",
+"options": {
+"A": "Cl₂ > Br₂ > F₂ > I₂",
+"B": "F₂ > Cl₂ > Br₂ > I₂",
+"C": "Cl₂ > F₂ > Br₂ > I₂",
+"D": "I₂ > Br₂ > Cl₂ > F₂"
+},
+"answer": "A",
+"explanation": "F₂ में छोटे आकार के फ्लोरीन परमाणुओं के एकाकी युग्मों (Lone Pairs) के मध्य भारी प्रतिकर्षण के कारण F-F बंध दुर्बल हो जाता है, अतः क्रम Cl₂ > Br₂ > F₂ > I₂ होता है।"
+},
+{
+"id": "CHE07Q100",
+"subject": "chemistry",
+"chapter": 7,
+"question": "हैलोजनों में सबसे प्रबल ऑक्सीकारक (Strongest Oxidising Agent) कौन-सा तत्व है?",
+"options": {
+"A": "फ्लोरीन (Fluorine / F₂)",
+"B": "क्लोरीन (Chlorine / Cl₂)",
+"C": "ब्रोमीन (Bromine / Br₂)",
+"D": "आयोडीन (Iodine / I₂)"
+},
+"answer": "A",
+"explanation": "कम बंध वियोजन ऊर्जा और फ्लोराइड आयन की अत्यधिक उच्च जलयोजन एन्थैल्पी (Hydration Enthalpy) के कारण F₂ सबसे प्रबल ऑक्सीकारक है।"
+},
+{
+"id": "CHE07Q101",
+"subject": "chemistry",
+"chapter": 7,
+"question": "फ्लोरीन केवल -1 ऑक्सीकरण अवस्था ही क्यों प्रदर्शित करता है और धनात्मक ऑक्सीकरण अवस्था नहीं दर्शाता?",
+"options": {
+"A": "अत्यधिक उच्च विद्युतऋणात्मकता और रिक्त d-कक्षकों की अनुपस्थिति के कारण",
+"B": "गैस होने के कारण",
+"C": "कम आयनन एन्थैल्पी के कारण",
+"D": "निम्न इलेक्ट्रॉन लब्धि एन्थैल्पी के कारण"
+},
+"answer": "A",
+"explanation": "फ्लोरीन आवर्त सारणी का सर्वाधिक विद्युतऋणात्मक तत्व है तथा इसमें रिक्त d-कक्षक नहीं होते, इसलिए यह केवल -1 ऑक्सीकरण अवस्था दिखाता है।"
+},
+{
+"id": "CHE07Q102",
+"subject": "chemistry",
+"chapter": 7,
+"question": "हाइड्रोजन हैलाइडों (HF, HCl, HBr, HI) में अम्लीय सामर्थ्य (Acidic Strength) का सही बढ़ता क्रम क्या है?",
+"options": {
+"A": "HF < HCl < HBr < HI",
+"B": "HI < HBr < HCl < HF",
+"C": "HCl < HF < HBr < HI",
+"D": "HF < HBr < HCl < HI"
+},
+"answer": "A",
+"explanation": "H-X बंध लंबाई बढ़ने से बंध सामर्थ्य घटती है, जिससे HI सबसे सुगमता से प्रोटॉन (H⁺) त्यागकर सबसे प्रबल अम्ल बनता है।"
+},
+{
+"id": "CHE07Q103",
+"subject": "chemistry",
+"chapter": 7,
+"question": "हाइड्रोजन फ्लोराइड (HF) का क्वथनांक (Boiling Point) अन्य हाइड्रोजन हैलाइडों की तुलना में असामान्य रूप से उच्च क्यों होता है?",
+"options": {
+"A": "प्रबल अंतरा-आण्विक हाइड्रोजन आबंधन (Strong Intermolecular Hydrogen Bonding) के कारण",
+"B": "उच्च आण्विक द्रव्यमान के कारण",
+"C": "वाष्पशील होने के कारण",
+"D": "आयनिक प्रकृति के कारण"
+},
+"answer": "A",
+"explanation": "फ्लोरीन की उच्चतम विद्युतऋणात्मकता के कारण HF अणुओं के मध्य मजबूत हाइड्रोजन बंध बनते हैं, जिससे इसका क्वथनांक सर्वाधिक हो जाता है।"
+},
+{
+"id": "CHE07Q104",
+"subject": "chemistry",
+"chapter": 7,
+"question": "डीकन प्रक्रम (Deacon's Process) द्वारा किस गैस का औद्योगिक निर्माण किया जाता है?",
+"options": {
+"A": "क्लोरीन (Chlorine / Cl₂)",
+"B": "अमोनिया (NH₃)",
+"C": "सल्फर डाइऑक्साइड (SO₂)",
+"D": "ऑक्सीजन (O₂)"
+},
+"answer": "A",
+"explanation": "डीकन प्रक्रम में HCl गैस का वायुमंडलीय ऑक्सीजन द्वारा CuCl₂ उत्प्रेरक की उपस्थिति में 723 K पर ऑक्सीकरण करके Cl₂ बनाई जाती है।"
+},
+{
+"id": "CHE07Q105",
+"subject": "chemistry",
+"chapter": 7,
+"question": "डीकन प्रक्रम में HCl के ऑक्सीकरण हेतु कौन-सा उत्प्रेरक (Catalyst) उपयोग में लिया जाता है?",
+"options": {
+"A": "क्यूप्रिक क्लोराइड (CuCl₂)",
+"B": "V₂O₅",
+"C": "Fe चूर्ण",
+"D": "Pt जाली"
+},
+"answer": "A",
+"explanation": "4HCl + O₂ (CuCl₂ उत्प्रेरक, 723 K) → 2Cl₂ + 2H₂O अभिक्रिया में क्यूप्रिक क्लोराइड उत्प्रेरक का कार्य करता है।"
+},
+{
+"id": "CHE07Q106",
+"subject": "chemistry",
+"chapter": 7,
+"question": "ठंडे और तनु सोडियम हाइड्रॉक्साइड (Cold & Dilute NaOH) के साथ क्लोरीन की अभिक्रिया से कौन-से उत्पाद प्राप्त होते हैं?",
+"options": {
+"A": "NaCl और NaClO (सोडियम हाइपोक्लोराइट)",
+"B": "NaCl और NaClO₃",
+"C": "केवल NaCl",
+"D": "NaClO₄ और H₂"
+},
+"answer": "A",
+"explanation": "2NaOH(ठंडा/तनु) + Cl₂ → NaCl + NaOCl + H₂O अभिक्रिया होती है।"
+},
+{
+"id": "CHE07Q107",
+"subject": "chemistry",
+"chapter": 7,
+"question": "गर्म और सान्द्र सोडियम हाइड्रॉक्साइड (Hot & Conc. NaOH) के साथ क्लोरीन की क्रिया कराने पर क्या बनता है?",
+"options": {
+"A": "NaCl और NaClO₃ (सोडियम क्लोरेट)",
+"B": "NaCl और NaOCl",
+"C": "NaClO₂ और H₂O",
+"D": "केवल Cl₂O"
+},
+"answer": "A",
+"explanation": "6NaOH(गर्म/सान्द्र) + 3Cl₂ → 5NaCl + NaClO₃ + 3H₂O अभिक्रिया द्वारा सोडियम क्लोरेट बनता है।"
+},
+{
+"id": "CHE07Q108",
+"subject": "chemistry",
+"chapter": 7,
+"question": "शुष्क बुझे हुए चूने [Ca(OH)₂] पर क्लोरीन गैस प्रवाहित करने से किसका निर्माण होता है?",
+"options": {
+"A": "विरंजक चूर्ण / ब्लीचिंग पाउडर (Bleaching Powder)",
+"B": "जिप्सम",
+"C": "प्लास्टर ऑफ पेरिस",
+"D": "कैल्शियम क्लोराइड केवल"
+},
+"answer": "A",
+"explanation": "2Ca(OH)₂ + 2Cl₂ → Ca(OCl)₂.CaCl₂.Ca(OH)₂.2H₂O (विरंजक चूर्ण) का निर्माण होता है।"
+},
+{
+"id": "CHE07Q109",
+"subject": "chemistry",
+"chapter": 7,
+"question": "क्लोरीन (Cl₂) का विरंजन गुण (Bleaching Action) किसकी उपस्थिति में और किस कारण से स्थायी होता है?",
+"options": {
+"A": "नमी की उपस्थिति में ऑक्सीकरण (Oxidation) के कारण",
+"B": "अपचयन के कारण",
+"C": "उदासीनीकरण के कारण",
+"D": "शुष्क अवस्था में अवशोषण के कारण"
+},
+"answer": "A",
+"explanation": "Cl₂ जल से क्रिया करके नवजात ऑक्सीजन [O] मुक्त करती है (Cl₂ + H₂O → 2HCl + [O]), जो रंगीन पदार्थों को ऑक्सीकृत करके स्थायी रूप से रंगहीन बना देती है।"
+},
+{
+"id": "CHE07Q110",
+"subject": "chemistry",
+"chapter": 7,
+"question": "अश्रु गैस (Tear Gas) का रासायनिक नाम और सूत्र क्या है?",
+"options": {
+"A": "क्लोरोपिक्रिन (Chloropicrin / CCl₃NO₂)",
+"B": "फॉस्जीन (COCl₂)",
+"C": "मस्टर्ड गैस",
+"D": "क्लोरोफॉर्म (CHCl₃)"
+},
+"answer": "A",
+"explanation": "क्लोरोपिक्रिन (CCl₃NO₂) को अश्रु गैस कहा जाता है, जिसका उपयोग भीड़ नियंत्रण में होता है।"
+},
+{
+"id": "CHE07Q111",
+"subject": "chemistry",
+"chapter": 7,
+"question": "विषैली गैस फॉस्जीन (Phosgene) का सही रासायनिक सूत्र क्या है?",
+"options": {
+"A": "COCl₂ (कार्बोनिल क्लोराइड)",
+"B": "CCl₃NO₂",
+"C": "PH₃",
+"D": "SO₂Cl₂"
+},
+"answer": "A",
+"explanation": "कार्बन मोनोऑक्साइड और क्लोरीन के संयोग से बनी अत्यंत विषैली गैस कार्बोनिल क्लोराइड (COCl₂) को फॉस्जीन कहते हैं।"
+},
+{
+"id": "CHE07Q112",
+"subject": "chemistry",
+"chapter": 7,
+"question": "क्लोरीन के ऑक्सोअम्लों (HOCl, HClO₂, HClO₃, HClO₄) में अम्लीय सामर्थ्य (Acidic Strength) का सही क्रम क्या है?",
+"options": {
+"A": "HOCl < HClO₂ < HClO₃ < HClO₄",
+"B": "HClO₄ < HClO₃ < HClO₂ < HOCl",
+"C": "HClO₃ < HClO₄ < HOCl < HClO₂",
+"D": "HClO₂ < HOCl < HClO₄ < HClO₃"
+},
+"answer": "A",
+"explanation": "केंद्रीय हैलोजन परमाणु की ऑक्सीकरण अवस्था बढ़ने पर संयुग्मी ऋणायन का अनुनादी स्थायित्व बढ़ता है, जिससे अम्लता HOCl (+1) से HClO₄ (+7) तक बढ़ती है।"
+},
+{
+"id": "CHE07Q113",
+"subject": "chemistry",
+"chapter": 7,
+"question": "परक्लोरिक अम्ल (HClO₄) में क्लोरीन की ऑक्सीकरण अवस्था (Oxidation State) कितनी होती है?",
+"options": {
+"A": "+1",
+"B": "+3",
+"C": "+5",
+"D": "+7"
+},
+"answer": "D",
+"explanation": "HClO₄ में: (+1) + x + 4(-2) = 0 ⇒ x - 7 = 0 ⇒ x = +7 होती है।"
+},
+{
+"id": "CHE07Q114",
+"subject": "chemistry",
+"chapter": 7,
+"question": "दो भिन्न हैलोजनों के परस्पर संयोग से बनने वाले द्विअंगी यौगिक क्या कहलाते हैं?",
+"options": {
+"A": "अंतराहैलोजन यौगिक (Interhalogen Compounds)",
+"B": "पॉलीहैलाइड",
+"C": "स्यूडोहैलाइड",
+"D": "हैलोहाइड्रिन"
+},
+"answer": "A",
+"explanation": "जब दो भिन्न हैलोजन आपस में क्रिया करके XX', XX'₃, XX'₅ या XX'₇ प्रकार के सहसंयोजक यौगिक बनाते हैं, तो उन्हें अंतराहैलोजन यौगिक कहते हैं।"
+},
+{
+"id": "CHE07Q115",
+"subject": "chemistry",
+"chapter": 7,
+"question": "क्लोरीन ट्राइफ्लोराइड (ClF₃) अणु की ज्यामिति और आकृति (Shape) कैसी होती है?",
+"options": {
+"A": "त्रिकोणीय समतलीय",
+"B": "टी-आकृति (T-shaped)",
+"C": "चतुष्फलकीय",
+"D": "पिरामिडी"
+},
+"answer": "B",
+"explanation": "ClF₃ में क्लोरीन sp³d संकरित होता है, जिसमें 3 बंध युग्म और 2 एकाकी युग्म होने के कारण इसकी आकृति मुड़ी हुई टी-आकृति (Bent T-shape) होती है।"
+},
+{
+"id": "CHE07Q116",
+"subject": "chemistry",
+"chapter": 7,
+"question": "ब्रोमीन पेन्टाफ्लोराइड (BrF₅) अणु की आण्विक आकृति (Molecular Geometry) कैसी होती है?",
+"options": {
+"A": "त्रिकोणीय द्विपिरामिडी",
+"B": "वर्ग पिरामिडी (Square Pyramidal)",
+"C": "अष्टफलकीय",
+"D": "वर्ग समतलीय"
+},
+"answer": "B",
+"explanation": "BrF₅ में sp³d² संकरण होता है, जिसमें 5 बंध युग्म और 1 एकाकी युग्म होने से आकृति वर्ग पिरामिडी होती है।"
+},
+{
+"id": "CHE07Q117",
+"subject": "chemistry",
+"chapter": 7,
+"question": "आयोडीन हेप्टाफ्लोराइड (IF₇) अणु की ज्यामिति (Geometry) कौन-सी होती है?",
+"options": {
+"A": "पंचकोणीय द्विपिरामिडी (Pentagonal Bipyramidal)",
+"B": "अष्टफलकीय",
+"C": "चतुष्फलकीय",
+"D": "त्रिकोणीय द्विपिरामिडी"
+},
+"answer": "A",
+"explanation": "IF₇ में sp³d³ संकरण होता है तथा 7 बंध युग्म होने के कारण इसकी ज्यामिति पंचकोणीय द्विपिरामिडी होती है।"
+},
+{
+"id": "CHE07Q118",
+"subject": "chemistry",
+"chapter": 7,
+"question": "अंतराहैलोजन यौगिक (Interhalogen Compounds - जैसे ICl) अपनी जनक हैलोजनों (जैसे I₂) की तुलना में अधिक क्रियाशील क्यों होते हैं?",
+"options": {
+"A": "X-X' बंध, X-X बंध की तुलना में दुर्बल और ध्रुवीय होने के कारण",
+"B": "अक्रिय होने के कारण",
+"C": "गैस होने के कारण",
+"D": "कम क्वथनांक के कारण"
+},
+"answer": "A",
+"explanation": "विद्युतऋणात्मकता में अंतर के कारण विषम-नाभिकीय X-X' बंध ध्रुवीय और सम-नाभिकीय X-X बंध की तुलना में दुर्बल होकर आसानी से टूट जाता है।"
+},
+{
+"id": "CHE07Q119",
+"subject": "chemistry",
+"chapter": 7,
+"question": "युरेनियम-235 (U-235) के संवर्धन में UF₆ का उत्पादन करने के लिए किस उत्कृष्ट फ्लोरीनीकारक अंतराहैलोजन का उपयोग किया जाता है?",
+"options": {
+"A": "ClF₃ और BrF₃",
+"B": "ICl",
+"C": "IBr",
+"D": "IF"
+},
+"answer": "A",
+"explanation": "U(s) + 3ClF₃(l) → UF₆(g) + 3ClF(g) अभिक्रिया द्वारा परमाणु ईंधन संवर्धन हेतु वाष्पशील UF₆ प्राप्त किया जाता है।"
+},
+{
+"id": "CHE07Q120",
+"subject": "chemistry",
+"chapter": 7,
+"question": "आवर्त सारणी के वर्ग 18 (Group 18) के तत्वों को क्या कहा जाता है?",
+"options": {
+"A": "हैलोजन",
+"B": "उत्कृष्ट गैसें या अक्रिय गैसें (Noble Gases / Inert Gases)",
+"C": "चाल्कोजन",
+"D": "संक्रमण तत्व"
+},
+"answer": "B",
+"explanation": "वर्ग 18 के तत्वों (He, Ne, Ar, Kr, Xe, Rn) के सभी कक्षक पूर्णतः भरे होने के कारण ये रासायनिक रूप से अक्रिय होते हैं, अतः उत्कृष्ट गैसें कहलाते हैं।"
+},
+{
+"id": "CHE07Q121",
+"subject": "chemistry",
+"chapter": 7,
+"question": "हीलियम (Helium) का इलेक्ट्रॉनिक विन्यास क्या होता है?",
+"options": {
+"A": "1s²",
+"B": "2s²",
+"C": "1s² 2s²",
+"D": "ns² np⁶"
+},
+"answer": "A",
+"explanation": "हीलियम का परमाणु क्रमांक 2 है और इसका विन्यास 1s² (द्विक / Duplet पूर्ण) होता है।"
+},
+{
+"id": "CHE07Q122",
+"subject": "chemistry",
+"chapter": 7,
+"question": "हीलियम को छोड़कर शेष सभी उत्कृष्ट गैसों का सामान्य संयोजकता कोश विन्यास क्या होता है?",
+"options": {
+"A": "ns² np⁶ (पूर्ण अष्टक)",
+"B": "ns² np⁵",
+"C": "ns² np⁴",
+"D": "ns¹ np⁶"
+},
+"answer": "A",
+"explanation": "हीलियम के अतिरिक्त अन्य सभी उत्कृष्ट गैसों के बाह्यतम कोश में 8 इलेक्ट्रॉन (ns² np⁶) होते हैं।"
+},
+{
+"id": "CHE07Q123",
+"subject": "chemistry",
+"chapter": 7,
+"question": "उत्कृष्ट गैसों की आयनन एन्थैल्पी (Ionization Enthalpy) अपने-अपने आवर्त में सर्वाधिक क्यों होती है?",
+"options": {
+"A": "स्थायी पूर्ण पूरित इलेक्ट्रॉनिक विन्यास (Stable Fully-filled Configuration) के कारण",
+"B": "कम नाभिकीय आवेश के कारण",
+"C": "बड़े परमाणु आकार के कारण",
+"D": "गैस होने के कारण"
+},
+"answer": "A",
+"explanation": "पूर्णतः भरे हुए s और p कक्षकों के अत्यधिक स्थायी अष्टक से इलेक्ट्रॉन निकालना अत्यंत कठिन होता है।"
+},
+{
+"id": "CHE07Q124",
+"subject": "chemistry",
+"chapter": 7,
+"question": "उत्कृष्ट गैसों की इलेक्ट्रॉन लब्धि एन्थैल्पी (Electron Gain Enthalpy) का मान कैसा होता है?",
+"options": {
+"A": "अत्यधिक ऋणात्मक",
+"B": "अत्यधिक धनात्मक (Highly Positive)",
+"C": "शून्य से कम",
+"D": "परिवर्तनशील"
+},
+"answer": "B",
+"explanation": "स्थायी अष्टक होने के कारण नए इलेक्ट्रॉन को अगले उच्च मुख्य ऊर्जा स्तर में जाना पड़ता है, जिसके लिए ऊर्जा देनी पड़ती है, अतः मान धनात्मक होता है।"
+},
+{
+"id": "CHE07Q125",
+"subject": "chemistry",
+"chapter": 7,
+"question": "सर्वप्रथम किस वैज्ञानिक ने उत्कृष्ट गैसों के वास्तविक रासायनिक यौगिकों के संश्लेषण की नींव रखी?",
+"options": {
+"A": "नील बार्टलेट (Neil Bartlett, 1962)",
+"B": "रैमजे",
+"C": "मेंडेलीव",
+"D": "कैवेंडिश"
+},
+"answer": "A",
+"explanation": "नील बार्टलेट ने देखा कि O₂ और ज़ेनॉन (Xe) की प्रथम आयनन ऊर्जा लगभग समान (1175 kJ/mol) है, जिससे उन्होंने पहला यौगिक Xe⁺[PtF₆]⁻ बनाया।"
+},
+{
+"id": "CHE07Q126",
+"subject": "chemistry",
+"chapter": 7,
+"question": "नील बार्टलेट द्वारा संश्लेषित प्रथम उत्कृष्ट गैस यौगिक कौन-सा था?",
+"options": {
+"A": "Xe⁺[PtF₆]⁻ (लाल रंग का ठोस)",
+"B": "XeF₂",
+"C": "XeF₄",
+"D": "XeO₃"
+},
+"answer": "A",
+"explanation": "बार्टलेट ने O₂⁺[PtF₆]⁻ की खोज के आधार पर ज़ेनॉन हेक्साफ्लोरोप्लैटिनेट [Xe⁺PtF₆⁻] का निर्माण किया।"
+},
+{
+"id": "CHE07Q127",
+"subject": "chemistry",
+"chapter": 7,
+"question": "ज़ेनॉन डाइफ्लोराइड (XeF₂) अणु की आकृति (Shape) कैसी होती है?",
+"options": {
+"A": "रेखीय (Linear)",
+"B": "टी-आकृति",
+"C": "कोणीय",
+"D": "समतलीय"
+},
+"answer": "A",
+"explanation": "XeF₂ में ज़ेनॉन sp³d संकरित होता है, जिसमें 2 बंध युग्म अक्षीय तथा 3 एकाकी युग्म निरक्षीय स्थिति में सममित होने से आकृति रेखीय (Linear) होती है।"
+},
+{
+"id": "CHE07Q128",
+"subject": "chemistry",
+"chapter": 7,
+"question": "ज़ेनॉन टेट्राफ्लोराइड (XeF₄) अणु की ज्यामिति और आकृति (Shape) क्या होती है?",
+"options": {
+"A": "वर्ग समतलीय (Square Planar)",
+"B": "चतुष्फलकीय",
+"C": "अष्टफलकीय",
+"D": "त्रिकोणीय द्विपिरामिडी"
+},
+"answer": "A",
+"explanation": "XeF₄ में sp³d² संकरण होता है, जिसमें 4 बंध युग्म और 2 एकाकी युग्म विपरीत दिशा में होने से इसकी आकृति वर्ग समतलीय (Square Planar) बनती है।"
+},
+{
+"id": "CHE07Q129",
+"subject": "chemistry",
+"chapter": 7,
+"question": "ज़ेनॉन हेक्साफ्लोराइड (XeF₆) अणु की आकृति (Shape) कौन-सी होती है?",
+"options": {
+"A": "विकृत अष्टफलकीय (Distorted Octahedral)",
+"B": "नियमित अष्टफलकीय",
+"C": "पंचकोणीय समतलीय",
+"D": "वर्ग पिरामिडी"
+},
+"answer": "A",
+"explanation": "XeF₆ में 6 बंध युग्म और 1 एकाकी युग्म (sp³d³ संकरण) उपस्थित होने के कारण इसकी आकृति विकृत अष्टफलकीय (Distorted Octahedral) होती है।"
+},
+{
+"id": "CHE07Q130",
+"subject": "chemistry",
+"chapter": 7,
+"question": "ज़ेनॉन ट्राइऑक्साइड (XeO₃) अणु की आण्विक आकृति कैसी होती है?",
+"options": {
+"A": "त्रिकोणीय पिरामिडी (Pyramidal)",
+"B": "समतलीय त्रिकोणीय",
+"C": "टी-आकृति",
+"D": "रेखीय"
+},
+"answer": "A",
+"explanation": "XeO₃ में 3 सिग्मा बंध (Xe=O) और 1 एकाकी युग्म होने के कारण sp³ संकरण और पिरामिडी आकृति होती है।"
+},
+{
+"id": "CHE07Q131",
+"subject": "chemistry",
+"chapter": 7,
+"question": "ज़ेनॉन ऑक्सीटेट्राफ्लोराइड (XeOF₄) अणु की आण्विक आकृति क्या होती है?",
+"options": {
+"A": "वर्ग पिरामिडी (Square Pyramidal)",
+"B": "वर्ग समतलीय",
+"C": "चतुष्फलकीय",
+"D": "रेखीय"
+},
+"answer": "A",
+"explanation": "XeOF₄ में sp³d² संकरण के साथ 5 बंध युग्म और 1 एकाकी युग्म होता है, जिससे इसकी आकृति वर्ग पिरामिडी होती है।"
+},
+{
+"id": "CHE07Q132",
+"subject": "chemistry",
+"chapter": 7,
+"question": "XeF₆ के पूर्ण जलअपघटन (Complete Hydrolysis) से कौन-सा विस्फोटक ठोस यौगिक प्राप्त होता है?",
+"options": {
+"A": "XeO₃ (ज़ेनॉन ट्राइऑक्साइड)",
+"B": "XeOF₄",
+"C": "XeO₂F₂",
+"D": "XeO₄"
+},
+"answer": "A",
+"explanation": "XeF₆ + 3H₂O → XeO₃ + 6HF अभिक्रिया में रंगहीन, अत्यधिक विस्फोटक ठोस XeO₃ प्राप्त होता है।"
+},
+{
+"id": "CHE07Q133",
+"subject": "chemistry",
+"chapter": 7,
+"question": "समुद्री गोताखोरों (Deep Sea Divers) द्वारा प्रयुक्त श्वसन सिलेंडरों में ऑक्सीजन को तनु करने के लिए किस अक्रिय गैस का उपयोग किया जाता है?",
+"options": {
+"A": "हीलियम (Helium / He)",
+"B": "नियॉन (Ne)",
+"C": "आर्गन (Ar)",
+"D": "क्रिप्टॉन (Kr)"
+},
+"answer": "A",
+"explanation": "हीलियम की रक्त में विलेयता अत्यधिक कम होती है, जिससे यह गोताखोरों को 'बेंड्स' (Bends) नामक दर्दनाक स्थिति से बचाती है।"
+},
+{
+"id": "CHE07Q134",
+"subject": "chemistry",
+"chapter": 7,
+"question": "मौसम संबंधी गुब्बारों (Meteorological Balloons) को भरने के लिए हाइड्रोजन के स्थान पर हीलियम को प्राथमिकता क्यों दी जाती है?",
+"options": {
+"A": "क्योंकि हीलियम अज्वलनशील (Non-inflammable) और हल्की गैस है",
+"B": "क्योंकि हीलियम भारी होती है",
+"C": "कम लागत के कारण",
+"D": "रंगीन होने के कारण"
+},
+"answer": "A",
+"explanation": "हाइड्रोजन अत्यधिक ज्वलनशील और विस्फोटक होती है, जबकि हीलियम हल्की होने के साथ-साथ पूर्णतः अज्वलनशील और सुरक्षित गैस है।"
+},
+{
+"id": "CHE07Q135",
+"subject": "chemistry",
+"chapter": 7,
+"question": "विज्ञापन संकेतों (Advertisement Display Signs) में चमकीले लाल-नारंगी प्रकाश के लिए किस उत्कृष्ट गैस का उपयोग किया जाता है?",
+"options": {
+"A": "नियॉन (Neon / Ne)",
+"B": "आर्गन (Ar)",
+"C": "ज़ेनॉन (Xe)",
+"D": "हीलियम (He)"
+},
+"answer": "A",
+"explanation": "नियॉन विसर्जन लैंपों में विद्युत प्रवाहित करने पर विशिष्ट चमकीला लाल-नारंगी प्रकाश उत्पन्न होता है, जो कोहरे में भी दिखाई देता है।"
+},
+{
+"id": "CHE07Q136",
+"subject": "chemistry",
+"chapter": 7,
+"question": "धातुओं की अक्रिय गैस आर्क वेल्डिंग (MIG/TIG Welding) और विद्युत बल्बों में निष्क्रिय वातावरण प्रदान करने हेतु कौन-सी गैस प्रयुक्त होती है?",
+"options": {
+"A": "आर्गन (Argon / Ar)",
+"B": "फ्लोरीन",
+"C": "क्लोरीन",
+"D": "ऑक्सीजन"
+},
+"answer": "A",
+"explanation": "आर्गन वायुमंडल में प्रचुर और सस्ती उत्कृष्ट गैस है, जो उच्च ताप पर धातुओं को ऑक्सीकरण से बचाने हेतु अक्रिय आवरण प्रदान करती है।"
+},
+{
+"id": "CHE07Q137",
+"subject": "chemistry",
+"chapter": 7,
+"question": "कैंसर के उपचार में विकिरण चिकित्सा (Radiotherapy) हेतु किस रेडियोधर्मी उत्कृष्ट गैस का उपयोग किया जाता है?",
+"options": {
+"A": "रेडॉन (Radon / Rn)",
+"B": "ज़ेनॉन (Xe)",
+"C": "क्रिप्टॉन (Kr)",
+"D": "आर्गन (Ar)"
+},
+"answer": "A",
+"explanation": "रेडियम के रेडियोधर्मी क्षय से प्राप्त रेडॉन (Rn) गैस का उपयोग कैंसर ट्यूमर के विकिरण उपचार में किया जाता है।"
+},
+{
+"id": "CHE07Q138",
+"subject": "chemistry",
+"chapter": 7,
+"question": "हवाई अड्डों पर पायलटों के मार्गदर्शन हेतु प्रयुक्त बीकन लाइटों (Beacon Lights) में किस गैस का उपयोग किया जाता है?",
+"options": {
+"A": "नियॉन (Neon)",
+"B": "हीलियम",
+"C": "नाइट्रोजन",
+"D": "हाइड्रोजन"
+},
+"answer": "A",
+"explanation": "नियॉन प्रकाश की भेदन क्षमता कोहरे और धुंध में अत्यधिक होती है, इसलिए इसका उपयोग हवाई अड्डों पर बीकन लाइटों में किया जाता है।"
+},
+{
+"id": "CHE07Q139",
+"subject": "chemistry",
+"chapter": 7,
+"question": "चुंबकीय अनुनाद इमेजिंग (MRI) तंत्र में शक्तिशाली अतिचालक चुंबकों को प्रशीतित (ठंडा) रखने के लिए किसका उपयोग किया जाता है?",
+"options": {
+"A": "द्रव हीलियम (Liquid Helium)",
+"B": "द्रव नाइट्रोजन",
+"C": "ठोस CO₂",
+"D": "द्रव अमोनिया"
+},
+"answer": "A",
+"explanation": "द्रव हीलियम का क्वथनांक सबसे कम (4.2 K) होता है, अतः इसका उपयोग अतिचालक चुंबकों को क्रायोजेनिक शीतलन प्रदान करने में किया जाता है।"
+},
+{
+"id": "CHE07Q140",
+"subject": "chemistry",
+"chapter": 7,
+"question": "निम्नलिखित में से कौन-सा उत्कृष्ट गैस तत्व वायुमंडल में नहीं पाया जाता है?",
+"options": {
+"A": "रेडॉन (Radon / Rn)",
+"B": "हीलियम (He)",
+"C": "आर्गन (Ar)",
+"D": "नियॉन (Ne)"
+},
+"answer": "A",
+"explanation": "रेडॉन एक रेडियोधर्मी तत्व है जो रेडियम के विघटन से बनता है और वायुमंडल में सामान्य रूप से अनुपस्थित होता है।"
+}
+{
+"id": "CHE07Q141",
+"subject": "chemistry",
+"chapter": 7,
+"question": "वर्ग 15 के तत्वों में ऊपर से नीचे जाने पर घनत्व (Density) पर क्या प्रभाव पड़ता है?",
+"options": {
+"A": "घनत्व निरंतर बढ़ता है",
+"B": "घनत्व निरंतर घटता है",
+"C": "घनत्व अपरिवर्तित रहता है",
+"D": "पहले बढ़ता है फिर घटता है"
+},
+"answer": "A",
+"explanation": "वर्ग में नीचे की ओर जाने पर परमाणु द्रव्यमान (Atomic Mass) में वृद्धि परमाणु आयतन की तुलना में अधिक प्रभावी होती है, जिससे घनत्व लगातार बढ़ता है।"
+},
+{
+"id": "CHE07Q142",
+"subject": "chemistry",
+"chapter": 7,
+"question": "डाइनाइट्रोजन (Dinitrogen / N₂) का उपयोग जैविक पदार्थों के प्रशीतन हेतु किस रूप में किया जाता है?",
+"options": {
+"A": "ठोस N₂",
+"B": "द्रव N₂ (Liquid Nitrogen)",
+"C": "वाष्प N₂",
+"D": "गैसीय N₂"
+},
+"answer": "B",
+"explanation": "द्रव नाइट्रोजन का क्वथनांक (Boiling Point) अत्यंत निम्न (लगभग 77.2 K) होने के कारण इसका उपयोग क्रायोजेनिक प्रशीतक (Cryogenic Refrigerant) के रूप में होता है।"
+},
+{
+"id": "CHE07Q143",
+"subject": "chemistry",
+"chapter": 7,
+"question": "अमोनिया (NH₃) के आधिक्य (Excess) में क्लोरीन (Cl₂) की अभिक्रिया कराने पर कौन-से उत्पाद प्राप्त होते हैं?",
+"options": {
+"A": "अमोनियम क्लोराइड (NH₄Cl) और N₂",
+"B": "NCl₃ और HCl",
+"C": "NO₂ और NH₄Cl",
+"D": "N₂O और HCl"
+},
+"answer": "A",
+"explanation": "समीकरण 8NH₃(आधिक्य) + 3Cl₂ → 6NH₄Cl + N₂ के अनुसार अमोनियम क्लोराइड और डाइनाइट्रोजन गैस बनती है।"
+},
+{
+"id": "CHE07Q144",
+"subject": "chemistry",
+"chapter": 7,
+"question": "क्लोरीन (Cl₂) के आधिक्य (Excess) में अमोनिया (NH₃) के साथ क्रिया कराने पर कौन-सा विस्फोटक पदार्थ बनता है?",
+"options": {
+"A": "N₂",
+"B": "नाइट्रोजन ट्राइक्लोराइड (NCl₃)",
+"C": "NH₄Cl",
+"D": "NH₄NO₃"
+},
+"answer": "B",
+"explanation": "समीकरण NH₃ + 3Cl₂(आधिक्य) → NCl₃ + 3HCl के अनुसार अत्यंत अस्थिर और विस्फोटक पीला द्रव नाइट्रोजन ट्राइक्लोराइड (NCl₃) बनता है।"
+},
+{
+"id": "CHE07Q145",
+"subject": "chemistry",
+"chapter": 7,
+"question": "वर्ग 16 (ऑक्सीजन परिवार) के हाइड्राइडों में सबसे कम क्वथनांक (Boiling Point) किसका होता है?",
+"options": {
+"A": "H₂O",
+"B": "H₂S (हाइड्रोजन सल्फाइड)",
+"C": "H₂Se",
+"D": "H₂Te"
+},
+"answer": "B",
+"explanation": "H₂O में हाइड्रोजन बंध (Hydrogen Bonding) के कारण क्वथनांक सर्वाधिक होता है, जबकि H₂S में हाइड्रोजन बंध न होने और दुर्बल वान्डरवाल्स बलों के कारण इसका क्वथनांक सबसे कम होता है।"
+},
+{
+"id": "CHE07Q146",
+"subject": "chemistry",
+"chapter": 7,
+"question": "सल्फर डाइऑक्साइड (SO₂) गैस की पहचान हेतु अम्लीकृत पोटैशियम डाइक्रोमेट (K₂Cr₂O₇) विलयन का रंग कैसा हो जाता है?",
+"options": {
+"A": "नारंगी से हरा (Orange to Green)",
+"B": "नीला से लाल",
+"C": "पीला से काला",
+"D": "रंगहीन"
+},
+"answer": "A",
+"explanation": "SO₂ एक अपचायक (Reducing Agent) है जो Cr(VI) (नारंगी रंग) को Cr³⁺ (हरे रंग के क्रोमियम सल्फेट) में अपचयित कर देती है।"
+},
+{
+"id": "CHE07Q147",
+"subject": "chemistry",
+"chapter": 7,
+"question": "फ्लोरीन के आधिक्य में आयोडीन (I₂) के साथ 573 K पर क्रिया कराने पर कौन-सा अंतराहैलोजन (Interhalogen) यौगिक प्राप्त होता है?",
+"options": {
+"A": "IF",
+"B": "IF₃",
+"C": "IF₅",
+"D": "आयोडीन हेप्टाफ्लोराइड (IF₇)",
+"answer": "D",
+"explanation": "आयोडीन का परमाणु आकार बड़ा होने के कारण यह 7 छोटे फ्लोरीन परमाणुओं को संयोजित करके उच्च ताप पर IF₇ बनाता है।"
+},
+{
+"id": "CHE07Q148",
+"subject": "chemistry",
+"chapter": 7,
+"question": "ज़ेनॉन ऑक्सीटेट्राफ्लोराइड (XeOF₄) में ज़ेनॉन परमाणु का संकरण (Hybridization) क्या होता है?",
+"options": {
+"A": "sp³",
+"B": "sp³d",
+"C": "sp³d²",
+"D": "sp³d³"
+},
+"answer": "C",
+"explanation": "XeOF₄ में 5 सिग्मा बंध (Sigma Bonds) और 1 एकाकी इलेक्ट्रॉन युग्म (Lone Pair) होने के कारण त्रिविम संख्या (Steric Number) 6 होती है, अतः संकरण sp³d² होता है।"
+},
+{
+"id": "CHE07Q149",
+"subject": "chemistry",
+"chapter": 7,
+"question": "आर्गन (Ar) गैस का मुख्य औद्योगिक उपयोग किस कार्य में किया जाता है?",
+"options": {
+"A": "विद्युत बल्बों और धातु वेल्डिंग में अक्रिय वातावरण (Inert Atmosphere) उत्पन्न करने में",
+"B": "चिकित्सा में श्वसन हेतु",
+"C": "रॉकेट ईंधन के रूप में",
+"D": "खाद्य पदार्थों के संरक्षण में"
+},
+"answer": "A",
+"explanation": "आर्गन एक निष्क्रिय गैस है जो उच्च ताप पर धातुओं को ऑक्सीकरण से बचाने के लिए आर्क वेल्डिंग और तापदीप्त बल्बों में अक्रिय वातावरण प्रदान करती है।"
+},
+{
+"id": "CHE07Q150",
+"subject": "chemistry",
+"chapter": 7,
+"question": "रेडियोधर्मी क्षय शृंखला (Radioactive Decay Series) से प्राप्त होने वाली एकमात्र अक्रिय गैस (Noble Gas) कौन-सी है?",
+"options": {
+"A": "क्रिप्टॉन (Kr)",
+"B": "ज़ेनॉन (Xe)",
+"C": "रेडॉन (Rn)",
+"D": "आर्गन (Ar)"
+},
+"answer": "C",
+"explanation": "रेडॉन (Rn) रेडियम-226 के रेडियोधर्मी विघटन (Alpha Decay) से प्राप्त होती है और यह वर्ग 18 की एकमात्र प्राकृतिक रेडियोधर्मी गैस है।"
+}
+]
 }
