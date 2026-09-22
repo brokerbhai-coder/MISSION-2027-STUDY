@@ -75,7 +75,7 @@
     try { S.defs[name](c, master, c.currentTime + 0.01); } catch (e) { /* ignore */ }
   };
 
-  /* ---------- Focus आवाज़ (हल्का भूरा शोर, बहुत धीमा) ---------- */
+  /* ---------- Focus आवाज़ (हल्का भूरा शोर, बहुत धीमा) — जब कोई अपना गाना न हो तब ---------- */
   function noiseBuffer(c) {
     var len = c.sampleRate * 6;
     var buf = c.createBuffer(1, len, c.sampleRate);
@@ -85,28 +85,106 @@
     for (i = 0; i < edge; i++) { var k = i / edge; d[i] *= k; d[len - 1 - i] *= k; }
     return buf;
   }
-  function startAmbient() {
-    if (amb || !cfg.on || !cfg.focus) return;
+  function startNoise() {
     var c = ensure();
-    if (!c) return;
+    if (!c || amb) return;
     var src = c.createBufferSource(); src.buffer = noiseBuffer(c); src.loop = true;
     var lp = c.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 420;
     var g = c.createGain(); g.gain.setValueAtTime(0.0001, c.currentTime); g.gain.linearRampToValueAtTime(0.07, c.currentTime + 2.5);
     src.connect(lp); lp.connect(g); g.connect(master);
     src.start();
-    amb = { src: src, g: g };
+    amb = { kind: 'noise', src: src, g: g };
     S._log.push('focus-on');
   }
-  function stopAmbient() {
+
+  /* ---------- Focus का अपना गाना (तुम्हारी अपनी mp3/ogg फ़ाइलें, copyright-free) ----------
+     data/focus-music/manifest.json में गानों की सूची डालो; website उन्हें बारी-बारी
+     (बिना तुरंत दोहराए) बजाती है, ताज़ा जोड़ी फ़ाइल अपने-आप पहचान लेती है — कोई code नहीं बदलना।
+     फ़ाइल न मिले या manifest न हो तो चुपचाप ऊपर वाली हल्की आवाज़ (noise) पर वापस चली जाती है। */
+  var MUSIC_URL = 'data/focus-music/manifest.json';
+  var musicP = null, musicOrder = [], musicPos = 0, musicBroken = false, musicFails = 0;
+  function safeAudioPath(p) {
+    if (typeof p !== 'string') return null;
+    p = p.trim();
+    if (!p || /^[a-z][a-z0-9+.-]*:/i.test(p) || p.charAt(0) === '/' || p.charAt(0) === '\\' || p.indexOf('..') >= 0) return null;
+    if (!/\.(mp3|ogg|wav|m4a|aac)$/i.test(p)) return null;
+    return p;
+  }
+  function loadMusicManifest() {
+    if (!musicP) {
+      musicP = fetch(MUSIC_URL, { cache: 'no-cache' }).then(function (res) { return res.ok ? res.json() : null; })
+        .then(function (raw) {
+          var list = raw && Array.isArray(raw.tracks) ? raw.tracks : [];
+          var out = [];
+          list.forEach(function (t) {
+            var file = t && safeAudioPath(t.file);
+            if (file) out.push({ file: file, title: (t.title && String(t.title).trim()) || file.split('/').pop() });
+          });
+          return out;
+        }).catch(function () { return []; });
+    }
+    return musicP;
+  }
+  function shuffle(arr) { for (var i = arr.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), t = arr[i]; arr[i] = arr[j]; arr[j] = t; } return arr; }
+  function nextOrder(n) { musicOrder = shuffle(Array.from({ length: n }, function (_, i) { return i; })); musicPos = 0; }
+
+  function playTrack(tracks, idx) {
+    var c = ensure();
+    if (!c) return;
+    var el = new Audio();
+    el.src = tracks[idx].file;
+    el.crossOrigin = 'anonymous';
+    el.loop = tracks.length === 1;
+    var g = c.createGain();
+    g.gain.setValueAtTime(0.0001, c.currentTime); g.gain.linearRampToValueAtTime(0.35, c.currentTime + 2.5);
+    var node;
+    try { node = c.createMediaElementSource(el); node.connect(g); g.connect(master); } catch (e) { /* पुराना browser: सीधे तत्व चलाओ */ el.volume = 0.35; }
+    amb = { kind: 'music', el: el, g: g, node: node, tracks: tracks, idx: idx };
+    el.addEventListener('canplay', function () { musicFails = 0; }, { once: true });
+    el.addEventListener('ended', function () { if (amb && amb.el === el) S.nextTrack(); });
+    el.addEventListener('error', function () {
+      if (!amb || amb.el !== el) return;
+      amb = null;
+      musicFails += 1;
+      if (musicFails >= tracks.length) { musicBroken = true; startNoise(); } // सारे track बारी-बारी टूटे मिले, अब वापस मत कोशिश करो
+      else advanceMusic(tracks);
+    });
+    var p = el.play();
+    if (p && p.catch) p.catch(function () { /* अगला tap आने पर फिर कोशिश होगी */ });
+    S._log.push('focus-on-music');
+    renderUi();
+  }
+  function advanceMusic(tracks) {
+    if (!musicOrder.length || musicPos >= musicOrder.length) nextOrder(tracks.length);
+    var idx = musicOrder[musicPos]; musicPos += 1;
+    playTrack(tracks, idx);
+  }
+  S.nextTrack = function () {
+    if (!amb || amb.kind !== 'music') return;
+    var tracks = amb.tracks;
+    stopAmbient(true);
+    advanceMusic(tracks);
+  };
+
+  function startAmbient() {
+    if (amb || !cfg.on || !cfg.focus) return;
+    if (musicBroken) { startNoise(); return; }
+    loadMusicManifest().then(function (tracks) {
+      if (!cfg.on || !cfg.focus || amb) return; // इस दौरान कोई बदलाव हो गया हो
+      if (tracks.length) advanceMusic(tracks); else startNoise();
+    });
+  }
+  function stopAmbient(keepPosition) {
     if (!amb) return;
     var a = amb; amb = null;
     try {
       a.g.gain.cancelScheduledValues(ctx.currentTime);
       a.g.gain.setValueAtTime(a.g.gain.value, ctx.currentTime);
-      a.g.gain.linearRampToValueAtTime(0.0001, ctx.currentTime + 0.8);
-      a.src.stop(ctx.currentTime + 0.9);
+      a.g.gain.linearRampToValueAtTime(0.0001, ctx.currentTime + (keepPosition ? 0.3 : 0.8));
     } catch (e) { /* ignore */ }
-    S._log.push('focus-off');
+    if (a.kind === 'noise') { try { a.src.stop(ctx.currentTime + 0.9); } catch (e) { /* ignore */ } }
+    else { setTimeout(function () { try { a.el.pause(); if (a.node) a.node.disconnect(); } catch (e) { /* ignore */ } }, keepPosition ? 320 : 850); }
+    if (!keepPosition) S._log.push('focus-off');
   }
 
   S.setOn = function (v) { cfg.on = !!v; saveCfg(); if (!cfg.on) stopAmbient(); else { if (cfg.focus) startAmbient(); S.play('done'); } renderUi(); };
@@ -115,7 +193,8 @@
     if (cfg.focus && cfg.on) { startAmbient(); S.play('start'); } else stopAmbient();
     renderUi();
   };
-  S.config = function () { return { on: cfg.on, focus: cfg.focus }; };
+  S.config = function () { return { on: cfg.on, focus: cfg.focus, playing: amb ? amb.kind : null, track: amb && amb.kind === 'music' ? amb.tracks[amb.idx].title : null }; };
+  S._activeEl = function () { return amb && amb.kind === 'music' ? amb.el : null; }; // debugging/testing के लिए
 
   /* ---------- 🔊 बटन और छोटा panel ---------- */
   function renderUi() {
@@ -123,11 +202,14 @@
     if (b) b.textContent = cfg.on ? (cfg.focus ? '🎧' : '🔊') : '🔇';
     var p = document.getElementById('soundPanel');
     if (p) {
+      var isMusic = amb && amb.kind === 'music';
       p.innerHTML = '<button class="chip-btn' + (cfg.on ? ' on' : '') + '" data-snd="on">' + (cfg.on ? '🔊 Sound चालू' : '🔇 Sound बंद') + '</button>' +
-        '<button class="chip-btn' + (cfg.focus && cfg.on ? ' on' : '') + '" data-snd="focus"' + (cfg.on ? '' : ' disabled') + '>🎧 Focus आवाज़ ' + (cfg.focus ? 'चालू' : 'बंद') + '</button>' +
-        '<small class="muted">Focus आवाज़ हल्की और लगातार चलती है ताकि ध्यान न भटके। फ़ोन का volume और silent mode भी असर करते हैं।</small>';
+        '<button class="chip-btn' + (cfg.focus && cfg.on ? ' on' : '') + '" data-snd="focus"' + (cfg.on ? '' : ' disabled') + '>🎧 Focus ' + (isMusic ? 'गाना' : 'आवाज़') + ' ' + (cfg.focus ? 'चालू' : 'बंद') + '</button>' +
+        (isMusic ? '<div class="sound-track"><span>🎵 ' + esc(amb.tracks[amb.idx].title) + '</span><button class="chip-btn" data-snd="next">⏭ अगला गाना</button></div>' : '') +
+        '<small class="muted">Focus ' + (isMusic ? 'गाना तुम्हारी अपनी data/focus-music/ की फ़ाइलों से बजता है।' : 'आवाज़ हल्की और लगातार चलती है ताकि ध्यान न भटके।') + ' फ़ोन का volume और silent mode भी असर करते हैं।</small>';
     }
   }
+  function esc(s) { var d = document.createElement('div'); d.textContent = s == null ? '' : String(s); return d.innerHTML; }
   function buildUi() {
     var pills = document.querySelector('#topbar .pills');
     if (!pills || document.getElementById('soundBtn')) return;
@@ -142,7 +224,8 @@
       e.stopPropagation();
       var t = e.target.closest ? e.target.closest('[data-snd]') : null;
       if (!t || t.disabled) return;
-      if (t.getAttribute('data-snd') === 'on') S.setOn(!cfg.on); else S.setFocus(!cfg.focus);
+      var k = t.getAttribute('data-snd');
+      if (k === 'on') S.setOn(!cfg.on); else if (k === 'focus') S.setFocus(!cfg.focus); else if (k === 'next') S.nextTrack();
     });
     document.addEventListener('click', function () { p.hidden = true; });
     renderUi();
