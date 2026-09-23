@@ -1,12 +1,18 @@
 /* ==========================================================
-   quickcheck.js  (नया)
-   काम: "Quick Check" — Notes पढ़ते वक़्त हर ~10 मिनट Active Reading पर
-   बीच में ही एक छोटा 3-सवाल का Quiz-Card अपने-आप आता है।
-   - हर सही जवाब पर 0.1 XP (ज़्यादा से ज़्यादा 0.3 इस एक Check में)
-   - कम से कम 1 सही जवाब आने पर 1 Motivational Quote/Shayari खुलती है
-   - Skip किया जा सकता है — तब कोई XP/Quote नहीं, Timer फिर से 10 मिनट पर सेट
-   - Timer सिर्फ़ तभी गिनता है जब विद्यार्थी सच में उसी Chapter के Notes पर हो
-     (Tab बदलने/Screen Off पर रुक जाता है — quiz timer जैसा ही तरीका)
+   quickcheck.js
+   काम: पूरी Website पर हर ~10 मिनट Active Time पर (Background में,
+   कहीं Timer नहीं दिखता) — विद्यार्थी उस वक़्त कहाँ है उसके हिसाब से:
+
+   🅰 Notes पढ़ रहा हो        → छोटा 3-Question Quick Check
+                                (सही जवाब पर 0.1 XP/सवाल, ≥1 सही पर 1 Motivational Quote, Skip कर सकते हैं)
+   🅱 Quiz खेल रहा हो         → उसी वक़्त कुछ नहीं आता (टोकता नहीं); Quiz खत्म होने
+                                के 2 मिनट बाद Card आता है
+   🅲 न Notes, न Quiz        → ज़रूरी 10-Question Mistake-Test (Skip नहीं) — "गलतियाँ"
+      (सिर्फ़ Idle/Games/...)  Notebook से (कम पड़े तो अनदेखे Chapters से, वो भी कम तो
+                                Random से) — कम से कम 5/10 सही ज़रूरी, नहीं तो वही
+                                10 सवाल फिर से; कोई XP नहीं (सिर्फ़ Revision)
+                                (सिर्फ़ तभी जब कम से कम 1 "गलती" कभी दर्ज हुई हो —
+                                बिल्कुल नए विद्यार्थी को यह Test नहीं आता)
 
    पुराना quiz.js / progress.js / XP / Fun Vault इस्तेमाल या बदले नहीं जाते —
    यह पूरी तरह अलग, छोटा सा System है।
@@ -17,9 +23,11 @@
 
   var X = M.Extras;
   var QC = {};
-  var THRESHOLD = 600; // सेकंड (10 मिनट Active Reading)
+  var THRESHOLD = 600;        // सेकंड (10 मिनट Active Time)
+  var QUIZ_BUFFER = 120;      // Quiz खत्म होने के बाद इतने सेकंड (2 मिनट) रुककर Card आए
   var tickId = null;
-  var current = null; // { subject, chapter } — अभी किस Chapter के Notes खुले हैं
+  var pendingAfterQuiz = false;
+  var bufferSec = 0;
 
   // मौलिक (खुद लिखी) प्रेरणादायक पंक्तियाँ — पढ़ाई/परीक्षा की मेहनत के लिए
   var QUOTES = [
@@ -77,6 +85,9 @@
     'हर बार जब मन करे छोड़ने का, याद रखो — तुम यहाँ तक क्यों आए थे।'
   ];
 
+  function esc(s) { return M.App.esc(s); }
+  function shuffle(a) { for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+
   function store() {
     var s = X.store();
     if (!s.qc || typeof s.qc !== 'object') s.qc = { sec: 0, xp: 0, seen: [] };
@@ -92,34 +103,114 @@
     return QUOTES[idx];
   }
 
-  /* ---------- Timer: सिर्फ़ उसी Chapter के Notes पर हो तभी गिनो ---------- */
-  QC.notifyActive = function (subject, chapter) {
-    current = { subject: subject, chapter: chapter };
-    if (!tickId) tickId = setInterval(tick, 1000);
-  };
+  /* ---------- कहाँ है विद्यार्थी अभी ---------- */
+  function path() { return (M.Router && M.Router.currentPath) || ''; }
+  function notesChapterMatch() { return /^\/notes\/([^/]+)\/([^/]+)$/.exec(path()); }
+  function isQuizPlaying() { var p = path(); return p === '/quiz' || p === '/xquiz'; }
+
+  QC.notifyActive = function () { /* पहले इस्तेमाल होता था; अब Timer Route देखकर खुद तय करता है — कुछ करने की ज़रूरत नहीं */ };
+
+  /* ---------- Global Timer — ऐप खुलते ही शुरू, कहीं दिखता नहीं ---------- */
+  if (!tickId) tickId = setInterval(tick, 1000);
   function tick() {
-    if (!current) { clearInterval(tickId); tickId = null; return; }
-    var here = '/notes/' + current.subject + '/' + current.chapter;
-    if (!M.Router || M.Router.currentPath !== here) { current = null; clearInterval(tickId); tickId = null; return; }
-    if (document.hidden || document.getElementById('qcCard')) return; // Screen बंद हो या Card पहले से खुला हो तो मत गिनो
+    if (document.hidden || document.getElementById('qcCard')) return;
+    if (pendingAfterQuiz) {
+      if (isQuizPlaying()) return; // अभी भी Quiz चल रहा है, रुको
+      bufferSec++;
+      if (bufferSec >= QUIZ_BUFFER) { bufferSec = 0; pendingAfterQuiz = false; fire(); }
+      return;
+    }
     var s = store();
     s.sec = (s.sec || 0) + 1;
-    if (s.sec >= THRESHOLD) { s.sec = 0; X.save(); showCard(); }
-    else if (s.sec % 15 === 0) X.save();
+    if (s.sec >= THRESHOLD) {
+      s.sec = 0; X.save();
+      if (isQuizPlaying()) { pendingAfterQuiz = true; bufferSec = 0; }
+      else fire();
+    } else if (s.sec % 15 === 0) X.save();
   }
 
-  /* ---------- Card दिखाना ---------- */
-  function esc(s) { return M.App.esc(s); }
-  function showCard() {
-    if (!current || document.getElementById('qcCard')) return;
-    var subject = current.subject, chapter = current.chapter;
-    if (!M.NotesGame) return;
+  function fire() {
+    var m = notesChapterMatch();
+    if (m) showReadingCard(m[1], m[2]);
+    else showMistakeTest();
+  }
+
+  /* ==========================================================
+     🅰 Notes पढ़ते वक़्त — 3-Question Quick Check
+     ========================================================== */
+  function showReadingCard(subject, chapter) {
+    if (document.getElementById('qcCard') || !M.NotesGame) return;
     M.NotesGame.build(subject, chapter, { max: 3, need: 1 }).then(function (b) {
-      if (!current || !b.questions || !b.questions.length) return; // इतने कम Notes से Quiz नहीं बना, चुपचाप छोड़ो
-      renderCard(b.questions.slice(0, 3));
+      var here = notesChapterMatch();
+      if (!here || here[1] !== subject || here[2] !== chapter) return; // तब तक Chapter बदल गया
+      if (!b.questions || !b.questions.length) return; // इतने कम Notes से Quiz नहीं बना, चुपचाप छोड़ो
+      openCard({
+        questions: b.questions.slice(0, 3),
+        skip: true,
+        xpPerCorrect: 0.1,
+        quoteOnPass: true,
+        passNeeded: 1,
+        retryOnFail: false
+      });
     });
   }
-  function renderCard(qs) {
+
+  /* ==========================================================
+     🅲 न Notes, न Quiz — 10-Question ज़रूरी Mistake-Test
+     ========================================================== */
+  function showMistakeTest() {
+    if (document.getElementById('qcCard') || !M.Mistakes) return;
+    var all = M.Mistakes.list({});
+    if (!all.length) return; // कभी कोई गलती दर्ज ही नहीं हुई (बिल्कुल नया विद्यार्थी) — चुपचाप छोड़ो
+    var qs = buildMistakeTestQuestions();
+    if (qs.length < 3) return; // इतना कम Data है कि Test बनाना ठीक नहीं, छोड़ो
+    openCard({
+      questions: qs,
+      skip: false,
+      xpPerCorrect: 0,
+      quoteOnPass: false,
+      passNeeded: Math.ceil(qs.length / 2),
+      retryOnFail: true,
+      title: '📒 Revision Check'
+    });
+  }
+  function buildMistakeTestQuestions() {
+    var open = M.Mistakes.list({}).filter(function (m) { return !m.resolved; });
+    var qs = open.slice(0, 10).map(function (m) {
+      return { question: m.question, options: m.options, answer: m.answer };
+    });
+    if (qs.length < 10) {
+      // बाकी सीटें उन Chapters के सवालों से भरो जो अभी तक Quiz नहीं हुए
+      var fillers = [];
+      M.Subjects.list().forEach(function (s) {
+        s.chapters.forEach(function (c) {
+          var key = s.id + '-' + c.number;
+          var rec = M.Storage.state.chapters[key];
+          if (rec && rec.attempts > 0) return; // पहले से Quiz हो चुका
+          var pool = M.Chapters.questions(s.id, c.number);
+          if (pool && pool.length) fillers.push(pool[Math.floor(Math.random() * pool.length)]);
+        });
+      });
+      shuffle(fillers);
+      while (qs.length < 10 && fillers.length) qs.push(fillers.pop());
+    }
+    if (qs.length < 10) {
+      // सब Cover हो चुका है — पूरी तरह Random सवाल
+      var allPool = [];
+      M.Subjects.list().forEach(function (s) {
+        s.chapters.forEach(function (c) { var pool = M.Chapters.questions(s.id, c.number); if (pool) allPool = allPool.concat(pool); });
+      });
+      shuffle(allPool);
+      while (qs.length < 10 && allPool.length) qs.push(allPool.pop());
+    }
+    return qs;
+  }
+
+  /* ==========================================================
+     साझा Card — दोनों तरह के Quick Check इसी से बनते हैं
+     ========================================================== */
+  function openCard(cfg) {
+    var qs = cfg.questions;
     var idx = 0, correct = 0;
     var wrap = document.createElement('div');
     wrap.id = 'qcCard';
@@ -132,13 +223,13 @@
       if (idx >= qs.length) return finish();
       var q = qs[idx];
       wrap.innerHTML = '<div class="qc-card">' +
-        '<div class="qc-head"><span class="qc-tag">⚡ Quick Check ' + (idx + 1) + '/' + qs.length + '</span>' +
-        '<button class="qc-skip" id="qcSkip" type="button">Skip ✕</button></div>' +
+        '<div class="qc-head"><span class="qc-tag">' + (cfg.title || '⚡ Quick Check') + ' ' + (idx + 1) + '/' + qs.length + '</span>' +
+        (cfg.skip ? '<button class="qc-skip" id="qcSkip" type="button">Skip ✕</button>' : '') + '</div>' +
         '<p class="qc-q">' + X.rich(q.question) + '</p><div class="qc-opts">' +
         ['A', 'B', 'C', 'D'].map(function (L) {
           return '<button class="qc-opt" data-l="' + L + '" type="button"><b>' + L + '</b> <span>' + X.rich(q.options[L]) + '</span></button>';
         }).join('') + '</div></div>';
-      X.ensureMathFor(qs); // देर से KaTeX आए तो अगला Card सही दिखेगा (अभी वाले पर असर नहीं, यह बस भविष्य के लिए तैयार करता है)
+      X.ensureMathFor(qs);
       var skipBtn = wrap.querySelector('#qcSkip');
       if (skipBtn) skipBtn.onclick = close;
       var opts = wrap.querySelectorAll('.qc-opt');
@@ -158,14 +249,24 @@
       }
     }
     function finish() {
-      var xp = Math.round(correct * 0.1 * 10) / 10;
-      var s = store();
-      s.xp = Math.round(((s.xp || 0) + xp) * 10) / 10;
-      X.save();
+      var passed = correct >= cfg.passNeeded;
+      if (cfg.xpPerCorrect) {
+        var xp = Math.round(correct * cfg.xpPerCorrect * 10) / 10;
+        var s = store();
+        s.xp = Math.round(((s.xp || 0) + xp) * 10) / 10;
+        X.save();
+      }
+      if (cfg.retryOnFail && !passed) {
+        // कम से कम आधे सही होने तक यही सवाल फिर से
+        wrap.innerHTML = '<div class="qc-card"><div class="qc-head"><span class="qc-tag">🔁 ' + correct + '/' + qs.length + ' — कम से कम ' + cfg.passNeeded + ' सही चाहिए, फिर से कोशिश करो</span></div></div>';
+        setTimeout(function () { idx = 0; correct = 0; draw(); }, 1400);
+        return;
+      }
       var quoteHtml = '';
-      if (correct >= 1) quoteHtml = '<div class="qc-quote">✨ ' + esc(pickQuote()) + '</div>';
-      wrap.innerHTML = '<div class="qc-card"><div class="qc-head"><span class="qc-tag">' + (correct ? '✅' : '➖') + ' ' + correct + '/' + qs.length + ' सही · +' + xp + ' XP</span></div>' +
-        quoteHtml + '<button class="btn block" id="qcClose" type="button">📖 पढ़ना जारी रखो</button></div>';
+      if (cfg.quoteOnPass && correct >= 1) quoteHtml = '<div class="qc-quote">✨ ' + esc(pickQuote()) + '</div>';
+      var xpLine = cfg.xpPerCorrect ? ' · +' + (Math.round(correct * cfg.xpPerCorrect * 10) / 10) + ' XP' : '';
+      wrap.innerHTML = '<div class="qc-card"><div class="qc-head"><span class="qc-tag">' + (passed ? '✅' : '➖') + ' ' + correct + '/' + qs.length + ' सही' + xpLine + '</span></div>' +
+        quoteHtml + '<button class="btn block" id="qcClose" type="button">📖 आगे बढ़ो</button></div>';
       var closeBtn = wrap.querySelector('#qcClose');
       if (closeBtn) closeBtn.onclick = close;
     }
