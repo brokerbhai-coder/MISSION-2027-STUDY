@@ -1,0 +1,1300 @@
+{
+  "_help": "Chapter notes data for MISSION 2027 – STUDY ZONE. Preserve this schema when editing.",
+  "schemaVersion": 1,
+  "subject": "mathematics",
+  "chapter": 2,
+  "title": "प्रतिलोम त्रिकोणमितीय फलन (Inverse Trigonometric Functions)",
+  "categories": {
+    "chapterNotes": [
+      {
+        "heading": "अध्याय 2: प्रतिलोम त्रिकोणमितीय फलन की रूपरेखा",
+        "content": [
+          "कक्षा 12 बिहार बोर्ड गणित का द्वितीय अध्याय 'प्रतिलोम त्रिकोणमितीय फलन' (Inverse Trigonometric Functions) कलन (Calculus) और त्रिकोणमिति की एक अत्यंत महत्वपूर्ण कड़ी है।",
+          "त्रिकोणमितीय फलन अपने स्वाभाविक वास्तविक संख्या प्रांत में आवर्ती (periodic) होते हैं, जिसके कारण वे एकैकी तथा आच्छादक नहीं होते।",
+          "किसी फलन के प्रतिलोम का अस्तित्व सुनिश्चित करने के लिए उसके प्रांत को एक ऐसे अंतराल में प्रतिबंधित किया जाता है जहाँ वह एकैकी तथा आच्छादक (Bijective) बन सके।",
+          "इस अध्याय में सभी 6 प्रतिलोम त्रिकोणमितीय फलनों के प्रांत, परिसर (मुख्य मान शाखा), मुख्य मान की गणना, चतुर्थांश नियम और उनके विभिन्न बीजीय गुणधर्मों का गहन अध्ययन किया जाता है।"
+        ],
+        "points": [
+          "प्रतिलोम फलन तभी संभव होता है जब मूल फलन एकैकी तथा आच्छादक हो।",
+          "यदि $f: A \\to B$ एकैकी-आच्छादक है, तो $f^{-1}: B \\to A$ का प्रांत $f$ का परिसर तथा $f^{-1}$ का परिसर $f$ का प्रांत होता है।",
+          "प्रतिलोम फलन $f^{-1}(x)$ का अर्थ व्युत्क्रम $(f(x))^{-1} = \\frac{1}{f(x)}$ कभी नहीं होता।"
+        ]
+      }
+    ],
+    "theory": [
+      {
+        "title": "प्रतिलोम फलन की मूल संकल्पना एवं व्युत्क्रम से अंतर",
+        "content": [
+          "प्रतिलोम की शर्त: अध्याय 1 के अनुसार किसी फलन $f: X \\to Y$ का प्रतिलोम $f^{-1}: Y \\to X$ केवल और केवल तभी परिभाषित होता है जब $f$ एकैकी (One-One) तथा आच्छादक (Onto) हो।",
+          "त्रिकोणमितीय फलनों की सीमा: चूँकि $\\sin(x + 2\\pi) = \\sin x$ होता है, इसलिए त्रिकोणमितीय फलन बहुएक (Many-One) होते हैं। अतः इनके पूरे वास्तविक प्रांत $R$ पर प्रतिलोम संभव नहीं होता। जब इनके प्रांत को उपयुक्त उप-अंतरालों में सीमित कर दिया जाता है, तब ये एकैकी-आच्छादक बन जाते हैं और इनका प्रतिलोम फलन परिभाषित होता है।",
+          "संकेतन में अंतर: $\\sin^{-1} x$ एक कोण (या वास्तविक मान) को निरूपित करता है, जबकि $(\\sin x)^{-1} = \\frac{1}{\\sin x} = \\text{cosec}\\,x$ एक संख्यात्मक मान का व्युत्क्रम होता है। दोनों में अंतर स्पष्ट रखना अनिवार्य है: $$\\sin^{-1} x \\neq (\\sin x)^{-1} = \\frac{1}{\\sin x}$$"
+        ],
+        "points": [
+          "चरण 1: जाँचें कि क्या फलन दिए गए अंतराल में एकैकी तथा आच्छादक है।",
+          "चरण 2: यदि $y = \\sin x$ हो, जहाँ $x \\in [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$ तथा $y \\in [-1, 1]$, तो प्रतिलोम $x = \\sin^{-1} y$ लिखा जाता है।",
+          "चरण 3: प्रतिलोम फलन के प्रांत और परिसर को आपस में बदलकर परिभाषित करें।"
+        ],
+        "diagram": {
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect width='400' height='300' fill='#f8fafc'/><ellipse cx='100' cy='150' rx='45' ry='90' fill='#eff6ff' stroke='#1e293b' stroke-width='2'/><ellipse cx='300' cy='150' rx='45' ry='90' fill='#eff6ff' stroke='#1e293b' stroke-width='2'/><text x='95' y='42' font-family='sans-serif' font-size='16' font-weight='bold' fill='#1e293b'>A</text><text x='295' y='42' font-family='sans-serif' font-size='16' font-weight='bold' fill='#1e293b'>B</text><circle cx='100' cy='100' r='4' fill='#1e293b'/><text x='78' y='105' font-family='sans-serif' font-size='14' fill='#1e293b'>a</text><circle cx='100' cy='150' r='4' fill='#1e293b'/><text x='78' y='155' font-family='sans-serif' font-size='14' fill='#1e293b'>b</text><circle cx='100' cy='200' r='4' fill='#1e293b'/><text x='78' y='205' font-family='sans-serif' font-size='14' fill='#1e293b'>c</text><circle cx='300' cy='100' r='4' fill='#1e293b'/><text x='315' y='105' font-family='sans-serif' font-size='14' fill='#1e293b'>1</text><circle cx='300' cy='150' r='4' fill='#1e293b'/><text x='315' y='155' font-family='sans-serif' font-size='14' fill='#1e293b'>2</text><circle cx='300' cy='200' r='4' fill='#1e293b'/><text x='315' y='205' font-family='sans-serif' font-size='14' fill='#1e293b'>3</text><defs><marker id='arrF' markerWidth='8' markerHeight='6' refX='7' refY='3' orient='auto'><polygon points='0 0, 8 3, 0 6' fill='#2563eb'/></marker><marker id='arrB' markerWidth='8' markerHeight='6' refX='7' refY='3' orient='auto'><polygon points='0 0, 8 3, 0 6' fill='#059669'/></marker></defs><path d='M 106 95 Q 200 50 292 95' fill='none' stroke='#2563eb' stroke-width='2' marker-end='url(#arrF)'/><text x='190' y='60' font-family='sans-serif' font-size='13' font-weight='bold' fill='#2563eb'>f: A → B</text><path d='M 292 205 Q 200 250 106 205' fill='none' stroke='#059669' stroke-width='2' marker-end='url(#arrB)'/><text x='180' y='260' font-family='sans-serif' font-size='13' font-weight='bold' fill='#059669'>f⁻¹: B → A</text><line x1='105' y1='100' x2='295' y2='150' stroke='#3b82f6' stroke-width='1.5'/><line x1='105' y1='150' x2='295' y2='200' stroke='#3b82f6' stroke-width='1.5'/><line x1='105' y1='200' x2='295' y2='100' stroke='#3b82f6' stroke-width='1.5'/><rect x='45' y='270' width='310' height='24' rx='4' fill='#f1f5f9' stroke='#94a3b8'/><text x='58' y='286' font-family='sans-serif' font-size='11' fill='#334155'>f का प्रांत = f⁻¹ का परिसर तथा f का परिसर = f⁻¹ का प्रांत</text></svg>",
+          "caption": "एकैकी-आच्छादी फलन f एवं उसके प्रतिलोम f⁻¹ के प्रांत व परिसर का विनिमय"
+        }
+      },
+      {
+        "title": "छह प्रतिलोम त्रिकोणमितीय फलनों के प्रांत एवं मुख्य मान शाखा (Principal Value Branches)",
+        "content": [
+          "प्रत्येक प्रतिलोम त्रिकोणमितीय फलन का एक विशिष्ट प्रांत तथा परिसर होता है। इस परिसर को 'मुख्य मान शाखा' (Principal Value Branch) कहा जाता है:",
+          "1. $\\sin^{-1} x$: प्रांत $[-1, 1]$ तथा मुख्य मान शाखा $\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$",
+          "2. $\\cos^{-1} x$: प्रांत $[-1, 1]$ तथा मुख्य मान शाखा $[0, \\pi]$",
+          "3. $\\tan^{-1} x$: प्रांत $R$ (सभी वास्तविक संख्याएँ) तथा मुख्य मान शाखा $\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$",
+          "4. $\\cot^{-1} x$: प्रांत $R$ तथा मुख्य मान शाखा $(0, \\pi)$",
+          "5. $\\sec^{-1} x$: प्रांत $R - (-1, 1)$ (अर्थात् $|x| \\ge 1$) तथा मुख्य मान शाखा $[0, \\pi] - \\left\\{\\frac{\\pi}{2}\\right\\}$",
+          "6. $\\text{cosec}^{-1} x$: प्रांत $R - (-1, 1)$ (अर्थात् $|x| \\ge 1$) तथा मुख्य मान शाखा $\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right] - \\{0\\}$"
+        ],
+        "points": [
+          "ध्यान दें कि $\\sin^{-1}$, $\\tan^{-1}$ और $\\text{cosec}^{-1}$ का मुख्य मान चतुर्थांश I और IV $\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$ में होता है।",
+          "ध्यान दें कि $\\cos^{-1}$, $\\cot^{-1}$ और $\\sec^{-1}$ का मुख्य मान चतुर्थांश I और II $[0, \\pi]$ में होता है।",
+          "संवृत अंतराल $[\\dots]$ में सीमा बिंदु सम्मिलित होते हैं, जबकि विवृत अंतराल $(\\dots)$ में सीमा बिंदु सम्मिलित नहीं होते।"
+        ]
+      },
+      {
+        "title": "चार चतुर्थांश एवं ASTC नियम (प्रतिलोम फलनों के संदर्भ में)",
+        "content": [
+          "त्रिकोणमिति में कोणों के चिह्नों का निर्धारण चतुर्थांशों द्वारा किया जाता है। प्रतिलोम फलनों के मुख्य मान सदैव केवल प्रथम दो अथवा प्रथम व चतुर्थ चतुर्थांश में सीमित रहते हैं:",
+          "प्रथम चतुर्थांश $\\left(0 \\text{ से } \\frac{\\pi}{2}\\right)$: सभी प्रतिलोम त्रिकोणमितीय फलनों के मान धनात्मक ($x > 0$) होने पर प्रथम चतुर्थांश में आते हैं (ALL positive)।",
+          "चतुर्थ चतुर्थांश $\\left(-\\frac{\\pi}{2} \\text{ से } 0\\right)$: यदि मान ऋणात्मक ($x < 0$) हो, तो $\\sin^{-1}$, $\\tan^{-1}$ तथा $\\text{cosec}^{-1}$ का मान चतुर्थ चतुर्थांश में ऋणात्मक कोण $(-\\theta)$ के रूप में प्राप्त होता है।",
+          "द्वितीय चतुर्थांश $\\left(\\frac{\\pi}{2} \\text{ से } \\pi\\right)$: यदि मान ऋणात्मक ($x < 0$) हो, तो $\\cos^{-1}$, $\\cot^{-1}$ तथा $\\sec^{-1}$ का मान द्वितीय चतुर्थांश में $(\\pi - \\theta)$ के रूप में प्राप्त होता है।",
+          "तृतीय चतुर्थांश: किसी भी प्रतिलोम त्रिकोणमितीय फलन की मुख्य मान शाखा तृतीय चतुर्थांश में नहीं होती।"
+        ],
+        "points": [
+          "धनात्मक मान हेतु: किसी भी फलन में $x > 0$ होने पर मुख्य मान सीधे न्यूनकोण $\\theta$ (प्रथम चतुर्थांश) होता है।",
+          "ग्रुप 1 (ऋणात्मक): $\\sin^{-1}(-x) = -\\sin^{-1} x$, $\\tan^{-1}(-x) = -\\tan^{-1} x$, $\\text{cosec}^{-1}(-x) = -\\text{cosec}^{-1} x$।",
+          "ग्रुप 2 (ऋणात्मक): $\\cos^{-1}(-x) = \\pi - \\cos^{-1} x$, $\\sec^{-1}(-x) = \\pi - \\sec^{-1} x$, $\\cot^{-1}(-x) = \\pi - \\cot^{-1} x$।"
+        ],
+        "diagram": {
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect width='400' height='300' fill='#f8fafc'/><line x1='40' y1='150' x2='360' y2='150' stroke='#334155' stroke-width='2'/><polygon points='360,146 370,150 360,154' fill='#334155'/><text x='375' y='154' font-family='sans-serif' font-size='13' fill='#334155'>0, 2π</text><line x1='200' y1='270' x2='200' y2='30' stroke='#334155' stroke-width='2'/><polygon points='196,30 200,20 204,30' fill='#334155'/><text x='193' y='18' font-family='sans-serif' font-size='13' fill='#334155'>π/2</text><text x='15' y='154' font-family='sans-serif' font-size='13' fill='#334155'>π</text><text x='190' y='285' font-family='sans-serif' font-size='13' fill='#334155'>-π/2 (3π/2)</text><rect x='210' y='40' width='140' height='100' rx='6' fill='#dbeafe' stroke='#2563eb' stroke-width='1.5'/><text x='220' y='65' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1e40af'>चतुर्थांश I (0 से π/2)</text><text x='220' y='88' font-family='sans-serif' font-size='11' fill='#1e3a8a'>सभी धनात्मक (x &gt; 0)</text><text x='220' y='110' font-family='sans-serif' font-size='11' fill='#1e3a8a'>All Positive: θ</text><rect x='50' y='40' width='140' height='100' rx='6' fill='#fef3c7' stroke='#d97706' stroke-width='1.5'/><text x='60' y='65' font-family='sans-serif' font-size='13' font-weight='bold' fill='#92400e'>चतुर्थांश II (π/2 से π)</text><text x='60' y='88' font-family='sans-serif' font-size='11' fill='#78350f'>cos⁻¹, sec⁻¹, cot⁻¹</text><text x='60' y='110' font-family='sans-serif' font-size='11' fill='#78350f'>ऋणात्मक मान: π - θ</text><rect x='210' y='160' width='140' height='100' rx='6' fill='#fee2e2' stroke='#dc2626' stroke-width='1.5'/><text x='220' y='185' font-family='sans-serif' font-size='13' font-weight='bold' fill='#991b1b'>चतुर्थांश IV (-π/2 से 0)</text><text x='220' y='208' font-family='sans-serif' font-size='11' fill='#7f1d1d'>sin⁻¹, tan⁻¹, cosec⁻¹</text><text x='220' y='230' font-family='sans-serif' font-size='11' fill='#7f1d1d'>ऋणात्मक मान: -θ</text><rect x='50' y='160' width='140' height='100' rx='6' fill='#f1f5f9' stroke='#94a3b8' stroke-width='1.5'/><text x='60' y='185' font-family='sans-serif' font-size='12' font-weight='bold' fill='#64748b'>चतुर्थांश III</text><text x='60' y='210' font-family='sans-serif' font-size='11' fill='#64748b'>किसी भी प्रतिलोम फलन</text><text x='60' y='230' font-family='sans-serif' font-size='11' fill='#64748b'>का मुख्य मान नहीं होता</text></svg>",
+          "caption": "प्रतिलोम त्रिकोणमितीय फलनों के लिए चतुर्थांश एवं मुख्य मान शाखा का विभाजन"
+        }
+      },
+      {
+        "title": "प्रतिलोम त्रिकोणमितीय फलनों के आलेख एवं रेखा y = x के सापेक्ष सममिति",
+        "content": [
+          "यदि $f$ एक व्युत्क्रमणीय फलन है और $(a, b)$ इसके आलेख पर स्थित कोई बिंदु है, तो प्रतिलोम फलन $f^{-1}$ के आलेख पर संगत बिंदु $(b, a)$ होगा।",
+          "ज्यामितीय रूप से, फलन $y = f^{-1}(x)$ का आलेख, मूल फलन $y = f(x)$ के आलेख का दर्पण रेखा $y = x$ के परितः परावर्तन (Reflection) होता है।",
+          "फलन $y = \\sin x$ का आलेख $X$-अक्ष के अनुदिश तरंग रूप में फैलता है, जबकि $y = \\sin^{-1} x$ का आलेख $Y$-अक्ष के अनुदिश ऊर्ध्वाधर रूप में संकुचित होकर $[-1, 1] \\to [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$ के मध्य सीमित रहता है।"
+        ],
+        "points": [
+          "चरण 1: मूल फलन $y = \\sin x$ के मुख्य अंतराल $[-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$ के प्रमुख बिंदुओं $(-\\frac{\\pi}{2}, -1), (0, 0), (\\frac{\\pi}{2}, 1)$ का निर्धारण करें।",
+          "चरण 2: निर्देशांकों का परस्पर विनिमय करके प्रतिलोम फलन के संगत बिंदु $(-1, -\\frac{\\pi}{2}), (0, 0), (1, \\frac{\\pi}{2})$ प्राप्त करें।",
+          "चरण 3: रेखा $y = x$ खींचकर दोनों वक्रों के परस्पर परावर्तन का सत्यापन करें।"
+        ],
+        "diagram": {
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect width='400' height='300' fill='#f8fafc'/><line x1='30' y1='150' x2='370' y2='150' stroke='#334155' stroke-width='1.5'/><polygon points='370,147 376,150 370,153' fill='#334155'/><text x='380' y='154' font-family='sans-serif' font-size='12' fill='#334155'>X</text><line x1='200' y1='270' x2='200' y2='30' stroke='#334155' stroke-width='1.5'/><polygon points='197,30 200,24 203,30' fill='#334155'/><text x='205' y='26' font-family='sans-serif' font-size='12' fill='#334155'>Y</text><text x='188' y='165' font-family='sans-serif' font-size='11' fill='#334155'>O</text><line x1='50' y1='250' x2='350' y2='50' stroke='#94a3b8' stroke-width='1.5' stroke-dasharray='4'/><text x='330' y='45' font-family='sans-serif' font-size='11' fill='#64748b'>y = x</text><path d='M 70,220 Q 135,220 200,150 T 330,80' fill='none' stroke='#2563eb' stroke-width='2'/><text x='335' y='85' font-family='sans-serif' font-size='11' font-weight='bold' fill='#2563eb'>y = sin x</text><path d='M 130,270 Q 130,205 200,150 T 270,30' fill='none' stroke='#dc2626' stroke-width='2'/><text x='275' y='35' font-family='sans-serif' font-size='11' font-weight='bold' fill='#dc2626'>y = sin⁻¹ x</text><circle cx='200' cy='150' r='3' fill='#1e293b'/><circle cx='270' cy='150' r='3' fill='#dc2626'/><text x='265' y='165' font-family='sans-serif' font-size='10' fill='#dc2626'>1</text><circle cx='130' cy='150' r='3' fill='#dc2626'/><text x='120' y='165' font-family='sans-serif' font-size='10' fill='#dc2626'>-1</text><circle cx='200' cy='80' r='3' fill='#2563eb'/><text x='180' y='85' font-family='sans-serif' font-size='10' fill='#2563eb'>1</text><circle cx='200' cy='220' r='3' fill='#2563eb'/><text x='175' y='225' font-family='sans-serif' font-size='10' fill='#2563eb'>-1</text><rect x='60' y='268' width='280' height='24' rx='4' fill='#f1f5f9' stroke='#cbd5e1'/><text x='75' y='284' font-family='sans-serif' font-size='11' fill='#334155'>y = sin⁻¹ x का आलेख y = sin x का y = x के सापेक्ष परावर्तन है</text></svg>",
+          "caption": "y = sin x एवं y = sin⁻¹ x के आलेख तथा रेखा y = x के सापेक्ष सममिति"
+        }
+      },
+      {
+        "title": "निरसन गुणधर्म (Self-Cancellation Properties)",
+        "content": [
+          "प्रतिलोम त्रिकोणमितीय फलनों में संयोजन संक्रिया के अंतर्गत दो प्रकार के निरसन संबंध होते हैं:",
+          "1. $f(f^{-1}(x)) = x$: यह संबंध चर $x$ के संगत फलन के प्रांत में होने पर सदैव सत्य होता है।",
+          "$$\\sin(\\sin^{-1} x) = x, \\quad \\forall x \\in [-1, 1]$$",
+          "$$\\cos(\\cos^{-1} x) = x, \\quad \\forall x \\in [-1, 1]$$",
+          "$$\\tan(\\tan^{-1} x) = x, \\quad \\forall x \\in R$$",
+          "2. $f^{-1}(f(x)) = x$: यह संबंध केवल तभी सत्य होता है जब कोण $x$ उस फलन की मुख्य मान शाखा (Principal Value Branch) के भीतर स्थित हो।",
+          "$$\\sin^{-1}(\\sin x) = x, \\quad \\text{यदि और केवल यदि } x \\in [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$$",
+          "$$\\cos^{-1}(\\cos x) = x, \\quad \\text{यदि और केवल यदि } x \\in [0, \\pi]$$",
+          "$$\\tan^{-1}(\\tan x) = x, \\quad \\text{यदि और केवल यदि } x \\in (-\\frac{\\pi}{2}, \\frac{\\pi}{2})$$"
+        ],
+        "points": [
+          "यदि कोण मुख्य मान शाखा से बाहर हो, तो त्रिकोणमितीय आवर्ती सूत्रों [सूत्र: $\\sin(\\pi - \\theta) = \\sin\\theta$, $\\cos(2\\pi - \\theta) = \\cos\\theta$] का उपयोग करके कोण को पहले मुख्य शाखा में लाया जाता है।",
+          "उदाहरण: $\\sin^{-1}(\\sin\\frac{2\\pi}{3}) \\neq \\frac{2\\pi}{3}$ क्योंकि $\\frac{2\\pi}{3} \\notin [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$।",
+          "सही हल: $\\sin^{-1}(\\sin(\\pi - \\frac{\\pi}{3})) = \\sin^{-1}(\\sin\\frac{\\pi}{3}) = \\frac{\\pi}{3}$ [सूत्र: $\\sin(\\pi - \\theta) = \\sin\\theta$]।"
+        ]
+      },
+      {
+        "title": "व्युत्क्रम संबंध (Reciprocal Relations)",
+        "content": [
+          "प्रतिलोम फलनों में कोणीय चर का व्युत्क्रम करने पर उनके परस्पर संबंध निम्नलिखित रूप में परिभाषित होते हैं:",
+          "1. $$\\sin^{-1}\\left(\\frac{1}{x}\\right) = \\text{cosec}^{-1} x, \\quad \\text{जहाँ } x \\ge 1 \\text{ या } x \\le -1$$",
+          "2. $$\\cos^{-1}\\left(\\frac{1}{x}\\right) = \\sec^{-1} x, \\quad \\text{जहाँ } x \\ge 1 \\text{ या } x \\le -1$$",
+          "3. $\\tan^{-1}\\left(\\frac{1}{x}\\right)$ के लिए दो स्थितियाँ होती हैं:",
+          "$$\\tan^{-1}\\left(\\frac{1}{x}\\right) = \\cot^{-1} x, \\quad \\text{यदि } x > 0$$",
+          "$$\\tan^{-1}\\left(\\frac{1}{x}\\right) = -\\pi + \\cot^{-1} x, \\quad \\text{यदि } x < 0$$"
+        ],
+        "points": [
+          "उपपत्ति हेतु $\\text{cosec}^{-1} x = \\theta$ मानते हैं, जिससे $x = \\text{cosec}\\,\\theta$ प्राप्त होता है।",
+          "व्युत्क्रम लेने पर $\\frac{1}{x} = \\sin\\theta \\implies \\theta = \\sin^{-1}(\\frac{1}{x})$ सिद्ध होता है।",
+          "ऋणात्मक मानों के लिए $\\cot^{-1} x$ का परिसर $(0, \\pi)$ होने के कारण $\\tan^{-1}$ के व्युत्क्रम में शाखा समायोजन आवश्यक होता है।"
+        ]
+      },
+      {
+        "title": "पूरक कोण संबंध (Complementary Angle Relations)",
+        "content": [
+          "दो परस्पर पूरक प्रतिलोम फलनों का योग सदैव $\\frac{\\pi}{2}$ (एक समकोण) के बराबर होता है:",
+          "1. $$\\sin^{-1} x + \\cos^{-1} x = \\frac{\\pi}{2}, \\quad \\forall x \\in [-1, 1]$$",
+          "2. $$\\tan^{-1} x + \\cot^{-1} x = \\frac{\\pi}{2}, \\quad \\forall x \\in R$$",
+          "3. $$\\sec^{-1} x + \\text{cosec}^{-1} x = \\frac{\\pi}{2}, \\quad \\forall x \\in R - (-1, 1)$$"
+        ],
+        "points": [
+          "उपपत्ति: माना $\\sin^{-1} x = \\theta \\implies x = \\sin\\theta$।",
+          "पूरक सूत्र से: $x = \\cos(\\frac{\\pi}{2} - \\theta)$ [सूत्र: $\\cos(\\frac{\\pi}{2} - \\theta) = \\sin\\theta$]。",
+          "प्रतिलोम लेने पर: $\\cos^{-1} x = \\frac{\\pi}{2} - \\theta = \\frac{\\pi}{2} - \\sin^{-1} x$。",
+          "पक्षांतरण करने पर: $\\sin^{-1} x + \\cos^{-1} x = \\frac{\\pi}{2}$ सिद्ध होता है।"
+        ]
+      }
+    ],
+    "definitions": [
+      {
+        "term": "व्युत्क्रमणीय फलन (Invertible Function)",
+        "definition": "कोई फलन $f: X \\to Y$ व्युत्क्रमणीय कहलाता है यदि वह एकैकी (Injective) तथा आच्छादक (Surjective) दोनों हो।"
+      },
+      {
+        "term": "प्रतिलोम त्रिकोणमितीय फलन (Inverse Trigonometric Function)",
+        "definition": "प्रतिबंधित प्रांतों तथा परिसरों के अंतर्गत त्रिकोणमितीय फलनों के संगत परिभाषित व्युत्क्रम फलनों को प्रतिलोम त्रिकोणमितीय फलन कहते हैं।"
+      },
+      {
+        "term": "मुख्य मान शाखा (Principal Value Branch)",
+        "definition": "प्रतिलोम त्रिकोणमितीय फलन के परिसर का वह मानक अंतराल जिसके अंतर्गत फलन एक मान वाला (single-valued) और संतत होता है, मुख्य मान शाखा कहलाता है।"
+      },
+      {
+        "term": "मुख्य मान (Principal Value)",
+        "definition": "किसी प्रतिलोम त्रिकोणमितीय फलन का वह मान जो उसकी मुख्य मान शाखा (Principal Value Branch) के भीतर स्थित होता है, मुख्य मान कहलाता है।"
+      },
+      {
+        "term": "arc sine फलन (arcsin / sin⁻¹)",
+        "definition": "फलन $\\sin^{-1} : [-1, 1] \\to [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$, जो $\\sin y = x$ होने पर $y = \\sin^{-1} x$ द्वारा परिभाषित होता है।"
+      },
+      {
+        "term": "arc cosine फलन (arccos / cos⁻¹)",
+        "definition": "फलन $\\cos^{-1} : [-1, 1] \\to [0, \\pi]$, जो $\\cos y = x$ होने पर $y = \\cos^{-1} x$ द्वारा परिभाषित होता है।"
+      },
+      {
+        "term": "arc tangent फलन (arctan / tan⁻¹)",
+        "definition": "फलन $\\tan^{-1} : R \\to (-\\frac{\\pi}{2}, \\frac{\\pi}{2})$, जो $\\tan y = x$ होने पर $y = \\tan^{-1} x$ द्वारा परिभाषित होता है।"
+      },
+      {
+        "term": "arc cotangent फलन (arccot / cot⁻¹)",
+        "definition": "फलन $\\cot^{-1} : R \\to (0, \\pi)$, जो $\\cot y = x$ होने पर $y = \\cot^{-1} x$ द्वारा परिभाषित होता है।"
+      },
+      {
+        "term": "arc secant फलन (arcsec / sec⁻¹)",
+        "definition": "फलन $\\sec^{-1} : R - (-1, 1) \\to [0, \\pi] - \\{\\frac{\\pi}{2}\\}$, जो $\\sec y = x$ होने पर $y = \\sec^{-1} x$ द्वारा परिभाषित होता है।"
+      },
+      {
+        "term": "arc cosecant फलन (arccosec / cosec⁻¹)",
+        "definition": "फलन $\\text{cosec}^{-1} : R - (-1, 1) \\to [-\\frac{\\pi}{2}, \\frac{\\pi}{2}] - \\{0\\}$, जो $\\text{cosec}\\,y = x$ होने पर $y = \\text{cosec}^{-1} x$ द्वारा परिभाषित होता है।"
+      },
+      {
+        "term": "व्युत्क्रम संबंध (Reciprocal Relation)",
+        "definition": "प्रतिलोम त्रिकोणमितीय फलनों में कोणीय चर के व्युत्क्रम के आधार पर परस्पर रूपांतरण संबंध (जैसे $\\sin^{-1}(\\frac{1}{x}) = \\text{cosec}^{-1} x$)।"
+      },
+      {
+        "term": "पूरक कोण सर्वसमिका (Complementary Identity)",
+        "definition": "समान कोणीय मान वाले दो पूरक प्रतिलोम फलनों के योग का $\\frac{\\pi}{2}$ के बराबर होना।"
+      },
+      {
+        "term": "निरसन नियम (Cancellation Property)",
+        "definition": "संयोजन के अंतर्गत $f(f^{-1}(x)) = x$ तथा $f^{-1}(f(x)) = x$ द्वारा फलन और प्रतिलोम के प्रभाव का समाप्त होना।"
+      },
+      {
+        "term": "सरलतम रूप (Simplest Form)",
+        "definition": "उपयुक्त त्रिकोणमितीय प्रतिस्थापन द्वारा किसी जटिल प्रतिलोम त्रिकोणमितीय व्यंजक को न्यूनतम संभव पद में परिवर्तित करना।"
+      },
+      {
+        "term": "त्रिकोणमितीय प्रतिस्थापन (Trigonometric Substitution)",
+        "definition": "बीजीय व्यंजकों (जैसे $\\sqrt{a^2-x^2}, \\sqrt{a^2+x^2}$) को त्रिकोणमितीय सर्वसमिकाओं की सहायता से हल करने हेतु चर का विशेष चयन।"
+      },
+      {
+        "term": "अवांछित मूल (Extraneous Roots)",
+        "definition": "प्रतिलोम त्रिकोणमितीय समीकरणों को हल करते समय प्राप्त होने वाले वे मान जो मूल फलन के प्रांत या मुख्य मान शाखा को संतुष्ट नहीं करते।"
+      }
+    ],
+    "oneLiners": [
+      {
+        "question": "$\\cos^{-1}(-\\frac{1}{2})$ का मुख्य मान क्या है?",
+        "answer": "$\\frac{2\\pi}{3}$ [सूत्र: $\\cos^{-1}(-x) = \\pi - \\cos^{-1} x$]"
+      },
+      {
+        "question": "$x \\in [-1, 1]$ के लिए $\\cos^{-1} x$ किसके बराबर है?",
+        "answer": "$\\frac{\\pi}{2} - \\sin^{-1} x$ [सूत्र: $\\sin^{-1} x + \\cos^{-1} x = \\frac{\\pi}{2}$]"
+      },
+      {
+        "question": "$x \\in [-1, 1]$ के लिए $\\sin^{-1}(-x)$ का मान क्या होता है?",
+        "answer": "$-\\sin^{-1} x$ [सूत्र: $\\sin^{-1}(-x) = -\\sin^{-1} x$]"
+      },
+      {
+        "question": "$|x| \\ge 1$ के लिए $\\text{cosec}^{-1} x$ का मान $\\sin^{-1}$ के रूप में क्या होगा?",
+        "answer": "$\\sin^{-1}(\\frac{1}{x})$ [सूत्र: $\\text{cosec}^{-1} x = \\sin^{-1}(\\frac{1}{x})$]"
+      },
+      {
+        "question": "$\\tan[\\tan^{-1}\\frac{1}{3} + \\tan^{-1}\\frac{1}{2}]$ का मान क्या है?",
+        "answer": "$1$ [सूत्र: $\\tan^{-1} x + \\tan^{-1} y = \\tan^{-1}(\\frac{x+y}{1-xy})$]"
+      },
+      {
+        "question": "$\\sin(\\cot^{-1} x)$ का बीजीय मान क्या होगा?",
+        "answer": "$\\frac{1}{\\sqrt{1+x^2}}$ [सूत्र: $\\cot^{-1} x = \\sin^{-1}(\\frac{1}{\\sqrt{1+x^2}})$]"
+      },
+      {
+        "question": "$\\cos^{-1}(\\cos\\frac{7\\pi}{6})$ का मान क्या है?",
+        "answer": "$\\frac{5\\pi}{6}$ [सूत्र: $\\cos(2\\pi - \\theta) = \\cos\\theta$, जहाँ $\\frac{5\\pi}{6} \\in [0, \\pi]$]"
+      },
+      {
+        "question": "$\\frac{\\pi}{3} - \\sin^{-1}(-\\frac{1}{2})$ का मान ज्ञात कीजिए।",
+        "answer": "$\\frac{\\pi}{2}$ [सूत्र: $\\sin^{-1}(-x) = -\\sin^{-1} x$]"
+      },
+      {
+        "question": "$\\tan^{-1}\\sqrt{3} - \\sec^{-1}(-2)$ का मान क्या होगा?",
+        "answer": "$-\\frac{\\pi}{3}$ [सूत्र: $\\sec^{-1}(-x) = \\pi - \\sec^{-1} x$]"
+      },
+      {
+        "question": "$\\sin(\\sin^{-1}\\frac{1}{2})$ का मान क्या होगा?",
+        "answer": "$\\frac{1}{2}$ [सूत्र: $\\sin(\\sin^{-1} x) = x$]"
+      },
+      {
+        "question": "$\\sin^{-1} x + \\sin^{-1} y$ का सूत्र क्या है?",
+        "answer": "$\\sin^{-1}[x\\sqrt{1-y^2} + y\\sqrt{1-x^2}]$ [सूत्र: $\\sin(A+B) = \\sin A\\cos B + \\cos A\\sin B$]"
+      },
+      {
+        "question": "यदि $x \\in [-1, 1]$, तो $\\sin[2(\\sin^{-1} x + \\cos^{-1} x)]$ का मान क्या होगा?",
+        "answer": "$0$ [सूत्र: $\\sin^{-1} x + \\cos^{-1} x = \\frac{\\pi}{2} \\implies \\sin(2 \\times \\frac{\\pi}{2}) = \\sin\\pi = 0$]"
+      },
+      {
+        "question": "यदि $x \\in R$, तो $\\text{cosec}(\\tan^{-1} x + \\cot^{-1} x)$ का मान क्या होगा?",
+        "answer": "$1$ [सूत्र: $\\tan^{-1} x + \\cot^{-1} x = \\frac{\\pi}{2} \\implies \\text{cosec}\\frac{\\pi}{2} = 1$]"
+      },
+      {
+        "question": "यदि $|x| \\ge 1$, तो $\\tan[\\frac{2}{3}(\\tan^{-1} x + \\cot^{-1} x)]$ का मान क्या होगा?",
+        "answer": "$\\sqrt{3}$ [सूत्र: $\\tan^{-1} x + \\cot^{-1} x = \\frac{\\pi}{2} \\implies \\tan(\\frac{2}{3} \\times \\frac{\\pi}{2}) = \\tan\\frac{\\pi}{3} = \\sqrt{3}$]"
+      },
+      {
+        "question": "यदि $|x| \\le 1$, तो $2\\tan^{-1} x$ का मान $\\sin^{-1}$ के पदों में क्या होगा?",
+        "answer": "$\\sin^{-1}(\\frac{2x}{1+x^2})$ [सूत्र: $2\\tan^{-1} x = \\sin^{-1}(\\frac{2x}{1+x^2})$]"
+      },
+      {
+        "question": "$x \\in R$ के लिए $\\cot^{-1} x$ किसके बराबर है?",
+        "answer": "$\\frac{\\pi}{2} - \\tan^{-1} x$ [सूत्र: $\\tan^{-1} x + \\cot^{-1} x = \\frac{\\pi}{2}$]"
+      },
+      {
+        "question": "$\\tan^{-1}(\\frac{x+y}{1-xy})$ का मान किसके बराबर होता है?",
+        "answer": "$\\tan^{-1} x + \\tan^{-1} y$ [सूत्र: $\\tan(A+B) = \\frac{\\tan A+\\tan B}{1-\\tan A\\tan B}$]"
+      },
+      {
+        "question": "$\\sin^{-1}(\\sin\\frac{2\\pi}{3})$ का मुख्य मान क्या है?",
+        "answer": "$\\frac{\\pi}{3}$ [सूत्र: $\\sin(\\pi - \\theta) = \\sin\\theta$, $\\frac{\\pi}{3} \\in [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$]"
+      },
+      {
+        "question": "$\\tan^{-1}\\frac{1}{7} + \\tan^{-1}\\frac{1}{13}$ का मान क्या होगा?",
+        "answer": "$\\tan^{-1}\\frac{2}{9}$ [सूत्र: $\\tan^{-1} x + \\tan^{-1} y = \\tan^{-1}(\\frac{x+y}{1-xy})$]"
+      },
+      {
+        "question": "$2\\tan^{-1}\\frac{1}{2}$ का मान $\\tan^{-1}$ के रूप में क्या होगा?",
+        "answer": "$\\tan^{-1}\\frac{4}{3}$ [सूत्र: $2\\tan^{-1} x = \\tan^{-1}(\\frac{2x}{1-x^2})$]"
+      },
+      {
+        "question": "यदि $x \\in R$, तो $\\tan^{-1} x + \\cot^{-1} x$ का मान क्या होगा?",
+        "answer": "$\\frac{\\pi}{2}$ [सूत्र: $\\tan^{-1} x + \\cot^{-1} x = \\frac{\\pi}{2}$]"
+      },
+      {
+        "question": "$\\text{cosec}^{-1}(2)$ का मुख्य मान क्या है?",
+        "answer": "$\\frac{\\pi}{6}$ [सूत्र: $\\text{cosec}\\frac{\\pi}{6} = 2$]"
+      },
+      {
+        "question": "$\\sin^{-1}\\frac{3}{5} + \\sin^{-1}\\frac{12}{13}$ का मान क्या होगा?",
+        "answer": "$\\sin^{-1}\\frac{63}{65}$ [सूत्र: $\\sin^{-1}[x\\sqrt{1-y^2} + y\\sqrt{1-x^2}]$]"
+      },
+      {
+        "question": "यदि $x \\in [-1, 1]$, तो $\\sin^{-1} x + \\cos^{-1} x$ का मान क्या होगा?",
+        "answer": "$\\frac{\\pi}{2}$ [सूत्र: पूरक कोण संबंध]"
+      },
+      {
+        "question": "$\\tan^{-1}\\frac{4}{3} + \\tan^{-1}\\frac{1}{7}$ का मान क्या होगा?",
+        "answer": "$\\tan^{-1}\\frac{31}{17}$ [सूत्र: $\\tan^{-1}(\\frac{x+y}{1-xy})$]"
+      },
+      {
+        "question": "$2\\tan^{-1}\\frac{1}{9}$ का मान क्या है?",
+        "answer": "$\\tan^{-1}\\frac{9}{40}$ [सूत्र: $2\\tan^{-1} x = \\tan^{-1}(\\frac{2x}{1-x^2})$]"
+      },
+      {
+        "question": "यदि $x = \\frac{24}{25}$, तो $\\sin(3\\sin^{-1} x + 2\\cos^{-1} x)$ का मान क्या होगा?",
+        "answer": "$-\\frac{24}{25}$ [सूत्र: $\\sin(\\pi + \\theta) = -\\sin\\theta$]"
+      },
+      {
+        "question": "$\\cos^{-1}\\frac{4}{5} - \\cos^{-1}\\frac{60}{61}$ का मान क्या होगा?",
+        "answer": "$\\cos^{-1}\\frac{273}{305}$ [सूत्र: $\\cos^{-1}[xy + \\sqrt{1-x^2}\\sqrt{1-y^2}]$]"
+      },
+      {
+        "question": "$\\sin^{-1}(\\frac{\\sqrt{3}}{2})$ का मुख्य मान क्या है?",
+        "answer": "$\\frac{\\pi}{3}$ [सूत्र: $\\sin\\frac{\\pi}{3} = \\frac{\\sqrt{3}}{2}$]"
+      },
+      {
+        "question": "$\\cos^{-1}(\\frac{\\sqrt{3}}{2})$ का मुख्य मान क्या है?",
+        "answer": "$\\frac{\\pi}{6}$ [सूत्र: $\\cos\\frac{\\pi}{6} = \\frac{\\sqrt{3}}{2}$]"
+      },
+      {
+        "question": "$\\tan^{-1}(1)$ का मुख्य मान क्या है?",
+        "answer": "$\\frac{\\pi}{4}$ [सूत्र: $\\tan\\frac{\\pi}{4} = 1$]"
+      },
+      {
+        "question": "$\\cos^{-1}(-\\frac{1}{\\sqrt{2}})$ का मुख्य मान क्या है?",
+        "answer": "$\\frac{3\\pi}{4}$ [सूत्र: $\\cos^{-1}(-x) = \\pi - \\cos^{-1} x$]"
+      },
+      {
+        "question": "$\\sin^{-1}(-\\frac{1}{2})$ का मुख्य मान क्या है?",
+        "answer": "$-\\frac{\\pi}{6}$ [सूत्र: $\\sin^{-1}(-x) = -\\sin^{-1} x$]"
+      },
+      {
+        "question": "$\\cos^{-1}(-\\frac{1}{2})$ का मान क्या है?",
+        "answer": "$\\frac{2\\pi}{3}$ [सूत्र: $\\cos^{-1}(-x) = \\pi - \\cos^{-1} x$]"
+      },
+      {
+        "question": "$\\tan^{-1}(-\\sqrt{3})$ का मुख्य मान क्या है?",
+        "answer": "$-\\frac{\\pi}{3}$ [सूत्र: $\\tan^{-1}(-x) = -\\tan^{-1} x$]"
+      },
+      {
+        "question": "$\\cot^{-1}(-1)$ का मुख्य मान क्या है?",
+        "answer": "$\\frac{3\\pi}{4}$ [सूत्र: $\\cot^{-1}(-x) = \\pi - \\cot^{-1} x$]"
+      },
+      {
+        "question": "$\\text{cosec}^{-1}(-\\sqrt{2})$ का मुख्य मान क्या है?",
+        "answer": "$-\\frac{\\pi}{4}$ [सूत्र: $\\text{cosec}^{-1}(-x) = -\\text{cosec}^{-1} x$]"
+      },
+      {
+        "question": "$\\text{cosec}^{-1}(-2)$ का मुख्य मान क्या है?",
+        "answer": "$-\\frac{\\pi}{6}$ [सूत्र: $\\text{cosec}^{-1}(-x) = -\\text{cosec}^{-1} x$]"
+      },
+      {
+        "question": "$\\sin^{-1}(\\frac{1}{\\sqrt{2}})$ का मुख्य मान क्या है?",
+        "answer": "$\\frac{\\pi}{4}$ [सूत्र: $\\sin\\frac{\\pi}{4} = \\frac{1}{\\sqrt{2}}$]"
+      },
+      {
+        "question": "$\\cot^{-1}(\\sqrt{3})$ का मुख्य मान क्या है?",
+        "answer": "$\\frac{\\pi}{6}$ [सूत्र: $\\cot\\frac{\\pi}{6} = \\sqrt{3}$]"
+      },
+      {
+        "question": "$\\sec^{-1}(\\frac{2}{\\sqrt{3}})$ का मुख्य मान क्या है?",
+        "answer": "$\\frac{\\pi}{6}$ [सूत्र: $\\sec\\frac{\\pi}{6} = \\frac{2}{\\sqrt{3}}$]"
+      },
+      {
+        "question": "$\\tan^{-1}(\\tan\\frac{7\\pi}{6})$ का मुख्य मान क्या है?",
+        "answer": "$\\frac{\\pi}{6}$ [सूत्र: $\\tan(\\pi + \\theta) = \\tan\\theta$, $\\frac{\\pi}{6} \\in (-\\frac{\\pi}{2}, \\frac{\\pi}{2})$]"
+      },
+      {
+        "question": "$\\sin^{-1} x$ का मान $\\text{cosec}^{-1}$ के रूप में क्या होगा?",
+        "answer": "$\\text{cosec}^{-1}(\\frac{1}{x})$ [सूत्र: व्युत्क्रम संबंध]"
+      },
+      {
+        "question": "$\\sin^{-1}(\\sin\\frac{7\\pi}{6})$ का मान क्या होगा?",
+        "answer": "$-\\frac{\\pi}{6}$ [सूत्र: $\\sin(\\pi + \\theta) = -\\sin\\theta \\implies \\sin^{-1}(-\\sin\\frac{\\pi}{6}) = -\\frac{\\pi}{6}$]"
+      },
+      {
+        "question": "$\\cos^{-1}(\\cos\\frac{5\\pi}{4})$ का मान क्या होगा?",
+        "answer": "$\\frac{3\\pi}{4}$ [सूत्र: $\\cos(2\\pi - \\frac{3\\pi}{4}) = \\cos\\frac{3\\pi}{4}$, $\\frac{3\\pi}{4} \\in [0, \\pi]$]"
+      },
+      {
+        "question": "$\\cos^{-1}(-x)$ का सूत्र क्या है?",
+        "answer": "$\\pi - \\cos^{-1} x$ [सूत्र: ग्रुप 2 ऋणात्मक नियम]"
+      },
+      {
+        "question": "$\\sin^{-1} x - \\sin^{-1} y$ का सूत्र क्या है?",
+        "answer": "$\\sin^{-1}[x\\sqrt{1-y^2} - y\\sqrt{1-x^2}]$ [सूत्र: $\\sin(A-B)$ रूपांतरण]"
+      },
+      {
+        "question": "$x \\in R$ के लिए $\\tan^{-1} x$ पूरक कोण के रूप में क्या है?",
+        "answer": "$\\frac{\\pi}{2} - \\cot^{-1} x$ [सूत्र: $\\tan^{-1} x + \\cot^{-1} x = \\frac{\\pi}{2}$]"
+      },
+      {
+        "question": "$\\tan^{-1}(\\frac{x-y}{1+xy})$ किसके बराबर होता है?",
+        "answer": "$\\tan^{-1} x - \\tan^{-1} y$ [सूत्र: $\\tan(A-B)$ रूपांतरण]"
+      },
+      {
+        "question": "यदि $x \\in [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$, तो $\\sin^{-1}(\\sin x)$ का मान क्या होगा?",
+        "answer": "$x$ [सूत्र: निरसन नियम]"
+      },
+      {
+        "question": "यदि $x \\in [0, \\pi]$, तो $\\cos^{-1}(\\cos x)$ का मान क्या होगा?",
+        "answer": "$x$ [सूत्र: निरसन नियम]"
+      },
+      {
+        "question": "यदि $x \\in (-\\frac{\\pi}{2}, \\frac{\\pi}{2})$, तो $\\tan^{-1}(\\tan x)$ का मान क्या होगा?",
+        "answer": "$x$ [सूत्र: निरसन नियम]"
+      },
+      {
+        "question": "यदि $x \\in (0, \\pi)$, तो $\\cot^{-1}(\\cot x)$ का मान क्या होगा?",
+        "answer": "$x$ [सूत्र: निरसन नियम]"
+      },
+      {
+        "question": "यदि $x > 0$, तो $\\cot^{-1} x$ का मान $\\tan^{-1}$ के पदों में क्या है?",
+        "answer": "$\\tan^{-1}(\\frac{1}{x})$ [सूत्र: व्युत्क्रम संबंध]"
+      },
+      {
+        "question": "$\\cot^{-1}(-x)$ किसके बराबर होता है?",
+        "answer": "$\\pi - \\cot^{-1} x$ [सूत्र: ग्रुप 2 ऋणात्मक नियम]"
+      },
+      {
+        "question": "यदि $x > 0$, तो $\\tan^{-1} x$ का मान $\\cot^{-1}$ के पदों में क्या है?",
+        "answer": "$\\cot^{-1}(\\frac{1}{x})$ [सूत्र: व्युत्क्रम संबंध]"
+      },
+      {
+        "question": "$\\tan^{-1}(-x)$ किसके बराबर होता है?",
+        "answer": "$-\\tan^{-1} x$ [सूत्र: ग्रुप 1 ऋणात्मक नियम]"
+      },
+      {
+        "question": "यदि $|x| \\ge 1$, तो $\\cos^{-1}(\\frac{1}{x})$ किसके बराबर है?",
+        "answer": "$\\sec^{-1} x$ [सूत्र: व्युत्क्रम संबंध]"
+      }
+    ],
+    "formulas": [
+      {
+        "name": "ग्रुप I: ऋणात्मक कोण सूत्र (चतुर्थ चतुर्थांश)",
+        "formula": "$$\\sin^{-1}(-x) = -\\sin^{-1} x, \\quad \\tan^{-1}(-x) = -\\tan^{-1} x, \\quad \\text{cosec}^{-1}(-x) = -\\text{cosec}^{-1} x$$",
+        "meaning": "जब कोण का मान ऋणात्मक हो, तो sin⁻¹, tan⁻¹, cosec⁻¹ का मुख्य मान चतुर्थ चतुर्थांश [-π/2, 0] में सीधे ऋणात्मक कोण के रूप में मिलता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "$\\sin^{-1}\\left(-\\frac{1}{2}\\right)$ का मुख्य मान ज्ञात कीजिए।",
+            "solution": [
+              "सूत्र लगाने पर: $\\sin^{-1}(-x) = -\\sin^{-1} x$ [सूत्र: $\\sin^{-1}(-x) = -\\sin^{-1} x$]。",
+              "$\\sin^{-1}\\left(-\\frac{1}{2}\\right) = -\\sin^{-1}\\left(\\frac{1}{2}\\right)$ [सूत्र: $\\sin\\frac{\\pi}{6} = \\frac{1}{2}$]。",
+              "चूँकि $\\sin\\frac{\\pi}{6} = \\frac{1}{2}$ है, अतः $-\\sin^{-1}\\left(\\sin\\frac{\\pi}{6}\\right) = -\\frac{\\pi}{6}$ [सूत्र: $\\sin^{-1}(\\sin\\theta) = \\theta, \\theta \\in [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$]。",
+              "उत्तर: $-\\frac{\\pi}{6}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "$\\tan^{-1}(-\\sqrt{3})$ का मुख्य मान ज्ञात कीजिए।",
+            "solution": [
+              "सूत्र लगाने पर: $\\tan^{-1}(-x) = -\\tan^{-1} x$ [सूत्र: $\\tan^{-1}(-x) = -\\tan^{-1} x$]。",
+              "$\\tan^{-1}(-\\sqrt{3}) = -\\tan^{-1}(\\sqrt{3})$ [सूत्र: $\\tan\\frac{\\pi}{3} = \\sqrt{3}$]。",
+              "चूँकि $\\tan\\frac{\\pi}{3} = \\sqrt{3}$ है, अतः $-\\tan^{-1}\\left(\\tan\\frac{\\pi}{3}\\right) = -\\frac{\\pi}{3}$ [सूत्र: $\\tan^{-1}(\\tan\\theta) = \\theta, \\theta \\in (-\\frac{\\pi}{2}, \\frac{\\pi}{2})$]。",
+              "उत्तर: $-\\frac{\\pi}{3}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "$\\text{cosec}^{-1}(-\\sqrt{2})$ का मुख्य मान ज्ञात कीजिए।",
+            "solution": [
+              "सूत्र लगाने पर: $\\text{cosec}^{-1}(-x) = -\\text{cosec}^{-1} x$ [सूत्र: $\\text{cosec}^{-1}(-x) = -\\text{cosec}^{-1} x$]。",
+              "$\\text{cosec}^{-1}(-\\sqrt{2}) = -\\text{cosec}^{-1}(\\sqrt{2})$ [सूत्र: $\\text{cosec}\\frac{\\pi}{4} = \\sqrt{2}$]。",
+              "चूँकि $\\text{cosec}\\frac{\\pi}{4} = \\sqrt{2}$ है, अतः मान $-\\frac{\\pi}{4}$ प्राप्त होता है [सूत्र: $\\text{cosec}^{-1}(\\text{cosec}\\,\\theta) = \\theta$]。",
+              "उत्तर: $-\\frac{\\pi}{4}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "$\\tan^{-1}(-1)$ का मुख्य मान ज्ञात कीजिए।",
+            "solution": [
+              "सूत्र लगाने पर: $\\tan^{-1}(-x) = -\\tan^{-1} x$ [सूत्र: $\\tan^{-1}(-x) = -\\tan^{-1} x$]。",
+              "$\\tan^{-1}(-1) = -\\tan^{-1}(1)$ [सूत्र: $\\tan\\frac{\\pi}{4} = 1$]。",
+              "चूँकि $\\tan\\frac{\\pi}{4} = 1$ है, अतः मान $-\\frac{\\pi}{4}$ होगा [सूत्र: $\\tan^{-1}(\\tan\\theta) = \\theta$]。",
+              "उत्तर: $-\\frac{\\pi}{4}$"
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "ग्रुप II: ऋणात्मक कोण सूत्र (द्वितीय चतुर्थांश) [सुधार सहित]",
+        "formula": "$$\\cos^{-1}(-x) = \\pi - \\cos^{-1} x, \\quad \\sec^{-1}(-x) = \\pi - \\sec^{-1} x, \\quad \\cot^{-1}(-x) = \\pi - \\cot^{-1} x$$",
+        "meaning": "जब कोण का मान ऋणात्मक हो, तो cos⁻¹, sec⁻¹, cot⁻¹ का मुख्य मान द्वितीय चतुर्थांश [π/2, π] में π - θ के रूप में मिलता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "$\\cos^{-1}\\left(-\\frac{1}{2}\\right)$ का मुख्य मान ज्ञात कीजिए।",
+            "solution": [
+              "सूत्र लगाने पर: $\\cos^{-1}(-x) = \\pi - \\cos^{-1} x$ [सूत्र: $\\cos^{-1}(-x) = \\pi - \\cos^{-1} x$]。",
+              "$\\cos^{-1}\\left(-\\frac{1}{2}\\right) = \\pi - \\cos^{-1}\\left(\\frac{1}{2}\\right)$ [सूत्र: $\\cos\\frac{\\pi}{3} = \\frac{1}{2}$]。",
+              "$\\pi - \\frac{\\pi}{3} = \\frac{3\\pi - \\pi}{3} = \\frac{2\\pi}{3}$ [सूत्र: $\\cos^{-1}(\\cos\\theta) = \\theta, \\theta \\in [0, \\pi]$]。",
+              "उत्तर: $\\frac{2\\pi}{3}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "$\\cot^{-1}\\left(-\\frac{1}{\\sqrt{3}}\\right)$ का मुख्य मान ज्ञात कीजिए।",
+            "solution": [
+              "सूत्र लगाने पर: $\\cot^{-1}(-x) = \\pi - \\cot^{-1} x$ [सूत्र: $\\cot^{-1}(-x) = \\pi - \\cot^{-1} x$]。",
+              "$\\cot^{-1}\\left(-\\frac{1}{\\sqrt{3}}\\right) = \\pi - \\cot^{-1}\\left(\\frac{1}{\\sqrt{3}}\\right)$ [सूत्र: $\\cot\\frac{\\pi}{3} = \\frac{1}{\\sqrt{3}}$]。",
+              "$\\pi - \\frac{\\pi}{3} = \\frac{2\\pi}{3}$ [सूत्र: $\\cot^{-1}(\\cot\\theta) = \\theta, \\theta \\in (0, \\pi)$]。",
+              "उत्तर: $\\frac{2\\pi}{3}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "$\\cos^{-1}\\left(-\\frac{1}{\\sqrt{2}}\\right)$ का मुख्य मान ज्ञात कीजिए।",
+            "solution": [
+              "सूत्र लगाने पर: $\\cos^{-1}(-x) = \\pi - \\cos^{-1} x$ [सूत्र: $\\cos^{-1}(-x) = \\pi - \\cos^{-1} x$]。",
+              "$\\cos^{-1}\\left(-\\frac{1}{\\sqrt{2}}\\right) = \\pi - \\cos^{-1}\\left(\\frac{1}{\\sqrt{2}}\\right)$ [सूत्र: $\\cos\\frac{\\pi}{4} = \\frac{1}{\\sqrt{2}}$]。",
+              "$\\pi - \\frac{\\pi}{4} = \\frac{3\\pi}{4}$ [सूत्र: $\\cos^{-1}(\\cos\\theta) = \\theta$]。",
+              "उत्तर: $\\frac{3\\pi}{4}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "$\\sec^{-1}(-2)$ का मुख्य मान ज्ञात कीजिए।",
+            "solution": [
+              "सूत्र लगाने पर: $\\sec^{-1}(-x) = \\pi - \\sec^{-1} x$ [सूत्र: $\\sec^{-1}(-x) = \\pi - \\sec^{-1} x$]。",
+              "$\\sec^{-1}(-2) = \\pi - \\sec^{-1}(2)$ [सूत्र: $\\sec\\frac{\\pi}{3} = 2$]。",
+              "$\\pi - \\frac{\\pi}{3} = \\frac{2\\pi}{3}$ [सूत्र: $\\sec^{-1}(\\sec\\theta) = \\theta, \\theta \\in [0, \\pi] - \\{\\frac{\\pi}{2}\\}$]。",
+              "उत्तर: $\\frac{2\\pi}{3}$"
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "निरसन सूत्र एवं मुख्य मान शाखा समायोजन",
+        "formula": "$$f^{-1}(f(x)) = x \\iff x \\in \\text{मुख्य मान शाखा}$$",
+        "meaning": "यदि त्रिकोणमितीय फलन का कोण मुख्य मान शाखा से बाहर हो, तो चतुर्थांश सूत्रों द्वारा उसे मुख्य मान शाखा में लाया जाता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "$\\sin^{-1}\\left(\\sin\\frac{2\\pi}{3}\\right)$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चूँकि $\\frac{2\\pi}{3} \\notin [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$, अतः सीधे $\\frac{2\\pi}{3}$ नहीं लिख सकते [सूत्र: $\\sin^{-1}(\\sin\\theta) = \\theta \\iff \\theta \\in [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$]。",
+              "कोण रूपांतरण: $\\sin\\frac{2\\pi}{3} = \\sin\\left(\\pi - \\frac{\\pi}{3}\\right) = \\sin\\frac{\\pi}{3}$ [सूत्र: $\\sin(\\pi - \\theta) = \\sin\\theta$]。",
+              "व्यंजक में रखने पर: $\\sin^{-1}\\left(\\sin\\frac{\\pi}{3}\\right) = \\frac{\\pi}{3}$ [सूत्र: $\\frac{\\pi}{3} \\in [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$]。",
+              "उत्तर: $\\frac{\\pi}{3}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "$\\cos^{-1}\\left(\\cos\\frac{7\\pi}{6}\\right)$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चूँकि $\\frac{7\\pi}{6} \\notin [0, \\pi]$, अतः सीधे निरसन संभव नहीं है [सूत्र: $\\cos^{-1}(\\cos\\theta) = \\theta \\iff \\theta \\in [0, \\pi]$]。",
+              "कोण रूपांतरण: $\\cos\\frac{7\\pi}{6} = \\cos\\left(2\\pi - \\frac{5\\pi}{6}\\right) = \\cos\\frac{5\\pi}{6}$ [सूत्र: $\\cos(2\\pi - \\theta) = \\cos\\theta$]。",
+              "मान रखने पर: $\\cos^{-1}\\left(\\cos\\frac{5\\pi}{6}\\right) = \\frac{5\\pi}{6}$ [सूत्र: $\\frac{5\\pi}{6} \\in [0, \\pi]$]。",
+              "उत्तर: $\\frac{5\\pi}{6}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "$\\tan^{-1}\\left(\\tan\\frac{3\\pi}{4}\\right)$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चूँकि $\\frac{3\\pi}{4} \\notin (-\\frac{\\pi}{2}, \\frac{\\pi}{2})$, अतः चतुर्थांश नियम लागू करेंगे [सूत्र: $\\tan^{-1}(\\tan\\theta) = \\theta \\iff \\theta \\in (-\\frac{\\pi}{2}, \\frac{\\pi}{2})$]。",
+              "कोण रूपांतरण: $\\tan\\frac{3\\pi}{4} = \\tan\\left(\\pi - \\frac{\\pi}{4}\\right) = -\\tan\\frac{\\pi}{4}$ [सूत्र: $\\tan(\\pi - \\theta) = -\\tan\\theta$]。",
+              "व्यंजक में रखने पर: $\\tan^{-1}\\left(-\\tan\\frac{\\pi}{4}\\right) = -\\tan^{-1}\\left(\\tan\\frac{\\pi}{4}\\right) = -\\frac{\\pi}{4}$ [सूत्र: $\\tan^{-1}(-x) = -\\tan^{-1} x$]。",
+              "उत्तर: $-\\frac{\\pi}{4}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "$\\cos^{-1}\\left(\\cos\\frac{13\\pi}{6}\\right)$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चूँकि $\\frac{13\\pi}{6} \\notin [0, \\pi]$, अतः आवर्तिता सूत्र लगाएंगे [सूत्र: $\\cos(2\\pi + \\theta) = \\cos\\theta$]。",
+              "कोण रूपांतरण: $\\cos\\frac{13\\pi}{6} = \\cos\\left(2\\pi + \\frac{\\pi}{6}\\right) = \\cos\\frac{\\pi}{6}$ [सूत्र: $\\cos(2\\pi + \\theta) = \\cos\\theta$]。",
+              "मान रखने पर: $\\cos^{-1}\\left(\\cos\\frac{\\pi}{6}\\right) = \\frac{\\pi}{6}$ [सूत्र: $\\frac{\\pi}{6} \\in [0, \\pi]$]。",
+              "उत्तर: $\\frac{\\pi}{6}$"
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "व्युत्क्रम संबंध सूत्र",
+        "formula": "$$\\sin^{-1}\\left(\\frac{1}{x}\\right) = \\text{cosec}^{-1} x, \\quad \\cos^{-1}\\left(\\frac{1}{x}\\right) = \\sec^{-1} x, \\quad \\tan^{-1}\\left(\\frac{1}{x}\\right) = \\cot^{-1} x \\; (x > 0)$$",
+        "meaning": "प्रतिलोम त्रिकोणमितीय फलनों के कोणीय चर का व्युत्क्रम करने पर संगत व्युत्क्रम फलन प्राप्त होता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "यदि $\\text{cosec}^{-1}(2) = \\theta$ हो, तो $\\sin^{-1}$ के रूप में मान ज्ञात कीजिए।",
+            "solution": [
+              "सूत्र लगाने पर: $\\text{cosec}^{-1} x = \\sin^{-1}\\left(\\frac{1}{x}\\right)$ [सूत्र: $\\text{cosec}^{-1} x = \\sin^{-1}(\\frac{1}{x})$]。",
+              "$\\text{cosec}^{-1}(2) = \\sin^{-1}\\left(\\frac{1}{2}\\right)$ [सूत्र: $\\sin\\frac{\\pi}{6} = \\frac{1}{2}$]。",
+              "चूँकि $\\sin\\frac{\\pi}{6} = \\frac{1}{2}$, अतः मान $\\frac{\\pi}{6}$ प्राप्त होता है [सूत्र: $\\sin^{-1}(\\sin\\theta) = \\theta$]。",
+              "उत्तर: $\\frac{\\pi}{6}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "$\\sec^{-1}\\left(\\frac{2}{\\sqrt{3}}\\right)$ का मान $\\cos^{-1}$ के प्रयोग से निकालें।",
+            "solution": [
+              "सूत्र लगाने पर: $\\sec^{-1} x = \\cos^{-1}\\left(\\frac{1}{x}\\right)$ [सूत्र: $\\sec^{-1} x = \\cos^{-1}(\\frac{1}{x})$]。",
+              "$\\sec^{-1}\\left(\\frac{2}{\\sqrt{3}}\\right) = \\cos^{-1}\\left(\\frac{\\sqrt{3}}{2}\\right)$ [सूत्र: $\\cos\\frac{\\pi}{6} = \\frac{\\sqrt{3}}{2}$]。",
+              "मान रखने पर: $\\cos^{-1}\\left(\\cos\\frac{\\pi}{6}\\right) = \\frac{\\pi}{6}$ [सूत्र: $\\cos^{-1}(\\cos\\theta) = \\theta$]。",
+              "उत्तर: $\\frac{\\pi}{6}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "$\\cot^{-1}(\\sqrt{3})$ का मान $\\tan^{-1}$ के सूत्र से निकालें।",
+            "solution": [
+              "चूँकि $x = \\sqrt{3} > 0$ है, अतः $\\cot^{-1} x = \\tan^{-1}\\left(\\frac{1}{x}\\right)$ [सूत्र: $\\cot^{-1} x = \\tan^{-1}(\\frac{1}{x}), x > 0$]。",
+              "$\\cot^{-1}(\\sqrt{3}) = \\tan^{-1}\\left(\\frac{1}{\\sqrt{3}}\\right)$ [सूत्र: $\\tan\\frac{\\pi}{6} = \\frac{1}{\\sqrt{3}}$]。",
+              "मान रखने पर: $\\tan^{-1}\\left(\\tan\\frac{\\pi}{6}\\right) = \\frac{\\pi}{6}$ [सूत्र: $\\tan^{-1}(\\tan\\theta) = \\theta$]。",
+              "उत्तर: $\\frac{\\pi}{6}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "सिद्ध कीजिए कि $\\sin^{-1}\\left(\\frac{3}{5}\\right) = \\tan^{-1}\\left(\\frac{3}{4}\\right)$ होता है।",
+            "solution": [
+              "माना $\\sin^{-1}\\left(\\frac{3}{5}\\right) = \\theta \\implies \\sin\\theta = \\frac{3}{5} = \\frac{\\text{लंब}}{\\text{कर्ण}}$ [सूत्र: $\\sin\\theta = \\frac{P}{H}$]。",
+              "आधार $B = \\sqrt{5^2 - 3^2} = \\sqrt{25 - 9} = \\sqrt{16} = 4$ [सूत्र: $B = \\sqrt{H^2 - P^2}$]。",
+              "अतः $\\tan\\theta = \\frac{\\text{लंब}}{\\text{आधार}} = \\frac{3}{4} \\implies \\theta = \\tan^{-1}\\left(\\frac{3}{4}\\right)$ [सूत्र: $\\tan\\theta = \\frac{P}{B}$]。",
+              "उत्तर: $\\tan^{-1}\\left(\\frac{3}{4}\\right) \\text{ (सिद्ध हुआ)}$"
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "पूरक कोण योग सूत्र",
+        "formula": "$$\\sin^{-1} x + \\cos^{-1} x = \\frac{\\pi}{2}, \\quad \\tan^{-1} x + \\cot^{-1} x = \\frac{\\pi}{2}, \\quad \\sec^{-1} x + \\text{cosec}^{-1} x = \\frac{\\pi}{2}$$",
+        "meaning": "समान कोणीय मान के लिए दो पूरक प्रतिलोम त्रिकोणमितीय फलनों का योग सदैव π/2 होता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "यदि $\\sin\\left(\\sin^{-1}\\frac{1}{5} + \\cos^{-1} x\\right) = 1$ हो, तो $x$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "दोनों पक्षों का $\\sin^{-1}$ लेने पर: $\\sin^{-1}\\frac{1}{5} + \\cos^{-1} x = \\sin^{-1}(1)$ [सूत्र: $\\sin\\theta = 1 \\implies \\theta = \\sin^{-1}(1)$]。",
+              "चूँकि $\\sin^{-1}(1) = \\frac{\\pi}{2}$, अतः $\\sin^{-1}\\frac{1}{5} + \\cos^{-1} x = \\frac{\\pi}{2}$ [सूत्र: $\\sin\\frac{\\pi}{2} = 1$]。",
+              "पक्षांतरण से: $\\cos^{-1} x = \\frac{\\pi}{2} - \\sin^{-1}\\frac{1}{5}$ [सूत्र: $\\frac{\\pi}{2} - \\sin^{-1}\\theta = \\cos^{-1}\\theta$]。",
+              "तुलना करने पर: $\\cos^{-1} x = \\cos^{-1}\\frac{1}{5} \\implies x = \\frac{1}{5}$。",
+              "उत्तर: $\\frac{1}{5}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "$\\cot(\\tan^{-1} a + \\cot^{-1} a)$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "सूत्र लगाने पर: $\\tan^{-1} a + \\cot^{-1} a = \\frac{\\pi}{2}$ [सूत्र: $\\tan^{-1} x + \\cot^{-1} x = \\frac{\\pi}{2}$]。",
+              "व्यंजक में रखने पर: $\\cot\\left(\\frac{\\pi}{2}\\right)$ [सूत्र: $\\cot\\frac{\\pi}{2} = 0$]。",
+              "गणना करने पर मान $0$ प्राप्त होता है。",
+              "उत्तर: $0$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "$\\tan^{-1}\\sqrt{3} - \\cot^{-1}(-\\sqrt{3})$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "ऋणात्मक कोण नियम से: $\\cot^{-1}(-\\sqrt{3}) = \\pi - \\cot^{-1}\\sqrt{3}$ [सूत्र: $\\cot^{-1}(-x) = \\pi - \\cot^{-1} x$]。",
+              "व्यंजक: $\\tan^{-1}\\sqrt{3} - (\\pi - \\cot^{-1}\\sqrt{3}) = \\tan^{-1}\\sqrt{3} + \\cot^{-1}\\sqrt{3} - \\pi$。",
+              "पूरक कोण सूत्र लगाने पर: $(\\tan^{-1}\\sqrt{3} + \\cot^{-1}\\sqrt{3}) = \\frac{\\pi}{2}$ [सूत्र: $\\tan^{-1} x + \\cot^{-1} x = \\frac{\\pi}{2}$]。",
+              "मान रखने पर: $\\frac{\\pi}{2} - \\pi = -\\frac{\\pi}{2}$。",
+              "उत्तर: $-\\frac{\\pi}{2}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि $\\sin^{-1} x + \\sin^{-1} y = \\frac{2\\pi}{3}$ हो, तो $\\cos^{-1} x + \\cos^{-1} y$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "पूरक कोण सूत्र से: $\\sin^{-1} x = \\frac{\\pi}{2} - \\cos^{-1} x$ तथा $\\sin^{-1} y = \\frac{\\pi}{2} - \\cos^{-1} y$ [सूत्र: $\\sin^{-1}\\theta + \\cos^{-1}\\theta = \\frac{\\pi}{2}$]。",
+              "समीकरण में रखने पर: $\\left(\\frac{\\pi}{2} - \\cos^{-1} x\\right) + \\left(\\frac{\\pi}{2} - \\cos^{-1} y\\right) = \\frac{2\\pi}{3}$。",
+              "$\\pi - (\\cos^{-1} x + \\cos^{-1} y) = \\frac{2\\pi}{3} \\implies \\cos^{-1} x + \\cos^{-1} y = \\pi - \\frac{2\\pi}{3} = \\frac{\\pi}{3}$。",
+              "उत्तर: $\\frac{\\pi}{3}$"
+            ],
+            "source": "AI"
+          }
+        ]
+      },
+      {
+        "name": "tan⁻¹ के योग एवं अंतर के सूत्र",
+        "formula": "$$\\tan^{-1} x \\pm \\tan^{-1} y = \\tan^{-1}\\left(\\frac{x \\pm y}{1 \\mp xy}\\right)$$",
+        "meaning": "यदि xy < 1 हो, तो दो tan⁻¹ फलनों का योग सीधे इस सूत्र द्वारा निकाला जाता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "सिद्ध कीजिए कि $\\tan^{-1}\\left(\\frac{2}{11}\\right) + \\tan^{-1}\\left(\\frac{7}{24}\\right) = \\tan^{-1}\\left(\\frac{1}{2}\\right)$ है।",
+            "solution": [
+              "सूत्र लगाने पर: $\\tan^{-1} x + \\tan^{-1} y = \\tan^{-1}\\left(\\frac{x+y}{1-xy}\\right)$ [सूत्र: $\\tan^{-1} x + \\tan^{-1} y = \\tan^{-1}\\left(\\frac{x+y}{1-xy}\\right)$]。",
+              "मान प्रतिस्थापित करने पर: $\\tan^{-1}\\left(\\frac{\\frac{2}{11} + \\frac{7}{24}}{1 - \\frac{2}{11} \\times \\frac{7}{24}}\\right)$。",
+              "अंश और हर का ल.स. लेने पर: $\\tan^{-1}\\left(\\frac{\\frac{48 + 77}{264}}{\\frac{264 - 14}{264}}\\right) = \\tan^{-1}\\left(\\frac{125}{250}\\right)$。",
+              "सरल करने पर: $\\tan^{-1}\\left(\\frac{1}{2}\\right)$ [RHS सिद्ध हुआ]。",
+              "उत्तर: $\\tan^{-1}\\left(\\frac{1}{2}\\right)$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "मान ज्ञात कीजिए: $\\tan^{-1}\\left(\\frac{1}{7}\\right) + \\tan^{-1}\\left(\\frac{1}{13}\\right)$।",
+            "solution": [
+              "सूत्र लगाने पर: $\\tan^{-1} x + \\tan^{-1} y = \\tan^{-1}\\left(\\frac{x+y}{1-xy}\\right)$ [सूत्र: $\\tan^{-1} x + \\tan^{-1} y = \\tan^{-1}\\left(\\frac{x+y}{1-xy}\\right)$]。",
+              "मान रखने पर: $\\tan^{-1}\\left(\\frac{\\frac{1}{7} + \\frac{1}{13}}{1 - \\frac{1}{7} \\times \\frac{1}{13}}\\right)$。",
+              "ल.स. लेकर हल करने पर: $\\tan^{-1}\\left(\\frac{\\frac{13 + 7}{91}}{\\frac{91 - 1}{91}}\\right) = \\tan^{-1}\\left(\\frac{20}{90}\\right)$。",
+              "सरल करने पर: $\\tan^{-1}\\left(\\frac{2}{9}\\right)$。",
+              "उत्तर: $\\tan^{-1}\\left(\\frac{2}{9}\\right)$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "सिद्ध कीजिए कि $\\tan^{-1}\\left(\\frac{a-b}{1+ab}\\right) + \\tan^{-1}\\left(\\frac{b-c}{1+bc}\\right) + \\tan^{-1}\\left(\\frac{c-a}{1+ca}\\right) = 0$ है।",
+            "solution": [
+              "सूत्रानुसार: $\\tan^{-1}\\left(\\frac{x-y}{1+xy}\\right) = \\tan^{-1} x - \\tan^{-1} y$ [सूत्र: $\\tan^{-1}\\left(\\frac{x-y}{1+xy}\\right) = \\tan^{-1} x - \\tan^{-1} y$]。",
+              "प्रत्येक पद का प्रसार करने पर: LHS = $(\\tan^{-1} a - \\tan^{-1} b) + (\\tan^{-1} b - \\tan^{-1} c) + (\\tan^{-1} c - \\tan^{-1} a)$。",
+              "सभी विपरीत पद कट जाते हैं: $0$。",
+              "अतः LHS = RHS = $0$ [सिद्ध हुआ]"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि $\\tan^{-1} x + \\tan^{-1} y + \\tan^{-1} z = \\pi$ हो, तो सिद्ध कीजिए कि $x + y + z = xyz$ है।",
+            "solution": [
+              "तीन पदों का सूत्र: $\\tan^{-1}\\left(\\frac{x+y+z-xyz}{1-xy-yz-zx}\\right) = \\pi$ [सूत्र: $\\tan^{-1} x + \\tan^{-1} y + \\tan^{-1} z = \\tan^{-1}\\left(\\frac{x+y+z-xyz}{1-xy-yz-zx}\\right)$]。",
+              "पक्षांतरण करने पर: $\\frac{x+y+z-xyz}{1-xy-yz-zx} = \\tan\\pi$。",
+              "चूँकि $\\tan\\pi = 0$ होता है: $\\frac{x+y+z-xyz}{1-xy-yz-zx} = 0$。",
+              "तिर्यक गुणा करने पर: $x + y + z - xyz = 0 \\implies x + y + z = xyz$ [सिद्ध हुआ]"
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "2tan⁻¹ x के रूपांतरण सूत्र",
+        "formula": "$$2\\tan^{-1} x = \\tan^{-1}\\left(\\frac{2x}{1-x^2}\\right) = \\sin^{-1}\\left(\\frac{2x}{1+x^2}\\right) = \\cos^{-1}\\left(\\frac{1-x^2}{1+x^2}\\right)$$",
+        "meaning": "2tan⁻¹ x को ज़रूरत के मुताबिक tan⁻¹, sin⁻¹ या cos⁻¹ के पदों में सीधे बदला जा सकता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "सिद्ध कीजिए कि $2\\tan^{-1}\\left(\\frac{1}{2}\\right) + \\tan^{-1}\\left(\\frac{1}{7}\\right) = \\tan^{-1}\\left(\\frac{31}{17}\\right)$ है।",
+            "solution": [
+              "पहले पद पर सूत्र लगाने पर: $2\\tan^{-1} x = \\tan^{-1}\\left(\\frac{2x}{1-x^2}\\right)$ [सूत्र: $2\\tan^{-1} x = \\tan^{-1}\\left(\\frac{2x}{1-x^2}\\right)$]。",
+              "$2\\tan^{-1}\\left(\\frac{1}{2}\\right) = \\tan^{-1}\\left(\\frac{2 \\times \\frac{1}{2}}{1 - (\\frac{1}{2})^2}\\right) = \\tan^{-1}\\left(\\frac{1}{1 - \\frac{1}{4}}\\right) = \\tan^{-1}\\left(\\frac{4}{3}\\right)$。",
+              "अब योग का सूत्र लगाने पर: $\\tan^{-1}\\left(\\frac{4}{3}\\right) + \\tan^{-1}\\left(\\frac{1}{7}\\right) = \\tan^{-1}\\left(\\frac{\\frac{4}{3} + \\frac{1}{7}}{1 - \\frac{4}{3} \\times \\frac{1}{7}}\\right)$ [सूत्र: $\\tan^{-1} x + \\tan^{-1} y = \\tan^{-1}\\left(\\frac{x+y}{1-xy}\\right)$]。",
+              "ल.स. लेकर सरल करने पर: $\\tan^{-1}\\left(\\frac{\\frac{28 + 3}{21}}{\\frac{21 - 4}{21}}\\right) = \\tan^{-1}\\left(\\frac{31}{17}\\right)$ [RHS सिद्ध हुआ]。",
+              "उत्तर: $\\tan^{-1}\\left(\\frac{31}{17}\\right)$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "मान ज्ञात कीजिए: $\\tan\\left\\{\\frac{1}{2}\\left[\\sin^{-1}\\left(\\frac{2x}{1+x^2}\\right) + \\cos^{-1}\\left(\\frac{1-y^2}{1+y^2}\\right)\\right]\\right\\}$।",
+            "solution": [
+              "सूत्र लगाने पर: $\\sin^{-1}\\left(\\frac{2x}{1+x^2}\\right) = 2\\tan^{-1} x$ तथा $\\cos^{-1}\\left(\\frac{1-y^2}{1+y^2}\\right) = 2\\tan^{-1} y$ [सूत्र: $2\\tan^{-1} x = \\sin^{-1}\\left(\\frac{2x}{1+x^2}\\right) = \\cos^{-1}\\left(\\frac{1-x^2}{1+x^2}\\right)$]。",
+              "मान रखने पर: $\\tan\\left\\{\\frac{1}{2}[2\\tan^{-1} x + 2\\tan^{-1} y]\\right\\} = \\tan[\\tan^{-1} x + \\tan^{-1} y]$。",
+              "योग सूत्र लगाने पर: $\\tan\\left[\\tan^{-1}\\left(\\frac{x+y}{1-xy}\\right)\\right]$ [सूत्र: $\\tan^{-1} x + \\tan^{-1} y = \\tan^{-1}\\left(\\frac{x+y}{1-xy}\\right)$]。",
+              "निरसन नियम से: $\\frac{x+y}{1-xy}$ [सूत्र: $\\tan(\\tan^{-1} \\theta) = \\theta$]。",
+              "उत्तर: $\\frac{x+y}{1-xy}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "सिद्ध कीजिए कि $\\tan^{-1}\\sqrt{x} = \\frac{1}{2}\\cos^{-1}\\left(\\frac{1-x}{1+x}\\right)$ है।",
+            "solution": [
+              "माना $x = \\tan^2\\theta \\implies \\sqrt{x} = \\tan\\theta \\implies \\theta = \\tan^{-1}\\sqrt{x}$。",
+              "RHS में मान रखने पर: $\\frac{1}{2}\\cos^{-1}\\left(\\frac{1-\\tan^2\\theta}{1+\\tan^2\\theta}\\right)$。",
+              "त्रिकोणमितीय सर्वसमिका से: $\\frac{1-\\tan^2\\theta}{1+\\tan^2\\theta} = \\cos 2\\theta$ [सूत्र: $\\cos 2\\theta = \\frac{1-\\tan^2\\theta}{1+\\tan^2\\theta}$]。",
+              "$\\frac{1}{2}\\cos^{-1}(\\cos 2\\theta) = \\frac{1}{2} \\times 2\\theta = \\theta = \\tan^{-1}\\sqrt{x}$ [LHS सिद्ध हुआ]"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "$2\\tan^{-1}\\left(\\frac{1}{3}\\right)$ का मान $\\tan^{-1}$ के रूप में निकालें।",
+            "solution": [
+              "सूत्र लगाने पर: $2\\tan^{-1} x = \\tan^{-1}\\left(\\frac{2x}{1-x^2}\\right)$ [सूत्र: $2\\tan^{-1} x = \\tan^{-1}\\left(\\frac{2x}{1-x^2}\\right)$]。",
+              "मान प्रतिस्थापित करने पर: $\\tan^{-1}\\left(\\frac{2 \\times \\frac{1}{3}}{1 - (\\frac{1}{3})^2}\\right) = \\tan^{-1}\\left(\\frac{\\frac{2}{3}}{1 - \\frac{1}{9}}\\right)$。",
+              "सरल करने पर: $\\tan^{-1}\\left(\\frac{\\frac{2}{3}}{\\frac{8}{9}}\\right) = \\tan^{-1}\\left(\\frac{2}{3} \\times \\frac{9}{8}\\right) = \\tan^{-1}\\left(\\frac{3}{4}\\right)$。",
+              "उत्तर: $\\tan^{-1}\\left(\\frac{3}{4}\\right)$"
+            ],
+            "source": "AI"
+          }
+        ]
+      },
+      {
+        "name": "sin⁻¹ एवं cos⁻¹ के योग तथा अंतर के सूत्र",
+        "formula": "$$\\sin^{-1} x \\pm \\sin^{-1} y = \\sin^{-1}\\left[x\\sqrt{1-y^2} \\pm y\\sqrt{1-x^2}\\right], \\quad \\cos^{-1} x \\pm \\cos^{-1} y = \\cos^{-1}\\left[xy \\mp \\sqrt{1-x^2}\\sqrt{1-y^2}\\right]$$",
+        "meaning": "दो sin⁻¹ या दो cos⁻¹ पदों को एकल पद में जोड़ने या घटाने के सूत्र।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "सिद्ध कीजिए कि $\\sin^{-1}\\left(\\frac{8}{17}\\right) + \\sin^{-1}\\left(\\frac{3}{5}\\right) = \\tan^{-1}\\left(\\frac{77}{36}\\right)$ है।",
+            "solution": [
+              "सूत्र लगाने पर: $\\sin^{-1} x + \\sin^{-1} y = \\sin^{-1}[x\\sqrt{1-y^2} + y\\sqrt{1-x^2}]$ [सूत्र: $\\sin^{-1} x + \\sin^{-1} y = \\sin^{-1}[x\\sqrt{1-y^2} + y\\sqrt{1-x^2}]$]。",
+              "LHS = $\\sin^{-1}\\left[\\frac{8}{17}\\sqrt{1 - (\\frac{3}{5})^2} + \\frac{3}{5}\\sqrt{1 - (\\frac{8}{17})^2}\\right] = \\sin^{-1}\\left[\\frac{8}{17} \\times \\frac{4}{5} + \\frac{3}{5} \\times \\frac{15}{17}\\right]$。",
+              "गणना करने पर: $\\sin^{-1}\\left[\\frac{32 + 45}{85}\\right] = \\sin^{-1}\\left(\\frac{77}{85}\\right)$。",
+              "$\\tan^{-1}$ में बदलने पर: $\\sin^{-1}\\left(\\frac{77}{85}\\right) = \\tan^{-1}\\left(\\frac{77}{\\sqrt{85^2 - 77^2}}\\right) = \\tan^{-1}\\left(\\frac{77}{36}\\right)$ [RHS सिद्ध हुआ] [सूत्र: $\\sin^{-1} x = \\tan^{-1}\\left(\\frac{x}{\\sqrt{1-x^2}}\\right)$]。",
+              "उत्तर: $\\tan^{-1}\\left(\\frac{77}{36}\\right)$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "सिद्ध कीजिए कि $\\cos^{-1}\\left(\\frac{4}{5}\\right) + \\cos^{-1}\\left(\\frac{12}{13}\\right) = \\cos^{-1}\\left(\\frac{33}{65}\\right)$ है।",
+            "solution": [
+              "सूत्र लगाने पर: $\\cos^{-1} x + \\cos^{-1} y = \\cos^{-1}[xy - \\sqrt{1-x^2}\\sqrt{1-y^2}]$ [सूत्र: $\\cos^{-1} x + \\cos^{-1} y = \\cos^{-1}[xy - \\sqrt{1-x^2}\\sqrt{1-y^2}]$]。",
+              "LHS = $\\cos^{-1}\\left[\\frac{4}{5} \\times \\frac{12}{13} - \\sqrt{1 - (\\frac{4}{5})^2}\\sqrt{1 - (\\frac{12}{13})^2}\\right]$。",
+              "वर्गमूल हल करने पर: $\\cos^{-1}\\left[\\frac{48}{65} - \\frac{3}{5} \\times \\frac{5}{13}\\right] = \\cos^{-1}\\left[\\frac{48}{65} - \\frac{15}{65}\\right]$。",
+              "घटाने पर: $\\cos^{-1}\\left(\\frac{33}{65}\\right)$ [RHS सिद्ध हुआ]。",
+              "उत्तर: $\\cos^{-1}\\left(\\frac{33}{65}\\right)$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "सिद्ध कीजिए कि $\\cos^{-1}\\left(\\frac{12}{13}\\right) + \\sin^{-1}\\left(\\frac{3}{5}\\right) = \\sin^{-1}\\left(\\frac{56}{65}\\right)$ है।",
+            "solution": [
+              "$\\cos^{-1}$ को $\\sin^{-1}$ में बदलने पर: $\\cos^{-1}\\left(\\frac{12}{13}\\right) = \\sin^{-1}\\sqrt{1 - (\\frac{12}{13})^2} = \\sin^{-1}\\left(\\frac{5}{13}\\right)$ [सूत्र: $\\cos^{-1} x = \\sin^{-1}\\sqrt{1-x^2}$]。",
+              "अब सूत्र लगाने पर: $\\sin^{-1}\\left(\\frac{5}{13}\\right) + \\sin^{-1}\\left(\\frac{3}{5}\\right) = \\sin^{-1}\\left[\\frac{5}{13}\\sqrt{1 - (\\frac{3}{5})^2} + \\frac{3}{5}\\sqrt{1 - (\\frac{5}{13})^2}\\right]$ [सूत्र: $\\sin^{-1} x + \\sin^{-1} y = \\sin^{-1}[x\\sqrt{1-y^2} + y\\sqrt{1-x^2}]$]。",
+              "गणना करने पर: $\\sin^{-1}\\left[\\frac{5}{13} \\times \\frac{4}{5} + \\frac{3}{5} \\times \\frac{12}{13}\\right] = \\sin^{-1}\\left[\\frac{20 + 36}{65}\\right] = \\sin^{-1}\\left(\\frac{56}{65}\\right)$ [RHS सिद्ध हुआ]。",
+              "उत्तर: $\\sin^{-1}\\left(\\frac{56}{65}\\right)$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि $\\cos^{-1} a + \\cos^{-1} b + \\cos^{-1} c = \\pi$ हो, तो सिद्ध कीजिए कि $a^2 + b^2 + c^2 + 2abc = 1$ है।",
+            "solution": [
+              "पक्षांतरण करने पर: $\\cos^{-1} a + \\cos^{-1} b = \\pi - \\cos^{-1} c$。",
+              "सूत्र लगाने पर: $\\cos^{-1}[ab - \\sqrt{1-a^2}\\sqrt{1-b^2}] = \\pi - \\cos^{-1} c$ [सूत्र: $\\cos^{-1} x + \\cos^{-1} y = \\cos^{-1}[xy - \\sqrt{1-x^2}\\sqrt{1-y^2}]$]。",
+              "दोनों पक्षों का $\\cos$ लेने पर: $ab - \\sqrt{1-a^2}\\sqrt{1-b^2} = \\cos(\\pi - \\cos^{-1} c) = -c$ [सूत्र: $\\cos(\\pi - \\theta) = -\\cos\\theta$]。",
+              "दोनों ओर वर्ग करने पर: $(ab + c)^2 = (1-a^2)(1-b^2) \\implies a^2b^2 + c^2 + 2abc = 1 - a^2 - b^2 + a^2b^2$。",
+              "सरल करने पर: $a^2 + b^2 + c^2 + 2abc = 1$ [सिद्ध हुआ]"
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "3sin⁻¹ x एवं 3cos⁻¹ x के सूत्र",
+        "formula": "$$3\\sin^{-1} x = \\sin^{-1}(3x - 4x^3), \\quad 3\\cos^{-1} x = \\cos^{-1}(4x^3 - 3x)$$",
+        "meaning": "त्रिकोणमिति के sin 3θ तथा cos 3θ सूत्रों पर आधारित प्रतिलोम गुणज रूपांतरण।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "सिद्ध कीजिए कि $3\\sin^{-1} x = \\sin^{-1}(3x - 4x^3), \\quad x \\in [-\\frac{1}{2}, \\frac{1}{2}]$ है।",
+            "solution": [
+              "माना $x = \\sin\\theta \\implies \\theta = \\sin^{-1} x$。",
+              "RHS = $\\sin^{-1}(3\\sin\\theta - 4\\sin^3\\theta)$。",
+              "सर्वसमिका से: $3\\sin\\theta - 4\\sin^3\\theta = \\sin 3\\theta$ [सूत्र: $\\sin 3\\theta = 3\\sin\\theta - 4\\sin^3\\theta$]。",
+              "$\\sin^{-1}(\\sin 3\\theta) = 3\\theta = 3\\sin^{-1} x = \\text{LHS}$ [सिद्ध हुआ] [सूत्र: $\\sin^{-1}(\\sin\\theta) = \\theta$]"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "सिद्ध कीजिए कि $3\\cos^{-1} x = \\cos^{-1}(4x^3 - 3x), \\quad x \\in [\\frac{1}{2}, 1]$ है।",
+            "solution": [
+              "माना $x = \\cos\\theta \\implies \\theta = \\cos^{-1} x$。",
+              "RHS = $\\cos^{-1}(4\\cos^3\\theta - 3\\cos\\theta)$。",
+              "सर्वसमिका से: $4\\cos^3\\theta - 3\\cos\\theta = \\cos 3\\theta$ [सूत्र: $\\cos 3\\theta = 4\\cos^3\\theta - 3\\cos\\theta$]。",
+              "$\\cos^{-1}(\\cos 3\\theta) = 3\\theta = 3\\cos^{-1} x = \\text{LHS}$ [सिद्ध हुआ] [सूत्र: $\\cos^{-1}(\\cos\\theta) = \\theta$]"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "सिद्ध कीजिए कि $3\\tan^{-1} x = \\tan^{-1}\\left(\\frac{3x - x^3}{1 - 3x^2}\\right), \\quad |x| < \\frac{1}{\\sqrt{3}}$ है।",
+            "solution": [
+              "माना $x = \\tan\\theta \\implies \\theta = \\tan^{-1} x$。",
+              "RHS = $\\tan^{-1}\\left(\\frac{3\\tan\\theta - \\tan^3\\theta}{1 - 3\\tan^2\\theta}\\right)$。",
+              "सर्वसमिका से: $\\frac{3\\tan\\theta - \\tan^3\\theta}{1 - 3\\tan^2\\theta} = \\tan 3\\theta$ [सूत्र: $\\tan 3\\theta = \\frac{3\\tan\\theta - \\tan^3\\theta}{1 - 3\\tan^2\\theta}$]。",
+              "$\\tan^{-1}(\\tan 3\\theta) = 3\\theta = 3\\tan^{-1} x = \\text{LHS}$ [सिद्ध हुआ]"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि $x = \\frac{1}{2}$ हो, तो $\\sin^{-1}(3x - 4x^3)$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "मान प्रतिस्थापित करने पर: $\\sin^{-1}\\left(3 \\times \\frac{1}{2} - 4 \\times (\\frac{1}{2})^3\\right) = \\sin^{-1}\\left(\\frac{3}{2} - \\frac{1}{2}\\right) = \\sin^{-1}(1)$。",
+              "सूत्र से: $\\sin^{-1}(1) = \\frac{\\pi}{2}$ [सूत्र: $\\sin\\frac{\\pi}{2} = 1$]。",
+              "उत्तर: $\\frac{\\pi}{2}$"
+            ],
+            "source": "AI"
+          }
+        ]
+      }
+    ],
+    "shortAnswers": [
+      {
+        "question": "$\\sin^{-1}\\left(-\\frac{1}{\\sqrt{2}}\\right)$ का मुख्य मान ज्ञात कीजिए।",
+        "answer": [
+          "ऋणात्मक कोण सूत्र लगाने पर: $\\sin^{-1}(-x) = -\\sin^{-1} x$ [सूत्र: $\\sin^{-1}(-x) = -\\sin^{-1} x$]。",
+          "$\\sin^{-1}\\left(-\\frac{1}{\\sqrt{2}}\\right) = -\\sin^{-1}\\left(\\frac{1}{\\sqrt{2}}\\right)$ [सूत्र: $\\sin\\frac{\\pi}{4} = \\frac{1}{\\sqrt{2}}$]。",
+          "चूँकि $\\sin\\frac{\\pi}{4} = \\frac{1}{\\sqrt{2}}$, अतः $-\\sin^{-1}\\left(\\sin\\frac{\\pi}{4}\\right) = -\\frac{\\pi}{4}$ [सूत्र: $\\sin^{-1}(\\sin\\theta) = \\theta, \\theta \\in [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$]。",
+          "उत्तर: $-\\frac{\\pi}{4}$"
+        ]
+      },
+      {
+        "question": "$\\cos^{-1}\\left(\\frac{\\sqrt{3}}{2}\\right)$ का मुख्य मान ज्ञात कीजिए।",
+        "answer": [
+          "मान ज्ञात करने पर: $\\cos\\frac{\\pi}{6} = \\frac{\\sqrt{3}}{2}$ [सूत्र: $\\cos\\frac{\\pi}{6} = \\frac{\\sqrt{3}}{2}$]。",
+          "व्यंजक में रखने पर: $\\cos^{-1}\\left(\\cos\\frac{\\pi}{6}\\right)$。",
+          "चूँकि $\\frac{\\pi}{6} \\in [0, \\pi]$, अतः मान $\\frac{\\pi}{6}$ होगा [सूत्र: $\\cos^{-1}(\\cos\\theta) = \\theta, \\theta \\in [0, \\pi]$]。",
+          "उत्तर: $\\frac{\\pi}{6}$"
+        ]
+      },
+      {
+        "question": "$\\tan^{-1}(1) + \\cos^{-1}\\left(-\\frac{1}{2}\\right) + \\sin^{-1}\\left(-\\frac{1}{2}\\right)$ का मान ज्ञात कीजिए।",
+        "answer": [
+          "प्रथम पद: $\\tan^{-1}(1) = \\frac{\\pi}{4}$ [सूत्र: $\\tan\\frac{\\pi}{4} = 1$]。",
+          "द्वितीय पद: $\\cos^{-1}\\left(-\\frac{1}{2}\\right) = \\pi - \\frac{\\pi}{3} = \\frac{2\\pi}{3}$ [सूत्र: $\\cos^{-1}(-x) = \\pi - \\cos^{-1} x$]。",
+          "तृतीय पद: $\\sin^{-1}\\left(-\\frac{1}{2}\\right) = -\\frac{\\pi}{6}$ [सूत्र: $\\sin^{-1}(-x) = -\\sin^{-1} x$]。",
+          "जोड़ने पर: $\\frac{\\pi}{4} + \\frac{2\\pi}{3} - \\frac{\\pi}{6} = \\frac{3\\pi + 8\\pi - 2\\pi}{12} = \\frac{9\\pi}{12} = \\frac{3\\pi}{4}$。",
+          "उत्तर: $\\frac{3\\pi}{4}$"
+        ]
+      },
+      {
+        "question": "$\\cos^{-1}\\left(\\frac{1}{2}\\right) + 2\\sin^{-1}\\left(\\frac{1}{2}\\right)$ का मान ज्ञात कीजिए।",
+        "answer": [
+          "मान रखने पर: $\\cos^{-1}\\left(\\frac{1}{2}\\right) = \\frac{\\pi}{3}$ तथा $\\sin^{-1}\\left(\\frac{1}{2}\\right) = \\frac{\\pi}{6}$ [सूत्र: $\\cos\\frac{\\pi}{3} = \\frac{1}{2}, \\sin\\frac{\\pi}{6} = \\frac{1}{2}$]。",
+          "प्रतिस्थापित करने पर: $\\frac{\\pi}{3} + 2\\left(\\frac{\\pi}{6}\\right) = \\frac{\\pi}{3} + \\frac{\\pi}{3} = \\frac{2\\pi}{3}$。",
+          "उत्तर: $\\frac{2\\pi}{3}$"
+        ]
+      },
+      {
+        "question": "$\\tan^{-1}\\sqrt{3} - \\sec^{-1}(-2)$ का मान ज्ञात कीजिए।",
+        "answer": [
+          "प्रथम पद: $\\tan^{-1}\\sqrt{3} = \\frac{\\pi}{3}$ [सूत्र: $\\tan\\frac{\\pi}{3} = \\sqrt{3}$]。",
+          "द्वितीय पद: $\\sec^{-1}(-2) = \\pi - \\sec^{-1}(2) = \\pi - \\frac{\\pi}{3} = \\frac{2\\pi}{3}$ [सूत्र: $\\sec^{-1}(-x) = \\pi - \\sec^{-1} x$]。",
+          "घटाने पर: $\\frac{\\pi}{3} - \\frac{2\\pi}{3} = -\\frac{\\pi}{3}$。",
+          "उत्तर: $-\\frac{\\pi}{3}$"
+        ]
+      },
+      {
+        "question": "व्यंजक $\\tan^{-1}\\left[2\\cos\\left(2\\sin^{-1}\\frac{1}{2}\\right)\\right]$ का मान ज्ञात कीजिए।",
+        "answer": [
+          "भीतरी पद: $\\sin^{-1}\\left(\\frac{1}{2}\\right) = \\frac{\\pi}{6} \\implies 2 \\times \\frac{\\pi}{6} = \\frac{\\pi}{3}$ [सूत्र: $\\sin\\frac{\\pi}{6} = \\frac{1}{2}$]。",
+          "कोज्या का मान: $\\cos\\left(\\frac{\\pi}{3}\\right) = \\frac{1}{2}$ [सूत्र: $\\cos\\frac{\\pi}{3} = \\frac{1}{2}$]。",
+          "व्यंजक: $\\tan^{-1}\\left[2 \\times \\frac{1}{2}\\right] = \\tan^{-1}(1) = \\frac{\\pi}{4}$ [सूत्र: $\\tan\\frac{\\pi}{4} = 1$]。",
+          "उत्तर: $\\frac{\\pi}{4}$"
+        ]
+      },
+      {
+        "question": "व्यंजक $\\tan\\left(\\sin^{-1}\\frac{3}{5} + \\cot^{-1}\\frac{3}{2}\\right)$ का मान ज्ञात कीजिए।",
+        "answer": [
+          "$\\sin^{-1}\\frac{3}{5} = \\tan^{-1}\\left(\\frac{3}{4}\\right)$ तथा $\\cot^{-1}\\frac{3}{2} = \\tan^{-1}\\left(\\frac{2}{3}\\right)$ [सूत्र: $\\sin^{-1} x = \\tan^{-1}\\frac{x}{\\sqrt{1-x^2}}, \\cot^{-1} x = \\tan^{-1}\\frac{1}{x}$]。",
+          "योग सूत्र लगाने पर: $\\tan^{-1}\\left(\\frac{\\frac{3}{4} + \\frac{2}{3}}{1 - \\frac{3}{4} \\times \\frac{2}{3}}\\right) = \\tan^{-1}\\left(\\frac{17}{6}\\right)$ [सूत्र: $\\tan^{-1} x + \\tan^{-1} y = \\tan^{-1}\\left(\\frac{x+y}{1-xy}\\right)$]。",
+          "अंतिम गणना: $\\tan\\left[\\tan^{-1}\\left(\\frac{17}{6}\\right)\\right] = \\frac{17}{6}$ [सूत्र: $\\tan(\\tan^{-1}\\theta) = \\theta$]。",
+          "उत्तर: $\\frac{17}{6}$"
+        ]
+      },
+      {
+        "question": "मान ज्ञात कीजिए: $\\sin\\left(\\frac{\\pi}{3} - \\sin^{-1}\\left(-\\frac{1}{2}\\right)\\right)$।",
+        "answer": [
+          "ऋणात्मक कोण नियम: $\\sin^{-1}\\left(-\\frac{1}{2}\\right) = -\\frac{\\pi}{6}$ [सूत्र: $\\sin^{-1}(-x) = -\\sin^{-1} x$]。",
+          "कोष्ठक के भीतर: $\\frac{\\pi}{3} - \\left(-\\frac{\\pi}{6}\\right) = \\frac{\\pi}{3} + \\frac{\\pi}{6} = \\frac{\\pi}{2}$。",
+          "मान निकालने पर: $\\sin\\left(\\frac{\\pi}{2}\\right) = 1$ [सूत्र: $\\sin\\frac{\\pi}{2} = 1$]。",
+          "उत्तर: $1$"
+        ]
+      },
+      {
+        "question": "समीकरण को हल कीजिए: $2\\tan^{-1}(\\cos x) = \\tan^{-1}(2\\,\\text{cosec}\\,x)$।",
+        "answer": [
+          "बाएँ पक्ष पर सूत्र लगाने पर: $2\\tan^{-1}(\\cos x) = \\tan^{-1}\\left(\\frac{2\\cos x}{1 - \\cos^2 x}\\right)$ [सूत्र: $2\\tan^{-1}\\theta = \\tan^{-1}\\left(\\frac{2\\theta}{1-\\theta^2}\\right)$]。",
+          "दायाँ पक्ष बदलने पर: $\\tan^{-1}(2\\,\\text{cosec}\\,x) = \\tan^{-1}\\left(\\frac{2}{\\sin x}\\right)$ [सूत्र: $\\text{cosec}\\,x = \\frac{1}{\\sin x}$]。",
+          "दोनों पक्षों की तुलना करने पर: $\\frac{2\\cos x}{\\sin^2 x} = \\frac{2}{\\sin x}$ [सूत्र: $1 - \\cos^2 x = \\sin^2 x$]。",
+          "सरल करने पर: $\\frac{\\cos x}{\\sin x} = 1 \\implies \\cot x = 1$ [सूत्र: $\\frac{\\cos x}{\\sin x} = \\cot x$]。",
+          "त्रिकोणमितीय मान से: $\\cot x = \\cot\\frac{\\pi}{4} \\implies x = \\frac{\\pi}{4}$ [सूत्र: $\\cot\\frac{\\pi}{4} = 1$]。",
+          "उत्तर: $x = \\frac{\\pi}{4}$"
+        ]
+      },
+      {
+        "question": "समीकरण को हल कीजिए: $\\tan^{-1}\\left(\\frac{1-x}{1+x}\\right) = \\frac{1}{2}\\tan^{-1} x, \\quad x > 0$।",
+        "answer": [
+          "बाएँ पक्ष पर अंतर सूत्र लगाने पर: $\\tan^{-1}\\left(\\frac{1-x}{1+1 \\cdot x}\\right) = \\tan^{-1}(1) - \\tan^{-1} x$ [सूत्र: $\\tan^{-1}\\left(\\frac{a-b}{1+ab}\\right) = \\tan^{-1} a - \\tan^{-1} b$]。",
+          "समीकरण में रखने पर: $\\tan^{-1}(1) - \\tan^{-1} x = \\frac{1}{2}\\tan^{-1} x$。",
+          "चूँकि $\\tan^{-1}(1) = \\frac{\\pi}{4}$ है: $\\frac{\\pi}{4} = \\tan^{-1} x + \\frac{1}{2}\\tan^{-1} x = \\frac{3}{2}\\tan^{-1} x$。",
+          "$\\tan^{-1} x = \\frac{\\pi}{4} \\times \\frac{2}{3} = \\frac{\\pi}{6}$。",
+          "$x = \\tan\\frac{\\pi}{6} = \\frac{1}{\\sqrt{3}}$ [सूत्र: $\\tan\\frac{\\pi}{6} = \\frac{1}{\\sqrt{3}}$]。",
+          "उत्तर: $x = \\frac{1}{\\sqrt{3}}$"
+        ]
+      },
+      {
+        "question": "व्यंजक $\\sin(\\tan^{-1} x), \\quad |x| < 1$ का बीजीय मान ज्ञात कीजिए।",
+        "answer": [
+          "माना $\\tan^{-1} x = \\theta \\implies \\tan\\theta = x = \\frac{x}{1} = \\frac{\\text{लंब}}{\\text{आधार}}$ [सूत्र: $\\tan\\theta = \\frac{P}{B}$]。",
+          "कर्ण की गणना: $H = \\sqrt{1 + x^2}$ [सूत्र: $H = \\sqrt{P^2 + B^2}$]。",
+          "$\\sin\\theta$ का मान: $\\sin\\theta = \\frac{\\text{लंब}}{\\text{कर्ण}} = \\frac{x}{\\sqrt{1+x^2}}$ [सूत्र: $\\sin\\theta = \\frac{P}{H}$]。",
+          "अतः $\\theta = \\sin^{-1}\\left(\\frac{x}{\\sqrt{1+x^2}}\\right)$。",
+          "व्यंजक में रखने पर: $\\sin\\left[\\sin^{-1}\\left(\\frac{x}{\\sqrt{1+x^2}}\\right)\\right] = \\frac{x}{\\sqrt{1+x^2}}$ [सूत्र: $\\sin(\\sin^{-1}\\theta) = \\theta$]。",
+          "उत्तर: $\\frac{x}{\\sqrt{1+x^2}}$"
+        ]
+      },
+      {
+        "question": "समीकरण को हल कीजिए: $\\sin^{-1}(1-x) - 2\\sin^{-1} x = \\frac{\\pi}{2}$।",
+        "answer": [
+          "पक्षांतरण करने पर: $-2\\sin^{-1} x = \\frac{\\pi}{2} - \\sin^{-1}(1-x)$。",
+          "पूरक कोण सूत्र से: $\\frac{\\pi}{2} - \\sin^{-1}(1-x) = \\cos^{-1}(1-x)$ [सूत्र: $\\sin^{-1}\\theta + \\cos^{-1}\\theta = \\frac{\\pi}{2}$]。",
+          "अतः $-2\\sin^{-1} x = \\cos^{-1}(1-x) \\implies \\cos(-2\\sin^{-1} x) = 1 - x$。",
+          "चूँकि $\\cos(-\\theta) = \\cos\\theta$, अतः $\\cos(2\\sin^{-1} x) = 1 - x$。",
+          "त्रिकोणमितीय रूपांतरण: माना $\\sin^{-1} x = \\theta \\implies \\cos 2\\theta = 1 - 2\\sin^2\\theta = 1 - 2x^2$ [सूत्र: $\\cos 2\\theta = 1 - 2\\sin^2\\theta$]。",
+          "समीकरण बनता है: $1 - 2x^2 = 1 - x \\implies 2x^2 - x = 0 \\implies x(2x - 1) = 0$。",
+          "संभावित मान: $x = 0$ अथवा $x = \\frac{1}{2}$。",
+          "जाँच: $x = \\frac{1}{2}$ पर LHS = $\\sin^{-1}\\frac{1}{2} - 2\\sin^{-1}\\frac{1}{2} = -\\frac{\\pi}{6} \\neq \\frac{\\pi}{2}$ (अमान्य)。",
+          "$x = 0$ पर LHS = $\\sin^{-1}(1) - 0 = \\frac{\\pi}{2} = \\text{RHS}$ (सत्य)。",
+          "उत्तर: $x = 0$"
+        ]
+      },
+      {
+        "question": "मान ज्ञात कीजिए: $\\tan^{-1}\\left(\\frac{x}{y}\\right) - \\tan^{-1}\\left(\\frac{x-y}{x+y}\\right)$।",
+        "answer": [
+          "दूसरे पद के अंश व हर में $y$ से भाग देने पर: $\\tan^{-1}\\left(\\frac{\\frac{x}{y} - 1}{1 + \\frac{x}{y} \\cdot 1}\\right)$。",
+          "अंतर सूत्र लगाने पर: $\\tan^{-1}\\left(\\frac{\\frac{x}{y} - 1}{1 + \\frac{x}{y} \\cdot 1}\\right) = \\tan^{-1}\\left(\\frac{x}{y}\\right) - \\tan^{-1}(1)$ [सूत्र: $\\tan^{-1}\\left(\\frac{a-b}{1+ab}\\right) = \\tan^{-1} a - \\tan^{-1} b$]。",
+          "व्यंजक में प्रतिस्थापित करने पर: $\\tan^{-1}\\left(\\frac{x}{y}\\right) - \\left[\\tan^{-1}\\left(\\frac{x}{y}\\right) - \\tan^{-1}(1)\\right] = \\tan^{-1}(1)$。",
+          "चूँकि $\\tan^{-1}(1) = \\frac{\\pi}{4}$ है [सूत्र: $\\tan\\frac{\\pi}{4} = 1$]。",
+          "उत्तर: $\\frac{\\pi}{4}$"
+        ]
+      },
+      {
+        "question": "समीकरण को हल कीजिए: $\\tan^{-1} 2x + \\tan^{-1} 3x = \\frac{\\pi}{4}$।",
+        "answer": [
+          "योग सूत्र लगाने पर: $\\tan^{-1}\\left(\\frac{2x + 3x}{1 - (2x)(3x)}\\right) = \\frac{\\pi}{4}$ [सूत्र: $\\tan^{-1} a + \\tan^{-1} b = \\tan^{-1}\\left(\\frac{a+b}{1-ab}\\right)$]。",
+          "$\\frac{5x}{1 - 6x^2} = \\tan\\frac{\\pi}{4} = 1$ [सूत्र: $\\tan\\frac{\\pi}{4} = 1$]。",
+          "द्विघात समीकरण बनाने पर: $5x = 1 - 6x^2 \\implies 6x^2 + 5x - 1 = 0$。",
+          "गुणनखंड करने पर: $6x^2 + 6x - x - 1 = 0 \\implies 6x(x + 1) - 1(x + 1) = 0 \\implies (x + 1)(6x - 1) = 0$。",
+          "$x = -1$ अथवा $x = \\frac{1}{6}$。",
+          "जाँच: $x = -1$ पर बायाँ पक्ष ऋणात्मक हो जाता है, जो $\\frac{\\pi}{4}$ के बराबर नहीं हो सकता (अमान्य मूल)。",
+          "अतः केवल $x = \\frac{1}{6}$ ही समीकरण को संतुष्ट करता है。",
+          "उत्तर: $x = \\frac{1}{6}$"
+        ]
+      },
+      {
+        "question": "$\\cos^{-1}\\left(-\\frac{1}{2}\\right)$ का सही LaTeX प्रारूप एवं चरण-दर-चरण मुख्य मान ज्ञात कीजिए। [सुधार: भाग 4 के फ़ॉर्मूला 2 में छूटे डॉलर चिह्न का सुधार]",
+        "answer": [
+          "ग्रुप II ऋणात्मक कोण सूत्र लगाने पर: $\\cos^{-1}(-x) = \\pi - \\cos^{-1} x$ [सूत्र: $\\cos^{-1}(-x) = \\pi - \\cos^{-1} x$]。",
+          "$\\cos^{-1}\\left(-\\frac{1}{2}\\right) = \\pi - \\cos^{-1}\\left(\\frac{1}{2}\\right)$ [सूत्र: $\\cos\\frac{\\pi}{3} = \\frac{1}{2}$]。",
+          "मान प्रतिस्थापित करने पर: $\\pi - \\frac{\\pi}{3} = \\frac{3\\pi - \\pi}{3} = \\frac{2\\pi}{3}$ [सूत्र: $\\cos^{-1}(\\cos\\theta) = \\theta, \\theta \\in [0, \\pi]$]。",
+          "उत्तर: $\\frac{2\\pi}{3}$ [पूर्ण LaTeX संवृत मान]"
+        ]
+      },
+      {
+        "question": "मान ज्ञात कीजिए: $\\cos^{-1}\\left(\\cos\\frac{13\\pi}{6}\\right)$। [NCERT विविध प्रश्नावली प्रश्न 1]",
+        "answer": [
+          "चूँकि $\\frac{13\\pi}{6} \\notin [0, \\pi]$, अतः सीधे निरसन नहीं कर सकते [सूत्र: $\\cos^{-1}(\\cos\\theta) = \\theta \\iff \\theta \\in [0, \\pi]$]。",
+          "कोण को $2\\pi$ के गुणज में व्यक्त करने पर: $\\frac{13\\pi}{6} = 2\\pi + \\frac{\\pi}{6}$。",
+          "त्रिकोणमितीय आवर्ती सूत्र लगाने पर: $\\cos\\left(2\\pi + \\frac{\\pi}{6}\\right) = \\cos\\frac{\\pi}{6}$ [सूत्र: $\\cos(2\\pi + \\theta) = \\cos\\theta$]。",
+          "व्यंजक में रखने पर: $\\cos^{-1}\\left(\\cos\\frac{\\pi}{6}\\right) = \\frac{\\pi}{6}$ [सूत्र: $\\frac{\\pi}{6} \\in [0, \\pi]$]。",
+          "उत्तर: $\\frac{\\pi}{6}$"
+        ]
+      },
+      {
+        "question": "मान ज्ञात कीजिए: $\\tan^{-1}\\left(\\tan\\frac{7\\pi}{6}\\right)$। [NCERT विविध प्रश्नावली प्रश्न 2]",
+        "answer": [
+          "चूँकि $\\frac{7\\pi}{6} \\notin \\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$, अतः सीधे निरसन नियम लागू नहीं होता [सूत्र: $\\tan^{-1}(\\tan\\theta) = \\theta \\iff \\theta \\in \\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$]。",
+          "कोण रूपांतरण: $\\frac{7\\pi}{6} = \\pi + \\frac{\\pi}{6}$。",
+          "तृतीय चतुर्थांश नियम से: $\\tan\\left(\\pi + \\frac{\\pi}{6}\\right) = \\tan\\frac{\\pi}{6}$ [सूत्र: $\\tan(\\pi + \\theta) = \\tan\\theta$]。",
+          "व्यंजक में रखने पर: $\\tan^{-1}\\left(\\tan\\frac{\\pi}{6}\\right) = \\frac{\\pi}{6}$ [सूत्र: $\\frac{\\pi}{6} \\in \\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$]。",
+          "उत्तर: $\\frac{\\pi}{6}$"
+        ]
+      },
+      {
+        "question": "सिद्ध कीजिए कि $2\\sin^{-1}\\left(\\frac{3}{5}\\right) = \\tan^{-1}\\left(\\frac{24}{7}\\right)$ है। [NCERT विविध प्रश्नावली प्रश्न 3]",
+        "answer": [
+          "चरण 1: बाएँ पक्ष पर सूत्र लगाने पर: $2\\sin^{-1} x = \\sin^{-1}(2x\\sqrt{1-x^2})$ [सूत्र: $2\\sin^{-1} x = \\sin^{-1}(2x\\sqrt{1-x^2})$]。",
+          "LHS = $\\sin^{-1}\\left[2 \\times \\frac{3}{5}\\sqrt{1 - \\left(\\frac{3}{5}\\right)^2}\\right] = \\sin^{-1}\\left[\\frac{6}{5}\\sqrt{1 - \\frac{9}{25}}\\right] = \\sin^{-1}\\left[\\frac{6}{5} \\times \\frac{4}{5}\\right] = \\sin^{-1}\\left(\\frac{24}{25}\\right)$。",
+          "चरण 2: $\\sin^{-1}$ को $\\tan^{-1}$ में रूपांतरित करने पर: $\\sin^{-1}\\left(\\frac{24}{25}\\right) = \\tan^{-1}\\left(\\frac{\\frac{24}{25}}{\\sqrt{1 - (\\frac{24}{25})^2}}\\right)$ [सूत्र: $\\sin^{-1} x = \\tan^{-1}\\left(\\frac{x}{\\sqrt{1-x^2}}\\right)$]。",
+          "वर्गमूल हल करने पर: $\\sqrt{1 - \\frac{576}{625}} = \\sqrt{\\frac{49}{625}} = \\frac{7}{25}$。",
+          "मान रखने पर: $\\tan^{-1}\\left(\\frac{24/25}{7/25}\\right) = \\tan^{-1}\\left(\\frac{24}{7}\\right) = \\text{RHS}$ [सिद्ध हुआ]。",
+          "उत्तर: $\\tan^{-1}\\left(\\frac{24}{7}\\right)$"
+        ]
+      },
+      {
+        "question": "दर्शाइए कि $\\sin^{-1}(2x\\sqrt{1-x^2}) = 2\\cos^{-1} x, \\quad \\frac{1}{\\sqrt{2}} \\le x \\le 1$ है। [NCERT उदाहरण 3(ii)]",
+        "answer": [
+          "चरण 1: प्रतिस्थापन मानना: माना $x = \\cos\\theta \\implies \\theta = \\cos^{-1} x$。",
+          "चरण 2: सीमा प्रतिबंध की जाँच: चूँकि $\\frac{1}{\\sqrt{2}} \\le x \\le 1$, अतः $\\frac{1}{\\sqrt{2}} \\le \\cos\\theta \\le 1 \\implies 0 \\le \\theta \\le \\frac{\\pi}{4} \\implies 0 \\le 2\\theta \\le \\frac{\\pi}{2}$。",
+          "चरण 3: LHS में मान रखने पर: $\\sin^{-1}(2\\cos\\theta\\sqrt{1-\\cos^2\\theta}) = \\sin^{-1}(2\\cos\\theta\\sin\\theta)$ [सूत्र: $1-\\cos^2\\theta = \\sin^2\\theta$]。",
+          "त्रिकोणमितीय सूत्र से: $2\\sin\\theta\\cos\\theta = \\sin 2\\theta$ [सूत्र: $\\sin 2\\theta = 2\\sin\\theta\\cos\\theta$]。",
+          "निरसन नियम से: $\\sin^{-1}(\\sin 2\\theta) = 2\\theta$ (चूँकि $2\\theta \\in [0, \\frac{\\pi}{2}] \\subset [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$) [सूत्र: $\\sin^{-1}(\\sin A) = A$]。",
+          "चरण 4: $\\theta = \\cos^{-1} x$ रखने पर: $2\\cos^{-1} x = \\text{RHS}$ [सिद्ध हुआ]。",
+          "उत्तर: $2\\cos^{-1} x$"
+        ]
+      },
+      {
+        "question": "सूत्र $\\tan^{-1} x + \\tan^{-1} y = \\pi + \\tan^{-1}\\left(\\frac{x+y}{1-xy}\\right)$ कब लागू होता है? एक उदाहरण देकर स्पष्ट करें। [थ्योरी पूरक प्रतिबंध]",
+        "answer": [
+          "प्रतिबंध: जब $x > 0$, $y > 0$ तथा गुणनफल $xy > 1$ हो, तब परिणाम प्रथम चतुर्थांश से बाहर होकर द्वितीय चतुर्थांश $\\left(\\frac{\\pi}{2} \\text{ से } \\pi\\right)$ में चला जाता है, अतः मुख्य मान शाखा के अनुसार $\\pi$ जोड़ना अनिवार्य होता है [सूत्र: $\\tan^{-1} x + \\tan^{-1} y = \\pi + \\tan^{-1}\\left(\\frac{x+y}{1-xy}\\right)$]。",
+          "उदाहरण: $\\tan^{-1}(1) + \\tan^{-1}(2) + \\tan^{-1}(3)$ में प्रथम दो पद हल करने पर:",
+          "यहाँ $x = 1, y = 2 \\implies xy = 2 > 1$। अतः $\\tan^{-1}(1) + \\tan^{-1}(2) = \\pi + \\tan^{-1}\\left(\\frac{1+2}{1 - 1 \\times 2}\\right) = \\pi + \\tan^{-1}(-3) = \\pi - \\tan^{-1}(3)$ [सूत्र: $\\tan^{-1}(-A) = -\\tan^{-1} A$]。",
+          "अब तीसरा पद जोड़ने पर: $(\\pi - \\tan^{-1} 3) + \\tan^{-1}(3) = \\pi$。",
+          "निष्कर्ष: यदि $xy > 1$ पर $\\pi$ न जोड़ा जाए तो उत्तर ऋणात्मक आ जाएगा, जो धनात्मक कोणों के योग के लिए असंभव है।"
+        ]
+      }
+    ],
+    "longAnswers": [
+      {
+        "question": "फलन $\\tan^{-1}\\left(\\frac{\\cos x}{1 - \\sin x}\\right), \\quad -\\frac{3\\pi}{2} < x < \\frac{\\pi}{2}$ को सरलतम रूप में व्यक्त कीजिए। [सुधार सहित: अर्ध-कोण अंतराल का पूर्ण विश्लेषण]",
+        "answer": [
+          "चरण 1 (प्रांत/अंतराल का विश्लेषण): दिया गया प्रतिबंध $-\\frac{3\\pi}{2} < x < \\frac{\\pi}{2}$ है。",
+          "2 से भाग देने पर: $-\\frac{3\\pi}{4} < \\frac{x}{2} < \\frac{\\pi}{4}$。",
+          "सभी पक्षों में $\\frac{\\pi}{4}$ जोड़ने पर: $-\\frac{3\\pi}{4} + \\frac{\\pi}{4} < \\frac{\\pi}{4} + \\frac{x}{2} < \\frac{\\pi}{4} + \\frac{\\pi}{4} \\implies -\\frac{\\pi}{2} < \\frac{\\pi}{4} + \\frac{x}{2} < \\frac{\\pi}{2}$。",
+          "अतः कोण $\\left(\\frac{\\pi}{4} + \\frac{x}{2}\\right)$ फलन $\\tan^{-1}$ की मुख्य मान शाखा $(-\\frac{\\pi}{2}, \\frac{\\pi}{2})$ के भीतर स्थित है。",
+          "चरण 2 (त्रिकोणमितीय रूपांतरण): $\\cos x = \\cos^2\\frac{x}{2} - \\sin^2\\frac{x}{2}$ तथा $1 - \\sin x = \\left(\\cos\\frac{x}{2} - \\sin\\frac{x}{2}\\right)^2$ [सूत्र: $\\cos 2A = \\cos^2 A - \\sin^2 A$, $1 - \\sin 2A = (\\cos A - \\sin A)^2$]。",
+          "चरण 3: व्यंजक में रखने पर: $\\tan^{-1}\\left[\\frac{\\left(\\cos\\frac{x}{2} + \\sin\\frac{x}{2}\\right)\\left(\\cos\\frac{x}{2} - \\sin\\frac{x}{2}\\right)}{\\left(\\cos\\frac{x}{2} - \\sin\\frac{x}{2}\\right)^2}\\right] = \\tan^{-1}\\left[\\frac{\\cos\\frac{x}{2} + \\sin\\frac{x}{2}}{\\cos\\frac{x}{2} - \\sin\\frac{x}{2}}\\right]$。",
+          "चरण 4: अंश व हर में $\\cos\\frac{x}{2}$ से भाग देने पर: $\\tan^{-1}\\left[\\frac{1 + \\tan\\frac{x}{2}}{1 - \\tan\\frac{x}{2}}\\right] = \\tan^{-1}\\left[\\frac{\\tan\\frac{\\pi}{4} + \\tan\\frac{x}{2}}{1 - \\tan\\frac{\\pi}{4}\\tan\\frac{x}{2}}\\right] = \\tan^{-1}\\left[\\tan\\left(\\frac{\\pi}{4} + \\frac{x}{2}\\right)\\right]$ [सूत्र: $\\tan(A+B) = \\frac{\\tan A+\\tan B}{1-\\tan A\\tan B}$]。",
+          "चरण 5: चूँकि $\\left(\\frac{\\pi}{4} + \\frac{x}{2}\\right) \\in \\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$, अतः निरसन नियम से सरलतम रूप $\\frac{\\pi}{4} + \\frac{x}{2}$ प्राप्त होता है [सूत्र: $\\tan^{-1}(\\tan\\theta) = \\theta$]。",
+          "उत्तर: $\\frac{\\pi}{4} + \\frac{x}{2}$"
+        ]
+      },
+      {
+        "question": "फलन $\\tan^{-1}\\left(\\frac{\\sqrt{1+x^2} - 1}{x}\\right), \\quad x \\neq 0$ को सरलतम रूप में लिखिए।",
+        "answer": [
+          "चरण 1: प्रतिस्थापन मानना: माना $x = \\tan\\theta \\implies \\theta = \\tan^{-1} x$ [सूत्र: $1 + \\tan^2\\theta = \\sec^2\\theta$]。",
+          "चरण 2: व्यंजक में मान रखने पर: $\\tan^{-1}\\left(\\frac{\\sqrt{1+\\tan^2\\theta} - 1}{\\tan\\theta}\\right) = \\tan^{-1}\\left(\\frac{\\sec\\theta - 1}{\\tan\\theta}\\right)$。",
+          "चरण 3: $\\sin$ और $\\cos$ में बदलने पर: $\\tan^{-1}\\left(\\frac{1 - \\cos\\theta}{\\sin\\theta}\\right)$。",
+          "चरण 4: अर्ध-कोण सर्वसमिकाएँ: $1 - \\cos\\theta = 2\\sin^2\\frac{\\theta}{2}$ तथा $\\sin\\theta = 2\\sin\\frac{\\theta}{2}\\cos\\frac{\\theta}{2}$ [सूत्र: $1 - \\cos 2A = 2\\sin^2 A$, $\\sin 2A = 2\\sin A\\cos A$]。",
+          "चरण 5: सरल करने पर: $\\tan^{-1}\\left(\\tan\\frac{\\theta}{2}\\right) = \\frac{\\theta}{2} = \\frac{1}{2}\\tan^{-1} x$。",
+          "उत्तर: $\\frac{1}{2}\\tan^{-1} x$"
+        ]
+      },
+      {
+        "question": "फलन $\\tan^{-1}\\left(\\sqrt{\\frac{1-\\cos x}{1+\\cos x}}\\right), \\quad 0 < x < \\pi$ को सरलतम रूप में लिखिए।",
+        "answer": [
+          "चरण 1: अर्ध-कोण सूत्र: $1 - \\cos x = 2\\sin^2\\frac{x}{2}$ तथा $1 + \\cos x = 2\\cos^2\\frac{x}{2}$ [सूत्र: $1 - \\cos 2A = 2\\sin^2 A$, $1 + \\cos 2A = 2\\cos^2 A$]。",
+          "चरण 2: वर्गमूल के भीतर: $\\sqrt{\\frac{2\\sin^2\\frac{x}{2}}{2\\cos^2\\frac{x}{2}}} = \\sqrt{\\tan^2\\frac{x}{2}} = \\tan\\frac{x}{2}$。",
+          "चरण 3: निरसन नियम से: $\\tan^{-1}\\left(\\tan\\frac{x}{2}\\right) = \\frac{x}{2}$ [सूत्र: $\\tan^{-1}(\\tan\\theta) = \\theta$]。",
+          "उत्तर: $\\frac{x}{2}$"
+        ]
+      },
+      {
+        "question": "फलन $\\tan^{-1}\\left(\\frac{x}{\\sqrt{a^2-x^2}}\\right), \\quad |x| < a$ को सरलतम रूप में लिखिए।",
+        "answer": [
+          "चरण 1: माना $x = a\\sin\\theta \\implies \\theta = \\sin^{-1}\\left(\\frac{x}{a}\\right)$ [सूत्र: $a^2 - a^2\\sin^2\\theta = a^2\\cos^2\\theta$]。",
+          "चरण 2: व्यंजक में रखने पर: $\\tan^{-1}\\left(\\frac{a\\sin\\theta}{\\sqrt{a^2 - a^2\\sin^2\\theta}}\\right) = \\tan^{-1}\\left(\\frac{a\\sin\\theta}{a\\cos\\theta}\\right) = \\tan^{-1}(\\tan\\theta)$。",
+          "चरण 3: निरसन नियम से: $\\theta = \\sin^{-1}\\left(\\frac{x}{a}\\right)$。",
+          "उत्तर: $\\sin^{-1}\\left(\\frac{x}{a}\\right)$"
+        ]
+      },
+      {
+        "question": "फलन $\\tan^{-1}\\left(\\frac{3a^2x - x^3}{a^3 - 3ax^2}\\right), \\quad a > 0, -\\frac{a}{\\sqrt{3}} < x < \\frac{a}{\\sqrt{3}}$ को सरलतम रूप में लिखिए।",
+        "answer": [
+          "चरण 1: माना $x = a\\tan\\theta \\implies \\theta = \\tan^{-1}\\left(\\frac{x}{a}\\right)$。",
+          "चरण 2: व्यंजक में रखने पर: $\\tan^{-1}\\left(\\frac{3a^3\\tan\\theta - a^3\\tan^3\\theta}{a^3 - 3a^3\\tan^2\\theta}\\right) = \\tan^{-1}\\left(\\frac{3\\tan\\theta - \\tan^3\\theta}{1 - 3\\tan^2\\theta}\\right)$。",
+          "चरण 3: त्रिकोणमितीय सूत्र: $\\frac{3\\tan\\theta - \\tan^3\\theta}{1 - 3\\tan^2\\theta} = \\tan 3\\theta$ [सूत्र: $\\tan 3\\theta = \\frac{3\\tan\\theta - \\tan^3\\theta}{1 - 3\\tan^2\\theta}$]。",
+          "चरण 4: निरसन नियम से: $\\tan^{-1}(\\tan 3\\theta) = 3\\theta = 3\\tan^{-1}\\left(\\frac{x}{a}\\right)$。",
+          "उत्तर: $3\\tan^{-1}\\left(\\frac{x}{a}\\right)$"
+        ]
+      },
+      {
+        "question": "फलन $\\cot^{-1}\\left(\\frac{1}{\\sqrt{x^2-1}}\\right), \\quad x > 1$ को सरलतम रूप में लिखिए।",
+        "answer": [
+          "चरण 1: माना $x = \\sec\\theta \\implies \\theta = \\sec^{-1} x$ [सूत्र: $\\sec^2\\theta - 1 = \\tan^2\\theta$]。",
+          "चरण 2: व्यंजक में रखने पर: $\\cot^{-1}\\left(\\frac{1}{\\sqrt{\\sec^2\\theta - 1}}\\right) = \\cot^{-1}\\left(\\frac{1}{\\tan\\theta}\\right) = \\cot^{-1}(\\cot\\theta)$ [सूत्र: $\\frac{1}{\\tan\\theta} = \\cot\\theta$]。",
+          "चरण 3: निरसन नियम से: $\\theta = \\sec^{-1} x$ [सूत्र: $\\cot^{-1}(\\cot\\theta) = \\theta$]。",
+          "उत्तर: $\\sec^{-1} x$"
+        ]
+      },
+      {
+        "question": "सिद्ध कीजिए कि $\\tan^{-1}\\left(\\frac{1}{5}\\right) + \\tan^{-1}\\left(\\frac{1}{7}\\right) + \\tan^{-1}\\left(\\frac{1}{3}\\right) + \\tan^{-1}\\left(\\frac{1}{8}\\right) = \\frac{\\pi}{4}$ है।",
+        "answer": [
+          "चरण 1: पहले दो पदों का युग्म बनाने पर: $\\tan^{-1}\\left(\\frac{1}{5}\\right) + \\tan^{-1}\\left(\\frac{1}{7}\\right) = \\tan^{-1}\\left(\\frac{\\frac{1}{5} + \\frac{1}{7}}{1 - \\frac{1}{5} \\times \\frac{1}{7}}\\right) = \\tan^{-1}\\left(\\frac{\\frac{12}{35}}{\\frac{34}{35}}\\right) = \\tan^{-1}\\left(\\frac{6}{17}\\right)$ [सूत्र: $\\tan^{-1} a + \\tan^{-1} b = \\tan^{-1}\\left(\\frac{a+b}{1-ab}\\right)$]。",
+          "चरण 2: अंतिम दो पदों का युग्म बनाने पर: $\\tan^{-1}\\left(\\frac{1}{3}\\right) + \\tan^{-1}\\left(\\frac{1}{8}\\right) = \\tan^{-1}\\left(\\frac{\\frac{1}{3} + \\frac{1}{8}}{1 - \\frac{1}{3} \\times \\frac{1}{8}}\\right) = \\tan^{-1}\\left(\\frac{\\frac{11}{24}}{\\frac{23}{24}}\\right) = \\tan^{-1}\\left(\\frac{11}{23}\\right)$ [सूत्र: $\\tan^{-1} a + \\tan^{-1} b = \\tan^{-1}\\left(\\frac{a+b}{1-ab}\\right)$]。",
+          "चरण 3: दोनों परिणामों को पुनः संयोजित करने पर: $\\tan^{-1}\\left(\\frac{6}{17}\\right) + \\tan^{-1}\\left(\\frac{11}{23}\\right) = \\tan^{-1}\\left(\\frac{\\frac{6}{17} + \\frac{11}{23}}{1 - \\frac{6}{17} \\times \\frac{11}{23}}\\right)$。",
+          "चरण 4: ल.स. लेकर सरल करने पर: $\\tan^{-1}\\left(\\frac{\\frac{138 + 187}{391}}{\\frac{391 - 66}{391}}\\right) = \\tan^{-1}\\left(\\frac{325}{325}\\right) = \\tan^{-1}(1)$。",
+          "चरण 5: $\\tan^{-1}(1) = \\frac{\\pi}{4} = \\text{RHS}$ [सिद्ध हुआ] [सूत्र: $\\tan\\frac{\\pi}{4} = 1$]。",
+          "उत्तर: $\\frac{\\pi}{4}$"
+        ]
+      },
+      {
+        "question": "सिद्ध कीजिए कि $\\cot^{-1}\\left(\\frac{\\sqrt{1+\\sin x} + \\sqrt{1-\\sin x}}{\\sqrt{1+\\sin x} - \\sqrt{1-\\sin x}}\\right) = \\frac{x}{2}, \\quad x \\in \\left(0, \\frac{\\pi}{4}\\right)$ है।",
+        "answer": [
+          "चरण 1: सर्वसमिकाओं से: $1 + \\sin x = \\cos^2\\frac{x}{2} + \\sin^2\\frac{x}{2} + 2\\sin\\frac{x}{2}\\cos\\frac{x}{2} = \\left(\\cos\\frac{x}{2} + \\sin\\frac{x}{2}\\right)^2$ [सूत्र: $\\cos^2\\theta + \\sin^2\\theta = 1$, $\\sin 2\\theta = 2\\sin\\theta\\cos\\theta$]。",
+          "अतः $\\sqrt{1+\\sin x} = \\cos\\frac{x}{2} + \\sin\\frac{x}{2}$ (चूँकि $x \\in (0, \\frac{\\pi}{4}) \\implies \\cos\\frac{x}{2} > \\sin\\frac{x}{2} > 0$)。",
+          "चरण 2: इसी प्रकार: $\\sqrt{1-\\sin x} = \\sqrt{\\left(\\cos\\frac{x}{2} - \\sin\\frac{x}{2}\\right)^2} = \\cos\\frac{x}{2} - \\sin\\frac{x}{2}$。",
+          "चरण 3: अंश का मान: $(\\cos\\frac{x}{2} + \\sin\\frac{x}{2}) + (\\cos\\frac{x}{2} - \\sin\\frac{x}{2}) = 2\\cos\\frac{x}{2}$。",
+          "चरण 4: हर का मान: $(\\cos\\frac{x}{2} + \\sin\\frac{x}{2}) - (\\cos\\frac{x}{2} - \\sin\\frac{x}{2}) = 2\\sin\\frac{x}{2}$。",
+          "चरण 5: व्यंजक में रखने पर: $\\cot^{-1}\\left(\\frac{2\\cos\\frac{x}{2}}{2\\sin\\frac{x}{2}}\\right) = \\cot^{-1}\\left(\\cot\\frac{x}{2}\\right)$ [सूत्र: $\\frac{\\cos\\theta}{\\sin\\theta} = \\cot\\theta$]。",
+          "चरण 6: निरसन नियम से: $\\frac{x}{2} = \\text{RHS}$ [सिद्ध हुआ] [सूत्र: $\\cot^{-1}(\\cot\\theta) = \\theta, \\theta \\in (0, \\frac{\\pi}{2})$]。",
+          "उत्तर: $\\frac{x}{2}$"
+        ]
+      },
+      {
+        "question": "सिद्ध कीजिए कि $\\tan^{-1}\\left(\\frac{\\sqrt{1+x} - \\sqrt{1-x}}{\\sqrt{1+x} + \\sqrt{1-x}}\\right) = \\frac{\\pi}{4} - \\frac{1}{2}\\cos^{-1} x, \\quad -\\frac{1}{\\sqrt{2}} \\le x \\le 1$ है।",
+        "answer": [
+          "चरण 1: प्रतिस्थापन मानना: माना $x = \\cos 2\\theta \\implies 2\\theta = \\cos^{-1} x \\implies \\theta = \\frac{1}{2}\\cos^{-1} x$ [सूत्र: $x = \\cos 2\\theta$]。",
+          "चरण 2: सर्वसमिकाओं से: $1 + \\cos 2\\theta = 2\\cos^2\\theta \\implies \\sqrt{1+x} = \\sqrt{2}\\cos\\theta$ [सूत्र: $1+\\cos 2\\theta = 2\\cos^2\\theta$]。",
+          "तथा $1 - \\cos 2\\theta = 2\\sin^2\\theta \\implies \\sqrt{1-x} = \\sqrt{2}\\sin\\theta$ [सूत्र: $1-\\cos 2\\theta = 2\\sin^2\\theta$]。",
+          "चरण 3: मान रखने पर: $\\tan^{-1}\\left(\\frac{\\sqrt{2}\\cos\\theta - \\sqrt{2}\\sin\\theta}{\\sqrt{2}\\cos\\theta + \\sqrt{2}\\sin\\theta}\\right) = \\tan^{-1}\\left(\\frac{\\cos\\theta - \\sin\\theta}{\\cos\\theta + \\sin\\theta}\\right)$。",
+          "चरण 4: अंश व हर में $\\cos\\theta$ से भाग देने पर: $\\tan^{-1}\\left(\\frac{1 - \\tan\\theta}{1 + \\tan\\theta}\\right) = \\tan^{-1}\\left[\\tan\\left(\\frac{\\pi}{4} - \\theta\\right)\\right]$ [सूत्र: $\\tan\\left(\\frac{\\pi}{4}-\\theta\\right) = \\frac{1-\\tan\\theta}{1+\\tan\\theta}$]。",
+          "चरण 5: निरसन नियम से: $\\frac{\\pi}{4} - \\theta = \\frac{\\pi}{4} - \\frac{1}{2}\\cos^{-1} x = \\text{RHS}$ [सिद्ध हुआ] [सूत्र: $\\tan^{-1}(\\tan A) = A$]。",
+          "उत्तर: $\\frac{\\pi}{4} - \\frac{1}{2}\\cos^{-1} x$"
+        ]
+      },
+      {
+        "question": "यदि $\\sin^{-1} x + \\sin^{-1} y + \\sin^{-1} z = \\pi$ हो, तो सिद्ध कीजिए कि $x\\sqrt{1-x^2} + y\\sqrt{1-y^2} + z\\sqrt{1-z^2} = 2xyz$ है।",
+        "answer": [
+          "चरण 1: माना $\\sin^{-1} x = A, \\sin^{-1} y = B, \\sin^{-1} z = C$। तब $x = \\sin A, y = \\sin B, z = \\sin C$ तथा $A + B + C = \\pi$。",
+          "चरण 2: LHS = $\\sin A\\sqrt{1-\\sin^2 A} + \\sin B\\sqrt{1-\\sin^2 B} + \\sin C\\sqrt{1-\\sin^2 C} = \\sin A\\cos A + \\sin B\\cos B + \\sin C\\cos C$ [सूत्र: $\\sqrt{1-\\sin^2\\theta} = \\cos\\theta$]。",
+          "चरण 3: 2 से गुणा व भाग करने पर: $\\frac{1}{2}[2\\sin A\\cos A + 2\\sin B\\cos B + 2\\sin C\\cos C] = \\frac{1}{2}[\\sin 2A + \\sin 2B + \\sin 2C]$ [सूत्र: $\\sin 2\\theta = 2\\sin\\theta\\cos\\theta$]。",
+          "चरण 4: त्रिकोणमितीय सर्वसमिका $\\sin 2A + \\sin 2B = 2\\sin(A+B)\\cos(A-B)$ लगाने पर: $\\frac{1}{2}[2\\sin(\\pi-C)\\cos(A-B) + 2\\sin C\\cos C]$ [सूत्र: $A+B = \\pi-C$]。",
+          "चरण 5: $\\sin(\\pi-C) = \\sin C$ तथा $\\cos C = \\cos[\\pi-(A+B)] = -\\cos(A+B)$ रखने पर: $\\sin C[\\cos(A-B) - \\cos(A+B)]$ [सूत्र: $\\cos(A-B)-\\cos(A+B) = 2\\sin A\\sin B$]。",
+          "चरण 6: $\\sin C[2\\sin A\\sin B] = 2\\sin A\\sin B\\sin C = 2xyz = \\text{RHS}$ [सिद्ध हुआ]。",
+          "उत्तर: $2xyz$"
+        ]
+      },
+      {
+        "question": "सिद्ध कीजिए कि $\\tan^{-1}\\left(\\frac{63}{16}\\right) = \\sin^{-1}\\left(\\frac{5}{13}\\right) + \\cos^{-1}\\left(\\frac{3}{5}\\right)$ है। [NCERT विविध प्रश्नावली प्रश्न 7]",
+        "answer": [
+          "चरण 1: दाएँ पक्ष (RHS) के दोनों पदों को $\\sin^{-1}$ में बदलना:",
+          "$\\cos^{-1}\\left(\\frac{3}{5}\\right) = \\sin^{-1}\\sqrt{1 - \\left(\\frac{3}{5}\\right)^2} = \\sin^{-1}\\sqrt{\\frac{16}{25}} = \\sin^{-1}\\left(\\frac{4}{5}\\right)$ [सूत्र: $\\cos^{-1} x = \\sin^{-1}\\sqrt{1-x^2}$]。",
+          "चरण 2: RHS = $\\sin^{-1}\\left(\\frac{5}{13}\\right) + \\sin^{-1}\\left(\\frac{4}{5}\\right)$ पर योग सूत्र लगाने पर:",
+          "सूत्र: $\\sin^{-1} x + \\sin^{-1} y = \\sin^{-1}[x\\sqrt{1-y^2} + y\\sqrt{1-x^2}]$ [सूत्र: $\\sin^{-1} x + \\sin^{-1} y = \\sin^{-1}[x\\sqrt{1-y^2} + y\\sqrt{1-x^2}]$]。",
+          "मान रखने पर: $\\sin^{-1}\\left[\\frac{5}{13}\\sqrt{1 - \\left(\\frac{4}{5}\\right)^2} + \\frac{4}{5}\\sqrt{1 - \\left(\\frac{5}{13}\\right)^2}\\right] = \\sin^{-1}\\left[\\frac{5}{13} \\times \\frac{3}{5} + \\frac{4}{5} \\times \\frac{12}{13}\\right]$。",
+          "सरल करने पर: $\\sin^{-1}\\left[\\frac{15 + 48}{65}\\right] = \\sin^{-1}\\left(\\frac{63}{65}\\right)$。",
+          "चरण 3: $\\sin^{-1}\\left(\\frac{63}{65}\\right)$ को $\\tan^{-1}$ में रूपांतरित करने पर:",
+          "माना $\\sin\\theta = \\frac{63}{65} = \\frac{\\text{लंब}}{\\text{कर्ण}}$ [सूत्र: $\\sin\\theta = \\frac{P}{H}$]。",
+          "आधार $B = \\sqrt{65^2 - 63^2} = \\sqrt{4225 - 3969} = \\sqrt{256} = 16$ [सूत्र: $B = \\sqrt{H^2 - P^2}$]。",
+          "अतः $\\tan\\theta = \\frac{\\text{लंब}}{\\text{आधार}} = \\frac{63}{16} \\implies \\theta = \\tan^{-1}\\left(\\frac{63}{16}\\right) = \\text{LHS}$ [सिद्ध हुआ] [सूत्र: $\\tan\\theta = \\frac{P}{B}$]。",
+          "उत्तर: $\\tan^{-1}\\left(\\frac{63}{16}\\right)$"
+        ]
+      },
+      {
+        "question": "फलन $\\tan^{-1}\\left(\\frac{\\cos x}{1 - \\sin x}\\right), \\quad -\\frac{3\\pi}{2} < x < \\frac{\\pi}{2}$ को अर्ध-कोणों के पूर्ण प्रांत विश्लेषण के साथ सरलतम रूप में व्यक्त कीजिए। [भाग 6 दीर्घ उत्तरीय 1 का पूर्ण सुधार]",
+        "answer": [
+          "चरण 1 (प्रांत विश्लेषण): दिया है $-\\frac{3\\pi}{2} < x < \\frac{\\pi}{2}$।",
+          "2 से भाग देने पर: $-\\frac{3\\pi}{4} < \\frac{x}{2} < \\frac{\\pi}{4}$।",
+          "$\\frac{\\pi}{4}$ जोड़ने पर: $-\\frac{\\pi}{2} < \\frac{\\pi}{4} + \\frac{x}{2} < \\frac{\\pi}{2}$।",
+          "यह कोण $\\tan^{-1}$ की मुख्य मान शाखा $\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$ के भीतर पूर्णतः मान्य है [सूत्र: $\\theta \\in (-\\frac{\\pi}{2}, \\frac{\\pi}{2})$]。",
+          "चरण 2: अर्ध-कोण सर्वसमिकाएँ लगाने पर: $\\cos x = \\cos^2\\frac{x}{2} - \\sin^2\\frac{x}{2}$ तथा $1 - \\sin x = \\left(\\cos\\frac{x}{2} - \\sin\\frac{x}{2}\\right)^2$ [सूत्र: $\\cos 2A = \\cos^2 A - \\sin^2 A$, $1 - \\sin 2A = (\\cos A - \\sin A)^2$]。",
+          "चरण 3: व्यंजक में रखने पर: $\\tan^{-1}\\left[\\frac{(\\cos\\frac{x}{2} + \\sin\\frac{x}{2})(\\cos\\frac{x}{2} - \\sin\\frac{x}{2})}{(\\cos\\frac{x}{2} - \\sin\\frac{x}{2})^2}\\right] = \\tan^{-1}\\left[\\frac{\\cos\\frac{x}{2} + \\sin\\frac{x}{2}}{\\cos\\frac{x}{2} - \\sin\\frac{x}{2}}\\right]$。",
+          "चरण 4: अंश व हर में $\\cos\\frac{x}{2}$ से भाग देने पर: $\\tan^{-1}\\left[\\frac{1 + \\tan\\frac{x}{2}}{1 - \\tan\\frac{x}{2}}\\right] = \\tan^{-1}\\left[\\tan\\left(\\frac{\\pi}{4} + \\frac{x}{2}\\right)\\right]$ [सूत्र: $\\tan(A+B) = \\frac{\\tan A+\\tan B}{1-\\tan A\\tan B}$]。",
+          "चरण 5: चूँकि $\\left(\\frac{\\pi}{4} + \\frac{x}{2}\\right) \\in \\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$, अतः निरसन नियम से सरलतम रूप $\\frac{\\pi}{4} + \\frac{x}{2}$ प्राप्त होता है [सूत्र: $\\tan^{-1}(\\tan\\theta) = \\theta$]。",
+          "उत्तर: $\\frac{\\pi}{4} + \\frac{x}{2}$"
+        ]
+      }
+    ],
+    "diagrams": [
+      {
+        "title": "y = cos⁻¹ x का आलेख (मुख्य मान शाखा [0, π])",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect width='400' height='300' fill='#f8fafc'/><line x1='30' y1='230' x2='370' y2='230' stroke='#334155' stroke-width='1.5'/><polygon points='370,227 376,230 370,233' fill='#334155'/><text x='380' y='234' font-family='sans-serif' font-size='12' fill='#334155'>X</text><line x1='200' y1='270' x2='200' y2='30' stroke='#334155' stroke-width='1.5'/><polygon points='197,30 200,24 203,30' fill='#334155'/><text x='205' y='26' font-family='sans-serif' font-size='12' fill='#334155'>Y</text><text x='188' y='245' font-family='sans-serif' font-size='11' fill='#334155'>O</text><circle cx='270' cy='230' r='3' fill='#dc2626'/><text x='265' y='245' font-family='sans-serif' font-size='11' fill='#dc2626'>1</text><circle cx='130' cy='230' r='3' fill='#dc2626'/><text x='120' y='245' font-family='sans-serif' font-size='11' fill='#dc2626'>-1</text><line x1='50' y1='60' x2='350' y2='60' stroke='#94a3b8' stroke-dasharray='3'/><text x='205' y='65' font-family='sans-serif' font-size='11' fill='#64748b'>π</text><line x1='50' y1='145' x2='350' y2='145' stroke='#94a3b8' stroke-dasharray='3'/><text x='205' y='150' font-family='sans-serif' font-size='11' fill='#64748b'>π/2</text><path d='M 130,60 Q 140,145 200,145 T 270,230' fill='none' stroke='#2563eb' stroke-width='2.5'/><text x='280' y='140' font-family='sans-serif' font-size='13' font-weight='bold' fill='#2563eb'>y = cos⁻¹ x</text><rect x='60' y='268' width='280' height='24' rx='4' fill='#eff6ff' stroke='#3b82f6'/><text x='75' y='284' font-family='sans-serif' font-size='11' fill='#1e40af'>प्रांत: [-1, 1], परिसर (मुख्य शाखा): [0, π]</text></svg>",
+        "caption": "y = cos⁻¹ x का आलेख: प्रांत [-1, 1] एवं मुख्य मान शाखा [0, π]"
+      },
+      {
+        "title": "y = tan⁻¹ x का आलेख (मुख्य मान शाखा (-π/2, π/2))",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect width='400' height='300' fill='#f8fafc'/><line x1='30' y1='150' x2='370' y2='150' stroke='#334155' stroke-width='1.5'/><polygon points='370,147 376,150 370,153' fill='#334155'/><text x='380' y='154' font-family='sans-serif' font-size='12' fill='#334155'>X</text><line x1='200' y1='270' x2='200' y2='30' stroke='#334155' stroke-width='1.5'/><polygon points='197,30 200,24 203,30' fill='#334155'/><text x='205' y='26' font-family='sans-serif' font-size='12' fill='#334155'>Y</text><text x='188' y='165' font-family='sans-serif' font-size='11' fill='#334155'>O</text><line x1='40' y1='65' x2='360' y2='65' stroke='#dc2626' stroke-dasharray='4'/><text x='365' y='69' font-family='sans-serif' font-size='11' fill='#dc2626'>y = π/2</text><line x1='40' y1='235' x2='360' y2='235' stroke='#dc2626' stroke-dasharray='4'/><text x='365' y='239' font-family='sans-serif' font-size='11' fill='#dc2626'>y = -π/2</text><path d='M 50,225 Q 150,210 200,150 T 350,75' fill='none' stroke='#059669' stroke-width='2.5'/><text x='270' y='105' font-family='sans-serif' font-size='13' font-weight='bold' fill='#059669'>y = tan⁻¹ x</text><rect x='60' y='268' width='280' height='24' rx='4' fill='#ecfdf5' stroke='#059669'/><text x='75' y='284' font-family='sans-serif' font-size='11' fill='#065f46'>प्रांत: R, परिसर: (-π/2, π/2) (अनंतस्पर्शी y = ±π/2)</text></svg>",
+        "caption": "y = tan⁻¹ x का आलेख: प्रांत R एवं मुख्य मान शाखा (-π/2, π/2)"
+      },
+      {
+        "title": "y = cot⁻¹ x का आलेख (मुख्य मान शाखा (0, π))",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect width='400' height='300' fill='#f8fafc'/><line x1='30' y1='230' x2='370' y2='230' stroke='#334155' stroke-width='1.5'/><polygon points='370,227 376,230 370,233' fill='#334155'/><text x='380' y='234' font-family='sans-serif' font-size='12' fill='#334155'>X</text><line x1='200' y1='270' x2='200' y2='30' stroke='#334155' stroke-width='1.5'/><polygon points='197,30 200,24 203,30' fill='#334155'/><text x='205' y='26' font-family='sans-serif' font-size='12' fill='#334155'>Y</text><text x='188' y='245' font-family='sans-serif' font-size='11' fill='#334155'>O</text><line x1='40' y1='60' x2='360' y2='60' stroke='#dc2626' stroke-dasharray='4'/><text x='365' y='64' font-family='sans-serif' font-size='11' fill='#dc2626'>y = π</text><line x1='50' y1='145' x2='350' y2='145' stroke='#94a3b8' stroke-dasharray='2'/><text x='205' y='140' font-family='sans-serif' font-size='11' fill='#64748b'>π/2</text><path d='M 50,75 Q 150,85 200,145 T 350,220' fill='none' stroke='#7c3aed' stroke-width='2.5'/><text x='270' y='180' font-family='sans-serif' font-size='13' font-weight='bold' fill='#7c3aed'>y = cot⁻¹ x</text><rect x='60' y='268' width='280' height='24' rx='4' fill='#f5f3ff' stroke='#7c3aed'/><text x='85' y='284' font-family='sans-serif' font-size='11' fill='#5b21b6'>प्रांत: R, परिसर: (0, π) (अनंतस्पर्शी y = 0, π)</text></svg>",
+        "caption": "y = cot⁻¹ x का आलेख: प्रांत R एवं मुख्य मान शाखा (0, π)"
+      },
+      {
+        "title": "y = sec⁻¹ x का आलेख (मुख्य मान शाखा [0, π] - {π/2})",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect width='400' height='300' fill='#f8fafc'/><line x1='30' y1='230' x2='370' y2='230' stroke='#334155' stroke-width='1.5'/><polygon points='370,227 376,230 370,233' fill='#334155'/><text x='380' y='234' font-family='sans-serif' font-size='12' fill='#334155'>X</text><line x1='200' y1='270' x2='200' y2='30' stroke='#334155' stroke-width='1.5'/><polygon points='197,30 200,24 203,30' fill='#334155'/><text x='205' y='26' font-family='sans-serif' font-size='12' fill='#334155'>Y</text><text x='188' y='245' font-family='sans-serif' font-size='11' fill='#334155'>O</text><circle cx='250' cy='230' r='3' fill='#dc2626'/><text x='245' y='245' font-family='sans-serif' font-size='11' fill='#dc2626'>1</text><circle cx='150' cy='230' r='3' fill='#dc2626'/><text x='140' y='245' font-family='sans-serif' font-size='11' fill='#dc2626'>-1</text><line x1='40' y1='145' x2='360' y2='145' stroke='#dc2626' stroke-dasharray='4'/><text x='365' y='149' font-family='sans-serif' font-size='11' fill='#dc2626'>y = π/2</text><line x1='40' y1='60' x2='360' y2='60' stroke='#94a3b8' stroke-dasharray='2'/><text x='205' y='55' font-family='sans-serif' font-size='11' fill='#64748b'>π</text><path d='M 250,230 Q 255,165 350,155' fill='none' stroke='#d97706' stroke-width='2.5'/><path d='M 150,60 Q 145,125 50,135' fill='none' stroke='#d97706' stroke-width='2.5'/><text x='280' y='190' font-family='sans-serif' font-size='13' font-weight='bold' fill='#d97706'>y = sec⁻¹ x</text><rect x='50' y='268' width='300' height='24' rx='4' fill='#fffbeb' stroke='#d97706'/><text x='65' y='284' font-family='sans-serif' font-size='11' fill='#92400e'>प्रांत: R - (-1, 1), परिसर: [0, π] - {π/2}</text></svg>",
+        "caption": "y = sec⁻¹ x का आलेख: प्रांत |x| ≥ 1 एवं मुख्य मान शाखा [0, π] - {π/2}"
+      },
+      {
+        "title": "y = cosec⁻¹ x का आलेख (मुख्य मान शाखा [-π/2, π/2] - {0})",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect width='400' height='300' fill='#f8fafc'/><line x1='30' y1='150' x2='370' y2='150' stroke='#334155' stroke-width='1.5'/><polygon points='370,147 376,150 370,153' fill='#334155'/><text x='380' y='154' font-family='sans-serif' font-size='12' fill='#334155'>X</text><line x1='200' y1='270' x2='200' y2='30' stroke='#334155' stroke-width='1.5'/><polygon points='197,30 200,24 203,30' fill='#334155'/><text x='205' y='26' font-family='sans-serif' font-size='12' fill='#334155'>Y</text><text x='188' y='165' font-family='sans-serif' font-size='11' fill='#334155'>O</text><circle cx='250' cy='150' r='3' fill='#dc2626'/><text x='245' y='165' font-family='sans-serif' font-size='11' fill='#dc2626'>1</text><circle cx='150' cy='150' r='3' fill='#dc2626'/><text x='140' y='165' font-family='sans-serif' font-size='11' fill='#dc2626'>-1</text><line x1='40' y1='65' x2='360' y2='65' stroke='#94a3b8' stroke-dasharray='2'/><text x='205' y='60' font-family='sans-serif' font-size='11' fill='#64748b'>π/2</text><line x1='40' y1='235' x2='360' y2='235' stroke='#94a3b8' stroke-dasharray='2'/><text x='205' y='245' font-family='sans-serif' font-size='11' fill='#64748b'>-π/2</text><path d='M 250,65 Q 255,135 350,145' fill='none' stroke='#db2777' stroke-width='2.5'/><path d='M 150,235 Q 145,165 50,155' fill='none' stroke='#db2777' stroke-width='2.5'/><text x='270' y='100' font-family='sans-serif' font-size='13' font-weight='bold' fill='#db2777'>y = cosec⁻¹ x</text><rect x='50' y='268' width='300' height='24' rx='4' fill='#fdf2f8' stroke='#db2777'/><text x='65' y='284' font-family='sans-serif' font-size='11' fill='#9d174d'>प्रांत: R - (-1, 1), परिसर: [-π/2, π/2] - {0}</text></svg>",
+        "caption": "y = cosec⁻¹ x का आलेख: प्रांत |x| ≥ 1 एवं मुख्य मान शाखा [-π/2, π/2] - {0}"
+      }
+    ],
+    "revision": [
+      {
+        "title": "त्वरित सूत्र-सारणी (Quick Formula Table)",
+        "points": [
+          "मुख्य मान शाखा (Group 1): $\\sin^{-1} x \\in [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$, $\\tan^{-1} x \\in (-\\frac{\\pi}{2}, \\frac{\\pi}{2})$, $\\text{cosec}^{-1} x \\in [-\\frac{\\pi}{2}, \\frac{\\pi}{2}] - \\{0\\}$",
+          "मुख्य मान शाखा (Group 2): $\\cos^{-1} x \\in [0, \\pi]$, $\\cot^{-1} x \\in (0, \\pi)$, $\\sec^{-1} x \\in [0, \\pi] - \\{\\frac{\\pi}{2}\\}$",
+          "ऋणात्मक कोण (Group 1): $\\sin^{-1}(-x) = -\\sin^{-1} x$, $\\tan^{-1}(-x) = -\\tan^{-1} x$, $\\text{cosec}^{-1}(-x) = -\\text{cosec}^{-1} x$",
+          "ऋणात्मक कोण (Group 2): $\\cos^{-1}(-x) = \\pi - \\cos^{-1} x$, $\\sec^{-1}(-x) = \\pi - \\sec^{-1} x$, $\\cot^{-1}(-x) = \\pi - \\cot^{-1} x$",
+          "पूरक कोण सर्वसमिकाएँ: $\\sin^{-1} x + \\cos^{-1} x = \\frac{\\pi}{2}$, $\\tan^{-1} x + \\cot^{-1} x = \\frac{\\pi}{2}$, $\\sec^{-1} x + \\text{cosec}^{-1} x = \\frac{\\pi}{2}$",
+          "व्युत्क्रम संबंध: $\\sin^{-1}(\\frac{1}{x}) = \\text{cosec}^{-1} x$, $\\cos^{-1}(\\frac{1}{x}) = \\sec^{-1} x$, $\\tan^{-1}(\\frac{1}{x}) = \\cot^{-1} x \\; (x > 0)$",
+          "योग एवं अंतर: $\\tan^{-1} x \\pm \\tan^{-1} y = \\tan^{-1}\\left(\\frac{x \\pm y}{1 \\mp xy}\\right)$",
+          "2tan⁻¹ x के रूप: $2\\tan^{-1} x = \\tan^{-1}\\left(\\frac{2x}{1-x^2}\\right) = \\sin^{-1}\\left(\\frac{2x}{1+x^2}\\right) = \\cos^{-1}\\left(\\frac{1-x^2}{1+x^2}\\right)$",
+          "गुणज कोण: $3\\sin^{-1} x = \\sin^{-1}(3x - 4x^3)$, $3\\cos^{-1} x = \\cos^{-1}(4x^3 - 3x)$"
+        ]
+      },
+      {
+        "title": "सामान्य गलतियाँ एवं सावधानियाँ (Common Pitfalls)",
+        "points": [
+          "सीधे निरसन की भूल: $\\sin^{-1}(\\sin\\frac{2\\pi}{3})$ को सीधे $\\frac{2\\pi}{3}$ न लिखें, क्योंकि यह $[-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$ के बाहर है; पहले चतुर्थांश सूत्र लगाकर कोण को मुख्य शाखा में लाएँ।",
+          "ऋणात्मक कोज्या में भूल: $\\cos^{-1}(-\\frac{1}{2})$ को $-\\frac{\\pi}{3}$ लिखना गलत है; Group 2 के अनुसार इसका मान $\\pi - \\frac{\\pi}{3} = \\frac{2\\pi}{3}$ होता है।",
+          "व्युत्क्रम बनाम प्रतिलोम: $(\\sin x)^{-1} = \\frac{1}{\\sin x}$ होता है, जबकि $\\sin^{-1} x$ कोण को व्यक्त करता है; दोनों को एक समान न समझें।",
+          "tan⁻¹ योग सूत्र में शर्त: सूत्र $\\tan^{-1}\\left(\\frac{x+y}{1-xy}\\right)$ तभी सीधे लागू होता है जब $xy < 1$ हो।",
+          "समीकरण हल करते समय मूलों की जाँच: प्रतिलोम त्रिकोणमितीय समीकरणों में प्राप्त सभी मान उत्तर नहीं होते; उन्हें मूल समीकरण में रखकर जाँचें कि वे मुख्य मान शाखा को संतुष्ट करते हैं या नहीं।"
+        ]
+      },
+      {
+        "title": "बोर्ड परीक्षा उपयोगी मुख्य बिंदु (Key Exam Tips)",
+        "points": [
+          "मुख्य मान ज्ञात करने का 1-2 अंक का प्रश्न प्रतिवर्ष अनिवार्य रूप से पूछा जाता है।",
+          "दीर्घ उत्तरीय प्रश्नों में त्रिकोणमितीय प्रतिस्थापन (जैसे $\\sqrt{a^2-x^2} \\to x = a\\sin\\theta$, $\\sqrt{a^2+x^2} \\to x = a\\tan\\theta$) का स्पष्ट उल्लेख चरण-दर-चरण करें。",
+          "सर्वसमिका सिद्ध करते समय उपयोग किए गए प्रत्येक सूत्र को दाएँ कोष्ठक में अवश्य लिखें।",
+          "सारणी याद रखने की ट्रिक: $\\sin^{-1}, \\tan^{-1}, \\text{cosec}^{-1}$ केवल चतुर्थांश I और IV में रहते हैं, जबकि $\\cos^{-1}, \\cot^{-1}, \\sec^{-1}$ केवल चतुर्थांश I और II में रहते हैं।"
+        ]
+      }
+    ]
+  }
+}

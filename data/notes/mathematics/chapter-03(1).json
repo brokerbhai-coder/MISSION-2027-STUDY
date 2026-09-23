@@ -1,0 +1,1813 @@
+{
+  "_help": "Chapter notes JSON. Preserve this schema; categories contain structured study notes.",
+  "schemaVersion": 1,
+  "subject": "mathematics",
+  "chapter": 3,
+  "title": "आव्यूह (Matrices) - संकल्पना, कोटि एवं आव्यूहों के प्रकार",
+  "categories": {
+    "theory": [
+      {
+        "title": "आव्यूह की संकल्पना, निरूपण एवं कोटि (Concept, Representation and Order of a Matrix)",
+        "content": [
+          "परिभाषा: $m \\times n$ संख्याओं (वास्तविक या सम्मिश्र) अथवा फलनों का ऐसा समुच्चय जो $m$ पंक्तियों (Rows) तथा $n$ स्तम्भों (Columns) वाली आयताकार सारणी के रूप में व्यवस्थित होता है, उसे $m \\times n$ कोटि का आव्यूह कहते हैं।",
+          "निरूपण: आव्यूहों को प्रायः अंग्रेजी वर्णमाला के बड़े अक्षरों ($A, B, C, \\dots$) द्वारा तथा उनके अवयवों (प्रविष्टियों) को छोटे अक्षरों ($a_{ij}$) द्वारा दर्शाया जाता है।",
+          "व्यापक रूप: किसी $m \\times n$ आव्यूह को संक्षेप में $A = [a_{ij}]_{m \\times n}$ लिखा जाता है, जहाँ $1 \\le i \\le m$ (पंक्ति संख्या) तथा $1 \\le j \\le n$ (स्तम्भ संख्या)।",
+          "अवयव $a_{ij}$: यह $i$-वीं पंक्ति और $j$-वें स्तम्भ के प्रतिच्छेदन पर स्थित अवयव को व्यक्त करता है।",
+          "अवयवों की कुल संख्या: यदि किसी आव्यूह की कोटि $m \\times n$ है, तो उस आव्यूह में कुल अवयवों की संख्या $m \\cdot n$ होती है।",
+          "संभव कोटियों का निर्धारण: यदि किसी आव्यूह में कुल $N$ अवयव हों, तो उसकी सभी संभव कोटियाँ उन सभी प्राकृत संख्याओं के क्रमित युग्मों $(m, n)$ द्वारा प्राप्त होती हैं जिनका गुणनफल $m \\times n = N$ हो।"
+        ],
+        "points": [
+          "क्षैतिज रेखाओं को पंक्तियाँ ($R_1, R_2, \\dots, R_m$) तथा ऊर्ध्वाधर रेखाओं को स्तम्भ ($C_1, C_2, \\dots, C_n$) कहा जाता है।",
+          "कोटि लिखते समय पंक्तियों की संख्या पहले तथा स्तम्भों की संख्या बाद में ($m \\times n$) लिखी जाती है।",
+          "उदाहरण: यदि $N = 6$ अवयव हों, तो संभव कोटियाँ $1 \\times 6, 6 \\times 1, 2 \\times 3, 3 \\times 2$ होंगी (कुल 4 संभव कोटियाँ)।"
+        ],
+        "diagram": {
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 260'><rect width='500' height='260' fill='#f8fafc'/><path d='M 70,40 L 50,40 L 50,220 L 70,220' fill='none' stroke='#1e293b' stroke-width='3'/><path d='M 370,40 L 390,40 L 390,220 L 370,220' fill='none' stroke='#1e293b' stroke-width='3'/><text x='80' y='75' font-family='sans-serif' font-size='15' fill='#0f172a'>a₁₁</text><text x='160' y='75' font-family='sans-serif' font-size='15' fill='#0f172a'>a₁₂</text><text x='240' y='75' font-family='sans-serif' font-size='15' fill='#0f172a'>...</text><text x='320' y='75' font-family='sans-serif' font-size='15' fill='#0f172a'>a₁ₙ</text><text x='80' y='135' font-family='sans-serif' font-size='15' fill='#0f172a'>a₂₁</text><text x='160' y='135' font-family='sans-serif' font-size='15' fill='#0f172a'>a₂₂</text><text x='240' y='135' font-family='sans-serif' font-size='15' fill='#0f172a'>...</text><text x='320' y='135' font-family='sans-serif' font-size='15' fill='#0f172a'>a₂ₙ</text><text x='85' y='175' font-family='sans-serif' font-size='15' fill='#0f172a'>⋮</text><text x='165' y='175' font-family='sans-serif' font-size='15' fill='#0f172a'>⋮</text><text x='240' y='175' font-family='sans-serif' font-size='15' fill='#0f172a'>⋱</text><text x='325' y='175' font-family='sans-serif' font-size='15' fill='#0f172a'>⋮</text><text x='80' y='210' font-family='sans-serif' font-size='15' fill='#0f172a'>aₘ₁</text><text x='160' y='210' font-family='sans-serif' font-size='15' fill='#0f172a'>aₘ₂</text><text x='240' y='210' font-family='sans-serif' font-size='15' fill='#0f172a'>...</text><text x='320' y='210' font-family='sans-serif' font-size='15' fill='#0f172a'>aₘₙ</text><text x='400' y='225' font-family='sans-serif' font-size='13' font-weight='bold' fill='#2563eb'>कोटि: m × n</text><line x1='395' y1='70' x2='445' y2='70' stroke='#dc2626' stroke-width='1.5'/><polygon points='445,67 452,70 445,73' fill='#dc2626'/><text x='456' y='74' font-family='sans-serif' font-size='12' fill='#dc2626'>R₁ (पंक्ति 1)</text><line x1='395' y1='205' x2='445' y2='205' stroke='#dc2626' stroke-width='1.5'/><polygon points='445,202 452,205 445,208' fill='#dc2626'/><text x='456' y='209' font-family='sans-serif' font-size='12' fill='#dc2626'>Rₘ (पंक्ति m)</text><line x1='90' y1='228' x2='90' y2='248' stroke='#059669' stroke-width='1.5'/><polygon points='87,248 90,255 93,248' fill='#059669'/><text x='75' y='257' font-family='sans-serif' font-size='11' fill='#059669'>C₁</text><line x1='330' y1='228' x2='330' y2='248' stroke='#059669' stroke-width='1.5'/><polygon points='327,248 330,255 333,248' fill='#059669'/><text x='318' y='257' font-family='sans-serif' font-size='11' fill='#059669'>Cₙ</text></svg>",
+          "caption": "आव्यूह का आयताकार क्रम-विन्यास: m पंक्तियाँ तथा n स्तम्भ"
+        }
+      },
+      {
+        "title": "आव्यूहों के प्रकार (Types of Matrices - कुल 9 प्रकार)",
+        "content": [
+          "1. स्तम्भ आव्यूह (Column Matrix): ऐसा आव्यूह जिसमें केवल एक स्तम्भ होता है। व्यापक रूप: $A = [a_{ij}]_{m \\times 1}$।",
+          "2. पंक्ति आव्यूह (Row Matrix): ऐसा आव्यूह जिसमें केवल एक पंक्ति होती है। व्यापक रूप: $A = [a_{ij}]_{1 \\times n}$।",
+          "3. क्षैतिज आव्यूह (Horizontal Matrix): ऐसा आव्यूह जिसमें पंक्तियों की संख्या स्तम्भों की संख्या से कम होती है ($m < n$)।",
+          "4. ऊर्ध्वाधर आव्यूह (Vertical Matrix): ऐसा आव्यूह जिसमें पंक्तियों की संख्या स्तम्भों की संख्या से अधिक होती है ($m > n$)।",
+          "5. वर्ग आव्यूह (Square Matrix): ऐसा आव्यूह जिसमें पंक्तियों की संख्या स्तम्भों की संख्या के बराबर होती है ($m = n$)। व्यापक रूप: $A = [a_{ij}]_{n \\times n}$ (इसे कोटि $n$ का वर्ग आव्यूह कहते हैं)।",
+          "6. शून्य अथवा रिक्त आव्यूह (Zero or Null Matrix): ऐसा आव्यूह जिसका प्रत्येक अवयव शून्य होता है। इसे $O$ द्वारा निरूपित किया जाता है। व्यापक रूप: $a_{ij} = 0, \\; \\forall i, j$।",
+          "7. विकर्ण आव्यूह (Diagonal Matrix): ऐसा वर्ग आव्यूह जिसके मुख्य विकर्ण (Principal Diagonal) के अतिरिक्त शेष सभी अवयव शून्य होते हैं। व्यापक रूप: $a_{ij} = 0$ जब $i \\neq j$।",
+          "8. अदिश आव्यूह (Scalar Matrix): ऐसा विकर्ण आव्यूह जिसके मुख्य विकर्ण के सभी अवयव समान (बराबर) होते हैं। व्यापक रूप: $a_{ij} = 0$ जब $i \\neq j$ तथा $a_{ij} = k$ (अदिश) जब $i = j$।",
+          "9. इकाई अथवा तत्समक आव्यूह (Identity or Unit Matrix): ऐसा वर्ग आव्यूह जिसके मुख्य विकर्ण का प्रत्येक अवयव 1 तथा शेष सभी अवयव शून्य होते हैं। इसे $I$ अथवा $I_n$ द्वारा निरूपित किया जाता है।"
+        ],
+        "points": [
+          "मुख्य विकर्ण (Principal Diagonal) केवल वर्ग आव्यूह ($m = n$) में ही परिभाषित होता है, जहाँ $i = j$ ($a_{11}, a_{22}, a_{33}, \\dots$) होता है।",
+          "प्रत्येक तत्समक आव्यूह एक अदिश आव्यूह तथा विकर्ण आव्यूह भी होता है, परन्तु इसका विलोम सदैव सत्य नहीं होता।",
+          "महत्वपूर्ण गुणधर्म: $I \\times I = I$, $I^n = I$ (किसी भी धन पूर्णांक घात हेतु), तथा $AI = IA = A$।",
+          "सौरभ सर की विशेष ट्रिक: यदि $A = \\begin{bmatrix} 0 & 1 \\\\ 1 & 0 \\end{bmatrix}$ हो, तो सम घात ($A^{2n}$) पर विकर्ण बदलकर तत्समक $I = \\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix}$ बन जाता है तथा विषम घात ($A^{2n+1}$) पर कोई परिवर्तन नहीं होता (अर्थात मान पुनः $A$ ही रहता है)।"
+        ],
+        "diagram": {
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 240'><rect width='500' height='240' fill='#f8fafc'/><rect x='40' y='30' width='180' height='170' rx='8' fill='#ffffff' stroke='#cbd5e1' stroke-width='1.5'/><text x='55' y='55' font-family='sans-serif' font-size='13' font-weight='bold' fill='#0f172a'>वर्ग आव्यूह में मुख्य विकर्ण</text><path d='M 65,75 L 55,75 L 55,185 L 65,185' fill='none' stroke='#1e293b' stroke-width='2'/><path d='M 195,75 L 205,75 L 205,185 L 195,185' fill='none' stroke='#1e293b' stroke-width='2'/><ellipse cx='80' cy='95' rx='14' ry='12' fill='#fef08a' stroke='#eab308'/><text x='74' y='100' font-family='sans-serif' font-size='14' font-weight='bold' fill='#b45309'>a₁₁</text><text x='125' y='100' font-family='sans-serif' font-size='14' fill='#64748b'>a₁₂</text><text x='170' y='100' font-family='sans-serif' font-size='14' fill='#64748b'>a₁₃</text><text x='75' y='140' font-family='sans-serif' font-size='14' fill='#64748b'>a₂₁</text><ellipse cx='130' cy='135' rx='14' ry='12' fill='#fef08a' stroke='#eab308'/><text x='124' y='140' font-family='sans-serif' font-size='14' font-weight='bold' fill='#b45309'>a₂₂</text><text x='170' y='140' font-family='sans-serif' font-size='14' fill='#64748b'>a₂₃</text><text x='75' y='175' font-family='sans-serif' font-size='14' fill='#64748b'>a₃₁</text><text x='125' y='175' font-family='sans-serif' font-size='14' fill='#64748b'>a₃₂</text><ellipse cx='175' cy='170' rx='14' ry='12' fill='#fef08a' stroke='#eab308'/><text x='169' y='175' font-family='sans-serif' font-size='14' font-weight='bold' fill='#b45309'>a₃₃</text><line x1='72' y1='87' x2='183' y2='178' stroke='#dc2626' stroke-width='2' stroke-dasharray='4'/><rect x='250' y='30' width='210' height='170' rx='8' fill='#eff6ff' stroke='#bfdbfe' stroke-width='1.5'/><text x='265' y='55' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1e40af'>तत्समक आव्यूह (I₃)</text><text x='290' y='95' font-family='sans-serif' font-size='16' font-weight='bold' fill='#2563eb'>1</text><text x='350' y='95' font-family='sans-serif' font-size='16' fill='#94a3b8'>0</text><text x='410' y='95' font-family='sans-serif' font-size='16' fill='#94a3b8'>0</text><text x='290' y='135' font-family='sans-serif' font-size='16' fill='#94a3b8'>0</text><text x='350' y='135' font-family='sans-serif' font-size='16' font-weight='bold' fill='#2563eb'>1</text><text x='410' y='135' font-family='sans-serif' font-size='16' fill='#94a3b8'>0</text><text x='290' y='175' font-family='sans-serif' font-size='16' fill='#94a3b8'>0</text><text x='350' y='175' font-family='sans-serif' font-size='16' fill='#94a3b8'>0</text><text x='410' y='175' font-family='sans-serif' font-size='16' font-weight='bold' fill='#2563eb'>1</text><text x='270' y='215' font-family='sans-serif' font-size='11' fill='#1e40af'>मुख्य विकर्ण = 1, शेष सभी अवयव = 0</text></svg>",
+          "caption": "मुख्य विकर्ण के अवयव (i = j) एवं तत्समक आव्यूह संरचना"
+        }
+      },
+      {
+        "title": "आव्यूहों की समानता (Equality of Matrices)",
+        "content": [
+          "दो आव्यूह $A = [a_{ij}]_{m \\times n}$ तथा $B = [b_{ij}]_{p \\times q}$ समान कहलाते हैं (अर्थात $A = B$), यदि और केवल यदि:",
+          "1. दोनों आव्यूहों की कोटियाँ समान हों, अर्थात पंक्तियों की संख्या $m = p$ तथा स्तम्भों की संख्या $n = q$ हो।",
+          "2. $A$ का प्रत्येक अवयव $B$ के संगत अवयव के बराबर हो, अर्थात प्रत्येक संभव $i$ तथा $j$ के लिए $a_{ij} = b_{ij}$ हो।",
+          "यदि दो आव्यूह समान हों, तो उनके संगत अवयवों की तुलना करके अज्ञात चरों ($x, y, z, a, b, c, d$ इत्यादि) के मान ज्ञात करने हेतु रैखिक अथवा द्विघात समीकरण बनाए जाते हैं।"
+        ],
+        "points": [
+          "यदि कोटियाँ असमान हों, तो आव्यूह कभी भी समान नहीं हो सकते।",
+          "उदाहरण: यदि $\\begin{bmatrix} x & y \\\\ z & w \\end{bmatrix} = \\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix}$ हो, तो $x = 1, y = 2, z = 3, w = 4$ होगा।",
+          "चेतावनी: यदि चरों के अलग-अलग संगत युग्मों से परस्पर विरोधी मान प्राप्त होते हैं, तो आव्यूहों की समानता संभव नहीं होती।"
+        ]
+      },
+      {
+        "title": "आव्यूहों का योग एवं अन्तर (Addition and Difference of Matrices)",
+        "content": [
+          "आव्यूहों का योग तभी संभव होता है जब दोनों आव्यूह समान कोटि के हों।",
+          "यदि $A = [a_{ij}]_{m \\times n}$ तथा $B = [b_{ij}]_{m \\times n}$ समान कोटि $m \\times n$ के दो आव्यूह हों, तो उनका योग $A + B = [a_{ij} + b_{ij}]_{m \\times n}$ द्वारा परिभाषित होता है।",
+          "आव्यूहों का अन्तर: यदि $A$ और $B$ समान कोटि के हों, तो $A - B = A + (-B) = [a_{ij} - b_{ij}]_{m \\times n}$ होता है।",
+          "योग के गुणधर्म:",
+          "1. क्रम-विनिमेय नियम (Commutative Law): $A + B = B + A$।",
+          "2. साहचर्य नियम (Associative Law): $(A + B) + C = A + (B + C)$।",
+          "3. योज्य तत्समक का अस्तित्व (Existence of Additive Identity): शून्य आव्यूह $O$ योज्य तत्समक कहलाता है, क्योंकि $A + O = O + A = A$।",
+          "4. योज्य प्रतिलोम का अस्तित्व (Existence of Additive Inverse): आव्यूह $A$ का योज्य प्रतिलोम $-A$ होता है, क्योंकि $A + (-A) = (-A) + A = O$।"
+        ],
+        "points": [
+          "यदि $A$ और $B$ की कोटियाँ भिन्न हों, तो $A + B$ तथा $A - B$ परिभाषित नहीं होते।",
+          "संगत अवयवों को ही परस्पर जोड़ा अथवा घटाया जाता है।"
+        ]
+      },
+      {
+        "title": "एक आव्यूह का अदिश गुणन (Multiplication of a Matrix by a Scalar)",
+        "content": [
+          "यदि $A = [a_{ij}]_{m \\times n}$ कोई आव्यूह हो तथा $k$ कोई अदिश (संख्या) हो, तो $kA$ वह आव्यूह है जो $A$ के प्रत्येक अवयव को $k$ से गुणा करने पर प्राप्त होता है।",
+          "व्यापक रूप: $kA = [k \\cdot a_{ij}]_{m \\times n}$।",
+          "अदिश गुणन के गुणधर्म (जहाँ $k, l$ अदिश तथा $A, B$ समान कोटि के आव्यूह हैं):",
+          "1. $k(A + B) = kA + kB$",
+          "2. $(k + l)A = kA + lA$",
+          "3. $(kl)A = k(lA) = l(kA)$",
+          "4. $(-k)A = -(kA) = k(-A)$"
+        ],
+        "points": [
+          "यदि आव्यूह से किसी उभयनिष्ठ संख्या को बाहर निकालना हो, तो वह प्रत्येक अवयव से बाहर निकलती है।",
+          "ऋणात्मक आव्यूह $-A$ वास्तव में $(-1)A$ के बराबर होता है।"
+        ]
+      },
+      {
+        "title": "आव्यूहों का गुणन (Multiplication of Matrices)",
+        "content": [
+          "दो आव्यूहों $A$ और $B$ का गुणनफल $AB$ केवल और केवल तभी संभव (परिभाषित) होता है, जब प्रथम आव्यूह $A$ के स्तम्भों की संख्या द्वितीय आव्यूह $B$ की पंक्तियों की संख्या के बराबर हो।",
+          "यदि $A$ की कोटि $m \\times n$ तथा $B$ की कोटि $n \\times p$ हो, तो गुणनफल $AB$ की कोटि $m \\times p$ होगी।",
+          "गुणन विधि (Row-by-Column Method): गुणनफल आव्यूह $C = AB$ का $(i, k)$-वाँ अवयव, $A$ की $i$-वीं पंक्ति के अवयवों का $B$ के $k$-वें स्तम्भ के संगत अवयवों से गुणनफलों के योग के बराबर होता है:",
+          "$$c_{ik} = \\sum_{j=1}^{n} a_{ij}b_{jk} = a_{i1}b_{1k} + a_{i2}b_{2k} + \\dots + a_{in}b_{nk}$$",
+          "गुणन के गुणधर्म:",
+          "1. सामान्यतः आव्यूह गुणन क्रम-विनिमेय नहीं होता, अर्थात $AB \\neq BA$।",
+          "2. साहचर्य नियम: $(AB)C = A(BC)$ (जब दोनों पक्ष परिभाषित हों)।",
+          "3. वितरण नियम (Distributive Law): $A(B + C) = AB + AC$ तथा $(A + B)C = AC + BC$।",
+          "4. गुणन तत्समक: प्रत्येक वर्ग आव्यूह $A$ के लिए उसी कोटि का तत्समक आव्यूह $I$ इस प्रकार होता है कि $IA = AI = A$।",
+          "5. दो शून्येतर आव्यूहों का गुणनफल भी एक शून्य आव्यूह हो सकता है, अर्थात $AB = O$ होने पर यह आवश्यक नहीं कि $A = O$ या $B = O$ हो।"
+        ],
+        "points": [
+          "यदि $AB$ परिभाषित हो, तो यह आवश्यक नहीं कि $BA$ भी परिभाषित हो।",
+          "यदि $A$ और $B$ दोनों समान कोटि के वर्ग आव्यूह हों, तो $AB$ और $BA$ दोनों परिभाषित होते हैं, परन्तु फिर भी सामान्यतः $AB \\neq BA$ होता है।"
+        ],
+        "diagram": {
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 540 240'><rect width='540' height='240' fill='#f8fafc'/><text x='30' y='30' font-family='sans-serif' font-size='13' font-weight='bold' fill='#0f172a'>आव्यूह गुणन विधि: पंक्ति × स्तम्भ (Row-by-Column)</text><rect x='30' y='55' width='130' height='75' rx='6' fill='#ffffff' stroke='#cbd5e1' stroke-width='1.5'/><rect x='36' y='65' width='118' height='25' rx='4' fill='#fef08a' stroke='#eab308'/><text x='45' y='82' font-family='sans-serif' font-size='13' font-weight='bold' fill='#854d0e'>a₁₁   a₁₂</text><text x='170' y='82' font-family='sans-serif' font-size='11' font-weight='bold' fill='#ca8a04'>← पंक्ति 1 (R₁)</text><text x='45' y='115' font-family='sans-serif' font-size='13' fill='#64748b'>a₂₁   a₂₂</text><text x='70' y='148' font-family='sans-serif' font-size='12' font-weight='bold' fill='#334155'>A (2 × 2)</text><text x='195' y='100' font-family='sans-serif' font-size='18' font-weight='bold' fill='#0f172a'>×</text><rect x='225' y='55' width='120' height='75' rx='6' fill='#ffffff' stroke='#cbd5e1' stroke-width='1.5'/><rect x='233' y='60' width='45' height='65' rx='4' fill='#bfdbfe' stroke='#3b82f6'/><text x='240' y='82' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1e40af'>b₁₁</text><text x='295' y='82' font-family='sans-serif' font-size='13' fill='#64748b'>b₁₂</text><text x='240' y='115' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1e40af'>b₂₁</text><text x='295' y='115' font-family='sans-serif' font-size='13' fill='#64748b'>b₂₂</text><text x='260' y='148' font-family='sans-serif' font-size='12' font-weight='bold' fill='#334155'>B (2 × 2)</text><text x='235' y='46' font-family='sans-serif' font-size='11' font-weight='bold' fill='#2563eb'>↓ स्तम्भ 1 (C₁)</text><text x='360' y='100' font-family='sans-serif' font-size='18' font-weight='bold' fill='#0f172a'>=</text><rect x='385' y='50' width='135' height='95' rx='6' fill='#eff6ff' stroke='#3b82f6' stroke-width='1.5'/><rect x='390' y='58' width='60' height='38' rx='4' fill='#dbeafe' stroke='#2563eb'/><text x='395' y='74' font-family='sans-serif' font-size='11' font-weight='bold' fill='#1e40af'>c₁₁ =</text><text x='395' y='88' font-family='sans-serif' font-size='10' font-weight='bold' fill='#1e40af'>a₁₁b₁₁+a₁₂b₂₁</text><text x='460' y='78' font-family='sans-serif' font-size='11' fill='#64748b'>c₁₂</text><text x='410' y='125' font-family='sans-serif' font-size='11' fill='#64748b'>c₂₁</text><text x='460' y='125' font-family='sans-serif' font-size='11' fill='#64748b'>c₂₂</text><text x='425' y='160' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1d4ed8'>AB (2 × 2)</text><rect x='30' y='180' width='490' height='45' rx='6' fill='#f1f5f9' stroke='#94a3b8'/><text x='45' y='200' font-family='sans-serif' font-size='12' fill='#0f172a'>शर्त: A के स्तम्भों की संख्या (2) = B की पंक्तियों की संख्या (2)</text><text x='45' y='216' font-family='sans-serif' font-size='11' fill='#475569'>c₁₁ अवयव प्राप्त करने हेतु: R₁ के अवयव × C₁ के संगत अवयव और उनका योग</text></svg>",
+          "caption": "आव्यूह गुणन संक्रिया: पंक्ति × स्तम्भ नियम एवं संगत गुणनफल"
+        }
+      },
+      {
+        "title": "आव्यूह का परिवर्त (Transpose of a Matrix)",
+        "content": [
+          "परिभाषा: किसी $m \\times n$ आव्यूह $A$ की पंक्तियों को स्तम्भों में तथा स्तम्भों को पंक्तियों में परस्पर बदलने पर प्राप्त आव्यूह को आव्यूह $A$ का परिवर्त (Transpose) कहते हैं।",
+          "निरूपण: आव्यूह $A$ के परिवर्त को $A'$ अथवा $A^T$ द्वारा प्रदर्शित किया जाता है।",
+          "यदि $A = [a_{ij}]_{m \\times n}$ हो, तो उसका परिवर्त $A' = [a_{ji}]_{n \\times m}$ होता है।",
+          "परिवर्त के मुख्य गुणधर्म (Properties of Transpose):",
+          "1. $(A')' = A$ (परिवर्त का पुनः परिवर्त मूल आव्यूह होता है)।",
+          "2. $(kA)' = kA'$ (जहाँ $k$ कोई अदिश संख्या है)।",
+          "3. $(A + B)' = A' + B'$ तथा $(A - B)' = A' - B'$ (जहाँ $A$ और $B$ समान कोटि के आव्यूह हैं)।",
+          "4. $(AB)' = B'A'$ (उत्क्रमणीय नियम / Reversal Law: दो आव्यूहों के गुणनफल का परिवर्त उनके परिवर्तों के विपरीत क्रम में गुणनफल के बराबर होता है)।"
+        ],
+        "points": [
+          "यदि किसी आव्यूह की कोटि $m \\times n$ है, तो उसके परिवर्त आव्यूह $A'$ की कोटि $n \\times m$ हो जाती है।",
+          "गुणनफल परिवर्त नियम $(AB)' = B'A'$ को तीन या अधिक आव्यूहों हेतु भी विस्तारित किया जा सकता है: $(ABC)' = C'B'A'$।"
+        ],
+        "diagram": {
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 520 230'><rect width='520' height='230' fill='#f8fafc'/><text x='30' y='30' font-family='sans-serif' font-size='13' font-weight='bold' fill='#0f172a'>आव्यूह परिवर्त क्रियाविधि (पंक्ति ↔ स्तम्भ विनिमय)</text><rect x='30' y='55' width='140' height='100' rx='6' fill='#ffffff' stroke='#cbd5e1' stroke-width='1.5'/><rect x='38' y='65' width='124' height='35' rx='4' fill='#fef08a' stroke='#eab308'/><text x='48' y='88' font-family='sans-serif' font-size='14' font-weight='bold' fill='#854d0e'>1    2    3</text><text x='48' y='135' font-family='sans-serif' font-size='14' fill='#64748b'>4    5    6</text><text x='65' y='180' font-family='sans-serif' font-size='12' font-weight='bold' fill='#334155'>A (2 × 3)</text><text x='40' y='50' font-family='sans-serif' font-size='11' font-weight='bold' fill='#ca8a04'>पंक्ति 1 (R₁)</text><line x1='190' y1='105' x2='260' y2='105' stroke='#2563eb' stroke-width='2'/><polygon points='260,101 270,105 260,109' fill='#2563eb'/><text x='200' y='95' font-family='sans-serif' font-size='11' font-weight='bold' fill='#2563eb'>परिवर्त (A')</text><rect x='290' y='50' width='110' height='130' rx='6' fill='#ffffff' stroke='#cbd5e1' stroke-width='1.5'/><rect x='300' y='58' width='42' height='114' rx='4' fill='#fef08a' stroke='#eab308'/><text x='315' y='85' font-family='sans-serif' font-size='14' font-weight='bold' fill='#854d0e'>1</text><text x='355' y='85' font-family='sans-serif' font-size='14' fill='#64748b'>4</text><text x='315' y='125' font-family='sans-serif' font-size='14' font-weight='bold' fill='#854d0e'>2</text><text x='355' y='125' font-family='sans-serif' font-size='14' fill='#64748b'>5</text><text x='315' y='160' font-family='sans-serif' font-size='14' font-weight='bold' fill='#854d0e'>3</text><text x='355' y='160' font-family='sans-serif' font-size='14' fill='#64748b'>6</text><text x='320' y='200' font-family='sans-serif' font-size='12' font-weight='bold' fill='#334155'>A' (3 × 2)</text><text x='290' y='42' font-family='sans-serif' font-size='11' font-weight='bold' fill='#ca8a04'>↓ स्तम्भ 1 (C₁)</text><rect x='420' y='70' width='85' height='75' rx='6' fill='#eff6ff' stroke='#bfdbfe'/><text x='428' y='95' font-family='sans-serif' font-size='11' font-weight='bold' fill='#1e40af'>R₁ → C₁</text><text x='428' y='118' font-family='sans-serif' font-size='11' font-weight='bold' fill='#1e40af'>R₂ → C₂</text><text x='428' y='138' font-family='sans-serif' font-size='10' fill='#64748b'>कोटि उलटती है</text></svg>",
+          "caption": "आव्यूह परिवर्त: पंक्तियों का स्तम्भों में रूपांतरण"
+        }
+      },
+      {
+        "title": "सममित एवं विषम सममित आव्यूह (Symmetric and Skew-Symmetric Matrices)",
+        "content": [
+          "1. सममित आव्यूह (Symmetric Matrix): कोई वर्ग आव्यूह $A$ सममित आव्यूह कहलाता है यदि उसका परिवर्त उसी के बराबर हो।",
+          "अर्थात $A' = A$ अथवा प्रत्येक $i$ तथा $j$ के लिए $a_{ji} = a_{ij}$।",
+          "2. विषम सममित आव्यूह (Skew-Symmetric Matrix): कोई वर्ग आव्यूह $A$ विषम सममित आव्यूह कहलाता है यदि उसका परिवर्त उसके ऋणात्मक के बराबर हो।",
+          "अर्थात $A' = -A$ अथवा प्रत्येक $i$ तथा $j$ के लिए $a_{ji} = -a_{ij}$।",
+          "विषम सममित आव्यूह के विकर्ण अवयव: मुख्य विकर्ण पर $i = j$ होता है, अतः $a_{ii} = -a_{ii} \\implies 2a_{ii} = 0 \\implies a_{ii} = 0$।",
+          "अतः किसी विषम सममित आव्यूह के मुख्य विकर्ण के सभी अवयव सदैव शून्य होते हैं।"
+        ],
+        "points": [
+          "प्रमेय 1: वास्तविक अवयवों वाले किसी वर्ग आव्यूह $A$ के लिए $(A + A')$ सदैव एक सममित आव्यूह तथा $(A - A')$ सदैव एक विषम सममित आव्यूह होता है।",
+          "उपपत्ति 1: $(A + A')' = A' + (A')' = A' + A = A + A'$ (सममित सिद्ध)।",
+          "उपपत्ति 2: $(A - A')' = A' - (A')' = A' - A = -(A - A')$ (विषम सममित सिद्ध)।",
+          "सौरभ सर का महत्वपूर्ण नियम: यदि $A$ और $B$ समान कोटि के सममित आव्यूह हों, तो $(AB + BA)$ सदैव सममित आव्यूह तथा $(AB - BA)$ सदैव विषम सममित आव्यूह होता है।"
+        ]
+      },
+      {
+        "title": "सममित एवं विषम सममित आव्यूहों के योगफल के रूप में निरूपण",
+        "content": [
+          "प्रमेय 2: किसी भी वर्ग आव्यूह को एक सममित आव्यूह तथा एक विषम सममित आव्यूह के योगफल के रूप में अद्वितीय रूप से व्यक्त किया जा सकता है:",
+          "$$A = \\frac{1}{2}(A + A') + \\frac{1}{2}(A - A')$$",
+          "जहाँ $P = \\frac{1}{2}(A + A')$ एक सममित आव्यूह है (क्योंकि $P' = P$)।",
+          "तथा $Q = \\frac{1}{2}(A - A')$ एक विषम सममित आव्यूह है (क्योंकि $Q' = -Q$)।",
+          "सत्यापन: $P + Q = \\frac{1}{2}(A + A') + \\frac{1}{2}(A - A') = \\frac{1}{2}(A + A' + A - A') = \\frac{1}{2}(2A) = A$।"
+        ],
+        "points": [
+          "बोर्ड परीक्षा में किसी दिए गए $2 \\times 2$ अथवा $3 \\times 3$ आव्यूह को सममित और विषम सममित आव्यूह के योगफल के रूप में व्यक्त करने का दीर्घ उत्तरीय प्रश्न प्रायः पूछा जाता है।",
+          "चरणबद्ध विधि: पहले $A'$ निकालें, फिर $P = \\frac{1}{2}(A+A')$ और $Q = \\frac{1}{2}(A-A')$ की गणना करें, तत्पश्चात $P' = P$ और $Q' = -Q$ सिद्ध करके अंत में $P + Q = A$ दर्शाएं।"
+        ]
+      },
+      {
+        "title": "आव्यूह पर प्रारंभिक संक्रियाएँ अथवा प्रारंभिक रूपांतरण (Elementary Operations or Elementary Transformations)",
+        "content": [
+          "किसी आव्यूह पर कुल 6 प्रकार के प्रारंभिक रूपांतरण संभव होते हैं, जिनमें 3 संक्रियाएँ पंक्तियों (Rows) पर तथा 3 संक्रियाएँ स्तम्भों (Columns) पर आधारित होती हैं:",
+          "1. दो पंक्तियों या दो स्तम्भों का परस्पर विनिमय (Interchange): $i$-वीं तथा $j$-वीं पंक्ति के विनिमय को $R_i \\leftrightarrow R_j$ तथा स्तम्भों के विनिमय को $C_i \\leftrightarrow C_j$ द्वारा निरूपित किया जाता है।",
+          "2. किसी पंक्ति या स्तम्भ के सभी अवयवों का एक शून्येतर संख्या से गुणन (Multiplication by a non-zero scalar): $i$-वीं पंक्ति को शून्येतर संख्या $k$ से गुणा करने पर इसे $R_i \\rightarrow k R_i$ तथा स्तम्भ हेतु $C_i \\rightarrow k C_i$ लिखा जाता है।",
+          "3. किसी पंक्ति अथवा स्तम्भ में किसी अन्य पंक्ति अथवा स्तम्भ के संगत अवयवों को किसी शून्येतर संख्या से गुणा करके जोड़ना या घटाना: इसे $R_i \\rightarrow R_i + k R_j$ अथवा $C_i \\rightarrow C_i + k C_j$ द्वारा व्यक्त करते हैं।"
+        ],
+        "points": [
+          "प्रारंभिक पंक्ति रूपांतरण करते समय आव्यूह समीकरण $A = IA$ का प्रयोग किया जाता है, जहाँ संक्रिया बाएँ पक्ष के $A$ तथा दाएँ पक्ष के तत्समक आव्यूह $I$ पर एक साथ लागू होती है।",
+          "प्रारंभिक स्तम्भ रूपांतरण करते समय समीकरण $A = AI$ का प्रयोग किया जाता है।",
+          "सावधानी: एक ही प्रश्न को हल करते समय पंक्ति और स्तम्भ दोनों संक्रियाओं का मिश्रण न करें; केवल पंक्ति रूपांतरण या केवल स्तम्भ रूपांतरण का ही प्रयोग करें।"
+        ]
+      },
+      {
+        "title": "व्युत्क्रमणीय आव्यूह एवं प्रारंभिक रूपांतरण द्वारा व्युत्क्रम (Invertible Matrices and Inverse by Elementary Transformations)",
+        "content": [
+          "परिभाषा: यदि $A$ कोटि $m$ का एक वर्ग आव्यूह है और यदि उसी कोटि के एक अन्य वर्ग आव्यूह $B$ का अस्तित्व इस प्रकार है कि $AB = BA = I$ हो, तो $B$ को $A$ का व्युत्क्रम (Inverse) कहते हैं और इसे $A^{-1}$ द्वारा निरूपित किया जाता है।",
+          "इस स्थिति में आव्यूह $A$ को व्युत्क्रमणीय (Invertible) आव्यूह कहा जाता है।",
+          "प्रमेय (व्युत्क्रम की अद्वितीयता): किसी वर्ग आव्यूह का व्युत्क्रम यदि अस्तित्व में है, तो वह अद्वितीय (Unique) होता है।",
+          "प्रमेय (रिवर्सल नियम): यदि $A$ तथा $B$ समान कोटि के व्युत्क्रमणीय आव्यूह हों, तो $(AB)^{-1} = B^{-1} A^{-1}$ होता है।",
+          "प्रारंभिक पंक्ति संक्रिया द्वारा $A^{-1}$ ज्ञात करने की विधि:",
+          "चरण 1: समीकरण $A = IA$ लिखिए।",
+          "चरण 2: बाएँ पक्ष के आव्यूह $A$ पर तब तक प्रारंभिक पंक्ति संक्रियाएँ लागू कीजिए जब तक कि वह तत्समक आव्यूह $I$ में न बदल जाए।",
+          "चरण 3: वही संक्रियाएँ दाएँ पक्ष के तत्समक आव्यूह $I$ पर भी एक साथ लागू कीजिए।",
+          "चरण 4: जब समीकरण $I = BA$ के रूप में आ जाए, तो प्राप्त आव्यूह $B$ ही अभीष्ट व्युत्क्रम आव्यूह $A^{-1}$ होता है।"
+        ],
+        "points": [
+          "व्युत्क्रम के अस्तित्व की जाँच: यदि प्रारंभिक पंक्ति संक्रियाएँ करते समय बाएँ पक्ष के आव्यूह की किसी पंक्ति के सभी अवयव शून्य ($0$) हो जाएँ, तो $A^{-1}$ का अस्तित्व नहीं होता है।",
+          "केवल वर्ग आव्यूह ($m = n$) का ही व्युत्क्रम संभव होता है; आयताकार आव्यूह का व्युत्क्रम परिभाषित नहीं होता।"
+        ]
+      },
+      {
+        "title": "3 × 3 आव्यूह का शून्य नियम चक्र (Zero Sequence Pattern for 3 × 3 Matrix)",
+        "content": [
+          "सौरभ सर की विशिष्ट विधि के अनुसार, $3 \\times 3$ आव्यूह को तत्समक आव्यूह में बदलने के लिए अवयवों को शून्य बनाने का एक निश्चित क्रमबद्ध चक्र (Step I से VI) अपनाया जाता है जिससे गणना अत्यंत सरल हो जाती है:",
+          "चरण I: अवयव $a_{31}$ को $0$ बनाना।",
+          "चरण II: अवयव $a_{21}$ को $0$ बनाना।",
+          "चरण III: अवयव $a_{32}$ को $0$ बनाना।",
+          "चरण IV: अवयव $a_{13}$ को $0$ बनाना।",
+          "चरण V: अवयव $a_{23}$ को $0$ बनाना।",
+          "चरण VI: अवयव $a_{12}$ को $0$ बनाना।",
+          "अंत में मुख्य विकर्ण के अवयवों ($a_{11}, a_{22}, a_{33}$) को संगत मानों से भाग देकर $1$ में बदल दिया जाता है।"
+        ],
+        "points": [
+          "इस निश्चित क्रम का पालन करने से पहले से बनाए गए शून्य पुनः परिवर्तित नहीं होते।"
+        ],
+        "diagram": {
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 520 260'><rect width='520' height='260' fill='#f8fafc'/><text x='30' y='30' font-family='sans-serif' font-size='13' font-weight='bold' fill='#0f172a'>3 × 3 आव्यूह में शून्य बनाने का अनुक्रम चक्र (Step I से VI)</text><rect x='40' y='55' width='220' height='170' rx='8' fill='#ffffff' stroke='#cbd5e1' stroke-width='1.5'/><path d='M 60,75 L 50,75 L 50,205 L 60,205' fill='none' stroke='#1e293b' stroke-width='2'/><path d='M 240,75 L 250,75 L 250,205 L 240,205' fill='none' stroke='#1e293b' stroke-width='2'/><text x='75' y='105' font-family='sans-serif' font-size='15' fill='#94a3b8'>1</text><circle cx='150' cy='100' r='14' fill='#fef08a' stroke='#eab308'/><text x='145' y='105' font-family='sans-serif' font-size='12' font-weight='bold' fill='#854d0e'>VI</text><circle cx='215' cy='100' r='14' fill='#fce7f3' stroke='#ec4899'/><text x='209' y='105' font-family='sans-serif' font-size='12' font-weight='bold' fill='#9d174d'>IV</text><circle cx='80' cy='145' r='14' fill='#e0e7ff' stroke='#6366f1'/><text x='76' y='150' font-family='sans-serif' font-size='12' font-weight='bold' fill='#3730a3'>II</text><text x='147' y='150' font-family='sans-serif' font-size='15' fill='#94a3b8'>1</text><circle cx='215' cy='145' r='14' fill='#ffedd5' stroke='#f97316'/><text x='211' y='150' font-family='sans-serif' font-size='12' font-weight='bold' fill='#9a3412'>V</text><circle cx='80' cy='190' r='14' fill='#fee2e2' stroke='#ef4444'/><text x='78' y='195' font-family='sans-serif' font-size='12' font-weight='bold' fill='#991b1b'>I</text><circle cx='150' cy='190' r='14' fill='#dcfce7' stroke='#22c55e'/><text x='144' y='195' font-family='sans-serif' font-size='12' font-weight='bold' fill='#166534'>III</text><text x='212' y='195' font-family='sans-serif' font-size='15' fill='#94a3b8'>1</text><rect x='280' y='55' width='215' height='170' rx='8' fill='#f1f5f9' stroke='#94a3b8'/><text x='295' y='80' font-family='sans-serif' font-size='12' font-weight='bold' fill='#0f172a'>शून्यीकरण का सही क्रम:</text><text x='295' y='105' font-family='sans-serif' font-size='11' fill='#991b1b'>1. Step I : a₃₁ को 0 बनाएँ</text><text x='295' y='125' font-family='sans-serif' font-size='11' fill='#3730a3'>2. Step II : a₂₁ को 0 बनाएँ</text><text x='295' y='145' font-family='sans-serif' font-size='11' fill='#166534'>3. Step III : a₃₂ को 0 बनाएँ</text><text x='295' y='165' font-family='sans-serif' font-size='11' fill='#9d174d'>4. Step IV : a₁₃ को 0 बनाएँ</text><text x='295' y='185' font-family='sans-serif' font-size='11' fill='#9a3412'>5. Step V : a₂₃ को 0 बनाएँ</text><text x='295' y='205' font-family='sans-serif' font-size='11' fill='#854d0e'>6. Step VI : a₁₂ को 0 बनाएँ</text></svg>",
+          "caption": "3 × 3 आव्यूह रूपांतरण: शून्य बनाने का 6-चरणीय चक्र"
+        }
+      },
+      {
+        "title": "2 × 2 आव्यूह का व्युत्क्रम शॉर्टकट नियम (2 × 2 Inverse Shortcut Rule)",
+        "content": [
+          "यदि $A = \\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}$ एक $2 \\times 2$ वर्ग आव्यूह हो तथा $|A| = ad - bc \\neq 0$ हो, तो इसका व्युत्क्रम सीधे निम्नलिखित नियम द्वारा ज्ञात किया जा सकता है:",
+          "$$A^{-1} = \\frac{1}{ad - bc} \\begin{bmatrix} d & -b \\\\ -c & a \\end{bmatrix}$$",
+          "शॉर्टकट विधि के दो मुख्य नियम:",
+          "1. मुख्य विकर्ण के अवयवों ($a$ और $d$) का परस्पर स्थान बदलें (Interchange diagonal elements)।",
+          "2. अन्य दोनों अवयवों ($b$ और $c$) का केवल चिह्न बदलें (Change signs of non-diagonal elements)।",
+          "3. अंत में प्राप्त आव्यूह को सारणिक के मान $|A| = ad - bc$ से भाग दें।"
+        ],
+        "points": [
+          "यह शॉर्टकट वस्तुनिष्ठ प्रश्नों (MCQs) को तीव्र गति से हल करने तथा दीर्घ उत्तरीय प्रश्नों के उत्तर की पुनः जाँच करने हेतु अत्यंत उपयोगी है।"
+        ],
+        "diagram": {
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 520 220'><rect width='520' height='220' fill='#f8fafc'/><text x='30' y='30' font-family='sans-serif' font-size='13' font-weight='bold' fill='#0f172a'>2 × 2 व्युत्क्रम शॉर्टकट: विकर्ण विनिमय एवं चिह्न परिवर्तन</text><rect x='40' y='55' width='140' height='90' rx='6' fill='#ffffff' stroke='#cbd5e1' stroke-width='1.5'/><ellipse cx='65' cy='82' rx='14' ry='14' fill='#fef08a' stroke='#eab308'/><text x='61' y='87' font-family='sans-serif' font-size='14' font-weight='bold' fill='#854d0e'>a</text><ellipse cx='155' cy='118' rx='14' ry='14' fill='#fef08a' stroke='#eab308'/><text x='151' y='123' font-family='sans-serif' font-size='14' font-weight='bold' fill='#854d0e'>d</text><text x='152' y='87' font-family='sans-serif' font-size='14' fill='#0f172a'>b</text><text x='62' y='123' font-family='sans-serif' font-size='14' fill='#0f172a'>c</text><text x='85' y='165' font-family='sans-serif' font-size='12' font-weight='bold' fill='#334155'>मूल आव्यूह A</text><text x='200' y='105' font-family='sans-serif' font-size='18' font-weight='bold' fill='#2563eb'>⟶</text><rect x='240' y='50' width='245' height='100' rx='6' fill='#eff6ff' stroke='#3b82f6' stroke-width='1.5'/><text x='250' y='105' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1e40af'>A⁻¹ = 1/(ad-bc) ×</text><rect x='380' y='58' width='95' height='82' rx='4' fill='#ffffff' stroke='#94a3b8'/><ellipse cx='405' cy='80' rx='13' ry='13' fill='#fef08a' stroke='#eab308'/><text x='401' y='85' font-family='sans-serif' font-size='13' font-weight='bold' fill='#854d0e'>d</text><ellipse cx='450' cy='118' rx='13' ry='13' fill='#fef08a' stroke='#eab308'/><text x='446' y='123' font-family='sans-serif' font-size='13' font-weight='bold' fill='#854d0e'>a</text><text x='440' y='85' font-family='sans-serif' font-size='13' font-weight='bold' fill='#dc2626'>-b</text><text x='396' y='123' font-family='sans-serif' font-size='13' font-weight='bold' fill='#dc2626'>-c</text><rect x='40' y='180' width='445' height='28' rx='4' fill='#ecfdf5' stroke='#10b981'/><text x='55' y='198' font-family='sans-serif' font-size='11' fill='#065f46'>मुख्य विकर्ण (a, d) आपस में बदलें | अन्य अवयव (b, c) के आगे ऋण (-) चिह्न लगाएँ</text></svg>",
+          "caption": "2 × 2 आव्यूह के व्युत्क्रम की सीधी शॉर्टकट विधि"
+        }
+      }
+    ],
+    "definitions": [
+      {
+        "term": "आव्यूह (Matrix)",
+        "definition": "संख्याओं (वास्तविक या सम्मिश्र) अथवा फलनों का $m$ पंक्तियों तथा $n$ स्तम्भों में एक आयताकार क्रम-विन्यास आव्यूह कहलाता है।"
+      },
+      {
+        "term": "आव्यूह की कोटि (Order of a Matrix)",
+        "definition": "यदि किसी आव्यूह में $m$ पंक्तियाँ तथा $n$ स्तम्भ हों, तो उसे $m \\times n$ कोटि का आव्यूह कहते हैं।"
+      },
+      {
+        "term": "स्तम्भ आव्यूह (Column Matrix)",
+        "definition": "ऐसा आव्यूह जिसमें केवल एक स्तम्भ होता है, स्तम्भ आव्यूह कहलाता है (व्यापक रूप: $[a_{ij}]_{m \\times 1}$)।"
+      },
+      {
+        "term": "पंक्ति आव्यूह (Row Matrix)",
+        "definition": "ऐसा आव्यूह जिसमें केवल एक पंक्ति होती है, पंक्ति आव्यूह कहलाता है (व्यापक रूप: $[a_{ij}]_{1 \\times n}$)।"
+      },
+      {
+        "term": "क्षैतिज आव्यूह (Horizontal Matrix)",
+        "definition": "ऐसा आव्यूह जिसमें पंक्तियों की संख्या स्तम्भों की संख्या से कम होती है ($m < n$)।"
+      },
+      {
+        "term": "ऊर्ध्वाधर आव्यूह (Vertical Matrix)",
+        "definition": "ऐसा आव्यूह जिसमें पंक्तियों की संख्या स्तम्भों की संख्या से अधिक होती है ($m > n$)।"
+      },
+      {
+        "term": "वर्ग आव्यूह (Square Matrix)",
+        "definition": "ऐसा आव्यूह जिसमें पंक्तियों की संख्या स्तम्भों की संख्या के बराबर होती है ($m = n$)।"
+      },
+      {
+        "term": "शून्य अथवा रिक्त आव्यूह (Zero or Null Matrix)",
+        "definition": "ऐसा आव्यूह जिसका प्रत्येक अवयव शून्य हो, शून्य आव्यूह कहलाता है और इसे $O$ से दर्शाते हैं।"
+      },
+      {
+        "term": "विकर्ण आव्यूह (Diagonal Matrix)",
+        "definition": "ऐसा वर्ग आव्यूह जिसके मुख्य विकर्ण के अतिरिक्त शेष सभी अवयव शून्य होते हैं ($a_{ij} = 0, \\forall i \\neq j$)।"
+      },
+      {
+        "term": "अदिश आव्यूह (Scalar Matrix)",
+        "definition": "ऐसा विकर्ण आव्यूह जिसके मुख्य विकर्ण के सभी अवयव परस्पर समान (बराबर) होते हैं।"
+      },
+      {
+        "term": "इकाई अथवा तत्समक आव्यूह (Identity Matrix)",
+        "definition": "ऐसा वर्ग आव्यूह जिसके मुख्य विकर्ण का प्रत्येक अवयव 1 तथा शेष सभी अवयव शून्य होते हैं, इसे $I$ से निरूपित करते हैं।"
+      },
+      {
+        "term": "आव्यूहों की समानता (Equality of Matrices)",
+        "definition": "दो आव्यूह समान कहलाते हैं यदि उनकी कोटियाँ समान हों तथा उनके संगत अवयव बराबर हों ($a_{ij} = b_{ij}$)।"
+      },
+      {
+        "term": "आव्यूह का परिवर्त (Transpose of a Matrix)",
+        "definition": "किसी आव्यूह की पंक्तियों को स्तम्भों में तथा स्तम्भों को पंक्तियों में परस्पर बदलने पर प्राप्त आव्यूह $A'$ या $A^T$ कहलाता है।"
+      },
+      {
+        "term": "सममित आव्यूह (Symmetric Matrix)",
+        "definition": "ऐसा वर्ग आव्यूह $A$ जिसका परिवर्त आव्यूह स्वयं उसी के बराबर हो ($A' = A$)।"
+      },
+      {
+        "term": "विषम सममित आव्यूह (Skew-Symmetric Matrix)",
+        "definition": "ऐसा वर्ग आव्यूह $A$ जिसका परिवर्त आव्यूह उसके ऋणात्मक के बराबर हो ($A' = -A$)।"
+      },
+      {
+        "term": "व्युत्क्रमणीय आव्यूह (Invertible Matrix)",
+        "definition": "कोटि $n$ का वर्ग आव्यूह $A$ व्युत्क्रमणीय कहलाता है यदि उसी कोटि का एक ऐसा वर्ग आव्यूह $B$ विद्यमान हो कि $AB = BA = I$ हो।"
+      }
+    ],
+    "oneLiners": [
+      {
+        "question": "यदि किसी आव्यूह में 24 अवयव हैं, तो इसकी सभी सम्भव कोटियाँ कितनी होंगी?",
+        "answer": "8 [क्रमित युग्म: $1\\times24, 24\\times1, 2\\times12, 12\\times2, 3\\times8, 8\\times3, 4\\times6, 6\\times4$]"
+      },
+      {
+        "question": "यदि किसी आव्यूह में 13 अवयव हैं, तो सम्भव कोटियों की संख्या क्या होगी?",
+        "answer": "2 [कोटियाँ: $1\\times13$ तथा $13\\times1$]"
+      },
+      {
+        "question": "यदि किसी आव्यूह में 18 अवयव हैं, तो कुल सम्भव कोटियाँ कितनी होंगी?",
+        "answer": "6 [कोटियाँ: $1\\times18, 18\\times1, 2\\times9, 9\\times2, 3\\times6, 6\\times3$]"
+      },
+      {
+        "question": "यदि किसी आव्यूह में 5 अवयव हैं, तो सम्भव कोटियाँ क्या होंगी?",
+        "answer": "2 [कोटियाँ: $1\\times5$ तथा $5\\times1$]"
+      },
+      {
+        "question": "आव्यूह $A = [a_{ij}]_{m \\times n}$ एक वर्ग आव्यूह है यदि-",
+        "answer": "$m = n$ [सूत्र: वर्ग आव्यूह में पंक्तियों की संख्या = स्तम्भों की संख्या]"
+      },
+      {
+        "question": "$3 \\times 3$ कोटि के ऐसे आव्यूहों की कुल संख्या क्या होगी जिनकी प्रत्येक प्रविष्टि 0 या 1 है?",
+        "answer": "512 [सूत्र: अवयव = 9, प्रत्येक के लिए 2 विकल्प $\\implies 2^9 = 512$]"
+      },
+      {
+        "question": "यदि $\\begin{bmatrix} 4 & 3 \\\\ x & 5 \\end{bmatrix} = \\begin{bmatrix} y & z \\\\ 1 & 5 \\end{bmatrix}$ हो, तो $x, y, z$ के मान क्या होंगे?",
+        "answer": "$x = 1, y = 4, z = 3$ [सूत्र: संगत अवयवों की तुलना से]"
+      },
+      {
+        "question": "यदि $\\begin{bmatrix} x+y & 2 \\\\ 5+z & xy \\end{bmatrix} = \\begin{bmatrix} 6 & 2 \\\\ 5 & 8 \\end{bmatrix}$ हो, तो $z$ का मान क्या होगा?",
+        "answer": "0 [सूत्र: $5 + z = 5 \\implies z = 0$]"
+      },
+      {
+        "question": "यदि $\\begin{bmatrix} x+y+z \\\\ x+z \\\\ y+z \\end{bmatrix} = \\begin{bmatrix} 9 \\\\ 5 \\\\ 7 \\end{bmatrix}$ हो, तो $x, y, z$ के मान क्या होंगे?",
+        "answer": "$x = 3, y = 4, z = 2$ [सूत्र: समीकरण निकाय हल करने पर]"
+      },
+      {
+        "question": "किसी विषम सममित आव्यूह के मुख्य विकर्ण के सभी अवयव सदैव क्या होते हैं?",
+        "answer": "शून्य ($0$) [सूत्र: $a_{ii} = -a_{ii} \\implies 2a_{ii} = 0 \\implies a_{ii} = 0$]"
+      },
+      {
+        "question": "यदि $A$ तथा $B$ समान कोटि के सममित आव्यूह हैं, तो $AB - BA$ किस प्रकार का आव्यूह है?",
+        "answer": "विषम सममित आव्यूह [सूत्र: $(AB - BA)' = -(AB - BA)$]"
+      },
+      {
+        "question": "यदि $A$ तथा $B$ समान कोटि के सममित आव्यूह हैं, तो $AB + BA$ किस प्रकार का आव्यूह है?",
+        "answer": "सममित आव्यूह [सूत्र: $(AB + BA)' = AB + BA$]"
+      },
+      {
+        "question": "यदि $A = \\begin{bmatrix} \\cos\\alpha & -\\sin\\alpha \\\\ \\sin\\alpha & \\cos\\alpha \\end{bmatrix}$ तथा $A + A' = I$ हो, तो $\\alpha$ का मान क्या होगा?",
+        "answer": "$\\frac{\\pi}{3}$ [सूत्र: $2\\cos\\alpha = 1 \\implies \\cos\\alpha = \\frac{1}{2}$]"
+      },
+      {
+        "question": "यदि एक आव्यूह सममित तथा विषम सममित दोनों ही है, तो वह किस प्रकार का आव्यूह है?",
+        "answer": "शून्य आव्यूह [सूत्र: $A' = A$ तथा $A' = -A \\implies A = -A \\implies 2A = O \\implies A = O$]"
+      },
+      {
+        "question": "यदि $A$ एक वर्ग आव्यूह इस प्रकार है कि $A^2 = A$, तो $(I + A)^3 - 7A$ का मान क्या होगा?",
+        "answer": "$I$ [सूत्र: द्विपद प्रसार एवं $A^2 = A$ का प्रयोग करने पर]"
+      },
+      {
+        "question": "आव्यूहों $A$ और $B$ के गुणनफल के लिए परिवर्त का रिवर्सल नियम क्या है?",
+        "answer": "$(AB)' = B'A'$ [सूत्र: परिवर्त का उत्क्रमणीय नियम]"
+      },
+      {
+        "question": "यदि आव्यूह $A$ की कोटि $2 \\times 3$ तथा $B$ की कोटि $3 \\times 2$ है, तो $AB$ की कोटि क्या होगी?",
+        "answer": "$2 \\times 2$ [सूत्र: $A_{m \\times n} \\times B_{n \\times p} = (AB)_{m \\times p}$]"
+      },
+      {
+        "question": "यदि आव्यूह $A$ की कोटि $3 \\times 2$ तथा $B$ की कोटि $2 \\times 3$ है, तो $BA$ की कोटि क्या होगी?",
+        "answer": "$2 \\times 2$ [सूत्र: $B_{2 \\times 3} \\times A_{3 \\times 2} = (BA)_{2 \\times 2}$]"
+      },
+      {
+        "question": "आव्यूह $A = \\begin{bmatrix} 0 & 1 \\\\ 1 & 0 \\end{bmatrix}$ के लिए $A^{50}$ का मान क्या होगा?",
+        "answer": "$\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} = I$ [सूत्र: सम घात पर तत्समक आव्यूह $I$ प्राप्त होता है]"
+      },
+      {
+        "question": "आव्यूह $A = \\begin{bmatrix} 0 & 1 \\\\ 1 & 0 \\end{bmatrix}$ के लिए $A^{25}$ का मान क्या होगा?",
+        "answer": "$\\begin{bmatrix} 0 & 1 \\\\ 1 & 0 \\end{bmatrix} = A$ [सूत्र: विषम घात पर मान अपरिवर्तित रहता है]"
+      },
+      {
+        "question": "यदि $A$ कोई वर्ग आव्यूह है, तो $A + A'$ सदैव कैसा आव्यूह होता है?",
+        "answer": "सममित आव्यूह [सूत्र: $(A + A')' = A + A'$]"
+      },
+      {
+        "question": "यदि $A$ कोई वर्ग आव्यूह है, तो $A - A'$ सदैव कैसा आव्यूह होता है?",
+        "answer": "विषम सममित आव्यूह [सूत्र: $(A - A')' = -(A - A')$]"
+      },
+      {
+        "question": "आव्यूह $A$ को सममित तथा विषम सममित आव्यूह के योगफल रूप में लिखने का सूत्र क्या है?",
+        "answer": "$A = \\frac{1}{2}(A + A') + \\frac{1}{2}(A - A')$ [सूत्र: अद्वितीय योगफल निरूपण]"
+      },
+      {
+        "question": "यदि $A = \\begin{bmatrix} 2 & 3 \\\\ 1 & 4 \\end{bmatrix}$ हो, तो $\\text{adj}\\,A$ का मान क्या होगा?",
+        "answer": "$\\begin{bmatrix} 4 & -3 \\\\ -1 & 2 \\end{bmatrix}$ [सूत्र: मुख्य विकर्ण बदले तथा अन्य के चिह्न बदले]"
+      },
+      {
+        "question": "यदि $A = \\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix}$ हो, तो $\\text{adj}\\,A$ का मान क्या होगा?",
+        "answer": "$\\begin{bmatrix} 4 & -2 \\\\ -3 & 1 \\end{bmatrix}$ [सूत्र: $2 \\times 2$ सहखंडज शॉर्टकट]"
+      },
+      {
+        "question": "यदि $A = \\begin{bmatrix} 3 & -5 \\\\ -1 & 2 \\end{bmatrix}$ हो, तो $\\text{adj}\\,A$ क्या होगा?",
+        "answer": "$\\begin{bmatrix} 2 & 5 \\\\ 1 & 3 \\end{bmatrix}$ [सूत्र: विकर्ण अवयव विनिमय एवं शेष का चिह्न परिवर्तन]"
+      },
+      {
+        "question": "यदि $A = \\begin{bmatrix} 2 & -3 \\\\ 4 & 6 \\end{bmatrix}$ हो, तो $A^{-1}$ का मान क्या होगा?",
+        "answer": "$\\begin{bmatrix} 1/4 & 1/8 \\\\ -1/6 & 1/12 \\end{bmatrix}$ [सूत्र: $A^{-1} = \\frac{1}{|A|}\\text{adj}\\,A$ जहाँ $|A| = 24$]"
+      },
+      {
+        "question": "आव्यूह $A$ तथा $B$ एक-दूसरे के व्युत्क्रम होंगे यदि और केवल यदि-",
+        "answer": "$AB = BA = I$ [सूत्र: व्युत्क्रमणीय आव्यूह की परिभाषा]"
+      },
+      {
+        "question": "यदि $A$ कोटि 2 का व्युत्क्रमणीय आव्यूह है, तो $\\det(A^{-1})$ किसके बराबर होगा?",
+        "answer": "$\\frac{1}{\\det A}$ [सूत्र: $|A^{-1}| = \\frac{1}{|A|}$]"
+      },
+      {
+        "question": "यदि $3A^3 + 2A^2 + 5A + I = O$ हो, तो $A^{-1}$ का मान क्या होगा?",
+        "answer": "$-3A^2 - 2A - 5I$ [सूत्र: दोनों पक्षों में $A^{-1}$ से गुणा करने पर]"
+      },
+      {
+        "question": "यदि $A^3 + 3A^2 + 3A + I = O$ हो, तो $A^{-1}$ का मान क्या होगा?",
+        "answer": "$-A^2 - 3A - 3I$ [सूत्र: दोनों पक्षों में $A^{-1}$ से पश्च-गुणन करने पर]"
+      },
+      {
+        "question": "यदि $A = \\begin{bmatrix} \\alpha & \\beta \\\\ \\gamma & -\\alpha \\end{bmatrix}$ इस प्रकार है कि $A^2 = I$, तो सही संबंध क्या होगा?",
+        "answer": "$1 - \\alpha^2 - \\beta\\gamma = 0$ [सूत्र: $\\alpha^2 + \\beta\\gamma = 1$]"
+      },
+      {
+        "question": "यदि $\\begin{bmatrix} x & y \\end{bmatrix} = \\begin{bmatrix} 2x - 1 & 7 \\end{bmatrix}$ हो, तो $(x, y)$ का मान क्या होगा?",
+        "answer": "$(1, 7)$ [सूत्र: $x = 2x - 1 \\implies x = 1$ तथा $y = 7$]"
+      },
+      {
+        "question": "यदि $[2a - 7 \\quad 1] = [a \\quad b - 1]$ हो, तो $(a, b)$ का मान क्या होगा?",
+        "answer": "$(7, 2)$ [सूत्र: $2a - 7 = a \\implies a = 7$ तथा $b - 1 = 1 \\implies b = 2$]"
+      },
+      {
+        "question": "यदि $[3x + 5 \\quad y - 2] = [11 \\quad 6]$ हो, तो $(x, y)$ का मान क्या होगा?",
+        "answer": "$(2, 8)$ [सूत्र: $3x + 5 = 11 \\implies x = 2$ तथा $y - 2 = 6 \\implies y = 8$]"
+      },
+      {
+        "question": "यदि $\\begin{bmatrix} 2x-y & 5 \\\\ 3 & y \\end{bmatrix} = \\begin{bmatrix} 6 & 5 \\\\ 3 & -2 \\end{bmatrix}$ हो, तो $x$ का मान क्या होगा?",
+        "answer": "2 [सूत्र: $y = -2 \\implies 2x - (-2) = 6 \\implies 2x = 4 \\implies x = 2$]"
+      },
+      {
+        "question": "गुणनफल $\\begin{bmatrix} 1 \\\\ 2 \\\\ 3 \\end{bmatrix} \\begin{bmatrix} 2 & 3 & 4 \\end{bmatrix}$ की कोटि क्या होगी?",
+        "answer": "$3 \\times 3$ [सूत्र: $(3 \\times 1) \\times (1 \\times 3) = 3 \\times 3$]"
+      },
+      {
+        "question": "गुणनफल $[6 \\quad 5] \\begin{bmatrix} 1 \\\\ -1 \\end{bmatrix}$ का मान क्या होगा?",
+        "answer": "[1] [सूत्र: $6(1) + 5(-1) = 6 - 5 = 1$]"
+      },
+      {
+        "question": "गुणनफल $\\begin{bmatrix} -1 \\end{bmatrix} [1 \\quad -1]$ का मान क्या होगा?",
+        "answer": "$\\begin{bmatrix} -1 & 1 \\end{bmatrix}$ [सूत्र: $(1 \\times 1) \\times (1 \\times 2) = 1 \\times 2$]"
+      },
+      {
+        "question": "यदि $A = \\begin{bmatrix} 1 & -1 \\\\ -1 & 1 \\end{bmatrix}$ हो, तो $A^2$ का मान क्या होगा?",
+        "answer": "$2A$ [सूत्र: $A^2 = \\begin{bmatrix} 2 & -2 \\\\ -2 & 2 \\end{bmatrix} = 2A$]"
+      },
+      {
+        "question": "यदि $A = \\begin{bmatrix} 1 & -1 \\\\ -1 & 1 \\end{bmatrix}$ हो, तो $A^3$ का मान क्या होगा?",
+        "answer": "$4A$ [सूत्र: $A^3 = A^2 \\cdot A = (2A)A = 2A^2 = 2(2A) = 4A$]"
+      },
+      {
+        "question": "आव्यूह योग के लिए तत्समक आव्यूह क्या होता है?",
+        "answer": "शून्य आव्यूह $O$ [सूत्र: $A + O = O + A = A$]"
+      },
+      {
+        "question": "आव्यूह $A$ का योज्य प्रतिलोम क्या होता है?",
+        "answer": "$-A$ [सूत्र: $A + (-A) = O$]"
+      },
+      {
+        "question": "यदि $A = \\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ a & b & -1 \\end{bmatrix}$ हो, तो $A^2$ का मान क्या होगा?",
+        "answer": "इकाई आव्यूह $I$ [सूत्र: $A^2 = I_3$]"
+      },
+      {
+        "question": "प्रारंभिक पंक्ति संक्रिया द्वारा व्युत्क्रम ज्ञात करते समय कौन-सा आधारभूत समीकरण प्रयुक्त होता है?",
+        "answer": "$A = IA$ [सूत्र: पंक्ति रूपांतरण समीकरण]"
+      },
+      {
+        "question": "प्रारंभिक स्तम्भ संक्रिया द्वारा व्युत्क्रम ज्ञात करते समय कौन-सा समीकरण प्रयुक्त होता है?",
+        "answer": "$A = AI$ [सूत्र: स्तम्भ रूपांतरण समीकरण]"
+      },
+      {
+        "question": "प्रारंभिक पंक्ति रूपांतरण में यदि बाएँ पक्ष की किसी पंक्ति के सभी अवयव शून्य हो जाएँ, तो $A^{-1}$ के बारे में क्या निष्कर्ष निकलता है?",
+        "answer": "$A^{-1}$ का अस्तित्व नहीं है [सूत्र: अव्युत्क्रमणीय आव्यूह]"
+      },
+      {
+        "question": "यदि आव्यूह $X$ की कोटि $2 \\times n$ तथा $Z$ की कोटि $2 \\times p$ हो और $n = p$ हो, तो आव्यूह $7X - 5Z$ की कोटि क्या होगी?",
+        "answer": "$2 \\times n$ (अथवा $2 \\times p$) [सूत्र: समान कोटि का घटाव]"
+      },
+      {
+        "question": "यदि $A$ और $B$ व्युत्क्रमणीय आव्यूह हैं, तो $(AB)^{-1}$ का प्रसार क्या होगा?",
+        "answer": "$B^{-1} A^{-1}$ [सूत्र: व्युत्क्रम का रिवर्सल नियम]"
+      },
+      {
+        "question": "अदिश आव्यूह $\\begin{bmatrix} k & 0 \\\\ 0 & k \\end{bmatrix}$ में $k = 1$ होने पर यह क्या कहलाता है?",
+        "answer": "तत्समक आव्यूह $I$ [सूत्र: इकाई आव्यूह की परिभाषा]"
+      }
+    ],
+    "formulas": [
+      {
+        "name": "कोटि एवं सम्भव कोटियों का निर्धारण",
+        "formula": "$$m \\times n = N$$",
+        "meaning": "यदि किसी आव्यूह में m पंक्तियाँ और n स्तम्भ हों, तो कुल अवयव N = mn होते हैं। सम्भव कोटियाँ उन सभी प्राकृत संख्या युग्मों (m, n) द्वारा प्राप्त होती हैं जिनका गुणनफल N हो।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "यदि किसी आव्यूह में 8 अवयव हैं, तो इसकी सभी सम्भव कोटियाँ ज्ञात कीजिए।",
+            "solution": [
+              "कुल अवयव $N = 8$।",
+              "सूत्र: $m \\times n = 8$, जहाँ $m, n \\in \\mathbb{N}$।",
+              "गुणनफल 8 वाले युग्म: $(1, 8), (8, 1), (2, 4), (4, 2)$।",
+              "अतः सम्भव कोटियाँ: $1 \\times 8, 8 \\times 1, 2 \\times 4, 4 \\times 2$ (कुल 4 कोटियाँ)।",
+              "उत्तर: $1 \\times 8, 8 \\times 1, 2 \\times 4, 4 \\times 2$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "एक $2 \\times 3$ आव्यूह $A = [a_{ij}]$ की रचना कीजिए जिसके अवयव $a_{ij} = 2i + j$ द्वारा प्रदत्त हैं।",
+            "solution": [
+              "कोटि $2 \\times 3$ होने के कारण $i = 1, 2$ तथा $j = 1, 2, 3$।",
+              "अवयवों की गणना:",
+              "$a_{11} = 2(1) + 1 = 3$, $a_{12} = 2(1) + 2 = 4$, $a_{13} = 2(1) + 3 = 5$।",
+              "$a_{21} = 2(2) + 1 = 5$, $a_{22} = 2(2) + 2 = 6$, $a_{23} = 2(2) + 3 = 7$।",
+              "आव्यूह रूप: $A = \\begin{bmatrix} 3 & 4 & 5 \\\\ 5 & 6 & 7 \\end{bmatrix}$।",
+              "उत्तर: $\\begin{bmatrix} 3 & 4 & 5 \\\\ 5 & 6 & 7 \\end{bmatrix}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि किसी आव्यूह में 12 अवयव हों, तो कुल कितनी सम्भव कोटियाँ हो सकती हैं?",
+            "solution": [
+              "सूत्र: $m \\times n = 12$।",
+              "धन पूर्णांक युग्म: $(1, 12), (12, 1), (2, 6), (6, 2), (3, 4), (4, 3)$।",
+              "कुल सम्भव कोटियों की संख्या 6 होगी।",
+              "उत्तर: 6"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "एक $2 \\times 2$ आव्यूह $A = [a_{ij}]$ बनाइए जहाँ $a_{ij} = |i - 2j|$ हो।",
+            "solution": [
+              "अवयवों का निर्धारण:",
+              "$a_{11} = |1 - 2(1)| = |-1| = 1$।",
+              "$a_{12} = |1 - 2(2)| = |-3| = 3$।",
+              "$a_{21} = |2 - 2(1)| = |0| = 0$।",
+              "$a_{22} = |2 - 2(2)| = |-2| = 2$।",
+              "आव्यूह रूप: $A = \\begin{bmatrix} 1 & 3 \\\\ 0 & 2 \\end{bmatrix}$।",
+              "उत्तर: $\\begin{bmatrix} 1 & 3 \\\\ 0 & 2 \\end{bmatrix}$"
+            ],
+            "source": "AI"
+          }
+        ]
+      },
+      {
+        "name": "आव्यूहों की समानता (संगत अवयवों की बराबरी)",
+        "formula": "$$[a_{ij}] = [b_{ij}] \\iff a_{ij} = b_{ij}$$",
+        "meaning": "दोनों आव्यूहों की कोटि समान होनी चाहिए और प्रत्येक स्थान के संगत अवयव बराबर होते हैं।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "यदि $\\begin{bmatrix} x+3 & z+4 \\\\ 2y-7 & -6 \\end{bmatrix} = \\begin{bmatrix} 0 & 6 \\\\ 3y-2 & -6 \\end{bmatrix}$ हो, तो x, y, z ज्ञात कीजिए।",
+            "solution": [
+              "संगत अवयवों की तुलना करने पर:",
+              "$x + 3 = 0 \\implies x = -3$।",
+              "$z + 4 = 6 \\implies z = 6 - 4 = 2$।",
+              "$2y - 7 = 3y - 2 \\implies 3y - 2y = -7 + 2 \\implies y = -5$।",
+              "उत्तर: $x = -3, y = -5, z = 2$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समीकरण $\\begin{bmatrix} a-b & 2a+c \\\\ 2a-b & 3c+d \\end{bmatrix} = \\begin{bmatrix} -1 & 5 \\\\ 0 & 13 \\end{bmatrix}$ से a, b, c, d ज्ञात कीजिए।",
+            "solution": [
+              "संगत अवयव बराबर रखने पर:",
+              "$a - b = -1$ ...(1) तथा $2a - b = 0 \\implies b = 2a$ ...(2)।",
+              "समीकरण (1) में $b$ रखने पर: $a - 2a = -1 \\implies -a = -1 \\implies a = 1$।",
+              "अतः $b = 2(1) = 2$।",
+              "$2a + c = 5 \\implies 2(1) + c = 5 \\implies c = 3$।",
+              "$3c + d = 13 \\implies 3(3) + d = 13 \\implies d = 13 - 9 = 4$।",
+              "उत्तर: $a = 1, b = 2, c = 3, d = 4$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि $\\begin{bmatrix} 2x & 5 \\\\ 7 & y-3 \\end{bmatrix} = \\begin{bmatrix} 4 & 5 \\\\ 7 & 2 \\end{bmatrix}$ हो, तो x और y का मान बताइए।",
+            "solution": [
+              "संगत अवयव बराबर करने पर:",
+              "$2x = 4 \\implies x = 2$।",
+              "$y - 3 = 2 \\implies y = 5$।",
+              "उत्तर: $x = 2, y = 5$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि $\\begin{bmatrix} x+y \\\\ x-y \\end{bmatrix} = \\begin{bmatrix} 8 \\\\ 2 \\end{bmatrix}$ हो, तो x और y का मान ज्ञात कीजिए।",
+            "solution": [
+              "संगत अवयव: $x + y = 8$ तथा $x - y = 2$।",
+              "दोनों को जोड़ने पर: $2x = 10 \\implies x = 5$।",
+              "घटाने पर: $2y = 6 \\implies y = 3$।",
+              "उत्तर: $x = 5, y = 3$"
+            ],
+            "source": "AI"
+          }
+        ]
+      },
+      {
+        "name": "आव्यूहों का योग एवं अन्तर",
+        "formula": "$$A \\pm B = [a_{ij} \\pm b_{ij}]$$",
+        "meaning": "समान कोटि के आव्यूहों के संगत अवयवों को आपस में जोड़ा या घटाया जाता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "यदि $A = \\begin{bmatrix} 2 & 4 \\\\ 3 & 2 \\end{bmatrix}$ और $B = \\begin{bmatrix} 1 & 3 \\\\ -2 & 5 \\end{bmatrix}$ हों, तो A + B और A - B ज्ञात कीजिए।",
+            "solution": [
+              "योग: $A + B = \\begin{bmatrix} 2+1 & 4+3 \\\\ 3+(-2) & 2+5 \\end{bmatrix} = \\begin{bmatrix} 3 & 7 \\\\ 1 & 7 \\end{bmatrix}$।",
+              "अन्तर: $A - B = \\begin{bmatrix} 2-1 & 4-3 \\\\ 3-(-2) & 2-5 \\end{bmatrix} = \\begin{bmatrix} 1 & 1 \\\\ 5 & -3 \\end{bmatrix}$।",
+              "उत्तर: $A + B = \\begin{bmatrix} 3 & 7 \\\\ 1 & 7 \\end{bmatrix}, A - B = \\begin{bmatrix} 1 & 1 \\\\ 5 & -3 \\end{bmatrix}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "परिकलित कीजिए: $\\begin{bmatrix} a^2+b^2 & b^2+c^2 \\\\ a^2+c^2 & a^2+b^2 \\end{bmatrix} + \\begin{bmatrix} 2ab & 2bc \\\\ -2ac & -2ab \\end{bmatrix}$",
+            "solution": [
+              "संगत अवयवों को जोड़ने पर:",
+              "$\\begin{bmatrix} a^2+b^2+2ab & b^2+c^2+2bc \\\\ a^2+c^2-2ac & a^2+b^2-2ab \\end{bmatrix}$।",
+              "सर्वसमिकाएँ लगाने पर:",
+              "$\\begin{bmatrix} (a+b)^2 & (b+c)^2 \\\\ (a-c)^2 & (a-b)^2 \\end{bmatrix}$।",
+              "उत्तर: $\\begin{bmatrix} (a+b)^2 & (b+c)^2 \\\\ (a-c)^2 & (a-b)^2 \\end{bmatrix}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "परिकलित कीजिए: $\\begin{bmatrix} \\cos^2 x & \\sin^2 x \\\\ \\sin^2 x & \\cos^2 x \\end{bmatrix} + \\begin{bmatrix} \\sin^2 x & \\cos^2 x \\\\ \\cos^2 x & \\sin^2 x \\end{bmatrix}$",
+            "solution": [
+              "संगत अवयवों का योग:",
+              "$\\begin{bmatrix} \\cos^2 x + \\sin^2 x & \\sin^2 x + \\cos^2 x \\\\ \\sin^2 x + \\cos^2 x & \\cos^2 x + \\sin^2 x \\end{bmatrix}$।",
+              "चूँकि $\\cos^2 x + \\sin^2 x = 1$।",
+              "आव्यूह बनता है: $\\begin{bmatrix} 1 & 1 \\\\ 1 & 1 \\end{bmatrix}$।",
+              "उत्तर: $\\begin{bmatrix} 1 & 1 \\\\ 1 & 1 \\end{bmatrix}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि $X + Y = \\begin{bmatrix} 7 & 0 \\\\ 2 & 5 \\end{bmatrix}$ तथा $X - Y = \\begin{bmatrix} 3 & 0 \\\\ 0 & 3 \\end{bmatrix}$ हो, तो X ज्ञात कीजिए।",
+            "solution": [
+              "दोनों समीकरणों को जोड़ने पर:",
+              "$(X + Y) + (X - Y) = 2X = \\begin{bmatrix} 7+3 & 0+0 \\\\ 2+0 & 5+3 \\end{bmatrix} = \\begin{bmatrix} 10 & 0 \\\\ 2 & 8 \\end{bmatrix}$।",
+              "$X = \\frac{1}{2} \\begin{bmatrix} 10 & 0 \\\\ 2 & 8 \\end{bmatrix} = \\begin{bmatrix} 5 & 0 \\\\ 1 & 4 \\end{bmatrix}$।",
+              "उत्तर: $\\begin{bmatrix} 5 & 0 \\\\ 1 & 4 \\end{bmatrix}$"
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "अदिश गुणन एवं उसके नियम",
+        "formula": "$$kA = [k \\cdot a_{ij}]$$",
+        "meaning": "अदिश k से आव्यूह के प्रत्येक अवयव को गुणा किया जाता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "यदि $A = \\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix}$ और $B = \\begin{bmatrix} 3 & -1 \\\\ 0 & 2 \\end{bmatrix}$ हो, तो $2A - B$ ज्ञात कीजिए।",
+            "solution": [
+              "$2A = 2\\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix} = \\begin{bmatrix} 2 & 4 \\\\ 6 & 8 \\end{bmatrix}$।",
+              "$2A - B = \\begin{bmatrix} 2 & 4 \\\\ 6 & 8 \\end{bmatrix} - \\begin{bmatrix} 3 & -1 \\\\ 0 & 2 \\end{bmatrix}$।",
+              "सरल करने पर: $\\begin{bmatrix} 2-3 & 4-(-1) \\\\ 6-0 & 8-2 \\end{bmatrix} = \\begin{bmatrix} -1 & 5 \\\\ 6 & 6 \\end{bmatrix}$।",
+              "उत्तर: $\\begin{bmatrix} -1 & 5 \\\\ 6 & 6 \\end{bmatrix}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "सरल कीजिए: $\\cos\\theta \\begin{bmatrix} \\cos\\theta & \\sin\\theta \\\\ -\\sin\\theta & \\cos\\theta \\end{bmatrix} + \\sin\\theta \\begin{bmatrix} \\sin\\theta & -\\cos\\theta \\\\ \\cos\\theta & \\sin\\theta \\end{bmatrix}$",
+            "solution": [
+              "अदिश गुणन करने पर:",
+              "$\\begin{bmatrix} \\cos^2\\theta & \\cos\\theta\\sin\\theta \\\\ -\\sin\\theta\\cos\\theta & \\cos^2\\theta \\end{bmatrix} + \\begin{bmatrix} \\sin^2\\theta & -\\sin\\theta\\cos\\theta \\\\ \\sin\\theta\\cos\\theta & \\sin^2\\theta \\end{bmatrix}$।",
+              "संगत अवयव जोड़ने पर:",
+              "$\\begin{bmatrix} \\cos^2\\theta+\\sin^2\\theta & \\cos\\theta\\sin\\theta-\\sin\\theta\\cos\\theta \\\\ -\\sin\\theta\\cos\\theta+\\sin\\theta\\cos\\theta & \\cos^2\\theta+\\sin^2\\theta \\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} = I$।",
+              "उत्तर: $\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि $2\\begin{bmatrix} 1 & 3 \\\\ 0 & x \\end{bmatrix} + \\begin{bmatrix} y & 0 \\\\ 1 & 2 \\end{bmatrix} = \\begin{bmatrix} 5 & 6 \\\\ 1 & 8 \\end{bmatrix}$ हो, तो x और y ज्ञात कीजिए।",
+            "solution": [
+              "$\\begin{bmatrix} 2 & 6 \\\\ 0 & 2x \\end{bmatrix} + \\begin{bmatrix} y & 0 \\\\ 1 & 2 \\end{bmatrix} = \\begin{bmatrix} 2+y & 6 \\\\ 1 & 2x+2 \\end{bmatrix}$।",
+              "बराबर रखने पर: $\\begin{bmatrix} 2+y & 6 \\\\ 1 & 2x+2 \\end{bmatrix} = \\begin{bmatrix} 5 & 6 \\\\ 1 & 8 \\end{bmatrix}$।",
+              "$2 + y = 5 \\implies y = 3$।",
+              "$2x + 2 = 8 \\implies 2x = 6 \\implies x = 3$।",
+              "उत्तर: $x = 3, y = 3$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि $A = \\text{diag}[1, -2, 3]$ हो, तो $3A$ ज्ञात कीजिए।",
+            "solution": [
+              "$A = \\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & -2 & 0 \\\\ 0 & 0 & 3 \\end{bmatrix}$।",
+              "$3A = 3\\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & -2 & 0 \\\\ 0 & 0 & 3 \\end{bmatrix} = \\begin{bmatrix} 3 & 0 & 0 \\\\ 0 & -6 & 0 \\\\ 0 & 0 & 9 \\end{bmatrix} = \\text{diag}[3, -6, 9]$।",
+              "उत्तर: $\\text{diag}[3, -6, 9]$"
+            ],
+            "source": "AI"
+          }
+        ]
+      },
+      {
+        "name": "आव्यूह गुणन (Matrix Multiplication: पंक्ति × स्तम्भ नियम)",
+        "formula": "$$c_{ik} = \\sum_{j=1}^{n} a_{ij}b_{jk}$$",
+        "meaning": "यदि आव्यूह A की कोटि m × n तथा B की कोटि n × p हो, तो गुणनफल AB परिभाषित होता है और इसकी कोटि m × p होती है। AB का (i, k)-वाँ अवयव A की i-वीं पंक्ति के अवयवों तथा B के k-वें स्तम्भ के संगत अवयवों के गुणनफल के योग के बराबर होता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "यदि $A = \\begin{bmatrix} 2 & 4 \\\\ 3 & 2 \\end{bmatrix}$ तथा $B = \\begin{bmatrix} 1 & 3 \\\\ -2 & 5 \\end{bmatrix}$ हों, तो गुणनफल AB ज्ञात कीजिए।",
+            "solution": [
+              "A की कोटि = $2 \\times 2$ तथा B की कोटि = $2 \\times 2$।",
+              "A के स्तम्भों की संख्या (2) = B की पंक्तियों की संख्या (2), अतः गुणनफल AB परिभाषित है तथा इसकी कोटि $2 \\times 2$ होगी।",
+              "पंक्ति × स्तम्भ नियम लगाने पर: $AB = \\begin{bmatrix} (2)(1) + (4)(-2) & (2)(3) + (4)(5) \\\\ (3)(1) + (2)(-2) & (3)(3) + (2)(5) \\end{bmatrix}$।",
+              "गणना करने पर: $\\begin{bmatrix} 2 - 8 & 6 + 20 \\\\ 3 - 4 & 9 + 10 \\end{bmatrix} = \\begin{bmatrix} -6 & 26 \\\\ -1 & 19 \\end{bmatrix}$।",
+              "उत्तर: $\\begin{bmatrix} -6 & 26 \\\\ -1 & 19 \\end{bmatrix}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "गुणनफल परिकलित कीजिए: $\\begin{bmatrix} 1 \\\\ 2 \\\\ 3 \\end{bmatrix} \\begin{bmatrix} 2 & 3 & 4 \\end{bmatrix}$",
+            "solution": [
+              "प्रथम आव्यूह की कोटि = $3 \\times 1$ तथा द्वितीय आव्यूह की कोटि = $1 \\times 3$।",
+              "चूँकि प्रथम के स्तम्भ (1) = द्वितीय की पंक्तियाँ (1), अतः गुणनफल की कोटि $3 \\times 3$ होगी।",
+              "प्रत्येक पंक्ति का प्रत्येक स्तम्भ से गुणन: $\\begin{bmatrix} (1)(2) & (1)(3) & (1)(4) \\\\ (2)(2) & (2)(3) & (2)(4) \\\\ (3)(2) & (3)(3) & (3)(4) \\end{bmatrix}$।",
+              "सरल करने पर: $\\begin{bmatrix} 2 & 3 & 4 \\\\ 4 & 6 & 8 \\\\ 6 & 9 & 12 \\end{bmatrix}$।",
+              "उत्तर: $\\begin{bmatrix} 2 & 3 & 4 \\\\ 4 & 6 & 8 \\\\ 6 & 9 & 12 \\end{bmatrix}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "मान ज्ञात कीजिए: $\\begin{bmatrix} a & b \\\\ -b & a \\end{bmatrix} \\begin{bmatrix} a & -b \\\\ b & a \\end{bmatrix}$",
+            "solution": [
+              "पंक्ति × स्तम्भ नियम लागू करने पर:",
+              "$\\begin{bmatrix} (a)(a) + (b)(b) & (a)(-b) + (b)(a) \\\\ (-b)(a) + (a)(b) & (-b)(-b) + (a)(a) \\end{bmatrix}$।",
+              "सरल करने पर: $\\begin{bmatrix} a^2 + b^2 & -ab + ab \\\\ -ab + ab & b^2 + a^2 \\end{bmatrix} = \\begin{bmatrix} a^2 + b^2 & 0 \\\\ 0 & a^2 + b^2 \\end{bmatrix}$।",
+              "उत्तर: $\\begin{bmatrix} a^2 + b^2 & 0 \\\\ 0 & a^2 + b^2 \\end{bmatrix}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "दर्शाइए कि आव्यूह गुणन सामान्यतः क्रम-विनिमेय नहीं होता, यदि $A = \\begin{bmatrix} 5 & -1 \\\\ 6 & 7 \\end{bmatrix}$ तथा $B = \\begin{bmatrix} 2 & 1 \\\\ 3 & 4 \\end{bmatrix}$ हों।",
+            "solution": [
+              "$AB = \\begin{bmatrix} 5 & -1 \\\\ 6 & 7 \\end{bmatrix} \\begin{bmatrix} 2 & 1 \\\\ 3 & 4 \\end{bmatrix} = \\begin{bmatrix} 10 - 3 & 5 - 4 \\\\ 12 + 21 & 6 + 28 \\end{bmatrix} = \\begin{bmatrix} 7 & 1 \\\\ 33 & 34 \\end{bmatrix}$।",
+              "$BA = \\begin{bmatrix} 2 & 1 \\\\ 3 & 4 \\end{bmatrix} \\begin{bmatrix} 5 & -1 \\\\ 6 & 7 \\end{bmatrix} = \\begin{bmatrix} 10 + 6 & -2 + 7 \\\\ 15 + 24 & -3 + 28 \\end{bmatrix} = \\begin{bmatrix} 16 & 5 \\\\ 39 & 25 \\end{bmatrix}$।",
+              "चूँकि $AB \\neq BA$, अतः आव्यूह गुणन क्रम-विनिमेय नियम का पालन नहीं करता।",
+              "उत्तर: $AB \\neq BA$ (सत्यापित)"
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "आव्यूह बहुपद एवं समीकरण (Matrix Polynomial Equations)",
+        "formula": "$$f(A) = a_n A^n + a_{n-1} A^{n-1} + \\dots + a_1 A + a_0 I = O$$",
+        "meaning": "आव्यूह समीकरणों में अचर पद $a_0$ के साथ उसी कोटि का तत्समक आव्यूह $I$ गुणा किया जाता है। आव्यूह की घातों हेतु $A^2 = A \\cdot A$ तथा $A^3 = A^2 \\cdot A$ का प्रयोग करते हैं।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "यदि $A = \\begin{bmatrix} 3 & 1 \\\\ -1 & 2 \\end{bmatrix}$ हो, तो सिद्ध कीजिए कि $A^2 - 5A + 7I = O$ है।",
+            "solution": [
+              "$A^2 = A \\cdot A = \\begin{bmatrix} 3 & 1 \\\\ -1 & 2 \\end{bmatrix} \\begin{bmatrix} 3 & 1 \\\\ -1 & 2 \\end{bmatrix} = \\begin{bmatrix} 9 - 1 & 3 + 2 \\\\ -3 - 2 & -1 + 4 \\end{bmatrix} = \\begin{bmatrix} 8 & 5 \\\\ -5 & 3 \\end{bmatrix}$।",
+              "$5A = 5\\begin{bmatrix} 3 & 1 \\\\ -1 & 2 \\end{bmatrix} = \\begin{bmatrix} 15 & 5 \\\\ -5 & 10 \\end{bmatrix}$ तथा $7I = 7\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 7 & 0 \\\\ 0 & 7 \\end{bmatrix}$।",
+              "LHS में मान रखने पर: $\\begin{bmatrix} 8 & 5 \\\\ -5 & 3 \\end{bmatrix} - \\begin{bmatrix} 15 & 5 \\\\ -5 & 10 \\end{bmatrix} + \\begin{bmatrix} 7 & 0 \\\\ 0 & 7 \\end{bmatrix}$।",
+              "संगत अवयव जोड़ने/घटाने पर: $\\begin{bmatrix} 8 - 15 + 7 & 5 - 5 + 0 \\\\ -5 - (-5) + 0 & 3 - 10 + 7 \\end{bmatrix} = \\begin{bmatrix} 0 & 0 \\\\ 0 & 0 \\end{bmatrix} = O$।",
+              "उत्तर: $O$ (सिद्ध हुआ)"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि $A = \\begin{bmatrix} 3 & -2 \\\\ 4 & -2 \\end{bmatrix}$ तथा $I = \\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix}$ एवं $A^2 = kA - 2I$ हो, तो $k$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "$A^2 = \\begin{bmatrix} 3 & -2 \\\\ 4 & -2 \\end{bmatrix} \\begin{bmatrix} 3 & -2 \\\\ 4 & -2 \\end{bmatrix} = \\begin{bmatrix} 9 - 8 & -6 + 4 \\\\ 12 - 8 & -8 + 4 \\end{bmatrix} = \\begin{bmatrix} 1 & -2 \\\\ 4 & -4 \\end{bmatrix}$।",
+              "RHS = $kA - 2I = \\begin{bmatrix} 3k & -2k \\\\ 4k & -2k \\end{bmatrix} - \\begin{bmatrix} 2 & 0 \\\\ 0 & 2 \\end{bmatrix} = \\begin{bmatrix} 3k - 2 & -2k \\\\ 4k & -2k - 2 \\end{bmatrix}$।",
+              "समीकरण $A^2 = kA - 2I$ के अनुसार: $\\begin{bmatrix} 1 & -2 \\\\ 4 & -4 \\end{bmatrix} = \\begin{bmatrix} 3k - 2 & -2k \\\\ 4k & -2k - 2 \\end{bmatrix}$।",
+              "संगत अवयवों की तुलना से: $4k = 4 \\implies k = 1$ (अथवा $3k - 2 = 1 \\implies 3k = 3 \\implies k = 1$)।",
+              "उत्तर: $k = 1$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि $F(x) = \\begin{bmatrix} \\cos x & -\\sin x & 0 \\\\ \\sin x & \\cos x & 0 \\\\ 0 & 0 & 1 \\end{bmatrix}$ हो, तो सिद्ध कीजिए कि $F(x)F(y) = F(x+y)$ है।",
+            "solution": [
+              "$F(y) = \\begin{bmatrix} \\cos y & -\\sin y & 0 \\\\ \\sin y & \\cos y & 0 \\\\ 0 & 0 & 1 \\end{bmatrix}$।",
+              "$F(x)F(y)$ का गुणनफल: $\\begin{bmatrix} \\cos x\\cos y - \\sin x\\sin y & -\\cos x\\sin y - \\sin x\\cos y & 0 \\\\ \\sin x\\cos y + \\cos x\\sin y & -\\sin x\\sin y + \\cos x\\cos y & 0 \\\\ 0 & 0 & 1 \\end{bmatrix}$।",
+              "त्रिकोणमितीय सूत्रों के प्रयोग से: $\\cos(x+y) = \\cos x\\cos y - \\sin x\\sin y$ तथा $\\sin(x+y) = \\sin x\\cos y + \\cos x\\sin y$।",
+              "अतः गुणनफल = $\\begin{bmatrix} \\cos(x+y) & -\\sin(x+y) & 0 \\\\ \\sin(x+y) & \\cos(x+y) & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} = F(x+y)$।",
+              "उत्तर: $F(x+y)$ (सिद्ध हुआ)"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि $A = \\begin{bmatrix} 2 & 0 & 1 \\\\ 2 & 1 & 3 \\\\ 1 & -1 & 0 \\end{bmatrix}$ हो, तो $A^2 - 5A + 6I$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "$A^2 = A \\cdot A = \\begin{bmatrix} 2 & 0 & 1 \\\\ 2 & 1 & 3 \\\\ 1 & -1 & 0 \\end{bmatrix} \\begin{bmatrix} 2 & 0 & 1 \\\\ 2 & 1 & 3 \\\\ 1 & -1 & 0 \\end{bmatrix} = \\begin{bmatrix} 5 & -1 & 2 \\\\ 9 & -2 & 5 \\\\ 0 & -1 & -2 \\end{bmatrix}$।",
+              "$5A = \\begin{bmatrix} 10 & 0 & 5 \\\\ 10 & 5 & 15 \\\\ 5 & -5 & 0 \\end{bmatrix}$ तथा $6I = \\begin{bmatrix} 6 & 0 & 0 \\\\ 0 & 6 & 0 \\\\ 0 & 0 & 6 \\end{bmatrix}$।",
+              "व्यंजक: $A^2 - 5A + 6I = \\begin{bmatrix} 5-10+6 & -1-0+0 & 2-5+0 \\\\ 9-10+0 & -2-5+6 & 5-15+0 \\\\ 0-5+0 & -1-(-5)+0 & -2-0+6 \\end{bmatrix}$।",
+              "सरल करने पर: $\\begin{bmatrix} 1 & -1 & -3 \\\\ -1 & -1 & -10 \\\\ -5 & 4 & 4 \\end{bmatrix}$।",
+              "उत्तर: $\\begin{bmatrix} 1 & -1 & -3 \\\\ -1 & -1 & -10 \\\\ -5 & 4 & 4 \\end{bmatrix}$"
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "आव्यूह का परिवर्त एवं रिवर्सल नियम",
+        "formula": "$$(AB)' = B'A'$$",
+        "meaning": "दो आव्यूहों के गुणनफल का परिवर्त उनके परिवर्तों के विपरीत क्रम में गुणनफल के बराबर होता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "यदि $A = \\begin{bmatrix} 1 \\\\ -4 \\\\ 3 \\end{bmatrix}$ तथा $B = \\begin{bmatrix} -1 & 2 & 1 \\end{bmatrix}$ हों, तो सत्यापित कीजिए कि $(AB)' = B'A'$ है।",
+            "solution": [
+              "$AB = \\begin{bmatrix} 1 \\\\ -4 \\\\ 3 \\end{bmatrix} \\begin{bmatrix} -1 & 2 & 1 \\end{bmatrix} = \\begin{bmatrix} -1 & 2 & 1 \\\\ 4 & -8 & -4 \\\\ -3 & 6 & 3 \\end{bmatrix}$।",
+              "LHS = $(AB)' = \\begin{bmatrix} -1 & 4 & -3 \\\\ 2 & -8 & 6 \\\\ 1 & -4 & 3 \\end{bmatrix}$।",
+              "$B' = \\begin{bmatrix} -1 \\\\ 2 \\\\ 1 \\end{bmatrix}$ तथा $A' = \\begin{bmatrix} 1 & -4 & 3 \\end{bmatrix}$।",
+              "RHS = $B'A' = \\begin{bmatrix} -1 \\\\ 2 \\\\ 1 \\end{bmatrix} \\begin{bmatrix} 1 & -4 & 3 \\end{bmatrix} = \\begin{bmatrix} -1 & 4 & -3 \\\\ 2 & -8 & 6 \\\\ 1 & -4 & 3 \\end{bmatrix}$।",
+              "अतः $(AB)' = B'A'$ सिद्ध हुआ।",
+              "उत्तर: $(AB)' = B'A'$ (सत्यापित)"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि $A' = \\begin{bmatrix} -2 & 3 \\\\ 1 & 2 \\end{bmatrix}$ तथा $B = \\begin{bmatrix} -1 & 0 \\\\ 1 & 2 \\end{bmatrix}$ हों, तो $(A + 2B)'$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चूँकि $(A')' = A$, अतः $A = \\begin{bmatrix} -2 & 1 \\\\ 3 & 2 \\end{bmatrix}$।",
+              "$2B = 2\\begin{bmatrix} -1 & 0 \\\\ 1 & 2 \\end{bmatrix} = \\begin{bmatrix} -2 & 0 \\\\ 2 & 4 \\end{bmatrix}$।",
+              "$A + 2B = \\begin{bmatrix} -2-2 & 1+0 \\\\ 3+2 & 2+4 \\end{bmatrix} = \\begin{bmatrix} -4 & 1 \\\\ 5 & 6 \\end{bmatrix}$।",
+              "परिवर्त लेने पर: $(A + 2B)' = \\begin{bmatrix} -4 & 5 \\\\ 1 & 6 \\end{bmatrix}$।",
+              "उत्तर: $\\begin{bmatrix} -4 & 5 \\\\ 1 & 6 \\end{bmatrix}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि $A = \\begin{bmatrix} \\cos\\alpha & \\sin\\alpha \\\\ -\\sin\\alpha & \\cos\\alpha \\end{bmatrix}$ हो, तो सत्यापित कीजिए कि $A'A = I$ है।",
+            "solution": [
+              "$A' = \\begin{bmatrix} \\cos\\alpha & -\\sin\\alpha \\\\ \\sin\\alpha & \\cos\\alpha \\end{bmatrix}$।",
+              "$A'A = \\begin{bmatrix} \\cos\\alpha & -\\sin\\alpha \\\\ \\sin\\alpha & \\cos\\alpha \\end{bmatrix} \\begin{bmatrix} \\cos\\alpha & \\sin\\alpha \\\\ -\\sin\\alpha & \\cos\\alpha \\end{bmatrix}$।",
+              "गुणनफल: $\\begin{bmatrix} \\cos^2\\alpha + \\sin^2\\alpha & \\cos\\alpha\\sin\\alpha - \\sin\\alpha\\cos\\alpha \\\\ \\sin\\alpha\\cos\\alpha - \\cos\\alpha\\sin\\alpha & \\sin^2\\alpha + \\cos^2\\alpha \\end{bmatrix}$।",
+              "सरल करने पर: $\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} = I$।",
+              "उत्तर: $I$ (सत्यापित)"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि $A$ तथा $B$ सममित आव्यूह हैं, तो सिद्ध कीजिए कि $AB - BA$ एक विषम सममित आव्यूह है।",
+            "solution": [
+              "दिया है: $A' = A$ तथा $B' = B$।",
+              "परिवर्त लेने पर: $(AB - BA)' = (AB)' - (BA)'$।",
+              "रिवर्सल नियम से: $(AB)' = B'A'$ तथा $(BA)' = A'B'$।",
+              "मान रखने पर: $B'A' - A'B' = BA - AB$।",
+              "ऋण चिह्न (-) उभयनिष्ठ लेने पर: $-(AB - BA)$।",
+              "अतः $(AB - BA)' = -(AB - BA)$, जो सिद्ध करता है कि $AB - BA$ विषम सममित है।",
+              "उत्तर: विषम सममित आव्यूह (सिद्ध हुआ)"
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "सममित एवं विषम सममित आव्यूह के योगफल रूप में निरूपण",
+        "formula": "$$A = \\frac{1}{2}(A + A') + \\frac{1}{2}(A - A')$$",
+        "meaning": "प्रत्येक वर्ग आव्यूह को एक सममित आव्यूह P और एक विषम सममित आव्यूह Q के अद्वितीय योगफल के रूप में लिखा जा सकता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "आव्यूह $A = \\begin{bmatrix} 3 & 5 \\\\ 1 & -1 \\end{bmatrix}$ को एक सममित तथा एक विषम सममित आव्यूह के योगफल के रूप में व्यक्त कीजिए।",
+            "solution": [
+              "$A' = \\begin{bmatrix} 3 & 1 \\\\ 5 & -1 \\end{bmatrix}$।",
+              "$A + A' = \\begin{bmatrix} 3+3 & 5+1 \\\\ 1+5 & -1-1 \\end{bmatrix} = \\begin{bmatrix} 6 & 6 \\\\ 6 & -2 \\end{bmatrix} \\implies P = \\frac{1}{2}(A+A') = \\begin{bmatrix} 3 & 3 \\\\ 3 & -1 \\end{bmatrix}$।",
+              "यहाँ $P' = \\begin{bmatrix} 3 & 3 \\\\ 3 & -1 \\end{bmatrix} = P$, अतः P एक सममित आव्यूह है।",
+              "$A - A' = \\begin{bmatrix} 3-3 & 5-1 \\\\ 1-5 & -1-(-1) \\end{bmatrix} = \\begin{bmatrix} 0 & 4 \\\\ -4 & 0 \\end{bmatrix} \\implies Q = \\frac{1}{2}(A-A') = \\begin{bmatrix} 0 & 2 \\\\ -2 & 0 \\end{bmatrix}$।",
+              "यहाँ $Q' = \\begin{bmatrix} 0 & -2 \\\\ 2 & 0 \\end{bmatrix} = -Q$, अतः Q एक विषम सममित आव्यूह है।",
+              "योगफल: $P + Q = \\begin{bmatrix} 3 & 3 \\\\ 3 & -1 \\end{bmatrix} + \\begin{bmatrix} 0 & 2 \\\\ -2 & 0 \\end{bmatrix} = \\begin{bmatrix} 3 & 5 \\\\ 1 & -1 \\end{bmatrix} = A$।",
+              "उत्तर: $\\begin{bmatrix} 3 & 3 \\\\ 3 & -1 \\end{bmatrix} + \\begin{bmatrix} 0 & 2 \\\\ -2 & 0 \\end{bmatrix}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "आव्यूह $A = \\begin{bmatrix} 1 & 5 \\\\ 6 & 7 \\end{bmatrix}$ के लिए सत्यापित कीजिए कि $A + A'$ सममित तथा $A - A'$ विषम सममित आव्यूह है।",
+            "solution": [
+              "$A' = \\begin{bmatrix} 1 & 6 \\\\ 5 & 7 \\end{bmatrix}$।",
+              "$A + A' = \\begin{bmatrix} 2 & 11 \\\\ 11 & 14 \\end{bmatrix}$।",
+              "$(A + A')' = \\begin{bmatrix} 2 & 11 \\\\ 11 & 14 \\end{bmatrix} = A + A'$ (अतः यह सममित है)।",
+              "$A - A' = \\begin{bmatrix} 0 & -1 \\\\ 1 & 0 \\end{bmatrix}$।",
+              "$(A - A')' = \\begin{bmatrix} 0 & 1 \\\\ -1 & 0 \\end{bmatrix} = -\\begin{bmatrix} 0 & -1 \\\\ 1 & 0 \\end{bmatrix} = -(A - A')$ (अतः यह विषम सममित है)।",
+              "उत्तर: सत्यापित हुआ"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "दर्शाइए कि आव्यूह $A = \\begin{bmatrix} 0 & 1 & -1 \\\\ -1 & 0 & 1 \\\\ 1 & -1 & 0 \\end{bmatrix}$ एक विषम सममित आव्यूह है।",
+            "solution": [
+              "परिवर्त ज्ञात करने पर: $A' = \\begin{bmatrix} 0 & -1 & 1 \\\\ 1 & 0 & -1 \\\\ -1 & 1 & 0 \\end{bmatrix}$।",
+              "ऋण चिह्न (-) उभयनिष्ठ लेने पर: $A' = -\\begin{bmatrix} 0 & 1 & -1 \\\\ -1 & 0 & 1 \\\\ 1 & -1 & 0 \\end{bmatrix} = -A$।",
+              "चूँकि $A' = -A$, अतः यह एक विषम सममित आव्यूह है।",
+              "उत्तर: विषम सममित आव्यूह (प्रमाणित)"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि $A = \\begin{bmatrix} 6 & -2 & 2 \\\\ -2 & 3 & -1 \\\\ 2 & -1 & 3 \\end{bmatrix}$ हो, तो इसका विषम सममित भाग ज्ञात कीजिए।",
+            "solution": [
+              "$A' = \\begin{bmatrix} 6 & -2 & 2 \\\\ -2 & 3 & -1 \\\\ 2 & -1 & 3 \\end{bmatrix}$।",
+              "चूँकि $A' = A$, अतः $A$ स्वयं एक सममित आव्यूह है।",
+              "विषम सममित भाग: $Q = \\frac{1}{2}(A - A') = \\frac{1}{2}\\begin{bmatrix} 0 & 0 & 0 \\\\ 0 & 0 & 0 \\\\ 0 & 0 & 0 \\end{bmatrix} = O$।",
+              "उत्तर: $O$ (शून्य आव्यूह)"
+            ],
+            "source": "किताब"
+          }
+        ]
+      }
+    ],
+    "shortAnswers": [
+      {
+        "question": "आव्यूह $A = \\begin{bmatrix} 2 & 5 & 19 & -7 \\\\ 35 & -2 & 5/2 & 12 \\\\ \\sqrt{3} & 1 & -5 & 17 \\end{bmatrix}$ के लिए ज्ञात कीजिए: (i) आव्यूह की कोटि, (ii) अवयवों की संख्या, (iii) अवयव $a_{13}, a_{21}, a_{33}, a_{24}, a_{23}$। [NCERT प्रश्नावली 3.1 प्रश्न 1]",
+        "answer": [
+          "(i) आव्यूह में 3 पंक्तियाँ तथा 4 स्तम्भ हैं, अतः आव्यूह की कोटि $3 \\times 4$ है [सूत्र: कोटि = पंक्तियों की संख्या $\\times$ स्तम्भों की संख्या]।",
+          "(ii) अवयवों की कुल संख्या $= 3 \\times 4 = 12$ [सूत्र: कुल अवयव = $m \\cdot n$]।",
+          "(iii) अवयव $a_{13}$ पहली पंक्ति और तीसरे स्तम्भ का अवयव है: $a_{13} = 19$।",
+          "अवयव $a_{21}$ दूसरी पंक्ति और पहले स्तम्भ का अवयव है: $a_{21} = 35$।",
+          "अवयव $a_{33}$ तीसरी पंक्ति और तीसरे स्तम्भ का अवयव है: $a_{33} = -5$।",
+          "अवयव $a_{24}$ दूसरी पंक्ति और चौथे स्तम्भ का अवयव है: $a_{24} = 12$।",
+          "अवयव $a_{23}$ दूसरी पंक्ति और तीसरे स्तम्भ का अवयव है: $a_{23} = 5/2$।",
+          "उत्तर: कोटि = $3 \\times 4$, अवयव = $12$, $a_{13}=19, a_{21}=35, a_{33}=-5, a_{24}=12, a_{23}=5/2$"
+        ]
+      },
+      {
+        "question": "यदि किसी आव्यूह में 24 अवयव हैं तो इसकी सम्भव कोटियाँ क्या हैं? यदि इसमें 13 अवयव हों तो कोटियाँ क्या होंगी? [NCERT प्रश्नावली 3.1 प्रश्न 2]",
+        "answer": [
+          "24 अवयव होने पर: $m \\times n = 24$, जहाँ $m, n \\in \\mathbb{N}$ [सूत्र: कोटि युग्म गुणनफल = अवयवों की संख्या]।",
+          "सम्भव क्रमित युग्म: $(1, 24), (24, 1), (2, 12), (12, 2), (3, 8), (8, 3), (4, 6), (6, 4)$।",
+          "अतः 24 अवयवों की कुल सम्भव कोटियाँ = 8।",
+          "13 अवयव होने पर: 13 एक अभाज्य संख्या है, अतः इसके गुणनखंड $(1, 13)$ तथा $(13, 1)$ हैं।",
+          "अतः सम्भव कोटियाँ: $1 \\times 13$ तथा $13 \\times 1$ (कुल 2 कोटियाँ)।",
+          "उत्तर: 24 अवयव हेतु 8 कोटियाँ तथा 13 अवयव हेतु 2 कोटियाँ"
+        ]
+      },
+      {
+        "question": "यदि किसी आव्यूह में 18 अवयव हैं तो इसकी सम्भव कोटियाँ क्या हैं? यदि इसमें 5 अवयव हों तो क्या होगा? [NCERT प्रश्नावली 3.1 प्रश्न 3]",
+        "answer": [
+          "18 अवयव होने पर: $m \\times n = 18$ के धन पूर्णांक युग्म $(1, 18), (18, 1), (2, 9), (9, 2), (3, 6), (6, 3)$ हैं।",
+          "अतः सम्भव कोटियाँ: $1 \\times 18, 18 \\times 1, 2 \\times 9, 9 \\times 2, 3 \\times 6, 6 \\times 3$ (कुल 6 कोटियाँ)।",
+          "5 अवयव होने पर: 5 एक अभाज्य संख्या है, अतः इसके युग्म $(1, 5)$ तथा $(5, 1)$ हैं।",
+          "अतः सम्भव कोटियाँ: $1 \\times 5$ तथा $5 \\times 1$ (कुल 2 कोटियाँ)।",
+          "उत्तर: 18 अवयव हेतु 6 कोटियाँ तथा 5 अवयव हेतु 2 कोटियाँ"
+        ]
+      },
+      {
+        "question": "एक $2 \\times 2$ आव्यूह $A = [a_{ij}]$ की रचना कीजिए जिसके अवयव निम्नलिखित प्रकार से प्रदत्त हैं: (i) $a_{ij} = \\frac{(i+j)^2}{2}$, (ii) $a_{ij} = \\frac{i}{j}$, (iii) $a_{ij} = \\frac{(i+2j)^2}{2}$। [NCERT प्रश्नावली 3.1 प्रश्न 4]",
+        "answer": [
+          "व्यापक $2 \\times 2$ आव्यूह: $A = \\begin{bmatrix} a_{11} & a_{12} \\\\ a_{21} & a_{22} \\end{bmatrix}$।",
+          "(i) $a_{11} = \\frac{(1+1)^2}{2} = 2$, $a_{12} = \\frac{(1+2)^2}{2} = \\frac{9}{2}$, $a_{21} = \\frac{(2+1)^2}{2} = \\frac{9}{2}$, $a_{22} = \\frac{(2+2)^2}{2} = 8$।",
+          "अतः आव्यूह $A = \\begin{bmatrix} 2 & 9/2 \\\\ 9/2 & 8 \\end{bmatrix}$।",
+          "(ii) $a_{11} = 1/1 = 1$, $a_{12} = 1/2$, $a_{21} = 2/1 = 2$, $a_{22} = 2/2 = 1$।",
+          "अतः आव्यूह $A = \\begin{bmatrix} 1 & 1/2 \\\\ 2 & 1 \\end{bmatrix}$।",
+          "(iii) $a_{11} = \\frac{(1+2)^2}{2} = \\frac{9}{2}$, $a_{12} = \\frac{(1+4)^2}{2} = \\frac{25}{2}$, $a_{21} = \\frac{(2+2)^2}{2} = 8$, $a_{22} = \\frac{(2+4)^2}{2} = 18$।",
+          "अतः आव्यूह $A = \\begin{bmatrix} 9/2 & 25/2 \\\\ 8 & 18 \\end{bmatrix}$।",
+          "उत्तर: तीनों आव्यूह क्रमशः प्राप्त हुए"
+        ]
+      },
+      {
+        "question": "एक $3 \\times 4$ आव्यूह की रचना कीजिए जिसके अवयव निम्नलिखित प्रकार से प्राप्त होते हैं: (i) $a_{ij} = \\frac{1}{2}|-3i+j|$, (ii) $a_{ij} = 2i-j$। [NCERT प्रश्नावली 3.1 प्रश्न 5]",
+        "answer": [
+          "कोटि $3 \\times 4$ में $i = 1, 2, 3$ तथा $j = 1, 2, 3, 4$।",
+          "(i) पहली पंक्ति: $a_{11} = \\frac{1}{2}|-3+1| = 1$, $a_{12} = \\frac{1}{2}|-3+2| = \\frac{1}{2}$, $a_{13} = \\frac{1}{2}|-3+3| = 0$, $a_{14} = \\frac{1}{2}|-3+4| = \\frac{1}{2}$।",
+          "दूसरी पंक्ति: $a_{21} = \\frac{1}{2}|-6+1| = \\frac{5}{2}$, $a_{22} = \\frac{1}{2}|-6+2| = 2$, $a_{23} = \\frac{1}{2}|-6+3| = \\frac{3}{2}$, $a_{24} = \\frac{1}{2}|-6+4| = 1$।",
+          "तीसरी पंक्ति: $a_{31} = \\frac{1}{2}|-9+1| = 4$, $a_{32} = \\frac{1}{2}|-9+2| = \\frac{7}{2}$, $a_{33} = \\frac{1}{2}|-9+3| = 3$, $a_{34} = \\frac{1}{2}|-9+4| = \\frac{5}{2}$।",
+          "अतः $A = \\begin{bmatrix} 1 & 1/2 & 0 & 1/2 \\\\ 5/2 & 2 & 3/2 & 1 \\\\ 4 & 7/2 & 3 & 5/2 \\end{bmatrix}$।",
+          "(ii) $a_{ij} = 2i - j$ के मान रखने पर: पहली पंक्ति $[1 \\quad 0 \\quad -1 \\quad -2]$, दूसरी पंक्ति $[3 \\quad 2 \\quad 1 \\quad 0]$, तीसरी पंक्ति $[5 \\quad 4 \\quad 3 \\quad 2]$।",
+          "अतः $A = \\begin{bmatrix} 1 & 0 & -1 & -2 \\\\ 3 & 2 & 1 & 0 \\\\ 5 & 4 & 3 & 2 \\end{bmatrix}$।",
+          "उत्तर: दोनों $3 \\times 4$ आव्यूह पूर्ण रूप से रचित हुए"
+        ]
+      },
+      {
+        "question": "निम्नलिखित समीकरणों से x, y तथा z के मान ज्ञात कीजिए: (i) $\\begin{bmatrix} 4 & 3 \\\\ x & 5 \\end{bmatrix} = \\begin{bmatrix} y & z \\\\ 1 & 5 \\end{bmatrix}$, (ii) $\\begin{bmatrix} x+y & 2 \\\\ 5+z & xy \\end{bmatrix} = \\begin{bmatrix} 6 & 2 \\\\ 5 & 8 \\end{bmatrix}$, (iii) $\\begin{bmatrix} x+y+z \\\\ x+z \\\\ y+z \\end{bmatrix} = \\begin{bmatrix} 9 \\\\ 5 \\\\ 7 \\end{bmatrix}$। [NCERT प्रश्नावली 3.1 प्रश्न 6]",
+        "answer": [
+          "(i) संगत अवयवों की सीधी तुलना से: $y = 4$, $z = 3$, $x = 1$।",
+          "(ii) $5 + z = 5 \\implies z = 0$।",
+          "साथ ही $x + y = 6$ तथा $xy = 8$। द्विघात समीकरण $t^2 - 6t + 8 = 0 \\implies (t-4)(t-2) = 0$।",
+          "अतः यदि $x = 4$ तो $y = 2$; और यदि $x = 2$ तो $y = 4$।",
+          "(iii) $x + y + z = 9$ ...(1), $x + z = 5$ ...(2), $y + z = 7$ ...(3)।",
+          "समीकरण (1) में से (3) घटाने पर: $x = 9 - 7 = 2$।",
+          "समीकरण (2) में $x = 2$ रखने पर: $2 + z = 5 \\implies z = 3$।",
+          "समीकरण (3) में $z = 3$ रखने पर: $y + 3 = 7 \\implies y = 4$।",
+          "उत्तर: (i) $x=1, y=4, z=3$; (ii) $x=4, y=2, z=0$ अथवा $x=2, y=4, z=0$; (iii) $x=2, y=4, z=3$"
+        ]
+      },
+      {
+        "question": "समीकरण $\\begin{bmatrix} a-b & 2a+c \\\\ 2a-b & 3c+d \\end{bmatrix} = \\begin{bmatrix} -1 & 5 \\\\ 0 & 13 \\end{bmatrix}$ से a, b, c तथा d के मान ज्ञात कीजिए। [NCERT प्रश्नावली 3.1 प्रश्न 7]",
+        "answer": [
+          "समीकरण बनाने पर: $a - b = -1$ ...(1) तथा $2a - b = 0 \\implies b = 2a$ ...(2)।",
+          "समीकरण (2) में से (1) घटाने पर: $a = 1$।",
+          "$b$ का मान: $b = 2(1) = 2$।",
+          "$2a + c = 5 \\implies 2(1) + c = 5 \\implies c = 3$।",
+          "$3c + d = 13 \\implies 3(3) + d = 13 \\implies d = 13 - 9 = 4$।",
+          "उत्तर: $a = 1, b = 2, c = 3, d = 4$"
+        ]
+      },
+      {
+        "question": "x तथा y के प्रदत्त किन मानों के लिए आव्यूहों के युग्म समान हैं: $\\begin{bmatrix} 3x+7 & 5 \\\\ y+1 & 2-3x \\end{bmatrix}, \\begin{bmatrix} 0 & y-2 \\\\ 8 & 4 \\end{bmatrix}$? [NCERT प्रश्नावली 3.1 प्रश्न 9]",
+        "answer": [
+          "समानता की जाँच करने पर: $3x + 7 = 0 \\implies x = -7/3$।",
+          "$y - 2 = 5 \\implies y = 7$ तथा $y + 1 = 8 \\implies y = 7$ (y का मान 7 संगत है)।",
+          "चौथे अवयव से: $2 - 3x = 4 \\implies -3x = 2 \\implies x = -2/3$।",
+          "चूँकि एक ही आव्यूह के लिए x के दो भिन्न मान ($-7/3$ तथा $-2/3$) प्राप्त होते हैं जो एक साथ सम्भव नहीं हैं।",
+          "उत्तर: ज्ञात करना सम्भव नहीं है (विकल्प B)"
+        ]
+      },
+      {
+        "question": "मान लीजिए कि $A = \\begin{bmatrix} 2 & 4 \\\\ 3 & 2 \\end{bmatrix}$, $B = \\begin{bmatrix} 1 & 3 \\\\ -2 & 5 \\end{bmatrix}$, $C = \\begin{bmatrix} -2 & 5 \\\\ 3 & 4 \\end{bmatrix}$ तो निम्नलिखित ज्ञात कीजिए: (i) A + B, (ii) A - B, (iii) 3A - C, (iv) AB, (v) BA। [NCERT प्रश्नावली 3.2 प्रश्न 1]",
+        "answer": [
+          "(i) $A + B = \\begin{bmatrix} 2+1 & 4+3 \\\\ 3+(-2) & 2+5 \\end{bmatrix} = \\begin{bmatrix} 3 & 7 \\\\ 1 & 7 \\end{bmatrix}$।",
+          "(ii) $A - B = \\begin{bmatrix} 2-1 & 4-3 \\\\ 3-(-2) & 2-5 \\end{bmatrix} = \\begin{bmatrix} 1 & 1 \\\\ 5 & -3 \\end{bmatrix}$।",
+          "(iii) $3A - C = 3\\begin{bmatrix} 2 & 4 \\\\ 3 & 2 \\end{bmatrix} - \\begin{bmatrix} -2 & 5 \\\\ 3 & 4 \\end{bmatrix} = \\begin{bmatrix} 6 & 12 \\\\ 9 & 6 \\end{bmatrix} - \\begin{bmatrix} -2 & 5 \\\\ 3 & 4 \\end{bmatrix} = \\begin{bmatrix} 8 & 7 \\\\ 6 & 2 \\end{bmatrix}$।",
+          "(iv) $AB = \\begin{bmatrix} 2 & 4 \\\\ 3 & 2 \\end{bmatrix} \\begin{bmatrix} 1 & 3 \\\\ -2 & 5 \\end{bmatrix} = \\begin{bmatrix} 2-8 & 6+20 \\\\ 3-4 & 9+10 \\end{bmatrix} = \\begin{bmatrix} -6 & 26 \\\\ -1 & 19 \\end{bmatrix}$।",
+          "(v) $BA = \\begin{bmatrix} 1 & 3 \\\\ -2 & 5 \\end{bmatrix} \\begin{bmatrix} 2 & 4 \\\\ 3 & 2 \\end{bmatrix} = \\begin{bmatrix} 2+9 & 4+6 \\\\ -4+15 & -8+10 \\end{bmatrix} = \\begin{bmatrix} 11 & 10 \\\\ 11 & 2 \\end{bmatrix}$।",
+          "उत्तर: $A+B, A-B, 3A-C, AB, BA$ के मान प्राप्त हुए"
+        ]
+      },
+      {
+        "question": "निम्नलिखित को परिकलित कीजिए: (i) $\\begin{bmatrix} a & b \\\\ -b & a \\end{bmatrix} + \\begin{bmatrix} a & b \\\\ b & a \\end{bmatrix}$, (ii) $\\begin{bmatrix} a^2+b^2 & b^2+c^2 \\\\ a^2+c^2 & a^2+b^2 \\end{bmatrix} + \\begin{bmatrix} 2ab & 2bc \\\\ -2ac & -2ab \\end{bmatrix}$, (iii) $\\begin{bmatrix} -1 & 4 & -6 \\\\ 8 & 5 & 16 \\\\ 2 & 8 & 5 \\end{bmatrix} + \\begin{bmatrix} 12 & 7 & 6 \\\\ 8 & 0 & 5 \\\\ 3 & 2 & 4 \\end{bmatrix}$, (iv) $\\begin{bmatrix} \\cos^2 x & \\sin^2 x \\\\ \\sin^2 x & \\cos^2 x \\end{bmatrix} + \\begin{bmatrix} \\sin^2 x & \\cos^2 x \\\\ \\cos^2 x & \\sin^2 x \\end{bmatrix}$। [NCERT प्रश्नावली 3.2 प्रश्न 2]",
+        "answer": [
+          "(i) संगत अवयव जोड़ने पर: $\\begin{bmatrix} 2a & 2b \\\\ 0 & 2a \\end{bmatrix} = 2\\begin{bmatrix} a & b \\\\ 0 & a \\end{bmatrix}$।",
+          "(ii) $\\begin{bmatrix} a^2+b^2+2ab & b^2+c^2+2bc \\\\ a^2+c^2-2ac & a^2+b^2-2ab \\end{bmatrix} = \\begin{bmatrix} (a+b)^2 & (b+c)^2 \\\\ (a-c)^2 & (a-b)^2 \\end{bmatrix}$।",
+          "(iii) संगत अवयव जोड़ने पर: $\\begin{bmatrix} -1+12 & 4+7 & -6+6 \\\\ 8+8 & 5+0 & 16+5 \\\\ 2+3 & 8+2 & 5+4 \\end{bmatrix} = \\begin{bmatrix} 11 & 11 & 0 \\\\ 16 & 5 & 21 \\\\ 5 & 10 & 9 \\end{bmatrix}$।",
+          "(iv) त्रिकोणमितीय सर्वसमिका $\\cos^2 x + \\sin^2 x = 1$ से: $\\begin{bmatrix} 1 & 1 \\\\ 1 & 1 \\end{bmatrix}$।",
+          "उत्तर: सभी चार योगफल प्राप्त हुए"
+        ]
+      },
+      {
+        "question": "निर्देशित गुणनफल परिकलित कीजिए: (i) $\\begin{bmatrix} 1 & -2 \\\\ 2 & 3 \\end{bmatrix} \\begin{bmatrix} 1 & 2 & 3 \\\\ 2 & 3 & 1 \\end{bmatrix}$, (ii) $\\begin{bmatrix} 2 & 3 & 4 \\\\ 3 & 4 & 5 \\\\ 4 & 5 & 6 \\end{bmatrix} \\begin{bmatrix} 1 & -3 & 5 \\\\ 0 & 2 & 4 \\\\ 3 & 0 & 5 \\end{bmatrix}$, (iii) $\\begin{bmatrix} 3 & -1 & 3 \\\\ -1 & 0 & 2 \\end{bmatrix} \\begin{bmatrix} 2 & -3 \\\\ 1 & 0 \\\\ 3 & 1 \\end{bmatrix}$। [NCERT प्रश्नावली 3.2 प्रश्न 3]",
+        "answer": [
+          "(i) कोटि $(2 \\times 2) \\times (2 \\times 3) = 2 \\times 3$: $\\begin{bmatrix} 1-4 & 2-6 & 3-2 \\\\ 2+6 & 4+9 & 6+3 \\end{bmatrix} = \\begin{bmatrix} -3 & -4 & 1 \\\\ 8 & 13 & 9 \\end{bmatrix}$।",
+          "(ii) कोटि $3 \\times 3$: पहली पंक्ति $\\begin{bmatrix} 2+0+12 & -6+6+0 & 10+12+20 \\end{bmatrix} = \\begin{bmatrix} 14 & 0 & 42 \\end{bmatrix}$।",
+          "दूसरी पंक्ति $\\begin{bmatrix} 3+0+15 & -9+8+0 & 15+16+25 \\end{bmatrix} = \\begin{bmatrix} 18 & -1 & 56 \\end{bmatrix}$।",
+          "तीसरी पंक्ति $\\begin{bmatrix} 4+0+18 & -12+10+0 & 20+20+30 \\end{bmatrix} = \\begin{bmatrix} 22 & -2 & 70 \\end{bmatrix}$।",
+          "अतः गुणनफल = $\\begin{bmatrix} 14 & 0 & 42 \\\\ 18 & -1 & 56 \\\\ 22 & -2 & 70 \\end{bmatrix}$।",
+          "(iii) कोटि $(2 \\times 3) \\times (3 \\times 2) = 2 \\times 2$: $\\begin{bmatrix} 6-1+9 & -9+0+3 \\\\ -2+0+6 & 3+0+2 \\end{bmatrix} = \\begin{bmatrix} 14 & -6 \\\\ 4 & 5 \\end{bmatrix}$।",
+          "उत्तर: सभी तीनों गुणनफल पूर्ण हुए"
+        ]
+      },
+      {
+        "question": "यदि $x\\begin{bmatrix} 2 \\\\ 3 \\end{bmatrix} + y\\begin{bmatrix} -1 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} 10 \\\\ 5 \\end{bmatrix}$ है, तो $x$ तथा $y$ के मान ज्ञात कीजिए। [NCERT प्रश्नावली 3.2 प्रश्न 11]",
+        "answer": [
+          "अदिश गुणन करने पर: $\\begin{bmatrix} 2x \\\\ 3x \\end{bmatrix} + \\begin{bmatrix} -y \\\\ y \\end{bmatrix} = \\begin{bmatrix} 10 \\\\ 5 \\end{bmatrix}$।",
+          "संगत अवयवों को जोड़ने पर: $\\begin{bmatrix} 2x - y \\\\ 3x + y \\end{bmatrix} = \\begin{bmatrix} 10 \\\\ 5 \\end{bmatrix}$।",
+          "तुलना करने पर रैखिक समीकरण बनते हैं: $2x - y = 10$ ...(1) तथा $3x + y = 5$ ...(2)।",
+          "समीकरण (1) और (2) को जोड़ने पर: $(2x - y) + (3x + y) = 10 + 5 \\implies 5x = 15 \\implies x = 3$।",
+          "$x = 3$ समीकरण (1) में रखने पर: $2(3) - y = 10 \\implies 6 - y = 10 \\implies y = -4$।",
+          "उत्तर: $x = 3, y = -4$"
+        ]
+      },
+      {
+        "question": "यदि $3\\begin{bmatrix} x & y \\\\ z & w \\end{bmatrix} = \\begin{bmatrix} x & 6 \\\\ -1 & 2w \\end{bmatrix} + \\begin{bmatrix} 4 & x+y \\\\ z+w & 3 \\end{bmatrix}$ है, तो $x, y, z$ तथा $w$ के मान ज्ञात कीजिए। [NCERT प्रश्नावली 3.2 प्रश्न 12]",
+        "answer": [
+          "बाएँ पक्ष में अदिश 3 से गुणा करने पर: $\\begin{bmatrix} 3x & 3y \\\\ 3z & 3w \\end{bmatrix}$।",
+          "दाएँ पक्ष के आव्यूहों को जोड़ने पर: $\\begin{bmatrix} x+4 & 6+x+y \\\\ -1+z+w & 2w+3 \\end{bmatrix}$।",
+          "प्रथम अवयव की तुलना से: $3x = x + 4 \\implies 2x = 4 \\implies x = 2$।",
+          "द्वितीय अवयव की तुलना से: $3y = 6 + x + y \\implies 2y = 6 + 2 = 8 \\implies y = 4$।",
+          "चतुर्थ अवयव की तुलना से: $3w = 2w + 3 \\implies w = 3$।",
+          "तृतीय अवयव की तुलना से: $3z = -1 + z + w \\implies 2z = -1 + 3 = 2 \\implies z = 1$।",
+          "उत्तर: $x = 2, y = 4, z = 1, w = 3$"
+        ]
+      },
+      {
+        "question": "दर्शाइए कि: $\\begin{bmatrix} 1 & 2 & 3 \\\\ 0 & 1 & 0 \\\\ 1 & 1 & 0 \\end{bmatrix} \\begin{bmatrix} -1 & 1 & 0 \\\\ 0 & -1 & 1 \\\\ 2 & 3 & 4 \\end{bmatrix} \\neq \\begin{bmatrix} -1 & 1 & 0 \\\\ 0 & -1 & 1 \\\\ 2 & 3 & 4 \\end{bmatrix} \\begin{bmatrix} 1 & 2 & 3 \\\\ 0 & 1 & 0 \\\\ 1 & 1 & 0 \\end{bmatrix}$। [NCERT प्रश्नावली 3.2 प्रश्न 14(ii)]",
+        "answer": [
+          "LHS का गुणनफल: पहली पंक्ति = $[(-1+0+6) \\quad (1-2+9) \\quad (0+2+12)] = [5 \\quad 8 \\quad 14]$।",
+          "LHS की दूसरी पंक्ति = $[(0+0+0) \\quad (0-1+0) \\quad (0+1+0)] = [0 \\quad -1 \\quad 1]$।",
+          "LHS की तीसरी पंक्ति = $[(-1+0+0) \\quad (1-1+0) \\quad (0+1+0)] = [-1 \\quad 0 \\quad 1]$।",
+          "अतः $\\text{LHS} = \\begin{bmatrix} 5 & 8 & 14 \\\\ 0 & -1 & 1 \\\\ -1 & 0 & 1 \\end{bmatrix}$।",
+          "RHS का गुणनफल: पहली पंक्ति = $[(-1+0+0) \\quad (-2+1+0) \\quad (-3+0+0)] = [-1 \\quad -1 \\quad -3]$।",
+          "RHS की दूसरी पंक्ति = $[(0+0+1) \\quad (0-1+1) \\quad (0+0+0)] = [1 \\quad 0 \\quad 0]$।",
+          "RHS की तीसरी पंक्ति = $[(2+0+4) \\quad (4+3+4) \\quad (6+0+0)] = [6 \\quad 11 & 6]$।",
+          "अतः $\\text{RHS} = \\begin{bmatrix} -1 & -1 & -3 \\\\ 1 & 0 & 0 \\\\ 6 & 11 & 6 \\end{bmatrix}$।",
+          "चूँकि $\\text{LHS} \\neq \\text{RHS}$, अतः सिद्ध हुआ कि दोनों गुणनफल असमान हैं।",
+          "उत्तर: $\\text{LHS} \\neq \\text{RHS}$ (प्रमाणित)"
+        ]
+      },
+      {
+        "question": "मान लीजिए आव्यूह $X, Y, Z, W$ तथा $P$ की कोटियाँ क्रमशः $2 \\times n, 3 \\times k, 2 \\times p, n \\times 3$ तथा $p \\times k$ हैं। $PY + WY$ के परिभाषित होने के लिए $n, k$ तथा $p$ पर क्या प्रतिबन्ध होगा? [NCERT प्रश्नावली 3.2 प्रश्न 21]",
+        "answer": [
+          "गुणनफल $PY$ के लिए: $P$ की कोटि $p \\times k$ तथा $Y$ की कोटि $3 \\times k$ है। गुणन परिभाषित होने हेतु $P$ के स्तम्भ = $Y$ की पंक्तियाँ $\\implies k = 3$।",
+          "तब आव्यूह $PY$ की परिणामी कोटि $p \\times k = p \\times 3$ होगी।",
+          "गुणनफल $WY$ के लिए: $W$ की कोटि $n \\times 3$ तथा $Y$ की कोटि $3 \\times k$ है (यहाँ स्तम्भ और पंक्तियाँ 3 के बराबर हैं), अतः $WY$ की कोटि $n \\times k = n \\times 3$ होगी।",
+          "योगफल $PY + WY$ के परिभाषित होने हेतु दोनों की कोटियाँ समान होनी चाहिए: $p \\times 3 = n \\times 3 \\implies p = n$।",
+          "अतः आवश्यक प्रतिबन्ध: $k = 3$ तथा $p = n$।",
+          "उत्तर: $k = 3, p = n$ (विकल्प A)"
+        ]
+      },
+      {
+        "question": "यदि $n = p$ हो, तो आव्यूह $7X - 5Z$ की कोटि क्या होगी? [NCERT प्रश्नावली 3.2 प्रश्न 22]",
+        "answer": [
+          "आव्यूह $X$ की कोटि $= 2 \\times n$, अतः अदिश गुणन $7X$ की कोटि भी $2 \\times n$ होगी।",
+          "आव्यूह $Z$ की कोटि $= 2 \\times p$, अतः अदिश गुणन $5Z$ की कोटि भी $2 \\times p$ होगी।",
+          "दो आव्यूहों का घटाव तभी सम्भव होता है जब दोनों की कोटि समान हो।",
+          "दिया गया है कि $n = p$, अतः $7X - 5Z$ की कोटि $2 \\times n$ (अथवा $2 \\times p$) होगी।",
+          "विकल्पों के अनुसार सही कोटि $2 \\times n$ है।",
+          "उत्तर: $2 \\times n$ (विकल्प B)"
+        ]
+      },
+      {
+        "question": "निम्नलिखित आव्यूहों में से प्रत्येक का परिवर्त ज्ञात कीजिए: (i) $\\begin{bmatrix} 5 \\\\ 1/2 \\\\ -1 \\end{bmatrix}$, (ii) $\\begin{bmatrix} 1 & -1 \\\\ 2 & 3 \\end{bmatrix}$, (iii) $\\begin{bmatrix} -1 & 5 & 6 \\\\ \\sqrt{3} & 5 & 6 \\\\ 2 & 3 & -1 \\end{bmatrix}$। [NCERT प्रश्नावली 3.3 प्रश्न 1]",
+        "answer": [
+          "(i) माना $A = \\begin{bmatrix} 5 \\\\ 1/2 \\\\ -1 \\end{bmatrix}$ (कोटि $3 \\times 1$)।",
+          "स्तम्भ को पंक्ति में बदलने पर: $A' = \\begin{bmatrix} 5 & 1/2 & -1 \\end{bmatrix}$ (कोटि $1 \\times 3$) [सूत्र: $A = [a_{ij}]_{m \\times n} \\implies A' = [a_{ji}]_{n \\times m}$]।",
+          "(ii) माना $A = \\begin{bmatrix} 1 & -1 \\\\ 2 & 3 \\end{bmatrix}$।",
+          "पंक्तियों को स्तम्भों में बदलने पर: $A' = \\begin{bmatrix} 1 & 2 \\\\ -1 & 3 \\end{bmatrix}$।",
+          "(iii) माना $A = \\begin{bmatrix} -1 & 5 & 6 \\\\ \\sqrt{3} & 5 & 6 \\\\ 2 & 3 & -1 \\end{bmatrix}$।",
+          "परिवर्त आव्यूह: $A' = \\begin{bmatrix} -1 & \\sqrt{3} & 2 \\\\ 5 & 5 & 3 \\\\ 6 & 6 & -1 \\end{bmatrix}$।",
+          "उत्तर: (i) $[5 \\; 1/2 \\; -1]$, (ii) $\\begin{bmatrix} 1 & 2 \\\\ -1 & 3 \\end{bmatrix}$, (iii) $\\begin{bmatrix} -1 & \\sqrt{3} & 2 \\\\ 5 & 5 & 3 \\\\ 6 & 6 & -1 \\end{bmatrix}$"
+        ]
+      },
+      {
+        "question": "यदि $A' = \\begin{bmatrix} -2 & 3 \\\\ 1 & 2 \\end{bmatrix}$ तथा $B = \\begin{bmatrix} -1 & 0 \\\\ 1 & 2 \\end{bmatrix}$ हैं, तो $(A + 2B)'$ ज्ञात कीजिए। [NCERT प्रश्नावली 3.3 प्रश्न 4]",
+        "answer": [
+          "गुणधर्म $(A')' = A$ का प्रयोग करने पर: $A = \\begin{bmatrix} -2 & 1 \\\\ 3 & 2 \\end{bmatrix}$।",
+          "आव्यूह $B$ का अदिश 2 से गुणन: $2B = 2\\begin{bmatrix} -1 & 0 \\\\ 1 & 2 \\end{bmatrix} = \\begin{bmatrix} -2 & 0 \\\\ 2 & 4 \\end{bmatrix}$।",
+          "योगफल की गणना: $A + 2B = \\begin{bmatrix} -2+(-2) & 1+0 \\\\ 3+2 & 2+4 \\end{bmatrix} = \\begin{bmatrix} -4 & 1 \\\\ 5 & 6 \\end{bmatrix}$।",
+          "परिवर्त लेने पर: $(A + 2B)' = \\begin{bmatrix} -4 & 5 \\\\ 1 & 6 \\end{bmatrix}$।",
+          "उत्तर: $\\begin{bmatrix} -4 & 5 \\\\ 1 & 6 \\end{bmatrix}$"
+        ]
+      },
+      {
+        "question": "यदि $A = \\begin{bmatrix} \\cos\\alpha & \\sin\\alpha \\\\ -\\sin\\alpha & \\cos\\alpha \\end{bmatrix}$ हो, तो सत्यापित कीजिए कि $A'A = I$ है। [NCERT प्रश्नावली 3.3 प्रश्न 6(i)]",
+        "answer": [
+          "आव्यूह $A$ का परिवर्त: $A' = \\begin{bmatrix} \\cos\\alpha & -\\sin\\alpha \\\\ \\sin\\alpha & \\cos\\alpha \\end{bmatrix}$।",
+          "गुणनफल $A'A$ पंक्ति $\\times$ स्तम्भ नियम से:",
+          "$A'A = \\begin{bmatrix} \\cos\\alpha & -\\sin\\alpha \\\\ \\sin\\alpha & \\cos\\alpha \\end{bmatrix} \\begin{bmatrix} \\cos\\alpha & \\sin\\alpha \\\\ -\\sin\\alpha & \\cos\\alpha \\end{bmatrix}$।",
+          "$= \\begin{bmatrix} \\cos^2\\alpha + \\sin^2\\alpha & \\cos\\alpha\\sin\\alpha - \\sin\\alpha\\cos\\alpha \\\\ \\sin\\alpha\\cos\\alpha - \\cos\\alpha\\sin\\alpha & \\sin^2\\alpha + \\cos^2\\alpha \\end{bmatrix}$।",
+          "त्रिकोणमितीय सर्वसमिका $\\cos^2\\alpha + \\sin^2\\alpha = 1$ लागू करने पर: $A'A = \\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} = I$।",
+          "उत्तर: $I$ (सत्यापित)"
+        ]
+      },
+      {
+        "question": "यदि $A = \\begin{bmatrix} \\sin\\alpha & \\cos\\alpha \\\\ -\\cos\\alpha & \\sin\\alpha \\end{bmatrix}$ हो, तो सत्यापित कीजिए कि $A'A = I$ है। [NCERT प्रश्नावली 3.3 प्रश्न 6(ii)]",
+        "answer": [
+          "आव्यूह का परिवर्त: $A' = \\begin{bmatrix} \\sin\\alpha & -\\cos\\alpha \\\\ \\cos\\alpha & \\sin\\alpha \\end{bmatrix}$।",
+          "गुणनफल: $A'A = \\begin{bmatrix} \\sin\\alpha & -\\cos\\alpha \\\\ \\cos\\alpha & \\sin\\alpha \\end{bmatrix} \\begin{bmatrix} \\sin\\alpha & \\cos\\alpha \\\\ -\\cos\\alpha & \\sin\\alpha \\end{bmatrix}$।",
+          "$= \\begin{bmatrix} \\sin^2\\alpha + \\cos^2\\alpha & \\sin\\alpha\\cos\\alpha - \\cos\\alpha\\sin\\alpha \\\\ \\cos\\alpha\\sin\\alpha - \\sin\\alpha\\cos\\alpha & \\cos^2\\alpha + \\sin^2\\alpha \\end{bmatrix}$।",
+          "सर्वसमिका से: $A'A = \\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} = I$।",
+          "उत्तर: $I$ (सत्यापित)"
+        ]
+      },
+      {
+        "question": "सिद्ध कीजिए कि आव्यूह $A = \\begin{bmatrix} 1 & -1 & 5 \\\\ -1 & 2 & 1 \\\\ 5 & 1 & 3 \\end{bmatrix}$ एक सममित आव्यूह है। [NCERT प्रश्नावली 3.3 प्रश्न 7(i)]",
+        "answer": [
+          "आव्यूह $A$ की पंक्तियों को स्तम्भों में बदलने पर परिवर्त आव्यूह $A'$ प्राप्त करते हैं:",
+          "$A' = \\begin{bmatrix} 1 & -1 & 5 \\\\ -1 & 2 & 1 \\\\ 5 & 1 & 3 \\end{bmatrix}$।",
+          "हम देखते हैं कि $A' = A$ है [सूत्र: यदि $A' = A$ हो तो आव्यूह सममित होता है]।",
+          "अतः आव्यूह $A$ एक सममित आव्यूह है।",
+          "उत्तर: सममित आव्यूह (सिद्ध हुआ)"
+        ]
+      },
+      {
+        "question": "सिद्ध कीजिए कि आव्यूह $A = \\begin{bmatrix} 0 & 1 & -1 \\\\ -1 & 0 & 1 \\\\ 1 & -1 & 0 \\end{bmatrix}$ एक विषम सममित आव्यूह है। [NCERT प्रश्नावली 3.3 प्रश्न 7(ii)]",
+        "answer": [
+          "परिवर्त आव्यूह की गणना करने पर: $A' = \\begin{bmatrix} 0 & -1 & 1 \\\\ 1 & 0 & -1 \\\\ -1 & 1 & 0 \\end{bmatrix}$।",
+          "प्रत्येक अवयव से $-1$ उभयनिष्ठ (common) लेने पर:",
+          "$A' = -\\begin{bmatrix} 0 & 1 & -1 \\\\ -1 & 0 & 1 \\\\ 1 & -1 & 0 \\end{bmatrix} = -A$।",
+          "चूँकि $A' = -A$, अतः आव्यूह $A$ एक विषम सममित आव्यूह है [सूत्र: $A' = -A \\implies$ विषम सममित]।",
+          "उत्तर: विषम सममित आव्यूह (सिद्ध हुआ)"
+        ]
+      },
+      {
+        "question": "आव्यूह $A = \\begin{bmatrix} 1 & 5 \\\\ 6 & 7 \\end{bmatrix}$ के लिए सत्यापित कीजिए कि: (i) $(A + A')$ एक सममित आव्यूह है, (ii) $(A - A')$ एक विषम सममित आव्यूह है। [NCERT प्रश्नावली 3.3 प्रश्न 8]",
+        "answer": [
+          "$A' = \\begin{bmatrix} 1 & 6 \\\\ 5 & 7 \\end{bmatrix}$।",
+          "(i) $A + A' = \\begin{bmatrix} 1+1 & 5+6 \\\\ 6+5 & 7+7 \\end{bmatrix} = \\begin{bmatrix} 2 & 11 \\\\ 11 & 14 \\end{bmatrix}$।",
+          "परिवर्त लेने पर: $(A + A')' = \\begin{bmatrix} 2 & 11 \\\\ 11 & 14 \\end{bmatrix} = A + A'$।",
+          "अतः $(A + A')$ एक सममित आव्यूह है।",
+          "(ii) $A - A' = \\begin{bmatrix} 1-1 & 5-6 \\\\ 6-5 & 7-7 \\end{bmatrix} = \\begin{bmatrix} 0 & -1 \\\\ 1 & 0 \\end{bmatrix}$।",
+          "परिवर्त लेने पर: $(A - A')' = \\begin{bmatrix} 0 & 1 \\\\ -1 & 0 \\end{bmatrix} = -\\begin{bmatrix} 0 & -1 \\\\ 1 & 0 \\end{bmatrix} = -(A - A')$।",
+          "अतः $(A - A')$ एक विषम सममित आव्यूह है।",
+          "उत्तर: दोनों भाग सत्यापित हुए"
+        ]
+      },
+      {
+        "question": "यदि $A = \\begin{bmatrix} 0 & a & b \\\\ -a & 0 & c \\\\ -b & -c & 0 \\end{bmatrix}$ तो $\\frac{1}{2}(A + A')$ तथा $\\frac{1}{2}(A - A')$ ज्ञात कीजिए। [NCERT प्रश्नावली 3.3 प्रश्न 9]",
+        "answer": [
+          "परिवर्त आव्यूह: $A' = \\begin{bmatrix} 0 & -a & -b \\\\ a & 0 & -c \\\\ b & c & 0 \\end{bmatrix}$।",
+          "$A + A' = \\begin{bmatrix} 0+0 & a-a & b-b \\\\ -a+a & 0+0 & c-c \\\\ -b+b & -c+c & 0+0 \\end{bmatrix} = \\begin{bmatrix} 0 & 0 & 0 \\\\ 0 & 0 & 0 \\\\ 0 & 0 & 0 \\end{bmatrix} = O$।",
+          "अतः $\\frac{1}{2}(A + A') = O$ (शून्य आव्यूह)।",
+          "$A - A' = \\begin{bmatrix} 0 & 2a & 2b \\\\ -2a & 0 & 2c \\\\ -2b & -2c & 0 \\end{bmatrix} = 2A$।",
+          "अतः $\\frac{1}{2}(A - A') = \\frac{1}{2}(2A) = A = \\begin{bmatrix} 0 & a & b \\\\ -a & 0 & c \\\\ -b & -c & 0 \\end{bmatrix}$।",
+          "उत्तर: $\\frac{1}{2}(A + A') = O$ तथा $\\frac{1}{2}(A - A') = A$"
+        ]
+      },
+      {
+        "question": "यदि $A$ तथा $B$ समान कोटि के सममित आव्यूह हैं तो $AB - BA$ एक: (A) विषम सममित आव्यूह है, (B) सममित आव्यूह है, (C) शून्य आव्यूह है, (D) तत्समक आव्यूह है। [NCERT प्रश्नावली 3.3 प्रश्न 11]",
+        "answer": [
+          "दिया है कि $A$ और $B$ सममित हैं, अतः $A' = A$ तथा $B' = B$।",
+          "व्यंजक का परिवर्त लेने पर: $(AB - BA)' = (AB)' - (BA)'$ [सूत्र: $(X - Y)' = X' - Y'$]।",
+          "उत्क्रमणीय नियम से: $(AB)' = B'A'$ तथा $(BA)' = A'B'$।",
+          "मान रखने पर: $B'A' - A'B' = BA - AB$।",
+          "ऋण चिह्न (-) उभयनिष्ठ लेने पर: $-(AB - BA)$।",
+          "चूँकि $(AB - BA)' = -(AB - BA)$, अतः $AB - BA$ एक विषम सममित आव्यूह है।",
+          "उत्तर: विषम सममित आव्यूह (विकल्प A)"
+        ]
+      },
+      {
+        "question": "यदि $A = \\begin{bmatrix} \\cos\\alpha & -\\sin\\alpha \\\\ \\sin\\alpha & \\cos\\alpha \\end{bmatrix}$ तथा $A + A' = I$, तो $\\alpha$ का मान है: (A) $\\pi/6$, (B) $\\pi/3$, (C) $\\pi$, (D) $3\\pi/2$। [NCERT प्रश्नावली 3.3 प्रश्न 12]",
+        "answer": [
+          "$A' = \\begin{bmatrix} \\cos\\alpha & \\sin\\alpha \\\\ -\\sin\\alpha & \\cos\\alpha \\end{bmatrix}$।",
+          "$A + A' = \\begin{bmatrix} 2\\cos\\alpha & 0 \\\\ 0 & 2\\cos\\alpha \\end{bmatrix}$।",
+          "समीकरण $A + A' = I$ के अनुसार: $\\begin{bmatrix} 2\\cos\\alpha & 0 \\\\ 0 & 2\\cos\\alpha \\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix}$।",
+          "संगत अवयवों की तुलना करने पर: $2\\cos\\alpha = 1 \\implies \\cos\\alpha = 1/2$।",
+          "चूँकि $\\cos(\\pi/3) = 1/2$, अतः $\\alpha = \\pi/3$।",
+          "उत्तर: $\\pi/3$ (विकल्प B)"
+        ]
+      },
+      {
+        "question": "प्रारंभिक रूपांतरण के प्रयोग से आव्यूह $\\begin{bmatrix} 1 & -1 \\\\ 2 & 3 \\end{bmatrix}$ का व्युत्क्रम ज्ञात कीजिए। [NCERT प्रश्नावली 3.4 प्रश्न 1]",
+        "answer": [
+          "माना $A = \\begin{bmatrix} 1 & -1 \\\\ 2 & 3 \\end{bmatrix}$।",
+          "प्रारंभिक पंक्ति रूपांतरण हेतु सूत्र $A = IA$ लिखने पर [सूत्र: $A = IA$]: $\\begin{bmatrix} 1 & -1 \\\\ 2 & 3 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} A$।",
+          "संक्रिया $R_2 \\rightarrow R_2 - 2R_1$ लगाने पर: $\\begin{bmatrix} 1 & -1 \\\\ 0 & 5 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\ -2 & 1 \\end{bmatrix} A$।",
+          "संक्रिया $R_2 \\rightarrow \\frac{1}{5}R_2$ लगाने पर: $\\begin{bmatrix} 1 & -1 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\ -2/5 & 1/5 \\end{bmatrix} A$।",
+          "संक्रिया $R_1 \\rightarrow R_1 + R_2$ लगाने पर: $\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 3/5 & 1/5 \\\\ -2/5 & 1/5 \\end{bmatrix} A$।",
+          "यह $I = BA$ के रूप में है, अतः $A^{-1} = \\begin{bmatrix} 3/5 & 1/5 \\\\ -2/5 & 1/5 \\end{bmatrix}$।",
+          "उत्तर: $\\begin{bmatrix} 3/5 & 1/5 \\\\ -2/5 & 1/5 \\end{bmatrix}$"
+        ]
+      },
+      {
+        "question": "प्रारंभिक रूपांतरण के प्रयोग से आव्यूह $\\begin{bmatrix} 2 & 1 \\\\ 1 & 1 \\end{bmatrix}$ का व्युत्क्रम ज्ञात कीजिए। [NCERT प्रश्नावली 3.4 प्रश्न 2]",
+        "answer": [
+          "माना $A = \\begin{bmatrix} 2 & 1 \\\\ 1 & 1 \\end{bmatrix}$।",
+          "समीकरण $A = IA$ से: $\\begin{bmatrix} 2 & 1 \\\\ 1 & 1 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} A$।",
+          "संक्रिया $R_1 \\leftrightarrow R_2$ लगाने पर: $\\begin{bmatrix} 1 & 1 \\\\ 2 & 1 \\end{bmatrix} = \\begin{bmatrix} 0 & 1 \\\\ 1 & 0 \\end{bmatrix} A$।",
+          "संक्रिया $R_2 \\rightarrow R_2 - 2R_1$ लगाने पर: $\\begin{bmatrix} 1 & 1 \\\\ 0 & -1 \\end{bmatrix} = \\begin{bmatrix} 0 & 1 \\\\ 1 & -2 \\end{bmatrix} A$।",
+          "संक्रिया $R_2 \\rightarrow -1 R_2$ लगाने पर: $\\begin{bmatrix} 1 & 1 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 0 & 1 \\\\ -1 & 2 \\end{bmatrix} A$।",
+          "संक्रिया $R_1 \\rightarrow R_1 - R_2$ लगाने पर: $\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 1 & -1 \\\\ -1 & 2 \\end{bmatrix} A$।",
+          "उत्तर: $A^{-1} = \\begin{bmatrix} 1 & -1 \\\\ -1 & 2 \\end{bmatrix}$"
+        ]
+      },
+      {
+        "question": "प्रारंभिक रूपांतरण के प्रयोग से आव्यूह $\\begin{bmatrix} 1 & 3 \\\\ 2 & 7 \\end{bmatrix}$ का व्युत्क्रम ज्ञात कीजिए। [NCERT प्रश्नावली 3.4 प्रश्न 3]",
+        "answer": [
+          "समीकरण $A = IA$: $\\begin{bmatrix} 1 & 3 \\\\ 2 & 7 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} A$।",
+          "संक्रिया $R_2 \\rightarrow R_2 - 2R_1$ लगाने पर: $\\begin{bmatrix} 1 & 3 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\ -2 & 1 \\end{bmatrix} A$।",
+          "संक्रिया $R_1 \\rightarrow R_1 - 3R_2$ लगाने पर: $\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 7 & -3 \\\\ -2 & 1 \\end{bmatrix} A$।",
+          "उत्तर: $A^{-1} = \\begin{bmatrix} 7 & -3 \\\\ -2 & 1 \\end{bmatrix}$"
+        ]
+      },
+      {
+        "question": "प्रारंभिक रूपांतरण के प्रयोग से आव्यूह $\\begin{bmatrix} 2 & 3 \\\\ 5 & 7 \\end{bmatrix}$ का व्युत्क्रम ज्ञात कीजिए। [NCERT प्रश्नावली 3.4 प्रश्न 4]",
+        "answer": [
+          "समीकरण $A = IA$: $\\begin{bmatrix} 2 & 3 \\\\ 5 & 7 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} A$।",
+          "संक्रिया $R_2 \\rightarrow R_2 - 2R_1$ लगाने पर: $\\begin{bmatrix} 2 & 3 \\\\ 1 & 1 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\ -2 & 1 \\end{bmatrix} A$।",
+          "संक्रिया $R_1 \\leftrightarrow R_2$: $\\begin{bmatrix} 1 & 1 \\\\ 2 & 3 \\end{bmatrix} = \\begin{bmatrix} -2 & 1 \\\\ 1 & 0 \\end{bmatrix} A$।",
+          "संक्रिया $R_2 \\rightarrow R_2 - 2R_1$: $\\begin{bmatrix} 1 & 1 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} -2 & 1 \\\\ 5 & -2 \\end{bmatrix} A$।",
+          "संक्रिया $R_1 \\rightarrow R_1 - R_2$: $\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} -7 & 3 \\\\ 5 & -2 \\end{bmatrix} A$।",
+          "उत्तर: $A^{-1} = \\begin{bmatrix} -7 & 3 \\\\ 5 & -2 \\end{bmatrix}$"
+        ]
+      },
+      {
+        "question": "प्रारंभिक रूपांतरण से आव्यूह $\\begin{bmatrix} 2 & 1 \\\\ 7 & 4 \\end{bmatrix}$ का व्युत्क्रम ज्ञात कीजिए। [NCERT प्रश्नावली 3.4 प्रश्न 5]",
+        "answer": [
+          "समीकरण $A = IA$: $\\begin{bmatrix} 2 & 1 \\\\ 7 & 4 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} A$।",
+          "संक्रिया $R_2 \\rightarrow R_2 - 3R_1$: $\\begin{bmatrix} 2 & 1 \\\\ 1 & 1 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\ -3 & 1 \\end{bmatrix} A$।",
+          "संक्रिया $R_1 \\leftrightarrow R_2$: $\\begin{bmatrix} 1 & 1 \\\\ 2 & 1 \\end{bmatrix} = \\begin{bmatrix} -3 & 1 \\\\ 1 & 0 \\end{bmatrix} A$।",
+          "संक्रिया $R_2 \\rightarrow R_2 - 2R_1$: $\\begin{bmatrix} 1 & 1 \\\\ 0 & -1 \\end{bmatrix} = \\begin{bmatrix} -3 & 1 \\\\ 7 & -2 \\end{bmatrix} A$।",
+          "संक्रिया $R_2 \\rightarrow -1 R_2$: $\\begin{bmatrix} 1 & 1 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} -3 & 1 \\\\ -7 & 2 \\end{bmatrix} A$।",
+          "संक्रिया $R_1 \\rightarrow R_1 - R_2$: $\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 4 & -1 \\\\ -7 & 2 \\end{bmatrix} A$।",
+          "उत्तर: $A^{-1} = \\begin{bmatrix} 4 & -1 \\\\ -7 & 2 \\end{bmatrix}$"
+        ]
+      },
+      {
+        "question": "प्रारंभिक रूपांतरण से आव्यूह $\\begin{bmatrix} 2 & 5 \\\\ 1 & 3 \\end{bmatrix}$ का व्युत्क्रम ज्ञात कीजिए। [NCERT प्रश्नावली 3.4 प्रश्न 6]",
+        "answer": [
+          "समीकरण $A = IA$: $\\begin{bmatrix} 2 & 5 \\\\ 1 & 3 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} A$।",
+          "संक्रिया $R_1 \\leftrightarrow R_2$: $\\begin{bmatrix} 1 & 3 \\\\ 2 & 5 \\end{bmatrix} = \\begin{bmatrix} 0 & 1 \\\\ 1 & 0 \\end{bmatrix} A$।",
+          "संक्रिया $R_2 \\rightarrow R_2 - 2R_1$: $\\begin{bmatrix} 1 & 3 \\\\ 0 & -1 \\end{bmatrix} = \\begin{bmatrix} 0 & 1 \\\\ 1 & -2 \\end{bmatrix} A$।",
+          "संक्रिया $R_2 \\rightarrow -1 R_2$: $\\begin{bmatrix} 1 & 3 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 0 & 1 \\\\ -1 & 2 \\end{bmatrix} A$।",
+          "संक्रिया $R_1 \\rightarrow R_1 - 3R_2$: $\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 3 & -5 \\\\ -1 & 2 \\end{bmatrix} A$।",
+          "उत्तर: $A^{-1} = \\begin{bmatrix} 3 & -5 \\\\ -1 & 2 \\end{bmatrix}$"
+        ]
+      },
+      {
+        "question": "प्रारंभिक रूपांतरण से आव्यूह $\\begin{bmatrix} 3 & 1 \\\\ 5 & 2 \\end{bmatrix}$ का व्युत्क्रम ज्ञात कीजिए। [NCERT प्रश्नावली 3.4 प्रश्न 7]",
+        "answer": [
+          "समीकरण $A = IA$: $\\begin{bmatrix} 3 & 1 \\\\ 5 & 2 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} A$।",
+          "संक्रिया $R_2 \\rightarrow R_2 - R_1$: $\\begin{bmatrix} 3 & 1 \\\\ 2 & 1 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\ -1 & 1 \\end{bmatrix} A$।",
+          "संक्रिया $R_1 \\rightarrow R_1 - R_2$: $\\begin{bmatrix} 1 & 0 \\\\ 2 & 1 \\end{bmatrix} = \\begin{bmatrix} 2 & -1 \\\\ -1 & 1 \\end{bmatrix} A$।",
+          "संक्रिया $R_2 \\rightarrow R_2 - 2R_1$: $\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 2 & -1 \\\\ -5 & 3 \\end{bmatrix} A$।",
+          "उत्तर: $A^{-1} = \\begin{bmatrix} 2 & -1 \\\\ -5 & 3 \\end{bmatrix}$"
+        ]
+      },
+      {
+        "question": "प्रारंभिक रूपांतरण से आव्यूह $\\begin{bmatrix} 4 & 5 \\\\ 3 & 4 \\end{bmatrix}$ का व्युत्क्रम ज्ञात कीजिए। [NCERT प्रश्नावली 3.4 प्रश्न 8]",
+        "answer": [
+          "समीकरण $A = IA$: $\\begin{bmatrix} 4 & 5 \\\\ 3 & 4 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} A$।",
+          "संक्रिया $R_1 \\rightarrow R_1 - R_2$: $\\begin{bmatrix} 1 & 1 \\\\ 3 & 4 \\end{bmatrix} = \\begin{bmatrix} 1 & -1 \\\\ 0 & 1 \\end{bmatrix} A$।",
+          "संक्रिया $R_2 \\rightarrow R_2 - 3R_1$: $\\begin{bmatrix} 1 & 1 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 1 & -1 \\\\ -3 & 4 \\end{bmatrix} A$।",
+          "संक्रिया $R_1 \\rightarrow R_1 - R_2$: $\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 4 & -5 \\\\ -3 & 4 \\end{bmatrix} A$।",
+          "उत्तर: $A^{-1} = \\begin{bmatrix} 4 & -5 \\\\ -3 & 4 \\end{bmatrix}$"
+        ]
+      },
+      {
+        "question": "प्रारंभिक रूपांतरण से आव्यूह $\\begin{bmatrix} 3 & 10 \\\\ 2 & 7 \\end{bmatrix}$ का व्युत्क्रम ज्ञात कीजिए। [NCERT प्रश्नावली 3.4 प्रश्न 9]",
+        "answer": [
+          "समीकरण $A = IA$: $\\begin{bmatrix} 3 & 10 \\\\ 2 & 7 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} A$।",
+          "संक्रिया $R_1 \\rightarrow R_1 - R_2$: $\\begin{bmatrix} 1 & 3 \\\\ 2 & 7 \\end{bmatrix} = \\begin{bmatrix} 1 & -1 \\\\ 0 & 1 \\end{bmatrix} A$।",
+          "संक्रिया $R_2 \\rightarrow R_2 - 2R_1$: $\\begin{bmatrix} 1 & 3 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 1 & -1 \\\\ -2 & 3 \\end{bmatrix} A$।",
+          "संक्रिया $R_1 \\rightarrow R_1 - 3R_2$: $\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 7 & -10 \\\\ -2 & 3 \\end{bmatrix} A$।",
+          "उत्तर: $A^{-1} = \\begin{bmatrix} 7 & -10 \\\\ -2 & 3 \\end{bmatrix}$"
+        ]
+      },
+      {
+        "question": "प्रारंभिक रूपांतरण से आव्यूह $\\begin{bmatrix} 3 & -1 \\\\ -4 & 2 \\end{bmatrix}$ का व्युत्क्रम ज्ञात कीजिए। [NCERT प्रश्नावली 3.4 प्रश्न 10]",
+        "answer": [
+          "समीकरण $A = IA$: $\\begin{bmatrix} 3 & -1 \\\\ -4 & 2 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} A$।",
+          "संक्रिया $R_2 \\rightarrow 3R_2 + 4R_1$: $\\begin{bmatrix} 3 & -1 \\\\ 0 & 2 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\ 4 & 3 \\end{bmatrix} A$।",
+          "संक्रिया $R_1 \\rightarrow 2R_1 + R_2$: $\\begin{bmatrix} 6 & 0 \\\\ 0 & 2 \\end{bmatrix} = \\begin{bmatrix} 6 & 3 \\\\ 4 & 3 \\end{bmatrix} A$।",
+          "संक्रिया $R_1 \\rightarrow \\frac{1}{6}R_1$ तथा $R_2 \\rightarrow \\frac{1}{2}R_2$: $\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 1 & 1/2 \\\\ 2 & 3/2 \\end{bmatrix} A$।",
+          "उत्तर: $A^{-1} = \\begin{bmatrix} 1 & 1/2 \\\\ 2 & 3/2 \\end{bmatrix}$"
+        ]
+      },
+      {
+        "question": "प्रारंभिक रूपांतरण से आव्यूह $\\begin{bmatrix} 2 & -6 \\\\ 1 & -2 \\end{bmatrix}$ का व्युत्क्रम ज्ञात कीजिए। [NCERT प्रश्नावली 3.4 प्रश्न 11]",
+        "answer": [
+          "समीकरण $A = IA$: $\\begin{bmatrix} 2 & -6 \\\\ 1 & -2 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} A$।",
+          "संक्रिया $R_1 \\leftrightarrow R_2$: $\\begin{bmatrix} 1 & -2 \\\\ 2 & -6 \\end{bmatrix} = \\begin{bmatrix} 0 & 1 \\\\ 1 & 0 \\end{bmatrix} A$।",
+          "संक्रिया $R_2 \\rightarrow R_2 - 2R_1$: $\\begin{bmatrix} 1 & -2 \\\\ 0 & -2 \\end{bmatrix} = \\begin{bmatrix} 0 & 1 \\\\ 1 & -2 \\end{bmatrix} A$।",
+          "संक्रिया $R_2 \\rightarrow -\\frac{1}{2}R_2$: $\\begin{bmatrix} 1 & -2 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 0 & 1 \\\\ -1/2 & 1 \\end{bmatrix} A$।",
+          "संक्रिया $R_1 \\rightarrow R_1 + 2R_2$: $\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} -1 & 3 \\\\ -1/2 & 1 \\end{bmatrix} A$।",
+          "उत्तर: $A^{-1} = \\begin{bmatrix} -1 & 3 \\\\ -1/2 & 1 \\end{bmatrix}$"
+        ]
+      },
+      {
+        "question": "प्रारंभिक रूपांतरण से आव्यूह $\\begin{bmatrix} 6 & -3 \\\\ -2 & 1 \\end{bmatrix}$ का व्युत्क्रम यदि संभव है तो ज्ञात कीजिए। [NCERT प्रश्नावली 3.4 प्रश्न 12]",
+        "answer": [
+          "समीकरण $A = IA$: $\\begin{bmatrix} 6 & -3 \\\\ -2 & 1 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} A$।",
+          "संक्रिया $R_1 \\rightarrow \\frac{1}{6}R_1$: $\\begin{bmatrix} 1 & -1/2 \\\\ -2 & 1 \\end{bmatrix} = \\begin{bmatrix} 1/6 & 0 \\\\ 0 & 1 \\end{bmatrix} A$।",
+          "संक्रिया $R_2 \\rightarrow R_2 + 2R_1$ लगाने पर: $\\begin{bmatrix} 1 & -1/2 \\\\ 0 & 0 \\end{bmatrix} = \\begin{bmatrix} 1/6 & 0 \\\\ 1/3 & 1 \\end{bmatrix} A$।",
+          "चूँकि बाएँ पक्ष के आव्यूह की द्वितीय पंक्ति के सभी अवयव शून्य हैं, अतः $A^{-1}$ का अस्तित्व नहीं है [सूत्र: किसी पंक्ति के सभी अवयव 0 होने पर व्युत्क्रम असंभव]।",
+          "उत्तर: $A^{-1}$ का अस्तित्व नहीं है"
+        ]
+      },
+      {
+        "question": "प्रारंभिक रूपांतरण से आव्यूह $\\begin{bmatrix} 2 & -3 \\\\ -1 & 2 \\end{bmatrix}$ का व्युत्क्रम ज्ञात कीजिए। [NCERT प्रश्नावली 3.4 प्रश्न 13]",
+        "answer": [
+          "समीकरण $A = IA$: $\\begin{bmatrix} 2 & -3 \\\\ -1 & 2 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} A$।",
+          "संक्रिया $R_1 \\rightarrow R_1 + R_2$: $\\begin{bmatrix} 1 & -1 \\\\ -1 & 2 \\end{bmatrix} = \\begin{bmatrix} 1 & 1 \\\\ 0 & 1 \\end{bmatrix} A$।",
+          "संक्रिया $R_2 \\rightarrow R_2 + R_1$: $\\begin{bmatrix} 1 & -1 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 1 & 1 \\\\ 1 & 2 \\end{bmatrix} A$।",
+          "संक्रिया $R_1 \\rightarrow R_1 + R_2$: $\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 2 & 3 \\\\ 1 & 2 \\end{bmatrix} A$।",
+          "उत्तर: $A^{-1} = \\begin{bmatrix} 2 & 3 \\\\ 1 & 2 \\end{bmatrix}$"
+        ]
+      },
+      {
+        "question": "प्रारंभिक रूपांतरण से आव्यूह $\\begin{bmatrix} 2 & 1 \\\\ 4 & 2 \\end{bmatrix}$ का व्युत्क्रम यदि अस्तित्व में है तो ज्ञात कीजिए। [NCERT प्रश्नावली 3.4 प्रश्न 14]",
+        "answer": [
+          "समीकरण $A = IA$: $\\begin{bmatrix} 2 & 1 \\\\ 4 & 2 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} A$।",
+          "संक्रिया $R_2 \\rightarrow R_2 - 2R_1$ लगाने पर: $\\begin{bmatrix} 2 & 1 \\\\ 0 & 0 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\ -2 & 1 \\end{bmatrix} A$।",
+          "बाएँ पक्ष की द्वितीय पंक्ति के सभी अवयव शून्य हैं, अतः $A^{-1}$ का अस्तित्व नहीं है।",
+          "उत्तर: $A^{-1}$ का अस्तित्व नहीं है"
+        ]
+      },
+      {
+        "question": "आव्यूह A तथा B एक-दूसरे के व्युत्क्रम होंगे केवल यदि: (A) AB = BA, (B) AB = BA = 0, (C) AB = 0, BA = I, (D) AB = BA = I। [NCERT प्रश्नावली 3.4 प्रश्न 18]",
+        "answer": [
+          "व्युत्क्रमणीय आव्यूह की परिभाषा के अनुसार, दो वर्ग आव्यूह $A$ तथा $B$ परस्पर व्युत्क्रम कहलाते हैं यदि और केवल यदि $AB = BA = I$ हो [सूत्र: $AB = BA = I \\iff B = A^{-1}$]।",
+          "उत्तर: $AB = BA = I$ (विकल्प D)"
+        ]
+      },
+      {
+        "question": "यदि $A$ तथा $B$ सममित आव्यूह हैं तो सिद्ध कीजिए कि $AB - BA$ एक विषम सममित आव्यूह है। [विविध प्रश्नावली प्रश्न 4]",
+        "answer": [
+          "दिया है कि $A$ और $B$ सममित आव्यूह हैं, अतः $A' = A$ तथा $B' = B$ [सूत्र: सममित आव्यूह हेतु $X' = X$]।",
+          "व्यंजक $(AB - BA)$ का परिवर्त लेने पर: $(AB - BA)' = (AB)' - (BA)'$ [सूत्र: $(X - Y)' = X' - Y'$]।",
+          "परिवर्त के उत्क्रमणीय नियम से: $(AB)' = B'A'$ तथा $(BA)' = A'B'$।",
+          "मान प्रतिस्थापित करने पर: $B'A' - A'B' = BA - AB$।",
+          "ऋण चिह्न (-) उभयनिष्ठ लेने पर: $-(AB - BA)$।",
+          "चूँकि $(AB - BA)' = -(AB - BA)$, अतः $(AB - BA)$ एक विषम सममित आव्यूह है।",
+          "उत्तर: सिद्ध हुआ"
+        ]
+      },
+      {
+        "question": "सिद्ध कीजिए कि आव्यूह $B'AB$ सममित अथवा विषम सममित है, यदि $A$ सममित अथवा विषम सममित है। [विविध प्रश्नावली प्रश्न 5]",
+        "answer": [
+          "स्थिति 1: जब $A$ एक सममित आव्यूह है, अर्थात $A' = A$।",
+          "$(B'AB)' = (B'(AB))' = (AB)'(B')' = (B'A')B = B'AB$ [सूत्र: $(XY)' = Y'X'$ तथा $(B')' = B$]।",
+          "चूँकि $(B'AB)' = B'AB$, अतः $B'AB$ एक सममित आव्यूह है।",
+          "स्थिति 2: जब $A$ एक विषम सममित आव्यूह है, अर्थात $A' = -A$।",
+          "$(B'AB)' = B'A'B = B'(-A)B = -B'AB$।",
+          "चूँकि $(B'AB)' = -B'AB$, अतः $B'AB$ एक विषम सममित आव्यूह है।",
+          "उत्तर: सिद्ध हुआ"
+        ]
+      },
+      {
+        "question": "$x$ के किस मान के लिए $\\begin{bmatrix} 1 & 2 & 1 \\end{bmatrix} \\begin{bmatrix} 1 & 2 & 0 \\\\ 2 & 0 & 1 \\\\ 1 & 0 & 2 \\end{bmatrix} \\begin{bmatrix} 0 \\\\ 2 \\\\ x \\end{bmatrix} = O$ है? [विविध प्रश्नावली प्रश्न 7]",
+        "answer": [
+          "पहले दो आव्यूहों का गुणनफल करने पर: $\\begin{bmatrix} 1(1)+2(2)+1(1) & 1(2)+2(0)+1(0) & 1(0)+2(1)+1(2) \\end{bmatrix} = \\begin{bmatrix} 6 & 2 & 4 \\end{bmatrix}$।",
+          "अब $\\begin{bmatrix} 6 & 2 & 4 \\end{bmatrix} \\begin{bmatrix} 0 \\\\ 2 \\\\ x \\end{bmatrix} = O$।",
+          "पंक्ति $\\times$ स्तम्भ गुणनफल: $[6(0) + 2(2) + 4(x)] = [0]$।",
+          "$4 + 4x = 0 \\implies 4x = -4 \\implies x = -1$।",
+          "उत्तर: $x = -1$"
+        ]
+      },
+      {
+        "question": "यदि $\\begin{bmatrix} x & -5 & -1 \\end{bmatrix} \\begin{bmatrix} 1 & 0 & 2 \\\\ 0 & 2 & 1 \\\\ 2 & 0 & 3 \\end{bmatrix} \\begin{bmatrix} x \\\\ 4 \\\\ 1 \\end{bmatrix} = O$ है, तो $x$ का मान ज्ञात कीजिए। [विविध प्रश्नावली प्रश्न 9]",
+        "answer": [
+          "अंतिम दो आव्यूहों का गुणनफल करने पर: $\\begin{bmatrix} 1 & 0 & 2 \\\\ 0 & 2 & 1 \\\\ 2 & 0 & 3 \\end{bmatrix} \\begin{bmatrix} x \\\\ 4 \\\\ 1 \\end{bmatrix} = \\begin{bmatrix} x + 2 \\\\ 8 + 1 \\\\ 2x + 3 \\end{bmatrix} = \\begin{bmatrix} x + 2 \\\\ 9 \\\\ 2x + 3 \\end{bmatrix}$।",
+          "अब गुणनफल: $\\begin{bmatrix} x & -5 & -1 \\end{bmatrix} \\begin{bmatrix} x + 2 \\\\ 9 \\\\ 2x + 3 \\end{bmatrix} = [x(x+2) - 5(9) - 1(2x+3)]$।",
+          "सरल करने पर: $[x^2 + 2x - 45 - 2x - 3] = [x^2 - 48] = [0]$।",
+          "$x^2 - 48 = 0 \\implies x^2 = 48 \\implies x = \\pm \\sqrt{48} = \\pm 4\\sqrt{3}$।",
+          "उत्तर: $x = \\pm 4\\sqrt{3}$"
+        ]
+      },
+      {
+        "question": "आव्यूह $X$ ज्ञात कीजिए, यदि $X \\begin{bmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\end{bmatrix} = \\begin{bmatrix} -7 & -8 & -9 \\\\ 2 & 4 & 6 \\end{bmatrix}$ है। [विविध प्रश्नावली प्रश्न 11]",
+        "answer": [
+          "गुणनफल की कोटि $(2 \\times 3)$ तथा द्वितीय आव्यूह की कोटि $(2 \\times 3)$ है, अतः आव्यूह $X$ की कोटि $2 \\times 2$ होगी [सूत्र: $X_{m \\times n} A_{n \\times p} = B_{m \\times p}$]।",
+          "माना $X = \\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}$।",
+          "गुणनफल: $\\begin{bmatrix} a+4b & 2a+5b & 3a+6b \\\\ c+4d & 2c+5d & 3c+6d \\end{bmatrix} = \\begin{bmatrix} -7 & -8 & -9 \\\\ 2 & 4 & 6 \\end{bmatrix}$।",
+          "समीकरण निकाय: $a + 4b = -7$ तथा $2a + 5b = -8$।",
+          "हल करने पर: $b = -2$ तथा $a = 1$।",
+          "द्वितीय पंक्ति हेतु: $c + 4d = 2$ तथा $2c + 5d = 4$।",
+          "हल करने पर: $d = 0$ तथा $c = 2$।",
+          "उत्तर: $X = \\begin{bmatrix} 1 & -2 \\\\ 2 & 0 \\end{bmatrix}$"
+        ]
+      },
+      {
+        "question": "यदि $A = \\begin{bmatrix} \\alpha & \\beta \\\\ \\gamma & -\\alpha \\end{bmatrix}$ इस प्रकार है कि $A^2 = I$, तो सही संबंध क्या होगा? [विविध प्रश्नावली प्रश्न 13]",
+        "answer": [
+          "$A^2 = \\begin{bmatrix} \\alpha & \\beta \\\\ \\gamma & -\\alpha \\end{bmatrix} \\begin{bmatrix} \\alpha & \\beta \\\\ \\gamma & -\\alpha \\end{bmatrix} = \\begin{bmatrix} \\alpha^2 + \\beta\\gamma & \\alpha\\beta - \\alpha\\beta \\\\ \\alpha\\gamma - \\alpha\\gamma & \\beta\\gamma + \\alpha^2 \\end{bmatrix} = \\begin{bmatrix} \\alpha^2 + \\beta\\gamma & 0 \\\\ 0 & \\alpha^2 + \\beta\\gamma \\end{bmatrix}$।",
+          "दिया है $A^2 = I$, अतः $\\begin{bmatrix} \\alpha^2 + \\beta\\gamma & 0 \\\\ 0 & \\alpha^2 + \\beta\\gamma \\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix}$।",
+          "तुलना करने पर: $\\alpha^2 + \\beta\\gamma = 1 \\implies 1 - \\alpha^2 - \\beta\\gamma = 0$।",
+          "उत्तर: $1 - \\alpha^2 - \\beta\\gamma = 0$ (विकल्प C)"
+        ]
+      },
+      {
+        "question": "यदि एक आव्यूह सममित तथा विषम सममित दोनों ही है, तो वह किस प्रकार का आव्यूह है? [विविध प्रश्नावली प्रश्न 14]",
+        "answer": [
+          "यदि $A$ सममित है, तो $A' = A$।",
+          "यदि $A$ विषम सममित है, तो $A' = -A$।",
+          "अतः $A = -A \\implies A + A = O \\implies 2A = O \\implies A = O$।",
+          "उत्तर: $A$ एक शून्य आव्यूह है (विकल्प B)"
+        ]
+      },
+      {
+        "question": "यदि $A$ एक वर्ग आव्यूह इस प्रकार है कि $A^2 = A$, तो $(I + A)^3 - 7A$ का मान क्या होगा? [विविध प्रश्नावली प्रश्न 15]",
+        "answer": [
+          "द्विपद सूत्र से प्रसार करने पर: $(I + A)^3 = I^3 + 3I^2 A + 3I A^2 + A^3$।",
+          "चूँकि $I^3 = I, I^2 A = A, I A^2 = A^2 = A$ तथा $A^3 = A^2 \\cdot A = A \\cdot A = A^2 = A$।",
+          "अतः $(I + A)^3 = I + 3A + 3A + A = I + 7A$।",
+          "व्यंजक में मान रखने पर: $(I + 7A) - 7A = I$।",
+          "उत्तर: $I$ (विकल्प C)"
+        ]
+      }
+    ],
+    "longAnswers": [
+      {
+        "question": "यदि $A = \\begin{bmatrix} 1 & 2 & -3 \\\\ 5 & 0 & 2 \\\\ 1 & -1 & 1 \\end{bmatrix}$, $B = \\begin{bmatrix} 3 & -1 & 2 \\\\ 4 & 2 & 5 \\\\ 2 & 0 & 3 \\end{bmatrix}$ तथा $C = \\begin{bmatrix} 4 & 1 & 2 \\\\ 0 & 3 & 2 \\\\ 1 & -2 & 3 \\end{bmatrix}$ हों, तो $(A+B)$ तथा $(B-C)$ परिकलित कीजिए। साथ ही सत्यापित कीजिए कि $A + (B-C) = (A+B) - C$ है। [NCERT प्रश्नावली 3.2 प्रश्न 4]",
+        "answer": [
+          "चरण 1: $A + B$ की गणना: $\\begin{bmatrix} 1+3 & 2-1 & -3+2 \\\\ 5+4 & 0+2 & 2+5 \\\\ 1+2 & -1+0 & 1+3 \\end{bmatrix} = \\begin{bmatrix} 4 & 1 & -1 \\\\ 9 & 2 & 7 \\\\ 3 & -1 & 4 \\end{bmatrix}$।",
+          "चरण 2: $B - C$ की गणना: $\\begin{bmatrix} 3-4 & -1-1 & 2-2 \\\\ 4-0 & 2-3 & 5-2 \\\\ 2-1 & 0-(-2) & 3-3 \\end{bmatrix} = \\begin{bmatrix} -1 & -2 & 0 \\\\ 4 & -1 & 3 \\\\ 1 & 2 & 0 \\end{bmatrix}$।",
+          "चरण 3 (LHS): $A + (B-C) = \\begin{bmatrix} 1 & 2 & -3 \\\\ 5 & 0 & 2 \\\\ 1 & -1 & 1 \\end{bmatrix} + \\begin{bmatrix} -1 & -2 & 0 \\\\ 4 & -1 & 3 \\\\ 1 & 2 & 0 \\end{bmatrix} = \\begin{bmatrix} 0 & 0 & -3 \\\\ 9 & -1 & 5 \\\\ 2 & 1 & 1 \\end{bmatrix}$।",
+          "चरण 4 (RHS): $(A+B) - C = \\begin{bmatrix} 4 & 1 & -1 \\\\ 9 & 2 & 7 \\\\ 3 & -1 & 4 \\end{bmatrix} - \\begin{bmatrix} 4 & 1 & 2 \\\\ 0 & 3 & 2 \\\\ 1 & -2 & 3 \\end{bmatrix} = \\begin{bmatrix} 0 & 0 & -3 \\\\ 9 & -1 & 5 \\\\ 2 & 1 & 1 \\end{bmatrix}$।",
+          "चरण 5: LHS = RHS, अतः $A + (B-C) = (A+B) - C$ सिद्ध हुआ।",
+          "उत्तर: $\\begin{bmatrix} 0 & 0 & -3 \\\\ 9 & -1 & 5 \\\\ 2 & 1 & 1 \\end{bmatrix}$ (सत्यापित)"
+        ]
+      },
+      {
+        "question": "यदि $A = \\begin{bmatrix} 2/3 & 1 & 5/3 \\\\ 1/3 & 2/3 & 4/3 \\\\ 7/3 & 2 & 2/3 \\end{bmatrix}$ तथा $B = \\begin{bmatrix} 2/5 & 3/5 & 1 \\\\ 1/5 & 2/5 & 4/5 \\\\ 7/5 & 6/5 & 2/5 \\end{bmatrix}$ हों, तो $3A - 5B$ परिकलित कीजिए। [NCERT प्रश्नावली 3.2 प्रश्न 5]",
+        "answer": [
+          "चरण 1: $3A$ का मान ज्ञात करने पर: प्रत्येक अवयव को 3 से गुणा करने पर हर का 3 निरस्त हो जाता है।",
+          "$3A = \\begin{bmatrix} 2 & 3 & 5 \\\\ 1 & 2 & 4 \\\\ 7 & 6 & 2 \\end{bmatrix}$।",
+          "चरण 2: $5B$ का मान ज्ञात करने पर: प्रत्येक अवयव को 5 से गुणा करने पर हर का 5 निरस्त हो जाता है।",
+          "$5B = \\begin{bmatrix} 2 & 3 & 5 \\\\ 1 & 2 & 4 \\\\ 7 & 6 & 2 \\end{bmatrix}$।",
+          "चरण 3: अन्तर $3A - 5B$ निकालने पर: संगत अवयवों को घटाने पर प्रत्येक अवयव $0$ प्राप्त होता है।",
+          "$3A - 5B = \\begin{bmatrix} 2-2 & 3-3 & 5-5 \\\\ 1-1 & 2-2 & 4-4 \\\\ 7-7 & 6-6 & 2-2 \\end{bmatrix} = \\begin{bmatrix} 0 & 0 & 0 \\\\ 0 & 0 & 0 \\\\ 0 & 0 & 0 \\end{bmatrix} = O$।",
+          "उत्तर: $O$ (शून्य आव्यूह)"
+        ]
+      },
+      {
+        "question": "X तथा Y ज्ञात कीजिए यदि $2X + 3Y = \\begin{bmatrix} 2 & 3 \\\\ 4 & 0 \\end{bmatrix}$ तथा $3X + 2Y = \\begin{bmatrix} 2 & -2 \\\\ -1 & 5 \\end{bmatrix}$ हैं। [NCERT प्रश्नावली 3.2 प्रश्न 7(ii)]",
+        "answer": [
+          "चरण 1: समीकरण (1) को 2 से तथा समीकरण (2) को 3 से गुणा करके घटाने पर:",
+          "$2(2X + 3Y) - 3(3X + 2Y) = (4X + 6Y) - (9X + 6Y) = -5X$।",
+          "दायाँ पक्ष: $2\\begin{bmatrix} 2 & 3 \\\\ 4 & 0 \\end{bmatrix} - 3\\begin{bmatrix} 2 & -2 \\\\ -1 & 5 \\end{bmatrix} = \\begin{bmatrix} 4 & 6 \\\\ 8 & 0 \\end{bmatrix} - \\begin{bmatrix} 6 & -6 \\\\ -3 & 15 \\end{bmatrix} = \\begin{bmatrix} -2 & 12 \\\\ 11 & -15 \\end{bmatrix}$।",
+          "चरण 2: $X$ का मान: $X = -\\frac{1}{5}\\begin{bmatrix} -2 & 12 \\\\ 11 & -15 \\end{bmatrix} = \\begin{bmatrix} 2/5 & -12/5 \\\\ -11/5 & 3 \\end{bmatrix}$।",
+          "चरण 3: $X$ का मान समीकरण (1) में रखकर $3Y$ निकालना:",
+          "$3Y = \\begin{bmatrix} 2 & 3 \\\\ 4 & 0 \\end{bmatrix} - 2\\begin{bmatrix} 2/5 & -12/5 \\\\ -11/5 & 3 \\end{bmatrix} = \\begin{bmatrix} 2 & 3 \\\\ 4 & 0 \\end{bmatrix} - \\begin{bmatrix} 4/5 & -24/5 \\\\ -22/5 & 6 \\end{bmatrix} = \\begin{bmatrix} 6/5 & 39/5 \\\\ 42/5 & -6 \\end{bmatrix}$।",
+          "चरण 4: 3 से भाग देने पर: $Y = \\begin{bmatrix} 2/5 & 13/5 \\\\ 14/5 & -2 \\end{bmatrix}$।",
+          "उत्तर: $X = \\begin{bmatrix} 2/5 & -12/5 \\\\ -11/5 & 3 \\end{bmatrix}, Y = \\begin{bmatrix} 2/5 & 13/5 \\\\ 14/5 & -2 \\end{bmatrix}$"
+        ]
+      },
+      {
+        "question": "प्रदत्त समीकरण को x, y, z तथा t के लिए हल कीजिए यदि $2\\begin{bmatrix} x & z \\\\ y & t \\end{bmatrix} + 3\\begin{bmatrix} 1 & -1 \\\\ 0 & 2 \\end{bmatrix} = 3\\begin{bmatrix} 3 & 5 \\\\ 4 & 6 \\end{bmatrix}$ है। [NCERT प्रश्नावली 3.2 प्रश्न 10]",
+        "answer": [
+          "चरण 1: अदिश गुणन करने पर: $\\begin{bmatrix} 2x & 2z \\\\ 2y & 2t \\end{bmatrix} + \\begin{bmatrix} 3 & -3 \\\\ 0 & 6 \\end{bmatrix} = \\begin{bmatrix} 9 & 15 \\\\ 12 & 18 \\end{bmatrix}$।",
+          "चरण 2: बायाँ पक्ष जोड़ने पर: $\\begin{bmatrix} 2x+3 & 2z-3 \\\\ 2y & 2t+6 \\end{bmatrix} = \\begin{bmatrix} 9 & 15 \\\\ 12 & 18 \\end{bmatrix}$।",
+          "चरण 3: संगत अवयवों की तुलना करने पर:",
+          "$2x + 3 = 9 \\implies 2x = 6 \\implies x = 3$।",
+          "$2z - 3 = 15 \\implies 2z = 18 \\implies z = 9$।",
+          "$2y = 12 \\implies y = 6$।",
+          "$2t + 6 = 18 \\implies 2t = 12 \\implies t = 6$।",
+          "उत्तर: $x = 3, y = 6, z = 9, t = 6$"
+        ]
+      },
+      {
+        "question": "यदि $F(x) = \\begin{bmatrix} \\cos x & -\\sin x & 0 \\\\ \\sin x & \\cos x & 0 \\\\ 0 & 0 & 1 \\end{bmatrix}$ है, तो सिद्ध कीजिए कि $F(x)F(y) = F(x+y)$ है। [NCERT प्रश्नावली 3.2 प्रश्न 13]",
+        "answer": [
+          "चरण 1: फलन $F(y)$ का मान लिखने पर: $F(y) = \\begin{bmatrix} \\cos y & -\\sin y & 0 \\\\ \\sin y & \\cos y & 0 \\\\ 0 & 0 & 1 \\end{bmatrix}$।",
+          "चरण 2: बाएँ पक्ष $F(x)F(y)$ का पंक्ति $\\times$ स्तम्भ नियम से गुणनफल करने पर:",
+          "पहली पंक्ति: $[(\\cos x\\cos y - \\sin x\\sin y + 0) \\quad (-\\cos x\\sin y - \\sin x\\cos y + 0) \\quad (0 + 0 + 0)]$।",
+          "दूसरी पंक्ति: $[(\\sin x\\cos y + \\cos x\\sin y + 0) \\quad (-\\sin x\\sin y + \\cos x\\cos y + 0) \\quad (0 + 0 + 0)]$।",
+          "तीसरी पंक्ति: $[(0 + 0 + 0) \\quad (0 + 0 + 0) \\quad (0 + 0 + 1)]$।",
+          "चरण 3: त्रिकोणमितीय सर्वसमिकाओं का प्रयोग करने पर:",
+          "$\\cos x\\cos y - \\sin x\\sin y = \\cos(x+y)$।",
+          "-(\\sin x\\cos y + \\cos x\\sin y) = -\\sin(x+y)$।",
+          "$\\sin x\\cos y + \\cos x\\sin y = \\sin(x+y)$।",
+          "$\\cos x\\cos y - \\sin x\\sin y = \\cos(x+y)$।",
+          "चरण 4: मान प्रतिस्थापित करने पर: $F(x)F(y) = \\begin{bmatrix} \\cos(x+y) & -\\sin(x+y) & 0 \\\\ \\sin(x+y) & \\cos(x+y) & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} = F(x+y) = \\text{RHS}$।",
+          "उत्तर: $F(x+y)$ (इति सिद्धम्)"
+        ]
+      },
+      {
+        "question": "यदि $A = \\begin{bmatrix} 1 & 0 & 2 \\\\ 0 & 2 & 1 \\\\ 2 & 0 & 3 \\end{bmatrix}$ है, तो सिद्ध कीजिए कि $A^3 - 6A^2 + 7A + 2I = O$ है। [NCERT प्रश्नावली 3.2 प्रश्न 16]",
+        "answer": [
+          "चरण 1: $A^2 = A \\times A$ की गणना करने पर:",
+          "$A^2 = \\begin{bmatrix} 1 & 0 & 2 \\\\ 0 & 2 & 1 \\\\ 2 & 0 & 3 \\end{bmatrix} \\begin{bmatrix} 1 & 0 & 2 \\\\ 0 & 2 & 1 \\\\ 2 & 0 & 3 \\end{bmatrix} = \\begin{bmatrix} 1+0+4 & 0+0+0 & 2+0+6 \\\\ 0+0+2 & 0+4+0 & 0+2+3 \\\\ 2+0+6 & 0+0+0 & 4+0+9 \\end{bmatrix} = \\begin{bmatrix} 5 & 0 & 8 \\\\ 2 & 4 & 5 \\\\ 8 & 0 & 13 \\end{bmatrix}$।",
+          "चरण 2: $A^3 = A^2 \\times A$ की गणना करने पर:",
+          "$A^3 = \\begin{bmatrix} 5 & 0 & 8 \\\\ 2 & 4 & 5 \\\\ 8 & 0 & 13 \\end{bmatrix} \\begin{bmatrix} 1 & 0 & 2 \\\\ 0 & 2 & 1 \\\\ 2 & 0 & 3 \\end{bmatrix} = \\begin{bmatrix} 5+0+16 & 0+0+0 & 10+0+24 \\\\ 2+0+10 & 0+8+0 & 4+4+15 \\\\ 8+0+26 & 0+0+0 & 16+0+39 \\end{bmatrix} = \\begin{bmatrix} 21 & 0 & 34 \\\\ 12 & 8 & 23 \\\\ 34 & 0 & 55 \\end{bmatrix}$।",
+          "चरण 3: अदिश गुणन आव्यूह तैयार करने पर:",
+          "$6A^2 = \\begin{bmatrix} 30 & 0 & 48 \\\\ 12 & 24 & 30 \\\\ 48 & 0 & 78 \\end{bmatrix}$, $7A = \\begin{bmatrix} 7 & 0 & 14 \\\\ 0 & 14 & 7 \\\\ 14 & 0 & 21 \\end{bmatrix}$, $2I = \\begin{bmatrix} 2 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 2 \\end{bmatrix}$।",
+          "चरण 4: व्यंजक $A^3 - 6A^2 + 7A + 2I$ में सभी मान रखने पर:",
+          "पहली पंक्ति: $[(21 - 30 + 7 + 2) \\quad (0 - 0 + 0 + 0) \\quad (34 - 48 + 14 + 0)] = [0 \\quad 0 \\quad 0]$।",
+          "दूसरी पंक्ति: $[(12 - 12 + 0 + 0) \\quad (8 - 24 + 14 + 2) \\quad (23 - 30 + 7 + 0)] = [0 \\quad 0 \\quad 0]$।",
+          "तीसरी पंक्ति: $[(34 - 48 + 14 + 0) \\quad (0 - 0 + 0 + 0) \\quad (55 - 78 + 21 + 2)] = [0 \\quad 0 \\quad 0]$।",
+          "अतः प्राप्त आव्यूह $\\begin{bmatrix} 0 & 0 & 0 \\\\ 0 & 0 & 0 \\\\ 0 & 0 & 0 \\end{bmatrix} = O$ है।",
+          "उत्तर: $O$ (सिद्ध हुआ)"
+        ]
+      },
+      {
+        "question": "यदि $A = \\begin{bmatrix} 0 & -\\tan\\frac{\\alpha}{2} \\\\ \\tan\\frac{\\alpha}{2} & 0 \\end{bmatrix}$ तथा $I$ कोटि 2 का तत्समक आव्यूह है, तो सिद्ध कीजिए कि $I + A = (I - A)\\begin{bmatrix} \\cos\\alpha & -\\sin\\alpha \\\\ \\sin\\alpha & \\cos\\alpha \\end{bmatrix}$ है। [NCERT प्रश्नावली 3.2 प्रश्न 18]",
+        "answer": [
+          "चरण 1: माना सुविधा हेतु $t = \\tan\\frac{\\alpha}{2}$।",
+          "LHS का मान: $I + A = \\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} + \\begin{bmatrix} 0 & -t \\\\ t & 0 \\end{bmatrix} = \\begin{bmatrix} 1 & -t \\\\ t & 1 \\end{bmatrix}$।",
+          "चरण 2: अर्ध-कोण त्रिकोणमितीय सूत्र: $\\cos\\alpha = \\frac{1-t^2}{1+t^2}$ तथा $\\sin\\alpha = \\frac{2t}{1+t^2}$।",
+          "तथा $I - A = \\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} - \\begin{bmatrix} 0 & -t \\\\ t & 0 \\end{bmatrix} = \\begin{bmatrix} 1 & t \\\\ -t & 1 \\end{bmatrix}$।",
+          "चरण 3: RHS का गुणनफल $(I - A)\\begin{bmatrix} \\cos\\alpha & -\\sin\\alpha \\\\ \\sin\\alpha & \\cos\\alpha \\end{bmatrix}$ करने पर:",
+          "$\\text{RHS} = \\begin{bmatrix} 1 & t \\\\ -t & 1 \\end{bmatrix} \\begin{bmatrix} \\frac{1-t^2}{1+t^2} & -\\frac{2t}{1+t^2} \\\\ \\frac{2t}{1+t^2} & \\frac{1-t^2}{1+t^2} \\end{bmatrix} = \\frac{1}{1+t^2} \\begin{bmatrix} 1 & t \\\\ -t & 1 \\end{bmatrix} \\begin{bmatrix} 1-t^2 & -2t \\\\ 2t & 1-t^2 \\end{bmatrix}$।",
+          "चरण 4: आव्यूह गुणन करने पर:",
+          "अवयव (1,1): $(1-t^2) + t(2t) = 1 - t^2 + 2t^2 = 1 + t^2$।",
+          "अवयव (1,2): $-2t + t(1-t^2) = -2t + t - t^3 = -t(1+t^2)$।",
+          "अवयव (2,1): $-t(1-t^2) + 2t = -t + t^3 + 2t = t(1+t^2)$।",
+          "अवयव (2,2): $-t(-2t) + (1-t^2) = 2t^2 + 1 - t^2 = 1 + t^2$।",
+          "चरण 5: $(1+t^2)$ से भाग देने पर: $\\text{RHS} = \\begin{bmatrix} 1 & -t \\\\ t & 1 \\end{bmatrix} = \\text{LHS}$।",
+          "उत्तर: LHS = RHS (सिद्ध हुआ)"
+        ]
+      },
+      {
+        "question": "किसी व्यापार संघ के पास ₹30000 का कोष है, जिसे दो भिन्न प्रकार के बाण्डों में निवेशित करना है। प्रथम बाण्ड पर 5% वार्षिक तथा द्वितीय बाण्ड पर 7% वार्षिक ब्याज प्राप्त होता है। आव्यूह गुणन के प्रयोग द्वारा निर्धारित कीजिए कि ₹30000 के कोष को दो प्रकार के बाण्डों में किस प्रकार बाँटें जिससे संघ को प्राप्त कुल वार्षिक ब्याज: (a) ₹1800 हो, (b) ₹2000 हो। [NCERT प्रश्नावली 3.2 प्रश्न 19]",
+        "answer": [
+          "माना प्रथम बाण्ड में निवेश राशि = $x$ रुपये, तब द्वितीय बाण्ड में निवेश राशि = $(30000 - x)$ रुपये।",
+          "निवेश राशि आव्यूह: $A = \\begin{bmatrix} x & 30000 - x \\end{bmatrix}$ (कोटि $1 \\times 2$)।",
+          "ब्याज दर आव्यूह: $B = \\begin{bmatrix} 5/100 \\\\ 7/100 \\end{bmatrix}$ (कोटि $2 \\times 1$)।",
+          "कुल ब्याज समीकरण: $AB = \\begin{bmatrix} x & 30000 - x \\end{bmatrix} \\begin{bmatrix} 0.05 \\\\ 0.07 \\end{bmatrix} = \\begin{bmatrix} \\frac{5x + 7(30000 - x)}{100} \\end{bmatrix} = \\begin{bmatrix} \\frac{210000 - 2x}{100} \\end{bmatrix}$।",
+          "भाग (a): कुल ब्याज ₹1800 होने पर:",
+          "$\\frac{210000 - 2x}{100} = 1800 \\implies 210000 - 2x = 180000 \\implies 2x = 30000 \\implies x = 15000$।",
+          "अतः प्रथम बाण्ड = ₹15,000 तथा द्वितीय बाण्ड = $30000 - 15000 =$ ₹15,000।",
+          "भाग (b): कुल ब्याज ₹2000 होने पर:",
+          "$\\frac{210000 - 2x}{100} = 2000 \\implies 210000 - 2x = 200000 \\implies 2x = 10000 \\implies x = 5000$।",
+          "अतः प्रथम बाण्ड = ₹5,000 तथा द्वितीय बाण्ड = $30000 - 5000 =$ ₹25,000।",
+          "उत्तर: (a) ₹15000 व ₹15000; (b) ₹5000 व ₹25000"
+        ]
+      },
+      {
+        "question": "किसी स्कूल की पुस्तकों की दुकान में 10 दर्जन रसायन विज्ञान, 8 दर्जन भौतिक विज्ञान तथा 10 दर्जन अर्थशास्त्र की पुस्तकें हैं। इन पुस्तकों का विक्रय मूल्य क्रमशः ₹80, ₹60 तथा ₹40 प्रति पुस्तक है। आव्यूह बीजगणित के प्रयोग द्वारा ज्ञात कीजिए कि सभी पुस्तकों को बेचने से दुकान को कुल कितनी धनराशि प्राप्त होगी? [NCERT प्रश्नावली 3.2 प्रश्न 20]",
+        "answer": [
+          "पुस्तकों की संख्या की गणना (1 दर्जन = 12 पुस्तकें):",
+          "रसायन विज्ञान = $10 \\times 12 = 120$ पुस्तकें।",
+          "भौतिक विज्ञान = $8 \\times 12 = 96$ पुस्तकें।",
+          "अर्थशास्त्र = $10 \\times 12 = 120$ पुस्तकें।",
+          "पुस्तकों की संख्या का पंक्ति आव्यूह: $P = \\begin{bmatrix} 120 & 96 & 120 \\end{bmatrix}_{1 \\times 3}$।",
+          "प्रति पुस्तक विक्रय मूल्य का स्तम्भ आव्यूह: $C = \\begin{bmatrix} 80 \\\\ 60 \\\\ 40 \\end{bmatrix}_{3 \\times 1}$।",
+          "प्राप्त कुल धनराशि: $PC = \\begin{bmatrix} 120 & 96 & 120 \\end{bmatrix} \\begin{bmatrix} 80 \\\\ 60 \\\\ 40 \\end{bmatrix}$।",
+          "पंक्ति $\\times$ स्तम्भ गुणनफल: $PC = [(120 \\times 80) + (96 \\times 60) + (120 \\times 40)]$।",
+          "मानों का योग: $[9600 + 5760 + 4800] = [20160]$।",
+          "अतः दुकान को कुल ₹20,160 की धनराशि प्राप्त होगी।",
+          "उत्तर: ₹20,160"
+        ]
+      },
+      {
+        "question": "यदि $A = \\begin{bmatrix} -1 & 2 & 3 \\\\ 5 & 7 & 9 \\\\ -2 & 1 & 1 \\end{bmatrix}$ तथा $B = \\begin{bmatrix} -4 & 1 & -5 \\\\ 1 & 2 & 0 \\\\ 1 & 3 & 1 \\end{bmatrix}$ हैं तो सत्यापित कीजिए कि: (i) $(A + B)' = A' + B'$, (ii) $(A - B)' = A' - B'$। [NCERT प्रश्नावली 3.3 प्रश्न 2]",
+        "answer": [
+          "चरण 1: $A$ तथा $B$ के परिवर्त ज्ञात करने पर:",
+          "$A' = \\begin{bmatrix} -1 & 5 & -2 \\\\ 2 & 7 & 1 \\\\ 3 & 9 & 1 \\end{bmatrix}$ तथा $B' = \\begin{bmatrix} -4 & 1 & 1 \\\\ 1 & 2 & 3 \\\\ -5 & 0 & 1 \\end{bmatrix}$।",
+          "चरण 2: भाग (i) हेतु $A + B$ की गणना:",
+          "$A + B = \\begin{bmatrix} -1-4 & 2+1 & 3-5 \\\\ 5+1 & 7+2 & 9+0 \\\\ -2+1 & 1+3 & 1+1 \\end{bmatrix} = \\begin{bmatrix} -5 & 3 & -2 \\\\ 6 & 9 & 9 \\\\ -1 & 4 & 2 \\end{bmatrix}$।",
+          "$\\text{LHS} = (A + B)' = \\begin{bmatrix} -5 & 6 & -1 \\\\ 3 & 9 & 4 \\\\ -2 & 9 & 2 \\end{bmatrix}$।",
+          "$\\text{RHS} = A' + B' = \\begin{bmatrix} -1-4 & 5+1 & -2+1 \\\\ 2+1 & 7+2 & 1+3 \\\\ 3-5 & 9+0 & 1+1 \\end{bmatrix} = \\begin{bmatrix} -5 & 6 & -1 \\\\ 3 & 9 & 4 \\\\ -2 & 9 & 2 \\end{bmatrix}$।",
+          "अतः $(A + B)' = A' + B'$ सिद्ध हुआ।",
+          "चरण 3: भाग (ii) हेतु $A - B$ की गणना:",
+          "$A - B = \\begin{bmatrix} -1-(-4) & 2-1 & 3-(-5) \\\\ 5-1 & 7-2 & 9-0 \\\\ -2-1 & 1-3 & 1-1 \\end{bmatrix} = \\begin{bmatrix} 3 & 1 & 8 \\\\ 4 & 5 & 9 \\\\ -3 & -2 & 0 \\end{bmatrix}$।",
+          "$\\text{LHS} = (A - B)' = \\begin{bmatrix} 3 & 4 & -3 \\\\ 1 & 5 & -2 \\\\ 8 & 9 & 0 \\end{bmatrix}$।",
+          "$\\text{RHS} = A' - B' = \\begin{bmatrix} -1-(-4) & 5-1 & -2-1 \\\\ 2-1 & 7-2 & 1-3 \\\\ 3-(-5) & 9-0 & 1-1 \\end{bmatrix} = \\begin{bmatrix} 3 & 4 & -3 \\\\ 1 & 5 & -2 \\\\ 8 & 9 & 0 \\end{bmatrix}$।",
+          "अतः $(A - B)' = A' - B'$ भी सिद्ध हुआ।",
+          "उत्तर: दोनों भाग पूर्णतः सत्यापित हुए"
+        ]
+      },
+      {
+        "question": "यदि $A' = \\begin{bmatrix} 3 & 4 \\\\ -1 & 2 \\\\ 0 & 1 \\end{bmatrix}$ तथा $B = \\begin{bmatrix} -1 & 2 & 1 \\\\ 1 & 2 & 3 \\end{bmatrix}$ हैं तो सत्यापित कीजिए कि: (i) $(A + B)' = A' + B'$, (ii) $(A - B)' = A' - B'$। [NCERT प्रश्नावली 3.3 प्रश्न 3]",
+        "answer": [
+          "चरण 1: $A = (A')'$ से आव्यूह $A$ तथा $B'$ ज्ञात करना:",
+          "$A = \\begin{bmatrix} 3 & -1 & 0 \\\\ 4 & 2 & 1 \\end{bmatrix}$ तथा $B' = \\begin{bmatrix} -1 & 1 \\\\ 2 & 2 \\\\ 1 & 3 \\end{bmatrix}$।",
+          "चरण 2: भाग (i) हेतु $A + B$ का मान:",
+          "$A + B = \\begin{bmatrix} 3-1 & -1+2 & 0+1 \\\\ 4+1 & 2+2 & 1+3 \\end{bmatrix} = \\begin{bmatrix} 2 & 1 & 1 \\\\ 5 & 4 & 4 \\end{bmatrix}$।",
+          "$\\text{LHS} = (A + B)' = \\begin{bmatrix} 2 & 5 \\\\ 1 & 4 \\\\ 1 & 4 \\end{bmatrix}$।",
+          "$\\text{RHS} = A' + B' = \\begin{bmatrix} 3-1 & 4+1 \\\\ -1+2 & 2+2 \\\\ 0+1 & 1+3 \\end{bmatrix} = \\begin{bmatrix} 2 & 5 \\\\ 1 & 4 \\\\ 1 & 4 \\end{bmatrix}$।",
+          "अतः $(A + B)' = A' + B'$ सत्यापित हुआ।",
+          "चरण 3: भाग (ii) हेतु $A - B$ का मान:",
+          "$A - B = \\begin{bmatrix} 3-(-1) & -1-2 & 0-1 \\\\ 4-1 & 2-2 & 1-3 \\end{bmatrix} = \\begin{bmatrix} 4 & -3 & -1 \\\\ 3 & 0 & -2 \\end{bmatrix}$।",
+          "$\\text{LHS} = (A - B)' = \\begin{bmatrix} 4 & 3 \\\\ -3 & 0 \\\\ -1 & -2 \\end{bmatrix}$।",
+          "$\\text{RHS} = A' - B' = \\begin{bmatrix} 3-(-1) & 4-1 \\\\ -1-2 & 2-2 \\\\ 0-1 & 1-3 \\end{bmatrix} = \\begin{bmatrix} 4 & 3 \\\\ -3 & 0 \\\\ -1 & -2 \\end{bmatrix}$।",
+          "अतः $(A - B)' = A' - B'$ भी सत्यापित हुआ।",
+          "उत्तर: दोनों भाग पूर्णतः सत्यापित हुए"
+        ]
+      },
+      {
+        "question": "$A$ तथा $B$ आव्यूहों के लिए सत्यापित कीजिए कि $(AB)' = B'A'$, जहाँ (i) $A = \\begin{bmatrix} 1 \\\\ -4 \\\\ 3 \\end{bmatrix}, B = \\begin{bmatrix} -1 & 2 & 1 \\end{bmatrix}$, (ii) $A = \\begin{bmatrix} 0 \\\\ 1 \\\\ 2 \\end{bmatrix}, B = \\begin{bmatrix} 1 & 5 & 7 \\end{bmatrix}$। [NCERT प्रश्नावली 3.3 प्रश्न 5]",
+        "answer": [
+          "भाग (i): $A$ की कोटि $3 \\times 1$ तथा $B$ की कोटि $1 \\times 3$।",
+          "गुणनफल $AB = \\begin{bmatrix} 1(-1) & 1(2) & 1(1) \\\\ -4(-1) & -4(2) & -4(1) \\\\ 3(-1) & 3(2) & 3(1) \\end{bmatrix} = \\begin{bmatrix} -1 & 2 & 1 \\\\ 4 & -8 & -4 \\\\ -3 & 6 & 3 \\end{bmatrix}$।",
+          "$\\text{LHS} = (AB)' = \\begin{bmatrix} -1 & 4 & -3 \\\\ 2 & -8 & 6 \\\\ 1 & -4 & 3 \\end{bmatrix}$।",
+          "$B' = \\begin{bmatrix} -1 \\\\ 2 \\\\ 1 \\end{bmatrix}$ तथा $A' = \\begin{bmatrix} 1 & -4 & 3 \\end{bmatrix}$।",
+          "$\\text{RHS} = B'A' = \\begin{bmatrix} -1(1) & -1(-4) & -1(3) \\\\ 2(1) & 2(-4) & 2(3) \\\\ 1(1) & 1(-4) & 1(3) \\end{bmatrix} = \\begin{bmatrix} -1 & 4 & -3 \\\\ 2 & -8 & 6 \\\\ 1 & -4 & 3 \\end{bmatrix}$।",
+          "अतः $(AB)' = B'A'$।",
+          "भाग (ii): $AB = \\begin{bmatrix} 0(1) & 0(5) & 0(7) \\\\ 1(1) & 1(5) & 1(7) \\\\ 2(1) & 2(5) & 2(7) \\end{bmatrix} = \\begin{bmatrix} 0 & 0 & 0 \\\\ 1 & 5 & 7 \\\\ 2 & 10 & 14 \\end{bmatrix}$।",
+          "$\\text{LHS} = (AB)' = \\begin{bmatrix} 0 & 1 & 2 \\\\ 0 & 5 & 10 \\\\ 0 & 7 & 14 \\end{bmatrix}$।",
+          "$B' = \\begin{bmatrix} 1 \\\\ 5 \\\\ 7 \\end{bmatrix}$ तथा $A' = \\begin{bmatrix} 0 & 1 & 2 \\end{bmatrix}$।",
+          "$\\text{RHS} = B'A' = \\begin{bmatrix} 1(0) & 1(1) & 1(2) \\\\ 5(0) & 5(1) & 5(2) \\\\ 7(0) & 7(1) & 7(2) \\end{bmatrix} = \\begin{bmatrix} 0 & 1 & 2 \\\\ 0 & 5 & 10 \\\\ 0 & 7 & 14 \\end{bmatrix}$।",
+          "अतः दोनों स्थितियों में $(AB)' = B'A'$ सिद्ध हुआ।",
+          "उत्तर: उत्क्रमणीय नियम $(AB)' = B'A'$ सत्यापित"
+        ]
+      },
+      {
+        "question": "निम्नलिखित आव्यूहों को एक सममित आव्यूह तथा एक विषम सममित आव्यूह के योगफल के रूप में व्यक्त कीजिए: (i) $\\begin{bmatrix} 3 & 5 \\\\ 1 & -1 \\end{bmatrix}$, (ii) $\\begin{bmatrix} 6 & -2 & 2 \\\\ -2 & 3 & -1 \\\\ 2 & -1 & 3 \\end{bmatrix}$, (iii) $\\begin{bmatrix} 3 & 3 & -1 \\\\ -2 & -2 & 1 \\\\ -4 & -5 & 2 \\end{bmatrix}$, (iv) $\\begin{bmatrix} 1 & 5 \\\\ -1 & 2 \\end{bmatrix}$। [NCERT प्रश्नावली 3.3 प्रश्न 10]",
+        "answer": [
+          "सूत्र: $A = P + Q$, जहाँ $P = \\frac{1}{2}(A + A')$ (सममित) तथा $Q = \\frac{1}{2}(A - A')$ (विषम सममित)।",
+          "भाग (i): $A' = \\begin{bmatrix} 3 & 1 \\\\ 5 & -1 \\end{bmatrix}$।",
+          "$P = \\frac{1}{2}\\begin{bmatrix} 6 & 6 \\\\ 6 & -2 \\end{bmatrix} = \\begin{bmatrix} 3 & 3 \\\\ 3 & -1 \\end{bmatrix}$ (जहाँ $P' = P$)।",
+          "$Q = \\frac{1}{2}\\begin{bmatrix} 0 & 4 \\\\ -4 & 0 \\end{bmatrix} = \\begin{bmatrix} 0 & 2 \\\\ -2 & 0 \\end{bmatrix}$ (जहाँ $Q' = -Q$)।",
+          "$P + Q = \\begin{bmatrix} 3 & 3 \\\\ 3 & -1 \\end{bmatrix} + \\begin{bmatrix} 0 & 2 \\\\ -2 & 0 \\end{bmatrix} = A$।",
+          "भाग (ii): $A' = \\begin{bmatrix} 6 & -2 & 2 \\\\ -2 & 3 & -1 \\\\ 2 & -1 & 3 \\end{bmatrix} = A$ (यह स्वयं सममित है)।",
+          "अतः $P = A = \\begin{bmatrix} 6 & -2 & 2 \\\\ -2 & 3 & -1 \\\\ 2 & -1 & 3 \\end{bmatrix}$ तथा $Q = O = \\begin{bmatrix} 0 & 0 & 0 \\\\ 0 & 0 & 0 \\\\ 0 & 0 & 0 \\end{bmatrix}$।",
+          "भाग (iii): $A' = \\begin{bmatrix} 3 & -2 & -4 \\\\ 3 & -2 & -5 \\\\ -1 & 1 & 2 \\end{bmatrix}$।",
+          "$P = \\frac{1}{2}(A+A') = \\begin{bmatrix} 3 & 1/2 & -5/2 \\\\ 1/2 & -2 & -2 \\\\ -5/2 & -2 & 2 \\end{bmatrix}$।",
+          "$Q = \\frac{1}{2}(A-A') = \\begin{bmatrix} 0 & 5/2 & 3/2 \\\\ -5/2 & 0 & 3 \\\\ -3/2 & -3 & 0 \\end{bmatrix}$।",
+          "जाँच: $P + Q = A$।",
+          "भाग (iv): $A = \\begin{bmatrix} 1 & 5 \\\\ -1 & 2 \\end{bmatrix} \\implies A' = \\begin{bmatrix} 1 & -1 \\\\ 5 & 2 \\end{bmatrix}$।",
+          "$P = \\frac{1}{2}\\begin{bmatrix} 2 & 4 \\\\ 4 & 4 \\end{bmatrix} = \\begin{bmatrix} 1 & 2 \\\\ 2 & 2 \\end{bmatrix}$।",
+          "$Q = \\frac{1}{2}\\begin{bmatrix} 0 & 6 \\\\ -6 & 0 \\end{bmatrix} = \\begin{bmatrix} 0 & 3 \\\\ -3 & 0 \\end{bmatrix}$।",
+          "जाँच: $\\begin{bmatrix} 1 & 2 \\\\ 2 & 2 \\end{bmatrix} + \\begin{bmatrix} 0 & 3 \\\\ -3 & 0 \\end{bmatrix} = \\begin{bmatrix} 1 & 5 \\\\ -1 & 2 \\end{bmatrix} = A$।",
+          "उत्तर: सभी चार आव्यूह $P + Q$ के रूप में व्यक्त हुए"
+        ]
+      },
+      {
+        "question": "प्रारंभिक पंक्ति रूपांतरण के प्रयोग से आव्यूह $A = \\begin{bmatrix} 2 & -3 & 3 \\\\ 2 & 2 & 3 \\\\ 3 & -2 & 2 \\end{bmatrix}$ का व्युत्क्रम ज्ञात कीजिए। [NCERT प्रश्नावली 3.4 प्रश्न 15]",
+        "answer": [
+          "चरण 1: आव्यूह समीकरण $A = IA$ लिखने पर:",
+          "$\\begin{bmatrix} 2 & -3 & 3 \\\\ 2 & 2 & 3 \\\\ 3 & -2 & 2 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} A$।",
+          "चरण 2 (Step I: $a_{31}$ को 0 बनाना): $R_3 \\rightarrow 2R_3 - 3R_1$ लगाने पर:",
+          "$\\begin{bmatrix} 2 & -3 & 3 \\\\ 2 & 2 & 3 \\\\ 0 & 5 & -5 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ -3 & 0 & 2 \\end{bmatrix} A$।",
+          "चरण 3 (Step II: $a_{21}$ को 0 बनाना): $R_2 \\rightarrow R_2 - R_1$ लगाने पर:",
+          "$\\begin{bmatrix} 2 & -3 & 3 \\\\ 0 & 5 & 0 \\\\ 0 & 5 & -5 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 & 0 \\\\ -1 & 1 & 0 \\\\ -3 & 0 & 2 \\end{bmatrix} A$।",
+          "चरण 4 (Step III: $a_{32}$ को 0 बनाना): $R_3 \\rightarrow R_3 - R_2$ लगाने पर:",
+          "$\\begin{bmatrix} 2 & -3 & 3 \\\\ 0 & 5 & 0 \\\\ 0 & 0 & -5 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 & 0 \\\\ -1 & 1 & 0 \\\\ -2 & -1 & 2 \\end{bmatrix} A$।",
+          "चरण 5: $R_2 \\rightarrow \\frac{1}{5}R_2$ तथा $R_3 \\rightarrow -\\frac{1}{5}R_3$ करने पर:",
+          "$\\begin{bmatrix} 2 & -3 & 3 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 & 0 \\\\ -1/5 & 1/5 & 0 \\\\ 2/5 & 1/5 & -2/5 \\end{bmatrix} A$।",
+          "चरण 6: $R_1 \\rightarrow R_1 - 3R_3$ तथा तत्पश्चात $R_1 \\rightarrow R_1 + 3R_2$ करने पर:",
+          "$\\begin{bmatrix} 2 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} = \\begin{bmatrix} -4/5 & 0 & 6/5 \\\\ -1/5 & 1/5 & 0 \\\\ 2/5 & 1/5 & -2/5 \\end{bmatrix} A$।",
+          "चरण 7: $R_1 \\rightarrow \\frac{1}{2}R_1$ करने पर तत्समक आव्यूह $I$ प्राप्त होता है:",
+          "$\\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} = \\begin{bmatrix} -2/5 & 0 & 3/5 \\\\ -1/5 & 1/5 & 0 \\\\ 2/5 & 1/5 & -2/5 \\end{bmatrix} A$।",
+          "उत्तर: $A^{-1} = \\begin{bmatrix} -2/5 & 0 & 3/5 \\\\ -1/5 & 1/5 & 0 \\\\ 2/5 & 1/5 & -2/5 \\end{bmatrix}$"
+        ]
+      },
+      {
+        "question": "प्रारंभिक पंक्ति रूपांतरण के प्रयोग से आव्यूह $A = \\begin{bmatrix} 1 & 3 & -2 \\\\ -3 & 0 & -5 \\\\ 2 & 5 & 0 \\end{bmatrix}$ का व्युत्क्रम ज्ञात कीजिए। [NCERT प्रश्नावली 3.4 प्रश्न 16]",
+        "answer": [
+          "चरण 1: $A = IA$ समीकरण लिखने पर:",
+          "$\\begin{bmatrix} 1 & 3 & -2 \\\\ -3 & 0 & -5 \\\\ 2 & 5 & 0 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} A$।",
+          "चरण 2: संक्रियाएँ $R_2 \\rightarrow R_2 + 3R_1$ तथा $R_3 \\rightarrow R_3 - 2R_1$ लगाने पर:",
+          "$\\begin{bmatrix} 1 & 3 & -2 \\\\ 0 & 9 & -11 \\\\ 0 & -1 & 4 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 & 0 \\\\ 3 & 1 & 0 \\\\ -2 & 0 & 1 \\end{bmatrix} A$।",
+          "चरण 3: संक्रिया $R_2 \\leftrightarrow R_3$ और फिर $R_2 \\rightarrow -1 R_2$ लगाने पर:",
+          "$\\begin{bmatrix} 1 & 3 & -2 \\\\ 0 & 1 & -4 \\\\ 0 & 9 & -11 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 & 0 \\\\ 2 & 0 & -1 \\\\ 3 & 1 & 0 \\end{bmatrix} A$।",
+          "चरण 4: संक्रिया $R_3 \\rightarrow R_3 - 9R_2$ लगाने पर:",
+          "$\\begin{bmatrix} 1 & 3 & -2 \\\\ 0 & 1 & -4 \\\\ 0 & 0 & 25 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 & 0 \\\\ 2 & 0 & -1 \\\\ -15 & 1 & 9 \\end{bmatrix} A$।",
+          "चरण 5: $R_3 \\rightarrow \\frac{1}{25}R_3$ करने पर तृतीय पंक्ति $[0 \\quad 0 \\quad 1]$ बन जाती है।",
+          "चरण 6: ऊपरी अवयवों को शून्य बनाने हेतु $R_2 \\rightarrow R_2 + 4R_3$ तथा $R_1 \\rightarrow R_1 + 2R_3$ और अंत में $R_1 \\rightarrow R_1 - 3R_2$ करने पर बायाँ पक्ष $I$ बन जाता है।",
+          "दाएँ पक्ष के मानों को सरल करने पर अभीष्ट आव्यूह प्राप्त होता है:",
+          "$A^{-1} = \\begin{bmatrix} 1 & -2/5 & -3/5 \\\\ -2/5 & 4/25 & 11/25 \\\\ -3/5 & 1/25 & 9/25 \\end{bmatrix}$।",
+          "उत्तर: $A^{-1} = \\begin{bmatrix} 1 & -2/5 & -3/5 \\\\ -2/5 & 4/25 & 11/25 \\\\ -3/5 & 1/25 & 9/25 \\end{bmatrix}$"
+        ]
+      },
+      {
+        "question": "प्रारंभिक पंक्ति रूपांतरण के प्रयोग से आव्यूह $A = \\begin{bmatrix} 2 & 0 & -1 \\\\ 5 & 1 & 0 \\\\ 0 & 1 & 3 \\end{bmatrix}$ का व्युत्क्रम ज्ञात कीजिए। [NCERT प्रश्नावली 3.4 प्रश्न 17]",
+        "answer": [
+          "चरण 1: समीकरण $A = IA$:",
+          "$\\begin{bmatrix} 2 & 0 & -1 \\\\ 5 & 1 & 0 \\\\ 0 & 1 & 3 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} A$।",
+          "चरण 2: संक्रिया $R_2 \\rightarrow 2R_2 - 5R_1$ लगाने पर:",
+          "$\\begin{bmatrix} 2 & 0 & -1 \\\\ 0 & 2 & 5 \\\\ 0 & 1 & 3 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 & 0 \\\\ -5 & 2 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} A$।",
+          "चरण 3: संक्रिया $R_2 \\leftrightarrow R_3$: $\\begin{bmatrix} 2 & 0 & -1 \\\\ 0 & 1 & 3 \\\\ 0 & 2 & 5 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 0 & 1 \\\\ -5 & 2 & 0 \\end{bmatrix} A$।",
+          "चरण 4: संक्रिया $R_3 \\rightarrow R_3 - 2R_2$: $\\begin{bmatrix} 2 & 0 & -1 \\\\ 0 & 1 & 3 \\\\ 0 & 0 & -1 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 0 & 1 \\\\ -5 & 2 & -2 \\end{bmatrix} A$।",
+          "चरण 5: संक्रिया $R_3 \\rightarrow -1 R_3$: $\\begin{bmatrix} 2 & 0 & -1 \\\\ 0 & 1 & 3 \\\\ 0 & 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 0 & 1 \\\\ 5 & -2 & 2 \\end{bmatrix} A$।",
+          "चरण 6: संक्रियाएँ $R_1 \\rightarrow R_1 + R_3$ तथा $R_2 \\rightarrow R_2 - 3R_3$ लगाने पर:",
+          "$\\begin{bmatrix} 2 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 6 & -2 & 2 \\\\ -15 & 6 & -5 \\\\ 5 & -2 & 2 \\end{bmatrix} A$।",
+          "चरण 7: संक्रिया $R_1 \\rightarrow \\frac{1}{2}R_1$ लगाने पर बायाँ पक्ष $I$ बन जाता है:",
+          "$\\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 3 & -1 & 1 \\\\ -15 & 6 & -5 \\\\ 5 & -2 & 2 \\end{bmatrix} A$।",
+          "उत्तर: $A^{-1} = \\begin{bmatrix} 3 & -1 & 1 \\\\ -15 & 6 & -5 \\\\ 5 & -2 & 2 \\end{bmatrix}$"
+        ]
+      },
+      {
+        "question": "मान लीजिए कि $A = \\begin{bmatrix} 0 & 1 \\\\ 0 & 0 \\end{bmatrix}$ हो तो दिखाइए कि सभी $n \\in \\mathbb{N}$ के लिए $(aI + bA)^n = a^n I + n a^{n-1} b A$, जहाँ $I$ कोटि 2 का तत्समक आव्यूह है। [गणितीय आगमन का सिद्धांत - विविध प्रश्नावली प्रश्न 1]",
+        "answer": [
+          "चरण 1 (कथन निरूपण): माना दिया गया कथन $P(n): (aI + bA)^n = a^n I + n a^{n-1} b A$ है।",
+          "चरण 2 ($n = 1$ के लिए जाँच): $\\text{LHS} = (aI + bA)^1 = aI + bA$।",
+          "$\\text{RHS} = a^1 I + 1 \\cdot a^{1-1} b A = aI + a^0 b A = aI + bA$।",
+          "चूँकि $\\text{LHS} = \\text{RHS}$, अतः कथन $P(1)$ सत्य है।",
+          "चरण 3 ($n = k$ के लिए परिकल्पना): माना कथन $n = k$ के लिए सत्य है:",
+          "$P(k): (aI + bA)^k = a^k I + k a^{k-1} b A$ ...(1)",
+          "चरण 4 ($n = k + 1$ के लिए सिद्ध करना): सिद्ध करना है कि $(aI + bA)^{k+1} = a^{k+1} I + (k+1) a^k b A$।",
+          "$\\text{LHS} = (aI + bA)^{k+1} = (aI + bA)^k (aI + bA)$।",
+          "समीकरण (1) का प्रयोग करने पर: $(a^k I + k a^{k-1} b A) (aI + bA)$।",
+          "वितरण नियम से गुणा करने पर: $a^{k+1} I^2 + a^k b IA + k a^k b AI + k a^{k-1} b^2 A^2$।",
+          "यहाँ $I^2 = I$, $IA = AI = A$ तथा $A^2 = \\begin{bmatrix} 0 & 1 \\\\ 0 & 0 \\end{bmatrix} \\begin{bmatrix} 0 & 1 \\\\ 0 & 0 \\end{bmatrix} = \\begin{bmatrix} 0 & 0 \\\\ 0 & 0 \\end{bmatrix} = O$।",
+          "मान रखने पर: $a^{k+1} I + a^k b A + k a^k b A + O = a^{k+1} I + (k+1) a^k b A = \\text{RHS}$।",
+          "अतः $P(k+1)$ सत्य है। गणितीय आगमन के सिद्धांत द्वारा कथन सभी $n \\in \\mathbb{N}$ के लिए सत्य है।",
+          "उत्तर: सिद्ध हुआ"
+        ]
+      },
+      {
+        "question": "यदि $A = \\begin{bmatrix} 1 & 1 & 1 \\\\ 1 & 1 & 1 \\\\ 1 & 1 & 1 \\end{bmatrix}$, तो सिद्ध कीजिए कि $A^n = \\begin{bmatrix} 3^{n-1} & 3^{n-1} & 3^{n-1} \\\\ 3^{n-1} & 3^{n-1} & 3^{n-1} \\\\ 3^{n-1} & 3^{n-1} & 3^{n-1} \\end{bmatrix}$, $n \\in \\mathbb{N}$। [गणितीय आगमन का सिद्धांत - विविध प्रश्नावली प्रश्न 2]",
+        "answer": [
+          "चरण 1: माना दिया गया कथन $P(n): A^n = [3^{n-1}]_{3 \\times 3}$ है।",
+          "चरण 2 ($n = 1$ के लिए): $A^1 = [3^{1-1}] = [3^0] = [1]_{3 \\times 3} = A$। अतः $P(1)$ सत्य है।",
+          "चरण 3 ($n = k$ हेतु परिकल्पना): माना $P(k)$ सत्य है, अर्थात $A^k = \\begin{bmatrix} 3^{k-1} & 3^{k-1} & 3^{k-1} \\\\ 3^{k-1} & 3^{k-1} & 3^{k-1} \\\\ 3^{k-1} & 3^{k-1} & 3^{k-1} \\end{bmatrix}$।",
+          "चरण 4 ($n = k + 1$ हेतु उपपत्ति): $A^{k+1} = A^k \\cdot A$।",
+          "$A^{k+1} = \\begin{bmatrix} 3^{k-1} & 3^{k-1} & 3^{k-1} \\\\ 3^{k-1} & 3^{k-1} & 3^{k-1} \\\\ 3^{k-1} & 3^{k-1} & 3^{k-1} \\end{bmatrix} \\begin{bmatrix} 1 & 1 & 1 \\\\ 1 & 1 & 1 \\\\ 1 & 1 & 1 \\end{bmatrix}$।",
+          "पंक्ति $\\times$ स्तम्भ गुणनफल का प्रत्येक अवयव: $3^{k-1}(1) + 3^{k-1}(1) + 3^{k-1}(1) = 3 \\cdot 3^{k-1} = 3^{(k-1)+1} = 3^k = 3^{(k+1)-1}$।",
+          "अतः $A^{k+1} = \\begin{bmatrix} 3^{(k+1)-1} & 3^{(k+1)-1} & 3^{(k+1)-1} \\\\ 3^{(k+1)-1} & 3^{(k+1)-1} & 3^{(k+1)-1} \\\\ 3^{(k+1)-1} & 3^{(k+1)-1} & 3^{(k+1)-1} \\end{bmatrix}$।",
+          "अतः $P(k+1)$ सत्य है। गणितीय आगमन के सिद्धांत द्वारा कथन प्रत्येक $n \\in \\mathbb{N}$ के लिए सत्य सिद्ध हुआ।",
+          "उत्तर: सिद्ध हुआ"
+        ]
+      },
+      {
+        "question": "यदि $A = \\begin{bmatrix} 3 & -4 \\\\ 1 & -1 \\end{bmatrix}$, तो सिद्ध कीजिए कि $A^n = \\begin{bmatrix} 1+2n & -4n \\\\ n & 1-2n \\end{bmatrix}$, जहाँ $n$ एक धन पूर्णांक है। [गणितीय आगमन का सिद्धांत - विविध प्रश्नावली प्रश्न 3]",
+        "answer": [
+          "चरण 1: माना $P(n): A^n = \\begin{bmatrix} 1+2n & -4n \\\\ n & 1-2n \\end{bmatrix}$।",
+          "चरण 2 ($n = 1$ के लिए): $A^1 = \\begin{bmatrix} 1+2(1) & -4(1) \\\\ 1 & 1-2(1) \\end{bmatrix} = \\begin{bmatrix} 3 & -4 \\\\ 1 & -1 \\end{bmatrix} = A$। अतः $P(1)$ सत्य है।",
+          "चरण 3 ($n = k$ हेतु परिकल्पना): माना कथन $n = k$ के लिए सत्य है:",
+          "$A^k = \\begin{bmatrix} 1+2k & -4k \\\\ k & 1-2k \\end{bmatrix}$ ...(1)",
+          "चरण 4 ($n = k + 1$ हेतु सिद्ध करना): $A^{k+1} = A^k \\cdot A$।",
+          "$A^{k+1} = \\begin{bmatrix} 1+2k & -4k \\\\ k & 1-2k \\end{bmatrix} \\begin{bmatrix} 3 & -4 \\\\ 1 & -1 \\end{bmatrix}$।",
+          "गुणा करने पर: $\\begin{bmatrix} 3(1+2k) - 4k & -4(1+2k) + 4k \\\\ 3k + (1-2k) & -4k - (1-2k) \\end{bmatrix}$।",
+          "सरल करने पर: $\\begin{bmatrix} 3 + 6k - 4k & -4 - 8k + 4k \\\\ k + 1 & -4k - 1 + 2k \\end{bmatrix} = \\begin{bmatrix} 3 + 2k & -4 - 4k \\\\ k + 1 & -1 - 2k \\end{bmatrix}$।",
+          "इसे मानक रूप में लिखने पर: $\\begin{bmatrix} 1 + 2(k+1) & -4(k+1) \\\\ k+1 & 1 - 2(k+1) \\end{bmatrix}$।",
+          "अतः $P(k+1)$ सत्य है। गणितीय आगमन के सिद्धांत द्वारा कथन सिद्ध हुआ।",
+          "उत्तर: सिद्ध हुआ"
+        ]
+      },
+      {
+        "question": "$x, y$ तथा $z$ के मानों को ज्ञात कीजिए, यदि आव्यूह $A = \\begin{bmatrix} 0 & 2y & z \\\\ x & y & -z \\\\ x & -y & z \\end{bmatrix}$ समीकरण $A'A = I$ को सन्तुष्ट करता है। [विविध प्रश्नावली प्रश्न 6]",
+        "answer": [
+          "चरण 1: परिवर्त आव्यूह $A'$ ज्ञात करने पर: $A' = \\begin{bmatrix} 0 & x & x \\\\ 2y & y & -y \\\\ z & -z & z \\end{bmatrix}$।",
+          "चरण 2: गुणनफल $A'A$ की गणना पंक्ति $\\times$ स्तम्भ नियम से करने पर:",
+          "$A'A = \\begin{bmatrix} 0+x^2+x^2 & 0+xy-xy & 0-xz+xz \\\\ 0+xy-xy & 4y^2+y^2+y^2 & 2yz-yz-yz \\\\ 0-xz+xz & 2yz-yz-yz & z^2+z^2+z^2 \\end{bmatrix} = \\begin{bmatrix} 2x^2 & 0 & 0 \\\\ 0 & 6y^2 & 0 \\\\ 0 & 0 & 3z^2 \\end{bmatrix}$।",
+          "चरण 3: समीकरण $A'A = I$ के साथ तुलना करने पर:",
+          "$\\begin{bmatrix} 2x^2 & 0 & 0 \\\\ 0 & 6y^2 & 0 \\\\ 0 & 0 & 3z^2 \\end{bmatrix} = \\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix}$।",
+          "$2x^2 = 1 \\implies x^2 = 1/2 \\implies x = \\pm \\frac{1}{\\sqrt{2}}$।",
+          "$6y^2 = 1 \\implies y^2 = 1/6 \\implies y = \\pm \\frac{1}{\\sqrt{6}}$।",
+          "$3z^2 = 1 \\implies z^2 = 1/3 \\implies z = \\pm \\frac{1}{\\sqrt{3}}$।",
+          "उत्तर: $x = \\pm \\frac{1}{\\sqrt{2}}, y = \\pm \\frac{1}{\\sqrt{6}}, z = \\pm \\frac{1}{\\sqrt{3}}$"
+        ]
+      },
+      {
+        "question": "एक निर्माता तीन प्रकार की वस्तुएँ $x, y$ तथा $z$ का उत्पादन करता है जिनका वह दो बाजारों में विक्रय करता है। वार्षिक बिक्री नीचे दी गई है: बाजार I: $(10000, 2000, 18000)$; बाजार II: $(6000, 20000, 8000)$। (a) यदि विक्रय मूल्य क्रमशः ₹2.50, ₹1.50 तथा ₹1.00 हो तो प्रत्येक बाजार में कुल आय ज्ञात कीजिए। (b) यदि लागत मूल्य क्रमशः ₹2.00, ₹1.00 तथा 50 पैसे हो तो कुल लाभ ज्ञात कीजिए। [विविध प्रश्नावली प्रश्न 10]",
+        "answer": [
+          "चरण 1: बिक्री मात्रा का आव्यूह: $A = \\begin{bmatrix} 10000 & 2000 & 18000 \\\\ 6000 & 20000 & 8000 \\end{bmatrix}_{2 \\times 3}$।",
+          "भाग (a): विक्रय मूल्य का स्तम्भ आव्यूह: $S = \\begin{bmatrix} 2.50 \\\\ 1.50 \\\\ 1.00 \\end{bmatrix}_{3 \\times 1}$।",
+          "कुल आय आव्यूह: $R = AS = \\begin{bmatrix} 10000(2.50) + 2000(1.50) + 18000(1.00) \\\\ 6000(2.50) + 20000(1.50) + 8000(1.00) \\end{bmatrix}$।",
+          "$R = \\begin{bmatrix} 25000 + 3000 + 18000 \\\\ 15000 + 30000 + 8000 \\end{bmatrix} = \\begin{bmatrix} 46000 \\\\ 53000 \\end{bmatrix}$।",
+          "बाजार I की आय = ₹46,000 तथा बाजार II की आय = ₹53,000। कुल आय = ₹99,000।",
+          "भाग (b): लागत मूल्य का स्तम्भ आव्यूह: $C = \\begin{bmatrix} 2.00 \\\\ 1.00 \\\\ 0.50 \\end{bmatrix}$।",
+          "कुल लागत आव्यूह: $AC = \\begin{bmatrix} 10000(2) + 2000(1) + 18000(0.50) \\\\ 6000(2) + 20000(1) + 8000(0.50) \\end{bmatrix} = \\begin{bmatrix} 20000 + 2000 + 9000 \\\\ 12000 + 20000 + 4000 \\end{bmatrix} = \\begin{bmatrix} 31000 \\\\ 36000 \\end{bmatrix}$।",
+          "बाजार I का लाभ = $46000 - 31000 =$ ₹15,000।",
+          "बाजार II का लाभ = $53000 - 36000 =$ ₹17,000।",
+          "कुल सकल लाभ (Gross Profit) = $15000 + 17000 =$ ₹32,000।",
+          "उत्तर: कुल आय = ₹99,000 तथा कुल लाभ = ₹32,000"
+        ]
+      }
+    ]
+  }
+}

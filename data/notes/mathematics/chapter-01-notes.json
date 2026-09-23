@@ -1,0 +1,1414 @@
+{
+  "_help": "Chapter notes data. Preserve this schema and category structure.",
+  "schemaVersion": 1,
+  "subject": "mathematics",
+  "chapter": 1,
+  "title": "संबंध एवं फलन (Relations and Functions)",
+  "categories": {
+    "chapterNotes": [
+      {
+        "heading": "अध्याय 1: संबंध एवं फलन की रूपरेखा",
+        "content": [
+          "कक्षा 12 बिहार बोर्ड गणित के प्रथम अध्याय 'संबंध एवं फलन' में संबंधों के विभिन्न प्रकार (स्वतुल्य, सममित, संक्रामक, तुल्यता संबंध), फलनों के प्रकार (एकैकी, आच्छादक, बहुएक, अंतःक्षेपी), फलनों का संयोजन ($g \\circ f$), व्युत्क्रमणीय फलन तथा द्वि-आधारी संक्रियाओं का विस्तृत अध्ययन किया जाता है।",
+          "यह अध्याय बोर्ड परीक्षा के वस्तुनिष्ठ (Objective) और विषयनिष्ठ (Subjective) दोनों वर्गों में अत्यधिक महत्वपूर्ण स्थान रखता है।"
+        ],
+        "points": [
+          "कार्तीय गुणन $A \\times B$ में अवयवों की कुल संख्या $n(A \\times B) = n(A) \\times n(B)$ होती है।",
+          "समुच्चय $A$ से समुच्चय $B$ में कुल संबंधों की संख्या $2^{n(A) \\cdot n(B)}$ होती है।",
+          "एक संबंध $R$ तुल्यता संबंध कहलाता है यदि वह स्वतुल्य, सममित तथा संक्रामक तीनों हो।",
+          "फलन के व्युत्क्रमणीय होने के लिए उसका एकैकी तथा आच्छादक (Bijective) होना आवश्यक एवं पर्याप्त प्रतिबंध है।"
+        ]
+      }
+    ],
+    "theory": [
+      {
+        "title": "कार्तीय गुणन (Cartesian Product)",
+        "content": [
+          "यदि $A$ और $B$ दो अरिक्त समुच्चय हैं, तो उनके सभी क्रमित युग्मों $(a, b)$ का समुच्चय, जहाँ $a \\in A$ तथा $b \\in B$, $A$ और $B$ का कार्तीय गुणन कहलाता है। इसे $A \\times B$ द्वारा सूचित किया जाता है।",
+          "गणितीय रूप में: $$A \\times B = \\{(a, b) : a \\in A \\text{ तथा } b \\in B\\}$$",
+          "यदि $n(A) = m$ तथा $n(B) = n$ हो, तो $n(A \\times B) = m \\cdot n$ होता है। सामान्यतः $A \\times B \\neq B \\times A$ जब तक कि $A = B$ न हो।"
+        ],
+        "points": [
+          "चरण 1: समुच्चय $A$ का पहला अवयव लेकर $B$ के प्रत्येक अवयव के साथ क्रमित युग्म $(a, b)$ बनाएँ।",
+          "चरण 2: समुच्चय $A$ के शेष सभी अवयवों के लिए भी यही प्रक्रिया दोहराएँ।",
+          "चरण 3: सभी प्राप्त युग्मों को मँझले कोष्ठक $\\{\\}$ के भीतर अल्पविराम द्वारा अलग करके लिखें।"
+        ]
+      },
+      {
+        "title": "संबंध, प्रांत, सह-प्रांत एवं परिसर (Relation, Domain, Codomain and Range)",
+        "content": [
+          "समुच्चय $A$ से समुच्चय $B$ में कोई संबंध $R$, कार्तीय गुणन $A \\times B$ का कोई भी उपसमुच्चय होता है, अर्थात् $R \\subseteq A \\times B$। यदि $(a, b) \\in R$, तो हम लिखते हैं $a R b$ ($a$, $b$ से संबंधित है)।",
+          "संबंध $R$ का प्रांत (Domain): संबंध $R$ के सभी क्रमित युग्मों के प्रथम घटकों का समुच्चय प्रांत कहलाता है। $$\\text{Domain}(R) = \\{a \\in A : (a, b) \\in R\\}$$",
+          "सह-प्रांत (Codomain): संपूर्ण समुच्चय $B$ को संबंध $R$ का सह-प्रांत कहा जाता है।",
+          "परिसर (Range): संबंध $R$ के सभी क्रमित युग्मों के द्वितीय घटकों का समुच्चय परिसर कहलाता है। $$\\text{Range}(R) = \\{b \\in B : (a, b) \\in R\\}$$ परिसर सदैव सह-प्रांत का उपसमुच्चय होता है ($\\text{Range} \\subseteq \\text{Codomain}$)।"
+        ],
+        "points": [
+          "चरण 1: दिए गए संबंध प्रतिबंध के अनुसार $A \\times B$ से क्रमित युग्म $(a, b)$ छाँटें।",
+          "चरण 2: क्रमित युग्मों के प्रथम मानों का समुच्चय बनाकर प्रांत ज्ञात करें।",
+          "चरण 3: क्रमित युग्मों के द्वितीय मानों का समुच्चय बनाकर परिसर ज्ञात करें।"
+        ],
+        "diagram": {
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect width='400' height='300' fill='#f8fafc'/><ellipse cx='90' cy='150' rx='50' ry='100' fill='#e2e8f0' stroke='#222' stroke-width='2'/><ellipse cx='310' cy='150' rx='50' ry='100' fill='#e2e8f0' stroke='#222' stroke-width='2'/><text x='85' y='35' font-family='sans-serif' font-size='16' font-weight='bold' fill='#222'>A</text><text x='305' y='35' font-family='sans-serif' font-size='16' font-weight='bold' fill='#222'>B</text><text x='185' y='60' font-family='sans-serif' font-size='15' font-weight='bold' fill='#2563eb'>R</text><circle cx='90' cy='90' r='4' fill='#222'/><text x='70' y='95' font-family='sans-serif' font-size='14' fill='#222'>1</text><circle cx='90' cy='140' r='4' fill='#222'/><text x='70' y='145' font-family='sans-serif' font-size='14' fill='#222'>2</text><circle cx='90' cy='190' r='4' fill='#222'/><text x='70' y='195' font-family='sans-serif' font-size='14' fill='#222'>3</text><circle cx='310' cy='80' r='4' fill='#222'/><text x='325' y='85' font-family='sans-serif' font-size='14' fill='#222'>4</text><circle cx='310' cy='125' r='4' fill='#222'/><text x='325' y='130' font-family='sans-serif' font-size='14' fill='#222'>5</text><circle cx='310' cy='170' r='4' fill='#222'/><text x='325' y='175' font-family='sans-serif' font-size='14' fill='#222'>6</text><circle cx='310' cy='215' r='4' fill='#222'/><text x='325' y='220' font-family='sans-serif' font-size='14' fill='#222'>7</text><defs><marker id='arr' markerWidth='10' markerHeight='7' refX='9' refY='3.5' orient='auto'><polygon points='0 0, 10 3.5, 0 7' fill='#2563eb'/></marker></defs><line x1='94' y1='90' x2='302' y2='168' stroke='#2563eb' stroke-width='2' marker-end='url(#arr)'/><line x1='94' y1='140' x2='302' y2='213' stroke='#2563eb' stroke-width='2' marker-end='url(#arr)'/><rect x='40' y='260' width='320' height='30' rx='5' fill='#dbeafe' stroke='#2563eb'/><text x='55' y='280' font-family='sans-serif' font-size='12' fill='#1e40af'>Domain={1,2}, Range={6,7}, Codomain={4,5,6,7}</text></svg>",
+          "caption": "समुच्चय A से B में संबंध R का तीर-आरेख (Mapping)"
+        }
+      },
+      {
+        "title": "रिक्त एवं सार्वत्रिक संबंध (Empty and Universal Relations)",
+        "content": [
+          "रिक्त संबंध (Empty Relation): समुच्चय $A$ पर परिभाषित कोई संबंध $R$ रिक्त संबंध कहलाता है यदि $A$ का कोई भी अवयव $A$ के किसी भी अवयव से संबंधित न हो, अर्थात् $$R = \\phi \\subset A \\times A$$ उदाहरण: बालकों के विद्यालय में 'बहन होने का संबंध' रिक्त संबंध है।",
+          "सार्वत्रिक संबंध (Universal Relation): समुच्चय $A$ पर परिभाषित संबंध $R$ सार्वत्रिक संबंध कहलाता है यदि $A$ का प्रत्येक अवयव $A$ के सभी अवयवों से संबंधित हो, अर्थात् $$R = A \\times A$$ उदाहरण: किन्हीं दो विद्यार्थियों की ऊँचाइयों का अंतर 3 मीटर से कम होने का संबंध।",
+          "रिक्त संबंध तथा सार्वत्रिक संबंध को सम्मिलित रूप से तुच्छ (Trivial) संबंध भी कहा जाता है।"
+        ],
+        "points": [
+          "चरण 1: दिए गए संबंध के शाब्दिक प्रतिबंध की समीक्षा करें।",
+          "चरण 2: यदि समुच्चय के किसी भी युग्म द्वारा शर्त पूरी न हो, तो संबंध रिक्त ($R = \\phi$) होगा।",
+          "चरण 3: यदि समुच्चय का प्रत्येक संभव युग्म शर्त पूरी करता हो, तो संबंध सार्वत्रिक ($R = A \\times A$) होगा।"
+        ]
+      },
+      {
+        "title": "स्वतुल्य, सममित एवं संक्रामक संबंध (Reflexive, Symmetric and Transitive Relations)",
+        "content": [
+          "समुच्चय $A$ पर परिभाषित संबंध $R$ के तीन मुख्य प्रकार होते हैं:",
+          "1. स्वतुल्य संबंध (Reflexive Relation): यदि समुच्चय $A$ के प्रत्येक अवयव $a$ के लिए $(a, a) \\in R$ हो, अर्थात् $$\\forall a \\in A, \\quad (a, a) \\in R$$",
+          "2. सममित संबंध (Symmetric Relation): यदि सभी $a, b \\in A$ के लिए $(a, b) \\in R$ होने पर अनिवार्यतः $(b, a) \\in R$ हो, अर्थात् $$(a, b) \\in R \\implies (b, a) \\in R$$",
+          "3. संक्रामक संबंध (Transitive Relation): यदि सभी $a, b, c \\in A$ के लिए $(a, b) \\in R$ तथा $(b, c) \\in R$ होने पर अनिवार्यतः $(a, c) \\in R$ हो, अर्थात् $$(a, b) \\in R \\text{ तथा } (b, c) \\in R \\implies (a, c) \\in R$$"
+        ],
+        "points": [
+          "स्वतुल्य जाँच: समुच्चय $A$ के प्रत्येक अवयव $a$ के लिए स्वयं के साथ युग्म $(a, a)$ संबंध में मौजूद होना चाहिए।",
+          "सममित जाँच: यदि संबंध में $(a, b)$ उपस्थित है, तो उसका उल्टा $(b, a)$ भी उसी संबंध में होना आवश्यक है।",
+          "संक्रामक जाँच: जब भी $(a, b)$ और $(b, c)$ दोनों संबंध में हों, तब $(a, c)$ की उपस्थिति अनिवार्य है। यदि $(b, c)$ रूप का कोई दूसरा युग्म मौजूद ही न हो, तो वह संक्रामक माना जाता है।"
+        ]
+      },
+      {
+        "title": "समतल में रेखाओं का लंबवत संबंध (Perpendicular Lines Relation)",
+        "content": [
+          "मान लीजिए कि $L$ किसी समतल में स्थित समस्त रेखाओं का समुच्चय है तथा संबंध $R = \\{(L_1, L_2) : L_1 \\perp L_2\\}$ है।",
+          "1. स्वतुल्यता: कोई रेखा स्वयं पर लंब नहीं हो सकती ($L_1 \\not\\perp L_1$), अतः $(L_1, L_1) \\notin R$। यह स्वतुल्य नहीं है।",
+          "2. सममिति: यदि $L_1 \\perp L_2$ हो, तो स्पष्टतः $L_2 \\perp L_1$ होगी। अतः $(L_1, L_2) \\in R \\implies (L_2, L_1) \\in R$। यह संबंध सममित है।",
+          "3. संक्रामकता: यदि $L_1 \\perp L_2$ तथा $L_2 \\perp L_3$ हो, तो समतल में $L_1$ रेखा $L_3$ के समांतर ($L_1 \\parallel L_3$) हो जाती है, लंबवत नहीं। अतः $(L_1, L_3) \\notin R$। यह संक्रामक नहीं है।"
+        ],
+        "points": [
+          "चरण 1: सिद्ध करें कि स्वयं पर लंबवत होना असंभव है, अतः संबंध स्वतुल्य नहीं है।",
+          "चरण 2: दो रेखाओं के परस्पर लंबवत होने से क्रम बदलने पर भी लंबवत रहने की पुष्टि करें (सममित)।",
+          "चरण 3: दिखाएँ कि एक ही रेखा पर लंब दो रेखाएँ आपस में समांतर हो जाती हैं, अतः संबंध संक्रामक नहीं है।"
+        ],
+        "diagram": {
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect width='400' height='300' fill='#f8fafc'/><line x1='50' y1='230' x2='350' y2='230' stroke='#222' stroke-width='2.5'/><text x='360' y='235' font-family='sans-serif' font-size='15' font-weight='bold' fill='#222'>L₁</text><line x1='200' y1='230' x2='200' y2='70' stroke='#2563eb' stroke-width='2.5'/><text x='210' y='150' font-family='sans-serif' font-size='15' font-weight='bold' fill='#2563eb'>L₂</text><line x1='50' y1='70' x2='350' y2='70' stroke='#222' stroke-width='2.5'/><text x='360' y='75' font-family='sans-serif' font-size='15' font-weight='bold' fill='#222'>L₃</text><rect x='200' y='215' width='15' height='15' fill='none' stroke='#dc2626' stroke-width='1.5'/><rect x='200' y='70' width='15' height='15' fill='none' stroke='#dc2626' stroke-width='1.5'/><rect x='60' y='255' width='280' height='30' rx='5' fill='#fee2e2' stroke='#dc2626'/><text x='75' y='275' font-family='sans-serif' font-size='13' fill='#991b1b'>L₁ ⊥ L₂ तथा L₂ ⊥ L₃ ⇒ L₁ ∥ L₃ (संक्रामक नहीं)</text></svg>",
+          "caption": "लंबवत रेखाओं का संबंध: L₁ ⊥ L₂ तथा L₂ ⊥ L₃ होने पर L₁ ∥ L₃ (असंक्रामक)"
+        }
+      },
+      {
+        "title": "तुल्यता संबंध एवं तुल्यता वर्ग (Equivalence Relation and Equivalence Class)",
+        "content": [
+          "तुल्यता संबंध (Equivalence Relation): किसी समुच्चय $A$ पर परिभाषित संबंध $R$ एक तुल्यता संबंध कहलाता है यदि वह एक साथ निम्नलिखित तीनों प्रतिबंधों को संतुष्ट करता हो:",
+          "1. $R$ स्वतुल्य हो, 2. $R$ सममित हो, तथा 3. $R$ संक्रामक हो।",
+          "तुल्यता वर्ग (Equivalence Class): मान लीजिए $R$, समुच्चय $A$ पर एक तुल्यता संबंध है तथा $a \\in A$ है। अवयव $a$ से संबंधित $A$ के सभी अवयवों का उपसमुच्चय, $a$ का तुल्यता वर्ग कहलाता है और इसे $[a]$ से निरूपित करते हैं: $$[a] = \\{x \\in A : (x, a) \\in R\\}$$",
+          "तुल्यता वर्गों के मुख्य गुणधर्म: (क) प्रत्येक $a \\in A$ के लिए $a \\in [a]$, (ख) किन्हीं दो अवयवों $a, b$ के लिए या तो $[a] = [b]$ होता है या $[a] \\cap [b] = \\phi$, (ग) सभी भिन्न तुल्यता वर्गों का सम्मिलन (Union) मूल समुच्चय $A$ के बराबर होता है।"
+        ],
+        "points": [
+          "चरण 1: संबंध को स्वतुल्य, सममित और संक्रामक तीनों सिद्ध करके तुल्यता संबंध की पुष्टि करें।",
+          "चरण 2: किसी अवयव $a$ का तुल्यता वर्ग निकालने के लिए संबंध शर्त $x R a$ को हल करें।",
+          "चरण 3: उन सभी $x \\in A$ को सूचीबद्ध करें जो $a$ के साथ संबंधित हैं।"
+        ]
+      },
+      {
+        "title": "फलन की मूल अवधारणा (Concept of Function)",
+        "content": [
+          "समुच्चय $A$ से समुच्चय $B$ में संबंध $f$ एक फलन कहलाता है यदि समुच्चय $A$ के प्रत्येक अवयव का समुच्चय $B$ में एक और केवल एक (अद्वितीय) प्रतिबिंब होता है। इसे $f: A \\to B$ द्वारा निरूपित किया जाता है तथा $y = f(x)$ लिखा जाता है।",
+          "प्रांत (Domain): संपूर्ण समुच्चय $A$ फलन का प्रांत कहलाता है।",
+          "सह-प्रांत (Codomain): संपूर्ण समुच्चय $B$ फलन का सह-प्रांत कहलाता है।",
+          "परिसर (Range): समुच्चय $B$ के उन सभी अवयवों का समुच्चय जो $A$ के किसी न किसी अवयव के प्रतिबिंब हैं, परिसर कहलाता है। गणितीय रूप में: $$\\text{Range}(f) = f(A) = \\{f(x) : x \\in A\\} \\subseteq B$$"
+        ],
+        "points": [
+          "शर्त 1: समुच्चय $A$ का कोई भी अवयव छूटना नहीं चाहिए, प्रत्येक का प्रतिबिंब $B$ में होना अनिवार्य है।",
+          "शर्त 2: समुच्चय $A$ के किसी भी एक अवयव के एक से अधिक प्रतिबिंब $B$ में नहीं हो सकते।"
+        ]
+      },
+      {
+        "title": "फलनों के प्रकार (Types of Functions)",
+        "content": [
+          "1. एकैकी फलन (One-One or Injective Function): एक फलन $f: A \\to B$ एकैकी कहलाता है यदि $A$ के भिन्न-भिन्न अवयवों के प्रतिबिंब भी $B$ में भिन्न-भिन्न हों। अर्थात्, $$f(x_1) = f(x_2) \\implies x_1 = x_2, \\quad \\forall x_1, x_2 \\in A$$",
+          "2. बहुएक फलन (Many-One Function): यदि $A$ के दो या दो से अधिक भिन्न अवयवों का $B$ में एक ही प्रतिबिंब हो, तो फलन बहुएक कहलाता है।",
+          "3. आच्छादक फलन (Onto or Surjective Function): एक फलन $f: A \\to B$ आच्छादक कहलाता है यदि सह-प्रांत $B$ का प्रत्येक अवयव, प्रांत $A$ के किसी न किसी अवयव का प्रतिबिंब हो, अर्थात् $$\\text{Range}(f) = f(A) = B$$",
+          "4. अंतःक्षेपी फलन (Into Function): यदि सह-प्रांत $B$ में कम से कम एक ऐसा अवयव उपस्थित हो जिसका प्रांत $A$ में कोई पूर्व-प्रतिबिंब (pre-image) न हो, तो फलन अंतःक्षेपी कहलाता है ($f(A) \\subset B$)।",
+          "5. एकैकी आच्छादी फलन (Bijective Function): एक फलन $f: A \\to B$ जो एकैकी तथा आच्छादक दोनों हो, एकैकी आच्छादी (Bijective) कहलाता है।"
+        ],
+        "points": [
+          "एकैकी जाँच: $f(x_1) = f(x_2)$ मानकर समीकरण हल करें; यदि केवल $x_1 = x_2$ प्राप्त हो, तो फलन एकैकी है।",
+          "आच्छादक जाँच: $y = f(x)$ रखकर $x$ का मान $y$ के पदों में ज्ञात करें ($x = g(y)$) और देखें कि प्रत्येक $y \\in B$ के लिए $x \\in A$ विद्यमान है या नहीं।",
+          "यदि परिमित समुच्चय में $n(A) = n(B)$ हो, तो एकैकी फलन स्वतः ही आच्छादक भी होता है।"
+        ],
+        "diagram": {
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect width='400' height='300' fill='#f8fafc'/><rect x='10' y='10' width='185' height='135' rx='6' fill='#ffffff' stroke='#cbd5e1'/><text x='18' y='28' font-family='sans-serif' font-size='11' font-weight='bold' fill='#1e293b'>1. एकैकी (One-One)</text><ellipse cx='45' cy='82' rx='20' ry='42' fill='#eff6ff' stroke='#3b82f6'/><ellipse cx='145' cy='82' rx='20' ry='42' fill='#eff6ff' stroke='#3b82f6'/><circle cx='45' cy='58' r='3' fill='#1e293b'/><text x='35' y='61' font-family='sans-serif' font-size='9' fill='#1e293b'>1</text><circle cx='45' cy='82' r='3' fill='#1e293b'/><text x='35' y='85' font-family='sans-serif' font-size='9' fill='#1e293b'>2</text><circle cx='45' cy='106' r='3' fill='#1e293b'/><text x='35' y='109' font-family='sans-serif' font-size='9' fill='#1e293b'>3</text><circle cx='145' cy='58' r='3' fill='#1e293b'/><text x='152' y='61' font-family='sans-serif' font-size='9' fill='#1e293b'>a</text><circle cx='145' cy='82' r='3' fill='#1e293b'/><text x='152' y='85' font-family='sans-serif' font-size='9' fill='#1e293b'>b</text><circle cx='145' cy='106' r='3' fill='#1e293b'/><text x='152' y='109' font-family='sans-serif' font-size='9' fill='#1e293b'>c</text><defs><marker id='arr1' markerWidth='6' markerHeight='5' refX='5' refY='2.5' orient='auto'><polygon points='0 0, 6 2.5, 0 5' fill='#2563eb'/></marker></defs><line x1='48' y1='58' x2='140' y2='58' stroke='#2563eb' stroke-width='1.5' marker-end='url(#arr1)'/><line x1='48' y1='82' x2='140' y2='82' stroke='#2563eb' stroke-width='1.5' marker-end='url(#arr1)'/><line x1='48' y1='106' x2='140' y2='106' stroke='#2563eb' stroke-width='1.5' marker-end='url(#arr1)'/><rect x='205' y='10' width='185' height='135' rx='6' fill='#ffffff' stroke='#cbd5e1'/><text x='213' y='28' font-family='sans-serif' font-size='11' font-weight='bold' fill='#1e293b'>2. बहुएक (Many-One)</text><ellipse cx='240' cy='82' rx='20' ry='42' fill='#eff6ff' stroke='#3b82f6'/><ellipse cx='340' cy='82' rx='20' ry='42' fill='#eff6ff' stroke='#3b82f6'/><circle cx='240' cy='60' r='3' fill='#1e293b'/><text x='230' y='63' font-family='sans-serif' font-size='9' fill='#1e293b'>1</text><circle cx='240' cy='82' r='3' fill='#1e293b'/><text x='230' y='85' font-family='sans-serif' font-size='9' fill='#1e293b'>2</text><circle cx='240' cy='104' r='3' fill='#1e293b'/><text x='230' y='107' font-family='sans-serif' font-size='9' fill='#1e293b'>3</text><circle cx='340' cy='70' r='3' fill='#1e293b'/><text x='347' y='73' font-family='sans-serif' font-size='9' fill='#1e293b'>a</text><circle cx='340' cy='95' r='3' fill='#1e293b'/><text x='347' y='98' font-family='sans-serif' font-size='9' fill='#1e293b'>b</text><line x1='243' y1='60' x2='335' y2='69' stroke='#2563eb' stroke-width='1.5' marker-end='url(#arr1)'/><line x1='243' y1='82' x2='335' y2='71' stroke='#2563eb' stroke-width='1.5' marker-end='url(#arr1)'/><line x1='243' y1='104' x2='335' y2='95' stroke='#2563eb' stroke-width='1.5' marker-end='url(#arr1)'/><rect x='10' y='155' width='185' height='135' rx='6' fill='#ffffff' stroke='#cbd5e1'/><text x='18' y='173' font-family='sans-serif' font-size='11' font-weight='bold' fill='#1e293b'>3. आच्छादक (Onto)</text><ellipse cx='45' cy='227' rx='20' ry='42' fill='#eff6ff' stroke='#3b82f6'/><ellipse cx='145' cy='227' rx='20' ry='42' fill='#eff6ff' stroke='#3b82f6'/><circle cx='45' cy='205' r='3' fill='#1e293b'/><text x='35' y='208' font-family='sans-serif' font-size='9' fill='#1e293b'>1</text><circle cx='45' cy='227' r='3' fill='#1e293b'/><text x='35' y='230' font-family='sans-serif' font-size='9' fill='#1e293b'>2</text><circle cx='45' cy='249' r='3' fill='#1e293b'/><text x='35' y='252' font-family='sans-serif' font-size='9' fill='#1e293b'>3</text><circle cx='145' cy='214' r='3' fill='#1e293b'/><text x='152' y='217' font-family='sans-serif' font-size='9' fill='#1e293b'>a</text><circle cx='145' cy='240' r='3' fill='#1e293b'/><text x='152' y='243' font-family='sans-serif' font-size='9' fill='#1e293b'>b</text><line x1='48' y1='205' x2='140' y2='213' stroke='#2563eb' stroke-width='1.5' marker-end='url(#arr1)'/><line x1='48' y1='227' x2='140' y2='215' stroke='#2563eb' stroke-width='1.5' marker-end='url(#arr1)'/><line x1='48' y1='249' x2='140' y2='240' stroke='#2563eb' stroke-width='1.5' marker-end='url(#arr1)'/><text x='105' y='282' font-family='sans-serif' font-size='9' fill='#059669'>परिसर = सह-प्रांत</text><rect x='205' y='155' width='185' height='135' rx='6' fill='#ffffff' stroke='#cbd5e1'/><text x='213' y='173' font-family='sans-serif' font-size='11' font-weight='bold' fill='#1e293b'>4. अंतःक्षेपी (Into)</text><ellipse cx='240' cy='227' rx='20' ry='42' fill='#eff6ff' stroke='#3b82f6'/><ellipse cx='340' cy='227' rx='20' ry='42' fill='#eff6ff' stroke='#3b82f6'/><circle cx='240' cy='212' r='3' fill='#1e293b'/><text x='230' y='215' font-family='sans-serif' font-size='9' fill='#1e293b'>1</text><circle cx='240' cy='242' r='3' fill='#1e293b'/><text x='230' y='245' font-family='sans-serif' font-size='9' fill='#1e293b'>2</text><circle cx='340' cy='205' r='3' fill='#1e293b'/><text x='347' y='208' font-family='sans-serif' font-size='9' fill='#1e293b'>a</text><circle cx='340' cy='227' r='3' fill='#1e293b'/><text x='347' y='230' font-family='sans-serif' font-size='9' fill='#1e293b'>b</text><circle cx='340' cy='249' r='3' fill='#dc2626'/><text x='347' y='252' font-family='sans-serif' font-size='9' fill='#dc2626'>c</text><line x1='243' y1='212' x2='335' y2='206' stroke='#2563eb' stroke-width='1.5' marker-end='url(#arr1)'/><line x1='243' y1='242' x2='335' y2='228' stroke='#2563eb' stroke-width='1.5' marker-end='url(#arr1)'/><text x='305' y='282' font-family='sans-serif' font-size='9' fill='#dc2626'>c शेष (अप्रतिबिंबित)</text></svg>",
+          "caption": "फलनों के प्रकार: एकैकी, बहुएक, आच्छादक एवं अंतःक्षेपी"
+        }
+      },
+      {
+        "title": "फलनों का संयोजन (Composition of Functions)",
+        "content": [
+          "यदि $f: A \\to B$ तथा $g: B \\to C$ दो फलन हों, तो $f$ और $g$ का संयोजन, जिसे $g \\circ f$ (g of f) द्वारा निरूपित किया जाता है, समुच्चय $A$ से समुच्चय $C$ में परिभाषित फलन होता है: $$(g \\circ f)(x) = g(f(x)), \\quad \\forall x \\in A$$",
+          "संयोजन के मुख्य गुणधर्म:",
+          "1. सामान्यतः फलनों का संयोजन क्रमविनिमेय नहीं होता है, अर्थात् $$g \\circ f \\neq f \\circ g$$",
+          "2. साहचर्य नियम (Associative Law): यदि $f: A \\to B$, $g: B \\to C$ तथा $h: C \\to D$ तीन फलन हों, तो $$h \\circ (g \\circ f) = (h \\circ g) \\circ f$$",
+          "3. यदि $f$ और $g$ दोनों एकैकी हों, तो $g \\circ f$ भी एकैकी होता है।",
+          "4. यदि $f$ और $g$ दोनों आच्छादक हों, तो $g \\circ f$ भी आच्छादक होता है।"
+        ],
+        "points": [
+          "चरण 1: $g \\circ f(x)$ ज्ञात करने के लिए पहले भीतरी फलन $f(x)$ का व्यंजक लिखें।",
+          "चरण 2: फलन $g(x)$ के सूत्र में चर $x$ के स्थान पर पूरा $f(x)$ प्रतिस्थापित करें।",
+          "चरण 3: व्यंजक को बीजगणितीय रूप से सरल करके अंतिम परिणाम प्राप्त करें।"
+        ],
+        "diagram": {
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect width='400' height='300' fill='#f8fafc'/><ellipse cx='70' cy='150' rx='42' ry='85' fill='#eff6ff' stroke='#1e293b' stroke-width='2'/><ellipse cx='200' cy='150' rx='42' ry='85' fill='#eff6ff' stroke='#1e293b' stroke-width='2'/><ellipse cx='330' cy='150' rx='42' ry='85' fill='#eff6ff' stroke='#1e293b' stroke-width='2'/><text x='65' y='45' font-family='sans-serif' font-size='16' font-weight='bold' fill='#1e293b'>A</text><text x='195' y='45' font-family='sans-serif' font-size='16' font-weight='bold' fill='#1e293b'>B</text><text x='325' y='45' font-family='sans-serif' font-size='16' font-weight='bold' fill='#1e293b'>C</text><circle cx='70' cy='150' r='4' fill='#1e293b'/><text x='55' y='155' font-family='sans-serif' font-size='14' fill='#1e293b'>x</text><circle cx='200' cy='150' r='4' fill='#1e293b'/><text x='185' y='155' font-family='sans-serif' font-size='14' fill='#1e293b'>f(x)</text><circle cx='330' cy='150' r='4' fill='#1e293b'/><text x='338' y='155' font-family='sans-serif' font-size='14' fill='#1e293b'>g(f(x))</text><defs><marker id='arr2' markerWidth='8' markerHeight='6' refX='7' refY='3' orient='auto'><polygon points='0 0, 8 3, 0 6' fill='#2563eb'/></marker><marker id='arr3' markerWidth='8' markerHeight='6' refX='7' refY='3' orient='auto'><polygon points='0 0, 8 3, 0 6' fill='#dc2626'/></marker></defs><path d='M 75 140 Q 135 105 192 140' fill='none' stroke='#2563eb' stroke-width='2' marker-end='url(#arr2)'/><text x='130' y='108' font-family='sans-serif' font-size='14' font-weight='bold' fill='#2563eb'>f</text><path d='M 205 140 Q 265 105 322 140' fill='none' stroke='#2563eb' stroke-width='2' marker-end='url(#arr2)'/><text x='260' y='108' font-family='sans-serif' font-size='14' font-weight='bold' fill='#2563eb'>g</text><path d='M 75 170 Q 200 250 322 170' fill='none' stroke='#dc2626' stroke-width='2.5' marker-end='url(#arr3)'/><text x='175' y='255' font-family='sans-serif' font-size='15' font-weight='bold' fill='#dc2626'>g ∘ f</text></svg>",
+          "caption": "फलनों का संयोजन: f: A → B तथा g: B → C से g ∘ f: A → C"
+        }
+      },
+      {
+        "title": "व्युत्क्रमणीय फलन एवं प्रतिलोम फलन (Invertible Function and Inverse Function)",
+        "content": [
+          "एक फलन $f: X \\to Y$ व्युत्क्रमणीय (Invertible) कहलाता है, यदि एक ऐसे फलन $g: Y \\to X$ का अस्तित्व हो कि: $$g \\circ f = I_X \\quad \\text{तथा} \\quad f \\circ g = I_Y$$ जहाँ $I_X$ समुच्चय $X$ पर तथा $I_Y$ समुच्चय $Y$ पर तत्समक फलन (Identity functions) हैं। इस स्थिति में फलन $g$ को $f$ का प्रतिलोम (Inverse) कहते हैं और इसे $f^{-1}$ द्वारा निरूपित किया जाता है ($g = f^{-1}$)।",
+          "व्युत्क्रमणीयता का अनिवार्य एवं पर्याप्त प्रतिबंध: एक फलन $f$ व्युत्क्रमणीय होता है यदि और केवल यदि $f$ एकैकी तथा आच्छादक (Bijective) हो।",
+          "प्रतिलोम का महत्वपूर्ण प्रमेय: यदि $f: X \\to Y$ तथा $g: Y \\to Z$ दो व्युत्क्रमणीय फलन हों, तो उनका संयोजन $g \\circ f$ भी व्युत्क्रमणीय होता है तथा $$(g \\circ f)^{-1} = f^{-1} \\circ g^{-1}$$"
+        ],
+        "points": [
+          "चरण 1: दिए गए फलन $f(x)$ को $y$ के बराबर रखें ($y = f(x)$)।",
+          "चरण 2: समीकरण को $x$ के लिए हल करके $x$ का मान $y$ के रूप में निकालें ($x = g(y)$)।",
+          "चरण 3: सिद्ध करें कि $g \\circ f(x) = x$ तथा $f \\circ g(y) = y$ है, जिससे $f^{-1}(y) = g(y)$ या $f^{-1}(x) = g(x)$ प्राप्त होता है।",
+          "चरण 4: यदि फलन एकैकी या आच्छादक में से कोई एक भी न हो, तो उसका प्रतिलोम संभव नहीं होता।"
+        ],
+        "diagram": {
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect width='400' height='300' fill='#f8fafc'/><ellipse cx='100' cy='150' rx='50' ry='100' fill='#eff6ff' stroke='#1e293b' stroke-width='2'/><ellipse cx='300' cy='150' rx='50' ry='100' fill='#eff6ff' stroke='#1e293b' stroke-width='2'/><text x='95' y='35' font-family='sans-serif' font-size='16' font-weight='bold' fill='#1e293b'>X</text><text x='295' y='35' font-family='sans-serif' font-size='16' font-weight='bold' fill='#1e293b'>Y</text><circle cx='100' cy='100' r='4' fill='#1e293b'/><text x='80' y='105' font-family='sans-serif' font-size='13' fill='#1e293b'>x₁</text><circle cx='100' cy='150' r='4' fill='#1e293b'/><text x='80' y='155' font-family='sans-serif' font-size='13' fill='#1e293b'>x₂</text><circle cx='100' cy='200' r='4' fill='#1e293b'/><text x='80' y='205' font-family='sans-serif' font-size='13' fill='#1e293b'>x₃</text><circle cx='300' cy='100' r='4' fill='#1e293b'/><text x='315' y='105' font-family='sans-serif' font-size='13' fill='#1e293b'>y₁</text><circle cx='300' cy='150' r='4' fill='#1e293b'/><text x='315' y='155' font-family='sans-serif' font-size='13' fill='#1e293b'>y₂</text><circle cx='300' cy='200' r='4' fill='#1e293b'/><text x='315' y='205' font-family='sans-serif' font-size='13' fill='#1e293b'>y₃</text><defs><marker id='arrFwd' markerWidth='8' markerHeight='6' refX='7' refY='3' orient='auto'><polygon points='0 0, 8 3, 0 6' fill='#2563eb'/></marker><marker id='arrBack' markerWidth='8' markerHeight='6' refX='7' refY='3' orient='auto'><polygon points='0 0, 8 3, 0 6' fill='#059669'/></marker></defs><path d='M 106 90 Q 200 45 292 90' fill='none' stroke='#2563eb' stroke-width='2' marker-end='url(#arrFwd)'/><text x='190' y='55' font-family='sans-serif' font-size='14' font-weight='bold' fill='#2563eb'>f : X → Y</text><path d='M 292 210 Q 200 255 106 210' fill='none' stroke='#059669' stroke-width='2' marker-end='url(#arrBack)'/><text x='180' y='265' font-family='sans-serif' font-size='14' font-weight='bold' fill='#059669'>f⁻¹ : Y → X</text><line x1='106' y1='150' x2='292' y2='150' stroke='#94a3b8' stroke-dasharray='4'/><rect x='60' y='270' width='280' height='24' rx='4' fill='#ecfdf5' stroke='#059669'/><text x='75' y='286' font-family='sans-serif' font-size='11' fill='#065f46'>प्रतिलोम तभी संभव है जब फलन एकैकी-आच्छादक हो</text></svg>",
+          "caption": "व्युत्क्रमणीय फलन: f: X → Y का प्रतिलोम फलन f⁻¹: Y → X"
+        }
+      },
+      {
+        "title": "द्वि-आधारी संक्रियाएँ (Binary Operations)",
+        "content": [
+          "किसी समुच्चय $A$ में एक द्वि-आधारी संक्रिया $*$ वस्तुतः एक फलन $* : A \\times A \\to A$ होती है। हम $*(a, b)$ को $a * b$ द्वारा निरूपित करते हैं। इसका अर्थ यह है कि समुच्चय $A$ के किन्हीं दो अवयवों पर संक्रिया करने से प्राप्त परिणाम पुनः समुच्चय $A$ का ही अवयव होना चाहिए (संवृत गुणधर्म)।",
+          "द्वि-आधारी संक्रियाओं के मुख्य नियम:",
+          "1. क्रमविनिमेय नियम (Commutative Law): यदि प्रत्येक $a, b \\in A$ के लिए $$a * b = b * a$$ हो, तो संक्रिया $*$ क्रमविनिमेय कहलाती है।",
+          "2. साहचर्य नियम (Associative Law): यदि प्रत्येक $a, b, c \\in A$ के लिए $$(a * b) * c = a * (b * c)$$ हो, तो संक्रिया $*$ साहचर्य कहलाती है।",
+          "3. तत्समक अवयव (Identity Element): एक अवयव $e \\in A$ संक्रिया $*$ के लिए तत्समक अवयव कहलाता है यदि प्रत्येक $a \\in A$ के लिए $$a * e = a = e * a$$",
+          "4. व्युत्क्रमणीय अवयव / प्रतिलोम (Inverse Element): तत्समक अवयव $e$ युक्त समुच्चय $A$ का कोई अवयव $a$, संक्रिया $*$ के अंतर्गत व्युत्क्रमणीय कहलाता है यदि एक ऐसे अवयव $b \\in A$ का अस्तित्व हो कि $$a * b = e = b * a$$ तब $b$ को $a$ का प्रतिलोम कहते हैं और इसे $a^{-1}$ लिखते हैं।"
+        ],
+        "points": [
+          "चरण 1: जाँचें कि क्या संक्रिया का परिणाम सदैव उसी समुच्चय में आता है ($a * b \\in A$)।",
+          "चरण 2: क्रमविनिमेयता हेतु $a * b$ तथा $b * a$ का मान अलग-अलग निकालकर तुलना करें।",
+          "चरण 3: साहचर्यता हेतु $(a * b) * c$ तथा $a * (b * c)$ की गणना करें।",
+          "चरण 4: तत्समक अवयव हेतु समीकरण $a * e = a$ को $e$ के लिए हल करें।"
+        ]
+      }
+    ],
+    "definitions": [
+      {
+        "term": "कार्तीय गुणन (Cartesian Product)",
+        "definition": "दो अरिक्त समुच्चयों $A$ और $B$ के सभी संभव क्रमित युग्मों $(a, b)$ का समुच्चय, जहाँ $a \\in A$ तथा $b \\in B$ हो, कार्तीय गुणन $A \\times B$ कहलाता है।"
+      },
+      {
+        "term": "संबंध (Relation)",
+        "definition": "समुच्चय $A$ से समुच्चय $B$ में कोई संबंध $R$, कार्तीय गुणन $A \\times B$ का कोई भी उपसमुच्चय होता है, अर्थात् $R \\subseteq A \\times B$।"
+      },
+      {
+        "term": "संबंध का प्रांत (Domain of a Relation)",
+        "definition": "संबंध $R$ के अंतर्गत आने वाले सभी क्रमित युग्मों के प्रथम घटकों के समुच्चय को $R$ का प्रांत कहते हैं।"
+      },
+      {
+        "term": "संबंध का सह-प्रांत (Codomain of a Relation)",
+        "definition": "यदि संबंध $R$ समुच्चय $A$ से समुच्चय $B$ में परिभाषित हो, तो संपूर्ण समुच्चय $B$ को संबंध का सह-प्रांत कहते हैं।"
+      },
+      {
+        "term": "संबंध का परिसर (Range of a Relation)",
+        "definition": "संबंध $R$ के अंतर्गत आने वाले सभी क्रमित युग्मों के द्वितीय घटकों के समुच्चय को $R$ का परिसर कहते हैं।"
+      },
+      {
+        "term": "रिक्त संबंध (Empty Relation)",
+        "definition": "समुच्चय $A$ पर परिभाषित संबंध $R$ रिक्त संबंध कहलाता है यदि $A$ का कोई भी अवयव $A$ के किसी भी अवयव से संबंधित न हो ($R = \\phi \\subset A \\times A$)।"
+      },
+      {
+        "term": "सार्वत्रिक संबंध (Universal Relation)",
+        "definition": "समुच्चय $A$ पर परिभाषित संबंध $R$ सार्वत्रिक संबंध कहलाता है यदि $A$ का प्रत्येक अवयव $A$ के सभी अवयवों से संबंधित हो ($R = A \\times A$)।"
+      },
+      {
+        "term": "तुच्छ संबंध (Trivial Relation)",
+        "definition": "किसी समुच्चय पर परिभाषित रिक्त संबंध तथा सार्वत्रिक संबंध को सम्मिलित रूप से तुच्छ संबंध कहा जाता है।"
+      },
+      {
+        "term": "स्वतुल्य संबंध (Reflexive Relation)",
+        "definition": "समुच्चय $A$ पर परिभाषित संबंध $R$ स्वतुल्य कहलाता है यदि प्रत्येक $a \\in A$ के लिए $(a, a) \\in R$ हो।"
+      },
+      {
+        "term": "सममित संबंध (Symmetric Relation)",
+        "definition": "समुच्चय $A$ पर परिभाषित संबंध $R$ सममित कहलाता है यदि सभी $a, b \\in A$ के लिए $(a, b) \\in R \\implies (b, a) \\in R$ हो।"
+      },
+      {
+        "term": "संक्रामक संबंध (Transitive Relation)",
+        "definition": "समुच्चय $A$ पर परिभाषित संबंध $R$ संक्रामक कहलाता है यदि सभी $a, b, c \\in A$ के लिए $(a, b) \\in R$ तथा $(b, c) \\in R \\implies (a, c) \\in R$ हो।"
+      },
+      {
+        "term": "तुल्यता संबंध (Equivalence Relation)",
+        "definition": "एक संबंध $R$ तुल्यता संबंध कहलाता है यदि वह एक साथ स्वतुल्य, सममित तथा संक्रामक तीनों हो।"
+      },
+      {
+        "term": "तुल्यता वर्ग (Equivalence Class)",
+        "definition": "तुल्यता संबंध $R$ में किसी अवयव $a \\in A$ से संबंधित सभी अवयवों के समुच्चय को $a$ का तुल्यता वर्ग कहते हैं और इसे $[a] = \\{x \\in A : (x, a) \\in R\\}$ लिखते हैं।"
+      },
+      {
+        "term": "फलन (Function)",
+        "definition": "समुच्चय $A$ से समुच्चय $B$ में एक संबंध $f$ फलन कहलाता है यदि $A$ के प्रत्येक अवयव का $B$ में एक और केवल एक ही प्रतिबिंब हो।"
+      },
+      {
+        "term": "एकैकी फलन (Injective Function)",
+        "definition": "एक फलन $f: A \\to B$ एकैकी कहलाता है यदि $A$ के भिन्न अवयवों के प्रतिबिंब भी $B$ में भिन्न हों, अर्थात् $f(x_1) = f(x_2) \\implies x_1 = x_2$।"
+      },
+      {
+        "term": "बहुएक फलन (Many-One Function)",
+        "definition": "यदि प्रांत $A$ के दो या अधिक भिन्न अवयवों का सह-प्रांत $B$ में एक ही प्रतिबिंब हो, तो वह फलन बहुएक फलन कहलाता है।"
+      },
+      {
+        "term": "आच्छादक फलन (Surjective Function)",
+        "definition": "एक फलन $f: A \\to B$ आच्छादक कहलाता है यदि सह-प्रांत $B$ का प्रत्येक अवयव प्रांत के किसी अवयव का प्रतिबिंब हो, अर्थात् $f(A) = B$।"
+      },
+      {
+        "term": "अंतःक्षेपी फलन (Into Function)",
+        "definition": "यदि सह-प्रांत $B$ में कम से कम एक अवयव ऐसा हो जिसका कोई पूर्व-प्रतिबिंब प्रांत $A$ में न हो, तो फलन अंतःक्षेपी कहलाता है।"
+      },
+      {
+        "term": "एकैकी आच्छादी फलन (Bijective Function)",
+        "definition": "एक फलन $f: A \\to B$ जो एकैकी तथा आच्छादक दोनों होता है, एकैकी आच्छादी (Bijective) फलन कहलाता है।"
+      },
+      {
+        "term": "फलनों का संयोजन (Composition of Functions)",
+        "definition": "यदि $f: A \\to B$ और $g: B \\to C$ दो फलन हों, तो उनका संयोजन $g \\circ f: A \\to C$ एक फलन है जो $(g \\circ f)(x) = g(f(x))$ द्वारा परिभाषित होता है।"
+      },
+      {
+        "term": "व्युत्क्रमणीय फलन (Invertible Function)",
+        "definition": "एक फलन $f: X \\to Y$ व्युत्क्रमणीय कहलाता है यदि एक फलन $g: Y \\to X$ ऐसा हो कि $g \\circ f = I_X$ तथा $f \\circ g = I_Y$ हो।"
+      },
+      {
+        "term": "द्वि-आधारी संक्रिया (Binary Operation)",
+        "definition": "किसी समुच्चय $A$ पर एक द्वि-आधारी संक्रिया $*$ एक फलन $* : A \\times A \\to A$ होती है, जिसके अंतर्गत प्रत्येक क्रमित युग्म $(a, b)$ का मान $a * b \\in A$ होता है।"
+      },
+      {
+        "term": "तत्समक अवयव (Identity Element)",
+        "definition": "समुच्चय $A$ में द्वि-आधारी संक्रिया $*$ के लिए एक अवयव $e \\in A$ तत्समक अवयव कहलाता है यदि प्रत्येक $a \\in A$ के लिए $a * e = a = e * a$ हो।"
+      },
+      {
+        "term": "व्युत्क्रमणीय अवयव (Inverse Element)",
+        "definition": "तत्समक अवयव $e$ युक्त समुच्चय $A$ में किसी अवयव $a$ के लिए यदि $b \\in A$ ऐसा हो कि $a * b = e = b * a$, तो $b$ को $a$ का प्रतिलोम कहते हैं।"
+      }
+    ],
+    "oneLiners": [
+      {
+        "question": "यदि समुच्चय $A$ में 2 तथा समुच्चय $B$ में 3 अवयव हों, तो $A$ से $B$ में कुल संबंधों की संख्या कितनी होगी?",
+        "answer": "$2^{2 \\times 3} = 2^6 = 64$"
+      },
+      {
+        "question": "समुच्चय $A = \\{1, 2, 3\\}$ में कुल कितने भिन्न संबंध परिभाषित किए जा सकते हैं?",
+        "answer": "$2^{3 \\times 3} = 2^9 = 512$"
+      },
+      {
+        "question": "यदि $A = \\{1, 2\\}$, तो $A$ पर संबंधों की कुल संख्या कितनी होगी?",
+        "answer": "$2^{2^2} = 2^4 = 16$"
+      },
+      {
+        "question": "प्राकृतिक संख्याओं के समुच्चय में संबंध 'से छोटा है' ($<$) कैसा संबंध है?",
+        "answer": "केवल संक्रामक"
+      },
+      {
+        "question": "समतल में रेखाओं के समुच्चय में संबंध 'लंबवत है' कैसा संबंध है?",
+        "answer": "केवल सममित (न तो स्वतुल्य और न संक्रामक)"
+      },
+      {
+        "question": "समतल में रेखाओं के समुच्चय में संबंध 'समांतर है' कैसा संबंध है?",
+        "answer": "तुल्यता संबंध"
+      },
+      {
+        "question": "समतल में त्रिभुजों के समुच्चय में 'सर्वांगसमता' कैसा संबंध है?",
+        "answer": "तुल्यता संबंध"
+      },
+      {
+        "question": "समुच्चय $A = \\{1, 2, 3\\}$ पर संबंध $R = \\{(1, 2), (2, 1)\\}$ कैसा संबंध है?",
+        "answer": "सममित (न स्वतुल्य और न संक्रामक)"
+      },
+      {
+        "question": "समुच्चय $A = \\{1, 2, 3\\}$ पर संबंध $R = \\{(1, 1), (2, 2), (3, 3), (1, 2), (2, 3)\\}$ कैसा संबंध है?",
+        "answer": "स्वतुल्य किंतु न तो सममित और न संक्रामक"
+      },
+      {
+        "question": "समुच्चय $A = \\{1, 2, 3\\}$ पर $(1, 2)$ को शामिल करते हुए कितने तुल्यता संबंध बनाए जा सकते हैं?",
+        "answer": "2"
+      },
+      {
+        "question": "समुच्चय $A = \\{1, 2, 3\\}$ पर $(1, 2)$ और $(1, 3)$ को शामिल करने वाले ऐसे संबंधों की संख्या जो स्वतुल्य व सममित हों किंतु संक्रामक न हों?",
+        "answer": "1"
+      },
+      {
+        "question": "पूर्णांकों के समुच्चय $Z$ में $R = \\{(a, b) : a - b \\text{ सम है}\\}$ कैसा संबंध है?",
+        "answer": "तुल्यता संबंध"
+      },
+      {
+        "question": "यदि $R = \\{(a, b) : a = b - 2, b > 6\\}$ हो, तो कौन सा युग्म $R$ में है?",
+        "answer": "$(6, 8) \\in R$"
+      },
+      {
+        "question": "वास्तविक संख्याओं में $R = \\{(a, b) : a \\le b^2\\}$ कैसा संबंध है?",
+        "answer": "न तो स्वतुल्य, न सममित और न ही संक्रामक"
+      },
+      {
+        "question": "वास्तविक संख्याओं में $R = \\{(a, b) : a \\le b\\}$ कैसा संबंध है?",
+        "answer": "स्वतुल्य तथा संक्रामक, किंतु सममित नहीं"
+      },
+      {
+        "question": "फलन $f: A \\to B$ के आच्छादक होने का आवश्यक प्रतिबंध क्या है?",
+        "answer": "$f(A) = B$ (परिसर = सह-प्रांत)"
+      },
+      {
+        "question": "यदि $A = \\{1, 2\\}$ तथा $B = \\{a, b, c\\}$ हो, तो $A$ से $B$ में फलनों की कुल संख्या क्या होगी?",
+        "answer": "$3^2 = 9$"
+      },
+      {
+        "question": "यदि $n(A) = 2$ तथा $n(B) = 3$ हो, तो $A$ से $B$ में एकैकी फलनों की कुल संख्या कितनी होगी?",
+        "answer": "${}^3P_2 = 6$"
+      },
+      {
+        "question": "समुच्चय $A = \\{1, 2, 3\\}$ से $A$ पर परिभाषित एकैकी फलनों की कुल संख्या क्या होगी?",
+        "answer": "$3! = 6$"
+      },
+      {
+        "question": "यदि $f: A \\to B$ एकैकी आच्छादक (Bijective) फलन हो, तो $n(A)$ और $n(B)$ में क्या संबंध होगा?",
+        "answer": "$n(A) = n(B)$"
+      },
+      {
+        "question": "फलन $f: R \\to R$, जहाँ $f(x) = x^2$, कैसा फलन है?",
+        "answer": "न तो एकैकी और न ही आच्छादक"
+      },
+      {
+        "question": "फलन $f: N \\to N$, जहाँ $f(x) = x^2$, कैसा फलन है?",
+        "answer": "एकैकी किंतु आच्छादक नहीं"
+      },
+      {
+        "question": "फलन $f: Z \\to Z$, जहाँ $f(x) = x^2$, कैसा फलन है?",
+        "answer": "न तो एकैकी और न ही आच्छादक"
+      },
+      {
+        "question": "फलन $f: R \\to R$, जहाँ $f(x) = 3x$, कैसा फलन है?",
+        "answer": "एकैकी तथा आच्छादक दोनों (Bijective)"
+      },
+      {
+        "question": "फलन $f: R \\to R$, जहाँ $f(x) = x^4$, कैसा फलन है?",
+        "answer": "न तो एकैकी और न ही आच्छादक"
+      },
+      {
+        "question": "महत्तम पूर्णांक फलन $f(x) = [x]$ ($R \\to R$) कैसा फलन है?",
+        "answer": "न तो एकैकी और न ही आच्छादक"
+      },
+      {
+        "question": "मापांक फलन $f(x) = |x|$ ($R \\to R$) कैसा फलन है?",
+        "answer": "न तो एकैकी और न ही आच्छादक"
+      },
+      {
+        "question": "चिह्न फलन (Signum Function) $f: R \\to R$ कैसा फलन है?",
+        "answer": "न तो एकैकी और न ही आच्छादक"
+      },
+      {
+        "question": "फलन $f(x) = \\frac{1}{1+x^2}$ ($R \\to R$) कैसा फलन है?",
+        "answer": "न तो एकैकी और न ही आच्छादक"
+      },
+      {
+        "question": "यदि $f(x) = 2x + 3$ ($R \\to R$) हो, तो $f^{-1}(x)$ का मान क्या होगा?",
+        "answer": "$\\frac{x-3}{2}$"
+      },
+      {
+        "question": "यदि $f(x) = 4x - 5$ ($R \\to R$) हो, तो $f^{-1}(x)$ क्या होगा?",
+        "answer": "$\\frac{x+5}{4}$"
+      },
+      {
+        "question": "यदि $f(x) = (3 - x^3)^{1/3}$ हो, तो $(f \\circ f)(x)$ का मान क्या है?",
+        "answer": "$x$"
+      },
+      {
+        "question": "यदि $f(x) = 8x^3$ तथा $g(x) = x^{1/3}$ हो, तो $(g \\circ f)(x)$ का मान क्या होगा?",
+        "answer": "$2x$"
+      },
+      {
+        "question": "यदि $f(x) = 8x^3$ तथा $g(x) = x^{1/3}$ हो, तो $(f \\circ g)(x)$ का मान क्या होगा?",
+        "answer": "$8x$"
+      },
+      {
+        "question": "समुच्चय $A = \\{1, 2\\}$ पर परिभाषित द्वि-आधारी संक्रियाओं की कुल संख्या कितनी होगी?",
+        "answer": "$2^{2^2} = 2^4 = 16$"
+      },
+      {
+        "question": "$n$ अवयवों वाले किसी समुच्चय पर कुल कितनी द्वि-आधारी संक्रियाएँ परिभाषित की जा सकती हैं?",
+        "answer": "$n^{n^2}$"
+      },
+      {
+        "question": "प्राकृत संख्याओं $N$ में संक्रिया $a * b = a - b$ द्वि-आधारी संक्रिया क्यों नहीं है?",
+        "answer": "क्योंकि $3 * 4 = -1 \\notin N$ (संवृत नहीं है)"
+      },
+      {
+        "question": "यदि $a * b = 2a + b$ हो, तो $(2 * 3) * 4$ का मान क्या होगा?",
+        "answer": "$18$"
+      },
+      {
+        "question": "यदि $a \\circ b = 3a + b$ हो, तो $(2 \\circ 3) \\circ 5$ का मान क्या होगा?",
+        "answer": "$32$"
+      },
+      {
+        "question": "यदि $a * b = a^2 + b^2$ हो, तो $(1 * 2) * 5$ का मान क्या होगा?",
+        "answer": "$50$"
+      },
+      {
+        "question": "यदि पूर्णांकों $Z$ में संक्रिया $a * b = a + b + 1$ हो, तो इसका तत्समक अवयव क्या होगा?",
+        "answer": "$-1$"
+      },
+      {
+        "question": "यदि $a \\circ b = 3a + 4b - 2$ हो, तो $4 \\circ 5$ का मान क्या होगा?",
+        "answer": "$30$"
+      },
+      {
+        "question": "किसी फलन के व्युत्क्रमणीय होने के लिए आवश्यक एवं पर्याप्त शर्त क्या है?",
+        "answer": "फलन का एकैकी तथा आच्छादक (Bijective) होना"
+      }
+    ],
+    "formulas": [
+      {
+        "name": "कार्तीय गुणन में अवयवों की संख्या",
+        "formula": "$$n(A \\times B) = n(A) \\cdot n(B)$$",
+        "meaning": "$n(A)$ समुच्चय $A$ की गणन संख्या है तथा $n(B)$ समुच्चय $B$ की गणन संख्या है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "यदि $n(A) = 3$ तथा $n(B) = 2$ हो, तो $n(A \\times B)$ ज्ञात करें।",
+            "solution": [
+              "सूत्र लगाने पर: $n(A \\times B) = n(A) \\cdot n(B)$",
+              "मान रखने पर: $n(A \\times B) = 3 \\cdot 2 = 6$",
+              "उत्तर: $6$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि समुच्चय $A$ में 4 अवयव तथा समुच्चय $B$ में 5 अवयव हों, तो $A \\times B$ में कुल कितने अवयव होंगे?",
+            "solution": [
+              "दिया है: $n(A) = 4$ तथा $n(B) = 5$",
+              "सूत्रानुसार: $n(A \\times B) = 4 \\cdot 5 = 20$",
+              "उत्तर: $20$"
+            ],
+            "source": "AI"
+          },
+          {
+            "question": "यदि $A = \\{1, 2\\}$ तथा $B = \\{a, b, c\\}$ हो, तो $n(A \\times B)$ का मान क्या होगा?",
+            "solution": [
+              "यहाँ $n(A) = 2$ तथा $n(B) = 3$",
+              "सूत्र: $n(A \\times B) = 2 \\cdot 3 = 6$",
+              "उत्तर: $6$"
+            ],
+            "source": "AI"
+          },
+          {
+            "question": "यदि $n(A \\times B) = 15$ तथा $n(A) = 3$ हो, तो समुच्चय $B$ में अवयवों की संख्या $n(B)$ ज्ञात करें।",
+            "solution": [
+              "सूत्रानुसार: $n(A \\times B) = n(A) \\cdot n(B)$",
+              "$15 = 3 \\cdot n(B) \\implies n(B) = \\frac{15}{3} = 5$",
+              "उत्तर: $5$"
+            ],
+            "source": "AI"
+          }
+        ]
+      },
+      {
+        "name": "समुच्चय $A$ से समुच्चय $B$ में कुल संबंधों की संख्या",
+        "formula": "$$\\text{कुल संबंधों की संख्या} = 2^{n(A \\times B)} = 2^{m \\cdot n}$$",
+        "meaning": "$m = n(A)$ तथा $n = n(B)$ क्रमशः समुच्चयों $A$ और $B$ के अवयवों की संख्या है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "दो परिमित समुच्चय $A$ तथा $B$ हैं जहाँ $n(A) = 2$ तथा $n(B) = 3$, तब $A$ तथा $B$ में कुल संबंधों की संख्या ज्ञात करें।",
+            "solution": [
+              "यहाँ $m = 2$ तथा $n = 3$",
+              "कार्तीय गुणन में अवयव: $n(A \\times B) = 2 \\cdot 3 = 6$",
+              "संबंधों की कुल संख्या: $2^{n(A \\times B)} = 2^6 = 64$",
+              "उत्तर: $64$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समुच्चय $A = \\{1, 2\\}$ पर परिभाषित कुल भिन्न संबंधों की संख्या क्या है?",
+            "solution": [
+              "यहाँ $A$ से $A$ में संबंध है, अतः $n(A) = 2$ तथा $n(A \\times A) = 2 \\cdot 2 = 4$",
+              "कुल संबंधों की संख्या $= 2^4 = 16$",
+              "उत्तर: $16$"
+            ],
+            "source": "AI"
+          },
+          {
+            "question": "समुच्चय $A = \\{a, b, c\\}$ में कुल कितने भिन्न संबंध परिभाषित किए जा सकते हैं?",
+            "solution": [
+              "यहाँ $n(A) = 3$",
+              "$n(A \\times A) = 3 \\cdot 3 = 9$",
+              "कुल संबंधों की संख्या $= 2^9 = 512$",
+              "उत्तर: $512$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि समुच्चय $A$ में $k$ अवयव हों तथा $A$ पर कुल 256 संबंध परिभाषित किए जा सकते हों, तो $k$ का मान ज्ञात करें।",
+            "solution": [
+              "सूत्रानुसार: $A$ पर कुल संबंध $= 2^{k^2}$",
+              "दिया है: $2^{k^2} = 256 = 2^8$",
+              "घातों की तुलना करने पर: $k^2 = 8$, जो पूर्णांक नहीं है। अतः यदि $n(A \\times B) = 8$ हो तो $2^8 = 256$ होता है। यदि $A$ पर ही संबंध हो और संख्या 256 दी हो, तो $k^2$ पूर्णांक वर्ग होना चाहिए (जैसे $k=2$ पर $2^4 = 16$)। यदि कुल संबंध $2^{k^2} = 2^4 = 16$ हों, तो $k = 2$ होता है। $256 = 2^8$ के लिए $m \\cdot n = 8$ होगा।",
+              "उत्तर: $k^2 = 8$ (असंभव पूर्णांक हेतु; परिमित एकल समुच्चय हेतु $2^{k^2}$ सर्वमान्य रूप है)"
+            ],
+            "source": "AI"
+          }
+        ]
+      },
+      {
+        "name": "स्वतुल्य संबंध की गणितीय शर्त",
+        "formula": "$$\\forall a \\in A, \\quad (a, a) \\in R$$",
+        "meaning": "समुच्चय $A$ के प्रत्येक अवयव का स्वयं के साथ क्रमित युग्म संबंध $R$ में होना चाहिए।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "समुच्चय $A = \\{1, 2, 3\\}$ में क्या $R = \\{(1, 1), (2, 2), (3, 3), (1, 2)\\}$ स्वतुल्य है?",
+            "solution": [
+              "समुच्चय $A$ के अवयव $1, 2, 3$ हैं।",
+              "जाँच करने पर: $(1, 1) \\in R$, $(2, 2) \\in R$, $(3, 3) \\in R$ तीनों उपस्थित हैं।",
+              "उत्तर: हाँ, संबंध $R$ स्वतुल्य है।"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समुच्चय $A = \\{1, 2, 3\\}$ पर $R = \\{(1, 1), (2, 2), (1, 2)\\}$ की स्वतुल्यता जाँचिए।",
+            "solution": [
+              "अवयव $3 \\in A$ के लिए $(3, 3) \\notin R$",
+              "चूँकि $3$ के लिए युग्म उपस्थित नहीं है, अतः शर्त $\\forall a \\in A, (a, a) \\in R$ संतुष्ट नहीं होती।",
+              "उत्तर: संबंध $R$ स्वतुल्य नहीं है।"
+            ],
+            "source": "AI"
+          },
+          {
+            "question": "पूर्णांकों के समुच्चय $Z$ में संबंध $R = \\{(x, y) : x - y \\text{ एक पूर्णांक है}\\}$ की स्वतुल्यता की जाँच करें।",
+            "solution": [
+              "प्रत्येक $x \\in Z$ के लिए: $x - x = 0$",
+              "चूँकि $0$ एक पूर्णांक है, अतः $(x, x) \\in R$ सभी $x \\in Z$ के लिए सत्य है।",
+              "उत्तर: संबंध $R$ स्वतुल्य है।"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "वास्तविक संख्याओं के समुच्चय $R$ में $R = \\{(a, b) : a \\le b^2\\}$ की स्वतुल्यता जाँचिए।",
+            "solution": [
+              "संख्या $a = \\frac{1}{2} \\in R$ लेते हैं।",
+              "यहाँ $a^2 = (\\frac{1}{2})^2 = \\frac{1}{4}$",
+              "चूँकि $\\frac{1}{2} > \\frac{1}{4}$ है, अतः $\\frac{1}{2} \\le (\\frac{1}{2})^2$ असत्य है। अर्थात् $(\\frac{1}{2}, \\frac{1}{2}) \\notin R$।",
+              "उत्तर: संबंध $R$ स्वतुल्य नहीं है।"
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "सममित संबंध की गणितीय शर्त",
+        "formula": "$$(a, b) \\in R \\implies (b, a) \\in R, \\quad \\forall a, b \\in A$$",
+        "meaning": "यदि क्रमित युग्म $(a, b)$ संबंध $R$ में है, तो उसका उल्टा $(b, a)$ भी $R$ में होना अनिवार्य है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "समुच्चय $A = \\{1, 2, 3\\}$ में संबंध $R = \\{(1, 2), (2, 1)\\}$ क्या सममित है?",
+            "solution": [
+              "यहाँ $(1, 2) \\in R$ है और इसका उल्टा $(2, 1) \\in R$ भी उपस्थित है।",
+              "अतः प्रत्येक विद्यमान युग्म के लिए सममित प्रतिबंध संतुष्ट होता है।",
+              "उत्तर: हाँ, संबंध $R$ सममित है।"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समुच्चय $A = \\{1, 2, 3\\}$ में $R = \\{(1, 2), (2, 3), (2, 1)\\}$ की सममिति जाँचें।",
+            "solution": [
+              "यहाँ $(1, 2) \\in R \\implies (2, 1) \\in R$ (सत्य)।",
+              "परंतु $(2, 3) \\in R$ के लिए $(3, 2) \\notin R$।",
+              "उत्तर: संबंध $R$ सममित नहीं है।"
+            ],
+            "source": "AI"
+          },
+          {
+            "question": "समतल में रेखाओं के समुच्चय में $R = \\{(L_1, L_2) : L_1 \\perp L_2\\}$ की सममिति सिद्ध करें।",
+            "solution": [
+              "यदि $(L_1, L_2) \\in R$, तो इसका अर्थ है कि रेखा $L_1$, $L_2$ पर लंबवत है।",
+              "यदि रेखा $L_1$, $L_2$ पर लंब है, तो रेखा $L_2$ भी अवश्य ही $L_1$ पर लंबवत होगी।",
+              "अतः $(L_2, L_1) \\in R$।",
+              "उत्तर: संबंध $R$ सममित है।"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "प्राकृतिक संख्याओं $N$ में $R = \\{(x, y) : x < y\\}$ की सममिति की जाँच करें।",
+            "solution": [
+              "माना $x = 2, y = 3$। चूँकि $2 < 3$, अतः $(2, 3) \\in R$।",
+              "परंतु $3 < 2$ सर्वथा असत्य है, इसलिए $(3, 2) \\notin R$।",
+              "उत्तर: संबंध $R$ सममित नहीं है।"
+            ],
+            "source": "AI"
+          }
+        ]
+      },
+      {
+        "name": "संक्रामक संबंध की गणितीय शर्त",
+        "formula": "$$(a, b) \\in R \\text{ तथा } (b, c) \\in R \\implies (a, c) \\in R, \\quad \\forall a, b, c \\in A$$",
+        "meaning": "यदि $(a, b)$ तथा $(b, c)$ दोनों संबंध $R$ में हों, तो $(a, c)$ का भी $R$ में होना अनिवार्य है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "समुच्चय $A = \\{1, 2, 3\\}$ में संबंध $R = \\{(1, 2), (2, 3), (1, 3)\\}$ क्या संक्रामक है?",
+            "solution": [
+              "यहाँ $(1, 2) \\in R$ तथा $(2, 3) \\in R$ है।",
+              "इन दोनों से आवश्यक परिणामी युग्म $(1, 3)$ भी $R$ में उपस्थित है।",
+              "उत्तर: हाँ, संबंध $R$ संक्रामक है।"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समुच्चय $A = \\{1, 2, 3\\}$ में $R = \\{(1, 2), (2, 1)\\}$ की संक्रामकता की जाँच करें।",
+            "solution": [
+              "यहाँ $(1, 2) \\in R$ तथा $(2, 1) \\in R$ दोनों विद्यमान हैं।",
+              "संक्रामकता के अनुसार $(1, 1)$ का होना आवश्यक है, परंतु $(1, 1) \\notin R$।",
+              "उत्तर: संबंध $R$ संक्रामक नहीं है।"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समतल में रेखाओं के समुच्चय में $R = \\{(L_1, L_2) : L_1 \\perp L_2\\}$ की संक्रामकता जाँचें।",
+            "solution": [
+              "माना $L_1 \\perp L_2$ तथा $L_2 \\perp L_3$ है।",
+              "समतल में दो रेखाएँ जो एक ही रेखा पर लंब हों, परस्पर समांतर हो जाती हैं ($L_1 \\parallel L_3$)।",
+              "अतः $L_1 \\not\\perp L_3$, जिससे $(L_1, L_3) \\notin R$।",
+              "उत्तर: संबंध $R$ संक्रामक नहीं है।"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समुच्चय $R = \\{(1, 2)\\}$ क्या संक्रामक संबंध है?",
+            "solution": [
+              "यहाँ केवल एक ही युग्म $(1, 2)$ उपस्थित है।",
+              "ऐसा कोई दूसरा युग्म $(2, c)$ विद्यमान नहीं है जिसके लिए संक्रामकता की शर्त टूटे।",
+              "शर्त टूटने का कोई प्रमाण न होने के कारण यह संबंध संक्रामक माना जाता है।",
+              "उत्तर: हाँ, संबंध $R$ संक्रामक है।"
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "तुल्यता वर्ग का सूत्र",
+        "formula": "$$[a] = \\{x \\in A : (x, a) \\in R\\}$$",
+        "meaning": "$[a]$ समुच्चय $A$ के उन सभी अवयवों $x$ का समुच्चय है जो तुल्यता संबंध $R$ के अंतर्गत $a$ से संबंधित हैं।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "समुच्चय $A = \\{x \\in Z : 0 \\le x \\le 12\\}$ में $R = \\{(a, b) : |a - b|, 4 \\text{ का गुणज है}\\}$ के लिए अवयव 1 से संबंधित अवयवों का समुच्चय $[1]$ ज्ञात करें।",
+            "solution": [
+              "सूत्रानुसार: $[1] = \\{x \\in A : |x - 1| \\text{ संख्या } 4 \\text{ का गुणज है}\\}$",
+              "अतः $x - 1 = 0, 4, 8, 12 \\implies x = 1, 5, 9$",
+              "चूँकि $13 > 12$ समुच्चय में नहीं है, अतः मान केवल $1, 5, 9$ होंगे।",
+              "उत्तर: $[1] = \\{1, 5, 9\\}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समुच्चय $A = \\{x \\in Z : 0 \\le x \\le 12\\}$ में $R = \\{(a, b) : a = b\\}$ के लिए अवयव 1 से संबंधित अवयव ज्ञात करें।",
+            "solution": [
+              "सूत्र: $[1] = \\{x \\in A : x = 1\\}$",
+              "सीधे मान रखने पर केवल एक अवयव प्राप्त होता है।",
+              "उत्तर: $[1] = \\{1\\}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "पूर्णांकों के समुच्चय $Z$ में संबंध $R = \\{(a, b) : 2 \\text{ विभाजित करता है } (a - b)\\}$ के लिए तुल्यता वर्ग $[0]$ ज्ञात करें।",
+            "solution": [
+              "सूत्रानुसार: $[0] = \\{x \\in Z : x - 0 \\text{ सम संख्या है}\\}$",
+              "अतः $x$ सभी सम पूर्णांकों का समुच्चय होगा।",
+              "उत्तर: $[0] = \\{\\dots, -4, -2, 0, 2, 4, \\dots\\}$"
+            ],
+            "source": "AI"
+          },
+          {
+            "question": "उपर्युक्त संबंध हेतु विषम पूर्णांकों के लिए तुल्यता वर्ग $[1]$ ज्ञात करें।",
+            "solution": [
+              "सूत्रानुसार: $[1] = \\{x \\in Z : x - 1 \\text{ संख्या } 2 \\text{ से विभाज्य है}\\}$",
+              "यदि $x - 1$ सम है, तो $x$ को अनिवार्य रूप से विषम पूर्णांक होना होगा।",
+              "उत्तर: $[1] = \\{\\dots, -3, -1, 1, 3, 5, \\dots\\}$"
+            ],
+            "source": "AI"
+          }
+        ]
+      },
+      {
+        "name": "समुच्चय A से B में फलनों की कुल संख्या",
+        "formula": "$$\\text{कुल फलनों की संख्या} = n^m = [n(B)]^{n(A)}$$",
+        "meaning": "$m = n(A)$ प्रांत के अवयवों की संख्या है तथा $n = n(B)$ सह-प्रांत के अवयवों की संख्या है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "यदि $A = \\{1, 2\\}$ तथा $B = \\{a, b, c\\}$ हो, तो $A$ से $B$ में फलनों की कुल संख्या ज्ञात कीजिए।",
+            "solution": [
+              "यहाँ $m = n(A) = 2$ तथा $n = n(B) = 3$",
+              "सूत्रानुसार: कुल फलनों की संख्या $= n^m = 3^2$",
+              "गणना करने पर: $3^2 = 9$",
+              "उत्तर: $9$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि $n(A) = 3$ तथा $n(B) = 2$ हो, तो $A$ से $B$ में कुल कितने फलन परिभाषित हो सकते हैं?",
+            "solution": [
+              "यहाँ प्रांत में $m = 3$ तथा सह-प्रांत में $n = 2$ अवयव हैं।",
+              "सूत्र: कुल फलनों की संख्या $= n^m = 2^3$",
+              "गणना करने पर: $2^3 = 8$",
+              "उत्तर: $8$"
+            ],
+            "source": "AI"
+          },
+          {
+            "question": "समुच्चय $A = \\{1, 2, 3\\}$ से $A$ पर ही कुल फलनों की संख्या ज्ञात कीजिए।",
+            "solution": [
+              "यहाँ $m = n(A) = 3$ तथा $n = n(A) = 3$",
+              "सूत्रानुसार: फलनों की संख्या $= 3^3$",
+              "गणना करने पर: $3^3 = 27$",
+              "उत्तर: $27$"
+            ],
+            "source": "AI"
+          },
+          {
+            "question": "यदि $A$ से $B$ में कुल 16 फलन परिभाषित हैं तथा $n(B) = 2$ हो, तो $n(A)$ का मान ज्ञात करें।",
+            "solution": [
+              "सूत्र: $n^m = 16$",
+              "दिया है $n = 2$, अतः $2^m = 16 = 2^4$",
+              "घातों की तुलना करने पर: $m = n(A) = 4$",
+              "उत्तर: $4$"
+            ],
+            "source": "AI"
+          }
+        ]
+      },
+      {
+        "name": "समुच्चय A से B में एकैकी फलनों की कुल संख्या",
+        "formula": "$$\\text{एकैकी फलनों की संख्या} = \\begin{cases} {}^n P_m = \\frac{n!}{(n-m)!}, & \\text{यदि } n \\ge m \\\\ 0, & \\text{यदि } n < m \\end{cases}$$",
+        "meaning": "$m = n(A)$ प्रांत के अवयवों की संख्या है तथा $n = n(B)$ सह-प्रांत के अवयवों की संख्या है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "यदि $A = \\{a, b\\}$ तथा $B = \\{1, 2, 3\\}$ हो, तो $A$ से $B$ में एकैकी फलनों की कुल संख्या ज्ञात कीजिए।",
+            "solution": [
+              "यहाँ $m = n(A) = 2$ तथा $n = n(B) = 3$। चूँकि $n \\ge m$ है।",
+              "सूत्रानुसार: एकैकी फलनों की संख्या $= {}^3 P_2 = \\frac{3!}{(3-2)!}$",
+              "गणना करने पर: $\\frac{3!}{1!} = \\frac{6}{1} = 6$",
+              "उत्तर: $6$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समुच्चय $A = \\{1, 2, 3\\}$ से $A$ पर परिभाषित एकैकी फलनों की कुल संख्या ज्ञात कीजिए।",
+            "solution": [
+              "यहाँ $m = 3$ तथा $n = 3$",
+              "सूत्रानुसार: ${}^3 P_3 = 3! = 3 \\times 2 \\times 1 = 6$",
+              "उत्तर: $6$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि $n(A) = 4$ तथा $n(B) = 3$ हो, तो $A$ से $B$ में एकैकी फलनों की संख्या क्या होगी?",
+            "solution": [
+              "यहाँ $m = 4$ तथा $n = 3$",
+              "चूँकि $n < m$ ($3 < 4$) है, अतः सह-प्रांत में अवयव कम होने के कारण कोई भी एकैकी फलन संभव नहीं है।",
+              "उत्तर: $0$"
+            ],
+            "source": "AI"
+          },
+          {
+            "question": "यदि $n(A) = 2$ तथा $n(B) = 4$ हो, तो $A$ से $B$ में एकैकी फलनों की संख्या ज्ञात करें।",
+            "solution": [
+              "यहाँ $m = 2$ तथा $n = 4$।",
+              "सूत्रानुसार: ${}^4 P_2 = \\frac{4!}{(4-2)!} = \\frac{24}{2} = 12$",
+              "उत्तर: $12$"
+            ],
+            "source": "AI"
+          }
+        ]
+      },
+      {
+        "name": "फलनों का संयोजन (Composition Formula)",
+        "formula": "$$(g \\circ f)(x) = g(f(x)) \\quad \\text{तथा} \\quad (f \\circ g)(x) = f(g(x))$$",
+        "meaning": "$f: A \\to B$ तथा $g: B \\to C$ दो फलन हैं; $g \\circ f$ उनका संयुक्त फलन $A \\to C$ है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "यदि $f(x) = 8x^3$ तथा $g(x) = x^{1/3}$ हो, तो $g \\circ f(x)$ तथा $f \\circ g(x)$ ज्ञात करें।",
+            "solution": [
+              "$g \\circ f(x) = g(f(x)) = g(8x^3) = (8x^3)^{1/3} = (2^3 x^3)^{1/3} = 2x$",
+              "$f \\circ g(x) = f(g(x)) = f(x^{1/3}) = 8(x^{1/3})^3 = 8x$",
+              "उत्तर: $g \\circ f(x) = 2x, \\quad f \\circ g(x) = 8x$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि $f(x) = \\cos x$ तथा $g(x) = 3x^2$ हो, तो $g \\circ f$ तथा $f \\circ g$ ज्ञात कीजिए।",
+            "solution": [
+              "$g \\circ f(x) = g(f(x)) = g(\\cos x) = 3(\\cos x)^2 = 3\\cos^2 x$",
+              "$f \\circ g(x) = f(g(x)) = f(3x^2) = \\cos(3x^2)$",
+              "उत्तर: $g \\circ f(x) = 3\\cos^2 x, \\quad f \\circ g(x) = \\cos(3x^2)$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि $f(x) = (3 - x^3)^{1/3}$ हो, तो $(f \\circ f)(x)$ ज्ञात कीजिए।",
+            "solution": [
+              "$(f \\circ f)(x) = f(f(x)) = f((3 - x^3)^{1/3})$",
+              "मान रखने पर: $[3 - ((3 - x^3)^{1/3})^3]^{1/3} = [3 - (3 - x^3)]^{1/3}$",
+              "सरल करने पर: $(3 - 3 + x^3)^{1/3} = (x^3)^{1/3} = x$",
+              "उत्तर: $x$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि $f(x) = 4x + 3$ तथा $g(x) = \\cos x$ हो, तो $f \\circ g(x)$ का मान निकालें।",
+            "solution": [
+              "$f \\circ g(x) = f(g(x)) = f(\\cos x)$",
+              "सूत्र में रखने पर: $4(\\cos x) + 3 = 4\\cos x + 3$",
+              "उत्तर: $4\\cos x + 3$"
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "प्रतिलोम फलन ज्ञात करने का सूत्र",
+        "formula": "$$y = f(x) \\iff x = f^{-1}(y)$$",
+        "meaning": "एकैकी-आच्छादी फलन $f$ के लिए $y = f(x)$ को $x$ के पदों में हल करके $f^{-1}$ प्राप्त किया जाता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "यदि $f: R \\to R$, $f(x) = 2x + 3$ से परिभाषित हो, तो $f^{-1}(x)$ ज्ञात कीजिए।",
+            "solution": [
+              "माना $y = f(x) = 2x + 3$",
+              "$y - 3 = 2x \\implies x = \\frac{y - 3}{2}$",
+              "अतः $f^{-1}(y) = \\frac{y - 3}{2}$, चर बदलने पर: $f^{-1}(x) = \\frac{x - 3}{2}$",
+              "उत्तर: $\\frac{x - 3}{2}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि $f: R \\to R$, $f(x) = 4x - 5$ हो, तो $f^{-1}(x)$ ज्ञात कीजिए।",
+            "solution": [
+              "माना $y = 4x - 5$",
+              "$y + 5 = 4x \\implies x = \\frac{y + 5}{4}$",
+              "अतः $f^{-1}(x) = \\frac{x + 5}{4}$",
+              "उत्तर: $\\frac{x + 5}{4}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि $f(x) = 7x - \\frac{5}{2}$ ($R \\to R$) हो, तो $f^{-1}(x)$ ज्ञात करें।",
+            "solution": [
+              "माना $y = 7x - \\frac{5}{2}$",
+              "$y + \\frac{5}{2} = 7x \\implies \\frac{2y + 5}{2} = 7x$",
+              "$x = \\frac{2y + 5}{14} \\implies f^{-1}(x) = \\frac{2x + 5}{14}$",
+              "उत्तर: $\\frac{2x + 5}{14}$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "यदि $f(x) = \\frac{4x+3}{6x-4}$, $x \\neq \\frac{2}{3}$ हो, तो $f^{-1}(x)$ ज्ञात करें।",
+            "solution": [
+              "माना $y = \\frac{4x+3}{6x-4} \\implies y(6x-4) = 4x+3$",
+              "$6xy - 4y = 4x + 3 \\implies 6xy - 4x = 4y + 3$",
+              "$x(6y - 4) = 4y + 3 \\implies x = \\frac{4y+3}{6y-4}$",
+              "अतः $f^{-1}(x) = \\frac{4x+3}{6x-4} = f(x)$",
+              "उत्तर: $\\frac{4x+3}{6x-4}$"
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "द्वि-आधारी संक्रियाओं की कुल संख्या",
+        "formula": "$$\\text{द्वि-आधारी संक्रियाओं की संख्या} = n^{n^2}$$",
+        "meaning": "$n = n(A)$ समुच्चय $A$ में अवयवों की कुल संख्या है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "समुच्चय $A = \\{1, 2\\}$ पर कुल कितनी द्वि-आधारी संक्रियाएँ परिभाषित हो सकती हैं?",
+            "solution": [
+              "यहाँ $n = 2$",
+              "सूत्रानुसार: संक्रियाओं की संख्या $= n^{n^2} = 2^{2^2} = 2^4$",
+              "गणना करने पर: $2^4 = 16$",
+              "उत्तर: $16$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समुच्चय $\\{a, b\\}$ में द्वि-आधारी संक्रियाओं की कुल संख्या कितनी होगी?",
+            "solution": [
+              "यहाँ $n = 2$",
+              "सूत्रानुसार: $2^{2^2} = 2^4 = 16$",
+              "उत्तर: $16$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "एकल अवयव वाले समुच्चय $A = \\{1\\}$ पर द्वि-आधारी संक्रियाओं की संख्या ज्ञात करें।",
+            "solution": [
+              "यहाँ $n = 1$",
+              "सूत्रानुसार: $1^{1^2} = 1^1 = 1$",
+              "उत्तर: $1$"
+            ],
+            "source": "AI"
+          },
+          {
+            "question": "यदि किसी समुच्चय में 3 अवयव हों, तो उस पर कुल कितनी द्वि-आधारी संक्रियाएँ संभव हैं?",
+            "solution": [
+              "यहाँ $n = 3$",
+              "सूत्रानुसार: $3^{3^2} = 3^9$",
+              "गणना करने पर: $3^9 = 19683$",
+              "उत्तर: $3^9$ (या $19683$)"
+            ],
+            "source": "AI"
+          }
+        ]
+      },
+      {
+        "name": "द्वि-आधारी संक्रिया का तत्समक अवयव सूत्र",
+        "formula": "$$a * e = a = e * a, \\quad \\forall a \\in A$$",
+        "meaning": "$e$ संक्रिया $*$ के लिए तत्समक अवयव (Identity Element) कहलाता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "पूर्णांकों $Z$ में संक्रिया $a * b = a + b + 1$ के लिए तत्समक अवयव ज्ञात करें।",
+            "solution": [
+              "तत्समक अवयव की परिभाषा से: $a * e = a$",
+              "संक्रिया लगाने पर: $a + e + 1 = a$",
+              "$e + 1 = 0 \\implies e = -1$",
+              "जाँच: $e * a = (-1) + a + 1 = a$ (सत्य)",
+              "उत्तर: $-1$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "परिमेय संख्याओं $Q$ में $a * b = \\frac{ab}{4}$ के लिए तत्समक अवयव ज्ञात कीजिए।",
+            "solution": [
+              "सूत्र से: $a * e = a$",
+              "संक्रिया लगाने पर: $\\frac{a \\cdot e}{4} = a$",
+              "$a(e - 4) = 0 \\implies e = 4$ (चूँकि यह सभी $a$ के लिए सत्य होना चाहिए)",
+              "जाँच: $4 * a = \\frac{4a}{4} = a$ (सत्य)",
+              "उत्तर: $4$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "वास्तविक संख्याओं $R$ में संक्रिया $a * b = a + b - ab$ का तत्समक अवयव निकालें।",
+            "solution": [
+              "सूत्र से: $a * e = a$",
+              "$a + e - ae = a \\implies e(1 - a) = 0$",
+              "चूँकि यह प्रत्येक $a$ के लिए सत्य होना चाहिए, अतः $e = 0$",
+              "उत्तर: $0$"
+            ],
+            "source": "AI"
+          },
+          {
+            "question": "प्राकृत संख्याओं $N$ में संक्रिया $a * b = a + b$ के तत्समक अवयव पर विचार कीजिए।",
+            "solution": [
+              "यदि $e$ तत्समक अवयव हो, तो $a + e = a \\implies e = 0$",
+              "परंतु $0 \\notin N$ (शून्य प्राकृत संख्या नहीं है)।",
+              "अतः $N$ में योग संक्रिया का कोई तत्समक अवयव विद्यमान नहीं है।",
+              "उत्तर: तत्समक अवयव का अस्तित्व नहीं है"
+            ],
+            "source": "किताब"
+          }
+        ]
+      }
+    ],
+    "shortAnswers": [
+      {
+        "question": "सिद्ध कीजिए कि किसी समतल में स्थित समस्त त्रिभुजों के समुच्चय $T$ में, $R = \\{(T_1, T_2) : T_1 \\cong T_2\\}$ (सर्वांगसम) द्वारा परिभाषित संबंध $R$ एक तुल्यता संबंध है।",
+        "answer": [
+          "स्वतुल्य: प्रत्येक त्रिभुज स्वयं के सर्वांगसम होता है, अर्थात् $T_1 \\cong T_1$, अतः $(T_1, T_1) \\in R$। अतः $R$ स्वतुल्य है।",
+          "सममित: माना $(T_1, T_2) \\in R \\implies T_1 \\cong T_2 \\implies T_2 \\cong T_1 \\implies (T_2, T_1) \\in R$। अतः $R$ सममित है।",
+          "संक्रामक: माना $(T_1, T_2) \\in R$ तथा $(T_2, T_3) \\in R \\implies T_1 \\cong T_2$ तथा $T_2 \\cong T_3 \\implies T_1 \\cong T_3 \\implies (T_1, T_3) \\in R$। अतः $R$ संक्रामक है।",
+          "चूँकि $R$ स्वतुल्य, सममित तथा संक्रामक तीनों है, अतः $R$ एक तुल्यता संबंध है।"
+        ]
+      },
+      {
+        "question": "जाँच कीजिए कि क्या समुच्चय $A = \\{1, 2, 3, 4, 5, 6\\}$ में $R = \\{(a, b) : b = a + 1\\}$ द्वारा परिभाषित संबंध $R$ स्वतुल्य, सममित या संक्रामक है।",
+        "answer": [
+          "रोस्टर रूप में लिखने पर: $R = \\{(1, 2), (2, 3), (3, 4), (4, 5), (5, 6)\\}$।",
+          "स्वतुल्यता: $(1, 1), (2, 2) \\notin R$, अतः $R$ स्वतुल्य संबंध नहीं है।",
+          "सममिति: $(1, 2) \\in R$ परंतु $(2, 1) \\notin R$, अतः $R$ सममित संबंध नहीं है।",
+          "संक्रामकता: $(1, 2) \\in R$ तथा $(2, 3) \\in R$ परंतु $(1, 3) \\notin R$, अतः $R$ संक्रामक संबंध नहीं है।"
+        ]
+      },
+      {
+        "question": "सिद्ध कीजिए कि वास्तविक संख्याओं के समुच्चय में $R = \\{(a, b) : a \\le b\\}$ द्वारा परिभाषित संबंध $R$ स्वतुल्य तथा संक्रामक है किंतु सममित नहीं है।",
+        "answer": [
+          "स्वतुल्य: प्रत्येक संख्या $a \\in R$ के लिए $a \\le a$ सदैव सत्य है, अतः $(a, a) \\in R$। अतः संबंध स्वतुल्य है।",
+          "सममित: यदि $a = 2, b = 3$ लें, तो $2 \\le 3 \\implies (2, 3) \\in R$, परंतु $3 \\not\\le 2 \\implies (3, 2) \\notin R$। अतः संबंध सममित नहीं है।",
+          "संक्रामक: यदि $(a, b) \\in R$ तथा $(b, c) \\in R \\implies a \\le b$ तथा $b \\le c \\implies a \\le c \\implies (a, c) \\in R$। अतः संबंध संक्रामक है।"
+        ]
+      },
+      {
+        "question": "सिद्ध कीजिए कि किसी कॉलेज के पुस्तकालय की समस्त पुस्तकों के समुच्चय $A$ में $R = \\{(x, y) : x \\text{ तथा } y \\text{ में पेजों की संख्या समान है}\\}$ एक तुल्यता संबंध है।",
+        "answer": [
+          "स्वतुल्य: किसी पुस्तक $x$ के पेजों की संख्या स्वयं $x$ के पेजों की संख्या के समान होती है, अतः $(x, x) \\in R$।",
+          "सममित: यदि $(x, y) \\in R \\implies x$ और $y$ में पेजों की संख्या समान है $\\implies y$ और $x$ में पेजों की संख्या समान है $\\implies (y, x) \\in R$।",
+          "संक्रामक: यदि $(x, y) \\in R$ तथा $(y, z) \\in R \\implies x, y$ तथा $y, z$ में पेजों की संख्या समान है $\\implies x$ और $z$ में पेजों की संख्या समान है $\\implies (x, z) \\in R$।",
+          "अतः $R$ एक तुल्यता संबंध है।"
+        ]
+      },
+      {
+        "question": "सिद्ध कीजिए कि समस्त बहुभुजों के समुच्चय $A$ में $R = \\{(P_1, P_2) : P_1 \\text{ तथा } P_2 \\text{ की भुजाओं की संख्या समान है}\\}$ एक तुल्यता संबंध है। 3, 4, 5 भुजाओं वाले समकोण त्रिभुज से संबंधित अवयव भी बताएँ।",
+        "answer": [
+          "स्वतुल्यता: प्रत्येक बहुभुज $P_1$ की स्वयं के साथ भुजाओं की संख्या समान होती है, अतः $(P_1, P_1) \\in R$।",
+          "सममिति: यदि $P_1$ और $P_2$ की भुजाएँ समान हैं, तो $P_2$ और $P_1$ की भी भुजाएँ समान होंगी, अतः $(P_1, P_2) \\in R \\implies (P_2, P_1) \\in R$।",
+          "संक्रामकता: यदि $P_1, P_2$ की भुजाएँ समान हैं तथा $P_2, P_3$ की भुजाएँ समान हैं, तो $P_1$ और $P_3$ की भुजाएँ भी समान होंगी, अतः $(P_1, P_3) \\in R$। अतः यह एक तुल्यता संबंध है।",
+          "3, 4, 5 भुजाओं वाला बहुभुज 3 भुजाओं का त्रिभुज है, अतः इससे संबंधित समुच्चय $A$ के समस्त अवयव 'समतल में स्थित सभी त्रिभुजों का समुच्चय' होगा।"
+        ]
+      },
+      {
+        "question": "मान लीजिए कि $L$ किसी समतल में समस्त रेखाओं का समुच्चय है तथा $R = \\{(L_1, L_2) : L_1 \\parallel L_2\\}$ है। सिद्ध कीजिए कि $R$ एक तुल्यता संबंध है।",
+        "answer": [
+          "स्वतुल्य: प्रत्येक रेखा स्वयं के समांतर मानी जाती है ($L_1 \\parallel L_1$), अतः $(L_1, L_1) \\in R$।",
+          "सममित: यदि $L_1 \\parallel L_2 \\implies L_2 \\parallel L_1 \\implies (L_2, L_1) \\in R$।",
+          "संक्रामक: यदि $L_1 \\parallel L_2$ तथा $L_2 \\parallel L_3 \\implies L_1 \\parallel L_3 \\implies (L_1, L_3) \\in R$।",
+          "अतः $R$ एक तुल्यता संबंध है।"
+        ]
+      },
+      {
+        "question": "ऐसे संबंध का उदाहरण दीजिए जो: (i) सममित हो किंतु न तो स्वतुल्य और न संक्रामक हो, (ii) स्वतुल्य तथा सममित हो किंतु संक्रामक न हो।",
+        "answer": [
+          "(i) समुच्चय $A = \\{1, 2, 3\\}$ पर $R = \\{(1, 2), (2, 1)\\}$ सममित है, किंतु स्वतुल्य नहीं है ($(1, 1) \\notin R$) और न ही संक्रामक है क्योंकि $(1, 2), (2, 1) \\in R \\implies (1, 1) \\notin R$।",
+          "(ii) समुच्चय $A = \\{1, 2, 3\\}$ पर $R = \\{(1, 1), (2, 2), (3, 3), (1, 2), (2, 1), (2, 3), (3, 2)\\}$ स्वतुल्य व सममित है, किंतु संक्रामक नहीं है क्योंकि $(1, 2) \\in R$ तथा $(2, 3) \\in R$ होने पर $(1, 3) \\notin R$।"
+        ]
+      },
+      {
+        "question": "मान लीजिए कि $A = \\{1, 2, 3\\}$ है। दर्शाइए कि $(1, 2)$ तथा $(2, 1)$ को अंतर्विष्ट करने वाले तुल्यता संबंधों की संख्या 2 है।",
+        "answer": [
+          "स्वतुल्यता हेतु $(1, 1), (2, 2), (3, 3)$ अनिवार्य हैं।",
+          "चूँकि $(1, 2)$ शामिल है, सममिति हेतु $(2, 1)$ भी अनिवार्य है। सबसे छोटा तुल्यता संबंध $R_1 = \\{(1, 1), (2, 2), (3, 3), (1, 2), (2, 1)\\}$ है।",
+          "यदि इसमें कोई अन्य युग्म जैसे $(2, 3)$ जोड़ते हैं, तो सममिति व संक्रामकता बनाए रखने के लिए सभी 9 युग्म आ जाते हैं, जिससे $R_2 = A \\times A$ बनता है।",
+          "अतः ऐसे कुल तुल्यता संबंधों की संख्या ठीक 2 है।"
+        ]
+      },
+      {
+        "question": "सिद्ध कीजिए कि $f(x) = \\frac{1}{x}$ द्वारा परिभाषित फलन $f: R_* \\to R_*$ एकैकी तथा आच्छादक है, जहाँ $R_*$ सभी शून्येतर वास्तविक संख्याओं का समुच्चय है।",
+        "answer": [
+          "एकैकी के लिए: माना $x_1, x_2 \\in R_*$ ताकि $f(x_1) = f(x_2)$।",
+          "$\\frac{1}{x_1} = \\frac{1}{x_2} \\implies x_1 = x_2$। अतः फलन $f$ एकैकी है।",
+          "आच्छादक के लिए: माना $y \\in R_*$ (सह-प्रांत)। $y = f(x) \\implies y = \\frac{1}{x} \\implies x = \\frac{1}{y}$।",
+          "चूँकि $y \\neq 0$, अतः $x = \\frac{1}{y} \\in R_*$ (प्रांत) सदैव विद्यमान है ताकि $f(x) = f(1/y) = y$। अतः $f$ आच्छादक है।"
+        ]
+      },
+      {
+        "question": "यदि $f: N \\to R_*$, $f(x) = \\frac{1}{x}$ हो, तो क्या यह फलन एकैकी तथा आच्छादक होगा?",
+        "answer": [
+          "एकैकी के लिए: $f(x_1) = f(x_2) \\implies \\frac{1}{x_1} = \\frac{1}{x_2} \\implies x_1 = x_2$। अतः फलन एकैकी है।",
+          "आच्छादक के लिए: यदि हम सह-प्रांत $R_*$ से $y = 3$ लेते हैं, तो $x = \\frac{1}{y} = \\frac{1}{3} \\notin N$।",
+          "सह-प्रांत के अवयव 3 का कोई पूर्व-प्रतिबिंब प्राकृत संख्याओं के समुच्चय $N$ में विद्यमान नहीं है।",
+          "निष्कर्ष: फलन एकैकी है परंतु आच्छादक नहीं है।"
+        ]
+      },
+      {
+        "question": "सिद्ध कीजिए कि महत्तम पूर्णांक फलन $f: R \\to R$, $f(x) = [x]$ न तो एकैकी है और न आच्छादक है।",
+        "answer": [
+          "एकैकी के लिए: माना $x_1 = 1.2$ तथा $x_2 = 1.9$। यहाँ $f(1.2) = [1.2] = 1$ तथा $f(1.9) = [1.9] = 1$।",
+          "यहाँ $f(1.2) = f(1.9) = 1$ परंतु $1.2 \\neq 1.9$, अतः $f$ एकैकी नहीं है।",
+          "आच्छादक के लिए: $f(x)$ का परिसर केवल पूर्णांक समुच्चय $Z$ है।",
+          "सह-प्रांत $R$ के अपूर्णांक अवयवों (जैसे $0.5, 2.7$) का कोई पूर्व-प्रतिबिंब प्रांत में नहीं है। अतः $f$ आच्छादक नहीं है।"
+        ]
+      },
+      {
+        "question": "सिद्ध कीजिए कि मापांक फलन $f: R \\to R$, $f(x) = |x|$ न तो एकैकी है और न आच्छादक है।",
+        "answer": [
+          "एकैकी के लिए: माना $x_1 = -1$ तथा $x_2 = 1$। यहाँ $f(-1) = |-1| = 1$ तथा $f(1) = |1| = 1$।",
+          "यहाँ $f(-1) = f(1)$ परंतु $-1 \\neq 1$, अतः $f$ एकैकी नहीं है।",
+          "आच्छादक के लिए: प्रत्येक $x \\in R$ हेतु $|x| \\ge 0$, अतः परिसर केवल ऋण्येतर वास्तविक संख्याएँ $[0, \\infty)$ है।",
+          "सह-प्रांत के किसी भी ऋणात्मक अवयव (जैसे $-2$) का पूर्व-प्रतिबिंब नहीं है। अतः $f$ आच्छादक नहीं है।"
+        ]
+      },
+      {
+        "question": "सिद्ध कीजिए कि चिह्न फलन (Signum Function) $f: R \\to R$ न तो एकैकी है और न आच्छादक है।",
+        "answer": [
+          "चिह्न फलन: $f(x) = 1$ यदि $x > 0$, $f(x) = 0$ यदि $x = 0$, तथा $f(x) = -1$ यदि $x < 0$।",
+          "एकैकी के लिए: $f(2) = 1$ और $f(3) = 1$। $f(2) = f(3)$ होने पर भी $2 \\neq 3$, अतः फलन एकैकी नहीं है।",
+          "आच्छादक के लिए: फलन का परिसर केवल $\\{-1, 0, 1\\}$ है।",
+          "सह-प्रांत $R$ के शेष अवयवों (जैसे $2, -3, 0.5$) का कोई पूर्व-प्रतिबिंब प्रांत $R$ में नहीं है। अतः फलन आच्छादक नहीं है।"
+        ]
+      },
+      {
+        "question": "मान लीजिए कि $A = R - \\{3\\}$ तथा $B = R - \\{1\\}$ हैं। $f(x) = \\frac{x-2}{x-3}$ द्वारा परिभाषित फलन $f: A \\to B$ की एकैकी तथा आच्छादक प्रकृति की विवेचना करें।",
+        "answer": [
+          "एकैकी के लिए: माना $f(x_1) = f(x_2) \\implies \\frac{x_1 - 2}{x_1 - 3} = \\frac{x_2 - 2}{x_2 - 3}$।",
+          "तिर्यक गुणा करने पर: $(x_1 - 2)(x_2 - 3) = (x_2 - 2)(x_1 - 3) \\implies x_1 x_2 - 3x_1 - 2x_2 + 6 = x_1 x_2 - 3x_2 - 2x_1 + 6$।",
+          "$-3x_1 + 2x_1 = -3x_2 + 2x_2 \\implies -x_1 = -x_2 \\implies x_1 = x_2$। अतः $f$ एकैकी फलन है।",
+          "आच्छादक के लिए: माना $y \\in B = R - \\{1\\}$। $y = \\frac{x-2}{x-3} \\implies y(x-3) = x-2 \\implies xy - 3y = x - 2$।",
+          "$xy - x = 3y - 2 \\implies x(y-1) = 3y - 2 \\implies x = \\frac{3y-2}{y-1}$।",
+          "चूँकि $y \\neq 1$, अतः प्रत्येक $y \\in B$ के लिए $x \\in A$ विद्यमान है। अतः $f$ आच्छादक फलन है।"
+        ]
+      },
+      {
+        "question": "जाँच कीजिए कि क्या $a * b = \\frac{a+b}{2}$ द्वारा $Q$ में परिभाषित संक्रिया क्रमविनिमेय तथा साहचर्य है।",
+        "answer": [
+          "क्रमविनिमेयता: $a * b = \\frac{a+b}{2} = \\frac{b+a}{2} = b * a$। अतः संक्रिया क्रमविनिमेय है।",
+          "साहचर्यता: $(a * b) * c = \\left(\\frac{a+b}{2}\\right) * c = \\frac{\\frac{a+b}{2} + c}{2} = \\frac{a+b+2c}{4}$।",
+          "तथा $a * (b * c) = a * \\left(\\frac{b+c}{2}\\right) = \\frac{a + \\frac{b+c}{2}}{2} = \\frac{2a+b+c}{4}$।",
+          "चूँकि $(a * b) * c \\neq a * (b * c)$, अतः संक्रिया साहचर्य नहीं है।"
+        ]
+      },
+      {
+        "question": "समुच्चय $A = \\{1, 2, 3, \\dots, 13, 14\\}$ में संबंध $R = \\{(x, y) : 3x - y = 0\\}$ की स्वतुल्य, सममित तथा संक्रामक होने की जाँच कीजिए।",
+        "answer": [
+          "संबंध $R$ को रोस्टर रूप में लिखने पर: $y = 3x$ जहाँ $x, y \\in A$।",
+          "$R = \\{(1, 3), (2, 6), (3, 9), (4, 12)\\}$।",
+          "स्वतुल्यता: किसी भी $a \\in A$ के लिए $(a, a) \\notin R$ (जैसे $(1, 1) \\notin R$), अतः $R$ स्वतुल्य नहीं है।",
+          "सममिति: $(1, 3) \\in R$ परंतु $(3, 1) \\notin R$, अतः $R$ सममित संबंध नहीं है।",
+          "संक्रामकता: $(1, 3) \\in R$ तथा $(3, 9) \\in R$ परंतु $(1, 9) \\notin R$, अतः $R$ संक्रामक नहीं है।"
+        ]
+      },
+      {
+        "question": "प्राकृत संख्याओं के समुच्चय $N$ में $R = \\{(x, y) : y = x + 5 \\text{ तथा } x < 4\\}$ द्वारा परिभाषित संबंध $R$ की जाँच कीजिए।",
+        "answer": [
+          "$x < 4$ होने के कारण $x = 1, 2, 3$ हो सकते हैं।",
+          "रोस्टर रूप: $R = \\{(1, 6), (2, 7), (3, 8)\\}$।",
+          "स्वतुल्यता: $(1, 1), (2, 2) \\dots \\notin R$, अतः $R$ स्वतुल्य नहीं है।",
+          "सममिति: $(1, 6) \\in R$ किंतु $(6, 1) \\notin R$, अतः $R$ सममित नहीं है।",
+          "संक्रामकता: यहाँ कोई भी दो ऐसे युग्म $(a, b)$ और $(b, c)$ विद्यमान नहीं हैं जहाँ संक्रामकता की शर्त टूटे, अतः यह संबंध संक्रामक माना जाता है।"
+        ]
+      },
+      {
+        "question": "समुच्चय $A = \\{1, 2, 3, 4, 5, 6\\}$ में $R = \\{(x, y) : y \\text{ भाज्य है } x \\text{ से}\\}$ द्वारा परिभाषित संबंध $R$ की जाँच कीजिए।",
+        "answer": [
+          "स्वतुल्यता: प्रत्येक संख्या $x$, स्वयं से भाज्य होती है ($x/x = 1$), अतः $(x, x) \\in R$ सभी $x \\in A$ के लिए सत्य है। अतः $R$ स्वतुल्य है।",
+          "सममिति: $(1, 2) \\in R$ क्योंकि 2, 1 से भाज्य है। परंतु 1, 2 से भाज्य नहीं है, अतः $(2, 1) \\notin R$। अतः $R$ सममित नहीं है।",
+          "संक्रामकता: यदि $y, x$ से भाज्य है तथा $z, y$ से भाज्य है, तो $z$ भी $x$ से भाज्य होगा। अतः $(x, y) \\in R$ और $(y, z) \\in R \\implies (x, z) \\in R$। अतः $R$ संक्रामक है।"
+        ]
+      },
+      {
+        "question": "किसी विशेष समय नगर के निवासियों के समुच्चय में: (i) $R = \\{(x, y) : x, y \\text{ की पत्नी है}\\}$ तथा (ii) $R = \\{(x, y) : x, y \\text{ के पिता हैं}\\}$ संबंधों की जाँच कीजिए।",
+        "answer": [
+          "(i) पत्नी संबंध: कोई स्वयं की पत्नी नहीं हो सकती, अतः स्वतुल्य नहीं है। यदि $x, y$ की पत्नी है, तो $y, x$ का पति होगा (पत्नी नहीं), अतः सममित नहीं है। यदि $x, y$ की पत्नी है, तो $y$ पुरुष होने के कारण किसी और की पत्नी नहीं हो सकता, अतः संक्रामकता की शर्त खंडित नहीं होती, यह संक्रामक माना जाता है।",
+          "(ii) पिता संबंध: कोई स्वयं का पिता नहीं हो सकता ($(x, x) \\notin R$), अतः स्वतुल्य नहीं है। यदि $x, y$ का पिता है, तो $y, x$ का पुत्र/पुत्री होगा, अतः सममित नहीं है। यदि $x, y$ का पिता है तथा $y, z$ का पिता है, तो $x, z$ का दादा होगा (पिता नहीं), अतः संक्रामक भी नहीं है।"
+        ]
+      },
+      {
+        "question": "सिद्ध कीजिए कि $XY$-समतल में समस्त रेखाओं के समुच्चय में $R = \\{(L_1, L_2) : L_1 \\parallel L_2\\}$ एक तुल्यता संबंध है। रेखा $y = 2x + 4$ से संबंधित समस्त रेखाओं का समुच्चय ज्ञात कीजिए।",
+        "answer": [
+          "स्वतुल्यता: प्रत्येक रेखा स्वयं के समांतर होती है ($L_1 \\parallel L_1$), अतः $(L_1, L_1) \\in R$ सत्य है।",
+          "सममिति: $L_1 \\parallel L_2 \\implies L_2 \\parallel L_1 \\implies (L_2, L_1) \\in R$।",
+          "संक्रामकता: $L_1 \\parallel L_2$ और $L_2 \\parallel L_3 \\implies L_1 \\parallel L_3 \\implies (L_1, L_3) \\in R$। अतः $R$ तुल्यता संबंध है।",
+          "रेखा $y = 2x + 4$ की ढाल $m = 2$ है। समांतर रेखाओं की ढाल समान होती है, अतः इससे संबंधित रेखाओं का समुच्चय $y = 2x + c$ होगा, जहाँ $c \\in R$ एक वास्तविक स्थिरांक है।"
+        ]
+      },
+      {
+        "question": "यदि $f(x) = \\frac{x}{x+2}$, $x \\neq -2$ हो, तो $f: R - \\{-2\\} \\to R - \\{1\\}$ के एकैकी तथा आच्छादक होने की जाँच कीजिए।",
+        "answer": [
+          "एकैकी के लिए: $f(x_1) = f(x_2) \\implies \\frac{x_1}{x_1+2} = \\frac{x_2}{x_2+2}$।",
+          "तिर्यक गुणा करने पर: $x_1(x_2+2) = x_2(x_1+2) \\implies x_1 x_2 + 2x_1 = x_1 x_2 + 2x_2 \\implies 2x_1 = 2x_2 \\implies x_1 = x_2$। अतः $f$ एकैकी है।",
+          "आच्छादक के लिए: $y = \\frac{x}{x+2} \\implies y(x+2) = x \\implies xy + 2y = x$।",
+          "$2y = x - xy \\implies x(1-y) = 2y \\implies x = \\frac{2y}{1-y}$।",
+          "चूँकि $y \\neq 1$, अतः प्रत्येक $y \\in R - \\{1\\}$ के लिए $x \\in R - \\{-2\\}$ विद्यमान है, अतः $f$ आच्छादक है।"
+        ]
+      }
+    ],
+    "longAnswers": [
+      {
+        "question": "सिद्ध कीजिए कि वास्तविक संख्याओं के समुच्चय $R$ में $R = \\{(a, b) : a \\le b^2\\}$ द्वारा परिभाषित संबंध $R$, न तो स्वतुल्य है, न सममित है और न ही संक्रामक है।",
+        "answer": [
+          "चरण 1 (स्वतुल्यता की जाँच): माना $a = \\frac{1}{2} \\in R$। तब $a^2 = (\\frac{1}{2})^2 = \\frac{1}{4}$। चूँकि $\\frac{1}{2} > \\frac{1}{4}$, अतः $\\frac{1}{2} \\le (\\frac{1}{2})^2$ असत्य है। अर्थात् $(\\frac{1}{2}, \\frac{1}{2}) \\notin R$। अतः संबंध $R$ स्वतुल्य नहीं है।",
+          "चरण 2 (सममिति की जाँच): माना $a = 1$ तथा $b = 4$। यहाँ $1 \\le 4^2 \\implies 1 \\le 16$ सत्य है, अतः $(1, 4) \\in R$। परंतु $4 \\le 1^2 \\implies 4 \\le 1$ सर्वथा असत्य है, अतः $(4, 1) \\notin R$। अतः संबंध $R$ सममित नहीं है।",
+          "चरण 3 (संक्रामकता की जाँच): माना $a = 3, b = 2$ तथा $c = 1.5$।",
+          "यहाँ $a \\le b^2 \\implies 3 \\le 2^2 \\implies 3 \\le 4$ (सत्य, अतः $(3, 2) \\in R$)।",
+          "तथा $b \\le c^2 \\implies 2 \\le (1.5)^2 \\implies 2 \\le 2.25$ (सत्य, अतः $(2, 1.5) \\in R$)।",
+          "परंतु $a \\le c^2 \\implies 3 \\le (1.5)^2 \\implies 3 \\le 2.25$ जो कि असत्य है, अतः $(3, 1.5) \\notin R$।",
+          "निष्कर्ष: संबंध $R$ न तो स्वतुल्य है, न सममित है और न ही संक्रामक है।"
+        ]
+      },
+      {
+        "question": "जाँच कीजिए कि क्या $R$ में $R = \\{(a, b) : a \\le b^3\\}$ द्वारा परिभाषित संबंध स्वतुल्य, सममित अथवा संक्रामक है?",
+        "answer": [
+          "चरण 1 (स्वतुल्यता): माना $a = \\frac{1}{2} \\in R$। यहाँ $a^3 = (\\frac{1}{2})^3 = \\frac{1}{8}$। चूँकि $\\frac{1}{2} > \\frac{1}{8}$, अतः $\\frac{1}{2} \\le (\\frac{1}{2})^3$ असत्य है। अतः $(\\frac{1}{2}, \\frac{1}{2}) \\notin R$, इसलिए $R$ स्वतुल्य नहीं है।",
+          "चरण 2 (सममिति): माना $a = 1, b = 2$। यहाँ $1 \\le 2^3 \\implies 1 \\le 8$ सत्य है, अतः $(1, 2) \\in R$। परंतु $2 \\le 1^3 \\implies 2 \\le 1$ असत्य है, अतः $(2, 1) \\notin R$। इसलिए $R$ सममित नहीं है।",
+          "चरण 3 (संक्रामकता): माना $a = 3, b = 1.5, c = 1.2$।",
+          "$a \\le b^3 \\implies 3 \\le (1.5)^3 = 3.375$ (सत्य, अतः $(3, 1.5) \\in R$)।",
+          "$b \\le c^3 \\implies 1.5 \\le (1.2)^3 = 1.728$ (सत्य, अतः $(1.5, 1.2) \\in R$)।",
+          "परंतु $a \\le c^3 \\implies 3 \\le (1.2)^3 = 1.728$ सर्वथा असत्य है, अतः $(3, 1.2) \\notin R$।",
+          "निष्कर्ष: संबंध $R$ न तो स्वतुल्य है, न सममित है और न ही संक्रामक है।"
+        ]
+      },
+      {
+        "question": "सिद्ध कीजिए कि $A = \\{1, 2, 3, 4, 5\\}$ में $R = \\{(a, b) : |a - b| \\text{ सम है}\\}$ द्वारा प्रदत्त संबंध $R$ एक तुल्यता संबंध है। प्रमाणित कीजिए कि $\\{1, 3, 5\\}$ के सभी अवयव परस्पर संबंधित हैं और $\\{2, 4\\}$ के सभी अवयव परस्पर संबंधित हैं, परंतु $\\{1, 3, 5\\}$ का कोई भी अवयव $\\{2, 4\\}$ से संबंधित नहीं है।",
+        "answer": [
+          "चरण 1 (स्वतुल्यता): प्रत्येक $a \\in A$ के लिए $|a - a| = 0$, जो कि एक सम संख्या है। अतः $(a, a) \\in R$। इसलिए $R$ स्वतुल्य है।",
+          "चरण 2 (सममिति): माना $(a, b) \\in R \\implies |a - b|$ सम है $\\implies |-(b - a)| = |b - a|$ सम है $\\implies (b, a) \\in R$। अतः $R$ सममित है।",
+          "चरण 3 (संक्रामकता): माना $(a, b) \\in R$ तथा $(b, c) \\in R \\implies |a - b|$ सम है तथा $|b - c|$ सम है। अतः $a - b$ तथा $b - c$ दोनों सम पूर्णांक हैं। इनका योग $(a - b) + (b - c) = a - c$ भी सम होगा। अतः $|a - c|$ सम है $\\implies (a, c) \\in R$। अतः $R$ संक्रामक है। इस प्रकार $R$ एक तुल्यता संबंध है।",
+          "चरण 4: $\\{1, 3, 5\\}$ के सभी अवयव विषम हैं, और किन्हीं दो विषम संख्याओं का अंतर सदैव सम होता है, अतः $\\{1, 3, 5\\}$ के सभी अवयव एक दूसरे से संबंधित हैं।",
+          "चरण 5: $\\{2, 4\\}$ के सभी अवयव सम हैं, और किन्हीं दो सम संख्याओं का अंतर सदैव सम होता है, अतः $\\{2, 4\\}$ के सभी अवयव परस्पर संबंधित हैं।",
+          "चरण 6: एक विषम और एक सम संख्या का अंतर सदैव विषम होता है, अतः $\\{1, 3, 5\\}$ का कोई भी अवयव $\\{2, 4\\}$ के किसी अवयव से संबंधित नहीं हो सकता।"
+        ]
+      },
+      {
+        "question": "सिद्ध कीजिए कि समस्त त्रिभुजों के समुच्चय $A$ में $R = \\{(T_1, T_2) : T_1, T_2 \\text{ के समरूप है}\\}$ एक तुल्यता संबंध है। भुजाओं 3, 4, 5 वाले समकोण त्रिभुज $T_1$, भुजाओं 5, 12, 13 वाले समकोण त्रिभुज $T_2$ तथा भुजाओं 6, 8, 10 वाले समकोण त्रिभुज $T_3$ पर विचार कीजिए। $T_1, T_2$ और $T_3$ में से कौन से त्रिभुज परस्पर संबंधित हैं?",
+        "answer": [
+          "चरण 1 (स्वतुल्यता): प्रत्येक त्रिभुज स्वयं के समरूप होता है ($T_1 \\sim T_1$), अतः $(T_1, T_1) \\in R$। अतः $R$ स्वतुल्य है।",
+          "चरण 2 (सममिति): माना $(T_1, T_2) \\in R \\implies T_1 \\sim T_2 \\implies T_2 \\sim T_1 \\implies (T_2, T_1) \\in R$। अतः $R$ सममित है।",
+          "चरण 3 (संक्रामकता): माना $(T_1, T_2) \\in R$ तथा $(T_2, T_3) \\in R \\implies T_1 \\sim T_2$ तथा $T_2 \\sim T_3 \\implies T_1 \\sim T_3 \\implies (T_1, T_3) \\in R$। अतः $R$ संक्रामक है। अतः $R$ एक तुल्यता संबंध है।",
+          "चरण 4: त्रिभुज $T_1$ की भुजाएँ 3, 4, 5 हैं तथा त्रिभुज $T_3$ की भुजाएँ 6, 8, 10 हैं।",
+          "संगत भुजाओं का अनुपात: $\\frac{3}{6} = \\frac{4}{8} = \\frac{5}{10} = \\frac{1}{2}$।",
+          "चूँकि $T_1$ और $T_3$ की संगत भुजाएँ समानुपाती हैं, अतः त्रिभुज $T_1$ तथा त्रिभुज $T_3$ परस्पर समरूप हैं।",
+          "निष्कर्ष: $T_1$ और $T_3$ परस्पर संबंधित हैं।"
+        ]
+      },
+      {
+        "question": "सिद्ध कीजिए कि किसी समतल में स्थित बिंदुओं के समुच्चय में, $R = \\{(P, Q) : \\text{बिंदु } P \\text{ की मूलबिंदु से दूरी, बिंदु } Q \\text{ की मूलबिंदु से दूरी के समान है}\\}$ द्वारा प्रदत्त संबंध $R$ एक तुल्यता संबंध है। पुनः सिद्ध कीजिए कि बिंदु $P \\neq (0, 0)$ से संबंधित सभी बिंदुओं का समुच्चय मूलबिंदु पर केंद्र वाला एक वृत्त निरूपित करता है।",
+        "answer": [
+          "माना मूलबिंदु $O(0, 0)$ है। बिंदु $P$ की मूलबिंदु से दूरी $OP$ तथा बिंदु $Q$ की मूलबिंदु से दूरी $OQ$ है।",
+          "चरण 1 (स्वतुल्यता): प्रत्येक बिंदु $P$ के लिए $OP = OP$ सदैव सत्य है, अतः $(P, P) \\in R$। अतः संबंध $R$ स्वतुल्य है।",
+          "चरण 2 (सममिति): माना $(P, Q) \\in R \\implies OP = OQ \\implies OQ = OP \\implies (Q, P) \\in R$। अतः संबंध $R$ सममित है।",
+          "चरण 3 (संक्रामकता): माना $(P, Q) \\in R$ तथा $(Q, S) \\in R \\implies OP = OQ$ तथा $OQ = OS \\implies OP = OS \\implies (P, S) \\in R$। अतः संबंध $R$ संक्रामक है।",
+          "अतः $R$ एक तुल्यता संबंध है।",
+          "चरण 4: बिंदु $P \\neq (0, 0)$ से संबंधित सभी बिंदुओं $Q$ के लिए शर्त $OQ = OP = k$ (एक अचर दूरी) होगी। किसी निश्चित बिंदु (मूलबिंदु $O$) से निश्चित दूरी $k$ पर स्थित समतल के सभी बिंदुओं का बिंदुपथ मूलबिंदु को केंद्र मानकर $k$ त्रिज्या वाला एक वृत्त निरूपित करता है।"
+        ]
+      },
+      {
+        "question": "सिद्ध कीजिए कि समुच्चय $A = \\{x \\in Z : 0 \\le x \\le 12\\}$ में दिए गए संबंधों में से प्रत्येक एक तुल्यता संबंध है: (i) $R = \\{(a, b) : |a - b|, 4 \\text{ का गुणज है}\\}$, (ii) $R = \\{(a, b) : a = b\\}$। प्रत्येक दशा में 1 से संबंधित अवयवों को ज्ञात कीजिए।",
+        "answer": [
+          "भाग (i): $R = \\{(a, b) : |a - b| = 4k, k \\in Z\\}$",
+          "स्वतुल्यता: $|a - a| = 0 = 4 \\times 0$, जो 4 का गुणज है। अतः $(a, a) \\in R$।",
+          "सममिति: यदि $(a, b) \\in R \\implies |a - b| = 4k \\implies |b - a| = 4k \\implies (b, a) \\in R$।",
+          "संक्रामकता: $(a, b) \\in R$ तथा $(b, c) \\in R \\implies a - b = \\pm 4k_1$ तथा $b - c = \\pm 4k_2$। योग करने पर: $a - c = \\pm 4(k_1 + k_2)$, अतः $|a - c|, 4$ का गुणज है $\\implies (a, c) \\in R$। अतः यह तुल्यता संबंध है।",
+          "1 से संबंधित अवयव: $|x - 1|, 4$ का गुणज हो $\\implies x - 1 = 0, 4, 8 \\implies x = 1, 5, 9$। अतः समुच्चय $\\{1, 5, 9\\}$ है।",
+          "भाग (ii): $R = \\{(a, b) : a = b\\}$",
+          "स्वतुल्यता: $a = a$ सत्य है $\\implies (a, a) \\in R$।",
+          "सममिति: $a = b \\implies b = a \\implies (b, a) \\in R$।",
+          "संक्रामकता: $a = b$ तथा $b = c \\implies a = c \\implies (a, c) \\in R$। अतः यह तुल्यता संबंध है।",
+          "1 से संबंधित अवयव: $x = 1$, अतः समुच्चय केवल $\\{1\\}$ है।"
+        ]
+      },
+      {
+        "question": "मान लीजिए कि $f: N \\to Y$, $f(x) = 4x + 3$ द्वारा परिभाषित एक फलन है, जहाँ $Y = \\{y \\in N : y = 4x + 3 \\text{ किसी } x \\in N \\text{ के लिए}\\}$। सिद्ध कीजिए कि $f$ व्युत्क्रमणीय है। प्रतिलोम फलन भी ज्ञात कीजिए।",
+        "answer": [
+          "चरण 1 (एकैकी सिद्ध करना): माना $x_1, x_2 \\in N$ ताकि $f(x_1) = f(x_2)$।",
+          "$4x_1 + 3 = 4x_2 + 3 \\implies 4x_1 = 4x_2 \\implies x_1 = x_2$। अतः फलन $f$ एकैकी है।",
+          "चरण 2 (आच्छादक सिद्ध करना): माना $y \\in Y$। समुच्चय $Y$ की परिभाषा के अनुसार, प्रत्येक $y \\in Y$ के लिए $x \\in N$ का अस्तित्व इस प्रकार है कि $y = 4x + 3$।",
+          "$y - 3 = 4x \\implies x = \\frac{y-3}{4} \\in N$। अतः सह-प्रांत $Y$ का प्रत्येक अवयव प्रांत $N$ के किसी अवयव का प्रतिबिंब है, इसलिए $f$ आच्छादक है।",
+          "चरण 3 (व्युत्क्रमणीयता हेतु संयोजन): माना $g: Y \\to N$, जहाँ $g(y) = \\frac{y-3}{4}$।",
+          "$(g \\circ f)(x) = g(f(x)) = g(4x+3) = \\frac{(4x+3)-3}{4} = \\frac{4x}{4} = x = I_N$।",
+          "$(f \\circ g)(y) = f(g(y)) = f\\left(\\frac{y-3}{4}\\right) = 4\\left(\\frac{y-3}{4}\\right) + 3 = y - 3 + 3 = y = I_Y$।",
+          "निष्कर्ष: चूँकि $g \\circ f = I_N$ तथा $f \\circ g = I_Y$, अतः फलन $f$ व्युत्क्रमणीय है और इसका प्रतिलोम फलन $f^{-1}(y) = \\frac{y-3}{4}$ (या $f^{-1}(x) = \\frac{x-3}{4}$) है।"
+        ]
+      },
+      {
+        "question": "सिद्ध कीजिए कि $f: R_+ \\to [-5, \\infty)$, $f(x) = 9x^2 + 6x - 5$ द्वारा प्रदत्त फलन व्युत्क्रमणीय है तथा $f^{-1}(y) = \\frac{\\sqrt{y+6}-1}{3}$ है।",
+        "answer": [
+          "चरण 1 (एकैकी सिद्ध करना): माना $x_1, x_2 \\in R_+$ ताकि $f(x_1) = f(x_2)$।",
+          "$9x_1^2 + 6x_1 - 5 = 9x_2^2 + 6x_2 - 5 \\implies 9(x_1^2 - x_2^2) + 6(x_1 - x_2) = 0$।",
+          "$(x_1 - x_2)[9(x_1 + x_2) + 6] = 0$। चूँकि $x_1, x_2 \\in R_+$, अतः $[9(x_1 + x_2) + 6] > 0$।",
+          "इसलिए अनिवार्य रूप से $x_1 - x_2 = 0 \\implies x_1 = x_2$। अतः $f$ एकैकी है।",
+          "चरण 2 (आच्छादक सिद्ध करना): माना $y \\in [-5, \\infty)$। $y = 9x^2 + 6x - 5$।",
+          "पूर्ण वर्ग बनाने पर: $y = (3x + 1)^2 - 1 - 5 \\implies y = (3x + 1)^2 - 6$।",
+          "$(3x + 1)^2 = y + 6 \\implies 3x + 1 = \\sqrt{y+6}$ (चूँकि $x \\ge 0$, अतः धनात्मक वर्गमूल लेंगे)।",
+          "$3x = \\sqrt{y+6} - 1 \\implies x = \\frac{\\sqrt{y+6}-1}{3}$।",
+          "चूँकि $y \\ge -5$, अतः $y + 6 \\ge 1 \\implies \\sqrt{y+6} \\ge 1 \\implies x \\ge 0$ ($x \\in R_+$)। अतः $f$ आच्छादक है।",
+          "निष्कर्ष: एकैकी और आच्छादक होने के कारण $f$ व्युत्क्रमणीय है तथा $f^{-1}(y) = \\frac{\\sqrt{y+6}-1}{3}$।"
+        ]
+      },
+      {
+        "question": "मान लीजिए कि समस्त $n \\in N$ के लिए $f(n) = \\begin{cases} \\frac{n+1}{2}, & \\text{यदि } n \\text{ विषम है} \\\\ \\frac{n}{2}, & \\text{यदि } n \\text{ सम है} \\end{cases}$ द्वारा परिभाषित एक फलन $f: N \\to N$ है। बतलाइए कि क्या फलन $f$ एकैकी आच्छादी (Bijective) है। अपने उत्तर का औचित्य भी बतलाइए।",
+        "answer": [
+          "चरण 1 (एकैकी की जाँच): माना $n_1 = 1$ (विषम) तथा $n_2 = 2$ (सम)।",
+          "$f(1) = \\frac{1+1}{2} = 1$ तथा $f(2) = \\frac{2}{2} = 1$।",
+          "यहाँ $f(1) = f(2) = 1$ परंतु $1 \\neq 2$। अतः फलन $f$ एकैकी नहीं है।",
+          "चरण 2 (आच्छादक की जाँच): माना $y \\in N$ (सह-प्रांत)।",
+          "स्थिति I (जब $n$ विषम हो): माना $n = 2y - 1$ (विषम संख्या)। तब $f(n) = f(2y - 1) = \\frac{(2y - 1) + 1}{2} = \\frac{2y}{2} = y$।",
+          "स्थिति II (जब $n$ सम हो): माना $n = 2y$ (सम संख्या)। तब $f(n) = f(2y) = \\frac{2y}{2} = y$।",
+          "अतः सह-प्रांत $N$ के प्रत्येक अवयव $y$ के लिए प्रांत $N$ में कम से कम एक पूर्व-प्रतिबिंब अवश्य विद्यमान है। इसलिए फलन आच्छादक है।",
+          "निष्कर्ष: फलन $f$ आच्छादक है परंतु एकैकी नहीं है, अतः यह एकैकी आच्छादी (Bijective) नहीं है।"
+        ]
+      },
+      {
+        "question": "मान लीजिए कि $A$ तथा $B$ दो समुच्चय हैं। सिद्ध कीजिए कि $f: A \\times B \\to B \\times A$, इस प्रकार कि $f(a, b) = (b, a)$ एक एकैकी आच्छादी फलन है।",
+        "answer": [
+          "चरण 1 (एकैकी सिद्ध करना): माना $(a_1, b_1), (a_2, b_2) \\in A \\times B$ ताकि $f(a_1, b_1) = f(a_2, b_2)$।",
+          "फलन की परिभाषा से: $(b_1, a_1) = (b_2, a_2)$।",
+          "क्रमित युग्मों की समानता से: $b_1 = b_2$ तथा $a_1 = a_2$।",
+          "इससे प्राप्त होता है: $(a_1, b_1) = (a_2, b_2)$। अतः फलन $f$ एकैकी है।",
+          "चरण 2 (आच्छादक सिद्ध करना): माना $(b, a) \\in B \\times A$ कोई स्वेच्छ अवयव है।",
+          "चूँकि $b \\in B$ तथा $a \\in A$, अतः $(a, b) \\in A \\times B$ का अस्तित्व अवश्य होगा।",
+          "फलन की परिभाषा से: $f(a, b) = (b, a)$।",
+          "अतः सह-प्रांत $B \\times A$ के प्रत्येक अवयव का प्रांत $A \\times B$ में पूर्व-प्रतिबिंब विद्यमान है, इसलिए फलन आच्छादक है।",
+          "निष्कर्ष: फलन $f$ एकैकी और आच्छादक दोनों है, अतः यह एकैकी आच्छादी (Bijective) फलन है।"
+        ]
+      },
+      {
+        "question": "समुच्चय $A = \\{1, 2, 3, 4, 5\\}$ में $a * b = \\text{HCF}(a, b)$ द्वारा परिभाषित द्वि-आधारी संक्रिया की संक्रिया सारणी (Cayley Table) बनाइए तथा इसके क्रमविनिमेयता की जाँच कीजिए।",
+        "answer": [
+          "चरण 1 (संक्रिया सारणी बनाना): दी गई संक्रिया $a * b = \\text{HCF}(a, b)$ है:",
+          "पंक्ति 1 (अवयव 1 के लिए): $1*1=1, 1*2=1, 1*3=1, 1*4=1, 1*5=1$",
+          "पंक्ति 2 (अवयव 2 के लिए): $2*1=1, 2*2=2, 2*3=1, 2*4=2, 2*5=1$",
+          "पंक्ति 3 (अवयव 3 के लिए): $3*1=1, 3*2=1, 3*3=3, 3*4=1, 3*5=1$",
+          "पंक्ति 4 (अवयव 4 के लिए): $4*1=1, 4*2=2, 4*3=1, 4*4=4, 4*5=1$",
+          "पंक्ति 5 (अवयव 5 के लिए): $5*1=1, 5*2=1, 5*3=1, 5*4=1, 5*5=5$",
+          "चरण 2 (क्रमविनिमेयता की जाँच): चूँकि $\\text{HCF}(a, b) = \\text{HCF}(b, a)$ होता है, अतः $a * b = b * a$ सभी $a, b \\in A$ के लिए सत्य है।",
+          "सारणी मुख्य विकर्ण (main diagonal) के सापेक्ष पूरी तरह सममित है, अतः संक्रिया क्रमविनिमेय है।"
+        ]
+      }
+    ],
+    "diagrams": [
+      {
+        "title": "परवलयिक आलेख y = x² द्वारा क्षैतिज रेखा परीक्षण (Horizontal Line Test)",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect width='400' height='300' fill='#f8fafc'/><line x1='30' y1='230' x2='370' y2='230' stroke='#334155' stroke-width='2'/><polygon points='370,226 380,230 370,234' fill='#334155'/><text x='385' y='234' font-family='sans-serif' font-size='13' fill='#334155'>x</text><line x1='200' y1='270' x2='200' y2='20' stroke='#334155' stroke-width='2'/><polygon points='196,20 200,10 204,20' fill='#334155'/><text x='206' y='18' font-family='sans-serif' font-size='13' fill='#334155'>y</text><text x='188' y='245' font-family='sans-serif' font-size='12' fill='#334155'>O</text><path d='M 60,50 Q 200,240 340,50' fill='none' stroke='#2563eb' stroke-width='2.5'/><text x='310' y='42' font-family='sans-serif' font-size='13' font-weight='bold' fill='#2563eb'>y = x²</text><line x1='50' y1='140' x2='350' y2='140' stroke='#dc2626' stroke-width='1.5' stroke-dasharray='4'/><text x='355' y='144' font-family='sans-serif' font-size='12' fill='#dc2626'>y = 1</text><circle cx='130' cy='140' r='4' fill='#dc2626'/><circle cx='270' cy='140' r='4' fill='#dc2626'/><line x1='130' y1='140' x2='130' y2='230' stroke='#64748b' stroke-dasharray='3'/><line x1='270' y1='140' x2='270' y2='230' stroke='#64748b' stroke-dasharray='3'/><text x='120' y='245' font-family='sans-serif' font-size='12' fill='#1e293b'>-1</text><text x='265' y='245' font-family='sans-serif' font-size='12' fill='#1e293b'>1</text><rect x='60' y='265' width='280' height='26' rx='4' fill='#fee2e2' stroke='#dc2626'/><text x='72' y='282' font-family='sans-serif' font-size='11' fill='#991b1b'>रेखा दो बिंदुओं पर काटती है ⇒ f एकैकी नहीं है</text></svg>",
+        "caption": "क्षैतिज रेखा परीक्षण: y = 1 वक्र को दो बिंदुओं पर काटती है, अतः f(x) = x² एकैकी नहीं है।"
+      },
+      {
+        "title": "समतल में मूलबिंदु से समान दूरी वाले बिंदुओं का तुल्यता वर्ग (वृत्त)",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect width='400' height='300' fill='#f8fafc'/><line x1='30' y1='150' x2='370' y2='150' stroke='#64748b' stroke-width='1.5'/><polygon points='370,147 376,150 370,153' fill='#64748b'/><text x='380' y='154' font-family='sans-serif' font-size='12' fill='#64748b'>X</text><line x1='200' y1='270' x2='200' y2='30' stroke='#64748b' stroke-width='1.5'/><polygon points='197,30 200,24 203,30' fill='#64748b'/><text x='205' y='26' font-family='sans-serif' font-size='12' fill='#64748b'>Y</text><circle cx='200' cy='150' r='90' fill='#eff6ff' stroke='#2563eb' stroke-width='2'/><circle cx='200' cy='150' r='4' fill='#dc2626'/><text x='188' y='142' font-family='sans-serif' font-size='12' font-weight='bold' fill='#dc2626'>O(0,0)</text><circle cx='264' cy='86' r='4' fill='#059669'/><text x='270' y='82' font-family='sans-serif' font-size='12' font-weight='bold' fill='#059669'>P</text><line x1='200' y1='150' x2='264' y2='86' stroke='#059669' stroke-width='1.5'/><circle cx='136' cy='86' r='4' fill='#059669'/><text x='122' y='82' font-family='sans-serif' font-size='12' font-weight='bold' fill='#059669'>Q</text><line x1='200' y1='150' x2='136' y2='86' stroke='#059669' stroke-width='1.5'/><circle cx='200' cy='240' r='4' fill='#059669'/><text x='205' y='254' font-family='sans-serif' font-size='12' font-weight='bold' fill='#059669'>S</text><line x1='200' y1='150' x2='200' y2='240' stroke='#059669' stroke-width='1.5'/><rect x='70' y='268' width='260' height='24' rx='4' fill='#ecfdf5' stroke='#059669'/><text x='82' y='284' font-family='sans-serif' font-size='11' fill='#065f46'>OP = OQ = OS = r (केंद्र O पर स्थित वृत्त)</text></svg>",
+        "caption": "तुल्यता संबंध R द्वारा निर्मित वृत्त: OP = OQ होने पर P से संबंधित बिंदु वृत्त बनाते हैं।"
+      }
+    ],
+    "revision": [
+      {
+        "title": "त्वरित सूत्र-सारणी (Quick Formula Table)",
+        "points": [
+          "कार्तीय गुणन में अवयव: $n(A \\times B) = n(A) \\cdot n(B) = m \\cdot n$",
+          "समुच्चय $A$ से $B$ में कुल संबंध: $2^{m \\cdot n}$",
+          "समुच्चय $A$ पर कुल संबंध: $2^{n^2}$",
+          "समुच्चय $A$ से $B$ में कुल फलन: $n^m$ (सह-प्रांत की घात प्रांत)",
+          "एकैकी फलनों की संख्या: ${}^n P_m$ ($n \\ge m$ होने पर, अन्यथा $0$)",
+          "समुच्चय $A$ से $A$ पर एकैकी/आच्छादक फलन: $n!$",
+          "द्वि-आधारी संक्रियाओं की कुल संख्या: $n^{n^2}$",
+          "व्युत्क्रमणीयता प्रतिबंध: फलन $f$ व्युत्क्रमणीय $\\iff f$ एकैकी तथा आच्छादक (Bijective)",
+          "संयोजन प्रतिलोम नियम: $(g \\circ f)^{-1} = f^{-1} \\circ g^{-1}$",
+          "साहचर्य नियम: $h \\circ (g \\circ f) = (h \\circ g) \\circ f$"
+        ]
+      },
+      {
+        "title": "सामान्य गलतियाँ एवं सावधानियाँ (Common Pitfalls)",
+        "points": [
+          "स्वतुल्यता में भूल: केवल कुछ अवयवों के लिए $(a, a) \\in R$ देखना काफ़ी नहीं है; समुच्चय $A$ के प्रत्येक अवयव $a$ के लिए $(a, a) \\in R$ होना अनिवार्य है।",
+          "संक्रामकता में भ्रम: यदि $(a, b) \\in R$ है परंतु $b$ से शुरू होने वाला कोई अन्य युग्म $(b, c)$ संबंध में मौजूद ही न हो, तो संबंध संक्रामक माना जाता है (असत्य सिद्ध करने हेतु $(a, c)$ की अनुपस्थिति दिखाना आवश्यक होता है)।",
+          "फलन का प्रांत व सह-प्रांत: $f(x) = x^2$ प्राकृत संख्याओं $N \\to N$ में एकैकी होता है, परंतु वास्तविक संख्याओं $R \\to R$ में एकैकी नहीं होता ($f(-1) = f(1) = 1$)। अतः फलन के प्रकार की जाँच करते समय प्रांत व सह-प्रांत पर विशेष ध्यान दें।",
+          "आच्छादक होने की जाँच: केवल समीकरण $x = g(y)$ निकाल लेना पर्याप्त नहीं है; यह भी जाँचें कि क्या प्रत्येक $y \\in \\text{Codomain}$ के लिए $x \\in \\text{Domain}$ वास्तविक/मान्य मान देता है।",
+          "द्वि-आधारी संक्रिया में संवृतता: $N$ में व्यवकलन (घटाना) द्वि-आधारी संक्रिया नहीं है क्योंकि $2 - 5 = -3 \\notin N$।"
+        ]
+      },
+      {
+        "title": "परीक्षा उपयोगी महत्वपूर्ण तथ्य (Key Exam Tips)",
+        "points": [
+          "यदि $f: A \\to B$ एकैकी आच्छादक (Bijective) है और दोनों परिमित समुच्चय हैं, तो सदैव $n(A) = n(B)$ होगा।",
+          "यदि किसी परिमित समुच्चय $A$ से $A$ पर कोई फलन एकैकी है, तो वह स्वतः ही आच्छादक भी होगा और विलोमतः भी।",
+          "तत्समक संबंध $I_A = \\{(a, a) : a \\in A\\}$ सदैव एक तुल्यता संबंध होता है और यह सबसे छोटा तुल्यता संबंध है।",
+          "सार्वत्रिक संबंध $R = A \\times A$ समुच्चय $A$ पर सबसे बड़ा तुल्यता संबंध होता है।",
+          "द्वि-आधारी संक्रिया में तत्समक अवयव $e$ यदि उपस्थित हो, तो वह सदैव अद्वितीय (Unique) होता है।"
+        ]
+      }
+    ]
+  }
+}
