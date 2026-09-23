@@ -50,6 +50,21 @@
       case 'chapterNotes':
       case 'theory':
         o = { title: str(it.heading) || str(it.title), content: X.paras(it.content), points: pointsOf(it.points) };
+        // वैकल्पिक: इसी Point के साथ लगा एक Diagram (जैसे एक Triangle दिखाना)
+        if (it.diagram && typeof it.diagram === 'object') {
+          var dm = media(it.diagram);
+          if (dm) o.diagram = { media: dm, caption: str(it.diagram.caption) };
+        }
+        // वैकल्पिक: इसी Point के साथ लगा Step-by-Step बदलता Diagram (Derivation/Geometry के लिए)
+        if (Array.isArray(it.diagramSteps)) {
+          var steps = [];
+          it.diagramSteps.forEach(function (st) {
+            if (!st || typeof st !== 'object') return;
+            var sm = media(st);
+            if (sm) steps.push({ media: sm, caption: str(st.caption) });
+          });
+          if (steps.length) o.diagramSteps = steps;
+        }
         return o.title && (o.content.length || o.points.length) ? o : null;
       case 'oneLiners':
       case 'shortAnswers':
@@ -164,13 +179,29 @@
         (ex.source ? '<span class="chip tiny">स्रोत: ' + esc(ex.source) + '</span>' : '') + '</div>';
     }).join('') + '</div>';
   }
+  // 'chapterNotes'/'theory' के Point के साथ लगा Diagram (सीधा एक, या Step-by-Step) — Text के ठीक नीचे
+  function inlineDiagramHtml(it) {
+    var html = '';
+    if (it.diagram) {
+      html += '<div class="nt-inline-diagram">' + mediaHtml(it.diagram.media, it.title) +
+        (it.diagram.caption ? '<p class="nt-cap">' + esc(it.diagram.caption) + '</p>' : '') + '</div>';
+    }
+    if (it.diagramSteps && it.diagramSteps.length) {
+      html += '<div class="nt-step-diagrams">' + it.diagramSteps.map(function (s, i) {
+        return '<div class="nt-step"><span class="nt-step-num">चित्र ' + (i + 1) + '</span>' +
+          mediaHtml(s.media, it.title + ' — चित्र ' + (i + 1)) +
+          (s.caption ? '<p class="nt-cap">' + esc(s.caption) + '</p>' : '') + '</div>';
+      }).join('') + '</div>';
+    }
+    return html;
+  }
   function itemHtml(cat, it) {
     var inner;
     switch (cat) {
       case 'chapterNotes':
       case 'theory':
       case 'revision':
-        inner = '<h3>' + esc(it.title) + '</h3>' + paraHtml(it.content) + pointsHtml(it.points); break;
+        inner = '<h3>' + esc(it.title) + '</h3>' + paraHtml(it.content) + pointsHtml(it.points) + inlineDiagramHtml(it); break;
       case 'oneLiners':
       case 'shortAnswers':
       case 'longAnswers':

@@ -42,7 +42,7 @@
       };
       persist();
       if (M.Sound) M.Sound.play('start');
-      M.Router.go('/xquiz');
+      X.ensureMathFor(qs).then(function () { M.Router.go('/xquiz'); });
     }
     var cur = active();
     if (cur) {
@@ -72,18 +72,18 @@
       (q.chapter ? '<span class="chip tiny">अध्याय ' + q.chapter + '</span>' : '') +
       '<span class="quiz-timer" id="xqTimer">' + timerText(a) + '</span></div>' +
       '<div class="progress"><span style="width:' + Math.round(done * 100 / total) + '%"></span></div>' +
-      '<div class="card q-card"><p class="q-text">' + esc(q.question) + '</p></div><div class="options">';
+      '<div class="card q-card"><p class="q-text">' + X.rich(q.question) + '</p></div><div class="options">';
     ['A', 'B', 'C', 'D'].forEach(function (L) {
       var cls = 'opt';
       if (ans) { if (L === q.answer) cls += ' right'; else if (L === ans.chosen) cls += ' wrong'; else cls += ' dim'; }
       html += '<button class="' + cls + '" data-action="xq-answer" data-opt="' + L + '"' + (ans ? ' disabled' : '') + '>' +
-        '<span class="opt-key">' + L + '</span><span class="opt-text">' + esc(q.options[L]) + '</span></button>';
+        '<span class="opt-key">' + L + '</span><span class="opt-text">' + X.rich(q.options[L]) + '</span></button>';
     });
     html += '</div>';
     if (ans) {
       html += '<div class="feedback ' + (ans.correct ? 'ok' : 'bad') + '" role="status"><strong>' + (ans.correct ? '✅ सही जवाब!' : '❌ गलत जवाब') + '</strong>' +
-        (ans.correct ? '' : '<p>सही उत्तर: <b>' + q.answer + ') ' + esc(q.options[q.answer]) + '</b></p>') +
-        '<p class="expl">' + esc(q.explanation || 'व्याख्या उपलब्ध नहीं है।') + '</p></div>';
+        (ans.correct ? '' : '<p>सही उत्तर: <b>' + q.answer + ') ' + X.rich(q.options[q.answer]) + '</b></p>') +
+        '<p class="expl">' + X.rich(q.explanation || 'व्याख्या उपलब्ध नहीं है।') + '</p></div>';
     } else {
       html += '<p class="muted small center">एक विकल्प चुनो, फिर सही जवाब और explanation दिखेगा।</p>';
     }
@@ -131,7 +131,10 @@
     if (!a) {
       return X.view({ html: '<section class="page xs">' + X.emptyHtml('📝', 'अभी कोई अभ्यास चालू नहीं है', 'Mixed Practice या PYQ से शुरू करो।', 'नोट्स · PYQ · Practice', '/extras') + '</section>', title: 'अभ्यास', back: '/extras' });
     }
-    return X.view({ html: '<section class="page xs"><div id="xqBody">' + bodyHtml() + '</div></section>', title: a.kind === 'pyq' ? 'PYQ Quiz' : a.kind === 'ngame' ? 'Notes Game' : a.kind === 'vault' ? 'Vault Challenge' : 'Mixed Practice', sub: a.title, backAction: 'xq-leave', after: ensureTicker });
+    return X.ensureMathFor(a.questions).then(function (mathOk) {
+      if (!mathOk) X.onMathReady(function () { if (M.Router.currentPath === '/xquiz') M.Router.refresh(true); });
+      return X.view({ html: '<section class="page xs"><div id="xqBody">' + bodyHtml() + '</div></section>', title: a.kind === 'pyq' ? 'PYQ Quiz' : a.kind === 'ngame' ? 'Notes Game' : a.kind === 'vault' ? 'Vault Challenge' : 'Mixed Practice', sub: a.title, backAction: 'xq-leave', after: ensureTicker });
+    });
   }
 
   /* ---------- Actions ---------- */
@@ -278,6 +281,13 @@
       return X.view({ html: '<section class="page xs">' + X.emptyHtml('🗂️', 'इस अभ्यास की detail सेव नहीं है', 'सिर्फ़ आख़िरी 5 अभ्यास की पूरी Review सेव रहती है।') + '</section>', title: 'Review', back: back });
     }
     var onlyWrong = query && query.f === 'wrong';
+    var here = '/xreview/' + p.id;
+    return X.ensureMathFor(h.review).then(function (mathOk) {
+      if (!mathOk) X.onMathReady(function () { if (M.Router.currentPath === here) M.Router.refresh(true); });
+      return reviewPage(h, onlyWrong, back);
+    });
+  }
+  function reviewPage(h, onlyWrong, back) {
     var html = '<section class="page xs"><div class="chips">' +
       '<button class="chip-btn' + (!onlyWrong ? ' on' : '') + '" data-action="nav" data-to="/xreview/' + esc(h.id) + '">सभी (' + h.review.length + ')</button>' +
       '<button class="chip-btn' + (onlyWrong ? ' on' : '') + '" data-action="nav" data-to="' + esc('/xreview/' + h.id + '?f=wrong') + '">सिर्फ़ गलत/छोड़े (' + (h.wrong + h.skipped) + ')</button></div>';
@@ -289,10 +299,10 @@
       shown += 1;
       html += '<article class="card review ' + (ok ? 'ok' : 'bad') + '"><div class="mk-head"><span class="chip">प्रश्न ' + (i + 1) + '</span>' +
         '<span class="chip ' + (ok ? 'ok' : 'bad') + '">' + (ok ? 'सही' : r.chosen ? 'गलत' : 'छोड़ा') + '</span></div>' +
-        '<p class="q-text">' + esc(q.question) + '</p>' +
-        '<p class="ans ' + (ok ? 'ok' : 'bad') + '">तुम्हारा उत्तर: ' + esc(r.chosen ? r.chosen + ') ' + q.options[r.chosen] : '—') + '</p>' +
-        (ok ? '' : '<p class="ans ok">सही उत्तर: ' + esc(q.answer + ') ' + q.options[q.answer]) + '</p>') +
-        '<p class="expl">' + esc(q.explanation || 'व्याख्या उपलब्ध नहीं है।') + '</p></article>';
+        '<p class="q-text">' + X.rich(q.question) + '</p>' +
+        '<p class="ans ' + (ok ? 'ok' : 'bad') + '">तुम्हारा उत्तर: ' + X.rich(r.chosen ? r.chosen + ') ' + q.options[r.chosen] : '—') + '</p>' +
+        (ok ? '' : '<p class="ans ok">सही उत्तर: ' + X.rich(q.answer + ') ' + q.options[q.answer]) + '</p>') +
+        '<p class="expl">' + X.rich(q.explanation || 'व्याख्या उपलब्ध नहीं है।') + '</p></article>';
     });
     if (!shown) html += '<div class="empty ok-box"><p>👏 कोई गलत जवाब नहीं — पूरा सही!</p></div>';
     html += '</section>';
