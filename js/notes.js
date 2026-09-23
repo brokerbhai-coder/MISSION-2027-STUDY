@@ -141,9 +141,20 @@
   /* ---------- Rendering ---------- */
   function paraHtml(list) { return list.map(function (t) { return '<p>' + X.rich(t) + '</p>'; }).join(''); }
   function pointsHtml(list) { return list.length ? '<ul>' + list.map(function (t) { return '<li>' + X.rich(t) + '</li>'; }).join('') + '</ul>' : ''; }
+  // SVG Diagrams में अक्सर &pi; &deg; &cong; &sim; &rarr; जैसे HTML नाम वाले Entity होते हैं।
+  // data:image/svg+xml को Browser सख़्त XML की तरह पढ़ता है, जहाँ सिर्फ़ &amp; &lt; &gt; &apos; &quot; ही मान्य हैं —
+  // बाकी सब (&pi; वगैरह) से Image टूट जाती है (Broken Image दिखता है)। यहाँ उन्हें पहले असली अक्षर (जैसे π) में बदल देते हैं,
+  // ताकि कोई भी Entity भविष्य में इस्तेमाल हो, Diagram कभी न टूटे।
+  var entityBox = null;
+  function decodeEntities(s) {
+    if (s.indexOf('&') < 0) return s;
+    if (!entityBox) entityBox = document.createElement('textarea');
+    entityBox.innerHTML = s;
+    return entityBox.value;
+  }
   function mediaHtml(m, title) {
     if (m.type === 'image') return '<img class="nt-media" loading="lazy" src="' + esc(m.src) + '" alt="' + esc(title) + '">';
-    if (m.type === 'svg') return '<img class="nt-media" alt="' + esc(title) + '" src="data:image/svg+xml;charset=utf-8,' + encodeURIComponent(m.svg) + '">';
+    if (m.type === 'svg') return '<img class="nt-media" alt="' + esc(title) + '" src="data:image/svg+xml;charset=utf-8,' + encodeURIComponent(decodeEntities(m.svg)) + '">';
     return '<iframe class="nt-embed" loading="lazy" sandbox="allow-scripts" src="' + esc(m.src) + '" title="' + esc(title) + '" style="height:' + m.height + 'px"></iframe>';
   }
   function examplesHtml(list) {
