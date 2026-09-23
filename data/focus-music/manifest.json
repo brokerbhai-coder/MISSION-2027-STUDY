@@ -2,8 +2,8 @@
   "_help": "यहाँ अपने पसंद के copyright-free गाने (mp3/ogg/wav/m4a) जोड़ो।",
   "tracks": [
     {
-      "file": "data/focus-music/focus.mp3.m4a",
-      "title": "Focus Music"
+      "file": "data/focus-music/data/focus-music/power-focus.mp4.m4a",
+      "title": "power-focus"
     }
   ]
 }
