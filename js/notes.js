@@ -300,6 +300,8 @@
         });
       });
       function buildChapter(L) {
+        // Notes सच में दिख गए — अब से Active Reading का समय गिनना शुरू (Quick Check के लिए)
+        if (M.QuickCheck) M.QuickCheck.notifyActive(s.id, no);
         var keys = CATS.filter(function (c) { return L.cats[c.key]; });
         ui.cat = keys[0].key;
         ui.text = '';
