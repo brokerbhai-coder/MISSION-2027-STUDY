@@ -18,6 +18,6 @@
     { "subject": "biology", "chapter": 8, "file": "data/notes/biology/chapter-08.json" },
     { "subject": "mathematics", "chapter": 1,"file": "data/notes/mathematics/chapter-01.json" },
     { "subject": "mathematics", "chapter": 2, "file": "data/notes/mathematics/chapter-02.json" },
-    { "subject": "mathematics", "chapter": 2, "file": "data/notes/mathematics/chapter-03.json" }
+    { "subject": "mathematics", "chapter": 3, "file": "data/notes/mathematics/chapter-03.json" }
   ]
 }
