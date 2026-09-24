@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "subject": "mathematics",
+  "chapter": 7,
+  "title": "समाकलन (Integrals)",
+  "categories": {
+    "oneLiners": [
+      {
+        "question": "निश्चित समाकलन $\\int_0^1 \\frac{\\tan^{-1}x}{1+x^2}\\,dx$ का मान क्या होगा? [BSEB 2022A]",
+        "answer": "$$\\frac{\\pi^2}{32}$$",
+        "explanation": "माना $\\tan^{-1}x = t \\implies \\frac{dx}{1+x^2} = dt$। सीमाएँ $0$ से $\\frac{\\pi}{4}$ हो जाती हैं। $\\int_0^{\\pi/4} t\\,dt = \\left[\\frac{t^2}{2}\\right]_0^{\\pi/4} = \\frac{1}{2}\\left(\\frac{\\pi^2}{16}\\right) = \\frac{\\pi^2}{32}$[span_3](start_span)[span_3](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int (\\cos\\theta\\,\\text{cosec}^2\\theta - \\cos\\theta\\cot^2\\theta)\\,d\\theta$ का मान क्या होगा? [BSEB 2023A]",
+        "answer": "$$\\sin\\theta + k$$",
+        "explanation": "$\\cos\\theta$ उभयनिष्ठ लेने पर: $\\cos\\theta(\\text{cosec}^2\\theta - \\cot^2\\theta) = \\cos\\theta(1) = \\cos\\theta$। अतः $\\int \\cos\\theta\\,d\\theta = \\sin\\theta + k$[span_4](start_span)[span_4](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{3x^2+2}{x^3+2x}\\,dx$ किसके बराबर है? [BSEB 2023A]",
+        "answer": "$$\\log|x^3+2x| + k$$",
+        "explanation": "हर $f(x) = x^3+2x$ का अवकलज $f'(x) = 3x^2+2$ अंश में उपस्थित है। प्रारूप $\\int \\frac{f'(x)}{f(x)}\\,dx = \\log|f(x)| + k$ से मान सीधे प्राप्त होता है[span_5](start_span)[span_5](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{x+2}{x^2-4}\\,dx$ का मान क्या होगा? [BSEB 2023A]",
+        "answer": "$$\\log|x-2| + k$$",
+        "explanation": "$x^2 - 4 = (x-2)(x+2)$ रखने पर $(x+2)$ निरस्त हो जाता है। $\\int \\frac{1}{x-2}\\,dx = \\log|x-2| + k$[span_6](start_span)[span_6](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\sec^2 4x\\,dx$ किसके बराबर है? [BSEB 2023A]",
+        "answer": "$$\\frac{1}{4}\\tan 4x + k$$",
+        "explanation": "मानक सूत्र $\\int \\sec^2(ax)\\,dx = \\frac{1}{a}\\tan(ax) + k$ में $a = 4$ रखने पर $\\frac{1}{4}\\tan 4x + k$[span_7](start_span)[span_7](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\left(\\frac{\\cos^2 x + \\sin^2 x}{\\text{cosec } x}\\right)dx$ का मान क्या होगा? [BSEB 2022A]",
+        "answer": "$$-\\cos x + k$$",
+        "explanation": "$\\cos^2 x + \\sin^2 x = 1$ तथा $\\frac{1}{\\text{cosec } x} = \\sin x$। अतः $\\int \\sin x\\,dx = -\\cos x + k$[span_8](start_span)[span_8](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{dx}{e^x + e^{-x}}$ किसके बराबर है? [BSEB 2022A, NCERT Misc Q41]",
+        "answer": "$$\\tan^{-1}(e^x) + k$$",
+        "explanation": "अंश व हर में $e^x$ से गुणा करने पर $\\int \\frac{e^x}{(e^x)^2+1}\\,dx$। माना $e^x = t \\implies \\int \\frac{dt}{t^2+1} = \\tan^{-1}t + k = \\tan^{-1}(e^x) + k$[span_9](start_span)[span_9](end_span)[span_10](start_span)[span_10](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{dx}{x^2-1}$ का मान क्या होगा? [BSEB 2022A]",
+        "answer": "$$\\frac{1}{2}\\log\\left|\\frac{x-1}{x+1}\\right| + k$$",
+        "explanation": "मानक सूत्र $\\int \\frac{1}{x^2-a^2}\\,dx = \\frac{1}{2a}\\log\\left|\\frac{x-a}{x+a}\\right| + k$ में $a = 1$ रखने पर[span_11](start_span)[span_11](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int x^{3/2}\\,dx$ किसके बराबर है? [BSEB 2022A]",
+        "answer": "$$\\frac{2}{5}x^{5/2} + k$$",
+        "explanation": "घात नियम: $\\frac{x^{3/2+1}}{3/2+1} + k = \\frac{x^{5/2}}{5/2} + k = \\frac{2}{5}x^{5/2} + k$[span_12](start_span)[span_12](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{dx}{x^2+4}$ किसके बराबर है? [BSEB 2022A]",
+        "answer": "$$\\frac{1}{2}\\tan^{-1}\\left(\\frac{x}{2}\\right) + k$$",
+        "explanation": "सूत्र $\\int \\frac{1}{x^2+a^2}\\,dx = \\frac{1}{a}\\tan^{-1}(x/a) + k$ में $a = 2$ रखने पर[span_13](start_span)[span_13](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{\\cos 2x}{(\\sin x + \\cos x)^2}\\,dx$ का मान क्या होगा? [BSEB 2021A, 2015A, 2011A]",
+        "answer": "$$\\log|\\sin x + \\cos x| + c$$",
+        "explanation": "$\\frac{\\cos^2 x - \\sin^2 x}{(\\sin x + \\cos x)^2} = \\frac{\\cos x - \\sin x}{\\sin x + \\cos x}$। हर का अवकलज अंश में होने से उत्तर $\\log|\\sin x + \\cos x| + c$[span_14](start_span)[span_14](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{\\sec x}{\\sec x + \\tan x}\\,dx$ का मान क्या होगा? [BSEB 2021A]",
+        "answer": "$$\\tan x - \\sec x + k$$",
+        "explanation": "संयुग्मी $(\\sec x - \\tan x)$ से गुणा करने पर हर $1$ हो जाता है। $\\int (\\sec^2 x - \\sec x\\tan x)\\,dx = \\tan x - \\sec x + k$[span_15](start_span)[span_15](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_0^{\\pi/2} \\frac{\\cos\\theta}{\\cos\\theta + \\sin\\theta}\\,d\\theta$ का मान क्या है? [BSEB 2021A]",
+        "answer": "$$\\frac{\\pi}{4}$$",
+        "explanation": "किंग प्रगुण $P_4$ से $2I = \\int_0^{\\pi/2} 1\\,d\\theta = \\frac{\\pi}{2} \\implies I = \\frac{\\pi}{4}$[span_16](start_span)[span_16](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_0^1 \\frac{dx}{x+1}$ का मान क्या होगा? [BSEB 2021A]",
+        "answer": "$$\\log 2$$",
+        "explanation": "$[\\log|x+1|]_0^1 = \\log 2 - \\log 1 = \\log 2 - 0 = \\log 2$[span_17](start_span)[span_17](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_1^{\\sqrt{3}} \\frac{dx}{1+x^2}$ किसके बराबर है? [BSEB 2021A, NCERT Ex 7.9 Q21]",
+        "answer": "$$\\frac{\\pi}{12}$$",
+        "explanation": "$[\\tan^{-1}x]_1^{\\sqrt{3}} = \\tan^{-1}\\sqrt{3} - \\tan^{-1}1 = \\frac{\\pi}{3} - \\frac{\\pi}{4} = \\frac{\\pi}{12}$[span_18](start_span)[span_18](end_span)[span_19](start_span)[span_19](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_1^e \\frac{1+\\log x}{x}\\,dx$ का मान क्या होगा? [BSEB 2021A]",
+        "answer": "$$\\frac{3}{2}$$",
+        "explanation": "माना $1+\\log x = t \\implies \\frac{1}{x}\\,dx = dt$। सीमा 1 से 2। $\\int_1^2 t\\,dt = \\left[\\frac{t^2}{2}\\right]_1^2 = \\frac{1}{2}(4 - 1) = \\frac{3}{2}$[span_20](start_span)[span_20](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\log x\\,dx$ किसके बराबर है? [BSEB 2021A]",
+        "answer": "$$x\\log x - x + k$$",
+        "explanation": "खंडशः समाकलन से $\\log x(x) - \\int \\frac{1}{x}(x)\\,dx = x\\log x - x + k$[span_21](start_span)[span_21](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{x^4-1}{x^2+1}\\,dx$ का मान क्या होगा? [BSEB 2021A]",
+        "answer": "$$\\frac{x^3}{3} - x + k$$",
+        "explanation": "$x^4 - 1 = (x^2-1)(x^2+1)$। हर निरस्त होने पर $\\int (x^2 - 1)\\,dx = \\frac{x^3}{3} - x + k$[span_22](start_span)[span_22](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int e^x(\\cot x + \\log\\sin x)\\,dx$ किसके बराबर है? [BSEB 2020A]",
+        "answer": "$$e^x\\log\\sin x + k$$",
+        "explanation": "यहाँ $f(x) = \\log\\sin x$ है जिसका अवकलज $f'(x) = \\cot x$ है। अतः $e^x f(x) + k = e^x\\log\\sin x + k$[span_23](start_span)[span_23](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int x^2 e^{x^3}\\,dx$ किसके बराबर है? [BSEB 2018A, NCERT Ex 7.6 Q23]",
+        "answer": "$$\\frac{1}{3}e^{x^3} + c$$",
+        "explanation": "माना $x^3 = t \\implies x^2\\,dx = \\frac{1}{3}dt$। $\\frac{1}{3}\\int e^t\\,dt = \\frac{1}{3}e^{x^3} + c$[span_24](start_span)[span_24](end_span)[span_25](start_span)[span_25](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{x e^x}{(x+1)^2}\\,dx$ किसके बराबर है? [BSEB 2018A, NCERT Ex 7.6 Q17]",
+        "answer": "$$\\frac{e^x}{x+1} + c$$",
+        "explanation": "$e^x\\left[\\frac{1}{x+1} - \\frac{1}{(x+1)^2}\\right]$ रूप में $f(x) = \\frac{1}{x+1}$ है। अतः $\\frac{e^x}{x+1} + c$[span_26](start_span)[span_26](end_span)[span_27](start_span)[span_27](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{10x^9 + 10^x\\log_e 10}{x^{10} + 10^x}\\,dx$ किसके बराबर है? [NCERT Ex 7.2 Q38]",
+        "answer": "$$\\log(x^{10} + 10^x) + C$$",
+        "explanation": "हर $f(x) = x^{10} + 10^x$ का अवकलज पूर्णतः अंश में उपस्थित है, अतः $\\log|f(x)| + C$[span_28](start_span)[span_28](end_span)[span_29](start_span)[span_29](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{dx}{\\sin^2 x\\cos^2 x}$ किसके बराबर है? [NCERT Ex 7.2 Q39]",
+        "answer": "$$\\tan x - \\cot x + C$$",
+        "explanation": "अंश में $1 = \\sin^2 x + \\cos^2 x$ रखने पर $\\int (\\sec^2 x + \\text{cosec}^2 x)\\,dx = \\tan x - \\cot x + C$[span_30](start_span)[span_30](end_span)[span_31](start_span)[span_31](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{\\sin^2 x - \\cos^2 x}{\\sin^2 x\\cos^2 x}\\,dx$ किसके बराबर है? [NCERT Ex 7.3 Q23]",
+        "answer": "$$\\tan x + \\cot x + C$$",
+        "explanation": "विभाजित करने पर $\\int (\\sec^2 x - \\text{cosec}^2 x)\\,dx = \\tan x - (-\\cot x) + C = \\tan x + \\cot x + C$[span_32](start_span)[span_32](end_span)[span_33](start_span)[span_33](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{e^x(1+x)}{\\cos^2(x e^x)}\\,dx$ किसके बराबर है? [NCERT Ex 7.3 Q24]",
+        "answer": "$$\\tan(x e^x) + C$$",
+        "explanation": "माना $x e^x = t \\implies e^x(1+x)\\,dx = dt$। $\\int \\sec^2 t\\,dt = \\tan t + C = \\tan(x e^x) + C$[span_34](start_span)[span_34](end_span)[span_35](start_span)[span_35](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{dx}{x^2+2x+2}$ किसके बराबर है? [NCERT Ex 7.4 Q24]",
+        "answer": "$$\\tan^{-1}(x+1) + C$$",
+        "explanation": "$x^2+2x+2 = (x+1)^2+1^2$। सूत्र से $\\tan^{-1}(x+1) + C$[span_36](start_span)[span_36](end_span)[span_37](start_span)[span_37](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{dx}{\\sqrt{9x-4x^2}}$ किसके बराबर है? [NCERT Ex 7.4 Q25]",
+        "answer": "$$\\frac{1}{2}\\sin^{-1}\\left(\\frac{8x-9}{9}\\right) + C$$",
+        "explanation": "पूर्ण वर्ग बनाने पर $\\frac{1}{2}\\int \\frac{dx}{\\sqrt{(9/8)^2 - (x - 9/8)^2}} = \\frac{1}{2}\\sin^{-1}\\left(\\frac{x-9/8}{9/8}\\right) = \\frac{1}{2}\\sin^{-1}\\left(\\frac{8x-9}{9}\\right) + C$[span_38](start_span)[span_38](end_span)[span_39](start_span)[span_39](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{x\\,dx}{(x-1)(x-2)}$ किसके बराबर है? [NCERT Ex 7.5 Q22]",
+        "answer": "$$\\log\\left|\\frac{(x-2)^2}{x-1}\\right| + C$$",
+        "explanation": "आंशिक भिन्न से $\\frac{-1}{x-1} + \\frac{2}{x-2}$। $-\\log|x-1| + 2\\log|x-2| = \\log\\left|\\frac{(x-2)^2}{x-1}\\right| + C$[span_40](start_span)[span_40](end_span)[span_41](start_span)[span_41](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{dx}{x(x^2+1)}$ किसके बराबर है? [NCERT Ex 7.5 Q23]",
+        "answer": "$$\\log|x| - \\frac{1}{2}\\log(x^2+1) + C$$",
+        "explanation": "आंशिक भिन्न: $\\frac{1}{x} - \\frac{x}{x^2+1}$। समाकलन $\\log|x| - \\frac{1}{2}\\log(x^2+1) + C$[span_42](start_span)[span_42](end_span)[span_43](start_span)[span_43](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int e^x\\sec x(1+\\tan x)\\,dx$ किसके बराबर है? [NCERT Ex 7.6 Q24]",
+        "answer": "$$e^x\\sec x + C$$",
+        "explanation": "$e^x(\\sec x + \\sec x\\tan x)$ में $f(x) = \\sec x$ तथा $f'(x) = \\sec x\\tan x$ है। अतः $e^x\\sec x + C$[span_44](start_span)[span_44](end_span)[span_45](start_span)[span_45](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\sqrt{1+x^2}\\,dx$ किसके बराबर है? [NCERT Ex 7.7 Q10]",
+        "answer": "$$\\frac{x}{2}\\sqrt{1+x^2} + \\frac{1}{2}\\log|x+\\sqrt{1+x^2}| + C$$",
+        "explanation": "दीर्घ करणी सूत्र $\\int \\sqrt{x^2+a^2}\\,dx$ में $a = 1$ रखने पर[span_46](start_span)[span_46](end_span)[span_47](start_span)[span_47](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\sqrt{x^2-8x+7}\\,dx$ किसके बराबर है? [NCERT Ex 7.7 Q11]",
+        "answer": "$$\\frac{1}{2}(x-4)\\sqrt{x^2-8x+7} - \\frac{9}{2}\\log|x-4+\\sqrt{x^2-8x+7}| + C$$",
+        "explanation": "पूर्ण वर्ग $(x-4)^2 - 3^2$ से सूत्र $\\int \\sqrt{t^2-a^2}\\,dt$ लगाने पर[span_48](start_span)[span_48](end_span)[span_49](start_span)[span_49](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_0^{2/3} \\frac{dx}{4+9x^2}$ किसके बराबर है? [NCERT Ex 7.9 Q22]",
+        "answer": "$$\\frac{\\pi}{24}$$",
+        "explanation": "$\\frac{1}{9}\\int_0^{2/3} \\frac{dx}{(2/3)^2+x^2} = \\frac{1}{9} \\times \\frac{3}{2}\\left[\\tan^{-1}\\left(\\frac{3x}{2}\\right)\\right]_0^{2/3} = \\frac{1}{6}(\\tan^{-1}1 - 0) = \\frac{1}{6}\\left(\\frac{\\pi}{4}\\right) = \\frac{\\pi}{24}$[span_50](start_span)[span_50](end_span)[span_51](start_span)[span_51](end_span)।"
+      },
+      {
+        "question": "यदि $f(x) = \\int_0^x t\\sin t\\,dt$ हो, तो $f'(x)$ क्या होगा? [NCERT Ex 7.10 Q10]",
+        "answer": "$$x\\sin x$$",
+        "explanation": "कलन की प्रथम आधारभूत प्रमेय (लाइबनिज नियम) के अनुसार $\\frac{d}{dx}\\int_0^x g(t)\\,dt = g(x) = x\\sin x$[span_52](start_span)[span_52](end_span)[span_53](start_span)[span_53](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_{-\\pi/2}^{\\pi/2} (x^3 + x\\cos x + \\tan^5 x + 1)\\,dx$ का मान क्या होगा? [NCERT Ex 7.11 Q20]",
+        "answer": "$$\\pi$$",
+        "explanation": "$x^3, x\\cos x, \\tan^5 x$ सभी विषम फलन हैं जिनका मान $0$ होगा। केवल $\\int_{-\\pi/2}^{\\pi/2} 1\\,dx = \\frac{\\pi}{2} - (-\\frac{\\pi}{2}) = \\pi$ बचता है[span_54](start_span)[span_54](end_span)[span_55](start_span)[span_55](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_0^{\\pi/2} \\log\\left(\\frac{4+3\\sin x}{4+3\\cos x}\\right)dx$ का मान क्या होगा? [NCERT Ex 7.11 Q21]",
+        "answer": "$$0$$",
+        "explanation": "प्रगुण $P_4$ लगाने पर व्यंजक $\\log\\left(\\frac{4+3\\cos x}{4+3\\sin x}\\right) = -\\log\\left(\\frac{4+3\\sin x}{4+3\\cos x}\\right)$ बन जाता है। $2I = 0 \\implies I = 0$[span_56](start_span)[span_56](end_span)[span_57](start_span)[span_57](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_0^1 \\tan^{-1}\\left(\\frac{2x-1}{1+x-x^2}\\right)dx$ का मान क्या होगा? [NCERT Misc Q44]",
+        "answer": "$$0$$",
+        "explanation": "$\\tan^{-1}\\left(\\frac{x + (x-1)}{1 - x(x-1)}\\right) = \\tan^{-1}x + \\tan^{-1}(x-1)$। प्रगुण $P_4$ लगाने पर दोनों पद निरस्त होकर शून्य हो जाते हैं[span_58](start_span)[span_58](end_span)।"
+      },
+      {
+        "question": "यदि $f(a+b-x) = f(x)$ हो, तो $\\int_a^b x f(x)\\,dx$ किसके बराबर है? [NCERT Misc Q43]",
+        "answer": "$$\\frac{a+b}{2}\\int_a^b f(x)\\,dx$$",
+        "explanation": "प्रगुण $P_3$ लगाने पर $2I = (a+b)\\int_a^b f(x)\\,dx \\implies I = \\frac{a+b}{2}\\int_a^b f(x)\\,dx$[span_59](start_span)[span_59](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_0^{\\pi/2} \\frac{\\sin^{3/2}x}{\\sin^{3/2}x + \\cos^{3/2}x}\\,dx$ का मान क्या होगा? [NCERT Ex 7.11 Q3]",
+        "answer": "$$\\frac{\\pi}{4}$$",
+        "explanation": "किंग प्रगुण $P_4$ से दोनों समीकरणों को जोड़ने पर $2I = \\int_0^{\\pi/2} 1\\,dx = \\frac{\\pi}{2} \\implies I = \\frac{\\pi}{4}$[span_60](start_span)[span_60](end_span)[span_61](start_span)[span_61](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_0^{\\pi/2} \\frac{\\cos^5 x}{\\sin^5 x + \\cos^5 x}\\,dx$ किसके बराबर है? [NCERT Ex 7.11 Q4]",
+        "answer": "$$\\frac{\\pi}{4}$$",
+        "explanation": "सममितीय रूप में $P_4$ लगाने पर $2I = \\frac{\\pi}{2} \\implies I = \\frac{\\pi}{4}$[span_62](start_span)[span_62](end_span)[span_63](start_span)[span_63](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_0^{\\pi/4} \\log(1+\\tan x)\\,dx$ का मान क्या है? [NCERT Ex 7.11 Q8]",
+        "answer": "$$\\frac{\\pi}{8}\\log 2$$",
+        "explanation": "$P_4$ लगाने पर $1+\\tan(\\pi/4-x) = \\frac{2}{1+\\tan x}$। $2I = \\log 2 [x]_0^{\\pi/4} \\implies I = \\frac{\\pi}{8}\\log 2$[span_64](start_span)[span_64](end_span)[span_65](start_span)[span_65](end_span)।"
+      },
+      {
+        "question": "मानक निश्चित समाकलन $\\int_0^{\\pi/2} \\log\\sin x\\,dx$ का मान क्या है? [NCERT Ex 37]",
+        "answer": "$$-\\frac{\\pi}{2}\\log 2$$",
+        "explanation": "प्रगुण $P_4$ व $P_6$ के अनुप्रयोग से सिद्ध होने वाला मानक मान $-\\frac{\\pi}{2}\\log 2$ अथवा $\\frac{\\pi}{2}\\log(1/2)$ है[span_66](start_span)[span_66](end_span)[span_67](start_span)[span_67](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_0^\\pi \\frac{x}{1+\\sin x}\\,dx$ का मान क्या होगा? [NCERT Ex 7.11 Q12]",
+        "answer": "$$\\pi$$",
+        "explanation": "$P_4$ से $x$ विलोपित करने पर $2I = \\pi\\int_0^\\pi \\frac{1-\\sin x}{\\cos^2 x}\\,dx = 2\\pi \\implies I = \\pi$[span_68](start_span)[span_68](end_span)[span_69](start_span)[span_69](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_{-1}^1 x^{17}\\cos^4 x\\,dx$ का मान क्या होगा? [NCERT Misc Q36]",
+        "answer": "$$0$$",
+        "explanation": "$(-x)^{17}\\cos^4(-x) = -x^{17}\\cos^4 x$ (विषम फलन)। प्रगुण $P_7$ से मान शून्य है[span_70](start_span)[span_70](end_span)[span_71](start_span)[span_71](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int 2^x \\cdot 3^x\\,dx$ का मान क्या होगा?",
+        "answer": "$$\\frac{6^x}{\\log 6} + C$$",
+        "explanation": "$2^x \\cdot 3^x = (2 \\times 3)^x = 6^x$। सूत्र $\\int a^x\\,dx = \\frac{a^x}{\\log a} + C$ से $\\frac{6^x}{\\log 6} + C$।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{\\sin 2x}{1+\\sin^2 x}\\,dx$ का मान क्या होगा?",
+        "answer": "$$\\log(1+\\sin^2 x) + C$$",
+        "explanation": "हर का अवकलज $\\frac{d}{dx}(1+\\sin^2 x) = 2\\sin x\\cos x = \\sin 2x$ अंश में है, अतः $\\log|1+\\sin^2 x| + C$।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{1}{x^2}\\,dx$ किसके बराबर है?",
+        "answer": "$$-\\frac{1}{x} + C$$",
+        "explanation": "$\\int x^{-2}\\,dx = \\frac{x^{-2+1}}{-2+1} + C = -x^{-1} + C = -\\frac{1}{x} + C$[span_72](start_span)[span_72](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_0^1 x(1-x)^9\\,dx$ का मान क्या होगा?",
+        "answer": "$$\\frac{1}{110}$$",
+        "explanation": "प्रगुण $P_4$ से $\\int_0^1 (1-x)x^9\\,dx = \\int_0^1 (x^9 - x^{10})\\,dx = \\frac{1}{10} - \\frac{1}{11} = \\frac{1}{110}$।"
+      },
+      {
+        "question": "समाकलन $\\int e^x\\left(\\frac{x-1}{x^2}\\right)dx$ किसके बराबर है?",
+        "answer": "$$\\frac{e^x}{x} + C$$",
+        "explanation": "$\\frac{x-1}{x^2} = \\frac{1}{x} - \\frac{1}{x^2}$। यहाँ $f(x) = 1/x$ तथा $f'(x) = -1/x^2$ है, अतः उत्तर $\\frac{e^x}{x} + C$ है[span_73](start_span)[span_73](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{dx}{x^2+16}$ किसके बराबर है?",
+        "answer": "$$\\frac{1}{4}\\tan^{-1}\\left(\\frac{x}{4}\\right) + C$$",
+        "explanation": "सूत्र $\\frac{1}{a}\\tan^{-1}(x/a) + C$ में $a = 4$ रखने पर $\\frac{1}{4}\\tan^{-1}(x/4) + C$।"
+      },
+      {
+        "question": "प्रगुण सर्वसमिका: $\\int_0^a f(x)\\,dx + \\int_0^a f(2a-x)\\,dx$ किसके बराबर होती है?",
+        "answer": "$$\\int_0^{2a} f(x)\\,dx$$",
+        "explanation": "यह प्रगुण $P_5$ का मौलिक रूप है[span_74](start_span)[span_74](end_span)[span_75](start_span)[span_75](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{\\cos x - \\sin x}{1+\\sin 2x}\\,dx$ किसके बराबर है? [NCERT Ex 7.3 Q14]",
+        "answer": "$$-\\frac{1}{\\sin x + \\cos x} + C$$",
+        "explanation": "$1+\\sin 2x = (\\sin x+\\cos x)^2$। माना $\\sin x+\\cos x = t \\implies \\int \\frac{dt}{t^2} = -\\frac{1}{t} + C = -\\frac{1}{\\sin x+\\cos x} + C$[span_76](start_span)[span_76](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{1}{x(x^5+1)}\\,dx$ का मान क्या होगा?",
+        "answer": "$$\\frac{1}{5}\\log\\left|\\frac{x^5}{x^5+1}\\right| + C$$",
+        "explanation": "अंश व हर में $x^4$ से गुणा कर $x^5 = t$ रखने पर: $\\frac{1}{5}\\int \\frac{dt}{t(t+1)} = \\frac{1}{5}\\log|\\frac{t}{t+1}| + C = \\frac{1}{5}\\log|\\frac{x^5}{x^5+1}| + C$[span_77](start_span)[span_77](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{1}{e^x - 1}\\,dx$ का मान क्या होगा? [NCERT Ex 7.5 Q21]",
+        "answer": "$$\\log\\left|\\frac{e^x - 1}{e^x}\\right| + C$$",
+        "explanation": "अंश व हर में $e^x$ से गुणा कर $e^x = t$ रखने पर: $\\int \\frac{dt}{t(t-1)} = \\log|\\frac{t-1}{t}| + C = \\log|\\frac{e^x-1}{e^x}| + C$[span_78](start_span)[span_78](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_0^{\\pi/2} \\sin^3 x\\,dx$ का मान क्या होगा? [NCERT Misc Q37]",
+        "answer": "$$\\frac{2}{3}$$",
+        "explanation": "$\\sin^3 x = (1-\\cos^2 x)\\sin x$। माना $\\cos x = t$ (सीमा 1 से 0): $\\int_0^1 (1-t^2)dt = [t - t^3/3]_0^1 = 1 - 1/3 = 2/3$[span_79](start_span)[span_79](end_span)।"
+      }
+    ]
+  }
+}
