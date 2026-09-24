@@ -1,0 +1,11 @@
+{
+  "_help": "हर Experiment के लिए एक entry: {\"subject\":\"physics\",\"id\":\"ohms-law\",\"title\":\"...\",\"file\":\"data/lab/physics/ohms-law.json\"}। नमूना: AI-PROMPT-PHYSICS-LAB.md",
+  "lab": [
+    {
+      "subject": "physics",
+      "id": "ohms-law",
+      "title": "ओम के नियम का सत्यापन",
+      "file": "data/lab/physics/ohms-law.json"
+    }
+  ]
+}
