@@ -2,9 +2,10 @@
   "schemaVersion": 1,
   "subject": "mathematics",
   "chapter": 7,
+  "part": "21",
   "title": "समाकलन (Integrals) - ज्यामितीय आरेख (Set 1)",
   "categories": {
-    "geometricDiagrams": [
+    "diagrams": [
       {
         "diagramNo": 1,
         "title": "अनिश्चित समाकलन: परवलय परिवार y = x² + C (Family of Curves)",
