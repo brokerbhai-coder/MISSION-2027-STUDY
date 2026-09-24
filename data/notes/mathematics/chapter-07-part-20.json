@@ -2,196 +2,44 @@
   "schemaVersion": 1,
   "subject": "mathematics",
   "chapter": 7,
+  "part": "20",
   "title": "समाकलन (Integrals) - मास्टर रिवीजन एवं स्कोर-बूस्टर",
   "categories": {
-    "formulaSheet": [
+    "revision": [
       {
-        "category": "1. आधारभूत बीजीय एवं चरघातांकी सूत्र (Formulas 01-06)",
-        "items": [
-          { "no": 1, "formula": "$$\\int x^n\\,dx = \\frac{x^{n+1}}{n+1} + C \\quad (n \\neq -1)$$", "note": "रैखिक पद हेतु: $\\int (ax+b)^n\\,dx = \\frac{(ax+b)^{n+1}}{a(n+1)} + C$" },
-          { "no": 2, "formula": "$$\\int 1\\,dx = x + C, \\quad \\int k\\,dx = kx + C, \\quad \\int 0\\,dx = C$$", "note": "अचर बाहर आ जाता है; शून्य का समाकलन स्वेच्छ अचर C होता है" },
-          { "no": 3, "formula": "$$\\int \\frac{1}{x}\\,dx = \\log_e|x| + C \\quad (x \\neq 0)$$", "note": "रैखिक पद हेतु: $\\int \\frac{1}{ax+b}\\,dx = \\frac{1}{a}\\log_e|ax+b| + C$" },
-          { "no": 4, "formula": "$$\\int e^x\\,dx = e^x + C, \\quad \\int e^{ax+b}\\,dx = \\frac{1}{a}e^{ax+b} + C$$", "note": "प्राकृतिक चरघातांकी फलन अपरिवर्तित रहता है" },
-          { "no": 5, "formula": "$$\\int a^x\\,dx = \\frac{a^x}{\\log_e a} + C \\quad (a > 0, a \\neq 1)$$", "note": "अचर आधार होने पर हर में $\\log_e a$ आता है" },
-          { "no": 6, "formula": "$$\\int \\frac{1}{\\sqrt{x}}\\,dx = 2\\sqrt{x} + C, \\quad \\int \\frac{1}{\\sqrt{ax+b}}\\,dx = \\frac{2\\sqrt{ax+b}}{a} + C$$", "note": "त्वरित वस्तुनिष्ठ हल हेतु स्कोर-बूस्टर सूत्र" }
+        "title": "सामान्य मानवीय भूलें एवं सावधानियाँ (Common Traps & Pitfalls)",
+        "content": [
+          "बोर्ड परीक्षा में समाकलन के प्रश्नों को हल करते समय विद्यार्थी प्रायः कुछ सामान्य गलतियाँ कर बैठते हैं, जिससे पूरे अंक कट जाते हैं।",
+          "निम्नलिखित 8 प्रमुख सावधानियों को ध्यान में रखकर आप शत-प्रतिशत अंक सुनिश्चित कर सकते हैं:"
+        ],
+        "points": [
+          "**अनिश्चित समाकलन में स्वेच्छ अचर (+C) का छूटना:** अनिश्चित समाकलन वक्रों के एक अनंत परिवार को दर्शाता है। यदि उत्तर के अंत में $+C$ या $+k$ नहीं लिखा गया, तो बोर्ड परीक्षा में 1 अंक काट लिया जाता है। (गलत: $\\int x\\,dx = \\frac{x^2}{2}$ | सही: $\\int x\\,dx = \\frac{x^2}{2} + C$)",
+          "**1/x में घात नियम लगाने की भूल:** घात नियम $\\int x^n\\,dx = \\frac{x^{n+1}}{n+1}$ केवल $n \\neq -1$ के लिए वैध है। $1/x = x^{-1}$ में घात नियम लगाने पर हर में $-1+1=0$ आ जाता है जो अपरिभाषित है। (गलत: $\\int x^{-1}\\,dx = \\frac{x^0}{0}$ | सही: $\\int \\frac{1}{x}\\,dx = \\log_e|x| + C$)",
+          "**त्रिकोणमितीय समाकलनों में अवकलन के चिह्नों का भ्रम:** विद्यार्थी प्रायः अवकलन और समाकलन के ऋण चिह्नों में भ्रमित हो जाते हैं। $\\cos x$ का अवकलज $-\\sin x$ होता है, परंतु $\\sin x$ का समाकलन $-\\cos x$ होता है। (गलत: $\\int \\sin x\\,dx = \\cos x + C$ | सही: $\\int \\sin x\\,dx = -\\cos x + C$)",
+          "**रैखिक पद (ax + b) में x के गुणांक 'a' से भाग देना भूलना:** जब चर $x$ के स्थान पर रैखिक पद $(ax+b)$ हो, तो प्रतिस्थापन नियम के अनुसार अवकलज $a$ से पूरे परिणाम में भाग देना अनिवार्य होता है। (गलत: $\\int e^{3x}\\,dx = e^{3x} + C$ | सही: $\\int e^{3x}\\,dx = \\frac{e^{3x}}{3} + C$)",
+          "**1/√(a² - x²) में बाहर 1/a लगाने की भूल:** $\\frac{1}{x^2+a^2}$ के सूत्र $\\frac{1}{a}\\tan^{-1}(x/a)$ की नकल करके $\\frac{1}{\\sqrt{a^2-x^2}}$ में भी $\\frac{1}{a}$ न लगाएँ। (गलत: $\\frac{1}{a}\\sin^{-1}(x/a)$ | सही: $\\int \\frac{1}{\\sqrt{a^2-x^2}}\\,dx = \\sin^{-1}\\left(\\frac{x}{a}\\right) + C$)",
+          "**निश्चित समाकलन में प्रतिस्थापन करने पर सीमाओं को न बदलना:** यदि $x$ के स्थान पर $t$ माना गया है, तो सीमाओं को भी $t$ के संगत बदलना अनिवार्य है। पुरानी सीमाएँ रखने पर संपूर्ण गणना अमान्य हो जाती है।",
+          "**विषम परिमेय फलनों में बिना भाग दिए आंशिक भिन्न लगाना:** यदि अंश की घात $\\ge$ हर की घात हो, तो आंशिक भिन्न सीधे नहीं लगाई जा सकती। पहले दीर्घ भाग (Long Division) देकर उचित भिन्न बनाना अनिवार्य है।",
+          "**दीर्घ करणी √(x² - a²) के मध्य चिह्न में भूल:** तीनों दीर्घ करणी सूत्रों में केवल $\\sqrt{x^2-a^2}$ में मध्य पद ऋणात्मक ($-$) होता है, शेष दोनों में धनात्मक ($+$) रहता है। (सही: $-\\frac{a^2}{2}\\log|x+\\sqrt{x^2-a^2}| + C$)"
         ]
       },
       {
-        "category": "2. मानक त्रिकोणमितीय सूत्र (Formulas 07-12)",
-        "items": [
-          { "no": 7, "formula": "$$\\int \\sin x\\,dx = -\\cos x + C, \\quad \\int \\sin(ax)\\,dx = -\\frac{\\cos(ax)}{a} + C$$", "note": "sine का समाकलन ऋणात्मक cosine होता है" },
-          { "no": 8, "formula": "$$\\int \\cos x\\,dx = \\sin x + C, \\quad \\int \\cos(ax)\\,dx = \\frac{\\sin(ax)}{a} + C$$", "note": "cosine का समाकलन धनात्मक sine होता है" },
-          { "no": 9, "formula": "$$\\int \\sec^2 x\\,dx = \\tan x + C, \\quad \\int \\sec^2(ax)\\,dx = \\frac{\\tan(ax)}{a} + C$$", "note": "$\\tan^2 x$ के लिए $\\sec^2 x - 1$ लिखा जाता है" },
-          { "no": 10, "formula": "$$\\int \\text{cosec}^2 x\\,dx = -\\cot x + C, \\quad \\int \\text{cosec}^2(ax)\\,dx = -\\frac{\\cot(ax)}{a} + C$$", "note": "$\\cot^2 x$ के लिए $\\text{cosec}^2 x - 1$ लिखा जाता है" },
-          { "no": 11, "formula": "$$\\int \\sec x\\tan x\\,dx = \\sec x + C, \\quad \\int \\sec(ax)\\tan(ax)\\,dx = \\frac{\\sec(ax)}{a} + C$$", "note": "$\\sec x$ का अवकलज समाकल्य में उपस्थित रहता है" },
-          { "no": 12, "formula": "$$\\int \\text{cosec } x\\cot x\\,dx = -\\text{cosec } x + C, \\quad \\int \\text{cosec}(ax)\\cot(ax)\\,dx = -\\frac{\\text{cosec}(ax)}{a} + C$$", "note": "ऋण चिह्न अनिवार्य रूप से आता है" }
+        "title": "शीर्ष 10 स्कोर-बूस्टर शॉर्टकट ट्रिक्स (Top 10 Exam Shortcut Tricks)",
+        "content": [
+          "वस्तुनिष्ठ प्रश्नों को 5 सेकंड से भी कम समय में बिना विस्तृत रफ़ कार्य के हल करने के लिए ये 10 ट्रिक्स अत्यंत प्रभावी हैं:"
+        ],
+        "points": [
+          "**लॉग फ्लैश ट्रिक (2 सेकंड):** जब भी हर का अवकलज अंश में उपस्थित हो, सीधे $\\int \\frac{f'(x)}{f(x)}\\,dx = \\log_e|f(x)| + C$ लिखें। (उदा. $\\int \\frac{2x+3}{x^2+3x+5}\\,dx = \\log|x^2+3x+5| + C$)",
+          "**घात फ्लैश ट्रिक (2 सेकंड):** यदि फलन की घात के साथ उसका अवकलज गुणा में हो, तो सीधे $\\int [f(x)]^n f'(x)\\,dx = \\frac{[f(x)]^{n+1}}{n+1} + C$ लिखें। (उदा. $\\int \\sin^5 x\\cos x\\,dx = \\frac{\\sin^6 x}{6} + C$)",
+          "**करणी व्युत्क्रम ट्रिक (2 सेकंड):** हर में वर्गमूल और अंश में उसका अवकलज होने पर सीधे $\\int \\frac{f'(x)}{\\sqrt{f(x)}}\\,dx = 2\\sqrt{f(x)} + C$ लिखें। (उदा. $\\int \\frac{\\cos x}{\\sqrt{1+\\sin x}}\\,dx = 2\\sqrt{1+\\sin x} + C$)",
+          "**चरघातांकी योग ट्रिक (3 सेकंड):** कोष्ठक में मुख्य फलन पहचानें जिसका अवकलज बगल में जुड़ा हो: $\\int e^x [f(x) + f'(x)]\\,dx = e^x f(x) + C$। (उदा. $\\int e^x(\\tan^{-1}x + \\frac{1}{1+x^2})dx = e^x\\tan^{-1}x + C$)",
+          "**सममितीय π/4 ट्रिक (1 सेकंड):** सीमा 0 से $\\pi/2$ होने पर $\\int_0^{\\pi/2} \\frac{\\sin^n x}{\\sin^n x + \\cos^n x}\\,dx = \\frac{\\pi}{4}$ (घात $n$ चाहे $1, 2, 4, 3/2, 5$ या $\\sqrt{}$ हो, उत्तर सदैव $\\pi/4$ होगा)।",
+          "**व्यापक सममितीय समाकलन (2 सेकंड):** सममितीय समाकल्य में उत्तर सदैव सीमा अंतर का आधा होता है: $\\int_a^b \\frac{f(x)}{f(x) + f(a+b-x)}\\,dx = \\frac{b - a}{2}$। (उदा. $\\int_{\\pi/6}^{\\pi/3} \\frac{\\sqrt{\\sin x}}{\\sqrt{\\sin x}+\\sqrt{\\cos x}}\\,dx = \\frac{\\pi/3 - \\pi/6}{2} = \\frac{\\pi}{12}$)",
+          "**विषम फलन शून्यक नियम (1 सेकंड):** सीमाएँ $-a$ से $+a$ हों और विषम घात वाले त्रिकोणमितीय पद (उदा. $\\sin^7 x, \\tan^5 x, x^{17}\\cos^4 x$) दिखें, तो बिना हल किए सीधे $0$ टिक करें।",
+          "**चक्रीय चरघातांकी-त्रिकोणमितीय सूत्र (5 सेकंड):** $\\int e^{ax}\\sin bx\\,dx = \\frac{e^{ax}}{a^2+b^2}(a\\sin bx - b\\cos bx) + C$। (उदा. $\\int e^{2x}\\sin x\\,dx = \\frac{e^{2x}}{5}(2\\sin x - \\cos x) + C$)",
+          "**द्विपद घात आंशिक भिन्न ट्रिक (3 सेकंड):** $\\int \\frac{1}{x(x^n + 1)}\\,dx = \\frac{1}{n}\\log_e\\left|\\frac{x^n}{x^n + 1}\\right| + C$। (उदा. $\\int \\frac{1}{x(x^5 + 1)}\\,dx = \\frac{1}{5}\\log\\left|\\frac{x^5}{x^5 + 1}\\right| + C$)",
+          "**समान एवं विपरीत सीमा योग (1 सेकंड):** यदि समाकलन की दोनों सीमाएँ समान हों, अथवा दो समाकलनों की सीमाएँ परस्पर विपरीत होकर जुड़ रही हों, तो मान $0$ होता है: $\\int_a^a f(x)\\,dx = 0$ तथा $\\int_\\alpha^\\beta \\phi(x)\\,dx + \\int_\\beta^\\alpha \\phi(x)\\,dx = 0$।"
         ]
-      },
-      {
-        "category": "3. प्रतिस्थापन जनित एवं प्रतिलोम त्रिकोणमितीय सूत्र (Formulas 13-18)",
-        "items": [
-          { "no": 13, "formula": "$$\\int \\tan x\\,dx = \\log|\\sec x| + C = -\\log|\\cos x| + C$$", "note": "प्रतिस्थापन $\\cos x = t$ से व्युत्पन्न" },
-          { "no": 14, "formula": "$$\\int \\cot x\\,dx = \\log|\\sin x| + C = -\\log|\\text{cosec } x| + C$$", "note": "प्रतिस्थापन $\\sin x = t$ से व्युत्पन्न" },
-          { "no": 15, "formula": "$$\\int \\sec x\\,dx = \\log|\\sec x + \\tan x| + C = \\log\\left|\\tan\\left(\\frac{\\pi}{4} + \\frac{x}{2}\\right)\\right| + C$$", "note": "दोनों रूप बोर्ड वस्तुनिष्ठ में पूछे जाते हैं" },
-          { "no": 16, "formula": "$$\\int \\text{cosec } x\\,dx = \\log|\\text{cosec } x - \\cot x| + C = \\log\\left|\\tan\\left(\\frac{x}{2}\\right)\\right| + C$$", "note": "अर्द्ध-कोण $\\tan(x/2)$ रूप अत्यंत महत्वपूर्ण है" },
-          { "no": 17, "formula": "$$\\int \\frac{1}{\\sqrt{1-x^2}}\\,dx = \\sin^{-1}x + C = -\\cos^{-1}x + C$$", "note": "$\\int \\frac{1}{\\sqrt{1-(ax)^2}}\\,dx = \\frac{1}{a}\\sin^{-1}(ax) + C$" },
-          { "no": 18, "formula": "$$\\int \\frac{1}{1+x^2}\\,dx = \\tan^{-1}x + C = -\\cot^{-1}x + C, \\quad \\int \\frac{1}{x\\sqrt{x^2-1}}\\,dx = \\sec^{-1}x + C$$", "note": "$\\int \\frac{1}{1+(ax)^2}\\,dx = \\frac{1}{a}\\tan^{-1}(ax) + C$" }
-        ]
-      },
-      {
-        "category": "4. छह विशिष्ट बीजीय व करणी सूत्र (Formulas 19-24)",
-        "items": [
-          { "no": 19, "formula": "$$\\int \\frac{1}{x^2 - a^2}\\,dx = \\frac{1}{2a}\\log\\left|\\frac{x - a}{x + a}\\right| + C$$", "note": "अंश में $(x-a)$ तथा हर में $(x+a)$" },
-          { "no": 20, "formula": "$$\\int \\frac{1}{a^2 - x^2}\\,dx = \\frac{1}{2a}\\log\\left|\\frac{a + x}{a - x}\\right| + C$$", "note": "अंश में $(a+x)$ तथा हर में $(a-x)$" },
-          { "no": 21, "formula": "$$\\int \\frac{1}{x^2 + a^2}\\,dx = \\frac{1}{a}\\tan^{-1}\\left(\\frac{x}{a}\\right) + C$$", "note": "बाहर $\\frac{1}{a}$ आता है" },
-          { "no": 22, "formula": "$$\\int \\frac{1}{\\sqrt{a^2 - x^2}}\\,dx = \\sin^{-1}\\left(\\frac{x}{a}\\right) + C$$", "note": "इस सूत्र में बाहर $\\frac{1}{a}$ नहीं आता" },
-          { "no": 23, "formula": "$$\\int \\frac{1}{\\sqrt{x^2 - a^2}}\\,dx = \\log\\left|x + \\sqrt{x^2 - a^2}\\right| + C$$", "note": "अतिपरवलयिक प्रतिस्थापन आधारित" },
-          { "no": 24, "formula": "$$\\int \\frac{1}{\\sqrt{x^2 + a^2}}\\,dx = \\log\\left|x + \\sqrt{x^2 + a^2}\\right| + C$$", "note": "त्रिकोणमितीय प्रतिस्थापन $x = a\\tan\\theta$ आधारित" }
-        ]
-      },
-      {
-        "category": "5. तीन दीर्घ करणी व खंडशः समाकलन सूत्र (Formulas 25-30)",
-        "items": [
-          { "no": 25, "formula": "$$\\int \\sqrt{a^2 - x^2}\\,dx = \\frac{x}{2}\\sqrt{a^2 - x^2} + \\frac{a^2}{2}\\sin^{-1}\\left(\\frac{x}{a}\\right) + C$$", "note": "वृत्त व दीर्घवृत्त के क्षेत्रफल हेतु प्राथमिक सूत्र" },
-          { "no": 26, "formula": "$$\\int \\sqrt{x^2 - a^2}\\,dx = \\frac{x}{2}\\sqrt{x^2 - a^2} - \\frac{a^2}{2}\\log\\left|x + \\sqrt{x^2 - a^2}\\right| + C$$", "note": "केवल इस सूत्र में मध्य पद ऋणात्मक ($-$) होता है" },
-          { "no": 27, "formula": "$$\\int \\sqrt{x^2 + a^2}\\,dx = \\frac{x}{2}\\sqrt{x^2 + a^2} + \\frac{a^2}{2}\\log\\left|x + \\sqrt{x^2 + a^2}\\right| + C$$", "note": "मध्य पद धनात्मक ($+$) रहता है" },
-          { "no": 28, "formula": "$$\\int u \\cdot v\\,dx = u\\int v\\,dx - \\int \\left(u' \\int v\\,dx\\right)dx$$", "note": "ILATE नियम: Inverse > Logarithmic > Algebraic > Trigonometric > Exponential" },
-          { "no": 29, "formula": "$$\\int e^x [f(x) + f'(x)]\\,dx = e^x f(x) + C$$", "note": "बोर्ड वस्तुनिष्ठ का सर्वाधिक लोकप्रिय प्रारूप" },
-          { "no": 30, "formula": "$$\\int e^{ax}\\sin bx\\,dx = \\frac{e^{ax}}{a^2+b^2}(a\\sin bx - b\\cos bx) + C$$", "note": "चक्रीय खंडशः समाकलन का सीधा सूत्र" }
-        ]
-      },
-      {
-        "category": "6. निश्चित समाकलन व 8 प्रगुण सूत्र (Formulas 31-36)",
-        "items": [
-          { "no": 31, "formula": "$$\\int_a^b f(x)\\,dx = [F(x)]_a^b = F(b) - F(a)$$", "note": "कलन की द्वितीय आधारभूत प्रमेय (FTC 2)" },
-          { "no": 32, "formula": "$$P_0: \\int_a^b f(x)\\,dx = \\int_a^b f(t)\\,dt, \\quad P_1: \\int_a^b f(x)\\,dx = -\\int_b^a f(x)\\,dx, \\quad \\int_a^a f(x)\\,dx = 0$$", "note": "मूक चर व सीमा व्युत्क्रमण प्रगुण" },
-          { "no": 33, "formula": "$$P_2: \\int_a^b f(x)\\,dx = \\int_a^c f(x)\\,dx + \\int_c^b f(x)\\,dx \\quad (a < c < b)$$", "note": "मापांक व खंडित फलनों के विभाजन हेतु अनिवार्य" },
-          { "no": 34, "formula": "$$P_3: \\int_a^b f(x)\\,dx = \\int_a^b f(a+b-x)\\,dx$$", "note": "व्यापक सीमा योग प्रगुण" },
-          { "no": 35, "formula": "$$P_4: \\int_0^a f(x)\\,dx = \\int_0^a f(a-x)\\,dx$$", "note": "'किंग प्रगुण' (King's Property) - 90% निश्चित प्रश्नों का समाधान" },
-          { "no": 36, "formula": "$$P_6: \\int_0^{2a} f(x)\\,dx = \\begin{cases} 2\\int_0^a f(x)\\,dx, & f(2a-x)=f(x) \\\\ 0, & f(2a-x)=-f(x) \\end{cases} \\quad P_7: \\int_{-a}^a f(x)\\,dx = \\begin{cases} 2\\int_0^a f(x)\\,dx, & f(-x)=f(x) \\\\ 0, & f(-x)=-f(x) \\end{cases}$$", "note": "सम एवं विषम फलनों का त्वरित शून्यक प्रगुण" }
-        ]
-      }
-    ],
-    "commonTraps": [
-      {
-        "trapNo": 1,
-        "title": "अनिश्चित समाकलन में स्वेच्छ अचर (+C) का छूटना",
-        "description": "अनिश्चित समाकलन का परिणाम फलनों के एक अनंत परिवार को दर्शाता है। यदि उत्तर के अंत में $+C$ या $+k$ नहीं लिखा गया, तो बोर्ड परीक्षा में 1 अंक काट लिया जाता है।",
-        "example": "गलत: $\\int x\\,dx = \\frac{x^2}{2}$ | सही: $\\int x\\,dx = \\frac{x^2}{2} + C$"
-      },
-      {
-        "trapNo": 2,
-        "title": "1/x में घात नियम लगाने की भूल",
-        "description": "घात नियम $\\int x^n\\,dx = \\frac{x^{n+1}}{n+1}$ केवल $n \\neq -1$ के लिए वैध है। $1/x = x^{-1}$ में घात नियम लगाने पर हर में $-1+1=0$ आ जाता है जो अपरिभाषित है।",
-        "example": "गलत: $\\int x^{-1}\\,dx = \\frac{x^0}{0}$ | सही: $\\int \\frac{1}{x}\\,dx = \\log_e|x| + C$"
-      },
-      {
-        "trapNo": 3,
-        "title": "त्रिकोणमितीय समाकलनों में अवकलन के चिह्नों का भ्रम",
-        "description": "विद्यार्थी प्रायः अवकलन और समाकलन के ऋण चिह्नों में भ्रमित हो जाते हैं। $\\cos x$ का अवकलज $-\\sin x$ होता है, परंतु $\\sin x$ का समाकलन $-\\cos x$ होता है।",
-        "example": "गलत: $\\int \\sin x\\,dx = \\cos x + C$ | सही: $\\int \\sin x\\,dx = -\\cos x + C$ तथा $\\int \\cos x\\,dx = \\sin x + C$"
-      },
-      {
-        "trapNo": 4,
-        "title": "रैखिक पद (ax + b) में x के गुणांक 'a' से भाग देना भूलना",
-        "description": "जब चर $x$ के स्थान पर रैखिक पद $(ax+b)$ हो, तो प्रतिस्थापन नियम के अनुसार अवकलज $a$ से पूरे परिणाम में भाग देना अनिवार्य होता है।",
-        "example": "गलत: $\\int e^{3x}\\,dx = e^{3x} + C$ | सही: $\\int e^{3x}\\,dx = \\frac{e^{3x}}{3} + C$"
-      },
-      {
-        "trapNo": 5,
-        "title": "1/√(a² - x²) में बाहर 1/a लगाने की भूल",
-        "description": "विद्यार्थी $\\frac{1}{x^2+a^2}$ के सूत्र $\\frac{1}{a}\\tan^{-1}(x/a)$ की नकल करके $\\frac{1}{\\sqrt{a^2-x^2}}$ में भी $\\frac{1}{a}\\sin^{-1}(x/a)$ लिख देते हैं।",
-        "example": "गलत: $\\int \\frac{1}{\\sqrt{a^2-x^2}}\\,dx = \\frac{1}{a}\\sin^{-1}\\left(\\frac{x}{a}\\right) + C$ | सही: $\\int \\frac{1}{\\sqrt{a^2-x^2}}\\,dx = \\sin^{-1}\\left(\\frac{x}{a}\\right) + C$"
-      },
-      {
-        "trapNo": 6,
-        "title": "निश्चित समाकलन में प्रतिस्थापन करने पर सीमाओं को न बदलना",
-        "description": "यदि $x$ के स्थान पर $t$ माना गया है, तो सीमाओं को भी $t$ के संगत बदलना अनिवार्य है। पुरानी सीमाएँ रखने पर परिणाम पूरी तरह गलत हो जाता है।",
-        "example": "त्रुटि: $\\int_0^1 \\frac{x}{x^2+1}\\,dx$ में $x^2+1=t$ रखकर सीमा 0 से 1 ही छोड़ देना। सही: सीमा 1 से 2 होगी।"
-      },
-      {
-        "trapNo": 7,
-        "title": "विषम परिमेय फलनों में बिना भाग दिए आंशिक भिन्न लगाना",
-        "description": "यदि अंश की घात $\\ge$ हर की घात हो, तो आंशिक भिन्न सीधे नहीं लगाई जा सकती। पहले दीर्घ भाग (Long Division) देकर उचित भिन्न बनाना अनिवार्य है।",
-        "example": "त्रुटि: $\\frac{x^2+1}{x^2-5x+6}$ में सीधे $\\frac{A}{x-2} + \\frac{B}{x-3}$ लिखना। सही: पहले भाग देकर $1 + \\frac{5x-5}{(x-2)(x-3)}$ लिखें।"
-      },
-      {
-        "trapNo": 8,
-        "title": "दीर्घ करणी √(x² - a²) के मध्य चिह्न में भूल",
-        "description": "तीनों दीर्घ करणी सूत्रों में केवल $\\sqrt{x^2-a^2}$ में मध्य पद ऋणात्मक ($-$) होता है, शेष दोनों में धनात्मक ($+$) रहता है।",
-        "example": "गलत: $\\int \\sqrt{x^2-a^2}\\,dx = \\frac{x}{2}\\sqrt{x^2-a^2} + \\frac{a^2}{2}\\log|\\dots|$ | सही: मध्य में $-\\frac{a^2}{2}\\log|x+\\sqrt{x^2-a^2}| + C$"
-      }
-    ],
-    "shortcutTricks": [
-      {
-        "trickNo": 1,
-        "name": "हर का अवकलज अंश में (Logarithmic Flash)",
-        "formula": "$$\\int \\frac{f'(x)}{f(x)}\\,dx = \\log_e|f(x)| + C$$",
-        "speed": "2 सेकंड",
-        "application": "जब भी भिन्न दिखे, तुरंत हर का अवकलन करें। यदि वह अंश में है तो सीधे $\\log|हर| + C$ लिखें। उदा. $\\int \\frac{2x+3}{x^2+3x+5}\\,dx = \\log|x^2+3x+5| + C$।"
-      },
-      {
-        "trickNo": 2,
-        "name": "फलन और उसका अवकलज गुणा में (Power Flash)",
-        "formula": "$$\\int [f(x)]^n f'(x)\\,dx = \\frac{[f(x)]^{n+1}}{n+1} + C$$",
-        "speed": "2 सेकंड",
-        "application": "यदि फलन की घात के साथ उसका अवकलज उपस्थित हो, तो सीधे फलन की घात में 1 जोड़कर भाग दें। उदा. $\\int \\sin^5 x\\cos x\\,dx = \\frac{\\sin^6 x}{6} + C$।"
-      },
-      {
-        "trickNo": 3,
-        "name": "करणी का अवकलज अंश में (Root Reciprocal Shortcut)",
-        "formula": "$$\\int \\frac{f'(x)}{\\sqrt{f(x)}}\\,dx = 2\\sqrt{f(x)} + C$$",
-        "speed": "2 सेकंड",
-        "application": "हर में वर्गमूल और अंश में उसका अवकलज होने पर सीधे $2\\sqrt{हर} + C$ लिखें। उदा. $\\int \\frac{\\cos x}{\\sqrt{1+\\sin x}}\\,dx = 2\\sqrt{1+\\sin x} + C$।"
-      },
-      {
-        "trickNo": 4,
-        "name": "चरघातांकी योग प्रारूप (Exponential Identity)",
-        "formula": "$$\\int e^x [f(x) + f'(x)]\\,dx = e^x f(x) + C$$",
-        "speed": "3 सेकंड",
-        "application": "कोष्ठक में मुख्य फलन पहचानें जिसका अवकलज बगल में जुड़ा हो। उत्तर सीधे $e^x f(x) + C$ होगा। उदा. $\\int e^x(\\tan^{-1}x + \\frac{1}{1+x^2})dx = e^x\\tan^{-1}x + C$।"
-      },
-      {
-        "trickNo": 5,
-        "name": "सममितीय त्रिकोणमितीय अनुपात (Symmetric π/4 Trick)",
-        "formula": "$$\\int_0^{\\pi/2} \\frac{\\sin^n x}{\\sin^n x + \\cos^n x}\\,dx = \\frac{\\pi}{4} \\quad (\\forall n \\in \\mathbb{R})$$",
-        "speed": "1 सेकंड",
-        "application": "घात $n$ चाहे $1, 2, 4, 3/2, 5$ या $\\sqrt{}$ हो, सीमा 0 से $\\pi/2$ होने पर किंग प्रगुण $P_4$ से उत्तर सदैव $\\frac{\\pi}{4}$ ही आएगा।"
-      },
-      {
-        "trickNo": 6,
-        "name": "व्यापक सममितीय समाकलन (General (b-a)/2 Trick)",
-        "formula": "$$\\int_a^b \\frac{f(x)}{f(x) + f(a+b-x)}\\,dx = \\frac{b - a}{2}$$",
-        "speed": "2 सेकंड",
-        "application": "यदि समाकल्य सममितीय रूप में हो, तो उत्तर सदैव $\\frac{\\text{उच्च सीमा} - \\text{निम्न सीमा}}{2}$ होता है। उदा. $\\int_{\\pi/6}^{\\pi/3} \\frac{\\sqrt{\\sin x}}{\\sqrt{\\sin x}+\\sqrt{\\cos x}}\\,dx = \\frac{\\pi/3 - \\pi/6}{2} = \\frac{\\pi}{12}$।"
-      },
-      {
-        "trickNo": 7,
-        "name": "विषम फलन शून्यक नियम (Odd Function Zero Flash)",
-        "formula": "$$\\int_{-a}^a f(x)\\,dx = 0 \\quad (\\text{यदि } f(-x) = -f(x))$$",
-        "speed": "1 सेकंड",
-        "application": "सीमाएँ $-a$ से $+a$ हों और विषम घात वाले त्रिकोणमितीय पद (उदा. $\\sin^7 x, \\tan^5 x, x^{17}\\cos^4 x$) दिखें, तो बिना हल किए सीधे $0$ टिक करें।"
-      },
-      {
-        "trickNo": 8,
-        "name": "चक्रीय चरघातांकी-त्रिकोणमितीय सूत्र (Cyclic Direct)",
-        "formula": "$$\\int e^{ax}\\sin bx\\,dx = \\frac{e^{ax}}{a^2+b^2}(a\\sin bx - b\\cos bx) + C$$",
-        "speed": "5 सेकंड",
-        "application": "दो बार लंबे खंडशः समाकलन से बचने के लिए सीधे $a$ और $b$ के मान रखकर उत्तर निकालें। उदा. $\\int e^{2x}\\sin x\\,dx = \\frac{e^{2x}}{2^2+1^2}(2\\sin x - 1\\cos x) = \\frac{e^{2x}}{5}(2\\sin x - \\cos x) + C$।"
-      },
-      {
-        "trickNo": 9,
-        "name": "द्विपद घात आंशिक भिन्न (Binomial Reciprocal Trick)",
-        "formula": "$$\\int \\frac{1}{x(x^n + 1)}\\,dx = \\frac{1}{n}\\log_e\\left|\\frac{x^n}{x^n + 1}\\right| + C$$",
-        "speed": "3 सेकंड",
-        "application": "उदा. $\\int \\frac{1}{x(x^5 + 1)}\\,dx = \\frac{1}{5}\\log\\left|\\frac{x^5}{x^5 + 1}\\right| + C$ तथा $\\int \\frac{1}{x(x^4 - 1)}\\,dx = \\frac{1}{4}\\log\\left|\\frac{x^4 - 1}{x^4}\\right| + C$।"
-      },
-      {
-        "trickNo": 10,
-        "name": "समान एवं विपरीत सीमा योग (Identical & Inverted Limits)",
-        "formula": "$$\\int_a^a f(x)\\,dx = 0 \\quad \\text{तथा} \\quad \\int_\\alpha^\\beta \\phi(x)\\,dx + \\int_\\beta^\\alpha \\phi(x)\\,dx = 0$$",
-        "speed": "1 सेकंड",
-        "application": "यदि समाकलन की दोनों सीमाएँ समान हों, अथवा दो समाकलनों की सीमाएँ परस्पर विपरीत होकर जुड़ रही हों, तो परिणाम सदैव $0$ होता है।"
       }
     ]
   }
