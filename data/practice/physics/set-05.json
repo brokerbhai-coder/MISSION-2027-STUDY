@@ -1,9 +1,9 @@
 {
-  "_help": "Class 12 Physics Akhand Mega Revision (Chapter 1, 2, 3) Objective Questions - Bihar Board[span_1](start_span)[span_1](end_span)[span_2](start_span)[span_2](end_span)",
+  "_help": "कक्षा 12 भौतिकी – अखंड मेगा रिवीजन (अध्याय 1, 2 एवं 3) के वस्तुनिष्ठ प्रश्न",
   "schemaVersion": 1,
   "subject": "physics",
-  "title": "Class 12 Physics - Akhand Mega Revision (Ch 1 to 3)",
-  "description": "Bihar Board Class 12 Physics Chapter 1 (वैद्युत आवेश तथा क्षेत्र), Chapter 2 (स्थिरवैद्युत विभव तथा धारिता), एवं Chapter 3 (विद्युत धारा) के महत्वपूर्ण वस्तुनिष्ठ प्रश्न[span_3](start_span)[span_3](end_span)",
+  "title": "कक्षा 12 भौतिकी – अखंड मेगा रिवीजन (अध्याय 1 से 3)",
+  "description": "बिहार बोर्ड कक्षा 12 भौतिकी के अध्याय 1 (वैद्युत आवेश तथा क्षेत्र), अध्याय 2 (स्थिरवैद्युत विभव तथा धारिता) एवं अध्याय 3 (विद्युत धारा) के महत्वपूर्ण वस्तुनिष्ठ प्रश्न",
   "timeLimitMinutes": 120,
   "questions": [
     {
@@ -17,7 +17,7 @@
         "D": "[ML²T⁻³A⁻¹]"
       },
       "answer": "B",
-      "explanation": "E = F / q = [MLT⁻²] / [AT] = [MLT⁻³A⁻¹][span_4](start_span)[span_4](end_span)।"
+      "explanation": "E = F / q = [MLT⁻²] / [AT] = [MLT⁻³A⁻¹]।"
     },
     {
       "id": "AKH-PHY-002",
@@ -30,7 +30,7 @@
         "D": "शून्य"
       },
       "answer": "B",
-      "explanation": "P = q × 2a = 5 × (5 × 10⁻²) = 25 × 10⁻² C-m[span_5](start_span)[span_5](end_span)।"
+      "explanation": "P = q × 2a = 5 × (5 × 10⁻²) = 25 × 10⁻² C-m।"
     },
     {
       "id": "AKH-PHY-003",
@@ -43,7 +43,7 @@
         "D": "सर्वत्र शून्य रहता है"
       },
       "answer": "D",
-      "explanation": "चालक गोले के भीतर प्रत्येक बिंदु पर स्थिरवैद्युत क्षेत्र सदैव शून्य (E = 0) रहता है[span_6](start_span)[span_6](end_span)।"
+      "explanation": "चालक गोले के भीतर प्रत्येक बिंदु पर स्थिरवैद्युत क्षेत्र सदैव शून्य (E = 0) रहता है।"
     },
     {
       "id": "AKH-PHY-004",
@@ -56,7 +56,7 @@
         "D": "शून्य"
       },
       "answer": "D",
-      "explanation": "प्रत्येक द्विध्रुव पर नेट आवेश शून्य होता है, अतः Σq = 0 होने से कुल फ्लक्स शून्य होगा[span_7](start_span)[span_7](end_span)।"
+      "explanation": "प्रत्येक द्विध्रुव पर नेट आवेश शून्य होता है, अतः Σq = 0 होने से कुल फ्लक्स शून्य होगा।"
     },
     {
       "id": "AKH-PHY-005",
@@ -69,7 +69,7 @@
         "D": "[M⁻¹L⁻²T⁴A²]"
       },
       "answer": "B",
-      "explanation": "ε₀ = q₁q₂ / (4π F r²) = [A²T²] / ([MLT⁻²][L²]) = [M⁻¹L⁻³T⁴A²][span_8](start_span)[span_8](end_span)।"
+      "explanation": "ε₀ = q₁q₂ / (4π F r²) = [A²T²] / ([MLT⁻²][L²]) = [M⁻¹L⁻³T⁴A²]।"
     },
     {
       "id": "AKH-PHY-006",
@@ -82,7 +82,7 @@
         "D": "4F"
       },
       "answer": "A",
-      "explanation": "F' = k (2q₁)(2q₂) / (2d)² = 4/4 F = F[span_9](start_span)[span_9](end_span)।"
+      "explanation": "F' = k (2q₁)(2q₂) / (2d)² = 4/4 F = F।"
     },
     {
       "id": "AKH-PHY-007",
@@ -95,7 +95,7 @@
         "D": "न नेट बल और नहीं बल आघूर्ण"
       },
       "answer": "B",
-      "explanation": "एक समान विद्युत क्षेत्र में नेट बल शून्य (F_net = 0) होता है, परंतु बल आघूर्ण τ = p × E कार्य करता है[span_10](start_span)[span_10](end_span)।"
+      "explanation": "एक समान विद्युत क्षेत्र में नेट बल शून्य (F_net = 0) होता है, परंतु बल आघूर्ण τ = p × E कार्य करता है।"
     },
     {
       "id": "AKH-PHY-008",
@@ -108,7 +108,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "C",
-      "explanation": "असमान विद्युत क्षेत्र में दोनों आवेशों पर लगने वाले बल असमान होते हैं, जिससे नेट बल और बल आघूर्ण दोनों उत्पन्न होते हैं[span_11](start_span)[span_11](end_span)।"
+      "explanation": "असमान विद्युत क्षेत्र में दोनों आवेशों पर लगने वाले बल असमान होते हैं, जिससे नेट बल और बल आघूर्ण दोनों उत्पन्न होते हैं।"
     },
     {
       "id": "AKH-PHY-009",
@@ -121,7 +121,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "B",
-      "explanation": "समान दूरी r पर अक्षीय क्षेत्र निरक्षीय क्षेत्र का दोगुना होता है: E_a = 2 E_e[span_12](start_span)[span_12](end_span)।"
+      "explanation": "समान दूरी r पर अक्षीय क्षेत्र निरक्षीय क्षेत्र का दोगुना होता है: E_a = 2 E_e।"
     },
     {
       "id": "AKH-PHY-010",
@@ -134,7 +134,7 @@
         "D": "√2 PE"
       },
       "answer": "C",
-      "explanation": "W = PE (cos 0° - cos 90°) = PE (1 - 0) = PE[span_13](start_span)[span_13](end_span)।"
+      "explanation": "W = PE (cos 0° - cos 90°) = PE (1 - 0) = PE।"
     },
     {
       "id": "AKH-PHY-011",
@@ -147,7 +147,7 @@
         "D": "7.5 N"
       },
       "answer": "C",
-      "explanation": "नया आवेश: q₁' = -3µC तथा q₂' = -2µC। F₂ / F₁ = (3 × 2) / (3 × 4) = 6/12 = 1/2; अतः F₂ = 10 / 2 = 5 N[span_14](start_span)[span_14](end_span)।"
+      "explanation": "नया आवेश: q₁' = -3µC तथा q₂' = -2µC। F₂ / F₁ = (3 × 2) / (3 × 4) = 6/12 = 1/2; अतः F₂ = 10 / 2 = 5 N।"
     },
     {
       "id": "AKH-PHY-012",
@@ -160,7 +160,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "A",
-      "explanation": "φ = E · A = (N/C) × m² = N m² C⁻¹ (या वोल्ट-मीटर)[span_15](start_span)[span_15](end_span)।"
+      "explanation": "φ = E · A = (N/C) × m² = N m² C⁻¹ (या वोल्ट-मीटर)।"
     },
     {
       "id": "AKH-PHY-013",
@@ -173,7 +173,7 @@
         "D": "36π × 10² N m²/C"
       },
       "answer": "A",
-      "explanation": "φ = q / ε₀ = 4πk q = 4π × (9 × 10⁹) × (10 × 10⁻⁶) = 36π × 10⁴ N m²/C[span_16](start_span)[span_16](end_span)।"
+      "explanation": "φ = q / ε₀ = 4πk q = 4π × (9 × 10⁹) × (10 × 10⁻⁶) = 36π × 10⁴ N m²/C।"
     },
     {
       "id": "AKH-PHY-014",
@@ -186,7 +186,7 @@
         "D": "(1/3) × 10⁻⁹"
       },
       "answer": "D",
-      "explanation": "1 C = 3 × 10⁹ statC होने से 1 statC = (1/3) × 10⁻⁹ C[span_17](start_span)[span_17](end_span)।"
+      "explanation": "1 C = 3 × 10⁹ statC होने से 1 statC = (1/3) × 10⁻⁹ C।"
     },
     {
       "id": "AKH-PHY-015",
@@ -199,7 +199,7 @@
         "D": "7.86 × 10⁻²⁷ C-m"
       },
       "answer": "B",
-      "explanation": "P = q × 2l = 3.2 × 10⁻¹⁹ × 2.4 × 10⁻¹⁰ = 7.68 × 10⁻²⁹ C-m[span_18](start_span)[span_18](end_span)।"
+      "explanation": "P = q × 2l = 3.2 × 10⁻¹⁹ × 2.4 × 10⁻¹⁰ = 7.68 × 10⁻²⁹ C-m।"
     },
     {
       "id": "AKH-PHY-016",
@@ -212,7 +212,7 @@
         "D": "कूलॉम का नियम"
       },
       "answer": "D",
-      "explanation": "स्थिरवैद्युत आकर्षण या प्रतिकर्षण बल कूलॉम के नियम द्वारा निर्धारित होता है[span_19](start_span)[span_19](end_span)।"
+      "explanation": "स्थिरवैद्युत आकर्षण या प्रतिकर्षण बल कूलॉम के नियम द्वारा निर्धारित होता है।"
     },
     {
       "id": "AKH-PHY-017",
@@ -225,7 +225,7 @@
         "D": "100"
       },
       "answer": "C",
-      "explanation": "आवेश के क्वांटीकरण के अनुसार n केवल पूर्णांक हो सकता है, 4.2 संभव नहीं है[span_20](start_span)[span_20](end_span)।"
+      "explanation": "आवेश के क्वांटीकरण के अनुसार n केवल पूर्णांक हो सकता है, 4.2 संभव नहीं है।"
     },
     {
       "id": "AKH-PHY-018",
@@ -238,7 +238,7 @@
         "D": "1"
       },
       "answer": "A",
-      "explanation": "दो इलेक्ट्रॉनों के बीच F_e / F_g का मान लगभग 10⁴² के क्रम का होता है[span_21](start_span)[span_21](end_span)।"
+      "explanation": "दो इलेक्ट्रॉनों के बीच F_e / F_g का मान लगभग 10⁴² के क्रम का होता है।"
     },
     {
       "id": "AKH-PHY-019",
@@ -251,7 +251,7 @@
         "D": "+Q / 4"
       },
       "answer": "B",
-      "explanation": "सिरे के आवेश पर नेट बल शून्य करने पर: k Q² / (2r)² + k Qq / r² = 0 ⇒ q = -Q/4[span_22](start_span)[span_22](end_span)।"
+      "explanation": "सिरे के आवेश पर नेट बल शून्य करने पर: k Q² / (2r)² + k Qq / r² = 0 ⇒ q = -Q/4।"
     },
     {
       "id": "AKH-PHY-020",
@@ -264,7 +264,7 @@
         "D": "0"
       },
       "answer": "D",
-      "explanation": "स्थायी साम्यावस्था के लिए p और E समान दिशा में होने चाहिए (θ = 0°)[span_23](start_span)[span_23](end_span)।"
+      "explanation": "स्थायी साम्यावस्था के लिए p और E समान दिशा में होने चाहिए (θ = 0°)।"
     },
     {
       "id": "AKH-PHY-021",
@@ -277,7 +277,7 @@
         "D": "विद्युत तीव्रता"
       },
       "answer": "D",
-      "explanation": "विद्युत क्षेत्र की तीव्रता एक सदिश राशि है[span_24](start_span)[span_24](end_span)।"
+      "explanation": "विद्युत क्षेत्र की तीव्रता एक सदिश राशि है।"
     },
     {
       "id": "AKH-PHY-022",
@@ -290,7 +290,7 @@
         "D": "निम्न धारा एवं निम्न वोल्टेज"
       },
       "answer": "B",
-      "explanation": "वान डी ग्राफ जनित्र का उपयोग कई लाख वोल्ट का अति उच्च विभव उत्पन्न करने में होता है[span_25](start_span)[span_25](end_span)।"
+      "explanation": "वान डी ग्राफ जनित्र का उपयोग कई लाख वोल्ट का अति उच्च विभव उत्पन्न करने में होता है।"
     },
     {
       "id": "AKH-PHY-023",
@@ -303,7 +303,7 @@
         "D": "C² N⁻¹ m⁻²"
       },
       "answer": "D",
-      "explanation": "कूलॉम के नियम से ε₀ का मात्रक C² N⁻¹ m⁻² होता है[span_26](start_span)[span_26](end_span)।"
+      "explanation": "कूलॉम के नियम से ε₀ का मात्रक C² N⁻¹ m⁻² होता है।"
     },
     {
       "id": "AKH-PHY-024",
@@ -316,7 +316,7 @@
         "D": "(4πε₀)⁻¹"
       },
       "answer": "B",
-      "explanation": "φ = q / ε₀ = 1 / ε₀ = (ε₀)⁻¹[span_27](start_span)[span_27](end_span)।"
+      "explanation": "φ = q / ε₀ = 1 / ε₀ = (ε₀)⁻¹।"
     },
     {
       "id": "AKH-PHY-025",
@@ -329,7 +329,7 @@
         "D": "विद्युत स्पेस"
       },
       "answer": "C",
-      "explanation": "E = F / q को विद्युत क्षेत्र की तीव्रता कहते हैं[span_28](start_span)[span_28](end_span)।"
+      "explanation": "E = F / q को विद्युत क्षेत्र की तीव्रता कहते हैं।"
     },
     {
       "id": "AKH-PHY-026",
@@ -342,7 +342,7 @@
         "D": "एक कण पर न्यूनतम अनुमेय आवेश होता है"
       },
       "answer": "A",
-      "explanation": "q = ±ne से स्पष्ट है कि आवेश इलेक्ट्रॉन के मूल आवेश का केवल पूर्ण गुणज हो सकता है, भिन्नात्मक अंश नहीं[span_29](start_span)[span_29](end_span)।"
+      "explanation": "q = ±ne से स्पष्ट है कि आवेश इलेक्ट्रॉन के मूल आवेश का केवल पूर्ण गुणज हो सकता है, भिन्नात्मक अंश नहीं।"
     },
     {
       "id": "AKH-PHY-027",
@@ -355,7 +355,7 @@
         "D": "इनमें से सभी"
       },
       "answer": "D",
-      "explanation": "बल रेखाओं के घनत्व से प्रबलता, स्पर्श रेखा से दिशा और उद्गम/समाप्ति से आवेश की प्रकृति ज्ञात होती है[span_30](start_span)[span_30](end_span)।"
+      "explanation": "बल रेखाओं के घनत्व से प्रबलता, स्पर्श रेखा से दिशा और उद्गम/समाप्ति से आवेश की प्रकृति ज्ञात होती है।"
     },
     {
       "id": "AKH-PHY-028",
@@ -368,7 +368,7 @@
         "D": "E = q / F"
       },
       "answer": "B",
-      "explanation": "एकांक परीक्षण आवेश पर लगने वाले बल को विद्युत क्षेत्र की तीव्रता कहते हैं: E = F / q[span_31](start_span)[span_31](end_span)।"
+      "explanation": "एकांक परीक्षण आवेश पर लगने वाले बल को विद्युत क्षेत्र की तीव्रता कहते हैं: E = F / q।"
     },
     {
       "id": "AKH-PHY-029",
@@ -381,7 +381,7 @@
         "D": "σ = Q · A"
       },
       "answer": "A",
-      "explanation": "प्रति एकांक क्षेत्रफल पर उपस्थित आवेश पृष्ठीय आवेश घनत्व कहलाता है: σ = Q / A[span_32](start_span)[span_32](end_span)।"
+      "explanation": "प्रति एकांक क्षेत्रफल पर उपस्थित आवेश पृष्ठीय आवेश घनत्व कहलाता है: σ = Q / A।"
     },
     {
       "id": "AKH-PHY-030",
@@ -394,7 +394,7 @@
         "D": "8.85 × 10¹¹ F/m"
       },
       "answer": "A",
-      "explanation": "ε₀ का मान 8.85 × 10⁻¹² F/m होता है[span_33](start_span)[span_33](end_span)।"
+      "explanation": "ε₀ का मान 8.85 × 10⁻¹² F/m होता है।"
     },
     {
       "id": "AKH-PHY-031",
@@ -407,7 +407,7 @@
         "D": "C / m"
       },
       "answer": "B",
-      "explanation": "p = q × 2l से इसका मात्रक कूलॉम-मीटर (C m) होता है[span_34](start_span)[span_34](end_span)।"
+      "explanation": "p = q × 2l से इसका मात्रक कूलॉम-मीटर (C m) होता है।"
     },
     {
       "id": "AKH-PHY-032",
@@ -420,7 +420,7 @@
         "D": "F⃗ = (1 / 4πε₀) · (q₁q₂ / |r⃗|²) r̂"
       },
       "answer": "A",
-      "explanation": "एकांक सदिश r̂ = r⃗ / |r⃗| रखने पर F⃗ = (1 / 4πε₀) · (q₁q₂ / |r⃗|³) r⃗ प्राप्त होता है[span_35](start_span)[span_35](end_span)।"
+      "explanation": "एकांक सदिश r̂ = r⃗ / |r⃗| रखने पर F⃗ = (1 / 4πε₀) · (q₁q₂ / |r⃗|³) r⃗ प्राप्त होता है।"
     },
     {
       "id": "AKH-PHY-033",
@@ -433,7 +433,7 @@
         "D": "E = 0"
       },
       "answer": "A",
-      "explanation": "किसी आवेशित चालक के ठीक बाहर विद्युत क्षेत्र E = σ / ε₀ होता है[span_36](start_span)[span_36](end_span)।"
+      "explanation": "किसी आवेशित चालक के ठीक बाहर विद्युत क्षेत्र E = σ / ε₀ होता है।"
     },
     {
       "id": "AKH-PHY-034",
@@ -446,7 +446,7 @@
         "D": "कम प्रोटॉन"
       },
       "answer": "B",
-      "explanation": "धनावेशित होने का अर्थ है कि वस्तु में सामान्य अवस्था से इलेक्ट्रॉनों की कमी है[span_37](start_span)[span_37](end_span)।"
+      "explanation": "धनावेशित होने का अर्थ है कि वस्तु में सामान्य अवस्था से इलेक्ट्रॉनों की कमी है।"
     },
     {
       "id": "AKH-PHY-035",
@@ -459,7 +459,7 @@
         "D": "9 × 10⁻¹² N m² C⁻²"
       },
       "answer": "A",
-      "explanation": "1 / (4πε₀) का मान 9 × 10⁹ N m² C⁻² होता है[span_38](start_span)[span_38](end_span)।"
+      "explanation": "1 / (4πε₀) का मान 9 × 10⁹ N m² C⁻² होता है।"
     },
     {
       "id": "AKH-PHY-036",
@@ -472,7 +472,7 @@
         "D": "ε - ε₀"
       },
       "answer": "A",
-      "explanation": "आपेक्षिक परावैद्युतता माध्यम की विद्युतशीलता तथा निर्वात की विद्युतशीलता का अनुपात (ε / ε₀) होती है[span_39](start_span)[span_39](end_span)।"
+      "explanation": "आपेक्षिक परावैद्युतता माध्यम की विद्युतशीलता तथा निर्वात की विद्युतशीलता का अनुपात (ε / ε₀) होती है।"
     },
     {
       "id": "AKH-PHY-037",
@@ -485,7 +485,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "B",
-      "explanation": "चालक के समस्त आंतरिक भाग तथा केंद्र पर विद्युत क्षेत्र E = 0 होता है[span_40](start_span)[span_40](end_span)।"
+      "explanation": "चालक के समस्त आंतरिक भाग तथा केंद्र पर विद्युत क्षेत्र E = 0 होता है।"
     },
     {
       "id": "AKH-PHY-038",
@@ -498,7 +498,7 @@
         "D": "9 × 10⁹"
       },
       "answer": "C",
-      "explanation": "निर्वात एवं वायु के लिए आपेक्षिक विद्युतशीलता ε_r का मान 1 माना जाता है[span_41](start_span)[span_41](end_span)।"
+      "explanation": "निर्वात एवं वायु के लिए आपेक्षिक विद्युतशीलता ε_r का मान 1 माना जाता है।"
     },
     {
       "id": "AKH-PHY-039",
@@ -511,7 +511,7 @@
         "D": "√(qE)"
       },
       "answer": "A",
-      "explanation": "F = qE[span_42](start_span)[span_42](end_span)।"
+      "explanation": "F = qE।"
     },
     {
       "id": "AKH-PHY-040",
@@ -524,7 +524,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "B",
-      "explanation": "विभवांतर मापने के लिए वोल्टमीटर का उपयोग किया जाता है[span_43](start_span)[span_43](end_span)।"
+      "explanation": "विभवांतर मापने के लिए वोल्टमीटर का उपयोग किया जाता है।"
     },
     {
       "id": "AKH-PHY-041",
@@ -537,7 +537,7 @@
         "D": "शून्य"
       },
       "answer": "B",
-      "explanation": "गॉस नियम से अनंत लंबे रेखीय आवेश के कारण E = λ / (2πε₀ r) होता है[span_44](start_span)[span_44](end_span)।"
+      "explanation": "गॉस नियम से अनंत लंबे रेखीय आवेश के कारण E = λ / (2πε₀ r) होता है।"
     },
     {
       "id": "AKH-PHY-042",
@@ -550,7 +550,7 @@
         "D": "कोई नहीं"
       },
       "answer": "B",
-      "explanation": "खोखले चालक के भीतर कोई आवेश न होने से विद्युत क्षेत्र शून्य होता है[span_45](start_span)[span_45](end_span)।"
+      "explanation": "खोखले चालक के भीतर कोई आवेश न होने से विद्युत क्षेत्र शून्य होता है।"
     },
     {
       "id": "AKH-PHY-043",
@@ -563,7 +563,7 @@
         "D": "(वोल्ट)(मीटर)⁻¹"
       },
       "answer": "C",
-      "explanation": "E = V/m होने के कारण φ = E × A = (V/m) × m² = वोल्ट-मीटर होता है[span_46](start_span)[span_46](end_span)।"
+      "explanation": "E = V/m होने के कारण φ = E × A = (V/m) × m² = वोल्ट-मीटर होता है।"
     },
     {
       "id": "AKH-PHY-044",
@@ -576,7 +576,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "C",
-      "explanation": "n = q / e = 1 / (1.6 × 10⁻¹⁹) = 6.25 × 10¹⁸ इलेक्ट्रॉन[span_47](start_span)[span_47](end_span)।"
+      "explanation": "n = q / e = 1 / (1.6 × 10⁻¹⁹) = 6.25 × 10¹⁸ इलेक्ट्रॉन।"
     },
     {
       "id": "AKH-PHY-045",
@@ -589,7 +589,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "C",
-      "explanation": "प्रकृति में स्वतंत्र रूप से पाया जाने वाला न्यूनतम आवेश मूल आवेश e = 1.6 × 10⁻¹⁹ C है[span_48](start_span)[span_48](end_span)।"
+      "explanation": "प्रकृति में स्वतंत्र रूप से पाया जाने वाला न्यूनतम आवेश मूल आवेश e = 1.6 × 10⁻¹⁹ C है।"
     },
     {
       "id": "AKH-PHY-046",
@@ -602,7 +602,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "A",
-      "explanation": "गॉस के नियमानुसार φ = q / ε₀[span_49](start_span)[span_49](end_span)।"
+      "explanation": "गॉस के नियमानुसार φ = q / ε₀।"
     },
     {
       "id": "AKH-PHY-047",
@@ -615,7 +615,7 @@
         "D": "6.25 × 10¹¹"
       },
       "answer": "D",
-      "explanation": "n = (100 × 10⁻⁹) / (1.6 × 10⁻¹⁹) = 6.25 × 10¹¹[span_50](start_span)[span_50](end_span)।"
+      "explanation": "n = (100 × 10⁻⁹) / (1.6 × 10⁻¹⁹) = 6.25 × 10¹¹।"
     },
     {
       "id": "AKH-PHY-048",
@@ -628,7 +628,7 @@
         "D": "E = 2σ / ε₀"
       },
       "answer": "A",
-      "explanation": "चालक की दोनों सतहों के योगदान से कुल क्षेत्र E = σ / ε₀ होता है[span_51](start_span)[span_51](end_span)।"
+      "explanation": "चालक की दोनों सतहों के योगदान से कुल क्षेत्र E = σ / ε₀ होता है।"
     },
     {
       "id": "AKH-PHY-049",
@@ -641,7 +641,7 @@
         "D": "[AT²]"
       },
       "answer": "A",
-      "explanation": "q = I × t = [AT][span_52](start_span)[span_52](end_span)।"
+      "explanation": "q = I × t = [AT]।"
     },
     {
       "id": "AKH-PHY-050",
@@ -654,7 +654,7 @@
         "D": "F m"
       },
       "answer": "B",
-      "explanation": "ε₀ का मात्रक फैरड प्रति मीटर (F m⁻¹) होता है[span_53](start_span)[span_53](end_span)।"
+      "explanation": "ε₀ का मात्रक फैरड प्रति मीटर (F m⁻¹) होता है।"
     },
     {
       "id": "AKH-PHY-051",
@@ -667,7 +667,7 @@
         "D": "विद्युत क्षेत्र"
       },
       "answer": "D",
-      "explanation": "E = -dV/dr सूत्र से विद्युत क्षेत्र की इकाई V/m होती है[span_54](start_span)[span_54](end_span)।"
+      "explanation": "E = -dV/dr सूत्र से विद्युत क्षेत्र की इकाई V/m होती है।"
     },
     {
       "id": "AKH-PHY-052",
@@ -680,7 +680,7 @@
         "D": "(1/2) F"
       },
       "answer": "A",
-      "explanation": "F ∝ 1/r²; दूरी r/2 करने पर बल 4F हो जाएगा[span_55](start_span)[span_55](end_span)।"
+      "explanation": "F ∝ 1/r²; दूरी r/2 करने पर बल 4F हो जाएगा।"
     },
     {
       "id": "AKH-PHY-053",
@@ -693,7 +693,7 @@
         "D": "बढ़ या घट सकता है"
       },
       "answer": "D",
-      "explanation": "धनावेशित होने पर इलेक्ट्रॉन निकलने से द्रव्यमान घटता है तथा ऋणावेशित होने पर बढ़ता है[span_56](start_span)[span_56](end_span)।"
+      "explanation": "धनावेशित होने पर इलेक्ट्रॉन निकलने से द्रव्यमान घटता है तथा ऋणावेशित होने पर बढ़ता है।"
     },
     {
       "id": "AKH-PHY-054",
@@ -706,7 +706,7 @@
         "D": "30°"
       },
       "answer": "B",
-      "explanation": "τ = pE sin θ; sin 90° = 1 अधिकतम होने से τ_max = pE होता है[span_57](start_span)[span_57](end_span)।"
+      "explanation": "τ = pE sin θ; sin 90° = 1 अधिकतम होने से τ_max = pE होता है।"
     },
     {
       "id": "AKH-PHY-055",
@@ -719,7 +719,7 @@
         "D": "अनंत"
       },
       "answer": "A",
-      "explanation": "द्विध्रुव में +q और -q समान व विपरीत आवेश होते हैं, अतः कुल नेट आवेश शून्य होता है[span_58](start_span)[span_58](end_span)।"
+      "explanation": "द्विध्रुव में +q और -q समान व विपरीत आवेश होते हैं, अतः कुल नेट आवेश शून्य होता है।"
     },
     {
       "id": "AKH-PHY-056",
@@ -732,7 +732,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "B",
-      "explanation": "परिवृत्त कुल आवेश शून्य होने से कुल विद्युत फ्लक्स शून्य होता है[span_59](start_span)[span_59](end_span)।"
+      "explanation": "परिवृत्त कुल आवेश शून्य होने से कुल विद्युत फ्लक्स शून्य होता है।"
     },
     {
       "id": "AKH-PHY-057",
@@ -745,7 +745,7 @@
         "D": "शून्य हो जाती है"
       },
       "answer": "A",
-      "explanation": "समान आवेशों के बीच स्थिरवैद्युत प्रतिकर्षण के कारण बुलबुला फैलता है और त्रिज्या बढ़ती है[span_60](start_span)[span_60](end_span)।"
+      "explanation": "समान आवेशों के बीच स्थिरवैद्युत प्रतिकर्षण के कारण बुलबुला फैलता है और त्रिज्या बढ़ती है।"
     },
     {
       "id": "AKH-PHY-058",
@@ -758,7 +758,7 @@
         "D": "(1/2) σ ε₀"
       },
       "answer": "C",
-      "explanation": "असीमित अचालक/पतली चादर के निकट E = σ / (2ε₀) होता है[span_61](start_span)[span_61](end_span)।"
+      "explanation": "असीमित अचालक/पतली चादर के निकट E = σ / (2ε₀) होता है।"
     },
     {
       "id": "AKH-PHY-059",
@@ -771,7 +771,7 @@
         "D": "कूलॉम मीटर"
       },
       "answer": "A",
-      "explanation": "σ = q / A = C / m²[span_62](start_span)[span_62](end_span)।"
+      "explanation": "σ = q / A = C / m²।"
     },
     {
       "id": "AKH-PHY-060",
@@ -784,7 +784,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "C",
-      "explanation": "ρ = q / V[span_63](start_span)[span_63](end_span)।"
+      "explanation": "ρ = q / V।"
     },
     {
       "id": "AKH-PHY-061",
@@ -797,7 +797,7 @@
         "D": "σ² / ε₀"
       },
       "answer": "B",
-      "explanation": "आवेशित गोलीय चालक के अंदर विद्युत क्षेत्र शून्य होता है[span_64](start_span)[span_64](end_span)।"
+      "explanation": "आवेशित गोलीय चालक के अंदर विद्युत क्षेत्र शून्य होता है।"
     },
     {
       "id": "AKH-PHY-062",
@@ -810,7 +810,7 @@
         "D": "P / E"
       },
       "answer": "B",
-      "explanation": "चालक की सतह के ठीक बाहर विद्युत क्षेत्र E = σ / ε₀ होता है[span_65](start_span)[span_65](end_span)।"
+      "explanation": "चालक की सतह के ठीक बाहर विद्युत क्षेत्र E = σ / ε₀ होता है।"
     },
     {
       "id": "AKH-PHY-063",
@@ -823,7 +823,7 @@
         "D": "q² / ε₀"
       },
       "answer": "B",
-      "explanation": "गॉस के नियमानुसार φ = q / ε₀[span_66](start_span)[span_66](end_span)।"
+      "explanation": "गॉस के नियमानुसार φ = q / ε₀।"
     },
     {
       "id": "AKH-PHY-064",
@@ -836,7 +836,7 @@
         "D": "E ∝ r"
       },
       "answer": "B",
-      "explanation": "E = k q / r² से E ∝ 1/r²[span_67](start_span)[span_67](end_span)।"
+      "explanation": "E = k q / r² से E ∝ 1/r²।"
     },
     {
       "id": "AKH-PHY-065",
@@ -849,7 +849,7 @@
         "D": "E ∝ r"
       },
       "answer": "C",
-      "explanation": "द्विध्रुव के लिए E ∝ 1/r³ होता है[span_68](start_span)[span_68](end_span)।"
+      "explanation": "द्विध्रुव के लिए E ∝ 1/r³ होता है।"
     },
     {
       "id": "AKH-PHY-066",
@@ -862,7 +862,7 @@
         "D": "E ∝ r"
       },
       "answer": "A",
-      "explanation": "E = λ / (2πε₀ r) से E ∝ 1/r[span_69](start_span)[span_69](end_span)।"
+      "explanation": "E = λ / (2πε₀ r) से E ∝ 1/r।"
     },
     {
       "id": "AKH-PHY-067",
@@ -875,7 +875,7 @@
         "D": "ऊपर का सभी"
       },
       "answer": "A",
-      "explanation": "गॉस के नियमानुसार फ्लक्स केवल परिबद्ध कुल आवेश पर निर्भर करता है[span_70](start_span)[span_70](end_span)।"
+      "explanation": "गॉस के नियमानुसार फ्लक्स केवल परिबद्ध कुल आवेश पर निर्भर करता है।"
     },
     {
       "id": "AKH-PHY-068",
@@ -888,7 +888,7 @@
         "D": "कोई नहीं"
       },
       "answer": "A",
-      "explanation": "1 C = 3 × 10⁹ esu (statC)[span_71](start_span)[span_71](end_span)।"
+      "explanation": "1 C = 3 × 10⁹ esu (statC)।"
     },
     {
       "id": "AKH-PHY-069",
@@ -901,7 +901,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "C",
-      "explanation": "कूलॉम बल आवेशों के केंद्रों को मिलाने वाली रेखा के अनुदिश लगता है और वैद्युत प्रकृति का होता है[span_72](start_span)[span_72](end_span)।"
+      "explanation": "कूलॉम बल आवेशों के केंद्रों को मिलाने वाली रेखा के अनुदिश लगता है और वैद्युत प्रकृति का होता है।"
     },
     {
       "id": "AKH-PHY-070",
@@ -914,7 +914,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "A",
-      "explanation": "स्थिरवैद्युत बल क्षेत्र में किसी बंद पथ पर किया गया कार्य शून्य होता है, अतः यह संरक्षी होता है[span_73](start_span)[span_73](end_span)।"
+      "explanation": "स्थिरवैद्युत बल क्षेत्र में किसी बंद पथ पर किया गया कार्य शून्य होता है, अतः यह संरक्षी होता है।"
     },
     {
       "id": "AKH-PHY-071",
@@ -927,7 +927,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "C",
-      "explanation": "A से इलेक्ट्रॉन निकले (द्रव्यमान घटा) और B पर इलेक्ट्रॉन जुड़े (द्रव्यमान बढ़ा), अतः m_A < m_B[span_74](start_span)[span_74](end_span)।"
+      "explanation": "A से इलेक्ट्रॉन निकले (द्रव्यमान घटा) और B पर इलेक्ट्रॉन जुड़े (द्रव्यमान बढ़ा), अतः m_A < m_B।"
     },
     {
       "id": "AKH-PHY-072",
@@ -940,7 +940,7 @@
         "D": "-4 N"
       },
       "answer": "D",
-      "explanation": "q₁' = -2 µC, q₂' = +2 µC। F₂ = (2 × 2 / (2 × 6)) × 12 = 4 N (विपरीत आवेश होने से आकर्षण अर्थात् -4 N)[span_75](start_span)[span_75](end_span)।"
+      "explanation": "q₁' = -2 µC, q₂' = +2 µC। F₂ = (2 × 2 / (2 × 6)) × 12 = 4 N (विपरीत आवेश होने से आकर्षण अर्थात् -4 N)।"
     },
     {
       "id": "AKH-PHY-073",
@@ -953,7 +953,7 @@
         "D": "E = (dr / dV)"
       },
       "answer": "A",
-      "explanation": "विद्युत क्षेत्र विभव प्रवणता के ऋणात्मक मान के बराबर होता है: E = -(dV/dr)[span_76](start_span)[span_76](end_span)।"
+      "explanation": "विद्युत क्षेत्र विभव प्रवणता के ऋणात्मक मान के बराबर होता है: E = -(dV/dr)।"
     },
     {
       "id": "AKH-PHY-074",
@@ -966,7 +966,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "B",
-      "explanation": "दो द्विध्रुवों के बीच स्थितिज ऊर्जा दूरी के घन के व्युत्क्रमानुपाती (U ∝ r⁻³) होती है[span_77](start_span)[span_77](end_span)।"
+      "explanation": "दो द्विध्रुवों के बीच स्थितिज ऊर्जा दूरी के घन के व्युत्क्रमानुपाती (U ∝ r⁻³) होती है।"
     },
     {
       "id": "AKH-PHY-075",
@@ -979,7 +979,7 @@
         "D": "वैद्युत फ्लक्स का"
       },
       "answer": "C",
-      "explanation": "फैराड एवं पिको फैराड धारिता की इकाइयाँ हैं[span_78](start_span)[span_78](end_span)।"
+      "explanation": "फैराड एवं पिको फैराड धारिता की इकाइयाँ हैं।"
     },
     {
       "id": "AKH-PHY-076",
@@ -992,7 +992,7 @@
         "D": "प्लेटों के बीच अंतराल पर"
       },
       "answer": "C",
-      "explanation": "धारिता प्लेटों के ज्यामितीय विन्यास और माध्यम पर निर्भर करती है, आवेश Q पर नहीं[span_79](start_span)[span_79](end_span)।"
+      "explanation": "धारिता प्लेटों के ज्यामितीय विन्यास और माध्यम पर निर्भर करती है, आवेश Q पर नहीं।"
     },
     {
       "id": "AKH-PHY-077",
@@ -1005,7 +1005,7 @@
         "D": "1.11 सेमी"
       },
       "answer": "C",
-      "explanation": "R = C / (4πε₀) = 10⁻⁶ × 9 × 10⁹ = 9000 m = 9 km[span_80](start_span)[span_80](end_span)।"
+      "explanation": "R = C / (4πε₀) = 10⁻⁶ × 9 × 10⁹ = 9000 m = 9 km।"
     },
     {
       "id": "AKH-PHY-078",
@@ -1018,7 +1018,7 @@
         "D": "अनंत"
       },
       "answer": "D",
-      "explanation": "धातुओं के लिए आपेक्षिक परावैद्युत स्थिरांक K = ∞ होता है[span_81](start_span)[span_81](end_span)।"
+      "explanation": "धातुओं के लिए आपेक्षिक परावैद्युत स्थिरांक K = ∞ होता है।"
     },
     {
       "id": "AKH-PHY-079",
@@ -1031,7 +1031,7 @@
         "D": "2 / C"
       },
       "answer": "A",
-      "explanation": "बोर्ड मॉडल में संधारित्र परिपथ का तुल्य मान C दिया गया है[span_82](start_span)[span_82](end_span)।"
+      "explanation": "बोर्ड मॉडल में संधारित्र परिपथ का तुल्य मान C दिया गया है।"
     },
     {
       "id": "AKH-PHY-080",
@@ -1044,7 +1044,7 @@
         "D": "(1/9) µF"
       },
       "answer": "B",
-      "explanation": "श्रेणी शाखा: (6 × 6)/(6 + 6) = 3 µF; समानांतर में: C_net = 3 + 6 = 9 µF[span_83](start_span)[span_83](end_span)।"
+      "explanation": "श्रेणी शाखा: (6 × 6)/(6 + 6) = 3 µF; समानांतर में: C_net = 3 + 6 = 9 µF।"
     },
     {
       "id": "AKH-PHY-081",
@@ -1057,7 +1057,7 @@
         "D": "(2/3) µF"
       },
       "answer": "B",
-      "explanation": "शीर्ष शाखाओं का श्रेणी मान 2 µF, मध्य के साथ समानांतर होकर 4 µF, और अंततः श्रेणी संयोजन से C_net = 4/3 µF प्राप्त होता है[span_84](start_span)[span_84](end_span)।"
+      "explanation": "शीर्ष शाखाओं का श्रेणी मान 2 µF, मध्य के साथ समानांतर होकर 4 µF, और अंततः श्रेणी संयोजन से C_net = 4/3 µF प्राप्त होता है।"
     },
     {
       "id": "AKH-PHY-082",
@@ -1070,7 +1070,7 @@
         "D": "चार गुनी घट जायेगी"
       },
       "answer": "B",
-      "explanation": "C = ε₀A / d; दूरी d दोगुनी होने पर धारिता आधी (दोगुनी घट) हो जाती है[span_85](start_span)[span_85](end_span)।"
+      "explanation": "C = ε₀A / d; दूरी d दोगुनी होने पर धारिता आधी (दोगुनी घट) हो जाती है।"
     },
     {
       "id": "AKH-PHY-083",
@@ -1083,7 +1083,7 @@
         "D": "(1 / 4πε₀) · (pr² / cos θ)"
       },
       "answer": "B",
-      "explanation": "व्यापक स्थिति में द्विध्रुव का विभव V = (1 / 4πε₀) · (p cos θ / r²) होता है[span_86](start_span)[span_86](end_span)।"
+      "explanation": "व्यापक स्थिति में द्विध्रुव का विभव V = (1 / 4πε₀) · (p cos θ / r²) होता है।"
     },
     {
       "id": "AKH-PHY-084",
@@ -1096,7 +1096,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "A",
-      "explanation": "अनंत को मानक संदर्भ मानकर वहाँ विभव शून्य लिया जाता है[span_87](start_span)[span_87](end_span)।"
+      "explanation": "अनंत को मानक संदर्भ मानकर वहाँ विभव शून्य लिया जाता है।"
     },
     {
       "id": "AKH-PHY-085",
@@ -1109,7 +1109,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "B",
-      "explanation": "परावैद्युत अनिवार्यतः विद्युतरोधी (कुचालक) पदार्थ होते हैं जो ध्रुवण प्रदर्शित करते हैं[span_88](start_span)[span_88](end_span)।"
+      "explanation": "परावैद्युत अनिवार्यतः विद्युतरोधी (कुचालक) पदार्थ होते हैं जो ध्रुवण प्रदर्शित करते हैं।"
     },
     {
       "id": "AKH-PHY-086",
@@ -1122,7 +1122,7 @@
         "D": "(1 / 2n) CV²"
       },
       "answer": "B",
-      "explanation": "कुल धारिता nC होने से कुल ऊर्जा U = (1/2) (nC) V² = (1/2) nCV²[span_89](start_span)[span_89](end_span)।"
+      "explanation": "कुल धारिता nC होने से कुल ऊर्जा U = (1/2) (nC) V² = (1/2) nCV²।"
     },
     {
       "id": "AKH-PHY-087",
@@ -1135,7 +1135,7 @@
         "D": "R के"
       },
       "answer": "D",
-      "explanation": "C = 4πε₀ R से धारिता C ∝ R होती है[span_90](start_span)[span_90](end_span)।"
+      "explanation": "C = 4πε₀ R से धारिता C ∝ R होती है।"
     },
     {
       "id": "AKH-PHY-088",
@@ -1148,7 +1148,7 @@
         "D": "प्लेटों के बीच की दूरी पर"
       },
       "answer": "D",
-      "explanation": "C = ε₀A / d के अनुसार धारिता प्लेटों के बीच की दूरी d पर निर्भर करती है[span_91](start_span)[span_91](end_span)।"
+      "explanation": "C = ε₀A / d के अनुसार धारिता प्लेटों के बीच की दूरी d पर निर्भर करती है।"
     },
     {
       "id": "AKH-PHY-089",
@@ -1161,7 +1161,7 @@
         "D": "2.20"
       },
       "answer": "D",
-      "explanation": "K = C_medium / C_air = 110 / 50 = 2.20[span_92](start_span)[span_92](end_span)।"
+      "explanation": "K = C_medium / C_air = 110 / 50 = 2.20।"
     },
     {
       "id": "AKH-PHY-090",
@@ -1174,7 +1174,7 @@
         "D": "20 µF"
       },
       "answer": "D",
-      "explanation": "C_bada = n^(1/3) × C_chhota = 64^(1/3) × 5 = 4 × 5 = 20 µF[span_93](start_span)[span_93](end_span)।"
+      "explanation": "C_bada = n^(1/3) × C_chhota = 64^(1/3) × 5 = 4 × 5 = 20 µF।"
     },
     {
       "id": "AKH-PHY-091",
@@ -1187,7 +1187,7 @@
         "D": "समान रहती है"
       },
       "answer": "C",
-      "explanation": "सजातीय आवेशों के लिए U घटती है, जबकि विजातीय आवेशों के लिए U बढ़ती है[span_94](start_span)[span_94](end_span)।"
+      "explanation": "सजातीय आवेशों के लिए U घटती है, जबकि विजातीय आवेशों के लिए U बढ़ती है।"
     },
     {
       "id": "AKH-PHY-092",
@@ -1200,7 +1200,7 @@
         "D": "6 µF, 18 µF"
       },
       "answer": "C",
-      "explanation": "न्यूनतम (श्रेणी में) = 6/3 = 2 µF; अधिकतम (समानांतर में) = 6 × 3 = 18 µF[span_95](start_span)[span_95](end_span)।"
+      "explanation": "न्यूनतम (श्रेणी में) = 6/3 = 2 µF; अधिकतम (समानांतर में) = 6 × 3 = 18 µF।"
     },
     {
       "id": "AKH-PHY-093",
@@ -1213,7 +1213,7 @@
         "D": "अनंत"
       },
       "answer": "A",
-      "explanation": "संग्राहक प्लेट (+q) और संघनक प्लेट (-q) का योग सदैव शून्य होता है[span_96](start_span)[span_96](end_span)।"
+      "explanation": "संग्राहक प्लेट (+q) और संघनक प्लेट (-q) का योग सदैव शून्य होता है।"
     },
     {
       "id": "AKH-PHY-094",
@@ -1226,7 +1226,7 @@
         "D": "C = 4πε₀ (rR² / (r - R))"
       },
       "answer": "A",
-      "explanation": "C = 4πε₀ (rR / (r - R))[span_97](start_span)[span_97](end_span)।"
+      "explanation": "C = 4πε₀ (rR / (r - R))।"
     },
     {
       "id": "AKH-PHY-095",
@@ -1239,7 +1239,7 @@
         "D": "C = q / V"
       },
       "answer": "D",
-      "explanation": "धारिता की परिभाषा से C = q / V[span_98](start_span)[span_98](end_span)।"
+      "explanation": "धारिता की परिभाषा से C = q / V।"
     },
     {
       "id": "AKH-PHY-096",
@@ -1252,7 +1252,7 @@
         "D": "E = CV"
       },
       "answer": "B",
-      "explanation": "स्थितिज ऊर्जा E = (1/2) CV²[span_99](start_span)[span_99](end_span)।"
+      "explanation": "स्थितिज ऊर्जा E = (1/2) CV²।"
     },
     {
       "id": "AKH-PHY-097",
@@ -1265,7 +1265,7 @@
         "D": "10⁶ V/m"
       },
       "answer": "A",
-      "explanation": "सामान्य दाब पर शुष्क वायु का परावैद्युत सामर्थ्य 3 × 10⁶ V/m होता है[span_100](start_span)[span_100](end_span)।"
+      "explanation": "सामान्य दाब पर शुष्क वायु का परावैद्युत सामर्थ्य 3 × 10⁶ V/m होता है।"
     },
     {
       "id": "AKH-PHY-098",
@@ -1278,7 +1278,7 @@
         "D": "V_A - V_B = W_AB"
       },
       "answer": "A",
-      "explanation": "विभवान्तर ΔV = W / q[span_101](start_span)[span_101](end_span)।"
+      "explanation": "विभवान्तर ΔV = W / q।"
     },
     {
       "id": "AKH-PHY-099",
@@ -1291,7 +1291,7 @@
         "D": "V ∝ r⁻³"
       },
       "answer": "C",
-      "explanation": "द्विध्रुव के लिए V ∝ 1/r² = r⁻²[span_102](start_span)[span_102](end_span)।"
+      "explanation": "द्विध्रुव के लिए V ∝ 1/r² = r⁻²।"
     },
     {
       "id": "AKH-PHY-100",
@@ -1304,7 +1304,7 @@
         "D": "1 × 10⁻³ F"
       },
       "answer": "A",
-      "explanation": "1 माइक्रो फैराड = 10⁻⁶ F[span_103](start_span)[span_103](end_span)।"
+      "explanation": "1 माइक्रो फैराड = 10⁻⁶ F।"
     },
     {
       "id": "AKH-PHY-101",
@@ -1317,7 +1317,7 @@
         "D": "C = R / ε₀"
       },
       "answer": "A",
-      "explanation": "C = 4πε₀ R[span_104](start_span)[span_104](end_span)।"
+      "explanation": "C = 4πε₀ R।"
     },
     {
       "id": "AKH-PHY-102",
@@ -1330,7 +1330,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "C",
-      "explanation": "1 V = 1 J / 1 C[span_105](start_span)[span_105](end_span)।"
+      "explanation": "1 V = 1 J / 1 C।"
     },
     {
       "id": "AKH-PHY-103",
@@ -1343,7 +1343,7 @@
         "D": "सतह पर के समान"
       },
       "answer": "D",
-      "explanation": "खोखले चालक के भीतर प्रत्येक बिंदु पर विभव सतह के विभव के बराबर नियत रहता है[span_106](start_span)[span_106](end_span)।"
+      "explanation": "खोखले चालक के भीतर प्रत्येक बिंदु पर विभव सतह के विभव के बराबर नियत रहता है।"
     },
     {
       "id": "AKH-PHY-104",
@@ -1356,7 +1356,7 @@
         "D": "80 V"
       },
       "answer": "C",
-      "explanation": "V = k (Ze) / r = (9 × 10⁹ × 50 × 1.6 × 10⁻¹⁹) / (9 × 10⁻¹⁵) = 8 × 10⁶ V[span_107](start_span)[span_107](end_span)।"
+      "explanation": "V = k (Ze) / r = (9 × 10⁹ × 50 × 1.6 × 10⁻¹⁹) / (9 × 10⁻¹⁵) = 8 × 10⁶ V।"
     },
     {
       "id": "AKH-PHY-105",
@@ -1369,7 +1369,7 @@
         "D": "900 V"
       },
       "answer": "C",
-      "explanation": "V₁ = V × C₂ / (C₁ + C₂) = 1200 × 4 / 6 = 800 V[span_108](start_span)[span_108](end_span)।"
+      "explanation": "V₁ = V × C₂ / (C₁ + C₂) = 1200 × 4 / 6 = 800 V।"
     },
     {
       "id": "AKH-PHY-106",
@@ -1382,7 +1382,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "A",
-      "explanation": "परावैद्युत स्लैब डालने पर C' = KC बढ़ जाता है[span_109](start_span)[span_109](end_span)।"
+      "explanation": "परावैद्युत स्लैब डालने पर C' = KC बढ़ जाता है।"
     },
     {
       "id": "AKH-PHY-107",
@@ -1395,7 +1395,7 @@
         "D": "q² / ε₀"
       },
       "answer": "B",
-      "explanation": "गॉस के नियमानुसार φ = q / ε₀[span_110](start_span)[span_110](end_span)।"
+      "explanation": "गॉस के नियमानुसार φ = q / ε₀।"
     },
     {
       "id": "AKH-PHY-108",
@@ -1408,7 +1408,7 @@
         "D": "(1/9) µF"
       },
       "answer": "A",
-      "explanation": "C_parallel = 3 + 2 = 5 µF; C_net = (5 × 4) / (5 + 4) = 20/9 µF[span_111](start_span)[span_111](end_span)।"
+      "explanation": "C_parallel = 3 + 2 = 5 µF; C_net = (5 × 4) / (5 + 4) = 20/9 µF।"
     },
     {
       "id": "AKH-PHY-109",
@@ -1421,7 +1421,7 @@
         "D": "कुछ कहा नहीं जा सकता"
       },
       "answer": "A",
-      "explanation": "धारिता K गुना बढ़ जाती है[span_112](start_span)[span_112](end_span)।"
+      "explanation": "धारिता K गुना बढ़ जाती है।"
     },
     {
       "id": "AKH-PHY-110",
@@ -1434,7 +1434,7 @@
         "D": "1 / (3C)"
       },
       "answer": "C",
-      "explanation": "1/C_s = 1/C + 1/C + 1/C = 3/C ⇒ C_s = C/3[span_113](start_span)[span_113](end_span)।"
+      "explanation": "1/C_s = 1/C + 1/C + 1/C = 3/C ⇒ C_s = C/3।"
     },
     {
       "id": "AKH-PHY-111",
@@ -1447,7 +1447,7 @@
         "D": "(1 / 4πε₀) · (q² / r)"
       },
       "answer": "A",
-      "explanation": "बिंदु आवेश का विभव V = (1 / 4πε₀) · (q / r) होता है[span_114](start_span)[span_114](end_span)।"
+      "explanation": "बिंदु आवेश का विभव V = (1 / 4πε₀) · (q / r) होता है।"
     },
     {
       "id": "AKH-PHY-112",
@@ -1460,7 +1460,7 @@
         "D": "42.5"
       },
       "answer": "A",
-      "explanation": "जल का परावैद्युतांक लगभग 80 होता है[span_115](start_span)[span_115](end_span)।"
+      "explanation": "जल का परावैद्युतांक लगभग 80 होता है।"
     },
     {
       "id": "AKH-PHY-113",
@@ -1473,7 +1473,7 @@
         "D": "4πε₀ R²"
       },
       "answer": "B",
-      "explanation": "विलगित चालक गोले के रूप में पृथ्वी की धारिता 4πε₀ R होती है[span_116](start_span)[span_116](end_span)।"
+      "explanation": "विलगित चालक गोले के रूप में पृथ्वी की धारिता 4πε₀ R होती है।"
     },
     {
       "id": "AKH-PHY-114",
@@ -1486,7 +1486,7 @@
         "D": "0° और 180° के बीच"
       },
       "answer": "A",
-      "explanation": "विद्युत क्षेत्र रेखाएं समविभव तल के सदैव लंबवत (90°) होती हैं[span_117](start_span)[span_117](end_span)।"
+      "explanation": "विद्युत क्षेत्र रेखाएं समविभव तल के सदैव लंबवत (90°) होती हैं।"
     },
     {
       "id": "AKH-PHY-115",
@@ -1499,7 +1499,7 @@
         "D": "उपरोक्त सभी"
       },
       "answer": "D",
-      "explanation": "U = (1/2)QV = (1/2)CV² = Q²/(2C), तीनों सूत्र सही हैं[span_118](start_span)[span_118](end_span)।"
+      "explanation": "U = (1/2)QV = (1/2)CV² = Q²/(2C), तीनों सूत्र सही हैं।"
     },
     {
       "id": "AKH-PHY-116",
@@ -1512,7 +1512,7 @@
         "D": "1 J C"
       },
       "answer": "B",
-      "explanation": "1 V = 1 J / 1 C[span_119](start_span)[span_119](end_span)।"
+      "explanation": "1 V = 1 J / 1 C।"
     },
     {
       "id": "AKH-PHY-117",
@@ -1525,7 +1525,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "A",
-      "explanation": "C = 4πε₀ R से धारिता त्रिज्या R के समानुपाती होती है[span_120](start_span)[span_120](end_span)।"
+      "explanation": "C = 4πε₀ R से धारिता त्रिज्या R के समानुपाती होती है।"
     },
     {
       "id": "AKH-PHY-118",
@@ -1538,7 +1538,7 @@
         "D": "(1/2) ε₀ E²"
       },
       "answer": "D",
-      "explanation": "u = (1/2) ε₀ E²[span_121](start_span)[span_121](end_span)।"
+      "explanation": "u = (1/2) ε₀ E²।"
     },
     {
       "id": "AKH-PHY-119",
@@ -1551,7 +1551,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "C",
-      "explanation": "दूरी के साथ विभव परिवर्तन की दर dv / dx को विभव प्रवणता कहते हैं[span_122](start_span)[span_122](end_span)।"
+      "explanation": "दूरी के साथ विभव परिवर्तन की दर dv / dx को विभव प्रवणता कहते हैं।"
     },
     {
       "id": "AKH-PHY-120",
@@ -1564,7 +1564,7 @@
         "D": "A / (ε₀d)"
       },
       "answer": "A",
-      "explanation": "C = ε₀A / d[span_123](start_span)[span_123](end_span)।"
+      "explanation": "C = ε₀A / d।"
     },
     {
       "id": "AKH-PHY-121",
@@ -1577,7 +1577,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "A",
-      "explanation": "C = ε₀ ε_r A / d[span_124](start_span)[span_124](end_span)।"
+      "explanation": "C = ε₀ ε_r A / d।"
     },
     {
       "id": "AKH-PHY-122",
@@ -1590,7 +1590,7 @@
         "D": "9 F"
       },
       "answer": "A",
-      "explanation": "C = R / k = 9000 / (9 × 10⁹) = 10⁻⁶ F = 1 µF[span_125](start_span)[span_125](end_span)।"
+      "explanation": "C = R / k = 9000 / (9 × 10⁹) = 10⁻⁶ F = 1 µF।"
     },
     {
       "id": "AKH-PHY-123",
@@ -1603,7 +1603,7 @@
         "D": "1 / (2C)"
       },
       "answer": "A",
-      "explanation": "C_net = C + C = 2C[span_126](start_span)[span_126](end_span)।"
+      "explanation": "C_net = C + C = 2C।"
     },
     {
       "id": "AKH-PHY-124",
@@ -1616,7 +1616,7 @@
         "D": "PE (1 - cos θ)"
       },
       "answer": "B",
-      "explanation": "U = -p · E = -pE cos θ[span_127](start_span)[span_127](end_span)।"
+      "explanation": "U = -p · E = -pE cos θ।"
     },
     {
       "id": "AKH-PHY-125",
@@ -1629,7 +1629,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "C",
-      "explanation": "समविभव पृष्ठ पर विभवांतर शून्य होने के कारण W = q ΔV = 0 होता है[span_128](start_span)[span_128](end_span)।"
+      "explanation": "समविभव पृष्ठ पर विभवांतर शून्य होने के कारण W = q ΔV = 0 होता है।"
     },
     {
       "id": "AKH-PHY-126",
@@ -1642,7 +1642,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "A",
-      "explanation": "Q / V = C (धारिता) जो किसी चालक के लिए नियतांक रहती है[span_129](start_span)[span_129](end_span)।"
+      "explanation": "Q / V = C (धारिता) जो किसी चालक के लिए नियतांक रहती है।"
     },
     {
       "id": "AKH-PHY-127",
@@ -1655,7 +1655,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "B",
-      "explanation": "1 इलेक्ट्रॉन वोल्ट = 1.6 × 10⁻¹⁹ जूल[span_130](start_span)[span_130](end_span)।"
+      "explanation": "1 इलेक्ट्रॉन वोल्ट = 1.6 × 10⁻¹⁹ जूल।"
     },
     {
       "id": "AKH-PHY-128",
@@ -1668,7 +1668,7 @@
         "D": "1 / n²"
       },
       "answer": "C",
-      "explanation": "C_parallel / C_series = (nC) / (C/n) = n²[span_131](start_span)[span_131](end_span)।"
+      "explanation": "C_parallel / C_series = (nC) / (C/n) = n²।"
     },
     {
       "id": "AKH-PHY-129",
@@ -1681,7 +1681,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "A",
-      "explanation": "C_medium = K × C_air[span_132](start_span)[span_132](end_span)।"
+      "explanation": "C_medium = K × C_air।"
     },
     {
       "id": "AKH-PHY-130",
@@ -1694,7 +1694,7 @@
         "D": "18 µF"
       },
       "answer": "A",
-      "explanation": "C_s = C / 3 = 9 / 3 = 3 µF[span_133](start_span)[span_133](end_span)।"
+      "explanation": "C_s = C / 3 = 9 / 3 = 3 µF।"
     },
     {
       "id": "AKH-PHY-131",
@@ -1707,7 +1707,7 @@
         "D": "2 × 10⁻² F"
       },
       "answer": "B",
-      "explanation": "U = (1/2) CV² ⇒ 1 = (1/2) C (100)² ⇒ C = 2 / 10000 = 2 × 10⁻⁴ F[span_134](start_span)[span_134](end_span)।"
+      "explanation": "U = (1/2) CV² ⇒ 1 = (1/2) C (100)² ⇒ C = 2 / 10000 = 2 × 10⁻⁴ F।"
     },
     {
       "id": "AKH-PHY-132",
@@ -1720,7 +1720,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "B",
-      "explanation": "द्विध्रुव के निरक्षीय तल के प्रत्येक बिंदु पर विद्युत विभव शून्य होता है[span_135](start_span)[span_135](end_span)।"
+      "explanation": "द्विध्रुव के निरक्षीय तल के प्रत्येक बिंदु पर विद्युत विभव शून्य होता है।"
     },
     {
       "id": "AKH-PHY-133",
@@ -1733,7 +1733,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "B",
-      "explanation": "खोखले चालक के भीतर विद्युत क्षेत्र शून्य होने से विभव नियत (एक समान) रहता है[span_136](start_span)[span_136](end_span)।"
+      "explanation": "खोखले चालक के भीतर विद्युत क्षेत्र शून्य होने से विभव नियत (एक समान) रहता है।"
     },
     {
       "id": "AKH-PHY-134",
@@ -1746,7 +1746,7 @@
         "D": "1 / r³"
       },
       "answer": "C",
-      "explanation": "V ∝ 1/r²[span_137](start_span)[span_137](end_span)।"
+      "explanation": "V ∝ 1/r²।"
     },
     {
       "id": "AKH-PHY-135",
@@ -1759,7 +1759,7 @@
         "D": "[ML²T⁻³A⁻²]"
       },
       "answer": "A",
-      "explanation": "V = W / q = [ML²T⁻²] / [AT] = [ML²T⁻³A⁻¹][span_138](start_span)[span_138](end_span)।"
+      "explanation": "V = W / q = [ML²T⁻²] / [AT] = [ML²T⁻³A⁻¹]।"
     },
     {
       "id": "AKH-PHY-136",
@@ -1772,7 +1772,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "A",
-      "explanation": "वैद्युत अपघटन तथा विद्युत लेपन में केवल दिष्ट धारा (DC) का उपयोग किया जाता है[span_139](start_span)[span_139](end_span)।"
+      "explanation": "वैद्युत अपघटन तथा विद्युत लेपन में केवल दिष्ट धारा (DC) का उपयोग किया जाता है।"
     },
     {
       "id": "AKH-PHY-137",
@@ -1785,7 +1785,7 @@
         "D": "3:2"
       },
       "answer": "D",
-      "explanation": "R = V² / P से R₁ / R₂ = P₂ / P₁ = 60 / 40 = 3:2[span_140](start_span)[span_140](end_span)।"
+      "explanation": "R = V² / P से R₁ / R₂ = P₂ / P₁ = 60 / 40 = 3:2।"
     },
     {
       "id": "AKH-PHY-138",
@@ -1798,7 +1798,7 @@
         "D": "500 ओम⁻¹"
       },
       "answer": "A",
-      "explanation": "चालकता G = 1 / R = 1 / 500 = 0.002 Ω⁻¹[span_141](start_span)[span_141](end_span)।"
+      "explanation": "चालकता G = 1 / R = 1 / 500 = 0.002 Ω⁻¹।"
     },
     {
       "id": "AKH-PHY-139",
@@ -1811,7 +1811,7 @@
         "D": "n²"
       },
       "answer": "D",
-      "explanation": "R_max / R_min = (nR) / (R/n) = n²[span_142](start_span)[span_142](end_span)।"
+      "explanation": "R_max / R_min = (nR) / (R/n) = n²।"
     },
     {
       "id": "AKH-PHY-140",
@@ -1824,7 +1824,7 @@
         "D": "इसके तार की लंबाई बढ़ानी होगी"
       },
       "answer": "D",
-      "explanation": "तार की लंबाई बढ़ाने पर विभव प्रवणता घटती है जिससे सुग्राहिता बढ़ जाती है[span_143](start_span)[span_143](end_span)।"
+      "explanation": "तार की लंबाई बढ़ाने पर विभव प्रवणता घटती है जिससे सुग्राहिता बढ़ जाती है।"
     },
     {
       "id": "AKH-PHY-141",
@@ -1837,7 +1837,7 @@
         "D": "संवेग संरक्षण से"
       },
       "answer": "C",
-      "explanation": "किरचॉफ का लूप नियम ऊर्जा संरक्षण सिद्धांत पर आधारित है[span_144](start_span)[span_144](end_span)।"
+      "explanation": "किरचॉफ का लूप नियम ऊर्जा संरक्षण सिद्धांत पर आधारित है।"
     },
     {
       "id": "AKH-PHY-142",
@@ -1850,7 +1850,7 @@
         "D": "समान"
       },
       "answer": "B",
-      "explanation": "H = V²t / R से जब प्रतिरोध R आधा होगा तो ऊष्मा दोगुनी हो जाएगी[span_145](start_span)[span_145](end_span)।"
+      "explanation": "H = V²t / R से जब प्रतिरोध R आधा होगा तो ऊष्मा दोगुनी हो जाएगी।"
     },
     {
       "id": "AKH-PHY-143",
@@ -1863,7 +1863,7 @@
         "D": "24 W"
       },
       "answer": "D",
-      "explanation": "1/P = 1/P₁ + 1/P₂ ⇒ P = (60 × 40) / (60 + 40) = 24 W[span_146](start_span)[span_146](end_span)।"
+      "explanation": "1/P = 1/P₁ + 1/P₂ ⇒ P = (60 × 40) / (60 + 40) = 24 W।"
     },
     {
       "id": "AKH-PHY-144",
@@ -1876,7 +1876,7 @@
         "D": "विभवांतर"
       },
       "answer": "C",
-      "explanation": "व्हीटस्टोन सेतु से दोनों प्रकार के प्रतिरोधों का सटीक मापन किया जा सकता है[span_147](start_span)[span_147](end_span)।"
+      "explanation": "व्हीटस्टोन सेतु से दोनों प्रकार के प्रतिरोधों का सटीक मापन किया जा सकता है।"
     },
     {
       "id": "AKH-PHY-145",
@@ -1889,7 +1889,7 @@
         "D": "अल्युमिनियम"
       },
       "answer": "A",
-      "explanation": "पारे (Mercury) की प्रतिरोधकता चांदी, तांबे और एल्युमिनियम की तुलना में काफी अधिक होती है[span_148](start_span)[span_148](end_span)।"
+      "explanation": "पारे (Mercury) की प्रतिरोधकता चांदी, तांबे और एल्युमिनियम की तुलना में काफी अधिक होती है।"
     },
     {
       "id": "AKH-PHY-146",
@@ -1902,7 +1902,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "A",
-      "explanation": "धारा घनत्व j⃗ = σ E⃗ ओम के नियम का सदिश रूप है[span_149](start_span)[span_149](end_span)।"
+      "explanation": "धारा घनत्व j⃗ = σ E⃗ ओम के नियम का सदिश रूप है।"
     },
     {
       "id": "AKH-PHY-147",
@@ -1915,7 +1915,7 @@
         "D": "साइक्लोट्रॉन"
       },
       "answer": "B",
-      "explanation": "विभवमापी शून्य-विक्षेप विधि पर कार्य करता है और सेल से बिना धारा लिए यथार्थ emf मापता है[span_150](start_span)[span_150](end_span)।"
+      "explanation": "विभवमापी शून्य-विक्षेप विधि पर कार्य करता है और सेल से बिना धारा लिए यथार्थ emf मापता है।"
     },
     {
       "id": "AKH-PHY-148",
@@ -1928,7 +1928,7 @@
         "D": "V_d ∝ √E³"
       },
       "answer": "A",
-      "explanation": "V_d = (eE / m) τ से V_d ∝ E[span_151](start_span)[span_151](end_span)।"
+      "explanation": "V_d = (eE / m) τ से V_d ∝ E।"
     },
     {
       "id": "AKH-PHY-149",
@@ -1941,7 +1941,7 @@
         "D": "इनमें से सभी"
       },
       "answer": "C",
-      "explanation": "विभवमापी मुख्य रूप से दो बिंदुओं के मध्य विभवांतर एवं सेलों का emf मापने हेतु उपयोग किया जाता है[span_152](start_span)[span_152](end_span)।"
+      "explanation": "विभवमापी मुख्य रूप से दो बिंदुओं के मध्य विभवांतर एवं सेलों का emf मापने हेतु उपयोग किया जाता है।"
     },
     {
       "id": "AKH-PHY-150",
@@ -1954,7 +1954,7 @@
         "D": "4:1"
       },
       "answer": "A",
-      "explanation": "श्रेणीक्रम में धारा समान होने से H = I²Rt ⇒ H₁ / H₂ = R / 2R = 1:2[span_153](start_span)[span_153](end_span)।"
+      "explanation": "श्रेणीक्रम में धारा समान होने से H = I²Rt ⇒ H₁ / H₂ = R / 2R = 1:2।"
     },
     {
       "id": "AKH-PHY-151",
@@ -1967,7 +1967,7 @@
         "D": "अवमंदित"
       },
       "answer": "C",
-      "explanation": "विद्युत क्षेत्र में इलेक्ट्रॉन त्वरित होते हैं किंतु लगातार टकरावों के कारण एक औसत अपवाह वेग से अपसरित (drift) होते हैं[span_154](start_span)[span_154](end_span)।"
+      "explanation": "विद्युत क्षेत्र में इलेक्ट्रॉन त्वरित होते हैं किंतु लगातार टकरावों के कारण एक औसत अपवाह वेग से अपसरित (drift) होते हैं।"
     },
     {
       "id": "AKH-PHY-152",
@@ -1980,7 +1980,7 @@
         "D": "J = I² A"
       },
       "answer": "B",
-      "explanation": "एकांक अनुप्रस्थ परिच्छेद से प्रवाहित धारा: J = I / A[span_155](start_span)[span_155](end_span)।"
+      "explanation": "एकांक अनुप्रस्थ परिच्छेद से प्रवाहित धारा: J = I / A।"
     },
     {
       "id": "AKH-PHY-153",
@@ -1993,7 +1993,7 @@
         "D": "µ = E² V_d"
       },
       "answer": "A",
-      "explanation": "प्रति इकाई विद्युत क्षेत्र अपवाह वेग: µ = V_d / E[span_156](start_span)[span_156](end_span)।"
+      "explanation": "प्रति इकाई विद्युत क्षेत्र अपवाह वेग: µ = V_d / E।"
     },
     {
       "id": "AKH-PHY-154",
@@ -2006,7 +2006,7 @@
         "D": "6"
       },
       "answer": "D",
-      "explanation": "BBROYGBVGW कोड के अनुसार Blue (नीला) रंग का मान 6 होता है[span_157](start_span)[span_157](end_span)।"
+      "explanation": "BBROYGBVGW कोड के अनुसार Blue (नीला) रंग का मान 6 होता है।"
     },
     {
       "id": "AKH-PHY-155",
@@ -2019,7 +2019,7 @@
         "D": "विभवान्तर"
       },
       "answer": "B",
-      "explanation": "q = I × t = एम्पियर × घंटा = आवेश[span_158](start_span)[span_158](end_span)।"
+      "explanation": "q = I × t = एम्पियर × घंटा = आवेश।"
     },
     {
       "id": "AKH-PHY-156",
@@ -2032,7 +2032,7 @@
         "D": "विभव"
       },
       "answer": "C",
-      "explanation": "किरचॉफ का संधि नियम आवेश संरक्षण सिद्धांत पर आधारित है[span_159](start_span)[span_159](end_span)।"
+      "explanation": "किरचॉफ का संधि नियम आवेश संरक्षण सिद्धांत पर आधारित है।"
     },
     {
       "id": "AKH-PHY-157",
@@ -2045,7 +2045,7 @@
         "D": "V = I² / R"
       },
       "answer": "A",
-      "explanation": "V = IR[span_160](start_span)[span_160](end_span)।"
+      "explanation": "V = IR।"
     },
     {
       "id": "AKH-PHY-158",
@@ -2058,7 +2058,7 @@
         "D": "3.6 × 10⁶ J"
       },
       "answer": "D",
-      "explanation": "1 kWh = 1000 W × 3600 s = 3.6 × 10⁶ J[span_161](start_span)[span_161](end_span)।"
+      "explanation": "1 kWh = 1000 W × 3600 s = 3.6 × 10⁶ J।"
     },
     {
       "id": "AKH-PHY-159",
@@ -2071,7 +2071,7 @@
         "D": "इनमें से कोई नहीं (पदार्थ की प्रकृति पर)"
       },
       "answer": "D",
-      "explanation": "विशिष्ट प्रतिरोध तार के आकार-प्रकार पर नहीं, केवल पदार्थ की प्रकृति और ताप पर निर्भर करता है[span_162](start_span)[span_162](end_span)।"
+      "explanation": "विशिष्ट प्रतिरोध तार के आकार-प्रकार पर नहीं, केवल पदार्थ की प्रकृति और ताप पर निर्भर करता है।"
     },
     {
       "id": "AKH-PHY-160",
@@ -2084,7 +2084,7 @@
         "D": "एम्पियर नियम"
       },
       "answer": "A",
-      "explanation": "विद्युत चुंबकीय प्रेरण में लेंज का नियम ऊर्जा संरक्षण के सिद्धांत पर आधारित है[span_163](start_span)[span_163](end_span)।"
+      "explanation": "विद्युत चुंबकीय प्रेरण में लेंज का नियम ऊर्जा संरक्षण के सिद्धांत पर आधारित है।"
     },
     {
       "id": "AKH-PHY-161",
@@ -2097,7 +2097,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "B",
-      "explanation": "R ∝ l होने से लंबाई दुगुनी करने पर प्रतिरोध दोगुना होगा, अतः चालकता G = 1/R आधी हो जाएगी[span_164](start_span)[span_164](end_span)।"
+      "explanation": "R ∝ l होने से लंबाई दुगुनी करने पर प्रतिरोध दोगुना होगा, अतः चालकता G = 1/R आधी हो जाएगी।"
     },
     {
       "id": "AKH-PHY-162",
@@ -2110,7 +2110,7 @@
         "D": "जूल / कूलम्ब"
       },
       "answer": "B",
-      "explanation": "I = q / t से 1 A = 1 C / 1 s[span_165](start_span)[span_165](end_span)।"
+      "explanation": "I = q / t से 1 A = 1 C / 1 s।"
     }
   ]
 }
