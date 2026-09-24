@@ -1,0 +1,379 @@
+{
+  "schemaVersion": 1,
+  "subject": "mathematics",
+  "chapter": 7,
+  "title": "समाकलन (Integrals)",
+  "categories": {
+    "formulas": [
+      {
+        "name": "विशिष्ट बीजीय भिन्न सूत्र I: 1/(x² - a²)",
+        "formula": "$$\\int \\frac{1}{x^2 - a^2}\\,dx = \\frac{1}{2a}\\log_e\\left|\\frac{x - a}{x + a}\\right| + C \\quad (x^2 > a^2)$$",
+        "meaning": "जब हर में (x² - a²) हो, तो समाकलन 1/(2a) log|(x-a)/(x+a)| + C होता है; अंश में (x-a) तथा हर में (x+a) आता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "समाकलन $\\int \\frac{1}{x^2 - 16}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 8(i)]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): मानक सूत्र $\\int \\frac{1}{x^2 - a^2}\\,dx = \\frac{1}{2a}\\log\\left|\\frac{x - a}{x + a}\\right| + C$ लागू करने पर, जहाँ $a^2 = 16 \\implies a = 4$ है।",
+              "चरण 2: समाकल्य को मानक रूप में लिखना: $\\int \\frac{1}{x^2 - 4^2}\\,dx$",
+              "चरण 3: सूत्र में $a = 4$ प्रतिस्थापित करने पर: $\\frac{1}{2(4)}\\log\\left|\\frac{x - 4}{x + 4}\\right| + C$",
+              "चरण 4: गणना: $\\frac{1}{8}\\log\\left|\\frac{x - 4}{x + 4}\\right| + C$",
+              "उत्तर: $\\frac{1}{8}\\log\\left|\\frac{x - 4}{x + 4}\\right| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{1}{x^2 - 9}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.5 Q2]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): सूत्र $\\int \\frac{1}{x^2 - a^2}\\,dx = \\frac{1}{2a}\\log\\left|\\frac{x - a}{x + a}\\right| + C$ लागू करने पर, जहाँ $a = 3$ है।",
+              "चरण 2: रूपान्तरण: $\\int \\frac{1}{x^2 - 3^2}\\,dx$",
+              "चरण 3: सूत्र से मान: $\\frac{1}{2 \\times 3}\\log\\left|\\frac{x - 3}{x + 3}\\right| + C = \\frac{1}{6}\\log\\left|\\frac{x - 3}{x + 3}\\right| + C$",
+              "उत्तर: $\\frac{1}{6}\\log\\left|\\frac{x - 3}{x + 3}\\right| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{1}{4x^2 - 25}\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): $x^2$ के गुणांक 4 को उभयनिष्ठ लेकर सूत्र $\\int \\frac{1}{x^2 - a^2}\\,dx = \\frac{1}{2a}\\log\\left|\\frac{x - a}{x + a}\\right| + C$ लगाना।",
+              "चरण 2: 4 बाहर निकालने पर: $\\frac{1}{4}\\int \\frac{1}{x^2 - \\frac{25}{4}}\\,dx = \\frac{1}{4}\\int \\frac{1}{x^2 - (5/2)^2}\\,dx$",
+              "चरण 3: यहाँ $a = \\frac{5}{2}$ रखने पर: $\\frac{1}{4} \\times \\frac{1}{2(5/2)}\\log\\left|\\frac{x - 5/2}{x + 5/2}\\right| + C$",
+              "चरण 4: सरलीकरण: $\\frac{1}{4 \\times 5}\\log\\left|\\frac{2x - 5}{2x + 5}\\right| + C = \\frac{1}{20}\\log\\left|\\frac{2x - 5}{2x + 5}\\right| + C$",
+              "उत्तर: $\\frac{1}{20}\\log\\left|\\frac{2x - 5}{2x + 5}\\right| + C$"
+            ],
+            "source": "AI"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{1}{x^2 - 2x - 5}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.4 Q22 का भाग]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): पूर्ण वर्ग बनाकर $\\int \\frac{1}{(x-1)^2 - (\\sqrt{6})^2}\\,dx$ रूप में सूत्र $\\int \\frac{1}{t^2 - a^2}\\,dt = \\frac{1}{2a}\\log\\left|\\frac{t - a}{t + a}\\right| + C$ लगाना।",
+              "चरण 2: पूर्ण वर्ग बनाना: $x^2 - 2x - 5 = (x^2 - 2x + 1) - 1 - 5 = (x - 1)^2 - 6 = (x - 1)^2 - (\\sqrt{6})^2$",
+              "चरण 3: यहाँ $t = x - 1$ तथा $a = \\sqrt{6}$ रखने पर: $\\frac{1}{2\\sqrt{6}}\\log\\left|\\frac{(x - 1) - \\sqrt{6}}{(x - 1) + \\sqrt{6}}\\right| + C$",
+              "उत्तर: $\\frac{1}{2\\sqrt{6}}\\log\\left|\\frac{x - 1 - \\sqrt{6}}{x - 1 + \\sqrt{6}}\\right| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{x}{x^4 - 1}\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): $x^2 = t$ प्रतिस्थापन के पश्चात $\\int \\frac{1}{t^2 - a^2}\\,dt = \\frac{1}{2a}\\log\\left|\\frac{t - a}{t + a}\\right| + C$।",
+              "चरण 2: माना $x^2 = t \\implies 2x\\,dx = dt \\implies x\\,dx = \\frac{1}{2}dt$",
+              "चरण 3: प्रतिस्थापित करने पर: $\\frac{1}{2}\\int \\frac{dt}{t^2 - 1^2} = \\frac{1}{2} \\times \\frac{1}{2(1)}\\log\\left|\\frac{t - 1}{t + 1}\\right| + C$",
+              "चरण 4: $t = x^2$ रखने पर: $\\frac{1}{4}\\log\\left|\\frac{x^2 - 1}{x^2 + 1}\\right| + C$",
+              "उत्तर: $\\frac{1}{4}\\log\\left|\\frac{x^2 - 1}{x^2 + 1}\\right| + C$"
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "विशिष्ट बीजीय भिन्न सूत्र II: 1/(a² - x²)",
+        "formula": "$$\\int \\frac{1}{a^2 - x^2}\\,dx = \\frac{1}{2a}\\log_e\\left|\\frac{a + x}{a - x}\\right| + C \\quad (a^2 > x^2)$$",
+        "meaning": "जब हर में (a² - x²) हो, तो समाकलन 1/(2a) log|(a+x)/(a-x)| + C होता है; अंश में (a+x) तथा हर में (a-x) आता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "समाकलन $\\int \\frac{1}{9 - x^2}\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): मानक सूत्र $\\int \\frac{1}{a^2 - x^2}\\,dx = \\frac{1}{2a}\\log\\left|\\frac{a + x}{a - x}\\right| + C$ लागू करने पर, जहाँ $a = 3$ है।",
+              "चरण 2: रूपान्तरण: $\\int \\frac{1}{3^2 - x^2}\\,dx$",
+              "चरण 3: सूत्र में $a = 3$ रखने पर: $\\frac{1}{2(3)}\\log\\left|\\frac{3 + x}{3 - x}\\right| + C$",
+              "चरण 4: गणना: $\\frac{1}{6}\\log\\left|\\frac{3 + x}{3 - x}\\right| + C$",
+              "उत्तर: $\\frac{1}{6}\\log\\left|\\frac{3 + x}{3 - x}\\right| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{1}{16 - 25x^2}\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): 25 उभयनिष्ठ लेकर सूत्र $\\int \\frac{1}{a^2 - x^2}\\,dx = \\frac{1}{2a}\\log\\left|\\frac{a + x}{a - x}\\right| + C$ लागू करना।",
+              "चरण 2: रूपान्तरण: $\\frac{1}{25}\\int \\frac{1}{(4/5)^2 - x^2}\\,dx$",
+              "चरण 3: यहाँ $a = \\frac{4}{5}$ रखने पर: $\\frac{1}{25} \\times \\frac{1}{2(4/5)}\\log\\left|\\frac{4/5 + x}{4/5 - x}\\right| + C$",
+              "चरण 4: सरलीकरण: $\\frac{1}{25} \\times \\frac{5}{8}\\log\\left|\\frac{4 + 5x}{4 - 5x}\\right| + C = \\frac{1}{40}\\log\\left|\\frac{4 + 5x}{4 - 5x}\\right| + C$",
+              "उत्तर: $\\frac{1}{40}\\log\\left|\\frac{4 + 5x}{4 - 5x}\\right| + C$"
+            ],
+            "source": "AI"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{x^2}{1 - x^6}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.4 Q6]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): $x^3 = t$ प्रतिस्थापन तथा सूत्र $\\int \\frac{1}{a^2 - t^2}\\,dt = \\frac{1}{2a}\\log\\left|\\frac{a + t}{a - t}\\right| + C$।",
+              "चरण 2: रूपान्तरण: $\\int \\frac{x^2}{1 - (x^3)^2}\\,dx$; माना $x^3 = t \\implies 3x^2\\,dx = dt \\implies x^2\\,dx = \\frac{1}{3}dt$",
+              "चरण 3: मान रखने पर: $\\frac{1}{3}\\int \\frac{1}{1^2 - t^2}\\,dt = \\frac{1}{3} \\times \\frac{1}{2(1)}\\log\\left|\\frac{1 + t}{1 - t}\\right| + C$",
+              "चरण 4: $t = x^3$ रखने पर: $\\frac{1}{6}\\log\\left|\\frac{1 + x^3}{1 - x^3}\\right| + C$",
+              "उत्तर: $\\frac{1}{6}\\log\\left|\\frac{1 + x^3}{1 - x^3}\\right| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{e^x}{4 - e^{2x}}\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): $e^x = t$ प्रतिस्थापन तथा सूत्र $\\int \\frac{1}{a^2 - t^2}\\,dt = \\frac{1}{2a}\\log\\left|\\frac{a + t}{a - t}\\right| + C$।",
+              "चरण 2: माना $e^x = t \\implies e^x\\,dx = dt$",
+              "चरण 3: समाकलन लिखना: $\\int \\frac{dt}{2^2 - t^2} = \\frac{1}{2(2)}\\log\\left|\\frac{2 + t}{2 - t}\\right| + C$",
+              "चरण 4: $t = e^x$ रखने पर: $\\frac{1}{4}\\log\\left|\\frac{2 + e^x}{2 - e^x}\\right| + C$",
+              "उत्तर: $\\frac{1}{4}\\log\\left|\\frac{2 + e^x}{2 - e^x}\\right| + C$"
+            ],
+            "source": "AI"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{1}{5 - 4x - x^2}\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): पूर्ण वर्ग बनाकर $\\int \\frac{1}{3^2 - (x+2)^2}\\,dx$ रूप में सूत्र $\\int \\frac{1}{a^2 - t^2}\\,dt = \\frac{1}{2a}\\log\\left|\\frac{a + t}{a - t}\\right| + C$ लगाना।",
+              "चरण 2: पूर्ण वर्ग बनाना: $5 - (x^2 + 4x) = 5 - [(x+2)^2 - 4] = 9 - (x+2)^2 = 3^2 - (x+2)^2$",
+              "चरण 3: सूत्र में $a = 3, t = x+2$ रखने पर: $\\frac{1}{2(3)}\\log\\left|\\frac{3 + (x+2)}{3 - (x+2)}\\right| + C$",
+              "चरण 4: सरलीकरण: $\\frac{1}{6}\\log\\left|\\frac{x + 5}{1 - x}\\right| + C$",
+              "उत्तर: $\\frac{1}{6}\\log\\left|\\frac{x + 5}{1 - x}\\right| + C$"
+            ],
+            "source": "AI"
+          }
+        ]
+      },
+      {
+        "name": "विशिष्ट बीजीय भिन्न सूत्र III: 1/(x² + a²)",
+        "formula": "$$\\int \\frac{1}{x^2 + a^2}\\,dx = \\frac{1}{a}\\tan^{-1}\\left(\\frac{x}{a}\\right) + C$$",
+        "meaning": "जब हर में (x² + a²) हो, तो समाकलन (1/a) tan⁻¹(x/a) + C होता है; यह tan⁻¹x के मानक अवकलज का व्यापक रूप है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "समाकलन $\\int \\frac{1}{x^2 + 4}\\,dx$ का मान ज्ञात कीजिए। [BSEB 2025A, 2022A]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): मानक सूत्र $\\int \\frac{1}{x^2 + a^2}\\,dx = \\frac{1}{a}\\tan^{-1}\\left(\\frac{x}{a}\\right) + C$ लागू करने पर, यहाँ $a = 2$ है।",
+              "चरण 2: रूपान्तरण: $\\int \\frac{1}{x^2 + 2^2}\\,dx$",
+              "चरण 3: सूत्र में $a = 2$ रखने पर: $\\frac{1}{2}\\tan^{-1}\\left(\\frac{x}{2}\\right) + C$",
+              "उत्तर: $\\frac{1}{2}\\tan^{-1}\\left(\\frac{x}{2}\\right) + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{1}{25 + x^2}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex Slide 2]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): $\\int \\frac{1}{a^2 + x^2}\\,dx = \\frac{1}{a}\\tan^{-1}\\left(\\frac{x}{a}\\right) + C$ लागू करने पर, जहाँ $a = 5$ है।",
+              "चरण 2: रूपान्तरण: $\\int \\frac{1}{5^2 + x^2}\\,dx$",
+              "चरण 3: सूत्र से सीधा मान: $\\frac{1}{5}\\tan^{-1}\\left(\\frac{x}{5}\\right) + C$",
+              "उत्तर: $\\frac{1}{5}\\tan^{-1}\\left(\\frac{x}{5}\\right) + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{1}{9x^2 + 4}\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): 9 उभयनिष्ठ लेकर सूत्र $\\int \\frac{1}{x^2 + a^2}\\,dx = \\frac{1}{a}\\tan^{-1}\\left(\\frac{x}{a}\\right) + C$ लागू करना।",
+              "चरण 2: रूपान्तरण: $\\frac{1}{9}\\int \\frac{1}{x^2 + (2/3)^2}\\,dx$",
+              "चरण 3: यहाँ $a = \\frac{2}{3}$ रखने पर: $\\frac{1}{9} \\times \\frac{1}{2/3}\\tan^{-1}\\left(\\frac{x}{2/3}\\right) + C$",
+              "चरण 4: सरलीकरण: $\\frac{1}{9} \\times \\frac{3}{2}\\tan^{-1}\\left(\\frac{3x}{2}\\right) + C = \\frac{1}{6}\\tan^{-1}\\left(\\frac{3x}{2}\\right) + C$",
+              "उत्तर: $\\frac{1}{6}\\tan^{-1}\\left(\\frac{3x}{2}\\right) + C$"
+            ],
+            "source": "AI"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{1}{x^2 - 6x + 13}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 9(i)]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): पूर्ण वर्ग बनाकर $\\int \\frac{1}{(x-3)^2 + 2^2}\\,dx$ रूप में सूत्र $\\int \\frac{1}{t^2 + a^2}\\,dt = \\frac{1}{a}\\tan^{-1}\\left(\\frac{t}{a}\\right) + C$ लगाना।",
+              "चरण 2: पूर्ण वर्ग बनाना: $x^2 - 6x + 13 = (x^2 - 6x + 3^2) - 3^2 + 13 = (x - 3)^2 + 4 = (x - 3)^2 + 2^2$",
+              "चरण 3: यहाँ $t = x - 3$ तथा $a = 2$ रखने पर: $\\frac{1}{2}\\tan^{-1}\\left(\\frac{x - 3}{2}\\right) + C$",
+              "उत्तर: $\\frac{1}{2}\\tan^{-1}\\left(\\frac{x - 3}{2}\\right) + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{3x^2}{x^6 + 1}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.4 Q1]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): $x^3 = t$ प्रतिस्थापन तथा सूत्र $\\int \\frac{1}{t^2 + 1^2}\\,dt = \\tan^{-1}t + C$।",
+              "चरण 2: रूपान्तरण: $\\int \\frac{3x^2}{(x^3)^2 + 1}\\,dx$; माना $x^3 = t \\implies 3x^2\\,dx = dt$",
+              "चरण 3: प्रतिस्थापित करने पर: $\\int \\frac{dt}{t^2 + 1^2} = \\frac{1}{1}\\tan^{-1}\\left(\\frac{t}{1}\\right) + C$",
+              "चरण 4: $t = x^3$ रखने पर: $\\tan^{-1}(x^3) + C$",
+              "उत्तर: $\\tan^{-1}(x^3) + C$"
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "विशिष्ट करणी भिन्न सूत्र IV: 1/√(a² - x²)",
+        "formula": "$$\\int \\frac{1}{\\sqrt{a^2 - x^2}}\\,dx = \\sin^{-1}\\left(\\frac{x}{a}\\right) + C \\quad (|x| < a)$$",
+        "meaning": "जब हर में वर्गमूल √(a² - x²) हो, तो समाकलन sin⁻¹(x/a) + C होता है; ध्यान रहे कि इसमें बाहर 1/a का गुणांक नहीं आता।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "समाकलन $\\int \\frac{1}{\\sqrt{16 - x^2}}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex Slide 2]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): मानक सूत्र $\\int \\frac{1}{\\sqrt{a^2 - x^2}}\\,dx = \\sin^{-1}\\left(\\frac{x}{a}\\right) + C$ लागू करने पर, यहाँ $a = 4$ है।",
+              "चरण 2: रूपान्तरण: $\\int \\frac{1}{\\sqrt{4^2 - x^2}}\\,dx$",
+              "चरण 3: सूत्र से सीधा मान: $\\sin^{-1}\\left(\\frac{x}{4}\\right) + C$",
+              "उत्तर: $\\sin^{-1}\\left(\\frac{x}{4}\\right) + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{1}{\\sqrt{9 - 25x^2}}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.4 Q4]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): 25 को करणी से बाहर निकालकर $\\frac{1}{5}\\int \\frac{1}{\\sqrt{(3/5)^2 - x^2}}\\,dx$ रूप में सूत्र $\\int \\frac{1}{\\sqrt{a^2-x^2}}\\,dx = \\sin^{-1}(x/a) + C$ लगाना।",
+              "चरण 2: रूपान्तरण: माना $5x = t \\implies 5\\,dx = dt \\implies dx = \\frac{1}{5}dt$",
+              "चरण 3: मान रखने पर: $\\frac{1}{5}\\int \\frac{dt}{\\sqrt{3^2 - t^2}} = \\frac{1}{5}\\sin^{-1}\\left(\\frac{t}{3}\\right) + C$",
+              "चरण 4: $t = 5x$ रखने पर: $\\frac{1}{5}\\sin^{-1}\\left(\\frac{5x}{3}\\right) + C$",
+              "उत्तर: $\\frac{1}{5}\\sin^{-1}\\left(\\frac{5x}{3}\\right) + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{1}{\\sqrt{7 - 6x - x^2}}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.4 Q12]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): पूर्ण वर्ग बनाकर $\\int \\frac{1}{\\sqrt{4^2 - (x+3)^2}}\\,dx$ रूप में सूत्र $\\int \\frac{1}{\\sqrt{a^2 - t^2}}\\,dt = \\sin^{-1}\\left(\\frac{t}{a}\\right) + C$ लगाना।",
+              "चरण 2: पूर्ण वर्ग बनाना: $7 - (x^2 + 6x) = 7 - [(x+3)^2 - 9] = 16 - (x+3)^2 = 4^2 - (x+3)^2$",
+              "चरण 3: यहाँ $a = 4, t = x+3$ रखने पर: $\\sin^{-1}\\left(\\frac{x+3}{4}\\right) + C$",
+              "उत्तर: $\\sin^{-1}\\left(\\frac{x+3}{4}\\right) + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{1}{\\sqrt{8 + 3x - x^2}}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.4 Q14]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): पूर्ण वर्ग बनाकर $\\int \\frac{1}{\\sqrt{(\\sqrt{41}/2)^2 - (x-3/2)^2}}\\,dx$ रूप में सूत्र $\\int \\frac{1}{\\sqrt{a^2-t^2}}\\,dt = \\sin^{-1}(t/a) + C$ लगाना।",
+              "चरण 2: पूर्ण वर्ग बनाना: $8 - (x^2 - 3x) = 8 - \\left[(x - 3/2)^2 - 9/4\\right] = \\frac{41}{4} - (x - 3/2)^2 = \\left(\\frac{\\sqrt{41}}{2}\\right)^2 - \\left(x - \\frac{3}{2}\\right)^2$",
+              "चरण 3: मान रखने पर: $\\sin^{-1}\\left(\\frac{x - 3/2}{\\sqrt{41}/2}\\right) + C = \\sin^{-1}\\left(\\frac{2x - 3}{\\sqrt{41}}\\right) + C$",
+              "उत्तर: $\\sin^{-1}\\left(\\frac{2x - 3}{\\sqrt{41}}\\right) + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{\\cos x}{\\sqrt{4 - \\sin^2 x}}\\,dx$ का मान ज्ञात कीजिए। [NCERT Misc Q9]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): $\\sin x = t$ प्रतिस्थापन तथा सूत्र $\\int \\frac{1}{\\sqrt{a^2 - t^2}}\\,dt = \\sin^{-1}\\left(\\frac{t}{a}\\right) + C$।",
+              "चरण 2: माना $\\sin x = t \\implies \\cos x\\,dx = dt$",
+              "चरण 3: मान रखने पर: $\\int \\frac{dt}{\\sqrt{2^2 - t^2}} = \\sin^{-1}\\left(\\frac{t}{2}\\right) + C$",
+              "चरण 4: $t = \\sin x$ रखने पर: $\\sin^{-1}\\left(\\frac{\\sin x}{2}\\right) + C$",
+              "उत्तर: $\\sin^{-1}\\left(\\frac{\\sin x}{2}\\right) + C$"
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "विशिष्ट करणी भिन्न सूत्र V: 1/√(x² - a²)",
+        "formula": "$$\\int \\frac{1}{\\sqrt{x^2 - a^2}}\\,dx = \\log_e\\left|x + \\sqrt{x^2 - a^2}\\right| + C \\quad (|x| > a)$$",
+        "meaning": "जब हर में वर्गमूल √(x² - a²) हो, तो समाकलन log|x + √(x² - a²)| + C होता है; यह सूत्र अतिपरवलयिक प्रतिस्थापन x = a sec θ द्वारा प्राप्त होता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "समाकलन $\\int \\frac{1}{\\sqrt{x^2 - 9}}\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): मानक सूत्र $\\int \\frac{1}{\\sqrt{x^2 - a^2}}\\,dx = \\log\\left|x + \\sqrt{x^2 - a^2}\\right| + C$ लागू करने पर, यहाँ $a = 3$ है।",
+              "चरण 2: रूपान्तरण: $\\int \\frac{1}{\\sqrt{x^2 - 3^2}}\\,dx$",
+              "चरण 3: सूत्र से सीधा मान: $\\log\\left|x + \\sqrt{x^2 - 9}\\right| + C$",
+              "उत्तर: $\\log\\left|x + \\sqrt{x^2 - 9}\\right| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{1}{\\sqrt{4x^2 - 1}}\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): 4 उभयनिष्ठ लेकर $\\frac{1}{2}\\int \\frac{1}{\\sqrt{x^2 - (1/2)^2}}\\,dx$ रूप में सूत्र $\\int \\frac{1}{\\sqrt{x^2-a^2}}\\,dx = \\log|x + \\sqrt{x^2-a^2}| + C$ लगाना।",
+              "चरण 2: माना $2x = t \\implies 2\\,dx = dt \\implies dx = \\frac{1}{2}dt$",
+              "चरण 3: मान रखने पर: $\\frac{1}{2}\\int \\frac{dt}{\\sqrt{t^2 - 1^2}} = \\frac{1}{2}\\log\\left|t + \\sqrt{t^2 - 1}\\right| + C$",
+              "चरण 4: $t = 2x$ रखने पर: $\\frac{1}{2}\\log\\left|2x + \\sqrt{4x^2 - 1}\\right| + C$",
+              "उत्तर: $\\frac{1}{2}\\log\\left|2x + \\sqrt{4x^2 - 1}\\right| + C$"
+            ],
+            "source": "AI"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{1}{\\sqrt{x^2 - 3x + 2}}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.4 Q13]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): पूर्ण वर्ग बनाकर $\\int \\frac{1}{\\sqrt{(x-3/2)^2 - (1/2)^2}}\\,dx$ रूप में सूत्र $\\int \\frac{1}{\\sqrt{t^2 - a^2}}\\,dt = \\log|t + \\sqrt{t^2 - a^2}| + C$ लगाना।",
+              "चरण 2: पूर्ण वर्ग बनाना: $x^2 - 3x + 2 = (x - 3/2)^2 - 9/4 + 2 = (x - 3/2)^2 - 1/4 = (x - 3/2)^2 - (1/2)^2$",
+              "चरण 3: यहाँ $t = x - 3/2$ तथा $a = 1/2$ रखने पर: $\\log\\left|x - 3/2 + \\sqrt{(x - 3/2)^2 - (1/2)^2}\\right| + C$",
+              "चरण 4: मूल द्विघात पद प्रतिस्थापित करने पर: $\\log\\left|x - \\frac{3}{2} + \\sqrt{x^2 - 3x + 2}\\right| + C$",
+              "उत्तर: $\\log\\left|x - \\frac{3}{2} + \\sqrt{x^2 - 3x + 2}\\right| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{1}{\\sqrt{(x-a)(x-b)}}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.4 Q15]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): पूर्ण वर्ग बनाकर $\\int \\frac{1}{\\sqrt{[x - (a+b)/2]^2 - [(a-b)/2]^2}}\\,dx$ रूप में सूत्र $\\int \\frac{1}{\\sqrt{t^2-k^2}}\\,dt = \\log|t + \\sqrt{t^2-k^2}| + C$ लगाना।",
+              "चरण 2: गुणनफल खोलना: $(x-a)(x-b) = x^2 - (a+b)x + ab = \\left(x - \\frac{a+b}{2}\\right)^2 - \\left(\\frac{a+b}{2}\\right)^2 + ab = \\left(x - \\frac{a+b}{2}\\right)^2 - \\left(\\frac{a-b}{2}\\right)^2$",
+              "चरण 3: सूत्र लागू करने पर: $\\log\\left|x - \\frac{a+b}{2} + \\sqrt{\\left(x - \\frac{a+b}{2}\\right)^2 - \\left(\\frac{a-b}{2}\\right)^2}\\right| + C$",
+              "चरण 4: करणी को मूल रूप में लिखना: $\\log\\left|x - \\frac{a+b}{2} + \\sqrt{(x-a)(x-b)}\\right| + C$",
+              "उत्तर: $\\log\\left|x - \\frac{a+b}{2} + \\sqrt{(x-a)(x-b)}\\right| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{\\sec x\\tan x}{\\sqrt{\\sec^2 x - 4}}\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): $\\sec x = t$ प्रतिस्थापन तथा सूत्र $\\int \\frac{1}{\\sqrt{t^2 - a^2}}\\,dt = \\log\\left|t + \\sqrt{t^2 - a^2}\\right| + C$।",
+              "चरण 2: माना $\\sec x = t \\implies \\sec x\\tan x\\,dx = dt$",
+              "चरण 3: मान प्रतिस्थापित करने पर: $\\int \\frac{dt}{\\sqrt{t^2 - 2^2}} = \\log\\left|t + \\sqrt{t^2 - 2^2}\\right| + C$",
+              "चरण 4: $t = \\sec x$ रखने पर: $\\log\\left|\\sec x + \\sqrt{\\sec^2 x - 4}\\right| + C$",
+              "उत्तर: $\\log\\left|\\sec x + \\sqrt{\\sec^2 x - 4}\\right| + C$"
+            ],
+            "source": "AI"
+          }
+        ]
+      },
+      {
+        "name": "विशिष्ट करणी भिन्न सूत्र VI: 1/√(x² + a²)",
+        "formula": "$$\\int \\frac{1}{\\sqrt{x^2 + a^2}}\\,dx = \\log_e\\left|x + \\sqrt{x^2 + a^2}\\right| + C$$",
+        "meaning": "जब हर में वर्गमूल √(x² + a²) हो, तो समाकलन log|x + √(x² + a²)| + C होता है; यह सूत्र त्रिकोणमितीय प्रतिस्थापन x = a tan θ द्वारा प्राप्त होता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "समाकलन $\\int \\frac{1}{\\sqrt{1 + 4x^2}}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.4 Q2]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): प्रतिस्थापन $2x = t$ तथा सूत्र $\\int \\frac{1}{\\sqrt{t^2 + a^2}}\\,dt = \\log\\left|t + \\sqrt{t^2 + a^2}\\right| + C$।",
+              "चरण 2: रूपान्तरण: माना $2x = t \\implies 2\\,dx = dt \\implies dx = \\frac{1}{2}dt$",
+              "चरण 3: मान रखने पर: $\\frac{1}{2}\\int \\frac{dt}{\\sqrt{1^2 + t^2}} = \\frac{1}{2}\\log\\left|t + \\sqrt{t^2 + 1}\\right| + C$",
+              "चरण 4: $t = 2x$ रखने पर: $\\frac{1}{2}\\log\\left|2x + \\sqrt{4x^2 + 1}\\right| + C$",
+              "उत्तर: $\\frac{1}{2}\\log\\left|2x + \\sqrt{4x^2 + 1}\\right| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{1}{\\sqrt{x^2 + 2x + 2}}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.4 Q10]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): पूर्ण वर्ग बनाकर $\\int \\frac{1}{\\sqrt{(x+1)^2 + 1^2}}\\,dx$ रूप में सूत्र $\\int \\frac{1}{\\sqrt{t^2 + a^2}}\\,dt = \\log\\left|t + \\sqrt{t^2 + a^2}\\right| + C$ लगाना।",
+              "चरण 2: पूर्ण वर्ग बनाना: $x^2 + 2x + 2 = (x^2 + 2x + 1) + 1 = (x + 1)^2 + 1^2$",
+              "चरण 3: यहाँ $t = x + 1$ तथा $a = 1$ रखने पर: $\\log\\left|x + 1 + \\sqrt{(x+1)^2 + 1^2}\\right| + C$",
+              "चरण 4: मूल व्यंजक रूप: $\\log\\left|x + 1 + \\sqrt{x^2 + 2x + 2}\\right| + C$",
+              "उत्तर: $\\log\\left|x + 1 + \\sqrt{x^2 + 2x + 2}\\right| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{\\sec^2 x}{\\sqrt{\\tan^2 x + 4}}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.4 Q9]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): $\\tan x = t$ प्रतिस्थापन तथा सूत्र $\\int \\frac{1}{\\sqrt{t^2 + a^2}}\\,dt = \\log\\left|t + \\sqrt{t^2 + a^2}\\right| + C$।",
+              "चरण 2: माना $\\tan x = t \\implies \\sec^2 x\\,dx = dt$",
+              "चरण 3: मान रखने पर: $\\int \\frac{dt}{\\sqrt{t^2 + 2^2}} = \\log\\left|t + \\sqrt{t^2 + 2^2}\\right| + C$",
+              "चरण 4: $t = \\tan x$ रखने पर: $\\log\\left|\\tan x + \\sqrt{\\tan^2 x + 4}\\right| + C$",
+              "उत्तर: $\\log\\left|\\tan x + \\sqrt{\\tan^2 x + 4}\\right| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{x^2}{\\sqrt{x^6 + a^6}}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.4 Q8]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): $x^3 = t$ प्रतिस्थापन तथा सूत्र $\\int \\frac{1}{\\sqrt{t^2 + k^2}}\\,dt = \\log\\left|t + \\sqrt{t^2 + k^2}\\right| + C$।",
+              "चरण 2: रूपान्तरण: $\\int \\frac{x^2}{\\sqrt{(x^3)^2 + (a^3)^2}}\\,dx$; माना $x^3 = t \\implies 3x^2\\,dx = dt \\implies x^2\\,dx = \\frac{1}{3}dt$",
+              "चरण 3: मान रखने पर: $\\frac{1}{3}\\int \\frac{dt}{\\sqrt{t^2 + (a^3)^2}} = \\frac{1}{3}\\log\\left|t + \\sqrt{t^2 + (a^3)^2}\\right| + C$",
+              "चरण 4: $t = x^3$ रखने पर: $\\frac{1}{3}\\log\\left|x^3 + \\sqrt{x^6 + a^6}\\right| + C$",
+              "उत्तर: $\\frac{1}{3}\\log\\left|x^3 + \\sqrt{x^6 + a^6}\\right| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{1}{\\sqrt{(2-x)^2 + 1}}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.4 Q3]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): प्रतिस्थापन $2 - x = t$ तथा सूत्र $\\int \\frac{1}{\\sqrt{t^2 + 1}}\\,dt = \\log\\left|t + \\sqrt{t^2 + 1}\\right| + C$।",
+              "चरण 2: माना $2 - x = t \\implies -dx = dt \\implies dx = -dt$",
+              "चरण 3: मान रखने पर: $-\\int \\frac{dt}{\\sqrt{t^2 + 1^2}} = -\\log\\left|t + \\sqrt{t^2 + 1}\\right| + C$",
+              "चरण 4: $t = 2 - x$ रखने पर: $-\\log\\left|2 - x + \\sqrt{(2-x)^2 + 1}\\right| + C = \\log\\left|\\frac{1}{2 - x + \\sqrt{x^2 - 4x + 5}}\\right| + C$",
+              "उत्तर: $-\\log\\left|2 - x + \\sqrt{x^2 - 4x + 5}\\right| + C$"
+            ],
+            "source": "किताब"
+          }
+        ]
+      }
+    ]
+  }
+}
