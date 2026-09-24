@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "subject": "mathematics",
+  "chapter": 7,
+  "title": "समाकलन (Integrals)",
+  "categories": {
+    "theory": [
+      {
+        "title": "छह विशिष्ट फलनों के समाकलन सूत्र एवं उनकी मानक उपपत्तियाँ (Integrals of Six Particular Functions & Derivations)",
+        "content": [
+          "विशिष्ट फलनों के 6 प्रामाणिक सूत्र अवकल गणित के प्रतिलोम संबंधों और प्रतिस्थापन विधियों द्वारा व्युत्पन्न किए गए हैं[span_14](start_span)[span_14](end_span)[span_15](start_span)[span_15](end_span):",
+          "1. सूत्र: $\\int \\frac{dx}{x^2 - a^2} = \\frac{1}{2a}\\log\\left|\\frac{x-a}{x+a}\\right| + C$ ($x^2 > a^2$)[span_16](start_span)[span_16](end_span)[span_17](start_span)[span_17](end_span)",
+          "उपपत्ति: गुणनखंड करने पर $\\frac{1}{x^2-a^2} = \\frac{1}{(x-a)(x+a)} = \\frac{1}{2a}\\left[\\frac{(x+a)-(x-a)}{(x-a)(x+a)}\\right] = \\frac{1}{2a}\\left[\\frac{1}{x-a} - \\frac{1}{x+a}\\right]$[span_18](start_span)[span_18](end_span)[span_19](start_span)[span_19](end_span)。",
+          "समाकलन करने पर: $\\frac{1}{2a}[\\log|x-a| - \\log|x+a|] + C = \\frac{1}{2a}\\log\\left|\\frac{x-a}{x+a}\\right| + C$[span_20](start_span)[span_20](end_span)[span_21](start_span)[span_21](end_span)。",
+          "2. सूत्र: $\\int \\frac{dx}{a^2 - x^2} = \\frac{1}{2a}\\log\\left|\\frac{a+x}{a-x}\\right| + C$ ($a^2 > x^2$)[span_22](start_span)[span_22](end_span)[span_23](start_span)[span_23](end_span)",
+          "उपपत्ति: $\\frac{1}{a^2-x^2} = \\frac{1}{2a}\\left[\\frac{(a+x)+(a-x)}{(a-x)(a+x)}\\right] = \\frac{1}{2a}\\left[\\frac{1}{a-x} + \\frac{1}{a+x}\\right]$[span_24](start_span)[span_24](end_span)。",
+          "समाकलन करने पर: $\\frac{1}{2a}[-\\log|a-x| + \\log|a+x|] + C = \\frac{1}{2a}\\log\\left|\\frac{a+x}{a-x}\\right| + C$[span_25](start_span)[span_25](end_span)。",
+          "3. सूत्र: $\\int \\frac{dx}{x^2 + a^2} = \\frac{1}{a}\\tan^{-1}\\left(\\frac{x}{a}\\right) + C$[span_26](start_span)[span_26](end_span)[span_27](start_span)[span_27](end_span)",
+          "उपपत्ति: माना $x = a\\tan\\theta \\implies dx = a\\sec^2\\theta\\,d\\theta$[span_28](start_span)[span_28](end_span)[span_29](start_span)[span_29](end_span)。",
+          "मान रखने पर: $\\int \\frac{a\\sec^2\\theta\\,d\\theta}{a^2\\tan^2\\theta + a^2} = \\frac{a}{a^2}\\int \\frac{\\sec^2\\theta}{\\sec^2\\theta}\\,d\\theta = \\frac{1}{a}\\int d\\theta = \\frac{1}{a}\\theta + C = \\frac{1}{a}\\tan^{-1}\\left(\\frac{x}{a}\\right) + C$[span_30](start_span)[span_30](end_span)[span_31](start_span)[span_31](end_span)。",
+          "4. सूत्र: $\\int \\frac{dx}{\\sqrt{a^2 - x^2}} = \\sin^{-1}\\left(\\frac{x}{a}\\right) + C$[span_32](start_span)[span_32](end_span)[span_33](start_span)[span_33](end_span)",
+          "उपपत्ति: माना $x = a\\sin\\theta \\implies dx = a\\cos\\theta\\,d\\theta$[span_34](start_span)[span_34](end_span)[span_35](start_span)[span_35](end_span)。",
+          "मान रखने पर: $\\int \\frac{a\\cos\\theta\\,d\\theta}{\\sqrt{a^2 - a^2\\sin^2\\theta}} = \\int \\frac{a\\cos\\theta}{a\\cos\\theta}\\,d\\theta = \\int d\\theta = \\theta + C = \\sin^{-1}\\left(\\frac{x}{a}\\right) + C$[span_36](start_span)[span_36](end_span)[span_37](start_span)[span_37](end_span)。",
+          "5. सूत्र: $\\int \\frac{dx}{\\sqrt{x^2 - a^2}} = \\log\\left|x + \\sqrt{x^2 - a^2}\\right| + C$[span_38](start_span)[span_38](end_span)[span_39](start_span)[span_39](end_span)",
+          "उपपत्ति: माना $x = a\\sec\\theta \\implies dx = a\\sec\\theta\\tan\\theta\\,d\\theta$[span_40](start_span)[span_40](end_span)[span_41](start_span)[span_41](end_span)。",
+          "$\\int \\frac{a\\sec\\theta\\tan\\theta\\,d\\theta}{\\sqrt{a^2\\sec^2\\theta - a^2}} = \\int \\sec\\theta\\,d\\theta = \\log|\\sec\\theta + \\tan\\theta| + C_1$[span_42](start_span)[span_42](end_span)[span_43](start_span)[span_43](end_span)。",
+          "चूँकि $\\sec\\theta = \\frac{x}{a}$ तथा $\\tan\\theta = \\frac{\\sqrt{x^2-a^2}}{a}$ $\\implies \\log\\left|\\frac{x + \\sqrt{x^2-a^2}}{a}\\right| + C_1 = \\log\\left|x + \\sqrt{x^2-a^2}\\right| + C$[span_44](start_span)[span_44](end_span)[span_45](start_span)[span_45](end_span)。",
+          "6. सूत्र: $\\int \\frac{dx}{\\sqrt{x^2 + a^2}} = \\log\\left|x + \\sqrt{x^2 + a^2}\\right| + C$[span_46](start_span)[span_46](end_span)[span_47](start_span)[span_47](end_span)",
+          "उपपत्ति: माना $x = a\\tan\\theta \\implies dx = a\\sec^2\\theta\\,d\\theta$[span_48](start_span)[span_48](end_span)。",
+          "$\\int \\frac{a\\sec^2\\theta\\,d\\theta}{\\sqrt{a^2\\tan^2\\theta + a^2}} = \\int \\sec\\theta\\,d\\theta = \\log|\\sec\\theta + \\tan\\theta| + C_1 = \\log\\left|x + \\sqrt{x^2+a^2}\\right| + C$[span_49](start_span)[span_49](end_span)।"
+        ],
+        "points": [
+          "बिना करणी वाले सूत्रों (1, 2) में $\\frac{1}{2a}$ का गुणांक आता है, जबकि सूत्र 3 में $\\frac{1}{a}$ आता है[span_50](start_span)[span_50](end_span)[span_51](start_span)[span_51](end_span)。",
+          "करणी युक्त सूत्रों (4, 5, 6) में बाहर कोई $\\frac{1}{a}$ गुणांक नहीं आता[span_52](start_span)[span_52](end_span)[span_53](start_span)[span_53](end_span)。",
+          "सूत्र 4 $\\sin^{-1}(x/a)$ देता है, जबकि सूत्र 5 और 6 सीधे लघुगणकीय रूप $\\log|x + \\sqrt{\\dots}|$ देते हैं[span_54](start_span)[span_54](end_span)[span_55](start_span)[span_55](end_span)।"
+        ]
+      },
+      {
+        "title": "द्विघात एवं रैखिक-द्विघात व्यंजकों हेतु पूर्ण वर्ग विधि (Completing the Square & Linear-Quadratic Forms)",
+        "content": [
+          "जब समाकल्य में हर एक पूर्ण द्विघात समीकरण $ax^2 + bx + c$ हो, तो उसे मानक रूप $(x \\pm \\alpha)^2 \\pm k^2$ में बदलकर उपर्युक्त 6 सूत्रों द्वारा हल किया जाता है[span_56](start_span)[span_56](end_span)[span_57](start_span)[span_57](end_span)。",
+          "पूर्ण वर्ग बनाने की प्रामाणिक विधि (Completing the Square Procedure)[span_58](start_span)[span_58](end_span)[span_59](start_span)[span_59](end_span)[span_60](start_span)[span_60](end_span):",
+          "चरण 1: $x^2$ के गुणांक $a$ को उभयनिष्ठ (Common) लेकर $x^2$ का गुणांक 1 बनाएँ[span_61](start_span)[span_61](end_span)[span_62](start_span)[span_62](end_span):",
+          "$$ax^2 + bx + c = a\\left[x^2 + \\frac{b}{a}x + \\frac{c}{a}\\right]$$",
+          "चरण 2: $x$ के गुणांक (अर्थात् $\\frac{b}{a}$) के आधे का वर्ग $\\left(\\frac{b}{2a}\\right)^2$ जोड़ें तथा घटाएँ[span_63](start_span)[span_63](end_span)[span_64](start_span)[span_64](end_span)[span_65](start_span)[span_65](end_span):",
+          "$$= a\\left[x^2 + \\frac{b}{a}x + \\left(\\frac{b}{2a}\\right)^2 - \\left(\\frac{b}{2a}\\right)^2 + \\frac{c}{a}\\right] = a\\left[\\left(x + \\frac{b}{2a}\\right)^2 + \\left(\\frac{c}{a} - \\frac{b^2}{4a^2}\\right)\\right]$$",
+          "चरण 3: $x + \\frac{b}{2a} = t$ रखने पर $dx = dt$ हो जाता है और व्यंजक $\\frac{1}{t^2 \\pm k^2}$ में बदल जाता है[span_66](start_span)[span_66](end_span)[span_67](start_span)[span_67](end_span)。",
+          "रैखिक-द्विघात प्रारूप (Linear over Quadratic: $\\int \\frac{px+q}{ax^2+bx+c}\\,dx$ अथवा $\\int \\frac{px+q}{\\sqrt{ax^2+bx+c}}\\,dx$)[span_68](start_span)[span_68](end_span)[span_69](start_span)[span_69](end_span)[span_70](start_span)[span_70](end_span):",
+          "कार्यविधि: अंश को हर के अवकलज तथा एक अन्य अचर के योग के रूप में व्यक्त करते हैं[span_71](start_span)[span_71](end_span)[span_72](start_span)[span_72](end_span)[span_73](start_span)[span_73](end_span):",
+          "$$px + q = A \\cdot \\frac{d}{dx}(ax^2 + bx + c) + B = A(2ax + b) + B$$",
+          "- दोनों पक्षों से $x$ के गुणांकों और अचर पदों की तुलना करके $A$ और $B$ के मान ज्ञात करते हैं[span_74](start_span)[span_74](end_span)[span_75](start_span)[span_75](end_span)[span_76](start_span)[span_76](end_span)。",
+          "- समाकलन दो भागों में विभाजित हो जाता है[span_77](start_span)[span_77](end_span)[span_78](start_span)[span_78](end_span)[span_79](start_span)[span_79](end_span):",
+          "$$I = A \\int \\frac{2ax+b}{ax^2+bx+c}\\,dx + B \\int \\frac{dx}{ax^2+bx+c} = A\\log|ax^2+bx+c| + B \\cdot I_2$$",
+          "जहाँ $I_2$ को पूर्ण वर्ग विधि द्वारा 6 मानक सूत्रों में से उपयुक्त सूत्र लगाकर हल किया जाता है[span_80](start_span)[span_80](end_span)[span_81](start_span)[span_81](end_span)[span_82](start_span)[span_82](end_span)।"
+        ],
+        "points": [
+          "करणी युक्त प्रारूप $\\frac{px+q}{\\sqrt{ax^2+bx+c}}$ में प्रथम भाग $A \\int \\frac{dt}{\\sqrt{t}} = 2A\\sqrt{ax^2+bx+c}$ बनता है[span_83](start_span)[span_83](end_span)。",
+          "यदि $x^2$ का गुणांक ऋणात्मक हो (जैसे $7 - 6x - x^2$), तो ऋण चिह्न को करणी के भीतर कोष्ठक में रखकर पूर्ण वर्ग बनाते हैं: $16 - (x+3)^2$[span_84](start_span)[span_84](end_span)。",
+          "यह विधि 5-अंकीय दीर्घ उत्तरीय प्रश्नों के लिए बिहार बोर्ड में अत्यंत महत्वपूर्ण है[span_85](start_span)[span_85](end_span)[span_86](start_span)[span_86](end_span)।"
+        ]
+      },
+      {
+        "title": "आंशिक भिन्नों द्वारा समाकलन का सिद्धांत एवं 5 मानक प्रारूप (Theory of Partial Fractions & 5 Standard Forms)",
+        "content": [
+          "परिमेय फलन की परिभाषा: दो बहुपदों का अनुपात $\\frac{P(x)}{Q(x)}$ (जहाँ $Q(x) \\neq 0$) परिमेय फलन कहलाता है[span_87](start_span)[span_87](end_span)。",
+          "उचित भिन्न (Proper Fraction) बनाम विषम भिन्न (Improper Fraction)[span_88](start_span)[span_88](end_span):",
+          "- उचित परिमेय फलन: यदि अंश $P(x)$ की घात < हर $Q(x)$ की घात हो[span_89](start_span)[span_89](end_span)。",
+          "- विषम परिमेय फलन: यदि अंश $P(x)$ की घात $\\ge$ हर $Q(x)$ की घात हो[span_90](start_span)[span_90](end_span)。",
+          "अनिवार्य नियम: विषम परिमेय फलनों में आंशिक भिन्न लगाने से पूर्व दीर्घ भाग (Long Division) द्वारा उसे उचित भिन्न में बदलना अनिवार्य है[span_91](start_span)[span_91](end_span)[span_92](start_span)[span_92](end_span)[span_93](start_span)[span_93](end_span):",
+          "$$\\frac{P(x)}{Q(x)} = T(x) + \\frac{P_1(x)}{Q(x)} \\quad (\\text{जहाँ } T(x) \\text{ बहुपद भागफल है तथा } \\deg P_1 < \\deg Q)$$",
+          "आंशिक भिन्नों के 5 प्रामाणिक प्रारूप (NCERT सारणी 7.2)[span_94](start_span)[span_94](end_span)[span_95](start_span)[span_95](end_span):",
+          "1. गैर-पुनरावृत्त रैखिक गुणनखंड: $\\frac{px+q}{(x-a)(x-b)} = \\frac{A}{x-a} + \\frac{B}{x-b}$ ($a \\neq b$)[span_96](start_span)[span_96](end_span)[span_97](start_span)[span_97](end_span)",
+          "2. पुनरावृत्त रैखिक गुणनखंड: $\\frac{px+q}{(x-a)^2} = \\frac{A}{x-a} + \\frac{B}{(x-a)^2}$[span_98](start_span)[span_98](end_span)[span_99](start_span)[span_99](end_span)",
+          "3. तीन भिन्न रैखिक गुणनखंड: $\\frac{px^2+qx+r}{(x-a)(x-b)(x-c)} = \\frac{A}{x-a} + \\frac{B}{x-b} + \\frac{C}{x-c}$[span_100](start_span)[span_100](end_span)[span_101](start_span)[span_101](end_span)",
+          "4. पुनरावृत्त व एकल का मिश्रण: $\\frac{px^2+qx+r}{(x-a)^2(x-b)} = \\frac{A}{x-a} + \\frac{B}{(x-a)^2} + \\frac{C}{x-b}$[span_102](start_span)[span_102](end_span)[span_103](start_span)[span_103](end_span)",
+          "5. अपूर्णनीय द्विघात गुणनखंड: $\\frac{px^2+qx+r}{(x-a)(x^2+bx+c)} = \\frac{A}{x-a} + \\frac{Bx+C}{x^2+bx+c}$ (जहाँ $x^2+bx+c$ के वास्तविक गुणनखंड न हों)[span_104](start_span)[span_104](end_span)[span_105](start_span)[span_105](end_span)",
+          "अज्ञात अचरों ($A, B, C$) को ज्ञात करने की दो विधियाँ[span_106](start_span)[span_106](end_span)[span_107](start_span)[span_107](end_span)[span_108](start_span)[span_108](end_span):",
+          "- विधि 1 (शून्यक प्रतिस्थापन / Cover-up Rule): रैखिक गुणनखंडों को शून्य के बराबर मानकर (जैसे $x=a, x=b$) सीधे मान निकालना[span_109](start_span)[span_109](end_span)[span_110](start_span)[span_110](end_span)。",
+          "- विधि 2 (गुणांक तुलना विधि): दोनों पक्षों में $x^2, x$ और अचर पदों के गुणांकों की तुलना करके युगपत समीकरण हल करना[span_111](start_span)[span_111](end_span)[span_112](start_span)[span_112](end_span)[span_113](start_span)[span_113](end_span)।"
+        ],
+        "points": [
+          "आंशिक भिन्नों में केवल बीजीय वियोजन के लिए छद्म-प्रतिस्थापन (जैसे $x^2 = t$) किया जाता है, परंतु समाकलन मूल चर $x$ में ही $\\tan^{-1}$ या $\\log$ द्वारा होता है[span_114](start_span)[span_114](end_span)[span_115](start_span)[span_115](end_span)[span_116](start_span)[span_116](end_span)。",
+          "यदि हर में $(x^n+1)$ रूप हो, तो अंश व हर में $x^{n-1}$ से गुणा करके $x^n = t$ माना जाता है[span_117](start_span)[span_117](end_span)[span_118](start_span)[span_118](end_span)。",
+          "रैखिक आंशिक भिन्न $\\frac{A}{x-a}$ का समाकलन सदैव $A\\log|x-a|$ तथा $\\frac{B}{(x-a)^2}$ का समाकलन $-\\frac{B}{x-a}$ होता है[span_119](start_span)[span_119](end_span)[span_120](start_span)[span_120](end_span)[span_121](start_span)[span_121](end_span)।"
+        ]
+      },
+      {
+        "title": "खंडशः समाकलन का सिद्धांत एवं ILATE नियम (Theory of Integration by Parts & ILATE Hierarchy)",
+        "content": [
+          "गुणनफल नियम की व्युत्पत्ति: यदि $u$ और $v$, चर $x$ के दो अवकलनीय फलन हैं, तो अवकलन के गुणनफल नियम से[span_122](start_span)[span_122](end_span):",
+          "$$\\frac{d}{dx}(u \\cdot v) = u \\frac{dv}{dx} + v \\frac{du}{dx}$$",
+          "दोनों पक्षों का समाकलन करने पर: $u \\cdot v = \\int u \\frac{dv}{dx}\\,dx + \\int v \\frac{du}{dx}\\,dx$[span_123](start_span)[span_123](end_span)。",
+          "पक्षांतरण करने पर: $\\int u \\frac{dv}{dx}\\,dx = u \\cdot v - \\int v \\frac{du}{dx}\\,dx$[span_124](start_span)[span_124](end_span)。",
+          "मान लीजिए $u = f(x)$ (प्रथम फलन) तथा $\\frac{dv}{dx} = g(x) \\implies v = \\int g(x)\\,dx$ (द्वितीय फलन)[span_125](start_span)[span_125](end_span)。",
+          "खंडशः समाकलन का मास्टर सूत्र (Integration by Parts Formula)[span_126](start_span)[span_126](end_span)[span_127](start_span)[span_127](end_span)[span_128](start_span)[span_128](end_span):",
+          "$$\\int f(x)g(x)\\,dx = f(x) \\int g(x)\\,dx - \\int \\left[ f'(x) \\int g(x)\\,dx \\right] dx$$",
+          "सरल शब्दों में: (प्रथम फलन $\\times$ द्वितीय का समाकलन) - $\\int$ [(प्रथम का अवकलज $\\times$ द्वितीय का समाकलन)] $dx$[span_129](start_span)[span_129](end_span)[span_130](start_span)[span_130](end_span)。",
+          "प्रथम फलन चुनने का ILATE वरीयता नियम (Priority Order)[span_131](start_span)[span_131](end_span)[span_132](start_span)[span_132](end_span):",
+          "- I (Inverse Trigonometric): प्रतिलोम त्रिकोणमितीय फलन ($\\sin^{-1}x, \\tan^{-1}x, \\cos^{-1}x$)[span_133](start_span)[span_133](end_span)[span_134](start_span)[span_134](end_span)",
+          "- L (Logarithmic): लघुगणकीय फलन ($\\log x, \\log 2x, \\log(x^2)$)[span_135](start_span)[span_135](end_span)[span_136](start_span)[span_136](end_span)",
+          "- A (Algebraic): बीजीय बहुपद फलन ($x, x^2, x^3, 2x+1$)[span_137](start_span)[span_137](end_span)[span_138](start_span)[span_138](end_span)",
+          "- T (Trigonometric): त्रिकोणमितीय फलन ($\\sin x, \\cos x, \\sec^2 x$)[span_139](start_span)[span_139](end_span)[span_140](start_span)[span_140](end_span)",
+          "- E (Exponential): चरघातांकी फलन ($e^x, a^x, 2^x$)[span_141](start_span)[span_141](end_span)[span_142](start_span)[span_142](end_span)",
+          "ILATE में जो अक्षर पहले आता है, उसे सदैव 'प्रथम फलन' ($u$) माना जाता है[span_143](start_span)[span_143](end_span)[span_144](start_span)[span_144](end_span)。",
+          "एकल फलनों का समाकलन (Single Function Integration):",
+          "फलन जैसे $\\log x, \\sin^{-1}x, \\tan^{-1}x$ का सीधा समाकलन सूत्र न होने पर अचर फलन $1$ को द्वितीय फलन ($v=1$) मानकर खंडशः समाकलन किया जाता है[span_145](start_span)[span_145](end_span)[span_146](start_span)[span_146](end_span)[span_147](start_span)[span_147](end_span):",
+          "$$\\int \\log x\\,dx = \\int (\\log x \\cdot 1)\\,dx = \\log x(x) - \\int \\left(\\frac{1}{x} \\cdot x\\right)dx = x\\log x - x + C$$"
+        ],
+        "points": [
+          "द्वितीय फलन के समाकलन में अचर $+C$ जोड़ना व्यर्थ है, क्योंकि वह अंत में विलोपित हो जाता है[span_148](start_span)[span_148](end_span)。",
+          "खंडशः समाकलन सभी गुणनफलों पर लागू नहीं होता (उदा. $\\int \\sqrt{x}\\sin x\\,dx$ का कोई प्राथमिक प्रतिअवकलज नहीं है)[span_149](start_span)[span_149](end_span)。",
+          "यदि समाकलन बार-बार पुनरावृत्त हो, तो उसे मूल समाकलन $I$ मानकर पक्षांतरण द्वारा हल किया जाता है[span_150](start_span)[span_150](end_span)[span_151](start_span)[span_151](end_span)।"
+        ]
+      },
+      {
+        "title": "चरघातांकी-फलन प्रारूप का सिद्धांत एवं चक्रीय समाकलन (Theory of eˣ[f(x)+f'(x)] & Cyclic Integrals)",
+        "content": [
+          "प्रारूप का प्रमेय कथन: जब समाकल्य में चरघातांकी $e^x$ के साथ किसी फलन और उसके अवकलज का योग उपस्थित हो[span_152](start_span)[span_152](end_span)[span_153](start_span)[span_153](end_span):",
+          "$$\\int e^x [f(x) + f'(x)]\\,dx = e^x f(x) + C$$",
+          "गणितीय उपपत्ति (Rigorous Proof)[span_154](start_span)[span_154](end_span):",
+          "चरण 1: समाकलन को दो भागों में विभाजित करने पर[span_155](start_span)[span_155](end_span):",
+          "$$I = \\int e^x f(x)\\,dx + \\int e^x f'(x)\\,dx = I_1 + \\int e^x f'(x)\\,dx$$",
+          "चरण 2: प्रथम भाग $I_1 = \\int f(x) \\cdot e^x\\,dx$ में खंडशः समाकलन लगाने पर (जहाँ $f(x)$ प्रथम तथा $e^x$ द्वितीय फलन है)[span_156](start_span)[span_156](end_span):",
+          "$$I_1 = f(x) \\int e^x\\,dx - \\int \\left[ f'(x) \\int e^x\\,dx \\right] dx = f(x) e^x - \\int f'(x) e^x\\,dx + C$$",
+          "चरण 3: $I_1$ का मान समीकरण में रखने पर दूसरा भाग निरस्त हो जाता है[span_157](start_span)[span_157](end_span):",
+          "$$I = \\left[e^x f(x) - \\int e^x f'(x)\\,dx\\right] + \\int e^x f'(x)\\,dx + C = e^x f(x) + C$$",
+          "चक्रीय समाकलन (Cyclic / Recurring Integrals: $\\int e^{ax}\\sin bx\\,dx$ अथवा $\\int e^{ax}\\cos bx\\,dx$)[span_158](start_span)[span_158](end_span)[span_159](start_span)[span_159](end_span):",
+          "- दो बार लगातार खंडशः समाकलन करने पर पुनः मूल समाकलन $I$ का पद विपरीत चिह्न के साथ प्राप्त होता है[span_160](start_span)[span_160](end_span)[span_161](start_span)[span_161](end_span)。",
+          "- समीकरण $I = [\\dots] - k \\cdot I$ बनाकर $I$ के पदों को बाएँ पक्ष में पक्षांतरित करके मान निकाला जाता है[span_162](start_span)[span_162](end_span)[span_163](start_span)[span_163](end_span):",
+          "$$\\int e^{2x}\\sin x\\,dx = \\frac{e^{2x}}{5}(2\\sin x - \\cos x) + C$$"
+        ],
+        "points": [
+          "पहचान ट्रिक: व्यंजक $\\frac{x e^x}{(1+x)^2} = e^x\\left[\\frac{1}{1+x} - \\frac{1}{(1+x)^2}\\right]$ में $f(x) = \\frac{1}{1+x}$ और $f'(x) = -\\frac{1}{(1+x)^2}$ है, अतः उत्तर $\\frac{e^x}{1+x}+C$ है[span_164](start_span)[span_164](end_span)。",
+          "त्रिकोणमितीय रूपांतरण: $e^x\\left(\\frac{1+\\sin x}{1+\\cos x}\\right) = e^x\\left[\\frac{1}{2}\\sec^2(x/2) + \\tan(x/2)\\right] = e^x\\tan(x/2) + C$[span_165](start_span)[span_165](end_span)。",
+          "बिहार बोर्ड वस्तुनिष्ठ प्रश्नों में यह प्रारूप प्रतिवर्ष 2 से 3 प्रश्नों में निश्चित रूप से पूछा जाता है[span_166](start_span)[span_166](end_span)[span_167](start_span)[span_167](end_span)।"
+        ]
+      },
+      {
+        "title": "तीन विशिष्ट दीर्घ करणी फलनों के सूत्र एवं खंडशः उपपत्ति (Derivations of Three Special Square-Root Integrals)",
+        "content": [
+          "प्रश्नावली 7.7 में प्रयुक्त होने वाले तीन अति-महत्वपूर्ण दीर्घ करणी सूत्रों की खंडशः समाकलन द्वारा व्युत्पत्ति[span_168](start_span)[span_168](end_span)[span_169](start_span)[span_169](end_span):",
+          "1. सूत्र: $\\int \\sqrt{a^2 - x^2}\\,dx = \\frac{x}{2}\\sqrt{a^2 - x^2} + \\frac{a^2}{2}\\sin^{-1}\\left(\\frac{x}{a}\\right) + C$[span_170](start_span)[span_170](end_span)[span_171](start_span)[span_171](end_span)",
+          "उपपत्ति: $I = \\int \\sqrt{a^2-x^2} \\cdot 1\\,dx$ ($1$ को द्वितीय फलन मानकर)[span_172](start_span)[span_172](end_span):",
+          "$$I = \\sqrt{a^2-x^2}(x) - \\int \\frac{-2x}{2\\sqrt{a^2-x^2}} \\cdot x\\,dx = x\\sqrt{a^2-x^2} - \\int \\frac{-x^2}{\\sqrt{a^2-x^2}}\\,dx$$",
+          "अंश में $a^2$ जोड़कर घटाने पर: $x\\sqrt{a^2-x^2} - \\int \\frac{(a^2-x^2) - a^2}{\\sqrt{a^2-x^2}}\\,dx = x\\sqrt{a^2-x^2} - I + a^2 \\int \\frac{dx}{\\sqrt{a^2-x^2}}$[span_173](start_span)[span_173](end_span)。",
+          "पक्षांतरण करने पर: $2I = x\\sqrt{a^2-x^2} + a^2\\sin^{-1}\\left(\\frac{x}{a}\\right) \\implies I = \\frac{x}{2}\\sqrt{a^2-x^2} + \\frac{a^2}{2}\\sin^{-1}\\left(\\frac{x}{a}\\right) + C$[span_174](start_span)[span_174](end_span)[span_175](start_span)[span_175](end_span)。",
+          "2. सूत्र: $\\int \\sqrt{x^2 - a^2}\\,dx = \\frac{x}{2}\\sqrt{x^2 - a^2} - \\frac{a^2}{2}\\log\\left|x + \\sqrt{x^2 - a^2}\\right| + C$[span_176](start_span)[span_176](end_span)[span_177](start_span)[span_177](end_span)",
+          "उपपत्ति: $I = \\int \\sqrt{x^2-a^2} \\cdot 1\\,dx = x\\sqrt{x^2-a^2} - \\int \\frac{x^2}{\\sqrt{x^2-a^2}}\\,dx$[span_178](start_span)[span_178](end_span)。",
+          "अंश को $(x^2-a^2) + a^2$ लिखने पर: $2I = x\\sqrt{x^2-a^2} - a^2 \\log|x + \\sqrt{x^2-a^2}| \\implies I = \\frac{x}{2}\\sqrt{x^2-a^2} - \\frac{a^2}{2}\\log|x + \\sqrt{x^2-a^2}| + C$[span_179](start_span)[span_179](end_span)[span_180](start_span)[span_180](end_span)。",
+          "3. सूत्र: $\\int \\sqrt{x^2 + a^2}\\,dx = \\frac{x}{2}\\sqrt{x^2 + a^2} + \\frac{a^2}{2}\\log\\left|x + \\sqrt{x^2 + a^2}\\right| + C$[span_181](start_span)[span_181](end_span)[span_182](start_span)[span_182](end_span)",
+          "उपपत्ति: $I = \\int \\sqrt{x^2+a^2} \\cdot 1\\,dx$ में खंडशः विधि लगाने पर: $2I = x\\sqrt{x^2+a^2} + a^2\\log|x + \\sqrt{x^2+a^2}| \\implies I = \\frac{x}{2}\\sqrt{x^2+a^2} + \\frac{a^2}{2}\\log|x + \\sqrt{x^2+a^2}| + C$[span_183](start_span)[span_183](end_span)[span_184](start_span)[span_184](end_span)।"
+        ],
+        "points": [
+          "तीनों सूत्रों की संरचना समरूप है: प्रथम पद सदैव $\\frac{x}{2} \\times (\\text{मूल करणी})$ होता है[span_185](start_span)[span_185](end_span)[span_186](start_span)[span_186](end_span)。",
+          "द्वितीय पद में $\\frac{a^2}{2}$ के साथ वही पद आता है जो उस करणी के व्युत्क्रम (हर में होने पर) का समाकलन होता है[span_187](start_span)[span_187](end_span)[span_188](start_span)[span_188](end_span)。",
+          "केवल $\\sqrt{x^2-a^2}$ वाले सूत्र में बीच में ऋण चिह्न ($-$) आता है, शेष दोनों में धन चिह्न ($+$) रहता है[span_189](start_span)[span_189](end_span)[span_190](start_span)[span_190](end_span)।"
+        ]
+      }
+    ]
+  }
+}
