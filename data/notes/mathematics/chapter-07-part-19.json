@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "subject": "mathematics",
+  "chapter": 7,
+  "title": "समाकलन (Integrals)",
+  "categories": {
+    "longAnswers": [
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int (\\sqrt{\\tan x} + \\sqrt{\\cot x})\\,dx$ [NCERT Ex 42, BSEB 2026/2024A, 5-अंक]",
+        "answer": [
+          "चरण 1 (प्रयुक्त विधि/सूत्र): $\\cot x = \\frac{1}{\\tan x}$, प्रतिस्थापन $\\tan x = t^2$, बीजगणितीय रूपान्तरण तथा सूत्र $\\int \\frac{1}{p^2+a^2}\\,dp = \\frac{1}{a}\\tan^{-1}\\left(\\frac{p}{a}\\right) + C$।",
+          "चरण 2: समाकल्य से $\\sqrt{\\tan x}$ उभयनिष्ठ लेना: $I = \\int \\sqrt{\\tan x}(1 + \\cot x)\\,dx = \\int \\sqrt{\\tan x}\\left(1 + \\frac{1}{\\tan x}\\right)dx$।",
+          "चरण 3: प्रतिस्थापन करना: माना $\\tan x = t^2 \\implies \\sec^2 x\\,dx = 2t\\,dt \\implies (1 + \\tan^2 x)\\,dx = 2t\\,dt \\implies (1 + t^4)\\,dx = 2t\\,dt \\implies dx = \\frac{2t}{1 + t^4}\\,dt$।",
+          "चरण 4: समाकलन में मान रखने पर: $I = \\int t \\left(1 + \\frac{1}{t^2}\\right) \\frac{2t}{1 + t^4}\\,dt = 2\\int \\frac{t^2 + 1}{t^4 + 1}\\,dt$।",
+          "चरण 5: अंश व हर में $t^2$ से भाग देने पर: $I = 2\\int \\frac{1 + 1/t^2}{t^2 + 1/t^2}\\,dt$।",
+          "चरण 6: हर को पूर्ण वर्ग बनाना: $t^2 + \\frac{1}{t^2} = \\left(t - \\frac{1}{t}\\right)^2 + 2 = \\left(t - \\frac{1}{t}\\right)^2 + (\\sqrt{2})^2$।",
+          "चरण 7: पुनः प्रतिस्थापन: माना $t - \\frac{1}{t} = p \\implies \\left(1 + \\frac{1}{t^2}\\right)dt = dp$।",
+          "चरण 8: समाकलन करना: $I = 2\\int \\frac{dp}{p^2 + (\\sqrt{2})^2} = 2 \\times \\frac{1}{\\sqrt{2}}\\tan^{-1}\\left(\\frac{p}{\\sqrt{2}}\right) + C = \\sqrt{2}\\tan^{-1}\\left(\\frac{t - 1/t}{\\sqrt{2}}\right) + C = \\sqrt{2}\\tan^{-1}\\left(\\frac{t^2 - 1}{\\sqrt{2}t}\\right) + C$।",
+          "चरण 9: $t = \\sqrt{\\tan x}$ प्रतिस्थापित करने पर: $I = \\sqrt{2}\\tan^{-1}\\left(\\frac{\\tan x - 1}{\\sqrt{2\\tan x}}\\right) + C$।",
+          "उत्तर: $\\sqrt{2}\\tan^{-1}\\left(\\frac{\\tan x - 1}{\\sqrt{2\\tan x}}\right) + C$"
+        ]
+      },
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int \\frac{1}{x - x^3}\\,dx$ [NCERT Misc Q1, BSEB 5-अंक]",
+        "answer": [
+          "चरण 1 (प्रयुक्त विधि/सूत्र): हर से $x^3$ उभयनिष्ठ लेकर प्रतिस्थापन विधि $\\frac{1}{x^2} - 1 = t$, अथवा आंशिक भिन्न वियोजन $\\frac{1}{x(1-x^2)}$।",
+          "चरण 2: विधि 1 (त्वरित प्रतिस्थापन): हर से $x^3$ बाहर निकालने पर: $\\int \\frac{1}{x^3(1/x^2 - 1)}\\,dx$।",
+          "चरण 3: माना $\\frac{1}{x^2} - 1 = t \\implies -\\frac{2}{x^3}\\,dx = dt \\implies \\frac{1}{x^3}\\,dx = -\\frac{1}{2}dt$।",
+          "चरण 4: मान प्रतिस्थापित करने पर: $-\\frac{1}{2}\\int \\frac{1}{t}\\,dt = -\\frac{1}{2}\\log|t| + C$।",
+          "चरण 5: $t = \\frac{1}{x^2} - 1 = \\frac{1 - x^2}{x^2}$ रखने पर: $-\\frac{1}{2}\\log\\left|\\frac{1 - x^2}{x^2}\\right| + C = \\frac{1}{2}\\log\\left|\\frac{x^2}{1 - x^2}\\right| + C = \\log|x| - \\frac{1}{2}\\log|1 - x^2| + C$।",
+          "उत्तर: $\\frac{1}{2}\\log\\left|\\frac{x^2}{1 - x^2}\\right| + C$"
+        ]
+      },
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int \\frac{1}{\\sqrt{x+a} + \\sqrt{x+b}}\\,dx$ [NCERT Misc Q2, BSEB 5-अंक]",
+        "answer": [
+          "चरण 1 (प्रयुक्त विधि/सूत्र): संयुग्मी (Conjugate) से परिमेयकरण तथा घात समाकलन सूत्र $\\int u^n\\,du = \\frac{u^{n+1}}{n+1} + C$।",
+          "चरण 2: अंश व हर में $(\\sqrt{x+a} - \\sqrt{x+b})$ से गुणा करने पर: $\\int \\frac{\\sqrt{x+a} - \\sqrt{x+b}}{(\\sqrt{x+a} + \\sqrt{x+b})(\\sqrt{x+a} - \\sqrt{x+b})}\\,dx$।",
+          "चरण 3: हर को सरल करना: $(\\sqrt{x+a})^2 - (\\sqrt{x+b})^2 = (x + a) - (x + b) = a - b$।",
+          "चरण 4: समाकलन रूप: $\\frac{1}{a - b}\\int \\left[(x + a)^{1/2} - (x + b)^{1/2}\\right]dx$।",
+          "चरण 5: पद-दर-पद समाकलन करने पर: $\\frac{1}{a - b}\\left[\\frac{(x + a)^{3/2}}{3/2} - \\frac{(x + b)^{3/2}}{3/2}\\right] + C$।",
+          "चरण 6: सरलीकरण: $\\frac{2}{3(a - b)}\\left[(x + a)^{3/2} - (x + b)^{3/2}\\right] + C$।",
+          "उत्तर: $\\frac{2}{3(a - b)}\\left[(x + a)^{3/2} - (x + b)^{3/2}\\right] + C$"
+        ]
+      },
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int \\frac{1}{x\\sqrt{ax - x^2}}\\,dx$ [NCERT Misc Q3, BSEB 5-अंक]",
+        "answer": [
+          "चरण 1 (प्रयुक्त विधि/सूत्र): प्रतिस्थापन $x = \\frac{a}{t} \\implies dx = -\\frac{a}{t^2}\\,dt$ तथा घात समाकलन सूत्र $\\int u^{-1/2}\\,du = 2\\sqrt{u}$।",
+          "चरण 2: माना $x = \\frac{a}{t} \\implies t = \\frac{a}{x}$ तथा $dx = -\\frac{a}{t^2}\\,dt$।",
+          "चरण 3: करणी के भीतर का व्यंजक: $ax - x^2 = a\\left(\\frac{a}{t}\\right) - \\left(\\frac{a}{t}\\right)^2 = \\frac{a^2}{t} - \\frac{a^2}{t^2} = \\frac{a^2(t - 1)}{t^2} \\implies \\sqrt{ax - x^2} = \\frac{a}{t}\\sqrt{t - 1}$।",
+          "चरण 4: समाकलन में मान रखने पर: $I = \\int \\frac{1}{\\frac{a}{t} \\cdot \\frac{a}{t}\\sqrt{t - 1}} \\left(-\\frac{a}{t^2}\\,dt\\right) = \\int \\frac{t^2}{a^2\\sqrt{t - 1}} \\left(-\\frac{a}{t^2}\\,dt\\right) = -\\frac{1}{a}\\int \\frac{1}{\\sqrt{t - 1}}\\,dt$।",
+          "चरण 5: समाकलन करने पर: $-\\frac{1}{a}\\left[2\\sqrt{t - 1}\\right] + C = -\\frac{2}{a}\\sqrt{t - 1} + C$।",
+          "चरण 6: $t = \\frac{a}{x}$ रखने पर: $-\\frac{2}{a}\\sqrt{\\frac{a}{x} - 1} + C = -\\frac{2}{a}\\sqrt{\\frac{a - x}{x}} + C$।",
+          "उत्तर: $-\\frac{2}{a}\\sqrt{\\frac{a - x}{x}} + C$"
+        ]
+      },
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int \\frac{1}{x^2(x^4 + 1)^{3/4}}\\,dx$ [NCERT Misc Q4, BSEB 5-अंक]",
+        "answer": [
+          "चरण 1 (प्रयुक्त विधि/सूत्र): कोष्ठक से $x^4$ उभयनिष्ठ लेकर प्रतिस्थापन $1 + \\frac{1}{x^4} = t$ तथा घात नियम $\\int t^n\\,dt = \\frac{t^{n+1}}{n+1}$।",
+          "चरण 2: हर के कोष्ठक से $x^4$ बाहर निकालने पर: $(x^4 + 1)^{3/4} = [x^4(1 + x^{-4})]^{3/4} = (x^4)^{3/4}(1 + x^{-4})^{3/4} = x^3(1 + x^{-4})^{3/4}$।",
+          "चरण 3: समाकल्य रूप: $\\int \\frac{1}{x^2 \\cdot x^3(1 + x^{-4})^{3/4}}\\,dx = \\int \\frac{1}{x^5(1 + x^{-4})^{3/4}}\\,dx$।",
+          "चरण 4: माना $1 + \\frac{1}{x^4} = t \\implies -\\frac{4}{x^5}\\,dx = dt \\implies \\frac{1}{x^5}\\,dx = -\\frac{1}{4}dt$।",
+          "चरण 5: मान रखने पर: $-\\frac{1}{4}\\int t^{-3/4}\\,dt = -\\frac{1}{4}\\left[\\frac{t^{-3/4 + 1}}{-3/4 + 1}\\right] + C = -\\frac{1}{4}\\left[\\frac{t^{1/4}}{1/4}\\right] + C = -t^{1/4} + C$।",
+          "चरण 6: $t = 1 + \\frac{1}{x^4} = \\frac{x^4 + 1}{x^4}$ रखने पर: $-\\left(\\frac{x^4 + 1}{x^4}\\right)^{1/4} + C = -\\frac{(x^4 + 1)^{1/4}}{x} + C$।",
+          "उत्तर: $-\\left(\\frac{x^4 + 1}{x^4}\\right)^{1/4} + C$"
+        ]
+      },
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int \\frac{1}{x^{1/2} + x^{1/3}}\\,dx$ [NCERT Misc Q5, BSEB 5-अंक]",
+        "answer": [
+          "चरण 1 (प्रयुक्त विधि/सूत्र): हर की घातों के ल.स.प. (2 व 3 का ल.स.प. = 6) के अनुसार प्रतिस्थापन $x = t^6$, दीर्घ भाग विधि तथा मानक समाकलन सूत्र।",
+          "चरण 2: माना $x = t^6 \\implies dx = 6t^5\\,dt$; तथा $x^{1/2} = (t^6)^{1/2} = t^3$, $x^{1/3} = (t^6)^{1/3} = t^2$।",
+          "चरण 3: समाकलन में मान रखने पर: $\\int \\frac{6t^5}{t^3 + t^2}\\,dt = \\int \\frac{6t^5}{t^2(t + 1)}\\,dt = 6\\int \\frac{t^3}{t + 1}\\,dt$।",
+          "चरण 4: अंश में $t+1$ से भाग देने पर: $\\frac{t^3}{t + 1} = \\frac{(t^3 + 1) - 1}{t + 1} = \\frac{(t+1)(t^2 - t + 1) - 1}{t + 1} = (t^2 - t + 1) - \\frac{1}{t + 1}$।",
+          "चरण 5: समाकलन करने पर: $6\\left[\\frac{t^3}{3} - \\frac{t^2}{2} + t - \\log|t + 1|\\right] + C = 2t^3 - 3t^2 + 6t - 6\\log|t + 1| + C$।",
+          "चरण 6: $t = x^{1/6}$ रखने पर: $2(x^{1/6})^3 - 3(x^{1/6})^2 + 6x^{1/6} - 6\\log|x^{1/6} + 1| + C = 2x^{1/2} - 3x^{1/3} + 6x^{1/6} - 6\\log|x^{1/6} + 1| + C$।",
+          "उत्तर: $2\\sqrt{x} - 3x^{1/3} + 6x^{1/6} - 6\\log|x^{1/6} + 1| + C$"
+        ]
+      },
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int \\frac{5x}{(x+1)(x^2+9)}\\,dx$ [NCERT Misc Q6, BSEB 5-अंक]",
+        "answer": [
+          "चरण 1 (प्रयुक्त विधि/सूत्र): अपूर्णनीय द्विघात हेतु आंशिक भिन्न $\\frac{5x}{(x+1)(x^2+9)} = \\frac{A}{x+1} + \\frac{Bx+C}{x^2+9}$, $\\int \\frac{2x}{x^2+a^2}\\,dx = \\log(x^2+a^2)$ तथा $\\int \\frac{1}{x^2+a^2}\\,dx = \\frac{1}{a}\\tan^{-1}\\left(\\frac{x}{a}\\right)$।",
+          "चरण 2: समीकरण: $5x = A(x^2 + 9) + (Bx + C)(x + 1) = (A + B)x^2 + (B + C)x + (9A + C)$।",
+          "चरण 3: गुणांकों की तुलना करने पर: $A + B = 0 \\implies B = -A$; $B + C = 5$; $9A + C = 0 \\implies C = -9A$।",
+          "चरण 4: समीकरण हल करने पर: $B + C = 5 \\implies -A - 9A = 5 \\implies -10A = 5 \\implies A = -\\frac{1}{2}$; अतः $B = \\frac{1}{2}$ तथा $C = \\frac{9}{2}$।",
+          "चरण 5: समाकलन रूप: $-\\frac{1}{2}\\int \\frac{1}{x+1}\\,dx + \\int \\frac{x/2 + 9/2}{x^2+9}\\,dx = -\\frac{1}{2}\\log|x+1| + \\frac{1}{4}\\int \\frac{2x}{x^2+9}\\,dx + \\frac{9}{2}\\int \\frac{1}{x^2+3^2}\\,dx$।",
+          "चरण 6: समाकलन करने पर: $-\\frac{1}{2}\\log|x+1| + \\frac{1}{4}\\log(x^2+9) + \\frac{9}{2} \\times \\frac{1}{3}\\tan^{-1}\\left(\\frac{x}{3}\\right) + C$।",
+          "चरण 7: सरलीकरण: $-\\frac{1}{2}\\log|x+1| + \\frac{1}{4}\\log(x^2+9) + \\frac{3}{2}\\tan^{-1}\\left(\\frac{x}{3}\\right) + C$।",
+          "उत्तर: $-\\frac{1}{2}\\log|x+1| + \\frac{1}{4}\\log(x^2+9) + \\frac{3}{2}\\tan^{-1}\\left(\\frac{x}{3}\\right) + C$"
+        ]
+      },
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int \\frac{\\sin x}{\\sin(x-a)}\\,dx$ [NCERT Misc Q7, BSEB 5-अंक]",
+        "answer": [
+          "चरण 1 (प्रयुक्त विधि/सूत्र): प्रतिस्थापन $x - a = t$, त्रिकोणमितीय सूत्र $\\sin(A+B) = \\sin A\\cos B + \\cos A\\sin B$ तथा $\\int \\cot t\\,dt = \\log|\\sin t|$।",
+          "चरण 2: माना $x - a = t \\implies x = t + a$ तथा $dx = dt$।",
+          "चरण 3: समाकल्य रूप: $\\int \\frac{\\sin(t + a)}{\\sin t}\\,dt = \\int \\frac{\\sin t\\cos a + \\cos t\\sin a}{\\sin t}\\,dt$।",
+          "चरण 4: भिन्नों को अलग-अलग करना: $\\cos a\\int 1\\,dt + \\sin a\\int \\frac{\\cos t}{\\sin t}\\,dt = \\cos a\\int 1\\,dt + \\sin a\\int \\cot t\\,dt$।",
+          "चरण 5: समाकलन करने पर: $t\\cos a + \\sin a \\log|\\sin t| + C_1$।",
+          "चरण 6: $t = x - a$ रखने पर: $(x - a)\\cos a + \\sin a \\log|\\sin(x - a)| + C_1 = x\\cos a - a\\cos a + \\sin a \\log|\\sin(x - a)| + C_1$।",
+          "चरण 7: अचरों को मिलाने पर: $x\\cos a + \\sin a \\log|\\sin(x - a)| + C$ (जहाँ $C = C_1 - a\\cos a$)।",
+          "उत्तर: $x\\cos a + \\sin a \\log|\\sin(x - a)| + C$"
+        ]
+      },
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int \\frac{\\sin^8 x - \\cos^8 x}{1 - 2\\sin^2 x\\cos^2 x}\\,dx$ [NCERT Misc Q10, BSEB 5-अंक]",
+        "answer": [
+          "चरण 1 (प्रयुक्त विधि/सूत्र): बीजगणितीय सूत्र $a^4 - b^4 = (a^2-b^2)(a^2+b^2)$, त्रिकोणमितीय सर्वसमिका $\\sin^4 x + \\cos^4 x = 1 - 2\\sin^2 x\\cos^2 x$ तथा $\\cos 2x = \\cos^2 x - \\sin^2 x$।",
+          "चरण 2: अंश के गुणनखंड करना: $\\sin^8 x - \\cos^8 x = (\\sin^4 x)^2 - (\\cos^4 x)^2 = (\\sin^4 x - \\cos^4 x)(\\sin^4 x + \\cos^4 x)$।",
+          "चरण 3: प्रथम भाग का पुनः गुणनखंड: $\\sin^4 x - \\cos^4 x = (\\sin^2 x - \\cos^2 x)(\\sin^2 x + \\cos^2 x) = (\\sin^2 x - \\cos^2 x)(1) = -(\\cos^2 x - \\sin^2 x) = -\\cos 2x$।",
+          "चरण 4: द्वितीय भाग को सरल करना: $\\sin^4 x + \\cos^4 x = (\\sin^2 x + \\cos^2 x)^2 - 2\\sin^2 x\\cos^2 x = 1 - 2\\sin^2 x\\cos^2 x$।",
+          "चरण 5: समाकलन में मान रखने पर: $\\int \\frac{(-\\cos 2x)(1 - 2\\sin^2 x\\cos^2 x)}{1 - 2\\sin^2 x\\cos^2 x}\\,dx = -\\int \\cos 2x\\,dx$।",
+          "चरण 6: समाकलन करने पर: $-\\frac{\\sin 2x}{2} + C = -\\frac{1}{2}\\sin 2x + C$।",
+          "उत्तर: $-\\frac{1}{2}\\sin 2x + C$"
+        ]
+      },
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int \\frac{1}{\\cos(x+a)\\cos(x+b)}\\,dx$ [NCERT Misc Q11, BSEB 5-अंक]",
+        "answer": [
+          "चरण 1 (प्रयुक्त विधि/सूत्र): अंश व हर में $\\sin[(x+a)-(x+b)] = \\sin(a-b)$ से गुणा, $\\sin(A-B)$ विस्तार सूत्र तथा $\\int \\tan u\\,du = -\\log|\\cos u|$।",
+          "चरण 2: अचर $\\sin(a-b)$ से गुणा व भाग करने पर: $\\frac{1}{\\sin(a-b)}\\int \\frac{\\sin[(x+a) - (x+b)]}{\\cos(x+a)\\cos(x+b)}\\,dx$।",
+          "चरण 3: अंश का त्रिकोणमितीय विस्तार: $\\sin[(x+a) - (x+b)] = \\sin(x+a)\\cos(x+b) - \\cos(x+a)\\sin(x+b)$।",
+          "चरण 4: पदों को अलग-अलग विभाजित करने पर: $\\frac{1}{\\sin(a-b)}\\int \\left[\\frac{\\sin(x+a)\\cos(x+b)}{\\cos(x+a)\\cos(x+b)} - \\frac{\\cos(x+a)\\sin(x+b)}{\\cos(x+a)\\cos(x+b)}\\right]dx = \\frac{1}{\\sin(a-b)}\\int [\\tan(x+a) - \\tan(x+b)]dx$।",
+          "चरण 5: समाकलन करने पर: $\\frac{1}{\\sin(a-b)}[-\\log|\\cos(x+a)| - (-\\log|\\cos(x+b)|)] + C = \\frac{1}{\\sin(a-b)}[\\log|\\cos(x+b)| - \\log|\\cos(x+a)|] + C$।",
+          "चरण 6: लघुगणक नियम $\\log m - \\log n = \\log(m/n)$ से: $\\frac{1}{\\sin(a-b)}\\log\\left|\\frac{\\cos(x+b)}{\\cos(x+a)}\\right| + C$।",
+          "उत्तर: $\\frac{1}{\\sin(a-b)}\\log\\left|\\frac{\\cos(x+b)}{\\cos(x+a)}\\right| + C$"
+        ]
+      },
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int \\sqrt{\\frac{1 - \\sqrt{x}}{1 + \\sqrt{x}}}\\,dx$ [NCERT Misc Q20, BSEB 5-अंक]",
+        "answer": [
+          "चरण 1 (प्रयुक्त विधि/सूत्र): प्रतिस्थापन $x = \\cos^2\\theta$, त्रिकोणमितीय अर्द्ध-कोण सूत्र तथा $\\int \\cos^2\\theta\\,d\\theta = \\frac{\\theta}{2} + \\frac{\\sin 2\\theta}{4}$।",
+          "चरण 2: माना $\\sqrt{x} = \\cos\\theta \\implies x = \\cos^2\\theta$ तथा $dx = -2\\cos\\theta\\sin\\theta\\,d\\theta$।",
+          "चरण 3: करणी को सरल करना: $\\sqrt{\\frac{1 - \\cos\\theta}{1 + \\cos\\theta}} = \\sqrt{\\frac{2\\sin^2(\\theta/2)}{2\\cos^2(\\theta/2)}} = \\tan\\left(\\frac{\\theta}{2}\\right) = \\frac{\\sin(\\theta/2)}{\\cos(\\theta/2)} = \\frac{2\\sin^2(\\theta/2)}{2\\sin(\\theta/2)\\cos(\\theta/2)} = \\frac{1 - \\cos\\theta}{\\sin\\theta}$।",
+          "चरण 4: मान प्रतिस्थापित करने पर: $\\int \\left(\\frac{1 - \\cos\\theta}{\\sin\\theta}\\right)(-2\\cos\\theta\\sin\\theta)d\\theta = -2\\int (1 - \\cos\\theta)\\cos\\theta\\,d\\theta = -2\\int (\\cos\\theta - \\cos^2\\theta)d\\theta$।",
+          "चरण 5: $\\cos^2\\theta = \\frac{1 + \\cos 2\\theta}{2}$ रखने पर: $-2\\int \\cos\\theta\\,d\\theta + 2\\int \\frac{1 + \\cos 2\\theta}{2}\\,d\\theta = -2\\sin\\theta + \\int (1 + \\cos 2\\theta)d\\theta$।",
+          "चरण 6: समाकलन करने पर: $-2\\sin\\theta + \\theta + \\frac{\\sin 2\\theta}{2} + C = -2\\sin\\theta + \\theta + \\frac{2\\sin\\theta\\cos\\theta}{2} + C = -2\\sin\\theta + \\theta + \\sin\\theta\\cos\\theta + C$।",
+          "चरण 7: मूल चर $x$ में मान रखने पर: चूँकि $\\cos\\theta = \\sqrt{x} \\implies \\theta = \\cos^{-1}\\sqrt{x}$ तथा $\\sin\\theta = \\sqrt{1 - \\cos^2\\theta} = \\sqrt{1 - x}$।",
+          "चरण 8: मान रखने पर: $-2\\sqrt{1 - x} + \\cos^{-1}\\sqrt{x} + \\sqrt{1 - x} \\cdot \\sqrt{x} + C = -2\\sqrt{1 - x} + \\cos^{-1}\\sqrt{x} + \\sqrt{x(1 - x)} + C$।",
+          "उत्तर: $-2\\sqrt{1 - x} + \\cos^{-1}\\sqrt{x} + \\sqrt{x(1 - x)} + C$"
+        ]
+      }
+    ]
+  }
+}
