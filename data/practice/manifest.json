@@ -1,5 +1,5 @@
 {
-  "_help": "हर Practice Set की फ़ाइल यहाँ एक entry से जुड़ती है। id सिर्फ़ अक्षर, अंक, - या _ (जैसे set-01)। नमूना data/templates/manifest-examples.json में है।",
+  "_help": "हर Practice Set की फाइल यहाँ एक entry से जुड़ती है: id सिर्फ अक्षर, अंक, - या _ (जैसे set-01)।",
   "practice": [
     {
       "id": "set-01",
@@ -8,7 +8,79 @@
       "description": "Bihar Board Class 12 Physics VVI Objective Questions (Chapter 1 se Chapter 8 tak)",
       "file": "physics/set-01.json",
       "timeLimitMinutes": 60,
-      "totalQuestions": 84
+      "totalQuestions": 44
+    },
+    {
+      "id": "set-02",
+      "subject": "physics",
+      "title": "Class 12 Physics - Practice Set 02",
+      "description": "Bihar Board Class 12 Physics VVI Objective Questions (Set 02)",
+      "file": "physics/set-02.json",
+      "timeLimitMinutes": 60,
+      "totalQuestions": 40
+    },
+    {
+      "id": "set-03",
+      "subject": "physics",
+      "title": "Class 12 Physics - Practice Set 03",
+      "description": "Bihar Board Class 12 Physics VVI Objective Questions (Set 03)",
+      "file": "physics/set-03.json",
+      "timeLimitMinutes": 60,
+      "totalQuestions": 40
+    },
+    {
+      "id": "set-04",
+      "subject": "physics",
+      "title": "Class 12 Physics - Practice Set 04",
+      "description": "Bihar Board Class 12 Physics VVI Objective Questions (Set 04)",
+      "file": "physics/set-04.json",
+      "timeLimitMinutes": 60,
+      "totalQuestions": 40
+    },
+    {
+      "id": "set-05",
+      "subject": "physics",
+      "title": "Class 12 Physics - Practice Set 05",
+      "description": "Bihar Board Class 12 Physics VVI Objective Questions (Set 05)",
+      "file": "physics/set-05.json",
+      "timeLimitMinutes": 60,
+      "totalQuestions": 40
+    },
+    {
+      "id": "set-06",
+      "subject": "physics",
+      "title": "Class 12 Physics - Practice Set 06",
+      "description": "Bihar Board Class 12 Physics VVI Objective Questions (Set 06)",
+      "file": "physics/set-06.json",
+      "timeLimitMinutes": 60,
+      "totalQuestions": 40
+    },
+    {
+      "id": "set-07",
+      "subject": "physics",
+      "title": "Class 12 Physics - Practice Set 07",
+      "description": "Bihar Board Class 12 Physics VVI Objective Questions (Set 07)",
+      "file": "physics/set-07.json",
+      "timeLimitMinutes": 60,
+      "totalQuestions": 40
+    },
+    {
+      "id": "set-08",
+      "subject": "physics",
+      "title": "Class 12 Physics - Practice Set 08",
+      "description": "Bihar Board Class 12 Physics VVI Objective Questions (Set 08)",
+      "file": "physics/set-08.json",
+      "timeLimitMinutes": 60,
+      "totalQuestions": 40
+    },
+    {
+      "id": "set-09",
+      "subject": "physics",
+      "title": "Class 12 Physics - Practice Set 09",
+      "description": "Bihar Board Class 12 Physics VVI Objective Questions (Set 09)",
+      "file": "physics/set-09.json",
+      "timeLimitMinutes": 60,
+      "totalQuestions": 40
     }
   ]
 }
