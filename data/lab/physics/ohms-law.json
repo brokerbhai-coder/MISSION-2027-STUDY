@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "subject": "physics",
+  "id": "ohms-law",
+  "type": "ohms-law",
+  "title": "ओम के नियम का सत्यापन (V = IR)",
+  "aim": "किसी दिए गए प्रतिरोधक (R) के लिए विभवांतर (V) और धारा (I) के बीच संबंध ज्ञात करना, और उसके प्रतिरोध का मान निकालना।",
+  "apparatus": [
+    "बैटरी / बैटरी एलिमिनेटर",
+    "दिया गया प्रतिरोधक R",
+    "Rheostat (धारा नियंत्रक)",
+    "Ammeter",
+    "Voltmeter",
+    "Key",
+    "संयोजक तार"
+  ],
+  "steps": [
+    {
+      "text": "परिपथ चित्र के अनुसार बैटरी, Key, Rheostat, R, Ammeter और Voltmeter को जोड़ो।"
+    },
+    {
+      "text": "Rheostat को सबसे कम धारा वाली स्थिति (शुरुआत, Rh = 0) पर लाओ।",
+      "param": "Rh",
+      "target": 0
+    },
+    {
+      "text": "Key बंद करके पहली रीडिंग लो — Ammeter और Voltmeter की रीडिंग table में जोड़ो।",
+      "action": "read"
+    },
+    {
+      "text": "अब Rheostat को थोड़ा और घुमाकर धारा बदलो (लगभग 8Ω)।",
+      "param": "Rh",
+      "target": 8
+    },
+    {
+      "text": "फिर से रीडिंग लो और table में जोड़ो।",
+      "action": "read"
+    },
+    {
+      "text": "Rheostat को और आगे बढ़ाओ (लगभग 16Ω) और एक और रीडिंग लो।",
+      "param": "Rh",
+      "target": 16
+    },
+    {
+      "text": "रीडिंग table में जोड़ो।",
+      "action": "read"
+    },
+    {
+      "text": "अब V-I ग्राफ़ की ढाल (slope) से R का मान निकालो और नीचे भरो।"
+    }
+  ],
+  "params": [
+    {
+      "key": "Rh",
+      "label": "Rheostat (Rh)",
+      "unit": "Ω",
+      "min": 0,
+      "max": 20,
+      "step": 0.5,
+      "default": 0
+    }
+  ],
+  "constants": {
+    "emf": 6,
+    "internalR": 0.5,
+    "Rfixed": 10,
+    "RhMax": 20
+  },
+  "table": {
+    "columns": [
+      "Rh (Ω)",
+      "V (Volt)",
+      "I (mA)"
+    ]
+  },
+  "resultHint": "हर reading में V और I का अनुपात (V/I) लगभग एक जैसा आना चाहिए — यही R का मान है। कम से कम 3 readings लेकर औसत निकालो।"
+}
