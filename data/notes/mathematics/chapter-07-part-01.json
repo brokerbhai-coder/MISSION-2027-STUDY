@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "subject": "mathematics",
+  "chapter": 7,
+  "title": "समाकलन (Integrals)",
+  "categories": {
+    "theory": [
+      {
+        "title": "समाकलन का परिचय एवं ऐतिहासिक संकल्पना (Concept and Origin of Integration)",
+        "content": [
+          "कैलकुलस (Calculus) की दो मुख्य शाखाएँ हैं: अवकल गणित (Differential Calculus) और समाकलन गणित (Integral Calculus)[span_3](start_span)[span_3](end_span)。",
+          "अवकल गणित का मुख्य उद्देश्य किसी वक्र के किसी बिंदु पर स्पर्श रेखा की प्रवणता (Slope/Derivative) तथा राशियों के परिवर्तन की दर ज्ञात करना है[span_4](start_span)[span_4](end_span)。",
+          "समाकलन गणित का उद्भव वक्रों से घिरे समतल क्षेत्रों का यथार्थ क्षेत्रफल (Area under curves) तथा कुल संचयन (Total Accumulation) ज्ञात करने की समस्या से हुआ[span_5](start_span)[span_5](end_span)。",
+          "समाकलन की मूल परिभाषा: अवकलन की व्युत्क्रम (उल्टी) संक्रिया को समाकलन अथवा प्रति-अवकलन कहते हैं (Integration is the inverse process of differentiation)[span_6](start_span)[span_6](end_span)[span_7](start_span)[span_7](end_span)。",
+          "गणितीय संबंध: यदि किसी फलन $F(x)$ का अवकलज $f(x)$ है, अर्थात् $\\frac{d}{dx}[F(x)] = f(x)$, तो $f(x)$ का समाकलन $F(x) + C$ होता है[span_8](start_span)[span_8](end_span)[span_9](start_span)[span_9](end_span):",
+          "$$\\frac{d}{dx}[F(x)] = f(x) \\iff \\int f(x)\\,dx = F(x) + C$$",
+          "प्रतीक की उत्पत्ति: समाकलन का आधुनिक संकेत $\\int$ महान गणितज्ञ गॉटफ्रीड विल्हेम लाइबनिज (G.W. Leibniz) ने लैटिन शब्द 'Summa' (जिसका अर्थ योग/Summation होता है) के प्रथम अक्षर 'S' को खींचकर विकसित किया था[span_10](start_span)[span_10](end_span)。",
+          "समाकलन संकेतन के प्रमुख अंग[span_11](start_span)[span_11](end_span):",
+          "- $\\int$: समाकलन का चिह्न (Integral Sign)",
+          "- $f(x)$: समाकल्य (Integrand) - वह फलन जिसका समाकलन करना है[span_12](start_span)[span_12](end_span)",
+          "- $dx$: समाकलन का चर (Variable of Integration) - जो बताता है कि समाकलन $x$ के सापेक्ष हो रहा है[span_13](start_span)[span_13](end_span)",
+          "- $F(x)$: प्रतिअवकलज या पूर्वग (Antiderivative or Primitive)[span_14](start_span)[span_14](end_span)",
+          "- $C$: समाकलन का स्वेच्छ अचर (Arbitrary Constant of Integration)[span_15](start_span)[span_15](end_span)"
+        ],
+        "points": [
+          "समाकलन दो रूपों में विभाजित होता है: (i) अनिश्चित समाकलन (Indefinite Integrals) जिसमें सीमाएँ नहीं होतीं, और (ii) निश्चित समाकलन (Definite Integrals) जिसमें निम्न व उच्च सीमाएँ होती हैं[span_16](start_span)[span_16](end_span)[span_17](start_span)[span_17](end_span)。",
+          "यदि किसी कण का समय $t$ पर तात्क्षणिक वेग $v(t) = \\frac{ds}{dt}$ ज्ञात हो, तो समाकलन द्वारा उसकी स्थिति $s(t) = \\int v(t)\\,dt$ प्राप्त की जाती है[span_18](start_span)[span_18](end_span)。",
+          "कलन की आधारभूत प्रमेय (Fundamental Theorem of Calculus) अनिश्चित समाकलन और निश्चित समाकलन के मध्य सेतु का कार्य करती है[span_19](start_span)[span_19](end_span)।"
+        ]
+      },
+      {
+        "title": "प्रतिअवकलज एवं स्वेच्छ अचर C की आवश्यकता (Antiderivative and the Role of Constant C)",
+        "content": [
+          "प्रतिअवकलज (Antiderivative / Primitive) की परिभाषा: यदि किसी अंतराल $I$ में $\\frac{d}{dx}[F(x)] = f(x)$ हो, तो फलन $F(x)$ को $f(x)$ का प्रतिअवकलज अथवा पूर्वग कहा जाता है[span_20](start_span)[span_20](end_span)。",
+          "अचर $C$ की आवश्यकता (Why Constant C is added):",
+          "हम जानते हैं कि किसी भी अचर राशि (Constant) का अवकलज सदैव शून्य होता है (अर्थात् $\\frac{d}{dx}(C) = 0$)[span_21](start_span)[span_21](end_span)[span_22](start_span)[span_22](end_span)。",
+          "निम्नलिखित उदाहरणों पर विचार कीजिए[span_23](start_span)[span_23](end_span)[span_24](start_span)[span_24](end_span):",
+          "- $\\frac{d}{dx}(x^2) = 2x$",
+          "- $\\frac{d}{dx}(x^2 + 5) = 2x + 0 = 2x$",
+          "- $\\frac{d}{dx}(x^2 - 100) = 2x - 0 = 2x$",
+          "- $\\frac{d}{dx}(x^2 + C) = 2x$",
+          "इन सभी फलनों का अवकलज $2x$ ही प्राप्त होता है[span_25](start_span)[span_25](end_span)[span_26](start_span)[span_26](end_span)। अतः जब हम $2x$ का समाकलन (उल्टा प्रक्रम) करते हैं, तो हमें वास्तविक अचर संख्या ज्ञात नहीं होती[span_27](start_span)[span_27](end_span)[span_28](start_span)[span_28](end_span)。",
+          "इसी कारणवश व्यापक रूप में समाकलन करने के उपरांत सदैव एक स्वेच्छ अचर $+C$ जोड़ा जाता है[span_29](start_span)[span_29](end_span)[span_30](start_span)[span_30](end_span):",
+          "$$\\int 2x\\,dx = x^2 + C$$",
+          "अनिश्चितता का कारण: चूँकि $C$ का मान कोई भी वास्तविक संख्या (धनात्मक, ऋणात्मक अथवा शून्य) हो सकता है, इसलिए इसे अनिश्चित समाकलन (Indefinite Integral) कहते हैं, क्योंकि इसका मान अद्वितीय (Unique) नहीं होता, बल्कि फलनों का एक अपरिमित समुच्चय होता है[span_31](start_span)[span_31](end_span)।"
+        ],
+        "points": [
+          "प्रतिअवकलज अद्वितीय नहीं होते: किसी फलन के अनगिनत प्रतिअवकलज हो सकते हैं, जो परस्पर केवल एक अचर $C$ के अंतर से भिन्न होते हैं[span_32](start_span)[span_32](end_span)。",
+          "अचर का विलोपन: निश्चित समाकलन में उच्च सीमा और निम्न सीमा का अंतर लेने पर यह अचर $C$ स्वतः निरस्त हो जाता है ($[F(b)+C] - [F(a)+C] = F(b)-F(a)$)[span_33](start_span)[span_33](end_span)。",
+          "बिहार बोर्ड वस्तुनिष्ठ नियम: किसी भी अनिश्चित समाकलन के उत्तर में $+C$ अथवा $+k$ लिखना अनिवार्य है[span_34](start_span)[span_34](end_span)[span_35](start_span)[span_35](end_span)।"
+        ]
+      },
+      {
+        "title": "अनिश्चित समाकलन का ज्यामितीय निरूपण: वक्रों का परिवार (Geometrical Interpretation: Family of Curves)",
+        "content": [
+          "ज्यामितीय दृष्टि से किसी फलन का अनिश्चित समाकलन किसी एकल वक्र को नहीं, बल्कि परस्पर समांतर स्थित वक्रों के एक अनंत परिवार (Family of Curves) को निरूपित करता है[span_36](start_span)[span_36](end_span)。",
+          "परवलय परिवार का उदाहरण[span_37](start_span)[span_37](end_span):",
+          "समीकरण $y = \\int 2x\\,dx = x^2 + C$ पर विचार कीजिए[span_38](start_span)[span_38](end_span):",
+          "- $C = 0$ रखने पर: $y = x^2$ (एक ऐसा परवलय जिसका शीर्ष मूल बिंदु $(0, 0)$ पर है)[span_39](start_span)[span_39](end_span)",
+          "- $C = 1$ रखने पर: $y = x^2 + 1$ (परवलय $y = x^2$ को $y$-अक्ष की धनात्मक दिशा में 1 इकाई ऊपर खिसकाने पर प्राप्त होता है)[span_40](start_span)[span_40](end_span)",
+          "- $C = 2$ रखने पर: $y = x^2 + 2$ (परवलय 2 इकाई ऊपर स्थानांतरित होता है)[span_41](start_span)[span_41](end_span)",
+          "- $C = -1$ रखने पर: $y = x^2 - 1$ (परवलय $y$-अक्ष की ऋणात्मक दिशा में 1 इकाई नीचे खिसकता है)[span_42](start_span)[span_42](end_span)",
+          "- $C = -2$ रखने पर: $y = x^2 - 2$ (परवलय 2 इकाई नीचे स्थानांतरित होता है)[span_43](start_span)[span_43](end_span)",
+          "स्पर्श रेखाओं की समांतरता (Parallel Tangents Property)[span_44](start_span)[span_44](end_span):",
+          "यदि हम कोई ऊर्ध्वाधर रेखा $x = a$ खींचें, तो यह रेखा परिवार के सभी परवलयों को विभिन्न बिंदुओं $P_0, P_1, P_2, P_{-1}, P_{-2}$ पर प्रतिच्छेद करती है[span_45](start_span)[span_45](end_span)。",
+          "इन सभी प्रतिच्छेद बिंदुओं पर स्पर्श रेखा की प्रवणता (Slope) समान होती है[span_46](start_span)[span_46](end_span):",
+          "$$\\frac{dy}{dx}\\Bigg|_{x=a} = 2a = \\text{अचर}$$",
+          "इसका अर्थ यह है कि रेखा $x = a$ पर स्थित परिवार के प्रत्येक वक्र पर खींची गई स्पर्श रेखाएँ परस्पर पूर्णतः समांतर (Parallel) होती हैं[span_47](start_span)[span_47](end_span)。",
+          "निष्कर्ष: अनिश्चित समाकलन $y = F(x) + C$ वक्रों के ऐसे परिवार को दर्शाता है जिसके किसी एक सदस्य को $y$-अक्ष के अनुदिश ऊपर अथवा नीचे समांतर स्थानांतरित करके परिवार का अन्य कोई भी सदस्य प्राप्त किया जा सकता है[span_48](start_span)[span_48](end_span)।"
+        ],
+        "points": [
+          "वक्रों का विस्थापन केवल $y$-अक्ष (ऊर्ध्वाधर दिशा) में होता है, $x$-अक्ष के अनुदिश कोई क्षैतिज विस्थापन नहीं होता[span_49](start_span)[span_49](end_span)。",
+          "समान अवकलज वाले दो भिन्न फलनों के बीच केवल एक अचर का अंतर होता है[span_50](start_span)[span_50](end_span)。",
+          "यदि वक्र परिवार के किसी बिंदु $(x_0, y_0)$ से गुजरने का प्रतिबंध दिया हो, तो $C$ का एक अद्वितीय मान प्राप्त होकर एक विशिष्ट वक्र निर्धारित हो जाता है[span_51](start_span)[span_51](end_span)।"
+        ]
+      },
+      {
+        "title": "अनिश्चित समाकलन के मूलभूत बीजगणितीय प्रगुण (Fundamental Properties of Indefinite Integrals)",
+        "content": [
+          "अनिश्चित समाकलन निम्नलिखित महत्वपूर्ण बीजगणितीय प्रगुणों को संतुष्ट करता है[span_52](start_span)[span_52](end_span)[span_53](start_span)[span_53](end_span):",
+          "प्रगुण 1 (अवकलन एवं समाकलन की व्युत्क्रम प्रकृति)[span_54](start_span)[span_54](end_span):",
+          "अवकलन और समाकलन एक-दूसरे के प्रभाव को समाप्त कर देते हैं:",
+          "$$\\frac{d}{dx}\\left[\\int f(x)\\,dx\\right] = f(x) \\quad \\text{तथा} \\quad \\int f'(x)\\,dx = f(x) + C$$",
+          "प्रगुण 2 (समतुल्य समाकलन)[span_55](start_span)[span_55](end_span):",
+          "यदि दो अनिश्चित समाकलनों के अवकलज समान हों, तो वे वक्रों के एक ही परिवार को निरूपित करते हैं और परस्पर समतुल्य होते हैं[span_56](start_span)[span_56](end_span):",
+          "$$\\frac{d}{dx}\\left[\\int f(x)\\,dx\\right] = \\frac{d}{dx}\\left[\\int g(x)\\,dx\\right] \\implies \\int f(x)\\,dx = \\int g(x)\\,dx + C$$",
+          "प्रगुण 3 (योग एवं अंतर नियम - Sum & Difference Rule)[span_57](start_span)[span_57](end_span)[span_58](start_span)[span_58](end_span):",
+          "दो या दो से अधिक फलनों के योग अथवा अंतर का समाकलन उनके अलग-अलग समाकलनों के योग अथवा अंतर के बराबर होता है[span_59](start_span)[span_59](end_span)[span_60](start_span)[span_60](end_span):",
+          "$$\\int [f(x) \\pm g(x)]\\,dx = \\int f(x)\\,dx \\pm \\int g(x)\\,dx$$",
+          "प्रगुण 4 (अचर गुणक नियम - Constant Multiple Rule)[span_61](start_span)[span_61](end_span)[span_62](start_span)[span_62](end_span):",
+          "किसी अचर राशि $k$ से गुणित फलन का समाकलन करने पर अचर राशि को समाकलन चिह्न से बाहर निकाला जा सकता है[span_63](start_span)[span_63](end_span)[span_64](start_span)[span_64](end_span):",
+          "$$\\int k\\,f(x)\\,dx = k\\int f(x)\\,dx \\quad (k \\in \\mathbb{R})$$",
+          "प्रगुण 5 (व्यापक रैखिक संयोजन नियम - Linearity Property)[span_65](start_span)[span_65](end_span):",
+          "प्रगुण 3 और 4 को मिलाकर कई फलनों के रैखिक संयोजन का समाकलन सीधे किया जा सकता है[span_66](start_span)[span_66](end_span):",
+          "$$\\int [k_1 f_1(x) + k_2 f_2(x) + \\dots + k_n f_n(x)]\\,dx = k_1\\int f_1(x)\\,dx + k_2\\int f_2(x)\\,dx + \\dots + k_n\\int f_n(x)\\,dx$$",
+          "सरल अनुप्रयोग उदाहरण[span_67](start_span)[span_67](end_span):",
+          "$$\\int (5x^4 + \\sin x + e^x)\\,dx = 5\\int x^4\\,dx + \\int \\sin x\\,dx + \\int e^x\\,dx = 5\\left(\\frac{x^5}{5}\\right) - \\cos x + e^x + C = x^5 - \\cos x + e^x + C$$"
+        ],
+        "points": [
+          "प्रत्येक पद का अलग-अलग समाकलन करते समय अलग-अलग अचर ($C_1, C_2, C_3$) जोड़ने की आवश्यकता नहीं होती; अंत में केवल एक ही उभयनिष्ठ अचर $+C$ लिखा जाता है[span_68](start_span)[span_68](end_span)。",
+          "शून्य का समाकलन एक स्वेच्छ अचर होता है: $\\int 0\\,dx = C$[span_69](start_span)[span_69](end_span)。",
+          "समाकलन संक्रिया रैखिकता (Linearity) के गुणधर्म का पूर्ण पालन करती है[span_70](start_span)[span_70](end_span)।"
+        ]
+      },
+      {
+        "title": "अवकलन एवं समाकलन की तुलना (Comprehensive Comparison: Differentiation vs Integration)",
+        "content": [
+          "अवकलन (Differentiation) और समाकलन (Integration) में निम्नलिखित 10 आधारभूत समानताएँ एवं विषमताएँ पाई जाती हैं[span_71](start_span)[span_71](end_span):",
+          "1. संक्रिया प्रकृति: दोनों ही फलनों पर लागू होने वाली कैलकुलस की आधारभूत संक्रियाएँ हैं[span_72](start_span)[span_72](end_span)。",
+          "2. रैखिकता (Linearity): दोनों रैखिकता के नियम को संतुष्ट करते हैं, अर्थात् योग पर अलग-अलग हो जाते हैं तथा अचर गुणक बाहर आ जाता है[span_73](start_span)[span_73](end_span)。",
+          "3. अस्तित्व (Existence): सभी फलन अवकलनीय नहीं होते (जैसे $f(x)=|x|$, $x=0$ पर); उसी प्रकार सभी फलन समाकलनीय भी नहीं होते[span_74](start_span)[span_74](end_span)。",
+          "4. अद्वितीयता (Uniqueness): किसी फलन का अवकलज अस्तित्व में हो तो वह अद्वितीय (Unique) होता है; किंतु समाकलन अद्वितीय नहीं होता, उसमें स्वेच्छ अचर $C$ का अंतर रहता है[span_75](start_span)[span_75](end_span)。",
+          "5. बहुपद की घात पर प्रभाव: बहुपद $P(x)$ का अवकलन करने पर घात 1 घट जाती है ($n x^{n-1}$); जबकि समाकलन करने पर घात 1 बढ़ जाती है ($\\frac{x^{n+1}}{n+1}$)[span_76](start_span)[span_76](end_span)。",
+          "6. बिंदु बनाम अंतराल: अवकलज की चर्चा किसी एक विशिष्ट बिंदु $x = c$ पर की जाती है; परंतु समाकलन की चर्चा सदैव एक निश्चित अंतराल पर की जाती है[span_77](start_span)[span_77](end_span)。",
+          "7. ज्यामितीय अर्थ: अवकलज वक्र के किसी बिंदु पर स्पर्श रेखा की प्रवणता (Slope) देता है; जबकि अनिश्चित समाकलन परस्पर समांतर वक्रों के परिवार को तथा निश्चित समाकलन वक्र से घिरे क्षेत्र के क्षेत्रफल को दर्शाता है[span_78](start_span)[span_78](end_span)。",
+          "8. भौतिक सार्थकता: दूरी $s(t)$ का अवकलन करने पर वेग $v(t)$ मिलता है; जबकि वेग $v(t)$ का समाकलन करने पर तय की गई कुल दूरी $s(t)$ प्राप्त होती है[span_79](start_span)[span_79](end_span)。",
+          "9. सीमांत अवधारणा (Limit Concept): अवकलन दर की सीमा ($\lim_{h \\to 0} \\frac{f(x+h)-f(x)}{h}$) है; और समाकलन अनंत सूक्ष्म भागों के योग की सीमा ($\lim_{n \\to \\infty} \\sum$) है[span_80](start_span)[span_80](end_span)。",
+          "10. परस्पर व्युत्क्रम: अवकलन और समाकलन दोनों प्रक्रम गणितीय रूप से एक-दूसरे के प्रतिलोम (Inverse) हैं[span_81](start_span)[span_81](end_span)।"
+        ],
+        "points": [
+          "यदि $f'(x) = g'(x)$ हो, तो $f(x)$ और $g(x)$ में केवल एक अचर का अंतर होता है ($f(x) - g(x) = C$)[span_82](start_span)[span_82](end_span)。",
+          "समाकलन करते समय घात नियम में $n \\neq -1$ होना अनिवार्य प्रतिबंध है[span_83](start_span)[span_83](end_span)。",
+          "अवकलन स्थानीय गुण (Local Property) की जाँच करता है जबकि समाकलन वैश्विक संचयन (Global Accumulation) मापता है[span_84](start_span)[span_84](end_span)।"
+        ]
+      },
+      {
+        "title": "निरीक्षण विधि द्वारा समाकलन एवं विशिष्ट प्रतिअवकलज (Method of Inspection and Unique Antiderivatives)",
+        "content": [
+          "निरीक्षण विधि (Method of Inspection): समाकलन के प्रारंभिक स्तर पर बिना किसी सूत्र के केवल अंतर्ज्ञान और अवकलन के ज्ञान के आधार पर ऐसे फलन की खोज करना जिसका अवकलज दिया गया फलन हो, निरीक्षण विधि कहलाती है[span_85](start_span)[span_85](end_span)[span_86](start_span)[span_86](end_span)。",
+          "कार्यविधि एवं प्रमुख निरीक्षण उदाहरण[span_87](start_span)[span_87](end_span)[span_88](start_span)[span_88](end_span):",
+          "1. $\\cos 2x$ का प्रतिअवकलज[span_89](start_span)[span_89](end_span)[span_90](start_span)[span_90](end_span):",
+          "हम जानते हैं कि $\\frac{d}{dx}(\\sin 2x) = 2\\cos 2x \\implies \\cos 2x = \\frac{1}{2}\\frac{d}{dx}(\\sin 2x) = \\frac{d}{dx}\\left(\\frac{1}{2}\\sin 2x\\right)$[span_91](start_span)[span_91](end_span)[span_92](start_span)[span_92](end_span)。",
+          "अतः निरीक्षण विधि से $\\cos 2x$ का प्रतिअवकलज $\\frac{1}{2}\\sin 2x$ है[span_93](start_span)[span_93](end_span)[span_94](start_span)[span_94](end_span)。",
+          "2. $3x^2 + 4x^3$ का प्रतिअवकलज[span_95](start_span)[span_95](end_span)[span_96](start_span)[span_96](end_span):",
+          "हम जानते हैं कि $\\frac{d}{dx}(x^3 + x^4) = 3x^2 + 4x^3$[span_97](start_span)[span_97](end_span)[span_98](start_span)[span_98](end_span)。",
+          "अतः $3x^2 + 4x^3$ का प्रतिअवकलज $x^3 + x^4$ है[span_99](start_span)[span_99](end_span)[span_100](start_span)[span_100](end_span)。",
+          "3. $e^{2x}$ का प्रतिअवकलज[span_101](start_span)[span_101](end_span)[span_102](start_span)[span_102](end_span):",
+          "$\\frac{d}{dx}(e^{2x}) = 2e^{2x} \\implies e^{2x} = \\frac{d}{dx}\\left(\\frac{1}{2}e^{2x}\right)$[span_103](start_span)[span_103](end_span)[span_104](start_span)[span_104](end_span)。",
+          "अतः $e^{2x}$ का प्रतिअवकलज $\\frac{1}{2}e^{2x}$ है[span_105](start_span)[span_105](end_span)[span_106](start_span)[span_106](end_span)。",
+          "4. $(ax + b)^2$ का प्रतिअवकलज[span_107](start_span)[span_107](end_span)[span_108](start_span)[span_108](end_span):",
+          "$\\frac{d}{dx}[(ax + b)^3] = 3(ax + b)^2 \\cdot a = 3a(ax + b)^2 \\implies (ax + b)^2 = \\frac{d}{dx}\\left[\\frac{(ax + b)^3}{3a}\\right]$[span_109](start_span)[span_109](end_span)[span_110](start_span)[span_110](end_span)。",
+          "अतः इसका प्रतिअवकलज $\\frac{(ax + b)^3}{3a}$ है[span_111](start_span)[span_111](end_span)[span_112](start_span)[span_112](end_span)。",
+          "5. $\\sin 2x - 4e^{3x}$ का प्रतिअवकलज[span_113](start_span)[span_113](end_span)[span_114](start_span)[span_114](end_span):",
+          "$\\frac{d}{dx}\\left(-\\frac{1}{2}\\cos 2x\\right) = \\sin 2x$ तथा $\\frac{d}{dx}\\left(\\frac{4}{3}e^{3x}\\right) = 4e^{3x}$[span_115](start_span)[span_115](end_span)[span_116](start_span)[span_116](end_span)。",
+          "अतः प्रतिअवकलज $-\\frac{1}{2}\\cos 2x - \\frac{4}{3}e^{3x}$ है[span_117](start_span)[span_117](end_span)[span_118](start_span)[span_118](end_span)。",
+          "विशिष्ट प्रतिअवकलज ज्ञात करना (Initial Value Problem)[span_119](start_span)[span_119](end_span)[span_120](start_span)[span_120](end_span):",
+          "यदि $f(x) = 4x^3 - 6$ द्वारा परिभाषित फलन का प्रतिअवकलज $F(x)$ ज्ञात करना हो जहाँ $F(0) = 3$ दिया है[span_121](start_span)[span_121](end_span)[span_122](start_span)[span_122](end_span):",
+          "- व्यापक प्रतिअवकलज: $F(x) = \\int (4x^3 - 6)\\,dx = x^4 - 6x + C$[span_123](start_span)[span_123](end_span)[span_124](start_span)[span_124](end_span)",
+          "- दी गई शर्त $F(0) = 3$ रखने पर: $0^4 - 6(0) + C = 3 \\implies C = 3$[span_125](start_span)[span_125](end_span)[span_126](start_span)[span_126](end_span)",
+          "- अतः अभीष्ट अद्वितीय प्रतिअवकलज: $F(x) = x^4 - 6x + 3$[span_127](start_span)[span_127](end_span)[span_128](start_span)[span_128](end_span)"
+        ],
+        "points": [
+          "निरीक्षण विधि केवल साधारण फलनों के लिए उपयोगी है; जटिल फलनों के लिए प्रतिस्थापन, आंशिक भिन्न और खंडशः समाकलन की आवश्यकता होती है[span_129](start_span)[span_129](end_span)。",
+          "कुछ फलनों का प्रारंभिक फलनों के रूप में प्रतिअवकलज ज्ञात करना असंभव होता है (जैसे $\\int e^{-x^2}\\,dx$ अथवा $\\int \\frac{\\sin x}{x}\\,dx$)[span_130](start_span)[span_130](end_span)。",
+          "बिहार बोर्ड परीक्षा में निरीक्षण विधि पर 2 अंक का प्रश्न अनिवार्य रूप से पूछा जाता है[span_131](start_span)[span_131](end_span)।"
+        ]
+      }
+    ]
+  }
+}
