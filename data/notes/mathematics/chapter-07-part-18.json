@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "subject": "mathematics",
+  "chapter": 7,
+  "title": "समाकलन (Integrals)",
+  "categories": {
+    "longAnswers": [
+      {
+        "question": "मान ज्ञात कीजिए: $\\int_0^{\\pi/2} \\log(\\sin x)\\,dx = -\\frac{\\pi}{2}\\log 2 = \\frac{\\pi}{2}\\log\\left(\\frac{1}{2}\\right)$ [NCERT Ex 37, BSEB 5-अंक]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र/प्रगुण): किंग प्रगुण $P_4: \\int_0^a f(x)\\,dx = \\int_0^a f(a-x)\\,dx$, द्विगुण सीमा प्रगुण $P_6$, तथा $\\int_0^{\\pi/2} 1\\,dx = \\frac{\\pi}{2}$।",
+          "चरण 2: माना दिए गए समाकलन का मान $I$ है: $I = \\int_0^{\\pi/2} \\log(\\sin x)\\,dx$ ... (समीकरण 1)",
+          "चरण 3: प्रगुण $P_4$ लागू करने पर ($x$ के स्थान पर $\\pi/2 - x$): $I = \\int_0^{\\pi/2} \\log[\\sin(\\pi/2 - x)]\\,dx = \\int_0^{\\pi/2} \\log(\\cos x)\\,dx$ ... (समीकरण 2)",
+          "चरण 4: समीकरण (1) और (2) को जोड़ने पर: $2I = \\int_0^{\\pi/2} [\\log(\\sin x) + \\log(\\cos x)]\\,dx = \\int_0^{\\pi/2} \\log(\\sin x\\cos x)\\,dx$",
+          "चरण 5: कोष्ठक में 2 से गुणा व भाग करने पर: $2I = \\int_0^{\\pi/2} \\log\\left(\\frac{2\\sin x\\cos x}{2}\\right)dx = \\int_0^{\\pi/2} \\log\\left(\\frac{\\sin 2x}{2}\\right)dx = \\int_0^{\\pi/2} \\log(\\sin 2x)\\,dx - \\int_0^{\\pi/2} \\log 2\\,dx$",
+          "चरण 6: द्वितीय भाग का समाकलन: $\\log 2 \\int_0^{\\pi/2} 1\\,dx = \\log 2 [x]_0^{\\pi/2} = \\frac{\\pi}{2}\\log 2$",
+          "चरण 7: प्रथम भाग $I_1 = \\int_0^{\\pi/2} \\log(\\sin 2x)\\,dx$ में माना $2x = t \\implies 2\\,dx = dt \\implies dx = \\frac{1}{2}dt$; सीमा: जब $x = 0 \\implies t = 0$, जब $x = \\pi/2 \\implies t = \\pi$",
+          "चरण 8: अतः $I_1 = \\frac{1}{2}\\int_0^\\pi \\log(\\sin t)\\,dt$; चूँकि $\\sin(\\pi - t) = \\sin t$, अतः प्रगुण $P_6$ से: $\\frac{1}{2}\\left[2\\int_0^{\\pi/2} \\log(\\sin t)\\,dt\\right] = \\int_0^{\\pi/2} \\log(\\sin x)\\,dx = I$",
+          "चरण 9: मान प्रतिस्थापित करने पर: $2I = I - \\frac{\\pi}{2}\\log 2 \\implies 2I - I = -\\frac{\\pi}{2}\\log 2 \\implies I = -\\frac{\\pi}{2}\\log 2 = \\frac{\\pi}{2}\\log\\left(\\frac{1}{2}\\right)$ (इति सिद्धम्)।",
+          "उत्तर: $-\\frac{\\pi}{2}\\log 2$"
+        ]
+      },
+      {
+        "question": "मान ज्ञात कीजिए: $\\int_0^{\\pi/4} \\log(1 + \\tan x)\\,dx = \\frac{\\pi}{8}\\log 2$ [NCERT Ex 7.11 Q8, BSEB 5-अंक]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र/प्रगुण): प्रगुण $P_4: \\int_0^a f(x)\\,dx = \\int_0^a f(a-x)\\,dx$, त्रिकोणमितीय सूत्र $\\tan(A-B) = \\frac{\\tan A - \\tan B}{1 + \\tan A\\tan B}$, तथा लघुगणक नियम $\\log(m/n) = \\log m - \\log n$।",
+          "चरण 2: माना $I = \\int_0^{\\pi/4} \\log(1 + \\tan x)\\,dx$ ... (समीकरण 1)",
+          "चरण 3: $P_4$ लागू करने पर ($x$ के स्थान पर $\\pi/4 - x$): $I = \\int_0^{\\pi/4} \\log[1 + \\tan(\\pi/4 - x)]\\,dx$",
+          "चरण 4: $\\tan(\\pi/4 - x) = \\frac{1 - \\tan x}{1 + \\tan x}$ रखने पर: $1 + \\tan\\left(\\frac{\\pi}{4} - x\\right) = 1 + \\frac{1 - \\tan x}{1 + \\tan x} = \\frac{1 + \\tan x + 1 - \\tan x}{1 + \\tan x} = \\frac{2}{1 + \\tan x}$",
+          "चरण 5: समाकलन रूप: $I = \\int_0^{\\pi/4} \\log\\left(\\frac{2}{1 + \\tan x}\\right)dx = \\int_0^{\\pi/4} [\\log 2 - \\log(1 + \\tan x)]\\,dx$ ... (समीकरण 2)",
+          "चरण 6: समीकरण (1) और (2) को जोड़ने पर: $2I = \\int_0^{\\pi/4} \\log 2\\,dx = \\log 2 [x]_0^{\\pi/4} = \\log 2 \\left(\\frac{\\pi}{4} - 0\\right) = \\frac{\\pi}{4}\\log 2$",
+          "चरण 7: $I$ का मान ज्ञात करना: $2I = \\frac{\\pi}{4}\\log 2 \\implies I = \\frac{\\pi}{8}\\log 2$ (इति सिद्धम्)।",
+          "उत्तर: $\\frac{\\pi}{8}\\log 2$"
+        ]
+      },
+      {
+        "question": "मान ज्ञात कीजिए: $\\int_0^\\pi \\frac{x}{1 + \\sin x}\\,dx = \\pi$ [NCERT Ex 7.11 Q12, BSEB 5-अंक]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र/प्रगुण): प्रगुण $P_4$ द्वारा चर $x$ का विलोपन, संयुग्मी से परिमेयकरण, $\\int \\sec^2 x\\,dx = \\tan x$ तथा $\\int \\sec x\\tan x\\,dx = \\sec x$।",
+          "चरण 2: माना $I = \\int_0^\\pi \\frac{x}{1 + \\sin x}\\,dx$ ... (समीकरण 1)",
+          "चरण 3: प्रगुण $P_4$ से $x$ को $\\pi - x$ में बदलने पर: $I = \\int_0^\\pi \\frac{\\pi - x}{1 + \\sin(\\pi - x)}\\,dx = \\int_0^\\pi \\frac{\\pi - x}{1 + \\sin x}\\,dx$ ... (समीकरण 2)",
+          "चरण 4: समीकरण (1) और (2) को जोड़ने पर $x$ विलोपित हो जाता है: $2I = \\int_0^\\pi \\frac{x + \\pi - x}{1 + \\sin x}\\,dx = \\pi \\int_0^\\pi \\frac{1}{1 + \\sin x}\\,dx$",
+          "चरण 5: अंश व हर में $(1 - \\sin x)$ से गुणा करने पर: $2I = \\pi \\int_0^\\pi \\frac{1 - \\sin x}{1 - \\sin^2 x}\\,dx = \\pi \\int_0^\\pi \\frac{1 - \\sin x}{\\cos^2 x}\\,dx = \\pi \\int_0^\\pi (\\sec^2 x - \\sec x\\tan x)\\,dx$",
+          "चरण 6: समाकलन करने पर: $2I = \\pi [\\tan x - \\sec x]_0^\\pi$",
+          "चरण 7: सीमाएँ आरोपित करने पर: $2I = \\pi [(\\tan\\pi - \\sec\\pi) - (\\tan 0 - \\sec 0)] = \\pi [(0 - (-1)) - (0 - 1)] = \\pi [1 - (-1)] = 2\\pi$",
+          "चरण 8: $I$ का मान: $2I = 2\\pi \\implies I = \\pi$ (इति सिद्धम्)।",
+          "उत्तर: $\\pi$"
+        ]
+      },
+      {
+        "question": "सिद्ध कीजिए कि $\\int_0^\\pi \\frac{x\\,dx}{a^2\\cos^2 x + b^2\\sin^2 x} = \\frac{\\pi^2}{2ab}$ [NCERT Ex 45, BSEB 5-अंक]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र/प्रगुण): प्रगुण $P_4$ से $x$ विलोपन, प्रगुण $P_6$ द्वारा सीमा आधी करना, तथा $\\cos^2 x$ से भाग देकर $\\tan x = t$ प्रतिस्थापन।",
+          "चरण 2: माना $I = \\int_0^\\pi \\frac{x\\,dx}{a^2\\cos^2 x + b^2\\sin^2 x}$ ... (समीकरण 1)",
+          "चरण 3: $P_4$ से $x$ के स्थान पर $\\pi - x$ रखने पर: $I = \\int_0^\\pi \\frac{(\\pi - x)\\,dx}{a^2\\cos^2(\\pi - x) + b^2\\sin^2(\\pi - x)} = \\int_0^\\pi \\frac{(\\pi - x)\\,dx}{a^2\\cos^2 x + b^2\\sin^2 x}$ ... (समीकरण 2)",
+          "चरण 4: (1) और (2) को जोड़ने पर: $2I = \\pi \\int_0^\\pi \\frac{dx}{a^2\\cos^2 x + b^2\\sin^2 x}$",
+          "चरण 5: चूँकि $f(\\pi - x) = f(x)$, अतः प्रगुण $P_6$ से सीमा 0 से $\\pi/2$ करने पर: $2I = \\pi \\left[2\\int_0^{\\pi/2} \\frac{dx}{a^2\\cos^2 x + b^2\\sin^2 x}\\right] \\implies I = \\pi \\int_0^{\\pi/2} \\frac{dx}{a^2\\cos^2 x + b^2\\sin^2 x}$",
+          "चरण 6: अंश व हर में $\\cos^2 x$ से भाग देने पर: $I = \\pi \\int_0^{\\pi/2} \\frac{\\sec^2 x\\,dx}{a^2 + b^2\\tan^2 x}$",
+          "चरण 7: माना $b\\tan x = t \\implies b\\sec^2 x\\,dx = dt \\implies \\sec^2 x\\,dx = \\frac{1}{b}dt$; सीमाएँ: जब $x = 0 \\implies t = 0$; जब $x = \\pi/2 \\implies t = \\infty$",
+          "चरण 8: समाकलन: $I = \\frac{\\pi}{b}\\int_0^\\infty \\frac{dt}{a^2 + t^2} = \\frac{\\pi}{b} \\left[\\frac{1}{a}\\tan^{-1}\\left(\\frac{t}{a}\\right)\\right]_0^\\infty = \\frac{\\pi}{ab}[\\tan^{-1}(\\infty) - \\tan^{-1}(0)] = \\frac{\\pi}{ab}\\left(\\frac{\\pi}{2} - 0\\right) = \\frac{\\pi^2}{2ab}$ (इति सिद्धम्)।",
+          "उत्तर: $\\frac{\\pi^2}{2ab}$"
+        ]
+      },
+      {
+        "question": "दर्शाइए कि $\\int_0^a f(x)g(x)\\,dx = 2\\int_0^a f(x)\\,dx$, यदि $f$ और $g$ को $f(x) = f(a-x)$ एवं $g(x) + g(a-x) = 4$ के रूप में परिभाषित किया गया है। [NCERT Ex 7.11 Q19, BSEB 5-अंक]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र/प्रगुण): किंग प्रगुण $P_4: \\int_0^a f(x)\\,dx = \\int_0^a f(a-x)\\,dx$ तथा दिए गए संबंध $f(a-x) = f(x)$ व $g(a-x) = 4 - g(x)$।",
+          "चरण 2: माना $I = \\int_0^a f(x)g(x)\\,dx$ ... (समीकरण 1)",
+          "चरण 3: प्रगुण $P_4$ लागू करने पर: $I = \\int_0^a f(a-x)g(a-x)\\,dx$",
+          "चरण 4: दिए गए मान प्रतिस्थापित करने पर: $I = \\int_0^a f(x)[4 - g(x)]\\,dx = \\int_0^a 4f(x)\\,dx - \\int_0^a f(x)g(x)\\,dx$",
+          "चरण 5: द्वितीय समाकलन को $I$ लिखने पर: $I = 4\\int_0^a f(x)\\,dx - I$",
+          "चरण 6: पक्षांतरण करने पर: $I + I = 4\\int_0^a f(x)\\,dx \\implies 2I = 4\\int_0^a f(x)\\,dx$",
+          "चरण 7: 2 से भाग देने पर: $I = 2\\int_0^a f(x)\\,dx \\implies \\int_0^a f(x)g(x)\\,dx = 2\\int_0^a f(x)\\,dx$ (इति सिद्धम्)।",
+          "उत्तर: $2\\int_0^a f(x)\\,dx$"
+        ]
+      },
+      {
+        "question": "मान ज्ञात कीजिए: $\\int_0^\\pi \\frac{x\\sin x}{1 + \\cos^2 x}\\,dx = \\frac{\\pi^2}{4}$ [NCERT Ex 33, BSEB 5-अंक]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र/प्रगुण): प्रगुण $P_4$ से $x$ का विलोपन, प्रतिस्थापन विधि, तथा प्रगुण $P_7$ (सम फलन नियम)।",
+          "चरण 2: माना $I = \\int_0^\\pi \\frac{x\\sin x}{1 + \\cos^2 x}\\,dx$ ... (समीकरण 1)",
+          "चरण 3: $P_4$ लागू करने पर: $I = \\int_0^\\pi \\frac{(\\pi - x)\\sin(\\pi - x)}{1 + \\cos^2(\\pi - x)}\\,dx = \\int_0^\\pi \\frac{(\\pi - x)\\sin x}{1 + \\cos^2 x}\\,dx$ ... (समीकरण 2)",
+          "चरण 4: (1) और (2) को जोड़ने पर: $2I = \\pi \\int_0^\\pi \\frac{\\sin x}{1 + \\cos^2 x}\\,dx \\implies I = \\frac{\\pi}{2}\\int_0^\\pi \\frac{\\sin x}{1 + \\cos^2 x}\\,dx$",
+          "चरण 5: माना $\\cos x = t \\implies -\\sin x\\,dx = dt \\implies \\sin x\\,dx = -dt$; सीमाएँ: जब $x = 0 \\implies t = 1$; जब $x = \\pi \\implies t = -1$",
+          "चरण 6: सीमाएँ पलटने पर: $I = \\frac{\\pi}{2}\\int_1^{-1} \\frac{-dt}{1 + t^2} = \\frac{\\pi}{2}\\int_{-1}^1 \\frac{dt}{1 + t^2}$",
+          "चरण 7: चूँकि $\\frac{1}{1+t^2}$ एक सम फलन है, अतः प्रगुण $P_7$ से: $I = \\frac{\\pi}{2} \\left[2\\int_0^1 \\frac{dt}{1 + t^2}\\right] = \\pi [\\tan^{-1}t]_0^1 = \\pi[\\tan^{-1}(1) - \\tan^{-1}(0)] = \\pi\\left(\\frac{\\pi}{4} - 0\\right) = \\frac{\\pi^2}{4}$ (इति सिद्धम्)।",
+          "उत्तर: $\\frac{\\pi^2}{4}$"
+        ]
+      },
+      {
+        "question": "मान ज्ञात कीजिए: $\\int_0^\\pi \\log(1 + \\cos x)\\,dx = -\\pi\\log 2$ [NCERT Ex 7.11 Q16, BSEB 5-अंक]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र/प्रगुण): प्रगुण $P_4$, सर्वसमिका $\\sin^2 x = 1 - \\cos^2 x$, $P_6$ तथा $\\int_0^{\\pi/2} \\log\\sin x\\,dx = -\\frac{\\pi}{2}\\log 2$।",
+          "चरण 2: माना $I = \\int_0^\\pi \\log(1 + \\cos x)\\,dx$ ... (समीकरण 1)",
+          "चरण 3: $P_4$ से $x$ को $\\pi - x$ रखने पर: $I = \\int_0^\\pi \\log[1 + \\cos(\\pi - x)]\\,dx = \\int_0^\\pi \\log(1 - \\cos x)\\,dx$ ... (समीकरण 2)",
+          "चरण 4: (1) और (2) को जोड़ने पर: $2I = \\int_0^\\pi [\\log(1 + \\cos x) + \\log(1 - \\cos x)]\\,dx = \\int_0^\\pi \\log(1 - \\cos^2 x)\\,dx = \\int_0^\\pi \\log(\\sin^2 x)\\,dx$",
+          "चरण 5: $2I = 2\\int_0^\\pi \\log(\\sin x)\\,dx \\implies I = \\int_0^\\pi \\log(\\sin x)\\,dx$",
+          "चरण 6: $\\sin(\\pi - x) = \\sin x$ होने से प्रगुण $P_6$ लगाने पर: $I = 2\\int_0^{\\pi/2} \\log(\\sin x)\\,dx$",
+          "चरण 7: मानक लॉग-साइन समाकलन $\\int_0^{\\pi/2} \\log\\sin x\\,dx = -\\frac{\\pi}{2}\\log 2$ का मान रखने पर: $I = 2\\left(-\\frac{\\pi}{2}\\log 2\\right) = -\\pi\\log 2$ (इति सिद्धम्)।",
+          "उत्तर: $-\\pi\\log 2$"
+        ]
+      },
+      {
+        "question": "मान ज्ञात कीजिए: $\\int_0^{\\pi/2} (2\\log\\sin x - \\log\\sin 2x)\\,dx$ [NCERT Ex 7.11 Q10, BSEB 5-अंक]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र/प्रगुण): सर्वसमिका $\\sin 2x = 2\\sin x\\cos x$, लघुगणक नियम, तथा प्रगुण $P_4$ द्वारा $\\int_0^{\\pi/2} \\log\\tan x\\,dx = 0$ सिद्ध करना।",
+          "चरण 2: समाकल्य का विस्तार: $2\\log\\sin x - \\log(2\\sin x\\cos x) = 2\\log\\sin x - (\\log 2 + \\log\\sin x + \\log\\cos x) = \\log\\sin x - \\log\\cos x - \\log 2 = \\log\\left(\\frac{\\sin x}{\\cos x}\\right) - \\log 2 = \\log\\tan x - \\log 2$।",
+          "चरण 3: दो भागों में विभाजन: $I = \\int_0^{\\pi/2} \\log\\tan x\\,dx - \\int_0^{\\pi/2} \\log 2\\,dx = I_1 - I_2$।",
+          "चरण 4: $I_1$ पर $P_4$ लगाने पर: $I_1 = \\int_0^{\\pi/2} \\log\\tan(\\pi/2 - x)\\,dx = \\int_0^{\\pi/2} \\log\\cot x\\,dx$।",
+          "चरण 5: $2I_1 = \\int_0^{\\pi/2} (\\log\\tan x + \\log\\cot x)\\,dx = \\int_0^{\\pi/2} \\log(\\tan x\\cot x)\\,dx = \\int_0^{\\pi/2} \\log 1\\,dx = 0 \\implies I_1 = 0$।",
+          "चरण 6: द्वितीय भाग $I_2$: $\\log 2 \\int_0^{\\pi/2} 1\\,dx = \\log 2 [x]_0^{\\pi/2} = \\frac{\\pi}{2}\\log 2$।",
+          "चरण 7: कुल मान: $I = I_1 - I_2 = 0 - \\frac{\\pi}{2}\\log 2 = -\\frac{\\pi}{2}\\log 2 = \\frac{\\pi}{2}\\log\\left(\\frac{1}{2}\\right)$।",
+          "उत्तर: $-\\frac{\\pi}{2}\\log 2$"
+        ]
+      },
+      {
+        "question": "मान ज्ञात कीजिए: $\\int_0^\\pi \\frac{x\\tan x}{\\sec x + \\tan x}\\,dx$ [NCERT Misc Q32, BSEB 5-अंक]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र/प्रगुण): $\\tan x$ व $\\sec x$ को $\\sin$ व $\\cos$ में बदलना, प्रगुण $P_4$ से $x$ का विलोपन, तथा परिमेयकरण।",
+          "चरण 2: रूपान्तरण: $\\frac{x(\\sin x/\\cos x)}{1/\\cos x + \\sin x/\\cos x} = \\frac{x\\sin x}{1 + \\sin x}$। माना $I = \\int_0^\\pi \\frac{x\\sin x}{1 + \\sin x}\\,dx$ ... (1)",
+          "चरण 3: $P_4$ से: $I = \\int_0^\\pi \\frac{(\\pi - x)\\sin(\\pi - x)}{1 + \\sin(\\pi - x)}\\,dx = \\int_0^\\pi \\frac{(\\pi - x)\\sin x}{1 + \\sin x}\\,dx$ ... (2)",
+          "चरण 4: (1) और (2) को जोड़ने पर: $2I = \\pi \\int_0^\\pi \\frac{\\sin x}{1 + \\sin x}\\,dx = \\pi \\int_0^\\pi \\frac{\\sin x + 1 - 1}{1 + \\sin x}\\,dx = \\pi \\left[\\int_0^\\pi 1\\,dx - \\int_0^\\pi \\frac{1}{1 + \\sin x}\\,dx\\right]$",
+          "चरण 5: $\\int_0^\\pi 1\\,dx = [x]_0^\\pi = \\pi$; तथा $\\int_0^\\pi \\frac{1}{1+\\sin x}\\,dx = \\int_0^\\pi (\\sec^2 x - \\sec x\\tan x)\\,dx = [\\tan x - \\sec x]_0^\\pi = [1 - (-1)] = 2$",
+          "चरण 6: मान रखने पर: $2I = \\pi(\\pi - 2) \\implies I = \\frac{\\pi}{2}(\\pi - 2) = \\pi\\left(\\frac{\\pi}{2} - 1\right)$।",
+          "उत्तर: $\\pi\\left(\\frac{\\pi}{2} - 1\right)$"
+        ]
+      },
+      {
+        "question": "मान ज्ञात कीजिए: $\\int_0^{2\\pi} \\cos^5 x\\,dx = 0$ [NCERT Ex 7.11 Q14, BSEB 5-अंक]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र/प्रगुण): प्रगुण $P_6: \\int_0^{2a} f(x)\\,dx = 2\\int_0^a f(x)\\,dx$ यदि $f(2a-x) = f(x)$; तथा $0$ यदि $f(2a-x) = -f(x)$।",
+          "चरण 2: माना $f(x) = \\cos^5 x$; प्रथम जाँच: $f(2\\pi - x) = [\\cos(2\\pi - x)]^5 = [\\cos x]^5 = \\cos^5 x = f(x)$।",
+          "चरण 3: प्रगुण $P_6$ लागू करने पर सीमा आधी करना: $\\int_0^{2\\pi} \\cos^5 x\\,dx = 2\\int_0^\\pi \\cos^5 x\\,dx$।",
+          "चरण 4: अब समाकलन $\\int_0^\\pi \\cos^5 x\\,dx$ पर पुनः $P_6$ लगाने हेतु जाँच: यहाँ $2a = \\pi \\implies f(\\pi - x) = [\\cos(\\pi - x)]^5 = [-\\cos x]^5 = -\\cos^5 x = -f(x)$।",
+          "चरण 5: चूँकि $f(\\pi - x) = -f(x)$, अतः $P_6$ के द्वितीय प्रतिबंध से: $\\int_0^\\pi \\cos^5 x\\,dx = 0$।",
+          "चरण 6: अतः संपूर्ण समाकलन: $2 \\times 0 = 0$ (इति सिद्धम्)।",
+          "उत्तर: $0$"
+        ]
+      },
+      {
+        "question": "मान ज्ञात कीजिए: $\\int_{-1}^{3/2} |x\\sin(\\pi x)|\\,dx$ [NCERT Ex 44, BSEB 5-अंक]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र/प्रगुण): अंतराल विभाजन प्रगुण $P_2$, सम फलन प्रगुण $P_7$, तथा खंडशः समाकलन सूत्र।",
+          "चरण 2: मापांक का विश्लेषण: अंतराल $[-1, 1]$ में $x$ और $\\sin(\\pi x)$ के चिह्न समान होते हैं, अतः $x\\sin(\\pi x) \\ge 0 \\implies |x\\sin(\\pi x)| = x\\sin(\\pi x)$।",
+          "चरण 3: अंतराल $[1, 3/2]$ में $x > 0$ तथा $\\sin(\\pi x) \\le 0$ (तीसरा चतुर्थांश), अतः $|x\\sin(\\pi x)| = -x\\sin(\\pi x)$।",
+          "चरण 4: $P_2$ से विभाजन: $I = \\int_{-1}^1 x\\sin(\\pi x)\\,dx - \\int_1^{3/2} x\\sin(\\pi x)\\,dx$।",
+          "चरण 5: प्रथम भाग: $x\\sin(\\pi x)$ सम फलन है, अतः $P_7$ से $2\\int_0^1 x\\sin(\\pi x)\\,dx = 2\\left[-\\frac{x\\cos(\\pi x)}{\\pi} + \\frac{\\sin(\\pi x)}{\\pi^2}\\right]_0^1 = 2\\left[\\frac{1}{\\pi} - 0\\right] = \\frac{2}{\\pi}$।",
+          "चरण 6: द्वितीय भाग: $\\left[-\\frac{x\\cos(\\pi x)}{\\pi} + \\frac{\\sin(\\pi x)}{\\pi^2}\\right]_1^{3/2} = \\left[0 - \\frac{1}{\\pi^2}\\right] - \\left[\\frac{1}{\\pi} + 0\\right] = -\\frac{1}{\\pi^2} - \\frac{1}{\\pi}$।",
+          "चरण 7: दोनों का अंतर: $\\frac{2}{\\pi} - \\left(-\\frac{1}{\\pi^2} - \\frac{1}{\\pi}\\right) = \\frac{2}{\\pi} + \\frac{1}{\\pi^2} + \\frac{1}{\\pi} = \\frac{3}{\\pi} + \\frac{1}{\\pi^2}$।",
+          "उत्तर: $\\frac{3}{\\pi} + \\frac{1}{\\pi^2}$"
+        ]
+      },
+      {
+        "question": "सिद्ध कीजिए कि $\\int_0^a \\frac{\\sqrt{x}}{\\sqrt{x} + \\sqrt{a-x}}\\,dx = \\frac{a}{2}$ [NCERT Ex 7.11 Q17, BSEB 5-अंक]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र/प्रगुण): किंग प्रगुण $P_4: \\int_0^a f(x)\\,dx = \\int_0^a f(a-x)\\,dx$ तथा $\\int_0^a 1\\,dx = a$।",
+          "चरण 2: माना $I = \\int_0^a \\frac{\\sqrt{x}}{\\sqrt{x} + \\sqrt{a-x}}\\,dx$ ... (समीकरण 1)",
+          "चरण 3: प्रगुण $P_4$ से $x$ के स्थान पर $a - x$ रखने पर: $I = \\int_0^a \\frac{\\sqrt{a-x}}{\\sqrt{a-x} + \\sqrt{a-(a-x)}}\\,dx = \\int_0^a \\frac{\\sqrt{a-x}}{\\sqrt{a-x} + \\sqrt{x}}\\,dx$ ... (समीकरण 2)",
+          "चरण 4: समीकरण (1) और (2) को जोड़ने पर: $2I = \\int_0^a \\frac{\\sqrt{x} + \\sqrt{a-x}}{\\sqrt{x} + \\sqrt{a-x}}\\,dx = \\int_0^a 1\\,dx$",
+          "चरण 5: समाकलन करने पर: $2I = [x]_0^a = a - 0 = a$",
+          "चरण 6: 2 से भाग देने पर: $I = \\frac{a}{2} \\implies \\int_0^a \\frac{\\sqrt{x}}{\\sqrt{x} + \\sqrt{a-x}}\\,dx = \\frac{a}{2}$ (इति सिद्धम्)।",
+          "उत्तर: $\\frac{a}{2}$"
+        ]
+      }
+    ]
+  }
+}
