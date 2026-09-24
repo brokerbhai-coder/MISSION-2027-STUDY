@@ -1,4 +1,14 @@
 {
   "_help": "हर Practice Set की फ़ाइल यहाँ एक entry से जुड़ती है। id सिर्फ़ अक्षर, अंक, - या _ (जैसे set-01)। नमूना data/templates/manifest-examples.json में है।",
-  "practice": []
+  "practice": [
+    {
+      "id": "set-01",
+      "subject": "physics",
+      "title": "Class 12 Physics - Top VVI Objective Questions",
+      "description": "Bihar Board Class 12 Physics VVI Objective Questions (Chapter 1 se Chapter 8 tak)",
+      "file": "physics/set-01.json",
+      "timeLimitMinutes": 60,
+      "totalQuestions": 84
+    }
+  ]
 }
