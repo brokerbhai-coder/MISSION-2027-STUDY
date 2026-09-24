@@ -1,10 +1,10 @@
 {
-  "_help": "Class 12 Physics Brahmastra Batch Complete Revision Set (Chapters 1, 2, 3) - Bihar Board[span_1](start_span)[span_1](end_span)[span_2](start_span)[span_2](end_span)",
+  "_help": "Class 12 Physics Brahmastra Batch Complete 205 Objective Questions - Bihar Board",
   "schemaVersion": 1,
   "subject": "physics",
-  "title": "Class 12 Physics - Brahmastra Special (Chapters 1, 2, 3)",
-  "description": "Bihar Board Class 12 Physics: वैद्युत आवेश तथा क्षेत्र, विद्युत विभव तथा धारिता, एवं विद्युत धारा के संपूर्ण वस्तुनिष्ठ प्रश्न[span_3](start_span)[span_3](end_span)",
-  "timeLimitMinutes": 150,
+  "title": "Class 12 Physics - Brahmastra 200+ Mega Objective Set",
+  "description": "Bihar Board Class 12 Physics: Book-1 (अध्याय 1, 2 एवं 3) के संपूर्ण 200+ वस्तुनिष्ठ प्रश्नोत्तर",
+  "timeLimitMinutes": 180,
   "questions": [
     {
       "id": "BRAHM-PHY-001",
@@ -17,7 +17,7 @@
         "D": "शून्य"
       },
       "answer": "D",
-      "explanation": "प्रत्येक द्विध्रुव का कुल आवेश शून्य होता है, अतः बंद पृष्ठ का कुल परिबद्ध आवेश शून्य होने से निर्गत कुल विद्युत फ्लक्स शून्य होगा[span_4](start_span)[span_4](end_span)।"
+      "explanation": "प्रत्येक द्विध्रुव का कुल आवेश शून्य होता है, अतः बंद पृष्ठ का कुल परिबद्ध आवेश शून्य होने से निर्गत कुल विद्युत फ्लक्स शून्य होगा[span_3](start_span)[span_3](end_span)।"
     },
     {
       "id": "BRAHM-PHY-002",
@@ -30,7 +30,7 @@
         "D": "6.67 × 10¹¹ C/kg"
       },
       "answer": "C",
-      "explanation": "विशिष्ट आवेश e/m = 1.6 × 10⁻¹⁹ / (9.1 × 10⁻³¹) ≈ 1.76 × 10¹¹ C/kg (लगभग 1.8 × 10¹¹ C/kg) होता है[span_5](start_span)[span_5](end_span)।"
+      "explanation": "विशिष्ट आवेश e/m = 1.6 × 10⁻¹⁹ / (9.1 × 10⁻³¹) ≈ 1.76 × 10¹¹ C/kg (लगभग 1.8 × 10¹¹ C/kg) होता है[span_4](start_span)[span_4](end_span)।"
     },
     {
       "id": "BRAHM-PHY-003",
@@ -43,7 +43,7 @@
         "D": "12.0 × 10⁻⁸ कूलॉम-मीटर"
       },
       "answer": "B",
-      "explanation": "p = q × 2a = (0.2 × 10⁻⁶ C) × (3 × 10⁻² m) = 0.6 × 10⁻⁸ C-m[span_6](start_span)[span_6](end_span)।"
+      "explanation": "p = q × 2a = (0.2 × 10⁻⁶ C) × (3 × 10⁻² m) = 0.6 × 10⁻⁸ C-m[span_5](start_span)[span_5](end_span)।"
     },
     {
       "id": "BRAHM-PHY-004",
@@ -56,7 +56,7 @@
         "D": "स्थितिज ऊर्जा शून्य होती है।"
       },
       "answer": "A",
-      "explanation": "विपरीत आवेशों के लिए U = (1/4πε₀) · (q₁(-q₂)/r) < 0, अतः स्थितिज ऊर्जा सदैव ऋणात्मक होती है[span_7](start_span)[span_7](end_span)।"
+      "explanation": "विपरीत आवेशों के लिए स्थितिज ऊर्जा U = (1/4πε₀) · (q₁(-q₂)/r) सदैव ऋणात्मक होती है[span_6](start_span)[span_6](end_span)।"
     },
     {
       "id": "BRAHM-PHY-005",
@@ -69,7 +69,7 @@
         "D": "संलग्न आवेश के वर्ग के समानुपाती होता है।"
       },
       "answer": "A",
-      "explanation": "गॉस के नियमानुसार φ = q / ε₀, अर्थात् फ्लक्स परिबद्ध (संलग्न) आवेश के अनुक्रमानुपाती होता है[span_8](start_span)[span_8](end_span)।"
+      "explanation": "गॉस के नियमानुसार φ = q / ε₀, अर्थात् फ्लक्स परिबद्ध (संलग्न) आवेश के अनुक्रमानुपाती होता है[span_7](start_span)[span_7](end_span)।"
     },
     {
       "id": "BRAHM-PHY-006",
@@ -82,7 +82,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "A",
-      "explanation": "λ = q / l से इसका मात्रक C/m (कूलॉम/मीटर) होता है[span_9](start_span)[span_9](end_span)।"
+      "explanation": "λ = q / l से इसका मात्रक C/m (कूलॉम/मीटर) होता है[span_8](start_span)[span_8](end_span)।"
     },
     {
       "id": "BRAHM-PHY-007",
@@ -95,7 +95,7 @@
         "D": "[ML²T⁻³A⁻¹]"
       },
       "answer": "B",
-      "explanation": "E = F / q = [MLT⁻²] / [AT] = [MLT⁻³A⁻¹][span_10](start_span)[span_10](end_span)।"
+      "explanation": "E = F / q = [MLT⁻²] / [AT] = [MLT⁻³A⁻¹][span_9](start_span)[span_9](end_span)।"
     },
     {
       "id": "BRAHM-PHY-008",
@@ -108,7 +108,7 @@
         "D": "1.6 × 10¹⁹"
       },
       "answer": "A",
-      "explanation": "n = q / e = 8 / (1.6 × 10⁻¹⁹) = 5 × 10¹⁹[span_11](start_span)[span_11](end_span)।"
+      "explanation": "n = q / e = 8 / (1.6 × 10⁻¹⁹) = 5 × 10¹⁹[span_10](start_span)[span_10](end_span)।"
     },
     {
       "id": "BRAHM-PHY-009",
@@ -121,7 +121,7 @@
         "D": "E = (dr/dV)"
       },
       "answer": "A",
-      "explanation": "E = -(dV/dr)[span_12](start_span)[span_12](end_span)।"
+      "explanation": "E = -(dV/dr)[span_11](start_span)[span_11](end_span)।"
     },
     {
       "id": "BRAHM-PHY-010",
@@ -134,7 +134,7 @@
         "D": "सर्वत्र शून्य रहता है"
       },
       "answer": "D",
-      "explanation": "चालक गोले के भीतर प्रत्येक बिंदु पर स्थिरवैद्युत क्षेत्र E = 0 होता है[span_13](start_span)[span_13](end_span)।"
+      "explanation": "चालक गोले के भीतर प्रत्येक बिंदु पर स्थिरवैद्युत क्षेत्र E = 0 होता है[span_12](start_span)[span_12](end_span)।"
     },
     {
       "id": "BRAHM-PHY-011",
@@ -147,12 +147,12 @@
         "D": "0"
       },
       "answer": "D",
-      "explanation": "स्थिर (स्थायी) साम्यावस्था के लिए θ = 0° होना आवश्यक है[span_14](start_span)[span_14](end_span)।"
+      "explanation": "स्थायी साम्यावस्था के लिए θ = 0° होना आवश्यक है[span_13](start_span)[span_13](end_span)।"
     },
     {
       "id": "BRAHM-PHY-012",
       "chapter": 1,
-      "question": "दो आवेश 'Q' को मिलानेवाली रेखा के बीच में एक आवेश 'q' रखा जाए, तो आवेशों के इस व्यवस्था में संतुलन के लिए 'q' का मान होगा:",
+      "question": "दो आवेश 'Q' को मिलानेवाली रेखा के बीच में एक आवेश 'q' रखा जाए, तो संतुलन के लिए 'q' का मान होगा:",
       "options": {
         "A": "Q / 2",
         "B": "-Q / 4",
@@ -160,12 +160,12 @@
         "D": "+Q / 4"
       },
       "answer": "B",
-      "explanation": "निकाय के संपूर्ण संतुलन के लिए q = -Q/4 होना चाहिए[span_15](start_span)[span_15](end_span)।"
+      "explanation": "निकाय के संतुलन के लिए q = -Q/4 होना चाहिए[span_14](start_span)[span_14](end_span)।"
     },
     {
       "id": "BRAHM-PHY-013",
       "chapter": 1,
-      "question": "परावैद्युतांक (ε₀) का S.I. मात्रक होता है:",
+      "question": "परावैद्युतांक का S.I. मात्रक होता है:",
       "options": {
         "A": "N⁻¹ C⁻¹ m²",
         "B": "N C² m²",
@@ -173,7 +173,7 @@
         "D": "C² N⁻¹ m⁻²"
       },
       "answer": "D",
-      "explanation": "ε₀ का मात्रक C² N⁻¹ m⁻² होता है[span_16](start_span)[span_16](end_span)।"
+      "explanation": "ε₀ का मात्रक C² N⁻¹ m⁻² होता है[span_15](start_span)[span_15](end_span)।"
     },
     {
       "id": "BRAHM-PHY-014",
@@ -186,7 +186,7 @@
         "D": "इनमें से सभी"
       },
       "answer": "D",
-      "explanation": "विद्युत क्षेत्र रेखाएँ तीव्रता की शक्ति, दिशा और आवेश की प्रकृति तीनों प्रदर्शित करती हैं[span_17](start_span)[span_17](end_span)।"
+      "explanation": "विद्युत बल रेखाएँ क्षेत्र की शक्ति, दिशा और आवेश की प्रकृति तीनों प्रदर्शित करती हैं[span_16](start_span)[span_16](end_span)।"
     },
     {
       "id": "BRAHM-PHY-015",
@@ -199,7 +199,7 @@
         "D": "कूलॉम का नियम"
       },
       "answer": "D",
-      "explanation": "कूलॉम का नियम दो बिंदु आवेशों के मध्य पारस्परिक स्थिरवैद्युत बल को निर्धारित करता है[span_18](start_span)[span_18](end_span)।"
+      "explanation": "कूलॉम का नियम बिंदु आवेशों के मध्य पारस्परिक स्थिरवैद्युत बल को निर्धारित करता है[span_17](start_span)[span_17](end_span)।"
     },
     {
       "id": "BRAHM-PHY-016",
@@ -212,7 +212,7 @@
         "D": "एक कण पर न्यूनतम अनुमेय आवेश होता है"
       },
       "answer": "A",
-      "explanation": "q = ne के अनुसार आवेश केवल इलेक्ट्रॉन के आवेश के पूर्ण गुणज के रूप में ही रह सकता है[span_19](start_span)[span_19](end_span)।"
+      "explanation": "q = ne के अनुसार आवेश केवल इलेक्ट्रॉन के मूल आवेश के पूर्ण गुणज के रूप में ही रह सकता है[span_18](start_span)[span_18](end_span)।"
     },
     {
       "id": "BRAHM-PHY-017",
@@ -225,7 +225,7 @@
         "D": "C / m"
       },
       "answer": "B",
-      "explanation": "p = q × 2l से मात्रक कूलॉम-मीटर (C m) होता है[span_20](start_span)[span_20](end_span)।"
+      "explanation": "p = q × 2l से मात्रक कूलॉम-मीटर (C m) होता है[span_19](start_span)[span_19](end_span)।"
     },
     {
       "id": "BRAHM-PHY-018",
@@ -238,7 +238,7 @@
         "D": "N / C²"
       },
       "answer": "B",
-      "explanation": "E = F / q से SI मात्रक न्यूटन प्रति कूलॉम (N/C) होता है[span_21](start_span)[span_21](end_span)।"
+      "explanation": "E = F / q से SI मात्रक न्यूटन प्रति कूलॉम (N/C) होता है[span_20](start_span)[span_20](end_span)।"
     },
     {
       "id": "BRAHM-PHY-019",
@@ -251,7 +251,7 @@
         "D": "e = 1.602 × 10⁻¹⁹ C"
       },
       "answer": "D",
-      "explanation": "e = 1.602 × 10⁻¹⁹ कूलॉम[span_22](start_span)[span_22](end_span)।"
+      "explanation": "e = 1.602 × 10⁻¹⁹ कूलॉम[span_21](start_span)[span_21](end_span)।"
     },
     {
       "id": "BRAHM-PHY-020",
@@ -264,7 +264,7 @@
         "D": "8.85 × 10¹¹ F/m"
       },
       "answer": "A",
-      "explanation": "ε₀ = 8.85 × 10⁻¹² F/m[span_23](start_span)[span_23](end_span)।"
+      "explanation": "ε₀ = 8.85 × 10⁻¹² F/m[span_22](start_span)[span_22](end_span)।"
     },
     {
       "id": "BRAHM-PHY-021",
@@ -277,7 +277,7 @@
         "D": "F⃗ = (1 / 4πε₀) · (q₁q₂ / |r⃗|²) r⃗"
       },
       "answer": "A",
-      "explanation": "F⃗ = (1 / 4πε₀) · (q₁q₂ / |r⃗|³) r⃗[span_24](start_span)[span_24](end_span)।"
+      "explanation": "F⃗ = (1 / 4πε₀) · (q₁q₂ / |r⃗|³) r⃗[span_23](start_span)[span_23](end_span)।"
     },
     {
       "id": "BRAHM-PHY-022",
@@ -290,7 +290,7 @@
         "D": "σ = Q · A"
       },
       "answer": "A",
-      "explanation": "σ = Q / A[span_25](start_span)[span_25](end_span)।"
+      "explanation": "σ = Q / A[span_24](start_span)[span_24](end_span)।"
     },
     {
       "id": "BRAHM-PHY-023",
@@ -303,7 +303,7 @@
         "D": "9 × 10⁹"
       },
       "answer": "C",
-      "explanation": "हवा या निर्वात के लिए आपेक्षिक परावैद्युतता ε_r = 1 होती है[span_26](start_span)[span_26](end_span)।"
+      "explanation": "हवा या निर्वात के लिए आपेक्षिक परावैद्युतता ε_r = 1 होती है[span_25](start_span)[span_25](end_span)।"
     },
     {
       "id": "BRAHM-PHY-024",
@@ -316,7 +316,7 @@
         "D": "42.5"
       },
       "answer": "A",
-      "explanation": "जल का परावैद्युत स्थिरांक 80 होता है[span_27](start_span)[span_27](end_span)।"
+      "explanation": "जल का परावैद्युत स्थिरांक 80 होता है[span_26](start_span)[span_26](end_span)।"
     },
     {
       "id": "BRAHM-PHY-025",
@@ -329,7 +329,7 @@
         "D": "ε - ε₀"
       },
       "answer": "A",
-      "explanation": "ε_r = ε / ε₀[span_28](start_span)[span_28](end_span)।"
+      "explanation": "ε_r = ε / ε₀[span_27](start_span)[span_27](end_span)।"
     },
     {
       "id": "BRAHM-PHY-026",
@@ -342,7 +342,7 @@
         "D": "√(qE)"
       },
       "answer": "A",
-      "explanation": "F = qE[span_29](start_span)[span_29](end_span)।"
+      "explanation": "F = qE[span_28](start_span)[span_28](end_span)।"
     },
     {
       "id": "BRAHM-PHY-027",
@@ -355,7 +355,7 @@
         "D": "9 × 10⁻¹² N m² C⁻²"
       },
       "answer": "A",
-      "explanation": "1 / (4πε₀) = 9 × 10⁹ N m² C⁻²[span_30](start_span)[span_30](end_span)।"
+      "explanation": "1 / (4πε₀) = 9 × 10⁹ N m² C⁻²[span_29](start_span)[span_29](end_span)।"
     },
     {
       "id": "BRAHM-PHY-028",
@@ -368,7 +368,7 @@
         "D": "1 कूलॉम × 1 सेकेण्ड"
       },
       "answer": "A",
-      "explanation": "I = q / t से 1 A = 1 C / 1 s[span_31](start_span)[span_31](end_span)।"
+      "explanation": "I = q / t से 1 A = 1 C / 1 s[span_30](start_span)[span_30](end_span)।"
     },
     {
       "id": "BRAHM-PHY-029",
@@ -381,7 +381,7 @@
         "D": "E⃗ = (1 / 4πε₀) · (q / F⃗)"
       },
       "answer": "A",
-      "explanation": "E⃗ = F⃗ / q[span_32](start_span)[span_32](end_span)।"
+      "explanation": "E⃗ = F⃗ / q[span_31](start_span)[span_31](end_span)।"
     },
     {
       "id": "BRAHM-PHY-030",
@@ -394,7 +394,7 @@
         "D": "(वोल्ट) (मीटर)⁻¹"
       },
       "answer": "C",
-      "explanation": "φ = E · A = (V/m) · m² = वोल्ट-मीटर[span_33](start_span)[span_33](end_span)।"
+      "explanation": "φ = E · A = (V/m) · m² = वोल्ट-मीटर[span_32](start_span)[span_32](end_span)।"
     },
     {
       "id": "BRAHM-PHY-031",
@@ -407,7 +407,7 @@
         "D": "F m"
       },
       "answer": "B",
-      "explanation": "ε₀ = फैरड प्रति मीटर (F m⁻¹)[span_34](start_span)[span_34](end_span)।"
+      "explanation": "ε₀ = फैरड प्रति मीटर (F m⁻¹)[span_33](start_span)[span_33](end_span)।"
     },
     {
       "id": "BRAHM-PHY-032",
@@ -420,7 +420,7 @@
         "D": "[AT²]"
       },
       "answer": "A",
-      "explanation": "q = It = [AT][span_35](start_span)[span_35](end_span)।"
+      "explanation": "q = It = [AT][span_34](start_span)[span_34](end_span)।"
     },
     {
       "id": "BRAHM-PHY-033",
@@ -433,7 +433,7 @@
         "D": "q² / ε₀"
       },
       "answer": "B",
-      "explanation": "गॉस नियमानुसार φ = q / ε₀[span_36](start_span)[span_36](end_span)।"
+      "explanation": "गॉस नियमानुसार φ = q / ε₀[span_35](start_span)[span_35](end_span)।"
     },
     {
       "id": "BRAHM-PHY-034",
@@ -446,7 +446,7 @@
         "D": "-2.35 J"
       },
       "answer": "C",
-      "explanation": "U = k q₁q₂ / r = (9 × 10⁹ × 10 × 10⁻⁶ × (-10 × 10⁻⁶)) / 0.4 = -0.9 / 0.4 = -2.25 J[span_37](start_span)[span_37](end_span)।"
+      "explanation": "U = k q₁q₂ / r = (9 × 10⁹ × 10 × 10⁻⁶ × (-10 × 10⁻⁶)) / 0.4 = -2.25 J[span_36](start_span)[span_36](end_span)।"
     },
     {
       "id": "BRAHM-PHY-035",
@@ -459,7 +459,7 @@
         "D": "(1/2) σ ε₀"
       },
       "answer": "C",
-      "explanation": "पतली चादर के निकट E = σ / (2ε₀) होता है[span_38](start_span)[span_38](end_span)।"
+      "explanation": "पतली चादर के निकट E = σ / (2ε₀) होता है[span_37](start_span)[span_37](end_span)।"
     },
     {
       "id": "BRAHM-PHY-036",
@@ -472,7 +472,7 @@
         "D": "बढ़ या घट सकता है"
       },
       "answer": "D",
-      "explanation": "धनावेशित होने पर द्रव्यमान घटता है और ऋणावेशित होने पर बढ़ता है[span_39](start_span)[span_39](end_span)।"
+      "explanation": "धनावेशित होने पर द्रव्यमान घटता है और ऋणावेशित होने पर बढ़ता है[span_38](start_span)[span_38](end_span)।"
     },
     {
       "id": "BRAHM-PHY-037",
@@ -485,7 +485,7 @@
         "D": "σ / (3ε₀)"
       },
       "answer": "B",
-      "explanation": "चालक की सतह के निकट E = σ / ε₀ होता है[span_40](start_span)[span_40](end_span)।"
+      "explanation": "चालक की सतह के निकट E = σ / ε₀ होता है[span_39](start_span)[span_39](end_span)।"
     },
     {
       "id": "BRAHM-PHY-038",
@@ -498,7 +498,7 @@
         "D": "ε₀ / 2"
       },
       "answer": "C",
-      "explanation": "खोखले गोलाकार चालक के भीतर E = 0 होता है[span_41](start_span)[span_41](end_span)।"
+      "explanation": "खोखले गोलाकार चालक के भीतर E = 0 होता है[span_40](start_span)[span_40](end_span)।"
     },
     {
       "id": "BRAHM-PHY-039",
@@ -511,7 +511,7 @@
         "D": "डायन सेमी⁻¹"
       },
       "answer": "B",
-      "explanation": "विद्युत क्षेत्र की तीव्रता का मात्रक वोल्ट/मीटर (V m⁻¹) होता है[span_42](start_span)[span_42](end_span)।"
+      "explanation": "विद्युत क्षेत्र की तीव्रता का मात्रक वोल्ट/मीटर (V m⁻¹) होता है[span_41](start_span)[span_41](end_span)।"
     },
     {
       "id": "BRAHM-PHY-040",
@@ -524,7 +524,7 @@
         "D": "p / E"
       },
       "answer": "A",
-      "explanation": "τ⃗ = p⃗ × E⃗[span_43](start_span)[span_43](end_span)।"
+      "explanation": "τ⃗ = p⃗ × E⃗[span_42](start_span)[span_42](end_span)।"
     },
     {
       "id": "BRAHM-PHY-041",
@@ -537,7 +537,7 @@
         "D": "विभवांतर का"
       },
       "answer": "B",
-      "explanation": "धारा × समय = आवेश (q = It)[span_44](start_span)[span_44](end_span)।"
+      "explanation": "धारा × समय = आवेश (q = It)[span_43](start_span)[span_43](end_span)।"
     },
     {
       "id": "BRAHM-PHY-042",
@@ -550,7 +550,7 @@
         "D": "7.68 × 10⁻²⁷ C-m"
       },
       "answer": "B",
-      "explanation": "p = q × 2a = 3.2 × 10⁻¹⁹ × 2.4 × 10⁻¹⁰ = 7.68 × 10⁻²⁹ C-m[span_45](start_span)[span_45](end_span)।"
+      "explanation": "p = q × 2a = 3.2 × 10⁻¹⁹ × 2.4 × 10⁻¹⁰ = 7.68 × 10⁻²⁹ C-m[span_44](start_span)[span_44](end_span)।"
     },
     {
       "id": "BRAHM-PHY-043",
@@ -563,7 +563,7 @@
         "D": "सतह पर 45° पर होती है"
       },
       "answer": "B",
-      "explanation": "चालक की सतह पर विद्युत क्षेत्र हमेशा लंबवत होता है[span_46](start_span)[span_46](end_span)।"
+      "explanation": "चालक की सतह पर विद्युत क्षेत्र हमेशा लंबवत होता है[span_45](start_span)[span_45](end_span)।"
     },
     {
       "id": "BRAHM-PHY-044",
@@ -576,7 +576,7 @@
         "D": "36π × 10⁻⁶ N m²/C"
       },
       "answer": "A",
-      "explanation": "φ = 36π × 10⁴ N m²/C[span_47](start_span)[span_47](end_span)।"
+      "explanation": "φ = 36π × 10⁴ N m²/C[span_46](start_span)[span_46](end_span)।"
     },
     {
       "id": "BRAHM-PHY-045",
@@ -589,7 +589,7 @@
         "D": "(1/3) × 10⁻⁹"
       },
       "answer": "D",
-      "explanation": "1 statC = (1/3) × 10⁻⁹ C[span_48](start_span)[span_48](end_span)।"
+      "explanation": "1 statC = (1/3) × 10⁻⁹ C[span_47](start_span)[span_47](end_span)।"
     },
     {
       "id": "BRAHM-PHY-046",
@@ -602,7 +602,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "A",
-      "explanation": "स्थिरवैद्युत क्षेत्र संरक्षी होता है[span_49](start_span)[span_49](end_span)।"
+      "explanation": "स्थिरवैद्युत क्षेत्र संरक्षी होता है[span_48](start_span)[span_48](end_span)।"
     },
     {
       "id": "BRAHM-PHY-047",
@@ -615,7 +615,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "A",
-      "explanation": "1 C = 3 × 10⁹ esu[span_50](start_span)[span_50](end_span)।"
+      "explanation": "1 C = 3 × 10⁹ esu[span_49](start_span)[span_49](end_span)।"
     },
     {
       "id": "BRAHM-PHY-048",
@@ -628,7 +628,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "C",
-      "explanation": "नियत वेग से गतिमान आवेश विद्युत तथा चुम्बकीय दोनों क्षेत्र उत्पन्न करता है[span_51](start_span)[span_51](end_span)।"
+      "explanation": "नियत वेग से गतिमान आवेश विद्युत तथा चुम्बकीय दोनों क्षेत्र उत्पन्न करता है[span_50](start_span)[span_50](end_span)।"
     },
     {
       "id": "BRAHM-PHY-049",
@@ -641,7 +641,7 @@
         "D": "+1.6 × 10⁻¹⁹"
       },
       "answer": "A",
-      "explanation": "esu में इलेक्ट्रॉन का आवेश 4.78 × 10⁻¹⁰ statC होता है[span_52](start_span)[span_52](end_span)।"
+      "explanation": "esu में इलेक्ट्रॉन का आवेश 4.78 × 10⁻¹⁰ statC होता है[span_51](start_span)[span_51](end_span)।"
     },
     {
       "id": "BRAHM-PHY-050",
@@ -654,7 +654,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "C",
-      "explanation": "कूलॉम बल केन्द्रीय और विद्युत बल दोनों होता है[span_53](start_span)[span_53](end_span)।"
+      "explanation": "कूलॉम बल केन्द्रीय और विद्युत बल दोनों होता है[span_52](start_span)[span_52](end_span)।"
     },
     {
       "id": "BRAHM-PHY-051",
@@ -667,7 +667,7 @@
         "D": "J C⁻¹ m⁻¹"
       },
       "answer": "B",
-      "explanation": "J C⁻¹ विभव (वोल्ट) का मात्रक है, विद्युत क्षेत्र का नहीं[span_54](start_span)[span_54](end_span)।"
+      "explanation": "J C⁻¹ विभव (वोल्ट) का मात्रक है, विद्युत क्षेत्र का नहीं[span_53](start_span)[span_53](end_span)।"
     },
     {
       "id": "BRAHM-PHY-052",
@@ -680,7 +680,7 @@
         "D": "2 से"
       },
       "answer": "C",
-      "explanation": "परावैद्युत माध्यमों का स्थिरांक K सदैव 1 से अधिक (K > 1) होता है[span_55](start_span)[span_55](end_span)।"
+      "explanation": "परावैद्युत माध्यमों का स्थिरांक K सदैव 1 से अधिक (K > 1) होता है[span_54](start_span)[span_54](end_span)।"
     },
     {
       "id": "BRAHM-PHY-053",
@@ -693,7 +693,7 @@
         "D": "मी²/से०"
       },
       "answer": "B",
-      "explanation": "चुंबकीय फ्लक्स घनत्व का SI मात्रक टेस्ला (Wb/m²) होता है[span_56](start_span)[span_56](end_span)।"
+      "explanation": "चुंबकीय फ्लक्स घनत्व का SI मात्रक टेस्ला (Wb/m²) होता है[span_55](start_span)[span_55](end_span)।"
     },
     {
       "id": "BRAHM-PHY-054",
@@ -706,7 +706,7 @@
         "D": "E ∝ 1/r³"
       },
       "answer": "D",
-      "explanation": "द्विध्रुव के लिए E ∝ 1/r³[span_57](start_span)[span_57](end_span)।"
+      "explanation": "द्विध्रुव के लिए E ∝ 1/r³[span_56](start_span)[span_56](end_span)।"
     },
     {
       "id": "BRAHM-PHY-055",
@@ -719,7 +719,7 @@
         "D": "0.5"
       },
       "answer": "C",
-      "explanation": "परावैद्युतांक सदैव 1 से बड़ा और धनात्मक होता है, अतः 5 सही है[span_58](start_span)[span_58](end_span)।"
+      "explanation": "परावैद्युतांक सदैव 1 से बड़ा और धनात्मक होता है, अतः 5 सही है[span_57](start_span)[span_57](end_span)।"
     },
     {
       "id": "BRAHM-PHY-056",
@@ -732,7 +732,7 @@
         "D": "शून्य"
       },
       "answer": "B",
-      "explanation": "E = σ / (2ε₀)[span_59](start_span)[span_59](end_span)।"
+      "explanation": "E = σ / (2ε₀)[span_58](start_span)[span_58](end_span)।"
     },
     {
       "id": "BRAHM-PHY-057",
@@ -745,7 +745,7 @@
         "D": "शून्य"
       },
       "answer": "A",
-      "explanation": "E = σ / ε₀[span_60](start_span)[span_60](end_span)।"
+      "explanation": "E = σ / ε₀[span_59](start_span)[span_59](end_span)।"
     },
     {
       "id": "BRAHM-PHY-058",
@@ -758,7 +758,7 @@
         "D": "λ / r"
       },
       "answer": "A",
-      "explanation": "E = λ / (2πε₀ r)[span_61](start_span)[span_61](end_span)।"
+      "explanation": "E = λ / (2πε₀ r)[span_60](start_span)[span_60](end_span)।"
     },
     {
       "id": "BRAHM-PHY-059",
@@ -771,7 +771,7 @@
         "D": "4πε₀"
       },
       "answer": "B",
-      "explanation": "φ = 1 / ε₀[span_62](start_span)[span_62](end_span)।"
+      "explanation": "φ = 1 / ε₀[span_61](start_span)[span_61](end_span)।"
     },
     {
       "id": "BRAHM-PHY-060",
@@ -784,7 +784,7 @@
         "D": "m_e / m_p"
       },
       "answer": "C",
-      "explanation": "a = eE / m से a_e / a_p = m_p / m_e[span_63](start_span)[span_63](end_span)।"
+      "explanation": "a = eE / m से a_e / a_p = m_p / m_e[span_62](start_span)[span_62](end_span)।"
     },
     {
       "id": "BRAHM-PHY-061",
@@ -797,7 +797,7 @@
         "D": "4 गुना"
       },
       "answer": "A",
-      "explanation": "F ∝ 1/r²; दूरी दुगुनी करने पर बल एक-चौथाई (1/4 गुना) हो जाता है[span_64](start_span)[span_64](end_span)।"
+      "explanation": "F ∝ 1/r²; दूरी दुगुनी करने पर बल एक-चौथाई (1/4 गुना) हो जाता है[span_63](start_span)[span_63](end_span)।"
     },
     {
       "id": "BRAHM-PHY-062",
@@ -810,7 +810,7 @@
         "D": "30°"
       },
       "answer": "B",
-      "explanation": "θ = 90° पर τ_max = pE[span_65](start_span)[span_65](end_span)।"
+      "explanation": "θ = 90° पर τ_max = pE[span_64](start_span)[span_64](end_span)।"
     },
     {
       "id": "BRAHM-PHY-063",
@@ -823,7 +823,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "B",
-      "explanation": "ε₀ = F m⁻¹[span_66](start_span)[span_66](end_span)।"
+      "explanation": "ε₀ = F m⁻¹[span_65](start_span)[span_65](end_span)।"
     },
     {
       "id": "BRAHM-PHY-064",
@@ -836,7 +836,7 @@
         "D": "कूलम्ब (C)"
       },
       "answer": "D",
-      "explanation": "आवेश की SI इकाई कूलॉम (C) है[span_67](start_span)[span_67](end_span)।"
+      "explanation": "आवेश की SI इकाई कूलॉम (C) है[span_66](start_span)[span_66](end_span)।"
     },
     {
       "id": "BRAHM-PHY-065",
@@ -849,7 +849,7 @@
         "D": "C⁻² N⁻¹ m⁻²"
       },
       "answer": "C",
-      "explanation": "C² N⁻¹ m⁻²[span_68](start_span)[span_68](end_span)।"
+      "explanation": "C² N⁻¹ m⁻²[span_67](start_span)[span_67](end_span)।"
     },
     {
       "id": "BRAHM-PHY-066",
@@ -862,7 +862,7 @@
         "D": "1 से अधिक"
       },
       "answer": "C",
-      "explanation": "धातुओं के लिए K = ∞ होता है[span_69](start_span)[span_69](end_span)।"
+      "explanation": "धातुओं के लिए K = ∞ होता है[span_68](start_span)[span_68](end_span)।"
     },
     {
       "id": "BRAHM-PHY-067",
@@ -875,7 +875,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "A",
-      "explanation": "1 V = 1 J / C[span_70](start_span)[span_70](end_span)।"
+      "explanation": "1 V = 1 J / C[span_69](start_span)[span_69](end_span)।"
     },
     {
       "id": "BRAHM-PHY-068",
@@ -888,7 +888,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "C",
-      "explanation": "विद्युत तीव्रता सदिश राशि है[span_71](start_span)[span_71](end_span)।"
+      "explanation": "विद्युत तीव्रता सदिश राशि है[span_70](start_span)[span_70](end_span)।"
     },
     {
       "id": "BRAHM-PHY-069",
@@ -901,7 +901,7 @@
         "D": "नहीं काटती हैं"
       },
       "answer": "D",
-      "explanation": "कटान बिंदु पर दो दिशाएं संभव नहीं हैं, इसलिए वे कभी नहीं काटती हैं[span_72](start_span)[span_72](end_span)।"
+      "explanation": "कटान बिंदु पर दो दिशाएं संभव नहीं हैं, इसलिए वे कभी नहीं काटती हैं[span_71](start_span)[span_71](end_span)।"
     },
     {
       "id": "BRAHM-PHY-070",
@@ -914,7 +914,7 @@
         "D": "फैराडे के नियम"
       },
       "answer": "C",
-      "explanation": "कूलॉम के नियम से[span_73](start_span)[span_73](end_span)।"
+      "explanation": "कूलॉम के नियम से[span_72](start_span)[span_72](end_span)।"
     },
     {
       "id": "BRAHM-PHY-071",
@@ -927,7 +927,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "B",
-      "explanation": "इलेक्ट्रॉनों के प्रवेश के कारण द्रव्यमान बढ़ता है[span_74](start_span)[span_74](end_span)।"
+      "explanation": "इलेक्ट्रॉनों के प्रवेश के कारण द्रव्यमान बढ़ता है[span_73](start_span)[span_73](end_span)।"
     },
     {
       "id": "BRAHM-PHY-072",
@@ -940,7 +940,7 @@
         "D": "शून्य हो जाता है"
       },
       "answer": "A",
-      "explanation": "प्रतिकर्षण बल के कारण त्रिज्या बढ़ती है[span_75](start_span)[span_75](end_span)।"
+      "explanation": "प्रतिकर्षण बल के कारण त्रिज्या बढ़ती है[span_74](start_span)[span_74](end_span)।"
     },
     {
       "id": "BRAHM-PHY-073",
@@ -953,7 +953,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "B",
-      "explanation": "स्थिरवैद्युत प्रतिकर्षण पृष्ठ तनाव के विरुद्ध कार्य करता है, अतः सिकुड़ने की प्रवृत्ति घटती है[span_76](start_span)[span_76](end_span)।"
+      "explanation": "स्थिरवैद्युत प्रतिकर्षण पृष्ठ तनाव के विरुद्ध कार्य करता है, अतः सिकुड़ने की प्रवृत्ति घटती है[span_75](start_span)[span_75](end_span)।"
     },
     {
       "id": "BRAHM-PHY-074",
@@ -966,7 +966,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "C",
-      "explanation": "डिबाई विद्युत द्विध्रुव आघूर्ण की एक व्यावहारिक इकाई है[span_77](start_span)[span_77](end_span)।"
+      "explanation": "डिबाई विद्युत द्विध्रुव आघूर्ण की एक व्यावहारिक इकाई है[span_76](start_span)[span_76](end_span)।"
     },
     {
       "id": "BRAHM-PHY-075",
@@ -979,7 +979,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "B",
-      "explanation": "अचालक में आवेश प्रवाहित नहीं हो सकता, अतः जहाँ दिया जाए वहीं (सतह व भीतर) बना रहता है[span_78](start_span)[span_78](end_span)।"
+      "explanation": "अचालक में आवेश प्रवाहित नहीं हो सकता, अतः जहाँ दिया जाए वहीं (सतह व भीतर) बना रहता है[span_77](start_span)[span_77](end_span)।"
     },
     {
       "id": "BRAHM-PHY-076",
@@ -992,7 +992,7 @@
         "D": "1 C"
       },
       "answer": "A",
-      "explanation": "मूल आवेश e = 1.6 × 10⁻¹⁹ C से कम नहीं हो सकती[span_79](start_span)[span_79](end_span)।"
+      "explanation": "मूल आवेश e = 1.6 × 10⁻¹⁹ C से कम नहीं हो सकती[span_78](start_span)[span_78](end_span)।"
     },
     {
       "id": "BRAHM-PHY-077",
@@ -1005,7 +1005,7 @@
         "D": "1.6 × 10⁻¹⁹ C"
       },
       "answer": "C",
-      "explanation": "2.4 × 10⁻¹⁹ C, e का पूर्णांक गुणज नहीं है, अतः संभव नहीं है[span_80](start_span)[span_80](end_span)।"
+      "explanation": "2.4 × 10⁻¹⁹ C, e का पूर्णांक गुणज नहीं है, अतः संभव नहीं है[span_79](start_span)[span_79](end_span)।"
     },
     {
       "id": "BRAHM-PHY-078",
@@ -1018,7 +1018,7 @@
         "D": "[M³L⁻³T³A³]"
       },
       "answer": "B",
-      "explanation": "[M⁻¹L⁻³T⁴A²][span_81](start_span)[span_81](end_span)।"
+      "explanation": "[M⁻¹L⁻³T⁴A²][span_80](start_span)[span_80](end_span)।"
     },
     {
       "id": "BRAHM-PHY-079",
@@ -1031,7 +1031,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "C",
-      "explanation": "ε₀ = 8.85 × 10⁻¹² F m⁻¹[span_82](start_span)[span_82](end_span)।"
+      "explanation": "ε₀ = 8.85 × 10⁻¹² F m⁻¹[span_81](start_span)[span_81](end_span)।"
     },
     {
       "id": "BRAHM-PHY-080",
@@ -1044,7 +1044,7 @@
         "D": "φ_E = q / ε₀"
       },
       "answer": "D",
-      "explanation": "φ_E = q / ε₀[span_83](start_span)[span_83](end_span)।"
+      "explanation": "φ_E = q / ε₀[span_82](start_span)[span_82](end_span)।"
     },
     {
       "id": "BRAHM-PHY-081",
@@ -1057,7 +1057,7 @@
         "D": "धारिता"
       },
       "answer": "C",
-      "explanation": "समानांतर संयोजन में सभी संधारित्रों पर विभवांतर समान रहता है[span_84](start_span)[span_84](end_span)।"
+      "explanation": "समानांतर संयोजन में सभी संधारित्रों पर विभवांतर समान रहता है[span_83](start_span)[span_83](end_span)।"
     },
     {
       "id": "BRAHM-PHY-082",
@@ -1070,7 +1070,7 @@
         "D": "कूलॉम/वोल्ट"
       },
       "answer": "D",
-      "explanation": "C = q / V = कूलॉम/वोल्ट (फैराड)[span_85](start_span)[span_85](end_span)।"
+      "explanation": "C = q / V = कूलॉम/वोल्ट (फैराड)[span_84](start_span)[span_84](end_span)।"
     },
     {
       "id": "BRAHM-PHY-083",
@@ -1083,7 +1083,7 @@
         "D": "प्लेटों के बीच की दूरी पर"
       },
       "answer": "C",
-      "explanation": "धारिता प्लेटों के आवेश पर निर्भर नहीं करती[span_86](start_span)[span_86](end_span)।"
+      "explanation": "धारिता प्लेटों के आवेश पर निर्भर नहीं करती[span_85](start_span)[span_85](end_span)।"
     },
     {
       "id": "BRAHM-PHY-084",
@@ -1096,7 +1096,7 @@
         "D": "विद्युत धारिता"
       },
       "answer": "C",
-      "explanation": "E = V / d = वोल्ट/मीटर[span_87](start_span)[span_87](end_span)।"
+      "explanation": "E = V / d = वोल्ट/मीटर[span_86](start_span)[span_86](end_span)।"
     },
     {
       "id": "BRAHM-PHY-085",
@@ -1109,7 +1109,7 @@
         "D": "शून्य हो जाएगा"
       },
       "answer": "B",
-      "explanation": "F_medium = F_air / K; परावैद्युत रखने पर प्रतिकर्षण बल घट जाता है[span_88](start_span)[span_88](end_span)।"
+      "explanation": "परावैद्युत रखने पर प्रतिकर्षण बल घट जाता है[span_87](start_span)[span_87](end_span)।"
     },
     {
       "id": "BRAHM-PHY-086",
@@ -1122,7 +1122,7 @@
         "D": "100 जूल"
       },
       "answer": "A",
-      "explanation": "U = (1/2) CV² = 0.5 × (100 × 10⁻⁶) × (100)² = 0.5 J[span_89](start_span)[span_89](end_span)।"
+      "explanation": "U = (1/2) CV² = 0.5 × (100 × 10⁻⁶) × (100)² = 0.5 J[span_88](start_span)[span_88](end_span)।"
     },
     {
       "id": "BRAHM-PHY-087",
@@ -1135,7 +1135,7 @@
         "D": "V² के समानुपाती"
       },
       "answer": "B",
-      "explanation": "(1/2) mv² = eV ⇒ v = √(2eV/m) ∝ √V[span_90](start_span)[span_90](end_span)।"
+      "explanation": "v ∝ √V[span_89](start_span)[span_89](end_span)।"
     },
     {
       "id": "BRAHM-PHY-088",
@@ -1148,7 +1148,7 @@
         "D": "शून्य"
       },
       "answer": "C",
-      "explanation": "U = k q₁q₂ / r = (9 × 10⁹ × 10⁻⁶ × 10⁻⁶) / 1 = 9 × 10⁻³ J[span_91](start_span)[span_91](end_span)।"
+      "explanation": "U = 9 × 10⁻³ J[span_90](start_span)[span_90](end_span)।"
     },
     {
       "id": "BRAHM-PHY-089",
@@ -1161,7 +1161,7 @@
         "D": "वैद्युत फ्लक्स का"
       },
       "answer": "C",
-      "explanation": "वैद्युत धारिता का[span_92](start_span)[span_92](end_span)।"
+      "explanation": "वैद्युत धारिता का[span_91](start_span)[span_91](end_span)।"
     },
     {
       "id": "BRAHM-PHY-090",
@@ -1174,7 +1174,7 @@
         "D": "न तो AC और न ही DC"
       },
       "answer": "B",
-      "explanation": "DC के लिए f = 0 अतः X_C = ∞, इसलिए संधारित्र DC को पूरी तरह अवरुद्ध कर देता है[span_93](start_span)[span_93](end_span)।"
+      "explanation": "संधारित्र DC को पूरी तरह अवरुद्ध कर देता है[span_92](start_span)[span_92](end_span)।"
     },
     {
       "id": "BRAHM-PHY-091",
@@ -1187,7 +1187,7 @@
         "D": "1.11 सेमी०"
       },
       "answer": "C",
-      "explanation": "R = 9 km[span_94](start_span)[span_94](end_span)।"
+      "explanation": "R = 9 km[span_93](start_span)[span_93](end_span)।"
     },
     {
       "id": "BRAHM-PHY-092",
@@ -1200,7 +1200,7 @@
         "D": "अनंत"
       },
       "answer": "C",
-      "explanation": "विभव शून्य होता है[span_95](start_span)[span_95](end_span)।"
+      "explanation": "विभव शून्य होता है[span_94](start_span)[span_94](end_span)।"
     },
     {
       "id": "BRAHM-PHY-093",
@@ -1213,7 +1213,7 @@
         "D": "अनंत"
       },
       "answer": "A",
-      "explanation": "+q और -q का योग शून्य होता है[span_96](start_span)[span_96](end_span)।"
+      "explanation": "कुल आवेश शून्य होता है[span_95](start_span)[span_95](end_span)।"
     },
     {
       "id": "BRAHM-PHY-094",
@@ -1226,7 +1226,7 @@
         "D": "विद्युत स्पेस"
       },
       "answer": "C",
-      "explanation": "E = F / q[span_97](start_span)[span_97](end_span)।"
+      "explanation": "E = F / q[span_96](start_span)[span_96](end_span)।"
     },
     {
       "id": "BRAHM-PHY-095",
@@ -1239,7 +1239,7 @@
         "D": "समान रहती है"
       },
       "answer": "C",
-      "explanation": "सजातीय आवेशों में घटती है तथा विजातीय आवेशों में बढ़ती है[span_98](start_span)[span_98](end_span)।"
+      "explanation": "घट या बढ़ सकती है[span_97](start_span)[span_97](end_span)।"
     },
     {
       "id": "BRAHM-PHY-096",
@@ -1252,7 +1252,7 @@
         "D": "(4πε₀)⁻¹"
       },
       "answer": "B",
-      "explanation": "φ = 1 / ε₀ = (ε₀)⁻¹[span_99](start_span)[span_99](end_span)।"
+      "explanation": "(ε₀)⁻¹[span_98](start_span)[span_98](end_span)।"
     },
     {
       "id": "BRAHM-PHY-097",
@@ -1265,7 +1265,7 @@
         "D": "6 µF, 18 µF"
       },
       "answer": "C",
-      "explanation": "C_min = 2 µF, C_max = 18 µF[span_100](start_span)[span_100](end_span)।"
+      "explanation": "2 µF, 18 µF[span_99](start_span)[span_99](end_span)।"
     },
     {
       "id": "BRAHM-PHY-098",
@@ -1278,7 +1278,7 @@
         "D": "20 µF"
       },
       "answer": "D",
-      "explanation": "C_big = 64^(1/3) × 5 = 20 µF[span_101](start_span)[span_101](end_span)।"
+      "explanation": "20 µF[span_100](start_span)[span_100](end_span)।"
     },
     {
       "id": "BRAHM-PHY-099",
@@ -1291,7 +1291,7 @@
         "D": "निम्न धारा एवं निम्न वोल्टेज"
       },
       "answer": "C",
-      "explanation": "केवल उच्च वोल्टेज उत्पन्न करता है[span_102](start_span)[span_102](end_span)।"
+      "explanation": "केवल उच्च वोल्टेज[span_101](start_span)[span_101](end_span)।"
     },
     {
       "id": "BRAHM-PHY-100",
@@ -1304,7 +1304,7 @@
         "D": "r² के व्युत्क्रमानुपाती होता है"
       },
       "answer": "B",
-      "explanation": "V = k q / r ⇒ V ∝ 1/r (r के व्युत्क्रमानुपाती)[span_103](start_span)[span_103](end_span)।"
+      "explanation": "r के व्युत्क्रमानुपाती होता है[span_102](start_span)[span_102](end_span)।"
     },
     {
       "id": "BRAHM-PHY-101",
@@ -1317,7 +1317,7 @@
         "D": "6"
       },
       "answer": "D",
-      "explanation": "BBROYGBVGW कोड से Blue = 6[span_104](start_span)[span_104](end_span)।"
+      "explanation": "Blue = 6[span_103](start_span)[span_103](end_span)।"
     },
     {
       "id": "BRAHM-PHY-102",
@@ -1330,7 +1330,7 @@
         "D": "10⁶ V m⁻¹"
       },
       "answer": "A",
-      "explanation": "3 × 10⁶ V/m[span_105](start_span)[span_105](end_span)।"
+      "explanation": "3 × 10⁶ V m⁻¹[span_104](start_span)[span_104](end_span)।"
     },
     {
       "id": "BRAHM-PHY-103",
@@ -1343,7 +1343,7 @@
         "D": "C = 4πε₀ (rR² / (r - R))"
       },
       "answer": "A",
-      "explanation": "C = 4πε₀ (rR / (r - R))[span_106](start_span)[span_106](end_span)।"
+      "explanation": "C = 4πε₀ (rR / (r - R))[span_105](start_span)[span_105](end_span)।"
     },
     {
       "id": "BRAHM-PHY-104",
@@ -1356,7 +1356,7 @@
         "D": "C = n² C₁"
       },
       "answer": "C",
-      "explanation": "समानांतर क्रम में C_net = n C₁[span_107](start_span)[span_107](end_span)।"
+      "explanation": "C = n C₁[span_106](start_span)[span_106](end_span)।"
     },
     {
       "id": "BRAHM-PHY-105",
@@ -1369,7 +1369,7 @@
         "D": "C = q / V"
       },
       "answer": "D",
-      "explanation": "C = q / V[span_108](start_span)[span_108](end_span)।"
+      "explanation": "C = q / V[span_107](start_span)[span_107](end_span)।"
     },
     {
       "id": "BRAHM-PHY-106",
@@ -1382,7 +1382,7 @@
         "D": "E = C · V"
       },
       "answer": "B",
-      "explanation": "E = (1/2) C V²[span_109](start_span)[span_109](end_span)।"
+      "explanation": "E = (1/2) C V²[span_108](start_span)[span_108](end_span)।"
     },
     {
       "id": "BRAHM-PHY-107",
@@ -1395,7 +1395,7 @@
         "D": "A / (ε₀d)"
       },
       "answer": "A",
-      "explanation": "C = ε₀A / d[span_110](start_span)[span_110](end_span)।"
+      "explanation": "C = ε₀A / d[span_109](start_span)[span_109](end_span)।"
     },
     {
       "id": "BRAHM-PHY-108",
@@ -1408,7 +1408,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "A",
-      "explanation": "V = (1/4πε₀) · (q/r)[span_111](start_span)[span_111](end_span)।"
+      "explanation": "(1 / 4πε₀) · (q / r)[span_110](start_span)[span_110](end_span)।"
     },
     {
       "id": "BRAHM-PHY-109",
@@ -1421,7 +1421,7 @@
         "D": "4πε₀ / R"
       },
       "answer": "B",
-      "explanation": "C = 4πε₀ R[span_112](start_span)[span_112](end_span)।"
+      "explanation": "4πε₀ R[span_111](start_span)[span_111](end_span)।"
     },
     {
       "id": "BRAHM-PHY-110",
@@ -1434,7 +1434,7 @@
         "D": "2 / C"
       },
       "answer": "A",
-      "explanation": "तुल्य धारिता C होती है[span_113](start_span)[span_113](end_span)।"
+      "explanation": "C[span_112](start_span)[span_112](end_span)।"
     },
     {
       "id": "BRAHM-PHY-111",
@@ -1447,7 +1447,7 @@
         "D": "3"
       },
       "answer": "C",
-      "explanation": "Red = 2[span_114](start_span)[span_114](end_span)।"
+      "explanation": "2[span_113](start_span)[span_113](end_span)।"
     },
     {
       "id": "BRAHM-PHY-112",
@@ -1460,7 +1460,7 @@
         "D": "1 / (2C)"
       },
       "answer": "A",
-      "explanation": "C_net = C + C = 2C[span_115](start_span)[span_115](end_span)।"
+      "explanation": "2C[span_114](start_span)[span_114](end_span)।"
     },
     {
       "id": "BRAHM-PHY-113",
@@ -1473,7 +1473,7 @@
         "D": "शून्य"
       },
       "answer": "D",
-      "explanation": "निरक्षीय स्थिति में V = 0 होता है[span_116](start_span)[span_116](end_span)।"
+      "explanation": "शून्य[span_115](start_span)[span_115](end_span)।"
     },
     {
       "id": "BRAHM-PHY-114",
@@ -1486,7 +1486,7 @@
         "D": "2 × 10⁻² F"
       },
       "answer": "B",
-      "explanation": "C = 2U / V² = 2 × 1 / (100)² = 2 × 10⁻⁴ F[span_117](start_span)[span_117](end_span)।"
+      "explanation": "2 × 10⁻⁴ F[span_116](start_span)[span_116](end_span)।"
     },
     {
       "id": "BRAHM-PHY-115",
@@ -1499,7 +1499,7 @@
         "D": "(1/9) µF"
       },
       "answer": "A",
-      "explanation": "C_net = (5 × 4)/(5 + 4) = 20/9 µF[span_118](start_span)[span_118](end_span)।"
+      "explanation": "(20/9) µF[span_117](start_span)[span_117](end_span)।"
     },
     {
       "id": "BRAHM-PHY-116",
@@ -1512,7 +1512,7 @@
         "D": "6"
       },
       "answer": "A",
-      "explanation": "दो 2 µF समानांतर में (4 µF) और दो 2 µF श्रेणी में (1 µF) जोड़कर कुल 4 संधारित्र चाहिए[span_119](start_span)[span_119](end_span)।"
+      "explanation": "4[span_118](start_span)[span_118](end_span)।"
     },
     {
       "id": "BRAHM-PHY-117",
@@ -1525,12 +1525,12 @@
         "D": "1 / r³"
       },
       "answer": "C",
-      "explanation": "V ∝ 1/r²[span_120](start_span)[span_120](end_span)।"
+      "explanation": "1 / r²[span_119](start_span)[span_119](end_span)।"
     },
     {
       "id": "BRAHM-PHY-118",
       "chapter": 2,
-      "question": "C₁ = 2 µF तथा C₂ = 4 µF श्रेणीक्रम में 1200 V से जुड़े हैं। 2 µF वाले संधारित्र पर विभवांतर होगा:",
+      "question": "C₁ = 2 µF तथा C₂ = 4 µF के दो संधारित्रों को श्रेणीक्रम में 1200 V से जोड़ने पर 2 µF वाले संधारित्र के सिरों पर विभवांतर होगा:",
       "options": {
         "A": "400 V",
         "B": "600 V",
@@ -1538,7 +1538,7 @@
         "D": "900 V"
       },
       "answer": "C",
-      "explanation": "V₁ = 1200 × 4 / (2 + 4) = 800 V[span_121](start_span)[span_121](end_span)।"
+      "explanation": "800 V[span_120](start_span)[span_120](end_span)।"
     },
     {
       "id": "BRAHM-PHY-119",
@@ -1551,7 +1551,7 @@
         "D": "pE (1 - cos θ)"
       },
       "answer": "B",
-      "explanation": "U = -p⃗ · E⃗[span_122](start_span)[span_122](end_span)।"
+      "explanation": "-p⃗ · E⃗[span_121](start_span)[span_121](end_span)।"
     },
     {
       "id": "BRAHM-PHY-120",
@@ -1564,7 +1564,7 @@
         "D": "r"
       },
       "answer": "D",
-      "explanation": "C = 4πε₀ r से C ∝ r[span_123](start_span)[span_123](end_span)।"
+      "explanation": "r[span_122](start_span)[span_122](end_span)।"
     },
     {
       "id": "BRAHM-PHY-121",
@@ -1577,7 +1577,7 @@
         "D": "164 µF"
       },
       "answer": "C",
-      "explanation": "20 µF[span_124](start_span)[span_124](end_span)।"
+      "explanation": "20 µF[span_123](start_span)[span_123](end_span)।"
     },
     {
       "id": "BRAHM-PHY-122",
@@ -1590,7 +1590,7 @@
         "D": "-10 µC"
       },
       "answer": "A",
-      "explanation": "q = C ΔV = 2 µF × (20 - 10) = 20 µC[span_125](start_span)[span_125](end_span)।"
+      "explanation": "20 µC[span_124](start_span)[span_124](end_span)।"
     },
     {
       "id": "BRAHM-PHY-123",
@@ -1603,7 +1603,7 @@
         "D": "कुछ कहा नहीं जा सकता"
       },
       "answer": "A",
-      "explanation": "C' = KC; धारिता बढ़ती है[span_126](start_span)[span_126](end_span)।"
+      "explanation": "बढ़ती है[span_125](start_span)[span_125](end_span)।"
     },
     {
       "id": "BRAHM-PHY-124",
@@ -1616,7 +1616,7 @@
         "D": "40 µC"
       },
       "answer": "B",
-      "explanation": "q = C ΔV = 2 × (20 - 15) = 10 µC[span_127](start_span)[span_127](end_span)।"
+      "explanation": "10 µC[span_126](start_span)[span_126](end_span)।"
     },
     {
       "id": "BRAHM-PHY-125",
@@ -1629,7 +1629,7 @@
         "D": "E + E₀"
       },
       "answer": "A",
-      "explanation": "K = E / E₀ (या E₀ / E)[span_128](start_span)[span_128](end_span)।"
+      "explanation": "E / E₀[span_127](start_span)[span_127](end_span)।"
     },
     {
       "id": "BRAHM-PHY-126",
@@ -1642,7 +1642,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "B",
-      "explanation": "चन्द्रमा की त्रिज्या लगभग 1740 km होने से धारिता लगभग 177 µF होती है[span_129](start_span)[span_129](end_span)।"
+      "explanation": "177 µF[span_128](start_span)[span_128](end_span)।"
     },
     {
       "id": "BRAHM-PHY-127",
@@ -1655,7 +1655,7 @@
         "D": "ऐम्पियर (A)"
       },
       "answer": "C",
-      "explanation": "फैराड (F)[span_130](start_span)[span_130](end_span)।"
+      "explanation": "फैराड (F)[span_129](start_span)[span_129](end_span)।"
     },
     {
       "id": "BRAHM-PHY-128",
@@ -1668,7 +1668,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "B",
-      "explanation": "W = PE (1 - cos θ)[span_131](start_span)[span_131](end_span)।"
+      "explanation": "W = PE (1 - cos θ)[span_130](start_span)[span_130](end_span)।"
     },
     {
       "id": "BRAHM-PHY-129",
@@ -1681,7 +1681,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "C",
-      "explanation": "C ∝ 1/d[span_132](start_span)[span_132](end_span)।"
+      "explanation": "प्लेटों के बीच की दूरी[span_131](start_span)[span_131](end_span)।"
     },
     {
       "id": "BRAHM-PHY-130",
@@ -1694,7 +1694,7 @@
         "D": "गोले की त्रिज्या के"
       },
       "answer": "D",
-      "explanation": "C ∝ R[span_133](start_span)[span_133](end_span)।"
+      "explanation": "गोले की त्रिज्या के[span_132](start_span)[span_132](end_span)।"
     },
     {
       "id": "BRAHM-PHY-131",
@@ -1707,7 +1707,7 @@
         "D": "V² · R · I"
       },
       "answer": "C",
-      "explanation": "P = V² / R[span_134](start_span)[span_134](end_span)।"
+      "explanation": "V² / R[span_133](start_span)[span_133](end_span)।"
     },
     {
       "id": "BRAHM-PHY-132",
@@ -1720,7 +1720,7 @@
         "D": "बल का"
       },
       "answer": "A",
-      "explanation": "kWh विद्युत ऊर्जा का व्यापारिक मात्रक है[span_135](start_span)[span_135](end_span)।"
+      "explanation": "ऊर्जा का[span_134](start_span)[span_134](end_span)।"
     },
     {
       "id": "BRAHM-PHY-133",
@@ -1733,7 +1733,7 @@
         "D": "l A / ρ"
       },
       "answer": "A",
-      "explanation": "R = ρ (l / A)[span_136](start_span)[span_136](end_span)।"
+      "explanation": "ρ · (l / A)[span_135](start_span)[span_135](end_span)।"
     },
     {
       "id": "BRAHM-PHY-134",
@@ -1746,7 +1746,7 @@
         "D": "शून्य"
       },
       "answer": "C",
-      "explanation": "सतह के लंबवत[span_137](start_span)[span_137](end_span)।"
+      "explanation": "सतह के लम्बवत्[span_136](start_span)[span_136](end_span)।"
     },
     {
       "id": "BRAHM-PHY-135",
@@ -1759,7 +1759,7 @@
         "D": "वोल्ट प्रति मीटर (V/m)"
       },
       "answer": "B",
-      "explanation": "J = I / A = A/m²[span_138](start_span)[span_138](end_span)।"
+      "explanation": "ऐम्पियर प्रति वर्ग मी० (A/m²)[span_137](start_span)[span_137](end_span)।"
     },
     {
       "id": "BRAHM-PHY-136",
@@ -1772,7 +1772,7 @@
         "D": "बाहरी क्षेत्र का आधा"
       },
       "answer": "A",
-      "explanation": "स्थिरवैद्युत परिरक्षण के कारण चालक के भीतर E = 0 होता है[span_139](start_span)[span_139](end_span)।"
+      "explanation": "शून्य[span_138](start_span)[span_138](end_span)।"
     },
     {
       "id": "BRAHM-PHY-137",
@@ -1785,7 +1785,7 @@
         "D": "V² के व्युत्क्रमानुपाती"
       },
       "answer": "A",
-      "explanation": "v_d = (e V / m l) τ ⇒ v_d ∝ V[span_140](start_span)[span_140](end_span)।"
+      "explanation": "V के अनुक्रमानुपाती[span_139](start_span)[span_139](end_span)।"
     },
     {
       "id": "BRAHM-PHY-138",
@@ -1798,7 +1798,7 @@
         "D": "चार गुना हो जाएगा"
       },
       "answer": "C",
-      "explanation": "v_d ∝ 1/l; लम्बाई दोगुनी करने पर अपवाह वेग आधा हो जाएगा[span_141](start_span)[span_141](end_span)।"
+      "explanation": "आधा हो जाएगा[span_140](start_span)[span_140](end_span)।"
     },
     {
       "id": "BRAHM-PHY-139",
@@ -1811,12 +1811,12 @@
         "D": "अपरिवर्तित रहता है"
       },
       "answer": "B",
-      "explanation": "सहसंयोजक बंध टूटने से आवेश वाहक बढ़ते हैं, अतः प्रतिरोध घटता है[span_142](start_span)[span_142](end_span)।"
+      "explanation": "घटता है[span_141](start_span)[span_141](end_span)।"
     },
     {
       "id": "BRAHM-PHY-140",
       "chapter": 3,
-      "question": "R₁, R₂ और R₃ प्रतिरोधों के श्रृंखला (श्रेणी) परिपथ में प्रत्येक प्रतिरोध में प्रवाहित धारा:",
+      "question": "R₁, R₂ और R₃ प्रतिरोधों के श्रृंखला परिपथ में प्रत्येक प्रतिरोध में प्रवाहित धारा:",
       "options": {
         "A": "समान होती है",
         "B": "भिन्न होती है",
@@ -1824,12 +1824,12 @@
         "D": "प्रतिरोध के मूल्य के अनुपात में विभाजित होती है"
       },
       "answer": "A",
-      "explanation": "श्रेणीक्रम में सभी घटकों से समान धारा प्रवाहित होती है[span_143](start_span)[span_143](end_span)।"
+      "explanation": "समान होती है[span_142](start_span)[span_142](end_span)।"
     },
     {
       "id": "BRAHM-PHY-141",
       "chapter": 3,
-      "question": "एक चालक की वोल्टता V तथा धारा I के बीच ग्राफ एक सरल रेखा है, जो y-अक्ष (जो कि I को प्रदर्शित करता है) से θ कोण बनाती है। चालक का प्रतिरोध होगा:",
+      "question": "एक चालक की वोल्टता V तथा धारा I के बीच ग्राफ एक सरल रेखा है, जो y-अक्ष (धारा I) से θ कोण बनाती है। चालक का प्रतिरोध होगा:",
       "options": {
         "A": "tan θ",
         "B": "cot θ",
@@ -1837,7 +1837,7 @@
         "D": "cos θ"
       },
       "answer": "A",
-      "explanation": "y-अक्ष से कोण θ होने पर tan θ = ΔV / ΔI = R होता है[span_144](start_span)[span_144](end_span)।"
+      "explanation": "tan θ[span_143](start_span)[span_143](end_span)।"
     },
     {
       "id": "BRAHM-PHY-142",
@@ -1850,7 +1850,7 @@
         "D": "3:2"
       },
       "answer": "D",
-      "explanation": "R₁ / R₂ = P₂ / P₁ = 60 / 40 = 3:2[span_145](start_span)[span_145](end_span)।"
+      "explanation": "3:2[span_144](start_span)[span_144](end_span)।"
     },
     {
       "id": "BRAHM-PHY-143",
@@ -1863,7 +1863,7 @@
         "D": "n²"
       },
       "answer": "D",
-      "explanation": "R_max / R_min = (nR) / (R/n) = n²[span_146](start_span)[span_146](end_span)।"
+      "explanation": "n²[span_145](start_span)[span_145](end_span)।"
     },
     {
       "id": "BRAHM-PHY-144",
@@ -1876,7 +1876,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "A",
-      "explanation": "इलेक्ट्रोप्लेटिंग में केवल DC धारा प्रयुक्त होती है[span_147](start_span)[span_147](end_span)।"
+      "explanation": "DC[span_146](start_span)[span_146](end_span)।"
     },
     {
       "id": "BRAHM-PHY-145",
@@ -1889,7 +1889,7 @@
         "D": "संवेग संरक्षण से"
       },
       "answer": "C",
-      "explanation": "ऊर्जा संरक्षण सिद्धांत से[span_148](start_span)[span_148](end_span)।"
+      "explanation": "ऊर्जा संरक्षण से[span_147](start_span)[span_147](end_span)।"
     },
     {
       "id": "BRAHM-PHY-146",
@@ -1902,7 +1902,7 @@
         "D": "इसके तार की लम्बाई बढ़ानी होगी"
       },
       "answer": "D",
-      "explanation": "तार की लंबाई बढ़ाने पर विभव प्रवणता घटती है जिससे सुग्राहिता बढ़ जाती है[span_149](start_span)[span_149](end_span)।"
+      "explanation": "इसके तार की लम्बाई बढ़ानी होगी[span_148](start_span)[span_148](end_span)।"
     },
     {
       "id": "BRAHM-PHY-147",
@@ -1915,7 +1915,7 @@
         "D": "अवमंदित"
       },
       "answer": "C",
-      "explanation": "अपसरित (drifting)[span_150](start_span)[span_150](end_span)।"
+      "explanation": "अपसरित[span_149](start_span)[span_149](end_span)।"
     },
     {
       "id": "BRAHM-PHY-148",
@@ -1928,7 +1928,7 @@
         "D": "4:1"
       },
       "answer": "A",
-      "explanation": "H ∝ R से अनुपात 1:2 होगा[span_151](start_span)[span_151](end_span)।"
+      "explanation": "1:2[span_150](start_span)[span_150](end_span)।"
     },
     {
       "id": "BRAHM-PHY-149",
@@ -1941,7 +1941,7 @@
         "D": "इनमें से सभी"
       },
       "answer": "C",
-      "explanation": "विभवान्तर[span_152](start_span)[span_152](end_span)।"
+      "explanation": "विभवान्तर[span_151](start_span)[span_151](end_span)।"
     },
     {
       "id": "BRAHM-PHY-150",
@@ -1954,7 +1954,7 @@
         "D": "V_d ∝ √E³"
       },
       "answer": "A",
-      "explanation": "V_d ∝ E[span_153](start_span)[span_153](end_span)।"
+      "explanation": "V_d ∝ E[span_152](start_span)[span_152](end_span)।"
     },
     {
       "id": "BRAHM-PHY-151",
@@ -1967,7 +1967,7 @@
         "D": "विभवान्तर का"
       },
       "answer": "B",
-      "explanation": "आवेश का[span_154](start_span)[span_154](end_span)।"
+      "explanation": "आवेश का[span_153](start_span)[span_153](end_span)।"
     },
     {
       "id": "BRAHM-PHY-152",
@@ -1980,7 +1980,7 @@
         "D": "1 watt = 1 F s⁻¹"
       },
       "answer": "A",
-      "explanation": "1 W = 1 J / s = 1 J s⁻¹[span_155](start_span)[span_155](end_span)।"
+      "explanation": "1 watt = 1 J s⁻¹[span_154](start_span)[span_154](end_span)।"
     },
     {
       "id": "BRAHM-PHY-153",
@@ -1993,7 +1993,7 @@
         "D": "J = I / A"
       },
       "answer": "D",
-      "explanation": "J = I / A[span_156](start_span)[span_156](end_span)।"
+      "explanation": "J = I / A[span_155](start_span)[span_155](end_span)।"
     },
     {
       "id": "BRAHM-PHY-154",
@@ -2006,7 +2006,7 @@
         "D": "µ = E² V_d"
       },
       "answer": "A",
-      "explanation": "µ = V_d / E[span_157](start_span)[span_157](end_span)।"
+      "explanation": "µ = V_d / E[span_156](start_span)[span_156](end_span)।"
     },
     {
       "id": "BRAHM-PHY-155",
@@ -2019,7 +2019,7 @@
         "D": "जस्ता"
       },
       "answer": "A",
-      "explanation": "चांदी की विद्युत चालकता सर्वाधिक होती है[span_158](start_span)[span_158](end_span)।"
+      "explanation": "चाँदी[span_157](start_span)[span_157](end_span)।"
     },
     {
       "id": "BRAHM-PHY-156",
@@ -2032,7 +2032,7 @@
         "D": "ρ = R · L · A"
       },
       "answer": "A",
-      "explanation": "ρ = RA / L[span_159](start_span)[span_159](end_span)।"
+      "explanation": "ρ = RA / L[span_158](start_span)[span_158](end_span)।"
     },
     {
       "id": "BRAHM-PHY-157",
@@ -2045,7 +2045,7 @@
         "D": "I² · R² · t"
       },
       "answer": "C",
-      "explanation": "H = I² R t[span_160](start_span)[span_160](end_span)।"
+      "explanation": "I² · R · t[span_159](start_span)[span_159](end_span)।"
     },
     {
       "id": "BRAHM-PHY-158",
@@ -2058,7 +2058,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "B",
-      "explanation": "विभवांतर[span_161](start_span)[span_161](end_span)।"
+      "explanation": "विभवांतर[span_160](start_span)[span_160](end_span)।"
     },
     {
       "id": "BRAHM-PHY-159",
@@ -2071,7 +2071,7 @@
         "D": "न्यूटन प्रति ऐम्पियर"
       },
       "answer": "C",
-      "explanation": "वोल्ट[span_162](start_span)[span_162](end_span)।"
+      "explanation": "वोल्ट[span_161](start_span)[span_161](end_span)।"
     },
     {
       "id": "BRAHM-PHY-160",
@@ -2084,7 +2084,7 @@
         "D": "इनमें से कोई नहीं"
       },
       "answer": "A",
-      "explanation": "समानांतर क्रम में विभवांतर समान रहता है[span_163](start_span)[span_163](end_span)।"
+      "explanation": "विभवांतर[span_162](start_span)[span_162](end_span)।"
     },
     {
       "id": "BRAHM-PHY-161",
@@ -2097,7 +2097,7 @@
         "D": "1 J C"
       },
       "answer": "B",
-      "explanation": "1 V = 1 J / C = 1 J C⁻¹[span_164](start_span)[span_164](end_span)।"
+      "explanation": "1 J C⁻¹[span_163](start_span)[span_163](end_span)।"
     },
     {
       "id": "BRAHM-PHY-162",
@@ -2110,7 +2110,7 @@
         "D": "बहुत बड़ा"
       },
       "answer": "C",
-      "explanation": "ऐमीटर का प्रतिरोध बहुत कम होना चाहिए ताकि परिपथ की धारा में नगण्य परिवर्तन हो[span_165](start_span)[span_165](end_span)।"
+      "explanation": "बहुत कम[span_164](start_span)[span_164](end_span)।"
     },
     {
       "id": "BRAHM-PHY-163",
@@ -2123,7 +2123,7 @@
         "D": "प्रत्यावर्ती धारा का शिखर मान"
       },
       "answer": "B",
-      "explanation": "तप्त तार एमीटर धारा के rms मान (मूल-माध्य-वर्ग) को मापता है[span_166](start_span)[span_166](end_span)।"
+      "explanation": "प्रत्यावर्ती धारा का मूल-माध्यम-वर्ग मान[span_165](start_span)[span_165](end_span)।"
     },
     {
       "id": "BRAHM-PHY-164",
@@ -2136,7 +2136,7 @@
         "D": "24 W"
       },
       "answer": "D",
-      "explanation": "P = (60 × 40) / (60 + 40) = 24 W[span_167](start_span)[span_167](end_span)।"
+      "explanation": "24 W[span_166](start_span)[span_166](end_span)।"
     },
     {
       "id": "BRAHM-PHY-165",
@@ -2149,7 +2149,7 @@
         "D": "स्थिर रहता है"
       },
       "answer": "B",
-      "explanation": "प्रतिरोध आधा होने पर ऊष्मा दोगुनी हो जाती है[span_168](start_span)[span_168](end_span)।"
+      "explanation": "दुगुना[span_167](start_span)[span_167](end_span)।"
     },
     {
       "id": "BRAHM-PHY-166",
@@ -2162,7 +2162,7 @@
         "D": "1.6 × 10¹⁹"
       },
       "answer": "B",
-      "explanation": "n = 1 / (1.6 × 10⁻¹⁹) = 6.25 × 10¹⁸[span_169](start_span)[span_169](end_span)।"
+      "explanation": "6.25 × 10¹⁸[span_168](start_span)[span_168](end_span)।"
     },
     {
       "id": "BRAHM-PHY-167",
@@ -2175,7 +2175,7 @@
         "D": "ऐम्पियर"
       },
       "answer": "C",
-      "explanation": "प्रतिघात का मात्रक ओम (Ω) होता है[span_170](start_span)[span_170](end_span)।"
+      "explanation": "ओम[span_169](start_span)[span_169](end_span)।"
     },
     {
       "id": "BRAHM-PHY-168",
@@ -2188,7 +2188,7 @@
         "D": "कोई नहीं"
       },
       "answer": "B",
-      "explanation": "R_max / R_min = (ρ·2x / x²) / (ρ·x / 2x²) = 4[span_171](start_span)[span_171](end_span)।"
+      "explanation": "4[span_170](start_span)[span_170](end_span)।"
     },
     {
       "id": "BRAHM-PHY-169",
@@ -2201,7 +2201,7 @@
         "D": "विस्थापन धारा"
       },
       "answer": "D",
-      "explanation": "इसे मैक्सवेल की विस्थापन धारा कहते हैं[span_172](start_span)[span_172](end_span)।"
+      "explanation": "विस्थापन धारा[span_171](start_span)[span_171](end_span)।"
     },
     {
       "id": "BRAHM-PHY-170",
@@ -2214,7 +2214,7 @@
         "D": "अचर होता है"
       },
       "answer": "C",
-      "explanation": "किरचॉफ के वोल्टेज नियमानुसार ΣΔV = 0 होता है[span_173](start_span)[span_173](end_span)।"
+      "explanation": "शून्य होता है[span_172](start_span)[span_172](end_span)।"
     },
     {
       "id": "BRAHM-PHY-171",
@@ -2227,7 +2227,7 @@
         "D": "इनमें सभी का"
       },
       "answer": "A",
-      "explanation": "प्रतिरोधों की तुलना एवं अज्ञात प्रतिरोध के मान निर्धारण हेतु[span_174](start_span)[span_174](end_span)।"
+      "explanation": "प्रतिरोधों का[span_173](start_span)[span_173](end_span)।"
     },
     {
       "id": "BRAHM-PHY-172",
@@ -2240,7 +2240,436 @@
         "D": "निक्रोम"
       },
       "answer": "D",
-      "explanation": "नाइक्रोम (Nichrome) का गलनांक एवं प्रतिरोधकता उच्च होती है[span_175](start_span)[span_175](end_span)।"
+      "explanation": "निक्रोम (नाइक्रोम)[span_174](start_span)[span_174](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-173",
+      "chapter": 3,
+      "question": "फ्यूज-तार किस पदार्थ से निर्मित होता है?",
+      "options": {
+        "A": "ताँबा",
+        "B": "टंगस्टन",
+        "C": "सीसा और टिन की मिश्रधातु",
+        "D": "नाइक्रोम"
+      },
+      "answer": "C",
+      "explanation": "सुरक्षा फ्यूज का तार निम्न गलनांक तथा उच्च प्रतिरोधकता वाले सीसा-टिन मिश्रधातु (63% टिन + 37% सीसा) से बनाया जाता है[span_175](start_span)[span_175](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-174",
+      "chapter": 3,
+      "question": "विद्युत परिपथ में फ्यूज तार का कार्य होता है:",
+      "options": {
+        "A": "वोल्टेज बढ़ाना",
+        "B": "धारा को नियंत्रित करना एवं अतिभारण से सुरक्षा",
+        "C": "प्रतिरोध घटाना",
+        "D": "इनमें से कोई नहीं"
+      },
+      "answer": "B",
+      "explanation": "अत्यधिक धारा प्रवाहित होने पर पिघलकर परिपथ को सुरक्षित रूप से विच्छेदित करना[span_176](start_span)[span_176](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-175",
+      "chapter": 3,
+      "question": "कार्बन प्रतिरोध के चौथे बैंड में 'सुनहरा' (Gold) रंग होने पर उसकी सहनशीलता (Tolerance) होती है:",
+      "options": {
+        "A": "±5%",
+        "B": "±10%",
+        "C": "±20%",
+        "D": "±2%"
+      },
+      "answer": "A",
+      "explanation": "गोल्ड (सुनहरा) रंग के लिए सहनशीलता ±5% होती है[span_177](start_span)[span_177](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-176",
+      "chapter": 3,
+      "question": "कार्बन प्रतिरोध के चौथे बैंड में 'रुपहला' (Silver) रंग होने पर उसकी सहनशीलता होती है:",
+      "options": {
+        "A": "±5%",
+        "B": "±10%",
+        "C": "±20%",
+        "D": "±1%"
+      },
+      "answer": "B",
+      "explanation": "सिल्वर (रुपहला) बैंड की सहनशीलता ±10% होती है[span_178](start_span)[span_178](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-177",
+      "chapter": 3,
+      "question": "यदि कार्बन प्रतिरोधक में चौथा बैंड अनुपस्थित (रंगहीन) हो, तो उसकी सहनशीलता होती है:",
+      "options": {
+        "A": "±5%",
+        "B": "±10%",
+        "C": "±20%",
+        "D": "±0%"
+      },
+      "answer": "C",
+      "explanation": "चौथे बैंड के अभाव में सहनशीलता ±20% ली जाती है[span_179](start_span)[span_179](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-178",
+      "chapter": 3,
+      "question": "ताप-वैद्युत युग्म (Thermocouple) किस प्रभाव पर आधारित है?",
+      "options": {
+        "A": "सीबेक प्रभाव",
+        "B": "पेल्टियर प्रभाव",
+        "C": "थॉमसन प्रभाव",
+        "D": "जूल प्रभाव"
+      },
+      "answer": "A",
+      "explanation": "दो भिन्न धातुओं की संधियों के तापान्तर से emf उत्पन्न होना सीबेक प्रभाव कहलाता है[span_180](start_span)[span_180](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-179",
+      "chapter": 3,
+      "question": "सीबेक प्रभाव का व्युत्क्रम (विलोम) प्रभाव कहलाता है:",
+      "options": {
+        "A": "पेल्टियर प्रभाव",
+        "B": "थॉमसन प्रभाव",
+        "C": "जूल प्रभाव",
+        "D": "प्रकाश-वैद्युत प्रभाव"
+      },
+      "answer": "A",
+      "explanation": "धारा प्रवाहित करने पर संधियों पर ऊष्मा का अवशोषण या उत्सर्जन पेल्टियर प्रभाव कहलाता है[span_181](start_span)[span_181](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-180",
+      "chapter": 3,
+      "question": "उदासीन ताप (Neutral Temperature, T_n) पर थर्मो-emf का मान होता है:",
+      "options": {
+        "A": "शून्य",
+        "B": "अधिकतम (महत्तम)",
+        "C": "न्यूनतम",
+        "D": "ऋणात्मक"
+      },
+      "answer": "B",
+      "explanation": "उदासीन ताप पर ताप-विद्युत वाहक बल अधिकतम मान प्राप्त करता है[span_182](start_span)[span_182](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-181",
+      "chapter": 3,
+      "question": "1 फैराडे (Faraday) विद्युत आवेश का मान लगभग होता है:",
+      "options": {
+        "A": "96,500 कूलॉम",
+        "B": "96,000 कूलॉम",
+        "C": "9,650 कूलॉम",
+        "D": "1.6 × 10⁻¹⁹ कूलॉम"
+      },
+      "answer": "A",
+      "explanation": "1 Faraday = 1 मोल इलेक्ट्रॉनों का आवेश ≈ 96500 C[span_183](start_span)[span_183](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-182",
+      "chapter": 3,
+      "question": "फैराडे के विद्युत-अपघटन का प्रथम नियम है:",
+      "options": {
+        "A": "m = z · I · t",
+        "B": "m = I · t / z",
+        "C": "m = z / (I · t)",
+        "D": "m = z · E"
+      },
+      "answer": "A",
+      "explanation": "m = z q = z I t[span_184](start_span)[span_184](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-183",
+      "chapter": 3,
+      "question": "रासायनिक तुल्यांक E तथा विद्युत-रासायनिक तुल्यांक Z में सही सम्बन्ध है:",
+      "options": {
+        "A": "E = F · Z",
+        "B": "Z = F · E",
+        "C": "E · Z = F",
+        "D": "E = Z / F"
+      },
+      "answer": "A",
+      "explanation": "फैराडे नियतांक F = E / Z ⇒ E = F · Z[span_185](start_span)[span_185](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-184",
+      "chapter": 3,
+      "question": "ताँबे के वोल्टामीटर से किसका मापन यथार्थ रूप से किया जा सकता है?",
+      "options": {
+        "A": "विद्युत धारा (आवेश प्रवाह)",
+        "B": "विभवांतर",
+        "C": "प्रतिरोध",
+        "D": "धारिता"
+      },
+      "answer": "A",
+      "explanation": "निक्षेपित तांबे के द्रव्यमान से परिपथ में प्रवाहित कुल धारा/आवेश की गणना होती है[span_186](start_span)[span_186](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-185",
+      "chapter": 3,
+      "question": "विद्युत बल्ब का तंतु (फिलामेंट) किस धातु का बना होता है?",
+      "options": {
+        "A": "ताँबा",
+        "B": "लोहा",
+        "C": "टंगस्टन",
+        "D": "नाइक्रोम"
+      },
+      "answer": "C",
+      "explanation": "टंगस्टन का अत्यधिक उच्च गलनांक (~3400°C) होने के कारण इसे फिलामेंट में प्रयुक्त करते हैं[span_187](start_span)[span_187](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-186",
+      "chapter": 3,
+      "question": "कार्बन तंतु लैंप का प्रतिरोध ताप बढ़ने पर:",
+      "options": {
+        "A": "बढ़ता है",
+        "B": "घटता है",
+        "C": "अपरिवर्तित रहता है",
+        "D": "शून्य हो जाता है"
+      },
+      "answer": "B",
+      "explanation": "कार्बन का प्रतिरोध ताप गुणांक ऋणात्मक होता है, अतः ताप बढ़ने पर इसका प्रतिरोध घटता है[span_188](start_span)[span_188](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-187",
+      "chapter": 3,
+      "question": "किसी तार को खींचकर उसकी त्रिज्या आधी कर दी जाए, तो उसका नया प्रतिरोध मूल प्रतिरोध का होगा:",
+      "options": {
+        "A": "2 गुना",
+        "B": "4 गुना",
+        "C": "8 गुना",
+        "D": "16 गुना"
+      },
+      "answer": "D",
+      "explanation": "त्रिज्या आधी होने पर अनुप्रस्थ क्षेत्रफल 1/4 तथा लम्बाई 4 गुनी हो जाएगी, अतः R' = 16 R[span_189](start_span)[span_189](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-188",
+      "chapter": 3,
+      "question": "यदि किसी तार की लम्बाई में 0.1% की वृद्धि खींचकर की जाए, तो इसके प्रतिरोध में लगभग प्रतिशत वृद्धि होगी:",
+      "options": {
+        "A": "0.1%",
+        "B": "0.2%",
+        "C": "0.05%",
+        "D": "0.4%"
+      },
+      "answer": "B",
+      "explanation": "ΔR/R ≈ 2 (Δl/l) = 2 × 0.1% = 0.2%[span_190](start_span)[span_190](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-189",
+      "chapter": 3,
+      "question": "मीटर सेतु (Meter Bridge) किस सिद्धांत पर कार्य करता है?",
+      "options": {
+        "A": "व्हीटस्टोन सेतु के सिद्धांत पर",
+        "B": "विभवमापी के सिद्धांत पर",
+        "C": "फैराडे प्रेरण पर",
+        "D": "जूल के नियम पर"
+      },
+      "answer": "A",
+      "explanation": "मीटर सेतु व्हीटस्टोन ब्रिज के संतुलन की स्थिति (P/Q = R/S) पर आधारित प्रायोगिक व्यवस्था है[span_191](start_span)[span_191](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-190",
+      "chapter": 3,
+      "question": "मीटर सेतु का तार सामान्यतः किस मिश्रधातु का बना होता है?",
+      "options": {
+        "A": "ताँबा",
+        "B": "मैंगनीन या कॉन्स्टेंटन",
+        "C": "लोहा",
+        "D": "ऐलुमिनियम"
+      },
+      "answer": "B",
+      "explanation": "मैंगनीन का विशिष्ट प्रतिरोध उच्च तथा ताप गुणांक अत्यंत अल्प होता है[span_192](start_span)[span_192](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-191",
+      "chapter": 3,
+      "question": "विभवमापी के तार की लम्बाई बढ़ाने पर उसकी विभव प्रवणता (Potential Gradient):",
+      "options": {
+        "A": "बढ़ती है",
+        "B": "घटती है",
+        "C": "समान रहती है",
+        "D": "शून्य हो जाती है"
+      },
+      "answer": "B",
+      "explanation": "k = V/L के अनुसार लम्बाई L बढ़ाने पर विभव प्रवणता घटती है, जिससे सुग्राहिता बढ़ जाती है[span_193](start_span)[span_193](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-192",
+      "chapter": 3,
+      "question": "किसी सेल के आंतरिक प्रतिरोध का यथार्थ मापन करने हेतु सर्वोत्तम उपकरण है:",
+      "options": {
+        "A": "वोल्टमीटर",
+        "B": "विभवमापी (Potentiometer)",
+        "C": "ऐमीटर",
+        "D": "धारामापी"
+      },
+      "answer": "B",
+      "explanation": "विभवमापी शून्य-विक्षेप सिद्धांत पर कार्य करता है और परिपथ से कोई धारा लिए बिना शुद्ध emf/आंतरिक प्रतिरोध मापता है[span_194](start_span)[span_194](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-193",
+      "chapter": 3,
+      "question": "दो सेलों के विद्युत वाहक बलों की तुलना के लिए सबसे उपयुक्त उपकरण है:",
+      "options": {
+        "A": "विभवमापी",
+        "B": "मीटर ब्रिज",
+        "C": "वोल्टमीटर",
+        "D": "ऐमीटर"
+      },
+      "answer": "A",
+      "explanation": "E₁ / E₂ = l₁ / l₂ सूत्र से विभवमापी द्वारा सेलों के emf की यथार्थ तुलना की जाती है[span_195](start_span)[span_195](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-194",
+      "chapter": 3,
+      "question": "एक प्राथमिक सेल का वि०वा०बल 2 V है। लघुपथित करने पर यह 4 A धारा देता है, तो सेल का आंतरिक प्रतिरोध होगा:",
+      "options": {
+        "A": "0.5 Ω",
+        "B": "2 Ω",
+        "C": "8 Ω",
+        "D": "0.25 Ω"
+      },
+      "answer": "A",
+      "explanation": "लघुपथन में r = E / I_sc = 2 / 4 = 0.5 Ω[span_196](start_span)[span_196](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-195",
+      "chapter": 3,
+      "question": "सेल का आंतरिक प्रतिरोध निर्भर करता है:",
+      "options": {
+        "A": "इलेक्ट्रोडों के बीच की दूरी पर",
+        "B": "इलेक्ट्रोडों के डूबे क्षेत्रफल पर",
+        "C": "विद्युत-अपघट्य की प्रकृति एवं सांद्रता पर",
+        "D": "उपर्युक्त सभी पर"
+      },
+      "answer": "D",
+      "explanation": "दूरी, क्षेत्रफल, ताप और सांद्रता सभी सेल के आंतरिक प्रतिरोध को प्रभावित करते हैं[span_197](start_span)[span_197](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-196",
+      "chapter": 3,
+      "question": "एक आदर्श ऐमीटर का प्रतिरोध होना चाहिए:",
+      "options": {
+        "A": "शून्य",
+        "B": "अति उच्च",
+        "C": "अनंत",
+        "D": "100 Ω"
+      },
+      "answer": "A",
+      "explanation": "ताकि मुख्य परिपथ की धारा में कोई परिवर्तन न हो, आदर्श ऐमीटर का प्रतिरोध शून्य माना जाता है[span_198](start_span)[span_198](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-197",
+      "chapter": 3,
+      "question": "एक आदर्श वोल्टमीटर का प्रतिरोध होना चाहिए:",
+      "options": {
+        "A": "शून्य",
+        "B": "अल्प",
+        "C": "अनंत",
+        "D": "500 Ω"
+      },
+      "answer": "C",
+      "explanation": "आदर्श वोल्टमीटर परिपथ से शून्य धारा लेता है, अतः इसका प्रतिरोध अनंत होना चाहिए[span_199](start_span)[span_199](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-198",
+      "chapter": 4,
+      "question": "धारामापी (गैल्वेनोमीटर) को ऐमीटर में बदलने के लिए क्या किया जाता है?",
+      "options": {
+        "A": "समानांतर क्रम में अल्प प्रतिरोध (शंट) जोड़ा जाता है",
+        "B": "श्रेणीक्रम में उच्च प्रतिरोध जोड़ा जाता है",
+        "C": "श्रेणीक्रम में अल्प प्रतिरोध जोड़ा जाता है",
+        "D": "समानांतर क्रम में उच्च प्रतिरोध जोड़ा जाता है"
+      },
+      "answer": "A",
+      "explanation": "कुंडली के समानांतर क्रम में छोटा प्रतिरोध (शंट) लगाकर गैल्वेनोमीटर को ऐमीटर बनाया जाता है[span_200](start_span)[span_200](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-199",
+      "chapter": 4,
+      "question": "धारामापी (गैल्वेनोमीटर) को वोल्टमीटर में रूपांतरित करने के लिए क्या जोड़ा जाता है?",
+      "options": {
+        "A": "श्रेणीक्रम में उच्च प्रतिरोध",
+        "B": "समानांतर क्रम में अल्प प्रतिरोध",
+        "C": "श्रेणीक्रम में अल्प प्रतिरोध",
+        "D": "समानांतर क्रम में उच्च प्रतिरोध"
+      },
+      "answer": "A",
+      "explanation": "गैल्वेनोमीटर के श्रेणीक्रम में एक बड़ा प्रतिरोध जोड़कर वोल्टमीटर बनाया जाता है[span_201](start_span)[span_201](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-200",
+      "chapter": 4,
+      "question": "शंट का उपयोग करने पर ऐमीटर की धारा मापने की परास (Range):",
+      "options": {
+        "A": "बढ़ जाती है",
+        "B": "घट जाती है",
+        "C": "अपरिवर्तित रहती है",
+        "D": "शून्य हो जाती है"
+      },
+      "answer": "A",
+      "explanation": "शंट लगाने से ऐमीटर उच्च धारा मानों को मापने में सक्षम हो जाता है[span_202](start_span)[span_202](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-201",
+      "chapter": 4,
+      "question": "जब किसी धारामापी में शंट का प्रयोग किया जाता है, तो इसकी सुग्राहिता:",
+      "options": {
+        "A": "बढ़ जाती है",
+        "B": "घट जाती है",
+        "C": "स्थिर रहती है",
+        "D": "अनंत हो जाती है"
+      },
+      "answer": "B",
+      "explanation": "शंट से धारा बाईपास होने पर प्रति इकाई धारा पर विक्षेप कम हो जाता है, जिससे सुग्राहिता घटती है[span_203](start_span)[span_203](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-202",
+      "chapter": 3,
+      "question": "सामान्य चालकों में मुक्त इलेक्ट्रॉनों के अपवाह वेग (Drift Velocity) की कोटि होती है:",
+      "options": {
+        "A": "10⁻⁴ m/s",
+        "B": "10⁴ m/s",
+        "C": "10⁸ m/s",
+        "D": "10² m/s"
+      },
+      "answer": "A",
+      "explanation": "कमरे के ताप और सामान्य विद्युत क्षेत्र में अपवाह वेग लगभग 10⁻⁴ m/s (~मिमी/से०) होता है[span_204](start_span)[span_204](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-203",
+      "chapter": 3,
+      "question": "ताप वृद्धि के साथ मुक्त इलेक्ट्रॉनों के श्रांतिकाल (Relaxation Time, τ) का मान:",
+      "options": {
+        "A": "बढ़ता है",
+        "B": "घटता है",
+        "C": "अपरिवर्तित रहता है",
+        "D": "पहले बढ़ता है फिर घटता है"
+      },
+      "answer": "B",
+      "explanation": "तापमान बढ़ने पर धनायनों के कंपन तीव्र हो जाते हैं, जिससे टक्करों के बीच का समय (श्रांतिकाल) घट जाता है[span_205](start_span)[span_205](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-204",
+      "chapter": 3,
+      "question": "अतिचालक (Superconductor) की विद्युत प्रतिरोधकता होती है:",
+      "options": {
+        "A": "शून्य",
+        "B": "अनंत",
+        "C": "बहुत अधिक",
+        "D": "नकारात्मक"
+      },
+      "answer": "A",
+      "explanation": "क्रांतिक ताप के नीचे अतिचालक का प्रतिरोध पूर्णतः शून्य हो जाता है[span_206](start_span)[span_206](end_span)।"
+    },
+    {
+      "id": "BRAHM-PHY-205",
+      "chapter": 3,
+      "question": "वह ताप जिसके नीचे किसी पदार्थ का प्रतिरोध अचानक गिरकर शून्य हो जाता है, कहलाता है:",
+      "options": {
+        "A": "क्रांतिक ताप (Critical Temperature)",
+        "B": "क्यूरी ताप",
+        "C": "परम शून्य ताप",
+        "D": "उदासीन ताप"
+      },
+      "answer": "A",
+      "explanation": "अतिचालकता प्रदर्शित करने वाले तापमान को क्रांतिक ताप (T_c) कहा जाता है[span_207](start_span)[span_207](end_span)।"
     }
   ]
 }
