@@ -1,0 +1,385 @@
+{
+  "schemaVersion": 1,
+  "subject": "mathematics",
+  "chapter": 7,
+  "title": "समाकलन (Integrals)",
+  "categories": {
+    "formulas": [
+      {
+        "name": "दीर्घ करणी सूत्र I: √(a² - x²)",
+        "formula": "$$\\int \\sqrt{a^2 - x^2}\\,dx = \\frac{x}{2}\\sqrt{a^2 - x^2} + \\frac{a^2}{2}\\sin^{-1}\\left(\\frac{x}{a}\right) + C$$",
+        "meaning": "√(a² - x²) का समाकलन (x/2)√(a² - x²) + (a²/2)sin⁻¹(x/a) + C होता है; वृत्त एवं दीर्घवृत्त के क्षेत्रफल ज्ञात करने में यह सूत्र अत्यंत उपयोगी है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "समाकलन $\\int \\sqrt{4 - x^2}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.7 Q1]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): मानक दीर्घ करणी सूत्र $\\int \\sqrt{a^2 - x^2}\\,dx = \\frac{x}{2}\\sqrt{a^2 - x^2} + \\frac{a^2}{2}\\sin^{-1}\\left(\\frac{x}{a}\right) + C$ लागू करने पर, यहाँ $a^2 = 4 \\implies a = 2$ है।",
+              "चरण 2: रूपान्तरण: $\\int \\sqrt{2^2 - x^2}\\,dx$",
+              "चरण 3: सूत्र में $a = 2$ प्रतिस्थापित करने पर: $\\frac{x}{2}\\sqrt{2^2 - x^2} + \\frac{2^2}{2}\\sin^{-1}\\left(\\frac{x}{2}\right) + C$",
+              "चरण 4: गणना: $\\frac{x}{2}\\sqrt{4 - x^2} + 2\\sin^{-1}\\left(\\frac{x}{2}\right) + C$",
+              "उत्तर: $\\frac{x}{2}\\sqrt{4 - x^2} + 2\\sin^{-1}\\left(\\frac{x}{2}\right) + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\sqrt{1 - 4x^2}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.7 Q2]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): प्रतिस्थापन $2x = t$ तथा सूत्र $\\int \\sqrt{a^2 - t^2}\\,dt = \\frac{t}{2}\\sqrt{a^2 - t^2} + \\frac{a^2}{2}\\sin^{-1}\\left(\\frac{t}{a}\right) + C$।",
+              "चरण 2: रूपान्तरण: $\\int \\sqrt{1^2 - (2x)^2}\\,dx$; माना $2x = t \\implies 2\\,dx = dt \\implies dx = \\frac{1}{2}dt$",
+              "चरण 3: मान रखने पर: $\\frac{1}{2}\\int \\sqrt{1^2 - t^2}\\,dt = \\frac{1}{2}\\left[\\frac{t}{2}\\sqrt{1 - t^2} + \\frac{1}{2}\\sin^{-1}t\\right] + C$",
+              "चरण 4: $t = 2x$ रखने पर: $\\frac{1}{2}\\left[\\frac{2x}{2}\\sqrt{1 - 4x^2} + \\frac{1}{2}\\sin^{-1}(2x)\\right] + C = \\frac{x}{2}\\sqrt{1 - 4x^2} + \\frac{1}{4}\\sin^{-1}(2x) + C$",
+              "उत्तर: $\\frac{x}{2}\\sqrt{1 - 4x^2} + \\frac{1}{4}\\sin^{-1}(2x) + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\sqrt{16 - 9x^2}\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): प्रतिस्थापन $3x = t$ तथा सूत्र $\\int \\sqrt{a^2 - t^2}\\,dt = \\frac{t}{2}\\sqrt{a^2 - t^2} + \\frac{a^2}{2}\\sin^{-1}\\left(\\frac{t}{a}\right) + C$।",
+              "चरण 2: माना $3x = t \\implies 3\\,dx = dt \\implies dx = \\frac{1}{3}dt$; यहाँ $a = 4$",
+              "चरण 3: मान रखने पर: $\\frac{1}{3}\\int \\sqrt{4^2 - t^2}\\,dt = \\frac{1}{3}\\left[\\frac{t}{2}\\sqrt{16 - t^2} + \\frac{16}{2}\\sin^{-1}\\left(\\frac{t}{4}\\right)\\right] + C$",
+              "चरण 4: $t = 3x$ रखने पर: $\\frac{1}{3}\\left[\\frac{3x}{2}\\sqrt{16 - 9x^2} + 8\\sin^{-1}\\left(\\frac{3x}{4}\\right)\\right] + C = \\frac{x}{2}\\sqrt{16 - 9x^2} + \\frac{8}{3}\\sin^{-1}\\left(\\frac{3x}{4}\\right) + C$",
+              "उत्तर: $\\frac{x}{2}\\sqrt{16 - 9x^2} + \\frac{8}{3}\\sin^{-1}\\left(\\frac{3x}{4}\\right) + C$"
+            ],
+            "source": "AI"
+          },
+          {
+            "question": "समाकलन $\\int \\sqrt{1 - 4x - x^2}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.7 Q5]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): पूर्ण वर्ग बनाकर $\\int \\sqrt{(\\sqrt{5})^2 - (x+2)^2}\\,dx$ रूप में सूत्र $\\int \\sqrt{a^2 - t^2}\\,dt = \\frac{t}{2}\\sqrt{a^2 - t^2} + \\frac{a^2}{2}\\sin^{-1}\\left(\\frac{t}{a}\right) + C$ लगाना।",
+              "चरण 2: पूर्ण वर्ग बनाना: $1 - 4x - x^2 = 1 - (x^2 + 4x) = 1 - [(x+2)^2 - 4] = 5 - (x+2)^2 = (\\sqrt{5})^2 - (x+2)^2$",
+              "चरण 3: यहाँ $a = \\sqrt{5}, t = x+2$ रखने पर: $\\frac{x+2}{2}\\sqrt{5 - (x+2)^2} + \\frac{(\\sqrt{5})^2}{2}\\sin^{-1}\\left(\\frac{x+2}{\\sqrt{5}}\\right) + C$",
+              "चरण 4: मूल व्यंजक रूप: $\\frac{x+2}{2}\\sqrt{1 - 4x - x^2} + \\frac{5}{2}\\sin^{-1}\\left(\\frac{x+2}{\\sqrt{5}}\\right) + C$",
+              "उत्तर: $\\frac{x+2}{2}\\sqrt{1 - 4x - x^2} + \\frac{5}{2}\\sin^{-1}\\left(\\frac{x+2}{\\sqrt{5}}\\right) + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\sqrt{1 + 3x - x^2}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.7 Q7]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): पूर्ण वर्ग बनाकर $\\int \\sqrt{(\\sqrt{13}/2)^2 - (x-3/2)^2}\\,dx$ रूप में सूत्र $\\int \\sqrt{a^2 - t^2}\\,dt = \\frac{t}{2}\\sqrt{a^2 - t^2} + \\frac{a^2}{2}\\sin^{-1}\\left(\\frac{t}{a}\right) + C$ लगाना।",
+              "चरण 2: पूर्ण वर्ग बनाना: $1 + 3x - x^2 = 1 - (x^2 - 3x) = 1 - [(x - 3/2)^2 - 9/4] = \\frac{13}{4} - (x - 3/2)^2 = \\left(\\frac{\\sqrt{13}}{2}\\right)^2 - \\left(x - \\frac{3}{2}\\right)^2$",
+              "चरण 3: सूत्र लागू करने पर: $\\frac{x - 3/2}{2}\\sqrt{1 + 3x - x^2} + \\frac{(\\sqrt{13}/2)^2}{2}\\sin^{-1}\\left(\\frac{x - 3/2}{\\sqrt{13}/2}\\right) + C$",
+              "चरण 4: सरलीकरण: $\\frac{2x - 3}{4}\\sqrt{1 + 3x - x^2} + \\frac{13}{8}\\sin^{-1}\\left(\\frac{2x - 3}{\\sqrt{13}}\\right) + C$",
+              "उत्तर: $\\frac{2x - 3}{4}\\sqrt{1 + 3x - x^2} + \\frac{13}{8}\\sin^{-1}\\left(\\frac{2x - 3}{\\sqrt{13}}\\right) + C$"
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "दीर्घ करणी सूत्र II: √(x² - a²)",
+        "formula": "$$\\int \\sqrt{x^2 - a^2}\\,dx = \\frac{x}{2}\\sqrt{x^2 - a^2} - \\frac{a^2}{2}\\log_e\\left|x + \\sqrt{x^2 - a^2}\\right| + C$$",
+        "meaning": "√(x² - a²) का समाकलन (x/2)√(x² - a²) - (a²/2)log|x + √(x² - a²)| + C होता है; केवल इसी सूत्र में मध्य पद ऋणात्मक (-) होता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "समाकलन $\\int \\sqrt{x^2 - 16}\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): मानक सूत्र $\\int \\sqrt{x^2 - a^2}\\,dx = \\frac{x}{2}\\sqrt{x^2 - a^2} - \\frac{a^2}{2}\\log\\left|x + \\sqrt{x^2 - a^2}\\right| + C$ लागू करने पर, यहाँ $a = 4$ है।",
+              "चरण 2: रूपान्तरण: $\\int \\sqrt{x^2 - 4^2}\\,dx$",
+              "चरण 3: सूत्र में $a = 4$ प्रतिस्थापित करने पर: $\\frac{x}{2}\\sqrt{x^2 - 4^2} - \\frac{4^2}{2}\\log\\left|x + \\sqrt{x^2 - 4^2}\\right| + C$",
+              "चरण 4: गणना: $\\frac{x}{2}\\sqrt{x^2 - 16} - 8\\log\\left|x + \\sqrt{x^2 - 16}\\right| + C$",
+              "उत्तर: $\\frac{x}{2}\\sqrt{x^2 - 16} - 8\\log\\left|x + \\sqrt{x^2 - 16}\\right| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\sqrt{x^2 + 4x + 1}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.7 Q4]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): पूर्ण वर्ग बनाकर $\\int \\sqrt{(x+2)^2 - (\\sqrt{3})^2}\\,dx$ रूप में सूत्र $\\int \\sqrt{t^2 - a^2}\\,dt = \\frac{t}{2}\\sqrt{t^2 - a^2} - \\frac{a^2}{2}\\log\\left|t + \\sqrt{t^2 - a^2}\\right| + C$ लगाना।",
+              "चरण 2: पूर्ण वर्ग बनाना: $x^2 + 4x + 1 = (x^2 + 4x + 4) - 4 + 1 = (x + 2)^2 - 3 = (x + 2)^2 - (\\sqrt{3})^2$",
+              "चरण 3: यहाँ $t = x + 2, a = \\sqrt{3}$ रखने पर: $\\frac{x+2}{2}\\sqrt{(x+2)^2 - 3} - \\frac{(\\sqrt{3})^2}{2}\\log\\left|x + 2 + \\sqrt{(x+2)^2 - 3}\\right| + C$",
+              "चरण 4: मूल द्विघात रूप में लिखना: $\\frac{x+2}{2}\\sqrt{x^2 + 4x + 1} - \\frac{3}{2}\\log\\left|x + 2 + \\sqrt{x^2 + 4x + 1}\\right| + C$",
+              "उत्तर: $\\frac{x+2}{2}\\sqrt{x^2 + 4x + 1} - \\frac{3}{2}\\log\\left|x + 2 + \\sqrt{x^2 + 4x + 1}\\right| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\sqrt{x^2 + 4x - 5}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.7 Q6]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): पूर्ण वर्ग बनाकर $\\int \\sqrt{(x+2)^2 - 3^2}\\,dx$ रूप में सूत्र $\\int \\sqrt{t^2 - a^2}\\,dt = \\frac{t}{2}\\sqrt{t^2 - a^2} - \\frac{a^2}{2}\\log\\left|t + \\sqrt{t^2 - a^2}\\right| + C$ लगाना।",
+              "चरण 2: पूर्ण वर्ग बनाना: $x^2 + 4x - 5 = (x + 2)^2 - 4 - 5 = (x + 2)^2 - 9 = (x + 2)^2 - 3^2$",
+              "चरण 3: यहाँ $t = x + 2, a = 3$ रखने पर: $\\frac{x+2}{2}\\sqrt{(x+2)^2 - 9} - \\frac{3^2}{2}\\log\\left|x + 2 + \\sqrt{(x+2)^2 - 9}\\right| + C$",
+              "चरण 4: सरलीकरण: $\\frac{x+2}{2}\\sqrt{x^2 + 4x - 5} - \\frac{9}{2}\\log\\left|x + 2 + \\sqrt{x^2 + 4x - 5}\\right| + C$",
+              "उत्तर: $\\frac{x+2}{2}\\sqrt{x^2 + 4x - 5} - \\frac{9}{2}\\log\\left|x + 2 + \\sqrt{x^2 + 4x - 5}\\right| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\sqrt{x^2 + 3x}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.7 Q8]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): पूर्ण वर्ग बनाकर $\\int \\sqrt{(x+3/2)^2 - (3/2)^2}\\,dx$ रूप में सूत्र $\\int \\sqrt{t^2 - a^2}\\,dt = \\frac{t}{2}\\sqrt{t^2 - a^2} - \\frac{a^2}{2}\\log\\left|t + \\sqrt{t^2 - a^2}\\right| + C$ लगाना।",
+              "चरण 2: पूर्ण वर्ग बनाना: $x^2 + 3x = (x + 3/2)^2 - 9/4 = (x + 3/2)^2 - (3/2)^2$",
+              "चरण 3: सूत्र लागू करने पर: $\\frac{x + 3/2}{2}\\sqrt{x^2 + 3x} - \\frac{(3/2)^2}{2}\\log\\left|x + \\frac{3}{2} + \\sqrt{x^2 + 3x}\\right| + C$",
+              "चरण 4: सरलीकरण: $\\frac{2x + 3}{4}\\sqrt{x^2 + 3x} - \\frac{9}{8}\\log\\left|x + \\frac{3}{2} + \\sqrt{x^2 + 3x}\\right| + C$",
+              "उत्तर: $\\frac{2x + 3}{4}\\sqrt{x^2 + 3x} - \\frac{9}{8}\\log\\left|x + \\frac{3}{2} + \\sqrt{x^2 + 3x}\\right| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\sqrt{x^2 - 8x + 7}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.7 Q11]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): पूर्ण वर्ग बनाकर $\\int \\sqrt{(x-4)^2 - 3^2}\\,dx$ रूप में सूत्र $\\int \\sqrt{t^2 - a^2}\\,dt = \\frac{t}{2}\\sqrt{t^2 - a^2} - \\frac{a^2}{2}\\log\\left|t + \\sqrt{t^2 - a^2}\\right| + C$ लगाना।",
+              "चरण 2: पूर्ण वर्ग बनाना: $x^2 - 8x + 7 = (x - 4)^2 - 16 + 7 = (x - 4)^2 - 9 = (x - 4)^2 - 3^2$",
+              "चरण 3: सूत्र में $t = x - 4, a = 3$ रखने पर: $\\frac{x-4}{2}\\sqrt{x^2 - 8x + 7} - \\frac{3^2}{2}\\log\\left|x - 4 + \\sqrt{x^2 - 8x + 7}\\right| + C$",
+              "चरण 4: गणना: $\\frac{1}{2}(x - 4)\\sqrt{x^2 - 8x + 7} - \\frac{9}{2}\\log\\left|x - 4 + \\sqrt{x^2 - 8x + 7}\\right| + C$",
+              "उत्तर: $\\frac{1}{2}(x - 4)\\sqrt{x^2 - 8x + 7} - \\frac{9}{2}\\log\\left|x - 4 + \\sqrt{x^2 - 8x + 7}\\right| + C$"
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "दीर्घ करणी सूत्र III: √(x² + a²)",
+        "formula": "$$\\int \\sqrt{x^2 + a^2}\\,dx = \\frac{x}{2}\\sqrt{x^2 + a^2} + \\frac{a^2}{2}\\log_e\\left|x + \\sqrt{x^2 + a^2}\\right| + C$$",
+        "meaning": "√(x² + a²) का समाकलन (x/2)√(x² + a²) + (a²/2)log|x + √(x² + a²)| + C होता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "समाकलन $\\int \\sqrt{x^2 + 9}\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): मानक सूत्र $\\int \\sqrt{x^2 + a^2}\\,dx = \\frac{x}{2}\\sqrt{x^2 + a^2} + \\frac{a^2}{2}\\log\\left|x + \\sqrt{x^2 + a^2}\\right| + C$ लागू करने पर, यहाँ $a = 3$ है।",
+              "चरण 2: रूपान्तरण: $\\int \\sqrt{x^2 + 3^2}\\,dx$",
+              "चरण 3: सूत्र से मान: $\\frac{x}{2}\\sqrt{x^2 + 3^2} + \\frac{3^2}{2}\\log\\left|x + \\sqrt{x^2 + 3^2}\\right| + C$",
+              "चरण 4: गणना: $\\frac{x}{2}\\sqrt{x^2 + 9} + \\frac{9}{2}\\log\\left|x + \\sqrt{x^2 + 9}\\right| + C$",
+              "उत्तर: $\\frac{x}{2}\\sqrt{x^2 + 9} + \\frac{9}{2}\\log\\left|x + \\sqrt{x^2 + 9}\\right| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\sqrt{1 + x^2}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.7 Q10, BSEB 2024A]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): सूत्र $\\int \\sqrt{x^2 + a^2}\\,dx = \\frac{x}{2}\\sqrt{x^2 + a^2} + \\frac{a^2}{2}\\log\\left|x + \\sqrt{x^2 + a^2}\\right| + C$ लागू करने पर, यहाँ $a = 1$ है।",
+              "चरण 2: सूत्र में $a = 1$ रखने पर: $\\frac{x}{2}\\sqrt{1 + x^2} + \\frac{1^2}{2}\\log\\left|x + \\sqrt{1 + x^2}\\right| + C$",
+              "चरण 3: गणना: $\\frac{x}{2}\\sqrt{1 + x^2} + \\frac{1}{2}\\log\\left|x + \\sqrt{1 + x^2}\\right| + C$",
+              "उत्तर: $\\frac{x}{2}\\sqrt{1 + x^2} + \\frac{1}{2}\\log\\left|x + \\sqrt{1 + x^2}\\right| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\sqrt{1 + \\frac{x^2}{9}}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.7 Q9]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): ल.स.प. लेकर $\\frac{1}{3}\\int \\sqrt{x^2 + 3^2}\\,dx$ रूप में सूत्र $\\int \\sqrt{x^2 + a^2}\\,dx = \\frac{x}{2}\\sqrt{x^2 + a^2} + \\frac{a^2}{2}\\log\\left|x + \\sqrt{x^2 + a^2}\\right| + C$ लगाना।",
+              "चरण 2: रूपान्तरण: $\\int \\sqrt{\\frac{9 + x^2}{9}}\\,dx = \\frac{1}{3}\\int \\sqrt{x^2 + 3^2}\\,dx$",
+              "चरण 3: सूत्र लागू करने पर: $\\frac{1}{3}\\left[\\frac{x}{2}\\sqrt{x^2 + 9} + \\frac{9}{2}\\log\\left|x + \\sqrt{x^2 + 9}\\right|\\right] + C$",
+              "चरण 4: 1/3 का गुणा करने पर: $\\frac{x}{6}\\sqrt{x^2 + 9} + \\frac{3}{2}\\log\\left|x + \\sqrt{x^2 + 9}\\right| + C$",
+              "उत्तर: $\\frac{x}{6}\\sqrt{x^2 + 9} + \\frac{3}{2}\\log\\left|x + \\sqrt{x^2 + 9}\\right| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\sqrt{x^2 + 2x + 5}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 23]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): पूर्ण वर्ग बनाकर $\\int \\sqrt{(x+1)^2 + 2^2}\\,dx$ रूप में सूत्र $\\int \\sqrt{t^2 + a^2}\\,dt = \\frac{t}{2}\\sqrt{t^2 + a^2} + \\frac{a^2}{2}\\log\\left|t + \\sqrt{t^2 + a^2}\\right| + C$ लगाना।",
+              "चरण 2: पूर्ण वर्ग बनाना: $x^2 + 2x + 5 = (x + 1)^2 - 1 + 5 = (x + 1)^2 + 4 = (x + 1)^2 + 2^2$",
+              "चरण 3: यहाँ $t = x + 1, a = 2$ रखने पर: $\\frac{x+1}{2}\\sqrt{(x+1)^2 + 4} + \\frac{2^2}{2}\\log\\left|x + 1 + \\sqrt{(x+1)^2 + 4}\\right| + C$",
+              "चरण 4: मूल द्विघात रूप: $\\frac{x+1}{2}\\sqrt{x^2 + 2x + 5} + 2\\log\\left|x + 1 + \\sqrt{x^2 + 2x + 5}\\right| + C$",
+              "उत्तर: $\\frac{x+1}{2}\\sqrt{x^2 + 2x + 5} + 2\\log\\left|x + 1 + \\sqrt{x^2 + 2x + 5}\\right| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\sqrt{x^2 + 4x + 6}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.7 Q3]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): पूर्ण वर्ग बनाकर $\\int \\sqrt{(x+2)^2 + (\\sqrt{2})^2}\\,dx$ रूप में सूत्र $\\int \\sqrt{t^2 + a^2}\\,dt = \\frac{t}{2}\\sqrt{t^2 + a^2} + \\frac{a^2}{2}\\log\\left|t + \\sqrt{t^2 + a^2}\\right| + C$ लगाना।",
+              "चरण 2: पूर्ण वर्ग बनाना: $x^2 + 4x + 6 = (x + 2)^2 - 4 + 6 = (x + 2)^2 + 2 = (x + 2)^2 + (\\sqrt{2})^2$",
+              "चरण 3: सूत्र लागू करने पर: $\\frac{x+2}{2}\\sqrt{(x+2)^2 + 2} + \\frac{(\\sqrt{2})^2}{2}\\log\\left|x + 2 + \\sqrt{(x+2)^2 + 2}\\right| + C$",
+              "चरण 4: सरलीकरण: $\\frac{x+2}{2}\\sqrt{x^2 + 4x + 6} + \\log\\left|x + 2 + \\sqrt{x^2 + 4x + 6}\\right| + C$",
+              "उत्तर: $\\frac{x+2}{2}\\sqrt{x^2 + 4x + 6} + \\log\\left|x + 2 + \\sqrt{x^2 + 4x + 6}\\right| + C$"
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "खंडशः समाकलन सूत्र (Integration by Parts Formula / ILATE Rule)",
+        "formula": "$$\\int u \\cdot v\\,dx = u \\int v\\,dx - \\int \\left( \\frac{du}{dx} \\int v\\,dx \\right) dx$$",
+        "meaning": "दो फलनों के गुणनफल का समाकलन = (प्रथम फलन) × (द्वितीय का समाकलन) - ∫ [(प्रथम का अवकलज) × (द्वितीय का समाकलन)] dx; प्रथम फलन का चयन ILATE (Inverse, Logarithmic, Algebraic, Trigonometric, Exponential) वरीयता क्रम से किया जाता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "समाकलन $\\int x\\cos x\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 17]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): ILATE नियम से $u = x$ (Algebraic, प्रथम फलन) तथा $v = \\cos x$ (Trigonometric, द्वितीय फलन) मानकर खंडशः समाकलन सूत्र $\\int u \\cdot v\\,dx = u\\int v\\,dx - \\int (u' \\int v\\,dx)dx$ लागू करने पर।",
+              "चरण 2: सूत्र में मान रखने पर: $x\\int \\cos x\\,dx - \\int \\left[\\frac{d}{dx}(x) \\int \\cos x\\,dx\\right]dx$",
+              "चरण 3: गणना: $x(\\sin x) - \\int [1 \\cdot \\sin x]\\,dx = x\\sin x - \\int \\sin x\\,dx$",
+              "चरण 4: $\\sin x$ का समाकलन करने पर: $x\\sin x - (-\\cos x) + C = x\\sin x + \\cos x + C$",
+              "उत्तर: $x\\sin x + \\cos x + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int x\\sin 3x\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.6 Q2]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): ILATE नियम से प्रथम फलन $u = x$ तथा द्वितीय फलन $v = \\sin 3x$ मानकर खंडशः समाकलन सूत्र $\\int u \\cdot v\\,dx = u\\int v\\,dx - \\int (u' \\int v\\,dx)dx$ लगाना।",
+              "चरण 2: मान रखने पर: $x\\int \\sin 3x\\,dx - \\int \\left[\\frac{d}{dx}(x) \\int \\sin 3x\\,dx\\right]dx$",
+              "चरण 3: गणना: $x\\left(-\\frac{\\cos 3x}{3}\right) - \\int 1 \\cdot \\left(-\\frac{\\cos 3x}{3}\right)dx = -\\frac{x\\cos 3x}{3} + \\frac{1}{3}\\int \\cos 3x\\,dx$",
+              "चरण 4: पुनः समाकलन: $-\\frac{x\\cos 3x}{3} + \\frac{1}{3}\\left(\\frac{\\sin 3x}{3}\right) + C = -\\frac{1}{3}x\\cos 3x + \\frac{1}{9}\\sin 3x + C$",
+              "उत्तर: -\\frac{1}{3}x\\cos 3x + \\frac{1}{9}\\sin 3x + C",
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int xe^x\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 19, BSEB 2024A]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): ILATE नियम से $u = x$ (प्रथम फलन) तथा $v = e^x$ (द्वितीय फलन) मानकर खंडशः समाकलन सूत्र लगाना।",
+              "चरण 2: सूत्र में मान रखने पर: $x\\int e^x\\,dx - \\int \\left[\\frac{d}{dx}(x) \\int e^x\\,dx\\right]dx$",
+              "चरण 3: गणना: $x(e^x) - \\int 1 \\cdot e^x\\,dx = x e^x - e^x + C$",
+              "चरण 4: $e^x$ उभयनिष्ठ लेने पर: $e^x(x - 1) + C$",
+              "उत्तर: $e^x(x - 1) + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\log x\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 18, BSEB 2021A]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): समाकल्य को $\\int (\\log x \\cdot 1)\\,dx$ लिखकर ILATE नियम से $u = \\log x$ (प्रथम फलन) तथा $v = 1$ (द्वितीय फलन) मानकर खंडशः सूत्र लगाना।",
+              "चरण 2: सूत्र में मान रखने पर: $\\log x\\int 1\\,dx - \\int \\left[\\frac{d}{dx}(\\log x) \\int 1\\,dx\\right]dx$",
+              "चरण 3: गणना: $\\log x(x) - \\int \\left(\\frac{1}{x} \\cdot x\\right)dx = x\\log x - \\int 1\\,dx$",
+              "चरण 4: समाकलन करने पर: $x\\log x - x + C$",
+              "उत्तर: $x\\log x - x + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int x\\tan^{-1}x\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.6 Q8]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): ILATE नियम से $u = \\tan^{-1}x$ (Inverse, प्रथम फलन) तथा $v = x$ (Algebraic, द्वितीय फलन) मानकर खंडशः समाकलन सूत्र लगाना।",
+              "चरण 2: मान रखने पर: $\\tan^{-1}x\\int x\\,dx - \\int \\left[\\frac{d}{dx}(\\tan^{-1}x) \\int x\\,dx\\right]dx = \\tan^{-1}x\\left(\\frac{x^2}{2}\right) - \\int \\frac{1}{1+x^2} \\cdot \\frac{x^2}{2}\\,dx$",
+              "चरण 3: द्वितीय पद में 1 जोड़कर घटाने पर: $\\frac{x^2}{2}\\tan^{-1}x - \\frac{1}{2}\\int \\frac{(x^2+1) - 1}{x^2+1}\\,dx = \\frac{x^2}{2}\\tan^{-1}x - \\frac{1}{2}\\left[\\int 1\\,dx - \\int \\frac{1}{1+x^2}\\,dx\\right]$",
+              "चरण 4: समाकलन करने पर: $\\frac{x^2}{2}\\tan^{-1}x - \\frac{1}{2}[x - \\tan^{-1}x] + C = \\frac{x^2}{2}\\tan^{-1}x + \\frac{1}{2}\\tan^{-1}x - \\frac{x}{2} + C = \\frac{x^2+1}{2}\\tan^{-1}x - \\frac{x}{2} + C$",
+              "उत्तर: \\frac{x^2+1}{2}\\tan^{-1}x - \\frac{x}{2} + C",
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "चरघातांकी प्रारूप समाकलन सूत्र: eˣ[f(x) + f'(x)]",
+        "formula": "$$\\int e^x [f(x) + f'(x)]\\,dx = e^x f(x) + C$$",
+        "meaning": "जब समाकल्य में eˣ के साथ किसी फलन f(x) और उसके अवकलज f'(x) का योग उपस्थित हो, तो समाकलन का मान सीधे eˣ f(x) + C होता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "समाकलन $\\int e^x(\\sin x + \\cos x)\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.6 Q16, BSEB 2023A]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): मानक चरघातांकी प्रारूप सूत्र $\\int e^x [f(x) + f'(x)]\\,dx = e^x f(x) + C$।",
+              "चरण 2: फलनों की पहचान: यहाँ $f(x) = \\sin x$ है, जिसका अवकलज $f'(x) = \\cos x$ उपस्थित है।",
+              "चरण 3: सूत्र लागू करने पर: $e^x f(x) + C = e^x \\sin x + C$",
+              "उत्तर: $e^x \\sin x + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int e^x\\left(\\tan^{-1}x + \\frac{1}{1+x^2}\\right)dx$ का मान ज्ञात कीजिए। [NCERT Ex 22(i), BSEB 2024A]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): सूत्र $\\int e^x [f(x) + f'(x)]\\,dx = e^x f(x) + C$।",
+              "चरण 2: यहाँ $f(x) = \\tan^{-1}x$ तथा $f'(x) = \\frac{1}{1+x^2}$ है।",
+              "चरण 3: सूत्र से सीधा मान: $e^x \\tan^{-1}x + C$",
+              "उत्तर: $e^x \\tan^{-1}x + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int e^x\\left(\\frac{1}{x} - \\frac{1}{x^2}\\right)dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.6 Q19]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): सूत्र $\\int e^x [f(x) + f'(x)]\\,dx = e^x f(x) + C$।",
+              "चरण 2: यहाँ $f(x) = \\frac{1}{x}$ है, जिसका अवकलज $f'(x) = -\\frac{1}{x^2}$ है।",
+              "चरण 3: सूत्र लागू करने पर: $e^x\\left(\\frac{1}{x}\\right) + C = \\frac{e^x}{x} + C$",
+              "उत्तर: $\\frac{e^x}{x} + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{x e^x}{(1+x)^2}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.6 Q17, BSEB 2018A]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): अंश में 1 जोड़कर घटाने के उपरांत सूत्र $\\int e^x [f(x) + f'(x)]\\,dx = e^x f(x) + C$ लगाना।",
+              "चरण 2: रूपान्तरण: $\\int e^x \\left[\\frac{x+1-1}{(1+x)^2}\\right]dx = \\int e^x \\left[\\frac{1}{1+x} - \\frac{1}{(1+x)^2}\\right]dx$",
+              "चरण 3: फलनों की पहचान: यहाँ $f(x) = \\frac{1}{1+x}$ तथा $f'(x) = -\\frac{1}{(1+x)^2}$ है।",
+              "चरण 4: सूत्र से मान: $e^x f(x) + C = \\frac{e^x}{1+x} + C$",
+              "उत्तर: $\\frac{e^x}{1+x} + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int e^x\\left(\\frac{1+\\sin x}{1+\\cos x}\\right)dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.6 Q18]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): त्रिकोणमितीय रूपांतरण तथा सूत्र $\\int e^x [f(x) + f'(x)]\\,dx = e^x f(x) + C$।",
+              "चरण 2: अर्द्ध-कोण सूत्र लागू करने पर: $\\frac{1 + 2\\sin(x/2)\\cos(x/2)}{2\\cos^2(x/2)} = \\frac{1}{2\\cos^2(x/2)} + \\frac{2\\sin(x/2)\\cos(x/2)}{2\\cos^2(x/2)} = \\frac{1}{2}\\sec^2(x/2) + \\tan(x/2)$",
+              "चरण 3: रूप लिखना: $\\int e^x \\left[\\tan(x/2) + \\frac{1}{2}\\sec^2(x/2)\\right]dx$",
+              "चरण 4: यहाँ $f(x) = \\tan(x/2)$ तथा $f'(x) = \\frac{1}{2}\\sec^2(x/2)$ है।",
+              "चरण 5: सूत्र से मान: $e^x \\tan(x/2) + C$",
+              "उत्तर: $e^x \\tan(x/2) + C$"
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "चक्रीय एवं बहु-पदीय खंडशः समाकलन सूत्र (Cyclic & Higher-Order Parts)",
+        "formula": "$$\\int e^{ax}\\sin bx\\,dx = \\frac{e^{ax}}{a^2+b^2}(a\\sin bx - b\\cos bx) + C \\quad \\text{तथा} \\quad \\int e^{ax}\\cos bx\\,dx = \\frac{e^{ax}}{a^2+b^2}(a\\cos bx + b\\sin bx) + C$$",
+        "meaning": "जब दो बार लगातार खंडशः समाकलन करने पर मूल समाकलन I पुनरावृत्त हो, तो उसे चक्रीय समाकलन कहते हैं; पक्षांतरण द्वारा I का मान निकाला जाता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "समाकलन $\\int e^{2x}\\sin x\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.6 Q21]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): चक्रीय समाकलन सूत्र $\\int e^{ax}\\sin bx\\,dx = \\frac{e^{ax}}{a^2+b^2}(a\\sin bx - b\\cos bx) + C$ लागू करने पर, जहाँ $a = 2, b = 1$ है।",
+              "चरण 2: हर की गणना: $a^2 + b^2 = 2^2 + 1^2 = 4 + 1 = 5$",
+              "चरण 3: सूत्र में मान प्रतिस्थापित करने पर: $\\frac{e^{2x}}{5}(2\\sin x - 1\\cos x) + C$",
+              "चरण 4: व्यवस्थित रूप: $\\frac{e^{2x}}{5}(2\\sin x - \\cos x) + C$",
+              "उत्तर: $\\frac{e^{2x}}{5}(2\\sin x - \\cos x) + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int e^x\\sin x\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 21]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): सूत्र $\\int e^{ax}\\sin bx\\,dx = \\frac{e^{ax}}{a^2+b^2}(a\\sin bx - b\\cos bx) + C$ लागू करने पर, यहाँ $a = 1, b = 1$ है।",
+              "चरण 2: हर की गणना: $a^2 + b^2 = 1^2 + 1^2 = 2$",
+              "चरण 3: मान प्रतिस्थापित करने पर: $\\frac{e^x}{2}(\\sin x - \\cos x) + C$",
+              "उत्तर: $\\frac{e^x}{2}(\\sin x - \\cos x) + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int x^2 e^x\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.6 Q3]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): दो बार क्रमिक खंडशः समाकलन सूत्र $\\int u \\cdot v\\,dx = u\\int v\\,dx - \\int (u' \\int v\\,dx)dx$ लागू करने पर।",
+              "चरण 2: प्रथम बार खंडशः ($u = x^2, v = e^x$): $x^2 e^x - \\int 2x e^x\\,dx = x^2 e^x - 2\\int x e^x\\,dx$",
+              "चरण 3: द्वितीय बार खंडशः ($u = x, v = e^x$): $x^2 e^x - 2[x e^x - \\int 1 \\cdot e^x\\,dx] = x^2 e^x - 2[x e^x - e^x] + C$",
+              "चरण 4: कोष्ठक खोलने पर: $x^2 e^x - 2x e^x + 2e^x + C = e^x(x^2 - 2x + 2) + C$",
+              "उत्तर: $e^x(x^2 - 2x + 2) + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int (\\sin^{-1}x)^2\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.6 Q10]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): $u = (\\sin^{-1}x)^2$ तथा $v = 1$ मानकर खंडशः समाकलन, फिर प्रतिस्थापन विधि लागू करना।",
+              "चरण 2: प्रथम खंडशः: $(\\sin^{-1}x)^2 (x) - \\int \\left[2\\sin^{-1}x \\cdot \\frac{1}{\\sqrt{1-x^2}}\\right](x)\\,dx = x(\\sin^{-1}x)^2 - 2\\int \\frac{x\\sin^{-1}x}{\\sqrt{1-x^2}}\\,dx$",
+              "चरण 3: द्वितीय भाग में $\\sin^{-1}x = t \\implies x = \\sin t, \\frac{dx}{\\sqrt{1-x^2}} = dt$ रखने पर: $\\int t\\sin t\\,dt = -t\\cos t + \\sin t$",
+              "चरण 4: मूल चर में बदलना: $-\\sin^{-1}x\\sqrt{1-x^2} + x$",
+              "चरण 5: सम्पूर्ण मान रखने पर: $x(\\sin^{-1}x)^2 - 2[-\\sqrt{1-x^2}\\sin^{-1}x + x] + C = x(\\sin^{-1}x)^2 + 2\\sqrt{1-x^2}\\sin^{-1}x - 2x + C$",
+              "उत्तर: $x(\\sin^{-1}x)^2 + 2\\sqrt{1-x^2}\\sin^{-1}x - 2x + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\sin^{-1}\\left(\\frac{2x}{1+x^2}\\right)dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.6 Q22]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): प्रतिलोम त्रिकोणमितीय सर्वसमिका $\\sin^{-1}\\left(\\frac{2x}{1+x^2}\\right) = 2\\tan^{-1}x$ तथा खंडशः समाकलन सूत्र लगाना।",
+              "चरण 2: समाकल्य रूप: $2\\int (\\tan^{-1}x \\cdot 1)\\,dx$",
+              "चरण 3: खंडशः समाकलन करने पर: $2\\left[\\tan^{-1}x(x) - \\int \\frac{1}{1+x^2}(x)\\,dx\\right] = 2x\\tan^{-1}x - \\int \\frac{2x}{1+x^2}\\,dx$",
+              "चरण 4: $\\int \\frac{f'(x)}{f(x)}\\,dx = \\log|f(x)|$ से: $2x\\tan^{-1}x - \\log(1+x^2) + C$",
+              "उत्तर: $2x\\tan^{-1}x - \\log(1+x^2) + C$"
+            ],
+            "source": "किताब"
+          }
+        ]
+      }
+    ]
+  }
+}
