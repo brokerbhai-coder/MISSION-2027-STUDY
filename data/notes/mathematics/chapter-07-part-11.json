@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 1,
+  "subject": "mathematics",
+  "chapter": 7,
+  "title": "समाकलन (Integrals)",
+  "categories": {
+    "oneLiners": [
+      {
+        "question": "समाकलन $\\int e^{2\\log x}\\,dx$ का मान क्या होगा? [BSEB 2025A]",
+        "answer": "$$\\frac{x^3}{3} + k$$",
+        "explanation": "लघुगणक नियम $e^{n\\log x} = e^{\\log(x^n)} = x^n$ से $e^{2\\log x} = x^2$ बन जाता है। अतः $\\int x^2\\,dx = \\frac{x^3}{3} + k$[span_21](start_span)[span_21](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{(\\sqrt{x} + 1)^2}{x\\sqrt{x} + 2x + \\sqrt{x}}\\,dx$ का मान क्या होगा? [BSEB 2025A]",
+        "answer": "$$2\\sqrt{x} + k$$",
+        "explanation": "हर से $\\sqrt{x}$ उभयनिष्ठ लेने पर $x\\sqrt{x} + 2x + \\sqrt{x} = \\sqrt{x}(x + 2\\sqrt{x} + 1) = \\sqrt{x}(\\sqrt{x}+1)^2$। अंश व हर से $(\\sqrt{x}+1)^2$ कट जाता है, शेष $\\int \\frac{1}{\\sqrt{x}}\\,dx = 2\\sqrt{x} + k$ बचता है[span_22](start_span)[span_22](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int e^3 \\cdot e^x\\,dx$ का मान क्या होगा? [BSEB 2025A]",
+        "answer": "$$e^{x+3} + k$$",
+        "explanation": "$e^3$ एक स्वतंत्र अचर है। अतः $e^3 \\int e^x\\,dx = e^3 \\cdot e^x + k = e^{x+3} + k$[span_23](start_span)[span_23](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{\\cos 2x}{\\cos x + \\sin x}\\,dx$ किसके बराबर है? [BSEB 2025A]",
+        "answer": "$$\\sin x + \\cos x + k$$",
+        "explanation": "सर्वसमिका $\\cos 2x = \\cos^2 x - \\sin^2 x = (\\cos x - \\sin x)(\\cos x + \\sin x)$ से हर कट जाता है। $\\int (\\cos x - \\sin x)\\,dx = \\sin x - (-\\cos x) + k = \\sin x + \\cos x + k$[span_24](start_span)[span_24](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int (\\sin 3x + 4\\sin^3 x)\\,dx$ का मान क्या होगा? [BSEB 2025A]",
+        "answer": "$$-3\\cos x + k$$",
+        "explanation": "त्रिकोणमितीय सर्वसमिका $\\sin 3x = 3\\sin x - 4\\sin^3 x \\implies \\sin 3x + 4\\sin^3 x = 3\\sin x$। अतः $3\\int \\sin x\\,dx = -3\\cos x + k$[span_25](start_span)[span_25](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{dx}{x\\log x}$ किसके बराबर है? [BSEB 2025A]",
+        "answer": "$$\\log|\\log x| + k$$",
+        "explanation": "माना $\\log x = t \\implies \\frac{1}{x}\\,dx = dt$। अतः $\\int \\frac{dt}{t} = \\log|t| + k = \\log|\\log x| + k$[span_26](start_span)[span_26](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{x-3}{x^2-9}\\,dx$ का मान क्या होगा? [BSEB 2025A]",
+        "answer": "$$\\log|x+3| + k$$",
+        "explanation": "$x^2 - 9 = (x-3)(x+3)$ रखने पर $(x-3)$ कट जाता है। $\\int \\frac{1}{x+3}\\,dx = \\log|x+3| + k$[span_27](start_span)[span_27](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\tan(\\tan^{-1}x)\\,dx$ किसके बराबर है? [BSEB 2025A]",
+        "answer": "$$\\frac{x^2}{2} + k$$",
+        "explanation": "प्रतिलोम नियम $\\tan(\\tan^{-1}x) = x$ से $\\int x\\,dx = \\frac{x^2}{2} + k$[span_28](start_span)[span_28](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_2^1 \\frac{dx}{x}$ का मान क्या होगा? [BSEB 2019A]",
+        "answer": "$$\\log\\left(\\frac{1}{2}\\right)$$",
+        "explanation": "$[\\log x]_2^1 = \\log 1 - \\log 2 = 0 - \\log 2 = -\\log 2 = \\log(1/2)$[span_29](start_span)[span_29](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_0^1 \\frac{dx}{1+x^2}$ का मान क्या होगा? [BSEB 2019A]",
+        "answer": "$$\\frac{\\pi}{4}$$",
+        "explanation": "$[\\tan^{-1}x]_0^1 = \\tan^{-1}(1) - \\tan^{-1}(0) = \\frac{\\pi}{4} - 0 = \\frac{\\pi}{4}$[span_30](start_span)[span_30](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\log(x^2)\\,dx$ का मान क्या होगा? [BSEB 2025A]",
+        "answer": "$$2(x\\log x - x) + k$$",
+        "explanation": "$\\log(x^2) = 2\\log x$। अतः $2\\int \\log x\\,dx = 2(x\\log x - x) + k$[span_31](start_span)[span_31](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int 2^{x+1}\\,dx$ किसके बराबर है? [BSEB 2025A]",
+        "answer": "$$\\frac{2^{x+1}}{\\log 2} + k$$",
+        "explanation": "$2^{x+1} = 2 \\cdot 2^x$। अतः $2 \\int 2^x\\,dx = 2 \\cdot \\frac{2^x}{\\log 2} + k = \\frac{2^{x+1}}{\\log 2} + k$[span_32](start_span)[span_32](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{dx}{e^{-x}}$ किसके बराबर है? [BSEB 2025A]",
+        "answer": "$$e^x + k$$",
+        "explanation": "घातांक नियम से $\\frac{1}{e^{-x}} = e^x$। अतः $\\int e^x\\,dx = e^x + k$[span_33](start_span)[span_33](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{dx}{x^2+4}$ का मान क्या होगा? [BSEB 2025A, 2022A]",
+        "answer": "$$\\frac{1}{2}\\tan^{-1}\\left(\\frac{x}{2}\\right) + k$$",
+        "explanation": "सूत्र $\\int \\frac{1}{x^2+a^2}\\,dx = \\frac{1}{a}\\tan^{-1}(x/a) + k$ में $a = 2$ रखने पर[span_34](start_span)[span_34](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int x^m \\cdot x^n\\,dx$ किसके बराबर है? [BSEB 2025A]",
+        "answer": "$$\\frac{x^{m+n+1}}{m+n+1} + k$$",
+        "explanation": "$x^m \\cdot x^n = x^{m+n}$। घात नियम से $\\int x^{m+n}\\,dx = \\frac{x^{m+n+1}}{m+n+1} + k$[span_35](start_span)[span_35](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\cot^2 x\\,dx$ का मान क्या होगा? [BSEB 2024A, 2021A, 2018C]",
+        "answer": "$$-\\cot x - x + k$$",
+        "explanation": "सर्वसमिका $\\cot^2 x = \\text{cosec}^2 x - 1$ से $\\int (\\text{cosec}^2 x - 1)\\,dx = -\\cot x - x + k$[span_36](start_span)[span_36](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_{-1}^1 \\sin^7 x \\cos^3 x\\,dx$ का मान क्या है? [BSEB 2025A]",
+        "answer": "$$0$$",
+        "explanation": "$f(-x) = [\\sin(-x)]^7 [\\cos(-x)]^3 = -\\sin^7 x \\cos^3 x = -f(x)$ (विषम फलन)। प्रगुण $P_7$ से मान शून्य होता है[span_37](start_span)[span_37](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_0^2 e^x\\,dx$ किसके बराबर है? [BSEB 2025A]",
+        "answer": "$$e^2 - 1$$",
+        "explanation": "$[e^x]_0^2 = e^2 - e^0 = e^2 - 1$[span_38](start_span)[span_38](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_0^a \\frac{dx}{\\sqrt{x}}$ का मान क्या होगा? [BSEB 2025A]",
+        "answer": "$$2\\sqrt{a}$$",
+        "explanation": "$[2\\sqrt{x}]_0^a = 2\\sqrt{a} - 2\\sqrt{0} = 2\\sqrt{a}$[span_39](start_span)[span_39](end_span)।"
+      },
+      {
+        "question": "मान ज्ञात कीजिए: $100\\int_0^1 x^{99}\\,dx$ [BSEB 2025A]",
+        "answer": "$$1$$",
+        "explanation": "$100 \\left[\\frac{x^{100}}{100}\\right]_0^1 = 100 \\times \\frac{1}{100}(1^{100} - 0) = 1$[span_40](start_span)[span_40](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{1 - \\cos 2x}{1 + \\cos 2x}\\,dx$ का मान क्या होगा? [BSEB 2024A, 2021A]",
+        "answer": "$$\\tan x - x + k$$",
+        "explanation": "$\\frac{1-\\cos 2x}{1+\\cos 2x} = \\frac{2\\sin^2 x}{2\\cos^2 x} = \\tan^2 x = \\sec^2 x - 1$। समाकलन $\\tan x - x + k$[span_41](start_span)[span_41](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\sqrt{1 - \\sin 2x}\\,dx$ का मान क्या होगा? [BSEB 2024A, 2020A]",
+        "answer": "$$\\sin x + \\cos x + k$$",
+        "explanation": "$1 - \\sin 2x = (\\cos x - \\sin x)^2$। वर्गमूल लेने पर $\\int (\\cos x - \\sin x)\\,dx = \\sin x + \\cos x + k$[span_42](start_span)[span_42](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\sec x\\,dx$ किसके बराबर है? [BSEB 2024A, 2019A, 2016C]",
+        "answer": "$$\\log|\\sec x + \\tan x| + c$$",
+        "explanation": "मानक सूत्र $\\int \\sec x\\,dx = \\log|\\sec x + \\tan x| + c$[span_43](start_span)[span_43](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{dx}{a^2+x^2}$ अथवा $\\int \\frac{dx}{x^2+a^2}$ किसके बराबर है? [BSEB 2024A, 2018A, 2016C]",
+        "answer": "$$\\frac{1}{a}\\tan^{-1}\\left(\\frac{x}{a}\\right) + c$$",
+        "explanation": "मानक प्रामाणिक सूत्र $\\frac{1}{a}\\tan^{-1}(x/a) + c$[span_44](start_span)[span_44](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\sqrt{1 + \\cos 2x}\\,dx$ का मान क्या होगा? [BSEB 2024A, 2018A]",
+        "answer": "$$\\sqrt{2}\\sin x + c$$",
+        "explanation": "$1 + \\cos 2x = 2\\cos^2 x \\implies \\sqrt{2\\cos^2 x} = \\sqrt{2}\\cos x$। अतः $\\sqrt{2}\\int \\cos x\\,dx = \\sqrt{2}\\sin x + c$[span_45](start_span)[span_45](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int x e^x\\,dx$ किसके बराबर है? [BSEB 2024A]",
+        "answer": "$$e^x(x - 1) + c$$",
+        "explanation": "खंडशः समाकलन से: $x(e^x) - \\int 1 \\cdot e^x\\,dx = x e^x - e^x + c = e^x(x-1) + c$[span_46](start_span)[span_46](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\tan^2 x\\,dx$ का मान क्या होगा? [BSEB 2024A]",
+        "answer": "$$\\tan x - x + c$$",
+        "explanation": "$\\tan^2 x = \\sec^2 x - 1$। $\\int (\\sec^2 x - 1)\\,dx = \\tan x - x + c$[span_47](start_span)[span_47](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{\\cos 2x}{\\cos^2 x \\sin^2 x}\\,dx$ का मान क्या होगा? [BSEB 2024A]",
+        "answer": "$$-\\cot x - \\tan x + c$$",
+        "explanation": "$\\frac{\\cos^2 x - \\sin^2 x}{\\cos^2 x\\sin^2 x} = \\frac{1}{\\sin^2 x} - \\frac{1}{\\cos^2 x} = \\text{cosec}^2 x - \\sec^2 x$। समाकलन: $-\\cot x - \\tan x + c$[span_48](start_span)[span_48](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{\\cos\\sqrt{x}}{\\sqrt{x}}\\,dx$ का मान क्या होगा? [BSEB 2024A]",
+        "answer": "$$2\\sin\\sqrt{x} + c$$",
+        "explanation": "माना $\\sqrt{x} = t \\implies \\frac{1}{\\sqrt{x}}\\,dx = 2\\,dt$। $2\\int \\cos t\\,dt = 2\\sin t + c = 2\\sin\\sqrt{x} + c$[span_49](start_span)[span_49](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\sqrt{\\cos x}\\sin x\\,dx$ का मान क्या होगा? [BSEB 2024A]",
+        "answer": "$$-\\frac{2}{3}(\\cos x)^{3/2} + c$$",
+        "explanation": "माना $\\cos x = t \\implies \\sin x\\,dx = -dt$। $-\\int t^{1/2}\\,dt = -\\frac{t^{3/2}}{3/2} + c = -\\frac{2}{3}(\\cos x)^{3/2} + c$[span_50](start_span)[span_50](end_span)।"
+      },
+      {
+        "question": "मान ज्ञात कीजिए: $\\int_\\alpha^\\beta \\phi(x)\\,dx + \\int_\\beta^\\alpha \\phi(x)\\,dx$ [BSEB Objective]",
+        "answer": "$$0$$",
+        "explanation": "प्रगुण $P_1$ के अनुसार $\\int_\\beta^\\alpha \\phi(x)\\,dx = -\\int_\\alpha^\\beta \\phi(x)\\,dx$। दोनों कटकर $0$ हो जाते हैं[span_51](start_span)[span_51](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_{-\\pi/2}^{\\pi/2} \\sin^7 x\\,dx$ का मान क्या होगा? [BSEB 2024A]",
+        "answer": "$$0$$",
+        "explanation": "$\\sin^7(-x) = -\\sin^7 x$ (विषम फलन)। प्रगुण $P_7$ से मान शून्य होता है[span_52](start_span)[span_52](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_0^{\\pi/2} \\cos 2x\\,dx$ का मान क्या होगा? [BSEB 2024A]",
+        "answer": "$$0$$",
+        "explanation": "$\\left[\\frac{\\sin 2x}{2}\\right]_0^{\\pi/2} = \\frac{1}{2}(\\sin\\pi - \\sin 0) = \\frac{1}{2}(0 - 0) = 0$[span_53](start_span)[span_53](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_{-\\pi}^\\pi \\tan x\\,dx$ का मान क्या होगा? [BSEB 2024A]",
+        "answer": "$$0$$",
+        "explanation": "$\\tan(-x) = -\\tan x$ (विषम फलन)। प्रगुण $P_7$ से मान $0$ है[span_54](start_span)[span_54](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{x^3}{1+x^8}\\,dx$ का मान क्या होगा? [BSEB 2024A]",
+        "answer": "$$\\frac{1}{4}\\tan^{-1}(x^4) + c$$",
+        "explanation": "माना $x^4 = t \\implies x^3\\,dx = \\frac{1}{4}dt$। $\\frac{1}{4}\\int \\frac{dt}{1+t^2} = \\frac{1}{4}\\tan^{-1}(x^4) + c$[span_55](start_span)[span_55](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\sec^5 x \\tan x\\,dx$ का मान क्या होगा? [BSEB 2024A]",
+        "answer": "$$\\frac{\\sec^5 x}{5} + c$$",
+        "explanation": "$\\sec^5 x\\tan x = \\sec^4 x(\\sec x\\tan x)$। माना $\\sec x = t \\implies \\sec x\\tan x\\,dx = dt$। $\\int t^4\\,dt = \\frac{t^5}{5} + c = \\frac{\\sec^5 x}{5} + c$[span_56](start_span)[span_56](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{dx}{2-3x}$ किसके बराबर है? [BSEB 2024A]",
+        "answer": "$$-\\frac{1}{3}\\log|2-3x| + c$$",
+        "explanation": "रैखिक व्युत्क्रम सूत्र से $x$ के गुणांक $-3$ से भाग देने पर: $-\\frac{1}{3}\\log|2-3x| + c$[span_57](start_span)[span_57](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int e^x\\left(\\sin^{-1}x + \\frac{1}{\\sqrt{1-x^2}}\\right)dx$ का मान क्या होगा? [BSEB 2024A]",
+        "answer": "$$e^x\\sin^{-1}x + c$$",
+        "explanation": "प्रारूप $\\int e^x [f(x) + f'(x)]\\,dx = e^x f(x) + c$ जहाँ $f(x) = \\sin^{-1}x$ है[span_58](start_span)[span_58](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int \\frac{\\log x}{x}\\,dx$ किसके बराबर है? [BSEB 2024A]",
+        "answer": "$$\\frac{(\\log x)^2}{2} + c$$",
+        "explanation": "माना $\\log x = t \\implies \\frac{1}{x}\\,dx = dt$। $\\int t\\,dt = \\frac{t^2}{2} + c = \\frac{(\\log x)^2}{2} + c$[span_59](start_span)[span_59](end_span)।"
+      },
+      {
+        "question": "सूत्र: $\\int \\sqrt{a^2-x^2}\\,dx$ का मान क्या होता है? [BSEB 2024A]",
+        "answer": "$$\\frac{x}{2}\\sqrt{a^2-x^2} + \\frac{a^2}{2}\\sin^{-1}\\left(\\frac{x}{a}\\right) + c$$",
+        "explanation": "दीर्घ करणी का सीधा प्रामाणिक सूत्र[span_60](start_span)[span_60](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_{-1}^1 \\sin^{13}x \\cos^{12}x\\,dx$ का मान क्या होगा? [BSEB 2025A]",
+        "answer": "$$0$$",
+        "explanation": "$f(-x) = [\\sin(-x)]^{13}[\\cos(-x)]^{12} = -\\sin^{13}x\\cos^{12}x = -f(x)$ (विषम फलन)। प्रगुण $P_7$ से मान शून्य है[span_61](start_span)[span_61](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_0^1 \\frac{4\\tan^{-1}x}{1+x^2}\\,dx$ का मान क्या होगा? [BSEB 2025A]",
+        "answer": "$$\\frac{\\pi^2}{8}$$",
+        "explanation": "माना $\\tan^{-1}x = t$ (सीमा 0 से $\\pi/4$)। $4\\int_0^{\\pi/4} t\\,dt = 4\\left[\\frac{t^2}{2}\\right]_0^{\\pi/4} = 2\\left(\\frac{\\pi^2}{16}\\right) = \\frac{\\pi^2}{8}$[span_62](start_span)[span_62](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_4^9 \\frac{1}{\\sqrt{x}}\\,dx$ का मान क्या होगा? [BSEB 2024A]",
+        "answer": "$$2$$",
+        "explanation": "$[2\\sqrt{x}]_4^9 = 2(\\sqrt{9} - \\sqrt{4}) = 2(3 - 2) = 2$[span_63](start_span)[span_63](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_0^a \\frac{\\sqrt{x}}{\\sqrt{x}+\\sqrt{a-x}}\\,dx$ का मान क्या होगा? [BSEB 2024A]",
+        "answer": "$$\\frac{a}{2}$$",
+        "explanation": "किंग प्रगुण $P_4$ से $2I = \\int_0^a 1\\,dx = a \\implies I = \\frac{a}{2}$[span_64](start_span)[span_64](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int (x + \\cos 2x)\\,dx$ का मान क्या होगा? [BSEB 2024A]",
+        "answer": "$$\\frac{x^2}{2} + \\frac{\\sin 2x}{2} + c$$",
+        "explanation": "पद-दर-पद समाकलन: $\\int x\\,dx + \\int \\cos 2x\\,dx = \\frac{x^2}{2} + \\frac{\\sin 2x}{2} + c$[span_65](start_span)[span_65](end_span)।"
+      },
+      {
+        "question": "समाकलन $\\int e^x(\\cos x - \\sin x)\\,dx$ किसके बराबर है? [BSEB 2023A]",
+        "answer": "$$e^x\\cos x + k$$",
+        "explanation": "प्रारूप $\\int e^x [f(x) + f'(x)]\\,dx = e^x f(x) + k$ जहाँ $f(x) = \\cos x$ तथा $f'(x) = -\\sin x$[span_66](start_span)[span_66](end_span)।"
+      },
+      {
+        "question": "मान ज्ञात कीजिए: $25\\int \\sec 5x \\tan 5x\\,dx$ [BSEB 2023A]",
+        "answer": "$$5\\sec 5x + k$$",
+        "explanation": "$25 \\times \\frac{\\sec 5x}{5} + k = 5\\sec 5x + k$[span_67](start_span)[span_67](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_{-1}^1 \\sin^{17}x \\cos^3 x\\,dx$ का मान क्या होगा? [BSEB 2023A]",
+        "answer": "$$0$$",
+        "explanation": "विषम फलन होने के कारण प्रगुण $P_7$ से मान शून्य है[span_68](start_span)[span_68](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_{\\pi/2}^{\\pi/2} \\sin^2 x\\,dx$ का मान क्या होगा? [BSEB 2022A]",
+        "answer": "$$0$$",
+        "explanation": "प्रगुण $P_1$ के अनुसार यदि निम्न व उच्च सीमा समान हों (अर्थात् $\\int_a^a f(x)\\,dx$), तो मान सदैव $0$ होता है[span_69](start_span)[span_69](end_span)।"
+      },
+      {
+        "question": "निश्चित समाकलन $\\int_{-\\pi/4}^{\\pi/4} \\sin^3 x\\,dx$ का मान क्या होगा? [BSEB 2022A]",
+        "answer": "$$0$$",
+        "explanation": "$\\sin^3(-x) = -\\sin^3 x$ (विषम फलन) होने से प्रगुण $P_7$ द्वारा मान $0$ है[span_70](start_span)[span_70](end_span)।"
+      }
+    ]
+  }
+}
