@@ -1,0 +1,1102 @@
+{
+  "_help": "Class 12 Physics VVI Objective Questions Set - Bihar Board[span_3](start_span)[span_3](end_span)[span_4](start_span)[span_4](end_span)",
+  "schemaVersion": 1,
+  "subject": "physics",
+  "title": "Class 12 Physics - Top VVI Objective Questions",
+  "description": "Bihar Board Class 12 Physics VVI Objective Questions (Chapter 1 se Chapter 8 tak)[span_5](start_span)[span_5](end_span)",
+  "timeLimitMinutes": 60,
+  "questions": [
+    {
+      "id": "PHY-12-001",
+      "chapter": 1,
+      "question": "चालक पदार्थ से बने असीमित आवेशित पतली चादर की सतह के निकट स्थित किसी बिन्दु पर विद्युतीय क्षेत्र का मान होता है:",
+      "options": {
+        "A": "ε₀ σ",
+        "B": "σ / ε₀",
+        "C": "σ / (2ε₀)",
+        "D": "(1/2) σ ε₀"
+      },
+      "answer": "C",
+      "explanation": "असीमित आवेशित पतली चादर के निकट विद्युत क्षेत्र की तीव्रता E = σ / (2ε₀) होती है[span_6](start_span)[span_6](end_span)।"
+    },
+    {
+      "id": "PHY-12-002",
+      "chapter": 1,
+      "question": "आयतन आवेश घनत्व बराबर होता है:",
+      "options": {
+        "A": "आवेश (q) / पृष्ठ क्षेत्रफल (A)",
+        "B": "आवेश (q) / लंबाई (l)",
+        "C": "आवेश (q) / आयतन (V)",
+        "D": "इनमें से कोई नहीं"
+      },
+      "answer": "C",
+      "explanation": "आयतन आवेश घनत्व ρ = q / V होता है[span_7](start_span)[span_7](end_span)।"
+    },
+    {
+      "id": "PHY-12-003",
+      "chapter": 1,
+      "question": "आवेशित गोलीय चालक के अंदर विद्युत क्षेत्र होता है:",
+      "options": {
+        "A": "σ / ε₀",
+        "B": "शून्य",
+        "C": "ε₀ σ",
+        "D": "σ² / ε₀"
+      },
+      "answer": "B",
+      "explanation": "किसी आवेशित गोलीय चालक के अंदर विद्युत क्षेत्र शून्य (E = 0) होता है[span_8](start_span)[span_8](end_span)।"
+    },
+    {
+      "id": "PHY-12-004",
+      "chapter": 1,
+      "question": "1 / (4πε₀) का मान है:",
+      "options": {
+        "A": "9 × 10⁹ N m² C⁻²",
+        "B": "9 × 10⁻⁹ N m² C⁻²",
+        "C": "9 × 10¹² N m² C⁻²",
+        "D": "9 × 10⁻¹² N m² C⁻²"
+      },
+      "answer": "A",
+      "explanation": "स्थिरवैद्युतिकी नियतांक 1 / (4πε₀) का मान 9 × 10⁹ N m² C⁻² होता है[span_9](start_span)[span_9](end_span)।"
+    },
+    {
+      "id": "PHY-12-005",
+      "chapter": 1,
+      "question": "गॉसियन सतह से निकला विद्युत फ्लक्स सतह के आकार से ...... होता है:",
+      "options": {
+        "A": "स्वतंत्र",
+        "B": "समानुपाती",
+        "C": "निर्भर",
+        "D": "इनमें से कोई नहीं"
+      },
+      "answer": "A",
+      "explanation": "गॉस के नियम के अनुसार कुल फ्लक्स सिर्फ परिबद्ध आवेश पर निर्भर करता है, सतह के आकार या रूप से स्वतंत्र होता है[span_10](start_span)[span_10](end_span)।"
+    },
+    {
+      "id": "PHY-12-006",
+      "chapter": 1,
+      "question": "किसी आवेशित अनंत लंबे तार के कारण विद्युत क्षेत्र होता है:",
+      "options": {
+        "A": "λ / (2πε₀ r)",
+        "B": "λ / (πε₀ r)",
+        "C": "(2πε₀ r) / λ",
+        "D": "इनमें से कोई नहीं"
+      },
+      "answer": "A",
+      "explanation": "अनंत लंबे आवेशित सीधे तार के कारण विद्युत क्षेत्र E = λ / (2πε₀ r) होता है[span_11](start_span)[span_11](end_span)।"
+    },
+    {
+      "id": "PHY-12-007",
+      "chapter": 1,
+      "question": "आवेशित समतल चालक के नजदीक विद्युत क्षेत्र का मान होगा:",
+      "options": {
+        "A": "E = σ / ε₀",
+        "B": "E = σ / (2ε₀)",
+        "C": "E = ε₀ σ",
+        "D": "E = 2σ / ε₀"
+      },
+      "answer": "A",
+      "explanation": "किसी आवेशित समतल चालक सतह के ठीक बाहर विद्युत क्षेत्र E = σ / ε₀ होता है[span_12](start_span)[span_12](end_span)।"
+    },
+    {
+      "id": "PHY-12-008",
+      "chapter": 1,
+      "question": "आवेश का विमा है:",
+      "options": {
+        "A": "[AT]",
+        "B": "[AT⁻¹]",
+        "C": "[A⁻¹T]",
+        "D": "[AT²]"
+      },
+      "answer": "A",
+      "explanation": "q = I × t होने के कारण आवेश का विमीय सूत्र [AT] होता है[span_13](start_span)[span_13](end_span)।"
+    },
+    {
+      "id": "PHY-12-009",
+      "chapter": 1,
+      "question": "ε₀ का मात्रक है:",
+      "options": {
+        "A": "N m⁻¹",
+        "B": "F m⁻¹",
+        "C": "C V⁻¹",
+        "D": "F m"
+      },
+      "answer": "B",
+      "explanation": "निर्वात की विद्युतशीलता ε₀ का SI मात्रक फैरड प्रति मीटर (F m⁻¹) या C² N⁻¹ m⁻² होता है[span_14](start_span)[span_14](end_span)।"
+    },
+    {
+      "id": "PHY-12-010",
+      "chapter": 1,
+      "question": "निम्न में से कौन वोल्ट/मीटर (V/m) इकाई रखता है?",
+      "options": {
+        "A": "विद्युत फ्लक्स",
+        "B": "विद्युत विभव",
+        "C": "विद्युत धारिता",
+        "D": "विद्युत क्षेत्र"
+      },
+      "answer": "D",
+      "explanation": "E = -dV/dr सूत्र से विद्युत क्षेत्र की इकाई वोल्ट/मीटर (V/m) होती है[span_15](start_span)[span_15](end_span)।"
+    },
+    {
+      "id": "PHY-12-011",
+      "chapter": 1,
+      "question": "आवेश के e.m.u. तथा e.s.u का अनुपात है:",
+      "options": {
+        "A": "3 × 10¹⁰",
+        "B": "1 / 4.2",
+        "C": "4.8 × 10⁻¹⁹",
+        "D": "1.01 × 10⁷"
+      },
+      "answer": "A",
+      "explanation": "1 emu = 10 C तथा 1 C = 3 × 10⁹ esu, isliye 1 emu / 1 esu = 3 × 10¹⁰ hota hai[span_16](start_span)[span_16](end_span)।"
+    },
+    {
+      "id": "PHY-12-012",
+      "chapter": 1,
+      "question": "विद्युत द्विध्रुव के कारण विद्युत क्षेत्र (E), दूरी (r) पर निर्भर करता है:",
+      "options": {
+        "A": "E ∝ 1/r",
+        "B": "E ∝ 1/r²",
+        "C": "E ∝ 1/r³",
+        "D": "E ∝ r"
+      },
+      "answer": "C",
+      "explanation": "विद्युत द्विध्रुव के अक्षीय या निरक्षीय बिन्दु पर विद्युत क्षेत्र E ∝ 1/r³ होता है[span_17](start_span)[span_17](end_span)।"
+    },
+    {
+      "id": "PHY-12-013",
+      "chapter": 1,
+      "question": "विद्युत फ्लक्स निर्भर करता है:",
+      "options": {
+        "A": "बंद सतह के अंदर कुल आवेश पर",
+        "B": "बंद सतह के रूप पर",
+        "C": "बंद सतह के आकार पर",
+        "D": "ऊपर का सभी"
+      },
+      "answer": "A",
+      "explanation": "गॉस के नियमानुसार Φ = q_enclosed / ε₀, yeh sirf band satah ke andar ke kul aavesh par nirbhar karta hai[span_18](start_span)[span_18](end_span)।"
+    },
+    {
+      "id": "PHY-12-014",
+      "chapter": 1,
+      "question": "इलेक्ट्रॉन का विशिष्ट आवेश होता है:",
+      "options": {
+        "A": "1.8 × 10¹¹ C/kg",
+        "B": "1.8 × 10⁻¹⁹ C/kg",
+        "C": "1.9 × 10⁻¹⁹ C/kg",
+        "D": "कोई नहीं"
+      },
+      "answer": "A",
+      "explanation": "विशिष्ट आवेश = e / m = (1.6 × 10⁻¹⁹) / (9.1 × 10⁻³¹) ≈ 1.76 × 10¹¹ C/kg (लगभग 1.8 × 10¹¹ C/kg)[span_19](start_span)[span_19](end_span)।"
+    },
+    {
+      "id": "PHY-12-015",
+      "chapter": 1,
+      "question": "1 स्टैट कूलाम = ...... कूलाम:",
+      "options": {
+        "A": "3 × 10⁹",
+        "B": "3 × 10⁻⁹",
+        "C": "(1/3) × 10⁹",
+        "D": "(1/3) × 10⁻⁹"
+      },
+      "answer": "D",
+      "explanation": "1 C = 3 × 10⁹ statC, isliye 1 statC = (1/3) × 10⁻⁹ C[span_20](start_span)[span_20](end_span)।"
+    },
+    {
+      "id": "PHY-12-016",
+      "chapter": 1,
+      "question": "यदि दो आवेशों की मूल बिंदू से दूरी बढ़ा दी जाये तो आवेशों के बीच विद्युतीय बल का मान:",
+      "options": {
+        "A": "बढ़ जाएगा",
+        "B": "घट जाएगा",
+        "C": "अपरिवर्तित रहेगा",
+        "D": "बढ़ भी सकता है या घट भी सकता है"
+      },
+      "answer": "B",
+      "explanation": "कूलाम के नियम से F ∝ 1/r², doori badhane par bal ghat jayega[span_21](start_span)[span_21](end_span)।"
+    },
+    {
+      "id": "PHY-12-017",
+      "chapter": 1,
+      "question": "किसी दूरी पर अवस्थित दो आवेशित कण के बीच विद्युत बल F है। यदि उनके बीच की दूरी आधी कर दी जाए तो विद्युत बल का मान होगा:",
+      "options": {
+        "A": "4F",
+        "B": "2F",
+        "C": "(1/4)F",
+        "D": "(1/2)F"
+      },
+      "answer": "A",
+      "explanation": "F ∝ 1/r² ke karan jab doori r/2 ho jayegi, tab bal 4 guna hokar 4F ho jayega[span_22](start_span)[span_22](end_span)।"
+    },
+    {
+      "id": "PHY-12-018",
+      "chapter": 2,
+      "question": "आवेशित चालक की ऊर्जा होगी:",
+      "options": {
+        "A": "E = (1/2) CV",
+        "B": "E = (1/2) CV²",
+        "C": "E = (1/2) C²V",
+        "D": "E = CV"
+      },
+      "answer": "B",
+      "explanation": "आवेशित चालक की स्थितिज ऊर्जा E = (1/2) CV² hoti hai[span_23](start_span)[span_23](end_span)।"
+    },
+    {
+      "id": "PHY-12-019",
+      "chapter": 2,
+      "question": "यदि समान धारिता के n संधारित्र समानान्तर क्रम में जुड़े हैं तब समतुल्य धारिता होगी:",
+      "options": {
+        "A": "C = n / C₁",
+        "B": "C = C₁ / n",
+        "C": "C = n C₁",
+        "D": "C = n² C₁"
+      },
+      "answer": "C",
+      "explanation": "समानांतर क्रम में समतुल्य धारिता C = C₁ + C₂ + ... = n C₁ hoti hai[span_24](start_span)[span_24](end_span)।"
+    },
+    {
+      "id": "PHY-12-020",
+      "chapter": 2,
+      "question": "एक परमाणु नाभिक (Z = 50) जिसकी त्रिज्या 9 × 10⁻¹⁵ m है, उसके सतह पर विद्युत विभव होगा:",
+      "options": {
+        "A": "9 × 10⁵ V",
+        "B": "9 V",
+        "C": "8 × 10⁶ V",
+        "D": "80 V"
+      },
+      "answer": "C",
+      "explanation": "V = (1 / 4πε₀) × (Ze / r) = (9 × 10⁹ × 50 × 1.6 × 10⁻¹⁹) / (9 × 10⁻¹⁵) = 8 × 10⁶ V[span_25](start_span)[span_25](end_span)।"
+    },
+    {
+      "id": "PHY-12-021",
+      "chapter": 2,
+      "question": "विद्युत क्षेत्र तथा समविभव सतह के बीच का कोण होता है:",
+      "options": {
+        "A": "हमेशा 90°",
+        "B": "हमेशा 0°",
+        "C": "0° और 90° के बीच",
+        "D": "0° और 180° के बीच"
+      },
+      "answer": "A",
+      "explanation": "विद्युत बल रेखाएँ समविभव पृष्ठ के सदैव लंबवत (90°) होती हैं[span_26](start_span)[span_26](end_span)।"
+    },
+    {
+      "id": "PHY-12-022",
+      "chapter": 2,
+      "question": "संधारित्र द्वारा संग्रह विद्युत ऊर्जा है:",
+      "options": {
+        "A": "(1/2) QV",
+        "B": "CV² / 2",
+        "C": "q² / (2C)",
+        "D": "उपरोक्त सभी"
+      },
+      "answer": "D",
+      "explanation": "संधारित्र की ऊर्जा U = (1/2)QV = (1/2)CV² = q²/(2C), isliye teeno roop sahi hain[span_27](start_span)[span_27](end_span)।"
+    },
+    {
+      "id": "PHY-12-023",
+      "chapter": 2,
+      "question": "समानांतर प्लेट संधारित्र द्वारा प्रति इकाई आयतन ऊर्जा संग्रह (ऊर्जा घनत्व) होता है:",
+      "options": {
+        "A": "(1/2) ε₀ E",
+        "B": "(1/2) ε₀² E",
+        "C": "(1/2) ε₀² E²",
+        "D": "(1/2) ε₀ E²"
+      },
+      "answer": "D",
+      "explanation": "विद्युत क्षेत्र में ऊर्जा घनत्व u = (1/2) ε₀ E² hota hai[span_28](start_span)[span_28](end_span)।"
+    },
+    {
+      "id": "PHY-12-024",
+      "chapter": 1,
+      "question": "इनमें से कौन-सा n का मान संभव नहीं है, q = ne के संबंध में:",
+      "options": {
+        "A": "4",
+        "B": "8",
+        "C": "4.2",
+        "D": "100"
+      },
+      "answer": "C",
+      "explanation": "आवेश के क्वांटीकरण के अनुसार n हमेशा एक पूर्णांक होना चाहिए, दशमलव या भिन्न (4.2) संभव नहीं है[span_29](start_span)[span_29](end_span)।"
+    },
+    {
+      "id": "PHY-12-025",
+      "chapter": 2,
+      "question": "प्रभावी धारिता 5 μF को प्राप्त करने के लिए सिर्फ 2 μF के कम-से-कम कितने संधारित्र की आवश्यकता होगी?",
+      "options": {
+        "A": "4",
+        "B": "3",
+        "C": "5",
+        "D": "6"
+      },
+      "answer": "A",
+      "explanation": "दो 2 μF श्रेणीक्रम में (1 μF) aur do 2 μF समानांतर क्रम में (4 μF) jodkar total 1 + 4 = 5 μF prapt karne ke liye kul 4 sandharitra chahiye[span_30](start_span)[span_30](end_span)।"
+    },
+    {
+      "id": "PHY-12-026",
+      "chapter": 2,
+      "question": "विद्युतीय विभव की विमा है:",
+      "options": {
+        "A": "[ML²T⁻³A⁻¹]",
+        "B": "[MLT⁻³A⁻¹]",
+        "C": "[MLT⁻³A⁻²]",
+        "D": "[ML²T⁻³A⁻²]"
+      },
+      "answer": "A",
+      "explanation": "V = W / q = [ML²T⁻²] / [AT] = [ML²T⁻³A⁻¹][span_31](start_span)[span_31](end_span)।"
+    },
+    {
+      "id": "PHY-12-027",
+      "chapter": 2,
+      "question": "प्रत्येक r त्रिज्या तथा q आवेश से आवेशित आठ छोटे बूँदों को मिलाकर एक बड़ा बूँद बनाया जाता है तो बड़े बूँद के विभव तथा छोटे बूँद के विभव का अनुपात है:",
+      "options": {
+        "A": "8:1",
+        "B": "4:1",
+        "C": "2:1",
+        "D": "1:8"
+      },
+      "answer": "B",
+      "explanation": "V_bada = n^(2/3) × V_chhota = 8^(2/3) × V = 4V, isliye anupaat 4:1 hota hai[span_32](start_span)[span_32](end_span)।"
+    },
+    {
+      "id": "PHY-12-028",
+      "chapter": 1,
+      "question": "एक आवेशित चालक की सतह के किसी बिंदु पर विद्युतीय क्षेत्र की तीव्रता:",
+      "options": {
+        "A": "शून्य होती है",
+        "B": "सतह के लंबवत् होती है",
+        "C": "सतह के स्पर्शीय होती है",
+        "D": "सतह पर 45° पर होती है"
+      },
+      "answer": "B",
+      "explanation": "चालक की सतह पर स्थिरवैद्युत क्षेत्र हमेशा सतह के लंबवत होता है[span_33](start_span)[span_33](end_span)।"
+    },
+    {
+      "id": "PHY-12-029",
+      "chapter": 1,
+      "question": "विद्युत क्षेत्र E से लम्बवत रखे विद्युत द्विध्रुव का आघूर्ण P है। इस स्थिति में द्विध्रुव की स्थितिक ऊर्जा शून्य मान लेने पर E और P के बीच θ कोण की स्थिति में द्विध्रुव की स्थैतिज ऊर्जा होती है:",
+      "options": {
+        "A": "P · E",
+        "B": "-P · E",
+        "C": "P × E",
+        "D": "PE (1 - cos θ)"
+      },
+      "answer": "B",
+      "explanation": "विद्युत द्विध्रुव की स्थितिज ऊर्जा U = -P · E = -PE cos θ hoti hai[span_34](start_span)[span_34](end_span)।"
+    },
+    {
+      "id": "PHY-12-030",
+      "chapter": 2,
+      "question": "तीन संधारित्र जिनमें प्रत्येक की धारिता 9 μF है, श्रेणी क्रम में जोड़े गए हैं। परिणामी धारिता का मान होगा:",
+      "options": {
+        "A": "3 μF",
+        "B": "27 μF",
+        "C": "9 μF",
+        "D": "18 μF"
+      },
+      "answer": "A",
+      "explanation": "1/C = 1/9 + 1/9 + 1/9 = 3/9 = 1/3, isliye C = 3 μF[span_35](start_span)[span_35](end_span)।"
+    },
+    {
+      "id": "PHY-12-031",
+      "chapter": 2,
+      "question": "C₁ = 2 μF तथा C₂ = 4 μF के दो संधारित्रों को श्रेणीक्रम में जोड़ा जाता है और उनके सिरों के बीच 1200 V का विभवान्तर आरोपित किया जाता है। 2 μF वाले संधारित्र के सिरों के बीच का विभवान्तर होगा:",
+      "options": {
+        "A": "400 V",
+        "B": "600 V",
+        "C": "800 V",
+        "D": "900 V"
+      },
+      "answer": "C",
+      "explanation": "V₁ = V × C₂ / (C₁ + C₂) = 1200 × 4 / (2 + 4) = 800 V[span_36](start_span)[span_36](end_span)।"
+    },
+    {
+      "id": "PHY-12-032",
+      "chapter": 2,
+      "question": "विद्युत् धारिता की विमा है:",
+      "options": {
+        "A": "[M⁻¹L⁻²T⁴A²]",
+        "B": "[ML²T⁻⁴A⁻²]",
+        "C": "[M²L⁻²T⁴A⁻²]",
+        "D": "[M²L²T²A⁻²]"
+      },
+      "answer": "A",
+      "explanation": "C = q / V = [AT] / [ML²T⁻³A⁻¹] = [M⁻¹L⁻²T⁴A²][span_37](start_span)[span_37](end_span)।"
+    },
+    {
+      "id": "PHY-12-033",
+      "chapter": 3,
+      "question": "सफेद (White) के लिए कार्बन प्रतिरोध का कलर कोड होता है:",
+      "options": {
+        "A": "6",
+        "B": "7",
+        "C": "8",
+        "D": "9"
+      },
+      "answer": "D",
+      "explanation": "BBROYGBVGW trick ke anusaar White ka sankhyatmak code 9 hota hai[span_38](start_span)[span_38](end_span)।"
+    },
+    {
+      "id": "PHY-12-034",
+      "chapter": 3,
+      "question": "तापक्रम बढ़ाने पर धातु के प्रतिरोध का मान:",
+      "options": {
+        "A": "बढ़ता है",
+        "B": "घटता है",
+        "C": "अपरिवर्तित रहता है",
+        "D": "इनमें से कोई नहीं"
+      },
+      "answer": "A",
+      "explanation": "धातुओं में तापमान बढ़ाने पर इलेक्ट्रॉनों के बीच टक्कर बढ़ती है, jisse pratirodh badhta hai[span_39](start_span)[span_39](end_span)।"
+    },
+    {
+      "id": "PHY-12-035",
+      "chapter": 3,
+      "question": "एक सूखे सेल का वि० वा० बल 1.5 V है और आंतरिक प्रतिरोध 0.5 Ω है। यदि यह सेल एक बाहरी प्रतिरोध में 1A की धारा भेजता है, तो सेल का विभवांतर होगा:",
+      "options": {
+        "A": "1.5 V",
+        "B": "1 V",
+        "C": "0.5 V",
+        "D": "0 V"
+      },
+      "answer": "B",
+      "explanation": "V = E - Ir = 1.5 - (1 × 0.5) = 1.0 V[span_40](start_span)[span_40](end_span)।"
+    },
+    {
+      "id": "PHY-12-036",
+      "chapter": 3,
+      "question": "समान प्रतिरोध वाले n प्रतिरोधों को पहले श्रेणीक्रम में और फिर समानांतर क्रम में जोड़ा जाता है। श्रेणीक्रम के कुल प्रतिरोध तथा समानांतर क्रम के कुल प्रतिरोधों का अनुपात होगा:",
+      "options": {
+        "A": "n²",
+        "B": "n",
+        "C": "√n",
+        "D": "n⁴"
+      },
+      "answer": "A",
+      "explanation": "R_series / R_parallel = (n R) / (R / n) = n²[span_41](start_span)[span_41](end_span)।"
+    },
+    {
+      "id": "PHY-12-037",
+      "chapter": 3,
+      "question": "किरचॉफ का जंक्शन नियम किस संरक्षण सिद्धांत पर आधारित है?",
+      "options": {
+        "A": "द्रव्यमान",
+        "B": "आवेश",
+        "C": "ऊर्जा",
+        "D": "इनमें से कोई नहीं"
+      },
+      "answer": "B",
+      "explanation": "किरचॉफ का प्रथम नियम (जंक्शन नियम) आवेश संरक्षण सिद्धांत पर आधारित है[span_42](start_span)[span_42](end_span)।"
+    },
+    {
+      "id": "PHY-12-038",
+      "chapter": 3,
+      "question": "प्रतिरोध की विमा है:",
+      "options": {
+        "A": "[ML²T⁻³A⁻²]",
+        "B": "[MLT⁻²A⁻²]",
+        "C": "[MLT⁻²A⁻¹]",
+        "D": "[MLT⁻²A]"
+      },
+      "answer": "A",
+      "explanation": "R = V / I = [ML²T⁻³A⁻¹] / [A] = [ML²T⁻³A⁻²][span_43](start_span)[span_43](end_span)।"
+    },
+    {
+      "id": "PHY-12-039",
+      "chapter": 3,
+      "question": "विशिष्ट प्रतिरोध या प्रतिरोधकता का S.I. मात्रक है:",
+      "options": {
+        "A": "Ω · m",
+        "B": "Ω · m²",
+        "C": "A m",
+        "D": "Ω · m⁻¹"
+      },
+      "answer": "A",
+      "explanation": "प्रतिरोधकता ρ = R A / l, iski ikai Ohm-meter (Ω·m) hoti hai[span_44](start_span)[span_44](end_span)।"
+    },
+    {
+      "id": "PHY-12-040",
+      "chapter": 3,
+      "question": "1000 W हीटर, 230 V से चिह्नित है, उसका प्रतिरोध क्या है?",
+      "options": {
+        "A": "22.9 Ω",
+        "B": "32.9 Ω",
+        "C": "42.9 Ω",
+        "D": "52.9 Ω"
+      },
+      "answer": "D",
+      "explanation": "R = V² / P = (230 × 230) / 1000 = 52900 / 1000 = 52.9 Ω[span_45](start_span)[span_45](end_span)।"
+    },
+    {
+      "id": "PHY-12-041",
+      "chapter": 3,
+      "question": "विद्युत-हीटर में किस पदार्थ का व्यवहार किया जाता है?",
+      "options": {
+        "A": "ताम्बा",
+        "B": "प्लैटिनम",
+        "C": "टंग्स्टन",
+        "D": "नाइक्रोम"
+      },
+      "answer": "D",
+      "explanation": "नाइक्रोम का उच्च गलनांक और उच्च प्रतिरोधकता होने के कारण हीटर में इसका उपयोग होता है[span_46](start_span)[span_46](end_span)।"
+    },
+    {
+      "id": "PHY-12-042",
+      "chapter": 3,
+      "question": "हमारे पास 220 V पर 40 W, 60 W और 100 W के तीन बल्ब हैं। इनमें से सबसे कम प्रतिरोध किसका है?",
+      "options": {
+        "A": "40 वाट बल्ब",
+        "B": "60 वाट बल्ब",
+        "C": "100 वाट बल्ब",
+        "D": "अज्ञात"
+      },
+      "answer": "C",
+      "explanation": "R = V² / P se spasht hai ki jis bulb ki power sabse adhik hogi, uska pratirodh sabse kam hoga (100 W)[span_47](start_span)[span_47](end_span)।"
+    },
+    {
+      "id": "PHY-12-043",
+      "chapter": 4,
+      "question": "निम्नलिखित में कौन गैल्वनोमीटर नियतांक के लिए सही है?",
+      "options": {
+        "A": "C / (NAB)",
+        "B": "C B / (NA)",
+        "C": "C (A / NB)",
+        "D": "C (N / AB)"
+      },
+      "answer": "A",
+      "explanation": "Galvanometer constant G = C / (N A B) hota hai[span_48](start_span)[span_48](end_span)।"
+    },
+    {
+      "id": "PHY-12-044",
+      "chapter": 4,
+      "question": "साइक्लोट्रॉन आवृत्ति का मान है:",
+      "options": {
+        "A": "qB / (π m)",
+        "B": "π m / (qB)",
+        "C": "2π m / (qB)",
+        "D": "qB / (2π m)"
+      },
+      "answer": "D",
+      "explanation": "Cyclotron frequency f = 1 / T = qB / (2π m) hoti hai[span_49](start_span)[span_49](end_span)।"
+    },
+    {
+      "id": "PHY-12-045",
+      "chapter": 4,
+      "question": "चुम्बकीय क्षेत्र की विमा है:",
+      "options": {
+        "A": "[I⁻¹ M L⁰ T⁻²]",
+        "B": "[I⁰ M L T⁻²]",
+        "C": "[I M L T⁻¹]",
+        "D": "[I M⁻¹ L⁻¹ T⁻²]"
+      },
+      "answer": "A",
+      "explanation": "F = qvB se B = F / (qv) = [MLT⁻²] / ([IT][LT⁻¹]) = [M L⁰ T⁻² I⁻¹][span_50](start_span)[span_50](end_span)।"
+    },
+    {
+      "id": "PHY-12-046",
+      "chapter": 4,
+      "question": "लम्बे सीधे चालक तार से i ऐम्पियर धारा प्रवाहित होने से इससे r दूरी पर चुम्बकीय क्षेत्र होता है:",
+      "options": {
+        "A": "(2 μ₀ I) / (4π r)",
+        "B": "(μ₀ I) / (4π r)",
+        "C": "(1 / 4πμ₀) · (I / r)",
+        "D": "(4π r) / (3 μ₀ I)"
+      },
+      "answer": "A",
+      "explanation": "B = (μ₀ I) / (2π r) = (2 μ₀ I) / (4π r)[span_51](start_span)[span_51](end_span)।"
+    },
+    {
+      "id": "PHY-12-047",
+      "chapter": 4,
+      "question": "n समान फेरों वाली तथा त्रिज्या r की एक वृत्ताकार धारावाही कुण्डली में धारा स्थापित है, तो इसके केंद्र पर चुंबकीय क्षेत्र का मान होता है:",
+      "options": {
+        "A": "(I n) / (2 μ₀ r)",
+        "B": "(2 μ₀ I) / (4π r)",
+        "C": "(μ₀ 2I) / r",
+        "D": "(μ₀ n I) / (2r)"
+      },
+      "answer": "D",
+      "explanation": "वृत्ताकार कुंडली के केंद्र पर चुंबकीय क्षेत्र B = (μ₀ n I) / (2r) hota hai[span_52](start_span)[span_52](end_span)।"
+    },
+    {
+      "id": "PHY-12-048",
+      "chapter": 4,
+      "question": "यदि एक आदर्श परिनालिका को इसकी लंबाई के लम्बवत् तल से काट दिया जाय तो इसके अक्ष के छोर पर चुम्बकीय प्रेरण होगा:",
+      "options": {
+        "A": "μ₀ n i",
+        "B": "2 μ₀ n i",
+        "C": "(1/2) μ₀ n i",
+        "D": "4 μ₀ n i"
+      },
+      "answer": "C",
+      "explanation": "परिनालिका के सिरों/छोर पर चुंबकीय क्षेत्र केंद्र का आधा B_end = (1/2) μ₀ n i hota hai[span_53](start_span)[span_53](end_span)।"
+    },
+    {
+      "id": "PHY-12-049",
+      "chapter": 4,
+      "question": "1 ऐम्पियर परास के एक आमीटर का प्रतिरोध 0.9 Ω है। इसका परास 10 ऐम्पियर करने के लिए आवश्यक शंट होगा:",
+      "options": {
+        "A": "0.1 Ω",
+        "B": "0.01 Ω",
+        "C": "0.9 Ω",
+        "D": "1 Ω"
+      },
+      "answer": "A",
+      "explanation": "S = (I_g × G) / (I - I_g) = (1 × 0.9) / (10 - 1) = 0.9 / 9 = 0.1 Ω[span_54](start_span)[span_54](end_span)।"
+    },
+    {
+      "id": "PHY-12-050",
+      "chapter": 4,
+      "question": "शंट के प्रयोग में धारामापी की सुग्राहिता:",
+      "options": {
+        "A": "घट जाती है",
+        "B": "बढ़ जाती है",
+        "C": "अपरिवर्तित रहती है",
+        "D": "इनमें से कोई नहीं"
+      },
+      "answer": "A",
+      "explanation": "शंट लगाने से अधिकांश धारा शंट से होकर गुजरती है, jisse galvanometer ki sugrahita ghat jati hai[span_55](start_span)[span_55](end_span)।"
+    },
+    {
+      "id": "PHY-12-051",
+      "chapter": 4,
+      "question": "निर्वात् की चुम्बकशीलता (Permeability) μ₀ का मान होता है:",
+      "options": {
+        "A": "4π × 10⁻⁵ H/m",
+        "B": "4π × 10⁻⁹ H/m",
+        "C": "4π × 10⁻⁷ H/m",
+        "D": "4π × 10⁷ H/m"
+      },
+      "answer": "C",
+      "explanation": "μ₀ ka maan 4π × 10⁻⁷ Henry/meter (H/m) ya T m A⁻¹ hota hai[span_56](start_span)[span_56](end_span)।"
+    },
+    {
+      "id": "PHY-12-052",
+      "chapter": 4,
+      "question": "किसी आवेशित कण को चुंबकीय क्षेत्र रेखा के अनुदिश गति दी जाती है। कण पर कार्यकारी बल होगा:",
+      "options": {
+        "A": "वेग की दिशा में",
+        "B": "वेग की दिशा के विपरीत",
+        "C": "वेग की दिशा के लंबवत",
+        "D": "शून्य"
+      },
+      "answer": "D",
+      "explanation": "F = q v B sin θ; yahan θ = 0° hone par sin 0° = 0, isliye bal shunya hota hai[span_57](start_span)[span_57](end_span)।"
+    },
+    {
+      "id": "PHY-12-053",
+      "chapter": 5,
+      "question": "निम्नलिखित में छोटे चुम्बक के लिए कौन सही है?",
+      "options": {
+        "A": "B_अक्षीय = B_निरक्षीय",
+        "B": "B_अक्षीय = 2 B_निरक्षीय",
+        "C": "B_निरक्षीय = 2 B_अक्षीय",
+        "D": "B_अक्षीय = 3 B_निरक्षीय"
+      },
+      "answer": "B",
+      "explanation": "समान दूरी पर छोटे चुंबक के लिए अक्षीय क्षेत्र निरक्षीय क्षेत्र का दोगुना होता है (B_axial = 2 B_equatorial)[span_58](start_span)[span_58](end_span)।"
+    },
+    {
+      "id": "PHY-12-054",
+      "chapter": 5,
+      "question": "एक समान चुम्बकीय क्षेत्र में चुम्बकीय दोलन के आवर्तकाल का व्यंजक होता है:",
+      "options": {
+        "A": "T = 2π √(I / B_H)",
+        "B": "T = 2π √(I / (M B_H))",
+        "C": "T = 2π √((M B_H) / I)",
+        "D": "T = 2π √(M B_H)"
+      },
+      "answer": "B",
+      "explanation": "चुंबकीय सुई का दोलन काल T = 2π √(I / (M B_H)) hota hai[span_59](start_span)[span_59](end_span)।"
+    },
+    {
+      "id": "PHY-12-055",
+      "chapter": 5,
+      "question": "एक लूप का चुम्बकीय आघूर्ण M आरोपित एक समान चुंबकीय क्षेत्र B से कुछ कोण पर दिष्ट है। लूप पर लगता बलाघूर्ण है:",
+      "options": {
+        "A": "M × B",
+        "B": "B × M",
+        "C": "M · B",
+        "D": "-M · B"
+      },
+      "answer": "A",
+      "explanation": "धारा लूप पर बलाघूर्ण τ = M × B hota hai[span_60](start_span)[span_60](end_span)।"
+    },
+    {
+      "id": "PHY-12-056",
+      "chapter": 5,
+      "question": "चुंबक की ज्यामितीय लंबाई (L_g) तथा चुंबकीय लंबाई (L_m) में संबंध होता है:",
+      "options": {
+        "A": "L_m = (5/6) L_g",
+        "B": "L_m = (6/5) L_g",
+        "C": "L_m = L_g",
+        "D": "L_m = 2 L_g"
+      },
+      "answer": "A",
+      "explanation": "चुंबकीय लंबाई ज्यामितीय लंबाई की लगभग 84% ya (5/6) hoti hai[span_61](start_span)[span_61](end_span)।"
+    },
+    {
+      "id": "PHY-12-057",
+      "chapter": 5,
+      "question": "क्यूरी ताप वह ताप होता है जिससे कम ताप पर:",
+      "options": {
+        "A": "लौह चुम्बकीय पदार्थ, अनुचुम्बकीय पदार्थ बन जाता है।",
+        "B": "लौह चुम्बकीय पदार्थ, प्रतिचुम्बकीय पदार्थ बन जाता है।",
+        "C": "अनुचुम्बकीय पदार्थ, प्रतिचुम्बकीय पदार्थ बन जाता है।",
+        "D": "लौह चुम्बकीय पदार्थ, लौह चुम्बकीय पदार्थ ही बना रहता है।"
+      },
+      "answer": "D",
+      "explanation": "क्यूरी ताप से ऊपर लौह-चुंबकीय अनुचुंबकीय बन जाता है, lekin usse kam taap par lauh-chumbakiya bana rehta hai[span_62](start_span)[span_62](end_span)।"
+    },
+    {
+      "id": "PHY-12-058",
+      "chapter": 6,
+      "question": "चुंबकीय फ्लक्स का व्यंजक है:",
+      "options": {
+        "A": "∫ B × dA = φ",
+        "B": "φ = ∫ B · dA",
+        "C": "φ = ∮ B · dl",
+        "D": "इनमें से कोई नहीं"
+      },
+      "answer": "B",
+      "explanation": "चुंबकीय फ्लक्स φ = ∫ B · dA hota hai[span_63](start_span)[span_63](end_span)।"
+    },
+    {
+      "id": "PHY-12-059",
+      "chapter": 6,
+      "question": "परिनालिका का स्वप्रेरकत्व होता है:",
+      "options": {
+        "A": "L = (μ₀ N² A) / l",
+        "B": "L = (μ₀ N A) / l",
+        "C": "L = (N A) / l",
+        "D": "इनमें से कोई नहीं"
+      },
+      "answer": "A",
+      "explanation": "लम्बी परिनालिका का स्वप्रेरकत्व L = (μ₀ N² A) / l hota hai[span_64](start_span)[span_64](end_span)।"
+    },
+    {
+      "id": "PHY-12-060",
+      "chapter": 6,
+      "question": "प्रेरक द्वारा संग्रह चुंबकीय ऊर्जा (U) होता है:",
+      "options": {
+        "A": "U = (1/2) L I",
+        "B": "U = L I²",
+        "C": "U = (1/2) L I²",
+        "D": "इनमें से कोई नहीं"
+      },
+      "answer": "C",
+      "explanation": "प्रेरक में संचित चुंबकीय स्थितिज ऊर्जा U = (1/2) L I² hoti hai[span_65](start_span)[span_65](end_span)।"
+    },
+    {
+      "id": "PHY-12-061",
+      "chapter": 6,
+      "question": "प्रेरण कुण्डली जनित्र (Induction Coil) उत्पन्न करती है:",
+      "options": {
+        "A": "प्रबल धारा",
+        "B": "उच्च वोल्टता",
+        "C": "अल्प-धारा",
+        "D": "अल्प वोल्टता"
+      },
+      "answer": "B",
+      "explanation": "प्रेरण कुंडली का मुख्य कार्य कम वोल्टता दिष्ट धारा से अत्यंत उच्च वोल्टता उत्पन्न करना होता है[span_66](start_span)[span_66](end_span)।"
+    },
+    {
+      "id": "PHY-12-062",
+      "chapter": 6,
+      "question": "पास-पास रखी कुण्डलियों के एक युग्म का अन्योन्य प्रेरकत्व 1.5 H है। इनमें एक कुण्डली में वैद्युत धारा शून्य से बढ़ते हुए 0.5s में 20 A हो जाती है तो दूसरी कुण्डली से चुम्बकीय फ्लक्स बंधता में परिवर्तन है:",
+      "options": {
+        "A": "4 H",
+        "B": "30 Wb",
+        "C": "3.125 V",
+        "D": "इनमें कोई नहीं"
+      },
+      "answer": "B",
+      "explanation": "Δφ = M × ΔI = 1.5 × (20 - 0) = 30 Weber (Wb)[span_67](start_span)[span_67](end_span)।"
+    },
+    {
+      "id": "PHY-12-063",
+      "chapter": 7,
+      "question": "प्रत्यावर्ती धारा परिपथ में यथार्थ माध्य शक्ति का व्यंजक होता है:",
+      "options": {
+        "A": "P_av = E_rms cos φ",
+        "B": "P_av = I_rms cos φ",
+        "C": "P_av = E_rms I_rms sin φ",
+        "D": "P_av = E_rms I_rms cos φ"
+      },
+      "answer": "D",
+      "explanation": "औसत शक्ति P_av = E_rms × I_rms × cos φ hoti hai[span_68](start_span)[span_68](end_span)।"
+    },
+    {
+      "id": "PHY-12-064",
+      "chapter": 7,
+      "question": "शक्ति गुणांक के बराबर होता है:",
+      "options": {
+        "A": "R / Z",
+        "B": "Z / R",
+        "C": "R · Z",
+        "D": "ω · L"
+      },
+      "answer": "A",
+      "explanation": "प्रतिबाधा त्रिभुज से शक्ति गुणांक cos φ = R / Z hota hai[span_69](start_span)[span_69](end_span)।"
+    },
+    {
+      "id": "PHY-12-065",
+      "chapter": 7,
+      "question": "L-R परिपथ में कलांतर होता है:",
+      "options": {
+        "A": "sin⁻¹(ωL / R)",
+        "B": "cos⁻¹(ωL / R)",
+        "C": "tan⁻¹(ωL / R)",
+        "D": "tan⁻¹(R / ωL)"
+      },
+      "answer": "C",
+      "explanation": "L-R परिपथ में tan φ = X_L / R = ωL / R, isliye φ = tan⁻¹(ωL / R)[span_70](start_span)[span_70](end_span)।"
+    },
+    {
+      "id": "PHY-12-066",
+      "chapter": 7,
+      "question": "ट्रांसफॉर्मर में परिणमन अनुपात (Transformation ratio) होता है:",
+      "options": {
+        "A": "V_s / V_p",
+        "B": "V_p / V_s",
+        "C": "1 / (V_s · V_p)",
+        "D": "1 / (I_s · I_p)"
+      },
+      "answer": "A",
+      "explanation": "परिणमन अनुपात k = N_s / N_p = V_s / V_p hota hai[span_71](start_span)[span_71](end_span)।"
+    },
+    {
+      "id": "PHY-12-067",
+      "chapter": 7,
+      "question": "विद्युत-अनुनाद के लिए कौन सही है?",
+      "options": {
+        "A": "X_L > X_C",
+        "B": "X_L < X_C",
+        "C": "X_L = X_C",
+        "D": "X_L >> X_C"
+      },
+      "answer": "C",
+      "explanation": "अनुनाद की स्थिति में प्रेरणिक प्रतिघात और धारितीय प्रतिघात बराबर होते हैं (X_L = X_C)[span_72](start_span)[span_72](end_span)।"
+    },
+    {
+      "id": "PHY-12-068",
+      "chapter": 7,
+      "question": "प्रत्यावर्ती धारा के औसत मान के लिए कौन सही है?",
+      "options": {
+        "A": "I_av = 0.437 I₀",
+        "B": "I_av = 0.537 I₀",
+        "C": "I_av = 0.637 I₀",
+        "D": "I_av = 0.737 I₀"
+      },
+      "answer": "C",
+      "explanation": "अर्ध चक्र के लिए औसत मान I_av = (2 / π) I₀ ≈ 0.637 I₀ hota hai[span_73](start_span)[span_73](end_span)।"
+    },
+    {
+      "id": "PHY-12-069",
+      "chapter": 7,
+      "question": "पूर्ण चक्र के लिए मध्य (औसत) प्रत्यावर्ती धारा का मान होता है:",
+      "options": {
+        "A": "0",
+        "B": "2I",
+        "C": "I / 2",
+        "D": "I"
+      },
+      "answer": "A",
+      "explanation": "एक पूर्ण चक्र में धनात्मक और ऋणात्मक अर्ध-चक्र का योग शून्य होने के कारण औसत धारा शून्य होती है[span_74](start_span)[span_74](end_span)।"
+    },
+    {
+      "id": "PHY-12-070",
+      "chapter": 7,
+      "question": "किसी प्रत्यावर्ती परिपथ में धारा i = 5 cos ωt ऐम्पियर तथा विभव V = 200 sin ωt वोल्ट है। परिपथ में शक्ति हानि है:",
+      "options": {
+        "A": "20 W",
+        "B": "40 W",
+        "C": "1000 W",
+        "D": "शून्य"
+      },
+      "answer": "D",
+      "explanation": "धारा और वोल्टता के बीच कलांतर π/2 (90°) hai, isliye cos 90° = 0 hone se shakti kshay shunya hota hai[span_75](start_span)[span_75](end_span)।"
+    },
+    {
+      "id": "PHY-12-071",
+      "chapter": 2,
+      "question": "1 μF धारिता वाले संधारित्र की पट्टियों के बीच 1 वोल्ट विभवान्तर रखने पर आवेशित संधारित्र पर आवेश होगा:",
+      "options": {
+        "A": "शून्य",
+        "B": "1 μC",
+        "C": "1 C",
+        "D": "अनन्त"
+      },
+      "answer": "B",
+      "explanation": "q = C × V = 1 μF × 1 V = 1 μC[span_76](start_span)[span_76](end_span)।"
+    },
+    {
+      "id": "PHY-12-072",
+      "chapter": 7,
+      "question": "एक प्रत्यावर्ती विद्युत् धारा का समीकरण I = 0.6 sin(100π t) से निरूपित है। विद्युत् धारा की आवृत्ति है:",
+      "options": {
+        "A": "50π",
+        "B": "50",
+        "C": "100π",
+        "D": "100"
+      },
+      "answer": "B",
+      "explanation": "ω = 2π f = 100π se f = 100π / (2π) = 50 Hz[span_77](start_span)[span_77](end_span)।"
+    },
+    {
+      "id": "PHY-12-073",
+      "chapter": 7,
+      "question": "प्रत्यावर्ती धारा के शिखर मान तथा वर्ग माध्य मूल मान का अनुपात है:",
+      "options": {
+        "A": "2",
+        "B": "√2",
+        "C": "1 / √2",
+        "D": "1 / 2"
+      },
+      "answer": "B",
+      "explanation": "I_rms = I₀ / √2, isliye I₀ / I_rms = √2[span_78](start_span)[span_78](end_span)।"
+    },
+    {
+      "id": "PHY-12-074",
+      "chapter": 7,
+      "question": "ट्रांसफॉर्मर के लिए निम्नलिखित में कौन सही है?",
+      "options": {
+        "A": "यह A.C. को D.C. में बदलता है",
+        "B": "यह D.C. को A.C. में बदलता है",
+        "C": "यह D.C. वोल्टता को बढ़ाता या घटाता है",
+        "D": "यह A.C. वोल्टता को बढ़ाता या घटाता है"
+      },
+      "answer": "D",
+      "explanation": "ट्रांसफॉर्मर केवल अन्योन्य प्रेरण पर आधारित होता है और प्रत्यावर्ती (AC) वोल्टता को स्टेप-अप या स्टेप-डाउन करता है[span_79](start_span)[span_79](end_span)।"
+    },
+    {
+      "id": "PHY-12-075",
+      "chapter": 7,
+      "question": "प्रत्यावर्ती धारा का r.m.s. मान (I_rms) और शिखर मान (I₀) के बीच संबंध होता है:",
+      "options": {
+        "A": "I_rms = 0.505 I₀",
+        "B": "I_rms = 0.606 I₀",
+        "C": "I_rms = 0.707 I₀",
+        "D": "I_rms = 0.808 I₀"
+      },
+      "answer": "C",
+      "explanation": "I_rms = I₀ / √2 = 0.707 I₀[span_80](start_span)[span_80](end_span)।"
+    },
+    {
+      "id": "PHY-12-076",
+      "chapter": 8,
+      "question": "निम्नलिखित में कौन निर्वात में विद्युत चुम्बकीय तरंग की चाल के लिए सही है?",
+      "options": {
+        "A": "c = √(μ₀ ε₀)",
+        "B": "c = 1 / √(μ₀ ε₀)",
+        "C": "c = √(μ₀ / ε₀)",
+        "D": "c = √(ε₀ / μ₀)"
+      },
+      "answer": "B",
+      "explanation": "मैक्सवेल के अनुसार निर्वात में प्रकाश की चाल c = 1 / √(μ₀ ε₀) hoti hai[span_81](start_span)[span_81](end_span)।"
+    },
+    {
+      "id": "PHY-12-077",
+      "chapter": 8,
+      "question": "विद्युत-चुम्बकीय तरंगों की प्रकृति होती है:",
+      "options": {
+        "A": "अनुप्रस्थ",
+        "B": "अनुदैर्ध्य",
+        "C": "(A) और (B) दोनों",
+        "D": "विद्युतीय"
+      },
+      "answer": "A",
+      "explanation": "विद्युत और चुंबकीय सदिश तरंग संचरण की दिशा के लंबवत दोलन करते हैं, isliye inki prakriti anuprastha (transverse) hoti hai[span_82](start_span)[span_82](end_span)।"
+    },
+    {
+      "id": "PHY-12-078",
+      "chapter": 8,
+      "question": "(1/2) ε₀ E² के विमीय सूत्र के समतुल्य विमा की राशि है:",
+      "options": {
+        "A": "B² / (2 μ₀)",
+        "B": "(1/2) B² μ₀",
+        "C": "μ₀² / (2B)",
+        "D": "(1/2) B μ₀²"
+      },
+      "answer": "A",
+      "explanation": "(1/2) ε₀ E² विद्युत ऊर्जा घनत्व hai aur B² / (2 μ₀) चुंबकीय ऊर्जा घनत्व hai, dono ki vima samaan hoti hai[span_83](start_span)[span_83](end_span)।"
+    },
+    {
+      "id": "PHY-12-079",
+      "chapter": 8,
+      "question": "1 / (μ₀ ε₀) का विमा-सूत्र है:",
+      "options": {
+        "A": "[L² T⁻²]",
+        "B": "[L⁻² T²]",
+        "C": "[L T⁻¹]",
+        "D": "[L⁻¹ T]"
+      },
+      "answer": "A",
+      "explanation": "c = 1 / √(μ₀ ε₀) hone se 1 / (μ₀ ε₀) = c² hota hai, jiska sutra [LT⁻¹]² = [L² T⁻²] hai[span_84](start_span)[span_84](end_span)।"
+    },
+    {
+      "id": "PHY-12-080",
+      "chapter": 8,
+      "question": "अवरक्त किरणों (Infrared rays) का मुख्य प्रभाव है:",
+      "options": {
+        "A": "देखने की संवेदना",
+        "B": "ऊष्मीय प्रभाव",
+        "C": "प्रकाश वैद्युत प्रभाव",
+        "D": "इनमें से कोई नहीं"
+      },
+      "answer": "B",
+      "explanation": "अवरक्त किरणें ताप बढ़ाती हैं, isliye inka mukhya prabhav ooshmiya prabhav (heating effect) hota hai[span_85](start_span)[span_85](end_span)।"
+    },
+    {
+      "id": "PHY-12-081",
+      "chapter": 8,
+      "question": "निम्नांकित में किसकी महत्तम वेधन क्षमता है?",
+      "options": {
+        "A": "X-किरणें",
+        "B": "कैथोड किरणें",
+        "C": "α-किरणें",
+        "D": "γ-किरणें"
+      },
+      "answer": "D",
+      "explanation": "गामा किरणों (γ-rays) ki urja aur aavriti sabse adhik hone ke karan inki vedhan kshamta sarvadhik hoti hai[span_86](start_span)[span_86](end_span)।"
+    },
+    {
+      "id": "PHY-12-082",
+      "chapter": 8,
+      "question": "पानी को शुद्धीकरण करने के लिए कौन-सा विद्युत चुंबकीय तरंग का उपयोग करते हैं?",
+      "options": {
+        "A": "अवरक्त किरणें",
+        "B": "पराबैंगनी किरणें (UV)",
+        "C": "रेडियो तरंग",
+        "D": "उपरोक्त सभी"
+      },
+      "answer": "B",
+      "explanation": "पराबैंगनी किरणें (Ultraviolet rays) बैक्टीरिया और रोगाणुओं को नष्ट करके पानी को शुद्ध करती हैं[span_87](start_span)[span_87](end_span)।"
+    },
+    {
+      "id": "PHY-12-083",
+      "chapter": 8,
+      "question": "माँसपेशियों के दर्द के उपचार के लिए कौन-सा तरंग का उपयोग करते हैं?",
+      "options": {
+        "A": "अवरक्त किरणें (Infrared)",
+        "B": "पराबैंगनी किरणें",
+        "C": "रेडियो तरंगें",
+        "D": "माइक्रो तरंगें"
+      },
+      "answer": "A",
+      "explanation": "अवरक्त किरणों का उपयोग सिकाई और मांसपेशियों के दर्द के उपचार (physiotherapy) में किया जाता है[span_88](start_span)[span_88](end_span)।"
+    },
+    {
+      "id": "PHY-12-084",
+      "chapter": 8,
+      "question": "विस्थापन धारा (Displacement Current) का व्यंजक है:",
+      "options": {
+        "A": "ε₀ μ₀ (dφ_E / dt)",
+        "B": "ε₀ (dφ_E / dt)",
+        "C": "μ₀ (dφ_E / dt)",
+        "D": "dφ_E / dt"
+      },
+      "answer": "B",
+      "explanation": "मैक्सवेल के विस्थापन धारा का सूत्र I_d = ε₀ (dφ_E / dt) hota hai[span_89](start_span)[span_89](end_span)।"
+    }
+  ]
+}
