@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "subject": "mathematics",
+  "chapter": 7,
+  "title": "समाकलन (Integrals)",
+  "categories": {
+    "shortAnswers": [
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int \\sin^2(2x+5)\\,dx$ [NCERT Ex 7.3 Q1]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र): त्रिकोणमितीय सर्वसमिका $\\sin^2\\theta = \\frac{1 - \\cos 2\\theta}{2}$ तथा सूत्र $\\int 1\\,dx = x$, $\\int \\cos(ax+b)\\,dx = \\frac{\\sin(ax+b)}{a}$।",
+          "चरण 2: कोण $\\theta = 2x + 5$ हेतु मान रखने पर: $\\sin^2(2x+5) = \\frac{1 - \\cos[2(2x+5)]}{2} = \\frac{1 - \\cos(4x+10)}{2}$",
+          "चरण 3: समाकलन रूप में लिखने पर: $\\frac{1}{2}\\int [1 - \\cos(4x+10)]\\,dx = \\frac{1}{2}\\int 1\\,dx - \\frac{1}{2}\\int \\cos(4x+10)\\,dx$",
+          "चरण 4: समाकलन करने पर: $\\frac{1}{2}(x) - \\frac{1}{2}\\left[\\frac{\\sin(4x+10)}{4}\\right] + C = \\frac{x}{2} - \\frac{\\sin(4x+10)}{8} + C$",
+          "उत्तर: $\\frac{x}{2} - \\frac{\\sin(4x+10)}{8} + C$"
+        ]
+      },
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int \\sin 3x \\cos 4x\\,dx$ [NCERT Ex 7.3 Q2]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र): सर्वसमिका $2\\sin A\\cos B = \\sin(A+B) + \\sin(A-B)$ तथा $\\sin(-\\theta) = -\\sin\\theta$, $\\int \\sin(kx)\\,dx = -\\frac{\\cos(kx)}{k}$।",
+          "चरण 2: अंश और हर में 2 से गुणा करने पर: $\\frac{1}{2}\\int 2\\sin 3x\\cos 4x\\,dx$",
+          "चरण 3: सूत्र लागू करने पर: $\\frac{1}{2}\\int [\\sin(3x+4x) + \\sin(3x-4x)]\\,dx = \\frac{1}{2}\\int [\\sin 7x + \\sin(-x)]\\,dx = \\frac{1}{2}\\int (\\sin 7x - \\sin x)\\,dx$",
+          "चरण 4: समाकलन करने पर: $\\frac{1}{2}\\left(-\\frac{\\cos 7x}{7}\\right) - \\frac{1}{2}(-\\cos x) + C = -\\frac{\\cos 7x}{14} + \\frac{\\cos x}{2} + C$",
+          "उत्तर: $\\frac{1}{2}\\cos x - \\frac{1}{14}\\cos 7x + C$"
+        ]
+      },
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int \\sin^3(2x+1)\\,dx$ [NCERT Ex 7.3 Q4]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र): $\\sin^3\\theta = (1 - \\cos^2\\theta)\\sin\\theta$ तथा प्रतिस्थापन विधि।",
+          "चरण 2: समाकल्य रूप: $\\int \\sin^2(2x+1) \\cdot \\sin(2x+1)\\,dx = \\int [1 - \\cos^2(2x+1)]\\sin(2x+1)\\,dx$",
+          "चरण 3: माना $\\cos(2x+1) = t \\implies -2\\sin(2x+1)\\,dx = dt \\implies \\sin(2x+1)\\,dx = -\\frac{1}{2}dt$",
+          "चरण 4: मान रखने पर: $\\int (1 - t^2)\\left(-\\frac{1}{2}\\right)dt = -\\frac{1}{2}\\left(t - \\frac{t^3}{3}\\right) + C = -\\frac{t}{2} + \\frac{t^3}{6} + C$",
+          "चरण 5: $t = \\cos(2x+1)$ रखने पर: $-\\frac{1}{2}\\cos(2x+1) + \\frac{1}{6}\\cos^3(2x+1) + C$",
+          "उत्तर: $-\\frac{1}{2}\\cos(2x+1) + \\frac{1}{6}\\cos^3(2x+1) + C$"
+        ]
+      },
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int \\sin^3 x \\cos^3 x\\,dx$ [NCERT Ex 7.3 Q5]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र): $\\cos^3 x = (1 - \\sin^2 x)\\cos x$, प्रतिस्थापन विधि, तथा घात नियम $\\int t^n\\,dt = \\frac{t^{n+1}}{n+1}$।",
+          "चरण 2: समाकल्य को लिखना: $\\int \\sin^3 x(1 - \\sin^2 x)\\cos x\\,dx = \\int (\\sin^3 x - \\sin^5 x)\\cos x\\,dx$",
+          "चरण 3: माना $\\sin x = t \\implies \\cos x\\,dx = dt$",
+          "चरण 4: मान प्रतिस्थापित करने पर: $\\int (t^3 - t^5)\\,dt = \\frac{t^4}{4} - \\frac{t^6}{6} + C$",
+          "चरण 5: $t = \\sin x$ रखने पर: $\\frac{1}{4}\\sin^4 x - \\frac{1}{6}\\sin^6 x + C$",
+          "उत्तर: $\\frac{1}{4}\\sin^4 x - \\frac{1}{6}\\sin^6 x + C$"
+        ]
+      },
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int \\sin 4x \\sin 8x\\,dx$ [NCERT Ex 7.3 Q7]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र): सर्वसमिका $2\\sin A\\sin B = \\cos(A-B) - \\cos(A+B)$ तथा सूत्र $\\int \\cos(kx)\\,dx = \\frac{\\sin(kx)}{k}$।",
+          "चरण 2: 2 से गुणा व भाग करने पर: $\\frac{1}{2}\\int 2\\sin 8x\\sin 4x\\,dx$",
+          "चरण 3: सूत्र लागू करने पर: $\\frac{1}{2}\\int [\\cos(8x-4x) - \\cos(8x+4x)]\\,dx = \\frac{1}{2}\\int (\\cos 4x - \\cos 12x)\\,dx$",
+          "चरण 4: समाकलन करने पर: $\\frac{1}{2}\\left(\\frac{\\sin 4x}{4} - \\frac{\\sin 12x}{12}\\right) + C = \\frac{\\sin 4x}{8} - \\frac{\\sin 12x}{24} + C$",
+          "उत्तर: $\\frac{1}{8}\\sin 4x - \\frac{1}{24}\\sin 12x + C$"
+        ]
+      },
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int \\frac{1 - \\cos x}{1 + \\cos x}\\,dx$ [NCERT Ex 7.3 Q8]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र): अर्द्ध-कोण सर्वसमिकाएँ $1 - \\cos x = 2\\sin^2(x/2)$, $1 + \\cos x = 2\\cos^2(x/2)$, $\\tan^2\\theta = \\sec^2\\theta - 1$ तथा $\\int \\sec^2(kx)\\,dx = \\frac{\\tan(kx)}{k}$।",
+          "चरण 2: मान रखने पर: $\\int \\frac{2\\sin^2(x/2)}{2\\cos^2(x/2)}\\,dx = \\int \\tan^2\\left(\\frac{x}{2}\\right)dx$",
+          "चरण 3: सर्वसमिका से: $\\int \\left[\\sec^2\\left(\\frac{x}{2}\\right) - 1\\right]dx = \\int \\sec^2\\left(\\frac{x}{2}\\right)dx - \\int 1\\,dx$",
+          "चरण 4: समाकलन करने पर: $\\frac{\\tan(x/2)}{1/2} - x + C = 2\\tan\\left(\\frac{x}{2}\\right) - x + C$",
+          "उत्तर: $2\\tan\\left(\\frac{x}{2}\\right) - x + C$"
+        ]
+      },
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int \\frac{\\cos x}{1 + \\cos x}\\,dx$ [NCERT Ex 7.3 Q9]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र): अंश में 1 जोड़कर घटाने पर $\\frac{\\cos x+1-1}{1+\\cos x} = 1 - \\frac{1}{2}\\sec^2(x/2)$ तथा $\\int \\sec^2(x/2)\\,dx = 2\\tan(x/2)$।",
+          "चरण 2: रूपान्तरण: $\\int \\left[\\frac{1+\\cos x}{1+\\cos x} - \\frac{1}{1+\\cos x}\\right]dx = \\int \\left[1 - \\frac{1}{2\\cos^2(x/2)}\\right]dx = \\int \\left[1 - \\frac{1}{2}\\sec^2\\left(\\frac{x}{2}\\right)\\right]dx$",
+          "चरण 3: समाकलन करने पर: $x - \\frac{1}{2}\\left[\\frac{\\tan(x/2)}{1/2}\\right] + C = x - \\tan\\left(\\frac{x}{2}\\right) + C$",
+          "उत्तर: $x - \\tan\\left(\\frac{x}{2}\\right) + C$"
+        ]
+      },
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int \\frac{\\sin^2 x}{1 + \\cos x}\\,dx$ [NCERT Ex 7.3 Q12]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र): सर्वसमिका $\\sin^2 x = 1 - \\cos^2 x = (1 - \\cos x)(1 + \\cos x)$ तथा $\\int (1 - \\cos x)\\,dx = x - \\sin x + C$।",
+          "चरण 2: अंश के गुणनखंड करने पर: $\\int \\frac{(1 - \\cos x)(1 + \\cos x)}{1 + \\cos x}\\,dx$",
+          "चरण 3: $(1 + \\cos x)$ निरस्त होने पर: $\\int (1 - \\cos x)\\,dx$",
+          "चरण 4: समाकलन करने पर: $x - \\sin x + C$",
+          "उत्तर: $x - \\sin x + C$"
+        ]
+      },
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int \\frac{\\cos 2x - \\cos 2\\alpha}{\\cos x - \\cos \\alpha}\\,dx$ [NCERT Ex 7.3 Q13]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र): सर्वसमिका $\\cos 2\\theta = 2\\cos^2\\theta - 1$, बीजीय सूत्र $a^2 - b^2 = (a-b)(a+b)$ तथा $\\int \\cos\\alpha\\,dx = x\\cos\\alpha$ (चूँकि $\\alpha$ अचर है)।",
+          "चरण 2: अंश में मान रखने पर: $(2\\cos^2 x - 1) - (2\\cos^2\\alpha - 1) = 2\\cos^2 x - 2\\cos^2\\alpha = 2(\\cos^2 x - \\cos^2\\alpha)$",
+          "चरण 3: गुणनखंड करके भाग देने पर: $\\frac{2(\\cos x - \\cos\\alpha)(\\cos x + \\cos\\alpha)}{\\cos x - \\cos\\alpha} = 2(\\cos x + \\cos\\alpha)$",
+          "चरण 4: समाकलन करने पर: $2\\int \\cos x\\,dx + 2\\cos\\alpha\\int 1\\,dx = 2\\sin x + 2x\\cos\\alpha + C$",
+          "उत्तर: $2(\\sin x + x\\cos\\alpha) + C$"
+        ]
+      },
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int \\frac{\\sin^3 x + \\cos^3 x}{\\sin^2 x \\cos^2 x}\\,dx$ [NCERT Ex 7.3 Q17]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र): भिन्नों का पृथक्करण, $\\frac{\\sin x}{\\cos^2 x} = \\sec x\\tan x$, $\\frac{\\cos x}{\\sin^2 x} = \\text{cosec } x\\cot x$ तथा उनके मानक समाकलन।",
+          "चरण 2: पदों को अलग-अलग करने पर: $\\int \\left(\\frac{\\sin^3 x}{\\sin^2 x\\cos^2 x} + \\frac{\\cos^3 x}{\\sin^2 x\\cos^2 x}\\right)dx = \\int (\\sec x\\tan x + \\text{cosec } x\\cot x)\\,dx$",
+          "चरण 3: समाकलन करने पर: $\\sec x + (-\\text{cosec } x) + C = \\sec x - \\text{cosec } x + C$",
+          "उत्तर: $\\sec x - \\text{cosec } x + C$"
+        ]
+      },
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int \\frac{\\cos 2x + 2\\sin^2 x}{\\cos^2 x}\\,dx$ [NCERT Ex 7.3 Q18]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र): सर्वसमिका $\\cos 2x = 1 - 2\\sin^2 x$ तथा $\\int \\sec^2 x\\,dx = \\tan x + C$।",
+          "चरण 2: अंश में $\\cos 2x$ का मान रखने पर: $(1 - 2\\sin^2 x) + 2\\sin^2 x = 1$",
+          "चरण 3: समाकल्य रूप: $\\int \\frac{1}{\\cos^2 x}\\,dx = \\int \\sec^2 x\\,dx$",
+          "चरण 4: समाकलन करने पर: $\\tan x + C$",
+          "उत्तर: $\\tan x + C$"
+        ]
+      },
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int \\sin^{-1}(\\cos x)\\,dx$ [NCERT Ex 7.3 Q21]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र): पूरक कोण संबंध $\\cos x = \\sin\\left(\\frac{\\pi}{2} - x\\right)$, $\\sin^{-1}(\\sin\\theta) = \\theta$ तथा $\\int x^n\\,dx = \\frac{x^{n+1}}{n+1}$।",
+          "चरण 2: प्रतिलोम फलन को सरल करना: $\\sin^{-1}\\left[\\sin\\left(\\frac{\\pi}{2} - x\\right)\\right] = \\frac{\\pi}{2} - x$",
+          "चरण 3: समाकलन करने पर: $\\int \\left(\\frac{\\pi}{2} - x\\right)dx = \\frac{\\pi}{2}\\int 1\\,dx - \\int x\\,dx$",
+          "चरण 4: मान प्राप्त करना: $\\frac{\\pi x}{2} - \\frac{x^2}{2} + C$",
+          "उत्तर: $\\frac{\\pi x}{2} - \\frac{x^2}{2} + C$"
+        ]
+      },
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int \\frac{3x}{1 + 2x^4}\\,dx$ [NCERT Ex 7.4 Q5]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र): $2x^4 = (\\sqrt{2}x^2)^2$ लिखकर प्रतिस्थापन विधि तथा सूत्र $\\int \\frac{1}{1+t^2}\\,dt = \\tan^{-1}t + C$।",
+          "चरण 2: समाकल्य रूप: $\\int \\frac{3x}{1 + (\\sqrt{2}x^2)^2}\\,dx$",
+          "चरण 3: माना $\\sqrt{2}x^2 = t \\implies 2\\sqrt{2}x\\,dx = dt \\implies x\\,dx = \\frac{1}{2\\sqrt{2}}dt$",
+          "चरण 4: मान प्रतिस्थापित करने पर: $3 \\int \\frac{1}{1+t^2} \\cdot \\frac{1}{2\\sqrt{2}}dt = \\frac{3}{2\\sqrt{2}}\\tan^{-1}t + C$",
+          "चरण 5: $t = \\sqrt{2}x^2$ रखने पर: $\\frac{3}{2\\sqrt{2}}\\tan^{-1}(\\sqrt{2}x^2) + C$",
+          "उत्तर: $\\frac{3}{2\\sqrt{2}}\\tan^{-1}(\\sqrt{2}x^2) + C$"
+        ]
+      },
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int \\frac{x - 1}{\\sqrt{x^2 - 1}}\\,dx$ [NCERT Ex 7.4 Q7]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र): पृथक्करण नियम, $\\int \\frac{f'(x)}{\\sqrt{f(x)}}\\,dx = 2\\sqrt{f(x)}$ तथा $\\int \\frac{1}{\\sqrt{x^2-a^2}}\\,dx = \\log|x+\\sqrt{x^2-a^2}|$।",
+          "चरण 2: दो भागों में विभाजित करने पर: $\\int \\frac{x}{\\sqrt{x^2 - 1}}\\,dx - \\int \\frac{1}{\\sqrt{x^2 - 1}}\\,dx$",
+          "चरण 3: प्रथम भाग में $x^2 - 1 = t \\implies 2x\\,dx = dt \\implies x\\,dx = \\frac{1}{2}dt$: $\\frac{1}{2}\\int t^{-1/2}\\,dt = \\frac{1}{2}(2\\sqrt{t}) = \\sqrt{x^2 - 1}$",
+          "चरण 4: द्वितीय भाग का सूत्र मान: $\\log|x + \\sqrt{x^2 - 1}|$",
+          "चरण 5: दोनों भागों को मिलाने पर: $\\sqrt{x^2 - 1} - \\log|x + \\sqrt{x^2 - 1}| + C$",
+          "उत्तर: $\\sqrt{x^2 - 1} - \\log|x + \\sqrt{x^2 - 1}| + C$"
+        ]
+      },
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int \\frac{4x + 1}{\\sqrt{2x^2 + x - 3}}\\,dx$ [NCERT Ex 7.4 Q16]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र): प्रारूप $\\int \\frac{f'(x)}{\\sqrt{f(x)}}\\,dx = 2\\sqrt{f(x)} + C$ जहाँ $f(x) = 2x^2 + x - 3$ है।",
+          "चरण 2: अवकलज की जाँच: $\\frac{d}{dx}(2x^2 + x - 3) = 4x + 1$, जो अंश में पूर्णतः उपस्थित है।",
+          "चरण 3: माना $2x^2 + x - 3 = t \\implies (4x + 1)\\,dx = dt$",
+          "चरण 4: समाकलन करने पर: $\\int \\frac{dt}{\\sqrt{t}} = \\int t^{-1/2}\\,dt = \\frac{t^{1/2}}{1/2} + C = 2\\sqrt{t} + C$",
+          "चरण 5: $t = 2x^2 + x - 3$ रखने पर: $2\\sqrt{2x^2 + x - 3} + C$",
+          "उत्तर: $2\\sqrt{2x^2 + x - 3} + C$"
+        ]
+      },
+      {
+        "question": "समाकलन ज्ञात कीजिए: $\\int \\frac{x + 2}{\\sqrt{x^2 - 1}}\\,dx$ [NCERT Ex 7.4 Q17]",
+        "answer": [
+          "चरण 1 (प्रयुक्त सूत्र): पृथक्करण, प्रतिस्थापन विधि तथा सूत्र $\\int \\frac{1}{\\sqrt{x^2 - a^2}}\\,dx = \\log|x + \\sqrt{x^2 - a^2}| + C$।",
+          "चरण 2: भिन्नों को अलग करने पर: $\\int \\frac{x}{\\sqrt{x^2 - 1}}\\,dx + 2\\int \\frac{1}{\\sqrt{x^2 - 1}}\\,dx$",
+          "चरण 3: प्रथम भाग में $x^2 - 1 = t \\implies x\\,dx = \\frac{1}{2}dt$: $\\frac{1}{2}(2\\sqrt{t}) = \\sqrt{x^2 - 1}$",
+          "चरण 4: द्वितीय भाग: $2\\log|x + \\sqrt{x^2 - 1}|$",
+          "चरण 5: दोनों का योग करने पर: $\\sqrt{x^2 - 1} + 2\\log|x + \\sqrt{x^2 - 1}| + C$",
+          "उत्तर: $\\sqrt{x^2 - 1} + 2\\log|x + \\sqrt{x^2 - 1}| + C$"
+        ]
+      }
+    ]
+  }
+}
