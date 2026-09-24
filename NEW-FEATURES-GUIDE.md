@@ -19,6 +19,9 @@ Bottom menu में **📓 नोट्स·PYQ** बटन दबाने �
 | `js/vault.js` · `data/vault/` | Fun Vault (चुटकुले, सख़्त lock के साथ) |
 | `js/sound.js` | पूरी website का Sound (🔊 बटन ऊपर) |
 | `AI-PROMPTS.md` | AI से चुटकुले और Notes JSON बनवाने के तैयार prompt |
+| `AI-PROMPT-PHYSICS-NOTES.md` | Physics का **सिर्फ़ Notes** वाला prompt: किताब से Notes (100% कवरेज की जाँच) और चित्र (SVG) |
+| `AI-PROMPT-CHEMISTRY-NOTES.md` | Chemistry का सिर्फ़-Notes prompt: **Prompt 1 (मास्टर नियम, पहले)** + **Prompt 2 (Chapter, PDF और Teacher के notes के साथ)** |
+| `AI-PROMPT-PHYSICS-FULL-LATER.md` | बाद के लिए रखा: Notes + Practice प्रश्नों वाला prompt (अभी इस्तेमाल नहीं) |
 | `css/extras.css` | नए sections का design |
 | `data/notes/manifest.json` | कौन-से Chapter के Notes हैं (अभी खाली list) |
 | `data/pyq/manifest.json` | कौन-से विषय-साल की PYQ है (अभी खाली list) |
@@ -193,3 +196,87 @@ AI को template फ़ाइल का पूरा text दो और सा
 **इस बार GitHub पर क्या डालना है (पिछले upload के बाद):**
 - नई: `js/vault.js`, `js/sound.js`, `AI-PROMPTS.md`, `data/vault/manifest.json`, `data/templates/vault-jokes-template.json`
 - पुरानी की जगह नई: `index.html`, `css/extras.css`, `js/extras-core.js`, `js/extras-quiz.js`, `js/notes-game.js`, `README.md`, `NEW-FEATURES-GUIDE.md`, `CHANGELOG.md`, `TESTING-REPORT.md`
+
+---
+
+## 13. Notes को कई भागों में डालना (नया) और Physics का AI Prompt
+
+**कई भाग:** एक Chapter के Notes बहुत बड़े हों तो उन्हें कई फ़ाइलों में बाँटो, और `data/notes/manifest.json` में हर फ़ाइल की अलग entry डालो (एक ही `chapter` संख्या के साथ):
+```json
+{ "subject": "physics", "chapter": 1, "part": "1", "file": "data/notes/physics/chapter-01-part-1.json" },
+{ "subject": "physics", "chapter": 1, "part": "2", "file": "data/notes/physics/chapter-01-part-2.json" }
+```
+वेबसाइट सारे भागों को **अपने-आप जोड़कर एक पेज** में दिखाती है। Notes Game और Vault Challenge भी सारे भागों के आइटम इस्तेमाल करते हैं। कोई भाग गायब या खराब हो तो बाकी भाग चलते हैं और पेज के नीचे ⚠️ में बताया जाता है कि कौन-सा भाग नहीं पढ़ा गया।
+
+**Physics का Prompt (सिर्फ़ Notes):** `AI-PROMPT-PHYSICS-NOTES.md` खोलो, उसका पूरा prompt कॉपी करो, अपनी किताब और notes के साथ AI को दो। वह पहले Chapter Map देगा (तुम किताब से मिलाओगे), फिर एक-एक फ़ाइल: Notes के 4 भाग (चित्र SVG में)। हर फ़ाइल के साथ उसका नाम और manifest की पंक्ति भी वही देता है। Practice प्रश्नों वाला prompt `AI-PROMPT-PHYSICS-FULL-LATER.md` में बाद के लिए रखा है।
+
+**ध्यान रखो:**
+- पुराना Chapter Quiz (हर Chapter के अलग objective) और उसका lock इस prompt से नहीं बदलता; यह सिर्फ़ Notes बनाता है।
+- तुम्हारी `subjects.json` में Physics के सिर्फ़ 8 chapters हैं। किताब में और chapters हों तो पहले उन्हें `subjects.json` में जोड़ना होगा (उनका नाम तुम दोगे)।
+- "100%" की गारंटी AI नहीं दे सकता। इसीलिए Chapter Map और अंतिम रिपोर्ट माँगी गई है, ताकि तुम खुद किताब से मिलाकर देख सको।
+
+---
+
+## 14. गणित (Maths) का Notes prompt — हाथ के notes, LaTeX सूत्र, 4 उदाहरण, चित्र पहले पूछकर
+
+`AI-PROMPT-MATHS-NOTES.md` में **तीन prompt** हैं:
+1. **Prompt 0 (वैकल्पिक):** अगर तुम्हारे notes हाथ से लिखे (पेंसिल के) PDF में हैं, तो पहले इसे अकेला भेजो — AI साफ़ किया हुआ text निकाल देता है, और जो पढ़ने में शक हो उसकी अलग सूची भी देता है, ताकि तुम किताब से मिलाकर ठीक कर सको।
+2. **Prompt 1 — मास्टर नियम:** पहले अकेला भेजो।
+3. **Prompt 2 — Chapter:** किताब + Prompt 0 का साफ़ text + Teacher के notes साथ भेजो। यह पहले **Chapter Map और एक अलग "चित्र-सूची"** देता है, और चित्र बनाने से पहले **तुमसे पूछता है** कि कौन-से चित्र चाहिए — बिना पूछे कोई चित्र नहीं बनाता।
+
+**सूत्र + 4 उदाहरण:** हर सूत्र के साथ ठीक 4 हल किए उदाहरण आते हैं (आसान से कठिन)। गणित में सही तरीका दिखाने के लिए AI अपनी संख्याएँ खुद बना सकता है (इसे "source": "AI" से अलग दिखाया जाता है), पर किताब में उदाहरण मिले तो पहले उसे ही रखा जाता है ("source": "किताब")।
+
+**LaTeX (गणित की भाषा) सूत्र:** Notes में अब `$सूत्र$` (लाइन में) या `$$सूत्र$$` (अलग बड़ी पंक्ति) लिखते ही वह असली छपे हुए सूत्र जैसा दिखता है — भिन्न, वर्गमूल, समाकलन, आव्यूह सब सही रेंडर होते हैं। यह इंटरनेट से (या इंटरनेट न मिले तो website में ही रखी एक छोटी लाइब्रेरी से) अपने-आप लोड होता है; कहीं भी काम न करे तो सूत्र सादे code जैसे text में दिखता है, पेज कभी नहीं टूटता। सूत्रों के साथ ठीक 4-4 हल किए उदाहरण भी दिखते हैं, हर Notes पेज पर (सिर्फ़ Maths नहीं, हर विषय में)।
+
+**⚠️ पहले यह करना ज़रूरी है:** `data/subjects.json` में Maths के Chapters अभी खाली हैं। अपनी किताब के Chapters की सूची (संख्या + नाम) भेज दो — मैं `subjects.json` का Maths वाला हिस्सा बना दूँगा।
+
+**इस बार GitHub पर क्या डालना है:**
+- नई: `AI-PROMPT-MATHS-NOTES.md`
+- LaTeX सूत्र चलाने के लिए (एक बार डालना है, हर विषय पर काम करेगा): पुरानी की जगह नई `js/extras-core.js`, `js/extras-quiz.js`, `js/notes.js`, `css/extras.css`; और नए folder `lib/katex/` की सारी फ़ाइलें (katex.min.js, katex.min.css, LICENSE, और fonts folder की 20 फ़ाइलें)
+
+---
+
+## 15. Focus में अपना गाना बजाना (नया)
+
+पहले Focus आवाज़ सिर्फ़ website की बनाई हल्की background आवाज़ थी। अब तुम **अपने खुद के copyright-free गाने** भी लगा सकते हो — वही 🎧 Focus बटन से बजेंगे।
+
+**कैसे जोड़ें:**
+1. अपना गाना (mp3/ogg/wav/m4a, छोटा size, लगभग 3-8 MB) `data/focus-music/` folder में GitHub पर upload करो।
+2. `data/focus-music/manifest.json` में entry जोड़ो:
+   ```json
+   { "tracks": [
+     { "file": "data/focus-music/lofi-1.mp3", "title": "Lofi Study 1" }
+   ] }
+   ```
+3. एक से ज़्यादा गाने की अलग-अलग entry डाल सकते हो (कॉमा से अलग)। Commit करते ही अगली बार website उन्हें अपने-आप पहचान लेती है — कोई code नहीं बदलना।
+
+**कैसे चलता है:**
+- गाने अपने-आप बदल-बदल कर (बिना तुरंत दोहराए) बजते हैं। ऊपर 🔊 panel खोलकर बज रहे गाने का नाम दिखता है और **⏭ अगला गाना** बटन से खुद बदल सकते हो।
+- पहला गाना बजने के लिए पेज पर **एक बार कहीं भी tap** करना ज़रूरी है — यह फ़ोन के browser का नियम है (कोई website बिना छुए अपने-आप गाना नहीं बजा सकती); उसके बाद Focus चालू रहने तक अपने-आप चलता रहता है।
+- कोई गाना न जोड़ा हो, फ़ाइल टूटी हो या मिले ही नहीं, तो website **अपने-आप** पुरानी हल्की background आवाज़ पर वापस चली जाती है — पेज कभी नहीं टूटता, कोई error नहीं दिखता।
+- गाने सिर्फ़ अपनी ही (copyright-free/royalty-free) चुनना — यह ज़िम्मेदारी तुम्हारी है, website कोई जाँच नहीं करती।
+
+**इस बार GitHub पर क्या डालना है:**
+- पुरानी की जगह नई: `js/sound.js`, `css/extras.css`
+- नई: `data/focus-music/manifest.json`, `data/focus-music/README.txt` (सिर्फ़ जानकारी के लिए, website इसे पढ़ती नहीं)
+
+---
+
+## 16. Virtual Physics Lab (नया) — असली Lab जैसा Interactive Simulation
+
+**📓 नोट्स·PYQ → 🧪 Virtual Lab** से खुलता है। अभी **Ohm's Law** का पूरा experiment तैयार है, तैयार-होकर टेस्ट किया हुआ।
+
+**कैसे चलता है:**
+1. विद्यार्थी विषय चुनता है, फिर Experiment खोलता है — शुरुआत में साफ़ लिखा है "यह असली Lab नहीं, Simulation है"।
+2. **करने का तरीका** एक-एक करके खुलता है — जब तक पिछला step पूरा न हो, अगला **🔒 बंद** रहता है।
+3. ऊपर का apparatus (मीटर, रीयोस्टेट) parameter (slider) बदलते ही **असली जैसा animate** होता है — सुई घूमती है, घुंडी खिसकती है।
+4. "✅ यह रीडिंग लो" दबाने पर वह reading स्थायी रूप से Observation Table में जुड़ती है।
+5. आख़िर में विद्यार्थी खुद निकाला हुआ मान (जैसे R) भरता है — सही होने पर ✅, नहीं तो दोबारा कोशिश।
+
+**सुरक्षा की बात:** कोई calculation किसी JSON/AI से नहीं आता। सिर्फ़ 6 जाने-पहचाने experiment "types" हैं, हर एक का सही भौतिकी-सूत्र `js/lab.js` में हाथ से लिखा और जाँचा गया है (Ohm's law, Meter Bridge, Potentiometer, Galvanometer conversion, Lens formula, Diode curve)। experiment की JSON फ़ाइल सिर्फ़ शीर्षक, कदम, parameter की range और छिपे स्थिरांक देती है — कभी कोई सूत्र-text नहीं। Apparatus का चित्र भी engine में ही बना और animate होता है।
+
+**नया Experiment जोड़ना:** `AI-PROMPT-PHYSICS-LAB.md` का Prompt 2 इस्तेमाल करो (Master पहले ही चल चुका है, engine तैयार है) — अपने Sir के असली practical notes के साथ, सिर्फ़ एक `data/lab/physics/<id>.json` फ़ाइल और manifest की एक पंक्ति चाहिए। कोई नया calculation-code नहीं लिखना।
+
+**इस बार GitHub पर क्या डालना है:**
+- नई: `js/lab.js`, `css/lab.css`, `data/lab/manifest.json`, `data/lab/physics/ohms-law.json`
+- पुरानी की जगह नई: `index.html` (एक script + एक CSS line), `js/extras-core.js` (Hub में card + storage में "lab" भाग जुड़ा)

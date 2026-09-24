@@ -207,3 +207,10 @@ Bottom menu के **📓 नोट्स·PYQ** बटन से नए section
 | `data/templates/` | Notes / PYQ / Practice के JSON नमूने |
 | `data/vault/manifest.json` | Fun Vault के चुटकुलों की फ़ाइलों की index |
 | `AI-PROMPTS.md` | AI से चुटकुले / Notes JSON बनवाने के तैयार prompt |
+| `AI-PROMPT-PHYSICS-NOTES.md` | Physics का सिर्फ़-Notes AI prompt (चित्रों सहित) |
+| `AI-PROMPT-CHEMISTRY-NOTES.md` | Chemistry का सिर्फ़-Notes AI prompt (मास्टर नियम + Chapter prompt) |
+| `AI-PROMPT-BIOLOGY-NOTES.md` | Biology का सिर्फ़-Notes AI prompt (चित्र AI खुद बनाता है) |
+| `AI-PROMPT-MATHS-NOTES.md` | Maths का सिर्फ़-Notes AI prompt (हाथ के notes PDF से निकालना, LaTeX सूत्र, हर सूत्र के 4 उदाहरण, चित्र पहले पूछकर) |
+| `AI-PROMPT-PHYSICS-FULL-LATER.md` | बाद के लिए: Notes + Practice प्रश्नों वाला prompt |
+| `data/focus-music/manifest.json` | तुम्हारे अपने Focus गानों (mp3/ogg) की सूची |
+| `data/lab/manifest.json` | Virtual Physics Lab के experiments की सूची |
