@@ -49,6 +49,7 @@
       var qs = shuffle(o.questions.slice());
       var size = o.size > 0 ? Math.min(o.size, qs.length) : qs.length;
       qs = qs.slice(0, size).map(function (q) { return JSON.parse(JSON.stringify(q)); });
+      qs = qs.map(function (q) { return (M.Extras && M.Extras.shuffleOptions) ? M.Extras.shuffleOptions(q) : q; });
       Q.active = {
         id: 'q' + Date.now(), mode: o.mode, subject: o.subject, chapter: o.chapter, title: o.title,
         questions: qs, answers: qs.map(function () { return null; }), index: 0, elapsed: 0,

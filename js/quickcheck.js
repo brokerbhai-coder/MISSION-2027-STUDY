@@ -90,9 +90,22 @@
 
   function store() {
     var s = X.store();
-    if (!s.qc || typeof s.qc !== 'object') s.qc = { sec: 0, xp: 0, seen: [] };
+    if (!s.qc || typeof s.qc !== 'object') s.qc = { sec: 0, xp: 0, seen: [], streak: { current: 0, best: 0, lastDate: null } };
     if (!Array.isArray(s.qc.seen)) s.qc.seen = [];
+    if (!s.qc.streak || typeof s.qc.streak !== 'object') s.qc.streak = { current: 0, best: 0, lastDate: null };
     return s.qc;
+  }
+  // "रोज़ का Check" Achievement के लिए — Notes वाला Quick Check किसी दिन पहली बार पूरा हो तभी दिन गिनो
+  function bumpDailyStreak() {
+    var s = store();
+    var today = M.Storage.todayStr();
+    if (s.streak.lastDate === today) return; // आज पहले ही गिन चुके
+    var diff = s.streak.lastDate ? M.Storage.dayDiff(today, s.streak.lastDate) : null;
+    s.streak.current = (diff === 1) ? s.streak.current + 1 : 1;
+    if (s.streak.current > s.streak.best) s.streak.best = s.streak.current;
+    s.streak.lastDate = today;
+    X.save();
+    if (M.Rewards && M.Rewards.checkAchievements) M.Rewards.checkAchievements();
   }
   function pickQuote() {
     var q = store();
@@ -150,7 +163,8 @@
         xpPerCorrect: 0.1,
         quoteOnPass: true,
         passNeeded: 1,
-        retryOnFail: false
+        retryOnFail: false,
+        countsForStreak: true
       });
     });
   }
@@ -221,7 +235,7 @@
 
     function draw() {
       if (idx >= qs.length) return finish();
-      var q = qs[idx];
+      var q = X.shuffleOptions(qs[idx]);
       wrap.innerHTML = '<div class="qc-card">' +
         '<div class="qc-head"><span class="qc-tag">' + (cfg.title || '⚡ Quick Check') + ' ' + (idx + 1) + '/' + qs.length + '</span>' +
         (cfg.skip ? '<button class="qc-skip" id="qcSkip" type="button">Skip ✕</button>' : '') + '</div>' +
@@ -250,6 +264,7 @@
     }
     function finish() {
       var passed = correct >= cfg.passNeeded;
+      if (cfg.countsForStreak) bumpDailyStreak(); // पूरा किया (Skip नहीं) — आज का दिन गिना
       if (cfg.xpPerCorrect) {
         var xp = Math.round(correct * cfg.xpPerCorrect * 10) / 10;
         var s = store();

@@ -41,6 +41,27 @@
     return arr;
   };
 
+  // किसी Question के A/B/C/D Options का क्रम बदल दो — नई Copy लौटाता है, असली/Cache वाला Data नहीं छूता।
+  // पूरी Website पर हर जगह इस्तेमाल होता है (Chapter Quiz, Notes Game, Mixed Practice, PYQ, Quick Check)
+  // ताकि विद्यार्थी जवाब की जगह याद रखने की बजाय Content याद करे।
+  X.shuffleOptions = function (q) {
+    if (!q || !q.options || typeof q.options !== 'object') return q;
+    var letters = ['A', 'B', 'C', 'D'];
+    var entries = letters.filter(function (L) { return q.options[L] !== undefined; }).map(function (L) { return { was: L, text: q.options[L] }; });
+    X.shuffle(entries);
+    var newOptions = {}, newAnswer = q.answer;
+    entries.forEach(function (e, idx) {
+      var L = letters[idx];
+      newOptions[L] = e.text;
+      if (e.was === q.answer) newAnswer = L;
+    });
+    var out = {};
+    for (var k in q) { if (Object.prototype.hasOwnProperty.call(q, k)) out[k] = q[k]; }
+    out.options = newOptions;
+    out.answer = newAnswer;
+    return out;
+  };
+
   // सुरक्षित relative path (manifest की "file") — बाहर की site या ".." नहीं
   X.safeJsonPath = function (p) {
     if (typeof p !== 'string') return null;
@@ -69,10 +90,26 @@
   var KATEX_CDN = 'https://cdn.jsdelivr.net/npm/katex@0.16.45/dist/';
   var KATEX_LOCAL = 'lib/katex/';
   var mathP = null;
+  var mathWaiters = [];
+  // Slow/कमज़ोर Internet पर KaTeX देर से (Timeout के बाद भी) Load हो सकती है।
+  // जो भी Page उस समय "Code Text" दिखा चुका है, उसे बाद में सही Formula में अपने-आप बदलने के लिए यह Callback रजिस्टर करो।
+  // अगर KaTeX पहले से मिल चुकी है तो Callback तुरंत चलेगा।
+  X.onMathReady = function (cb) {
+    if (window.katex) { try { cb(); } catch (e) { /* ignore */ } return; }
+    mathWaiters.push(cb);
+  };
+  function notifyMathReady() {
+    if (!window.katex || !mathWaiters.length) return;
+    var list = mathWaiters; mathWaiters = [];
+    list.forEach(function (cb) { try { cb(); } catch (e) { /* ignore */ } });
+  }
   function loadKatexFrom(base) {
     return new Promise(function (resolve) {
       var done = false;
-      function fin(v) { if (!done) { done = true; resolve(v); } }
+      // ध्यान: Timeout के बाद भी यह Script Tag DOM में रहता है (हटाया नहीं जाता),
+      // इसलिए अगर Network धीरे-धीरे भी File पूरी Download कर ले, तो onload बाद में भी चलेगा
+      // और notifyMathReady() असली Formula दिखाने वाले Pages को जगा देगा।
+      function fin(v) { if (!done) { done = true; resolve(v); } if (v) notifyMathReady(); }
       var css = document.createElement('link');
       css.rel = 'stylesheet'; css.href = base + 'katex.min.css';
       document.head.appendChild(css);
@@ -80,7 +117,8 @@
       js.src = base + 'katex.min.js';
       js.onload = function () { fin(!!window.katex); };
       js.onerror = function () { try { css.remove(); js.remove(); } catch (e) { /* ignore */ } fin(false); };
-      setTimeout(function () { fin(!!window.katex); }, 7000);
+      // पहले 7 सेकंड था — कमज़ोर Mobile Network (2-3 KB/s जैसा) पर 270KB की Library के लिए बहुत कम पड़ता था
+      setTimeout(function () { fin(!!window.katex); }, 20000);
       document.head.appendChild(js);
     });
   }

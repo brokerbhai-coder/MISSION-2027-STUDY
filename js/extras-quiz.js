@@ -33,6 +33,7 @@
     if (!o || !o.questions || !o.questions.length) { M.App.toast('इस Quiz के लिए प्रश्न नहीं हैं।', 'info'); return Promise.resolve(); }
     function begin() {
       var qs = o.questions.map(function (q) { return JSON.parse(JSON.stringify(q)); });
+      qs = qs.map(function (q) { return X.shuffleOptions(q); });
       X.store().active = {
         id: 'x' + Date.now(), kind: o.kind, subject: o.subject, title: o.title,
         backPath: o.backPath || '/extras', introPath: o.introPath || o.backPath || '/extras', bestKey: o.bestKey || '',

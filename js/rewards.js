@@ -201,7 +201,9 @@
     { id: 'fixer_5', icon: '🛠️', title: 'गलती सुधारक', desc: '5 गलतियाँ सुधारो', test: function (s) { return s.stats.mistakesFixed >= 5; } },
     { id: 'game_first', icon: '🎮', title: 'Brain Gamer', desc: 'Brain Game एक बार खेलो', test: function (s) { return s.game.plays >= 1; } },
     { id: 'game_hard', icon: '🧩', title: 'कठिन Game विजेता', desc: 'Brain Game का कठिन स्तर जीतो', test: function (s) { return Object.keys(s.game.best || {}).some(function (k) { return /-hard$/.test(k); }); } },
-    { id: 'game_wins_10', icon: '🕹️', title: 'Game का उस्ताद', desc: 'Brain Game 10 बार जीतो', test: function (s) { return s.game.wins >= 10; } }
+    { id: 'game_wins_10', icon: '🕹️', title: 'Game का उस्ताद', desc: 'Brain Game 10 बार जीतो', test: function (s) { return s.game.wins >= 10; } },
+    { id: 'daily_30min', icon: '⏱️', title: 'रोज़ की आधा घंटा', desc: 'किसी एक दिन कम से कम 30 मिनट Active पढ़ाई करो', test: function (s) { return Object.keys(s.studyByDate || {}).some(function (d) { return s.studyByDate[d] >= 1800; }); } },
+    { id: 'qc_streak_3', icon: '📖', title: 'रोज़ का Check', desc: '3 दिन लगातार Quick Check पूरा करो', test: function () { var qc = M.Extras && M.Extras.store && M.Extras.store().qc; return !!(qc && qc.streak && qc.streak.best >= 3); } }
   ];
 
   R.achievements = function () {

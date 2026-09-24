@@ -123,9 +123,15 @@
             '<button class="chip-btn' + (sel.shuffle ? ' on' : '') + '" data-action="xp-opt" data-k="shuffle" data-v="1">🔀 मिलाकर</button>' +
             '<button class="chip-btn' + (!sel.shuffle ? ' on' : '') + '" data-action="xp-opt" data-k="shuffle" data-v="0">📋 जैसा लिखा है</button></div>';
           if (L.count > 10) {
+            var pStep = 10;
+            while (Math.ceil(L.count / pStep) > 9) pStep += 10; // ज़्यादा से ज़्यादा ~9 Option, चाहे Set कितना भी बड़ा हो
+            var pOpts = [];
+            for (var pn = pStep; pn < L.count; pn += pStep) pOpts.push(pn);
+            pOpts.push(L.count); // आख़िर में हमेशा पूरा Set
             html += '<p class="muted small" style="margin-top:10px">कितने प्रश्न</p><div class="chips">' +
-              [0, 10, 20].filter(function (n) { return n === 0 || n < L.count; }).map(function (n) {
-                return '<button class="chip-btn' + (sel.count === n ? ' on' : '') + '" data-action="xp-opt" data-k="count" data-v="' + n + '">' + (n ? n + ' प्रश्न' : 'सारे (' + L.count + ')') + '</button>';
+              pOpts.map(function (n) {
+                var on = sel.count === n || (sel.count === 0 && n === L.count);
+                return '<button class="chip-btn' + (on ? ' on' : '') + '" data-action="xp-opt" data-k="count" data-v="' + n + '">' + (n === L.count ? 'सारे (' + L.count + ')' : n + ' प्रश्न') + '</button>';
               }).join('') + '</div>';
           }
           html += '</div>';
