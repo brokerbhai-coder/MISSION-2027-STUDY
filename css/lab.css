@@ -1,0 +1,27 @@
+/* ==========================================================
+   lab.css : Virtual Physics Lab का design
+   पुराने :root वाले रंग ही इस्तेमाल होते हैं।
+   ========================================================== */
+.lab-appcard { display: flex; flex-direction: column; gap: 12px; }
+.lab-svg { background: #fff; border-radius: 12px; padding: 6px; }
+.lab-svg svg { width: 100%; height: auto; display: block; }
+.lab-param { display: flex; flex-direction: column; gap: 4px; }
+.lab-param label { font-size: 0.9rem; display: flex; justify-content: space-between; gap: 8px; }
+.lab-param label b { color: var(--gold); }
+.lab-param input[type="range"] { width: 100%; accent-color: var(--blue); }
+
+.lab-steps { display: flex; flex-direction: column; gap: 8px; }
+.lab-step { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface-2); opacity: 0.55; }
+.lab-step.active { opacity: 1; border-color: var(--blue); background: rgba(79, 140, 255, 0.1); }
+.lab-step.done { opacity: 0.85; border-color: rgba(52, 211, 153, 0.5); background: rgba(52, 211, 153, 0.08); }
+.lab-step-ico { font-size: 1.1rem; flex: none; }
+.lab-step-text { flex: 1; font-size: 0.95rem; line-height: 1.6; overflow-wrap: anywhere; }
+.lab-step .btn { flex: none; margin-top: 2px; }
+
+.lab-table-wrap { overflow-x: auto; }
+.lab-table { width: 100%; border-collapse: collapse; font-size: 0.86rem; white-space: nowrap; }
+.lab-table th, .lab-table td { padding: 7px 10px; border-bottom: 1px solid var(--line); text-align: center; }
+.lab-table th { color: var(--muted); font-weight: 700; }
+
+.lab-result-row { display: flex; gap: 8px; }
+.lab-result-row input { flex: 1; min-width: 0; min-height: 44px; padding: 8px 12px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); color: var(--text); font: inherit; }
