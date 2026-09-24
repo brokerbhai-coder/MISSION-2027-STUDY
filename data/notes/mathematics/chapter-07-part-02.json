@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "subject": "mathematics",
+  "chapter": 7,
+  "title": "समाकलन (Integrals)",
+  "categories": {
+    "theory": [
+      {
+        "title": "समाकलन की विधियों का वर्गीकरण एवं प्रतिस्थापन की आवश्यकता (Classification of Methods & Need for Substitution)",
+        "content": [
+          "निरीक्षण विधि (Method of Inspection) की सीमा: निरीक्षण विधि केवल बहुत सरल और सीधे फलनों के लिए उपयोगी है। जब समाकल्य जटिल फलनों का गुणनफल, भागफल अथवा संयुक्त फलन हो, तो केवल अंतर्ज्ञान से प्रतिअवकलज खोजना असंभव हो जाता है[span_9](start_span)[span_9](end_span)。",
+          "समाकलनों को मानक प्रामाणिक सूत्रों (Standard Forms) में रूपांतरित करने के लिए मुख्य रूप से तीन उन्नत विधियाँ विकसित की गई हैं[span_10](start_span)[span_10](end_span)[span_11](start_span)[span_11](end_span):",
+          "1. प्रतिस्थापन द्वारा समाकलन (Integration by Substitution)[span_12](start_span)[span_12](end_span)[span_13](start_span)[span_13](end_span)",
+          "2. आंशिक भिन्नों में वियोजन द्वारा समाकलन (Integration by Partial Fractions)[span_14](start_span)[span_14](end_span)[span_15](start_span)[span_15](end_span)",
+          "3. खंडशः समाकलन (Integration by Parts)[span_16](start_span)[span_16](end_span)[span_17](start_span)[span_17](end_span)",
+          "प्रतिस्थापन विधि की मूल संकल्पना (Core Philosophy):",
+          "इस विधि में स्वतंत्र चर $x$ को किसी नए चर $t$ के उपयुक्त फलन $g(t)$ द्वारा इस प्रकार बदल दिया जाता है कि दिया गया जटिल समाकलन किसी सीधे और ज्ञात प्रामाणिक सूत्र में परिवर्तित हो जाए[span_18](start_span)[span_18](end_span)。",
+          "प्रतिस्थापन का स्वर्णिम नियम (Golden Rule of Substitution):",
+          "प्रतिस्थापन सदैव उस व्यंजक $g(x)$ के स्थान पर $t$ मानकर किया जाता है, जिसका अवकलज गुणांक $g'(x)$ समाकल्य में गुणनफल ($g'(x)\\,dx$) के रूप में पहले से उपस्थित हो[span_19](start_span)[span_19](end_span)।"
+        ],
+        "points": [
+          "श्रृंखला नियम का व्युत्क्रम: जिस प्रकार अवकलन में श्रृंखला नियम (Chain Rule) कार्य करता है, उसी का उल्टा रूप समाकलन में प्रतिस्थापन विधि है[span_20](start_span)[span_20](end_span)。",
+          "चर का पूर्ण रूपांतरण: प्रतिस्थापन के पश्चात समाकलन में मूल चर $x$ का कोई भी पद शेष नहीं रहना चाहिए; संपूर्ण समाकल्य नए चर $t$ और $dt$ में बदलना अनिवार्य है[span_21](start_span)[span_21](end_span)[span_22](start_span)[span_22](end_span)。",
+          "पुनः प्रतिस्थापन: अनिश्चित समाकलन का अंतिम उत्तर सदैव प्रश्न के मूल चर $x$ के पदों में ही लिखा जाता है[span_23](start_span)[span_23](end_span)[span_24](start_span)[span_24](end_span)।"
+        ]
+      },
+      {
+        "title": "प्रतिस्थापन विधि का गणितीय सिद्धांत एवं चर परिवर्तन प्रमेय (Mathematical Foundation & Variable Change Theorem)",
+        "content": [
+          "प्रमेय कथन: मान लीजिए कि $I = \\int f(x)\\,dx$ एक दिया गया समाकलन है। यदि हम स्वतंत्र चर $x$ को $x = g(t)$ द्वारा प्रतिस्थापित करें, जहाँ $g(t)$ एक अवकलनीय फलन है, तो[span_25](start_span)[span_25](end_span):",
+          "$$\\int f(x)\\,dx = \\int f(g(t)) \\cdot g'(t)\\,dt$$",
+          "गणितीय उपपत्ति (Step-by-Step Proof)[span_26](start_span)[span_26](end_span):",
+          "चरण 1: मान लीजिए कि फलन $f(x)$ का कोई प्रतिअवकलज $F(x)$ है, अर्थात्[span_27](start_span)[span_27](end_span):",
+          "$$\\frac{d}{dx}[F(x)] = f(x) \\implies \\int f(x)\\,dx = F(x) + C$$",
+          "चरण 2: अब $x = g(t)$ प्रतिस्थापित करने पर $F(x)$ चर $t$ का फलन $F(g(t))$ बन जाता है[span_28](start_span)[span_28](end_span)。",
+          "चरण 3: अवकलन के श्रृंखला नियम (Chain Rule) द्वारा $F(g(t))$ का $t$ के सापेक्ष अवकलन करने पर[span_29](start_span)[span_29](end_span):",
+          "$$\\frac{d}{dt}[F(g(t))] = \\frac{d}{dx}[F(x)] \\cdot \\frac{dx}{dt} = f(x) \\cdot g'(t) = f(g(t)) \\cdot g'(t)$$",
+          "चरण 4: समाकलन की परिभाषा (व्युत्क्रम प्रक्रम) के अनुसार दोनों पक्षों का $t$ के सापेक्ष समाकलन करने पर[span_30](start_span)[span_30](end_span):",
+          "$$\\int f(g(t)) \\cdot g'(t)\\,dt = F(g(t)) + C = F(x) + C = \\int f(x)\\,dx$$",
+          "व्यावहारिक कार्यविधि (Operating Procedure)[span_31](start_span)[span_31](end_span):",
+          "- समाकल्य में उपयुक्त भाग को पहचानकर $g(x) = t$ मानिए[span_32](start_span)[span_32](end_span)。",
+          "- दोनों पक्षों का अवकलन करके $g'(x)\\,dx = dt$ प्राप्त कीजिए[span_33](start_span)[span_33](end_span)[span_34](start_span)[span_34](end_span)。",
+          "- दिए गए समाकलन में $g(x)$ के स्थान पर $t$ तथा $g'(x)\\,dx$ के स्थान पर $dt$ प्रतिस्थापित कीजिए[span_35](start_span)[span_35](end_span)[span_36](start_span)[span_36](end_span)。",
+          "- सरल रूप का समाकलन ज्ञात करके अंत में $t$ का मूल मान $g(x)$ रख दीजिए[span_37](start_span)[span_37](end_span)[span_38](start_span)[span_38](end_span)।"
+        ],
+        "points": [
+          "अवकलज रूप की पहचान: $\\int [g(x)]^n g'(x)\\,dx$ रूप में सीधे $g(x) = t$ रखने से $\\int t^n\\,dt$ प्राप्त होता है[span_39](start_span)[span_39](end_span)[span_40](start_span)[span_40](end_span)。",
+          "रैखिक चर परिवर्तन: यदि समाकल्य $f(ax+b)$ रूप में हो, तो $ax+b = t \\implies dx = \\frac{1}{a}dt$ होता है, जिससे $\\int f(ax+b)\\,dx = \\frac{1}{a}F(ax+b) + C$ बनता है[span_41](start_span)[span_41](end_span)[span_42](start_span)[span_42](end_span)。",
+          "अचर गुणक का समायोजन: यदि अवकलज में कोई अचर पद कम हो, तो आवश्यकतानुसार अचर संख्या से गुणा व भाग करके अवकलज रूप पूर्ण किया जाता है[span_43](start_span)[span_43](end_span)[span_44](start_span)[span_44](end_span)।"
+        ]
+      },
+      {
+        "title": "प्रतिस्थापन के चार प्रमुख मानक प्रारूप (Four Standard Substitution Patterns)",
+        "content": [
+          "प्रतियोगी एवं बोर्ड परीक्षाओं में त्वरित हल हेतु प्रतिस्थापन के चार अत्यंत महत्वपूर्ण मानक प्रारूप होते हैं[span_45](start_span)[span_45](end_span)[span_46](start_span)[span_46](end_span)[span_47](start_span)[span_47](end_span):",
+          "प्रारूप 1: हर का अवकलज अंश में उपस्थित होना (Logarithmic Form)[span_48](start_span)[span_48](end_span)[span_49](start_span)[span_49](end_span):",
+          "$$\\int \\frac{f'(x)}{f(x)}\\,dx = \\log|f(x)| + C$$",
+          "उपपत्ति: $f(x) = t$ रखने पर $f'(x)\\,dx = dt \\implies \\int \\frac{1}{t}\\,dt = \\log|t| + C = \\log|f(x)| + C$[span_50](start_span)[span_50](end_span)。",
+          "उदाहरण: $\\int \\frac{2x}{x^2+1}\\,dx = \\log(x^2+1) + C$[span_51](start_span)[span_51](end_span)。",
+          "प्रारूप 2: फलन की घात के साथ उसका अवकलज गुणा में होना (Power Form)[span_52](start_span)[span_52](end_span)[span_53](start_span)[span_53](end_span):",
+          "$$\\int [f(x)]^n f'(x)\\,dx = \\frac{[f(x)]^{n+1}}{n+1} + C \\quad (n \\neq -1)$$",
+          "उपपत्ति: $f(x) = t$ रखने पर $f'(x)\\,dx = dt \\implies \\int t^n\\,dt = \\frac{t^{n+1}}{n+1} + C$[span_54](start_span)[span_54](end_span)。",
+          "उदाहरण: $\\int \\sin^3 x \\cos x\\,dx = \\frac{\\sin^4 x}{4} + C$[span_55](start_span)[span_55](end_span)。",
+          "प्रारूप 3: हर में वर्गमूल के भीतर फलन और अंश में अवकलज (Root-Reciprocal Form)[span_56](start_span)[span_56](end_span)[span_57](start_span)[span_57](end_span):",
+          "$$\\int \\frac{f'(x)}{\\sqrt{f(x)}}\\,dx = 2\\sqrt{f(x)} + C$$",
+          "उपपत्ति: $f(x) = t$ रखने पर $\\int \\frac{dt}{\\sqrt{t}} = \\int t^{-1/2}\\,dt = \\frac{t^{1/2}}{1/2} + C = 2\\sqrt{t} + C = 2\\sqrt{f(x)} + C$[span_58](start_span)[span_58](end_span)[span_59](start_span)[span_59](end_span)。",
+          "उदाहरण: $\\int \\frac{\\cos x}{\\sqrt{1+\\sin x}}\\,dx = 2\\sqrt{1+\\sin x} + C$[span_60](start_span)[span_60](end_span)。",
+          "प्रारूप 4: चरघातांकी घातांक में फलन और गुणा में अवकलज (Exponential Form)[span_61](start_span)[span_61](end_span):",
+          "$$\\int e^{f(x)} f'(x)\\,dx = e^{f(x)} + C$$",
+          "उपपत्ति: $f(x) = t \\implies f'(x)\\,dx = dt \\implies \\int e^t\\,dt = e^t + C = e^{f(x)} + C$[span_62](start_span)[span_62](end_span)。",
+          "उदाहरण: $\\int x e^{x^2}\\,dx = \\frac{1}{2}\\int e^{x^2}(2x)\\,dx = \\frac{1}{2}e^{x^2} + C$[span_63](start_span)[span_63](end_span)[span_64](start_span)[span_64](end_span)।"
+        ],
+        "points": [
+          "पहचान तकनीक: जब भी अंश और हर का संबंध दिखे, सबसे पहले जाँचें कि क्या हर का अवकलन करने पर अंश प्राप्त होता है[span_65](start_span)[span_65](end_span)[span_66](start_span)[span_66](end_span)。",
+          "घात फलन में $n = -1$ होने पर यह प्रारूप 1 (लॉग रूप) बन जाता है, क्योंकि $\\frac{1}{f(x)}$ का समाकलन $\\log|f(x)|$ होता है[span_67](start_span)[span_67](end_span)。",
+          "वस्तुनिष्ठ प्रश्नों में इन चारों प्रारूपों को सीधे लागू करके बिना विस्तार किए 5 सेकंड में सही विकल्प चुना जा सकता है[span_68](start_span)[span_68](end_span)[span_69](start_span)[span_69](end_span)।"
+        ]
+      },
+      {
+        "title": "प्रतिस्थापन द्वारा चार नए मौलिक त्रिकोणमितीय सूत्रों की व्युत्पत्ति (Derivations of tan x, cot x, sec x, cosec x)",
+        "content": [
+          "कक्षा 11वीं के मानक सूत्रों में $\\tan x, \\cot x, \\sec x, \\text{cosec } x$ का सीधा समाकलन उपलब्ध नहीं था। प्रतिस्थापन विधि द्वारा इनकी प्रामाणिक व्युत्पत्ति निम्नलिखित है[span_70](start_span)[span_70](end_span):",
+          "1. स्पर्शज्या फलन का समाकलन (Integral of tan x)[span_71](start_span)[span_71](end_span)[span_72](start_span)[span_72](end_span):",
+          "$$\\int \\tan x\\,dx = \\int \\frac{\\sin x}{\\cos x}\\,dx$$",
+          "- प्रतिस्थापन: माना $\\cos x = t \\implies -\\sin x\\,dx = dt \\implies \\sin x\\,dx = -dt$[span_73](start_span)[span_73](end_span)。",
+          "- मान रखने पर: $\\int \\frac{-dt}{t} = -\\log|t| + C = -\\log|\\cos x| + C$[span_74](start_span)[span_74](end_span)。",
+          "- लघुगणक नियम $-\\log|\\cos x| = \\log|(\\cos x)^{-1}| = \\log|\\sec x|$ से[span_75](start_span)[span_75](end_span):",
+          "$$\\int \\tan x\\,dx = \\log|\\sec x| + C = -\\log|\\cos x| + C$$",
+          "2. कोटिस्पर्शज्या फलन का समाकलन (Integral of cot x)[span_76](start_span)[span_76](end_span)[span_77](start_span)[span_77](end_span):",
+          "$$\\int \\cot x\\,dx = \\int \\frac{\\cos x}{\\sin x}\\,dx$$",
+          "- प्रतिस्थापन: माना $\\sin x = t \\implies \\cos x\\,dx = dt$[span_78](start_span)[span_78](end_span)。",
+          "- मान रखने पर: $\\int \\frac{dt}{t} = \\log|t| + C = \\log|\\sin x| + C$[span_79](start_span)[span_79](end_span):",
+          "$$\\int \\cot x\\,dx = \\log|\\sin x| + C = -\\log|\\text{cosec } x| + C$$",
+          "3. छेदक फलन का समाकलन (Integral of sec x)[span_80](start_span)[span_80](end_span)[span_81](start_span)[span_81](end_span):",
+          "$$\\int \\sec x\\,dx = \\int \\frac{\\sec x(\\sec x + \\tan x)}{\\sec x + \\tan x}\\,dx = \\int \\frac{\\sec^2 x + \\sec x\\tan x}{\\sec x + \\tan x}\\,dx$$",
+          "- प्रतिस्थापन: माना $\\sec x + \\tan x = t \\implies (\\sec x\\tan x + \\sec^2 x)\\,dx = dt$[span_82](start_span)[span_82](end_span)。",
+          "- मान रखने पर: $\\int \\frac{dt}{t} = \\log|t| + C = \\log|\\sec x + \\tan x| + C$[span_83](start_span)[span_83](end_span)。",
+          "- अर्द्ध-कोण वैकल्पिक रूप: $\\sec x + \\tan x = \\frac{1+\\sin x}{\\cos x} = \\tan\\left(\\frac{\\pi}{4} + \\frac{x}{2}\\right)$[span_84](start_span)[span_84](end_span):",
+          "$$\\int \\sec x\\,dx = \\log|\\sec x + \\tan x| + C = \\log\\left|\\tan\\left(\\frac{\\pi}{4} + \\frac{x}{2}\\right)\\right| + C$$",
+          "4. व्युत्क्रम ज्या फलन का समाकलन (Integral of cosec x)[span_85](start_span)[span_85](end_span)[span_86](start_span)[span_86](end_span):",
+          "$$\\int \\text{cosec } x\\,dx = \\int \\frac{\\text{cosec } x(\\text{cosec } x - \\cot x)}{\\text{cosec } x - \\cot x}\\,dx = \\int \\frac{\\text{cosec}^2 x - \\text{cosec } x\\cot x}{\\text{cosec } x - \\cot x}\\,dx$$",
+          "- प्रतिस्थापन: माना $\\text{cosec } x - \\cot x = t \\implies (-\\text{cosec } x\\cot x + \\text{cosec}^2 x)\\,dx = dt$[span_87](start_span)[span_87](end_span)。",
+          "- मान रखने पर: $\\int \\frac{dt}{t} = \\log|t| + C = \\log|\\text{cosec } x - \\cot x| + C$[span_88](start_span)[span_88](end_span)。",
+          "- अर्द्ध-कोण रूप: $\\text{cosec } x - \\cot x = \\frac{1-\\cos x}{\\sin x} = \\frac{2\\sin^2(x/2)}{2\\sin(x/2)\\cos(x/2)} = \\tan(x/2)$[span_89](start_span)[span_89](end_span)[span_90](start_span)[span_90](end_span):",
+          "$$\\int \\text{cosec } x\\,dx = \\log|\\text{cosec } x - \\cot x| + C = \\log\\left|\\tan\\left(\\frac{x}{2}\\right)\\right| + C$$"
+        ],
+        "points": [
+          "द्वैध रूप स्मरण: $\\sec x$ और $\\text{cosec } x$ के दोनों रूप (मुख्य रूप व अर्द्ध-कोण $\\tan$ रूप) बिहार बोर्ड वस्तुनिष्ठ प्रश्नों में बार-बार पूछे जाते हैं[span_91](start_span)[span_91](end_span)[span_92](start_span)[span_92](end_span)[span_93](start_span)[span_93](end_span)。",
+          "मापांक चिह्नों की अनिवार्यता: लघुगणक केवल धनात्मक संख्याओं के लिए परिभाषित होता है, अतः समाकलन परिणाम में कोष्ठक के स्थान पर मापांक $|\\cdot|$ लगाना आवश्यक है[span_94](start_span)[span_94](end_span)[span_95](start_span)[span_95](end_span)。",
+          "हर का अवकलज अंश में: ये चारों सूत्र सीधे प्रारूप $\\int \\frac{f'(x)}{f(x)}\\,dx$ के उत्कृष्ट प्रमाण हैं[span_96](start_span)[span_96](end_span)[span_97](start_span)[span_97](end_span)।"
+        ]
+      },
+      {
+        "title": "त्रिकोणमितीय सर्वसमिकाओं द्वारा समाकलन का सिद्धांत (Theory of Integration Using Trigonometric Identities)",
+        "content": [
+          "घात नियम की अमान्यता: त्रिकोणमितीय फलनों पर घात नियम सीधे लागू नहीं होता, अर्थात् $\\int \\sin^2 x\\,dx \\neq \\frac{\\sin^3 x}{3}$[span_98](start_span)[span_98](end_span)[span_99](start_span)[span_99](end_span)। फलनों की सम-विषम घातों और गुणनफलों का समाकलन करने हेतु त्रिकोणमितीय सर्वसमिकाओं द्वारा घातों को रैखिक कोणों (Linear Multiple Angles) में बदलना अनिवार्य होता है[span_100](start_span)[span_100](end_span)[span_101](start_span)[span_101](end_span)。",
+          "1. द्विघात फलनों का रैखिक रूपांतरण (Double Angle Reduction)[span_102](start_span)[span_102](end_span)[span_103](start_span)[span_103](end_span):",
+          "सूत्र $\\cos 2x = 1 - 2\\sin^2 x = 2\\cos^2 x - 1$ से[span_104](start_span)[span_104](end_span)[span_105](start_span)[span_105](end_span):",
+          "- $\\sin^2 x = \\frac{1 - \\cos 2x}{2} \\implies \\int \\sin^2 x\\,dx = \\frac{1}{2}\\int (1 - \\cos 2x)\\,dx = \\frac{x}{2} - \\frac{\\sin 2x}{4} + C$[span_106](start_span)[span_106](end_span)",
+          "- $\\cos^2 x = \\frac{1 + \\cos 2x}{2} \\implies \\int \\cos^2 x\\,dx = \\frac{1}{2}\\int (1 + \\cos 2x)\\,dx = \\frac{x}{2} + \\frac{\\sin 2x}{4} + C$[span_107](start_span)[span_107](end_span)",
+          "2. त्रिघात फलनों का रूपांतरण (Triple Angle Formulas)[span_108](start_span)[span_108](end_span)[span_109](start_span)[span_109](end_span):",
+          "सूत्र $\\sin 3x = 3\\sin x - 4\\sin^3 x$ तथा $\\cos 3x = 4\\cos^3 x - 3\\cos x$ से[span_110](start_span)[span_110](end_span)[span_111](start_span)[span_111](end_span):",
+          "- $\\sin^3 x = \\frac{3\\sin x - \\sin 3x}{4} \\implies \\int \\sin^3 x\\,dx = \\frac{1}{4}\\left[-3\\cos x + \\frac{\\cos 3x}{3}\\right] + C$[span_112](start_span)[span_112](end_span)[span_113](start_span)[span_113](end_span)",
+          "- $\\cos^3 x = \\frac{3\\cos x + \\cos 3x}{4} \\implies \\int \\cos^3 x\\,dx = \\frac{1}{4}\\left[3\\sin x + \\frac{\\sin 3x}{3}\\right] + C$[span_114](start_span)[span_114](end_span)",
+          "वैकल्पिक प्रतिस्थापन विधि (Odd Power Rule):",
+          "विषम घात होने पर एक घात अलग करके शेष को सर्वसमिका में बदलें, जैसे: $\\int \\sin^3 x\\,dx = \\int (1 - \\cos^2 x)\\sin x\\,dx$, फिर $\\cos x = t$ रखें[span_115](start_span)[span_115](end_span)[span_116](start_span)[span_116](end_span)。",
+          "3. दो भिन्न कोणों के गुणनफल का योग/अंतर में रूपांतरण (Product-to-Sum Rules)[span_117](start_span)[span_117](end_span)[span_118](start_span)[span_118](end_span):",
+          "अंश में 2 से गुणा व भाग करके निम्नलिखित सर्वसमिकाओं का उपयोग किया जाता है[span_119](start_span)[span_119](end_span)[span_120](start_span)[span_120](end_span):",
+          "- $2\\sin A\\cos B = \\sin(A + B) + \\sin(A - B)$[span_121](start_span)[span_121](end_span)[span_122](start_span)[span_122](end_span)",
+          "- $2\\cos A\\sin B = \\sin(A + B) - \\sin(A - B)$[span_123](start_span)[span_123](end_span)",
+          "- $2\\cos A\\cos B = \\cos(A + B) + \\cos(A - B)$[span_124](start_span)[span_124](end_span)[span_125](start_span)[span_125](end_span)",
+          "- $2\\sin A\\sin B = \\cos(A - B) - \\cos(A + B)$[span_126](start_span)[span_126](end_span)[span_127](start_span)[span_127](end_span)",
+          "4. चतुर्थ घात फलनों का समाकलन (Fourth Degree Reduction)[span_128](start_span)[span_128](end_span):",
+          "$\\sin^4 x$ अथवा $\\cos^4 x$ को $(\\sin^2 x)^2$ लिखकर दो बार द्विगुण कोण सर्वसमिका लगाते हैं[span_129](start_span)[span_129](end_span):",
+          "$$\\sin^4 x = \\left(\\frac{1 - \\cos 2x}{2}\\right)^2 = \\frac{1}{4}[1 - 2\\cos 2x + \\cos^2 2x] = \\frac{1}{4}\\left[1 - 2\\cos 2x + \\frac{1 + \\cos 4x}{2}\\right] = \\frac{3}{8} - \\frac{\\cos 2x}{4} + \\frac{\\cos 4x}{8}$$"
+        ],
+        "points": [
+          "ऋणात्मक कोण का नियम: $\\sin(-x) = -\\sin x$ तथा $\\cos(-x) = \\cos x$ का प्रयोग गुणनफल रूपांतरण में सावधानीपूर्वक किया जाता है[span_130](start_span)[span_130](end_span)。",
+          "तीन फलनों का गुणनफल: $\\cos 2x \\cos 4x \\cos 6x$ जैसे प्रश्नों में पहले दो सबसे बड़े कोणों में सूत्र लगाकर तीसरे से पुनः गुणा किया जाता है[span_131](start_span)[span_131](end_span)。",
+          "$\\tan^2 x$ का समाकलन: $\\tan^2 x = \\sec^2 x - 1$ लिखकर $\\int (\\sec^2 x - 1)\\,dx = \\tan x - x + C$ प्राप्त होता है[span_132](start_span)[span_132](end_span)[span_133](start_span)[span_133](end_span)।"
+        ]
+      },
+      {
+        "title": "जटिल त्रिकोणमितीय रूपांतरण एवं विशेष प्रतिस्थापन रणनीतियाँ (Advanced Trigonometric Transformation Strategies)",
+        "content": [
+          "बिहार बोर्ड परीक्षा में पूछे जाने वाले विशिष्ट त्रिकोणमितीय प्रारूप एवं उनकी समाधान विधियाँ[span_134](start_span)[span_134](end_span)[span_135](start_span)[span_135](end_span)[span_136](start_span)[span_136](end_span)[span_137](start_span)[span_137](end_span):",
+          "प्रारूप 1: संयुग्मी से परिमेयकरण (Conjugate Rationalization)[span_138](start_span)[span_138](end_span)[span_139](start_span)[span_139](end_span):",
+          "व्यंजक $\\frac{1}{1 \\pm \\sin x}$ अथवा $\\frac{1}{1 \\pm \\cos x}$ होने पर विपरीत चिह्न से अंश व हर में गुणा करते हैं[span_140](start_span)[span_140](end_span):",
+          "$$\\frac{1 - \\cos x}{1 + \\cos x} = \\frac{2\\sin^2(x/2)}{2\\cos^2(x/2)} = \\tan^2(x/2) = \\sec^2(x/2) - 1$$",
+          "प्रारूप 2: $\\frac{1}{\\cos(x-a)\\cos(x-b)}$ का समाकलन (Constant Sine Trick)[span_141](start_span)[span_141](end_span):",
+          "अंश और हर में अचर $\\sin(a-b)$ अथवा $\\sin(b-a)$ से गुणा करते हैं[span_142](start_span)[span_142](end_span):",
+          "$$\\frac{\\sin(a-b)}{\\cos(x-a)\\cos(x-b)} = \\frac{\\sin[(x-b) - (x-a)]}{\\cos(x-a)\\cos(x-b)} = \\tan(x-b) - \\tan(x-a)$$",
+          "जिससे उत्तर $\\frac{1}{\\sin(a-b)} \\log\\left|\\frac{\\cos(x-a)}{\\cos(x-b)}\\right| + C$ सरलता से प्राप्त हो जाता है[span_143](start_span)[span_143](end_span)。",
+          "प्रारूप 3: $\\frac{1}{1 \\pm \\tan x}$ तथा $\\frac{1}{1 \\pm \\cot x}$ का समाकलन (Symmetric Pairing Method)[span_144](start_span)[span_144](end_span)[span_145](start_span)[span_145](end_span):",
+          "$\\tan x = \\frac{\\sin x}{\\cos x}$ रखकर 2 से गुणा-भाग करते हैं[span_146](start_span)[span_146](end_span):",
+          "$$\\frac{\\cos x}{\\cos x + \\sin x} = \\frac{1}{2}\\left[\\frac{(\\cos x + \\sin x) + (\\cos x - \\sin x)}{\\cos x + \\sin x}\\right] = \\frac{1}{2}\\left[1 + \\frac{\\cos x - \\sin x}{\\cos x + \\sin x}\\right]$$",
+          "पहला भाग सीधे $x$ बन जाता है और दूसरे भाग में हर का अवकलज अंश में होने से $\\log|\\cos x + \\sin x|$ प्राप्त होता है[span_147](start_span)[span_147](end_span)[span_148](start_span)[span_148](end_span)。",
+          "प्रारूप 4: $\\frac{1}{\\sin^2 x \\cos^2 x}$ रूप (Unity Identity Trick)[span_149](start_span)[span_149](end_span)[span_150](start_span)[span_150](end_span):",
+          "अंश में छिपे 1 को $\\sin^2 x + \\cos^2 x$ लिखकर पदों को अलग-अलग विभाजित करते हैं[span_151](start_span)[span_151](end_span)[span_152](start_span)[span_152](end_span):",
+          "$$\\int \\frac{\\sin^2 x + \\cos^2 x}{\\sin^2 x \\cos^2 x}\\,dx = \\int \\sec^2 x\\,dx + \\int \\text{cosec}^2 x\\,dx = \\tan x - \\cot x + C$$",
+          "प्रारूप 5: $\\frac{e^x(1+x)}{\\cos^2(x e^x)}$ रूप (Chain-Composite Product)[span_153](start_span)[span_153](end_span):",
+          "माना $x e^x = t \\implies (x e^x + e^x)\\,dx = e^x(1+x)\\,dx = dt$[span_154](start_span)[span_154](end_span)。",
+          "समाकलन $\\int \\sec^2 t\\,dt = \\tan t + C = \\tan(x e^x) + C$ बन जाता है[span_155](start_span)[span_155](end_span)।"
+        ],
+        "points": [
+          "अंश व हर में $\\cos^2 x$ से भाग: जब समाकल्य $\\frac{1}{a^2\\cos^2 x + b^2\\sin^2 x}$ अथवा $\\frac{\\sqrt{\\tan x}}{\\sin x\\cos x}$ रूप में हो, तो $\\cos^2 x$ से भाग देकर $\\tan x = t$ प्रतिस्थापित किया जाता है[span_156](start_span)[span_156](end_span)[span_157](start_span)[span_157](end_span)。",
+          "पूरक कोण रूपांतरण: $\\sin^{-1}(\\cos x) = \\sin^{-1}(\\sin(\\pi/2 - x)) = \\frac{\\pi}{2} - x$ का उपयोग करके सीधे बीजीय समाकलन किया जाता है[span_158](start_span)[span_158](end_span)。",
+          "सर्वसमिका $\\cos 2x = \\cos^2 x - \\sin^2 x$: भिन्न $\\frac{\\cos 2x}{(\\cos x + \\sin x)^2}$ में गुणनखंड $(a-b)(a+b)$ करके एक घात को निरस्त किया जाता है[span_159](start_span)[span_159](end_span)।"
+        ]
+      }
+    ]
+  }
+}
