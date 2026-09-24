@@ -1,0 +1,362 @@
+{
+  "schemaVersion": 1,
+  "subject": "mathematics",
+  "chapter": 7,
+  "title": "समाकलन (Integrals)",
+  "categories": {
+    "formulas": [
+      {
+        "name": "स्पर्शज्या फलन समाकलन सूत्र (Integration of Tangent: tan x)",
+        "formula": "$$\\int \\tan x\\,dx = \\log_e|\\sec x| + C = -\\log_e|\\cos x| + C \\quad \\text{तथा} \\quad \\int \\tan(ax+b)\\,dx = \\frac{1}{a}\\log_e|\\sec(ax+b)| + C$$",
+        "meaning": "tan x का समाकलन log|sec x| + C अथवा -log|cos x| + C होता है; यदि कोण रैखिक पद (ax+b) हो, तो x के गुणांक a से भाग दिया जाता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "फलन $\\tan x$ का $x$ के सापेक्ष समाकलन ज्ञात कीजिए। [BSEB 2018A, 2024A]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): मानक त्रिकोणमितीय समाकलन सूत्र $\\int \\tan x\\,dx = \\log|\\sec x| + C$ अथवा $-\\log|\\cos x| + C$।",
+              "चरण 2: प्रतिस्थापन विधि से उपपत्ति: $\\int \\frac{\\sin x}{\\cos x}\\,dx$ में $\\cos x = t$ रखने पर $-\\sin x\\,dx = dt$।",
+              "चरण 3: मान रखने पर: $-\\int \\frac{dt}{t} = -\\log|t| + C = -\\log|\\cos x| + C = \\log|\\sec x| + C$।",
+              "उत्तर: $\\log|\\sec x| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\tan 2x\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): रैखिक कोण सूत्र $\\int \\tan(ax+b)\\,dx = \\frac{1}{a}\\log|\\sec(ax+b)| + C$ लागू करने पर, जहाँ $a = 2, b = 0$ है।",
+              "चरण 2: मान प्रतिस्थापित करने पर: $\\frac{1}{2}\\log|\\sec 2x| + C$",
+              "उत्तर: $\\frac{1}{2}\\log|\\sec 2x| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\tan(3x + 5)\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): सूत्र $\\int \\tan(ax+b)\\,dx = \\frac{1}{a}\\log|\\sec(ax+b)| + C$ लागू करने पर, यहाँ $a = 3, b = 5$ है।",
+              "चरण 2: मान रखने पर: $\\frac{1}{3}\\log|\\sec(3x+5)| + C$",
+              "उत्तर: $\\frac{1}{3}\\log|\\sec(3x+5)| + C$"
+            ],
+            "source": "AI"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{\\tan(\\log x)}{x}\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): प्रतिस्थापन विधि तथा सूत्र $\\int \\tan t\\,dt = \\log|\\sec t| + C$।",
+              "चरण 2: माना $\\log x = t$, दोनों पक्षों का अवकलन करने पर: $\\frac{1}{x}\\,dx = dt$",
+              "चरण 3: प्रतिस्थापित करने पर: $\\int \\tan t\\,dt = \\log|\\sec t| + C$",
+              "चरण 4: $t = \\log x$ रखने पर: $\\log|\\sec(\\log x)| + C$",
+              "उत्तर: $\\log|\\sec(\\log x)| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\tan^3 2x\\sec 2x\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.3 Q15]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): $\\tan^2 2x = \\sec^2 2x - 1$ तथा प्रतिस्थापन विधि $\\int (t^2 - 1)\\,dt = \\frac{t^3}{3} - t + C$।",
+              "चरण 2: समाकल्य को तोड़ना: $\\int \\tan^2 2x \\cdot (\\sec 2x\\tan 2x)\\,dx = \\int (\\sec^2 2x - 1)(\\sec 2x\\tan 2x)\\,dx$",
+              "चरण 3: माना $\\sec 2x = t \\implies 2\\sec 2x\\tan 2x\\,dx = dt \\implies \\sec 2x\\tan 2x\\,dx = \\frac{1}{2}dt$",
+              "चरण 4: मान रखने पर: $\\frac{1}{2}\\int (t^2 - 1)\\,dt = \\frac{1}{2}\\left(\\frac{t^3}{3} - t\\right) + C = \\frac{t^3}{6} - \\frac{t}{2} + C$",
+              "चरण 5: $t = \\sec 2x$ रखने पर: $\\frac{1}{6}\\sec^3 2x - \\frac{1}{2}\\sec 2x + C$",
+              "उत्तर: $\\frac{1}{6}\\sec^3 2x - \\frac{1}{2}\\sec 2x + C$"
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "कोटिस्पर्शज्या फलन समाकलन सूत्र (Integration of Cotangent: cot x)",
+        "formula": "$$\\int \\cot x\\,dx = \\log_e|\\sin x| + C = -\\log_e|\\text{cosec } x| + C \\quad \\text{तथा} \\quad \\int \\cot(ax+b)\\,dx = \\frac{1}{a}\\log_e|\\sin(ax+b)| + C$$",
+        "meaning": "cot x का समाकलन log|sin x| + C होता है; रैखिक कोण (ax+b) होने पर x के गुणांक a से भाग दिया जाता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "फलन $\\cot x$ का $x$ के सापेक्ष समाकलन ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): मानक सूत्र $\\int \\cot x\\,dx = \\log|\\sin x| + C$।",
+              "चरण 2: प्रतिस्थापन से उपपत्ति: $\\int \\frac{\\cos x}{\\sin x}\\,dx$ में $\\sin x = t \\implies \\cos x\\,dx = dt$।",
+              "चरण 3: मान रखने पर: $\\int \\frac{dt}{t} = \\log|t| + C = \\log|\\sin x| + C$।",
+              "उत्तर: $\\log|\\sin x| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\cot 4x\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): सूत्र $\\int \\cot(ax+b)\\,dx = \\frac{1}{a}\\log|\\sin(ax+b)| + C$ लागू करने पर, जहाँ $a = 4, b = 0$ है।",
+              "चरण 2: मान प्रतिस्थापित करने पर: $\\frac{1}{4}\\log|\\sin 4x| + C$",
+              "उत्तर: $\\frac{1}{4}\\log|\\sin 4x| + C$"
+            ],
+            "source": "AI"
+          },
+          {
+            "question": "समाकलन $\\int \\cot(1 - 3x)\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): सूत्र $\\int \\cot(ax+b)\\,dx = \\frac{1}{a}\\log|\\sin(ax+b)| + C$ लागू करने पर, यहाँ $x$ का गुणांक $a = -3$ तथा $b = 1$ है।",
+              "चरण 2: मान रखने पर: $\\frac{1}{-3}\\log|\\sin(1-3x)| + C$",
+              "चरण 3: व्यवस्थित रूप: $-\\frac{1}{3}\\log|\\sin(1-3x)| + C$",
+              "उत्तर: $-\\frac{1}{3}\\log|\\sin(1-3x)| + C$"
+            ],
+            "source": "AI"
+          },
+          {
+            "question": "समाकलन $\\int \\cot x \\log(\\sin x)\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.2 Q29]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): प्रतिस्थापन विधि तथा घात नियम $\\int t\\,dt = \\frac{t^2}{2} + C$।",
+              "चरण 2: माना $\\log(\\sin x) = t$, अवकलन करने पर: $\\frac{1}{\\sin x}(\\cos x)\\,dx = dt \\implies \\cot x\\,dx = dt$",
+              "चरण 3: मान प्रतिस्थापित करने पर: $\\int t\\,dt = \\frac{t^2}{2} + C$",
+              "चरण 4: $t = \\log(\\sin x)$ रखने पर: $\\frac{[\\log(\\sin x)]^2}{2} + C$",
+              "उत्तर: $\\frac{[\\log(\\sin x)]^2}{2} + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{\\cot\\sqrt{x}}{\\sqrt{x}}\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): प्रतिस्थापन विधि एवं सूत्र $\\int \\cot t\\,dt = \\log|\\sin t| + C$।",
+              "चरण 2: माना $\\sqrt{x} = t \\implies \\frac{1}{2\\sqrt{x}}\\,dx = dt \\implies \\frac{1}{\\sqrt{x}}\\,dx = 2\\,dt$",
+              "चरण 3: मान रखने पर: $\\int \\cot t \\cdot 2\\,dt = 2\\int \\cot t\\,dt = 2\\log|\\sin t| + C$",
+              "चरण 4: $t = \\sqrt{x}$ रखने पर: $2\\log|\\sin\\sqrt{x}| + C$",
+              "उत्तर: $2\\log|\\sin\\sqrt{x}| + C$"
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "छेदक फलन समाकलन सूत्र (Integration of Secant: sec x)",
+        "formula": "$$\\int \\sec x\\,dx = \\log_e|\\sec x + \\tan x| + C = \\log_e\\left|\\tan\\left(\\frac{\\pi}{4} + \\frac{x}{2}\\right)\\right| + C$$",
+        "meaning": "sec x का समाकलन log|sec x + tan x| + C अथवा अर्द्ध-कोण रूप में log|tan(π/4 + x/2)| + C होता है; रैखिक कोण (ax+b) होने पर a से भाग दिया जाता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "समाकलन $\\int \\sec x\\,dx$ का मान क्या होगा? [BSEB 2024A, 2019A, 2016C]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): मानक समाकलन सूत्र $\\int \\sec x\\,dx = \\log|\\sec x + \\tan x| + C$।",
+              "चरण 2: अंश व हर में $(\\sec x + \\tan x)$ से गुणा करने पर: $\\int \\frac{\\sec^2 x + \\sec x\\tan x}{\\sec x + \\tan x}\\,dx$",
+              "चरण 3: हर का अवकलज अंश में होने से प्रारूप $\\int \\frac{f'(x)}{f(x)}\\,dx = \\log|f(x)| + C$ से सीधा मान प्राप्त होता है।",
+              "उत्तर: $\\log|\\sec x + \\tan x| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\sec 3x\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): सूत्र $\\int \\sec(ax+b)\\,dx = \\frac{1}{a}\\log|\\sec(ax+b) + \\tan(ax+b)| + C$ लागू करने पर, यहाँ $a = 3, b = 0$ है।",
+              "चरण 2: मान प्रतिस्थापित करने पर: $\\frac{1}{3}\\log|\\sec 3x + \\tan 3x| + C$",
+              "उत्तर: $\\frac{1}{3}\\log|\\sec 3x + \\tan 3x| + C$"
+            ],
+            "source": "AI"
+          },
+          {
+            "question": "समाकलन $\\int \\sec(2x - 1)\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): $\\int \\sec(ax+b)\\,dx = \\frac{1}{a}\\log|\\sec(ax+b) + \\tan(ax+b)| + C$ लागू करने पर, यहाँ $a = 2, b = -1$ है।",
+              "चरण 2: मान रखने पर: $\\frac{1}{2}\\log|\\sec(2x-1) + \\tan(2x-1)| + C$",
+              "उत्तर: $\\frac{1}{2}\\log|\\sec(2x-1) + \\tan(2x-1)| + C$"
+            ],
+            "source": "AI"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{\\sec x}{\\sec x + \\tan x}\\,dx$ का मान ज्ञात कीजिए। [BSEB 2021A]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): संयुग्मी से परिमेयकरण, सर्वसमिका $\\sec^2 x - \\tan^2 x = 1$, तथा $\\int \\sec^2 x\\,dx = \\tan x$, $\\int \\sec x\\tan x\\,dx = \\sec x$।",
+              "चरण 2: अंश व हर में $(\\sec x - \\tan x)$ से गुणा करने पर: $\\int \\frac{\\sec x(\\sec x - \\tan x)}{\\sec^2 x - \\tan^2 x}\\,dx$",
+              "चरण 3: हर $1$ होने पर: $\\int (\\sec^2 x - \\sec x\\tan x)\\,dx$",
+              "चरण 4: समाकलन करने पर: $\\tan x - \\sec x + C$",
+              "उत्तर: $\\tan x - \\sec x + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\sec x \\log(\\sec x + \\tan x)\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): प्रतिस्थापन विधि तथा $\\int t\\,dt = \\frac{t^2}{2} + C$।",
+              "चरण 2: माना $\\log(\\sec x + \\tan x) = t \\implies \\frac{1}{\\sec x + \\tan x}(\\sec x\\tan x + \\sec^2 x)\\,dx = dt \\implies \\sec x\\,dx = dt$",
+              "चरण 3: मान प्रतिस्थापित करने पर: $\\int t\\,dt = \\frac{t^2}{2} + C$",
+              "चरण 4: $t$ का मान रखने पर: $\\frac{[\\log(\\sec x + \\tan x)]^2}{2} + C$",
+              "उत्तर: $\\frac{[\\log(\\sec x + \\tan x)]^2}{2} + C$"
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "कोसेकेंट फलन समाकलन सूत्र (Integration of Cosecant: cosec x)",
+        "formula": "$$\\int \\text{cosec } x\\,dx = \\log_e|\\text{cosec } x - \\cot x| + C = \\log_e\\left|\\tan\\left(\\frac{x}{2}\\right)\\right| + C$$",
+        "meaning": "cosec x का समाकलन log|cosec x - cot x| + C अथवा अर्द्ध-कोण रूप में log|tan(x/2)| + C होता है; रैखिक कोण होने पर a से भाग दिया जाता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "समाकलन $\\int \\text{cosec } x\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): मानक सूत्र $\\int \\text{cosec } x\\,dx = \\log|\\text{cosec } x - \\cot x| + C = \\log|\\tan(x/2)| + C$।",
+              "चरण 2: अंश व हर में $(\\text{cosec } x - \\cot x)$ से गुणा करने पर हर का अवकलज अंश में बन जाता है।",
+              "चरण 3: समाकलन परिणाम: $\\log|\\text{cosec } x - \\cot x| + C$।",
+              "उत्तर: $\\log|\\text{cosec } x - \\cot x| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\text{cosec } 2x\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.3 Q19]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): सूत्र $\\int \\text{cosec}(ax)\\,dx = \\frac{1}{a}\\log|\\text{cosec } ax - \\cot ax| + C = \\frac{1}{a}\\log|\\tan(ax/2)| + C$ (जहाँ $a = 2$)।",
+              "चरण 2: मान प्रतिस्थापित करने पर: $\\frac{1}{2}\\log|\\text{cosec } 2x - \\cot 2x| + C = \\frac{1}{2}\\log|\\tan x| + C$",
+              "उत्तर: $\\frac{1}{2}\\log|\\tan x| + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\text{cosec}(4x + 3)\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): सूत्र $\\int \\text{cosec}(ax+b)\\,dx = \\frac{1}{a}\\log|\\text{cosec}(ax+b) - \\cot(ax+b)| + C$ लागू करने पर, यहाँ $a = 4, b = 3$ है।",
+              "चरण 2: मान रखने पर: $\\frac{1}{4}\\log|\\text{cosec}(4x+3) - \\cot(4x+3)| + C$",
+              "उत्तर: $\\frac{1}{4}\\log|\\text{cosec}(4x+3) - \\cot(4x+3)| + C$"
+            ],
+            "source": "AI"
+          },
+          {
+            "question": "समाकलन $\\int \\text{cosec } x(\\text{cosec } x - \\cot x)\\,dx$ ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): कोष्ठक विस्तार तथा $\\int \\text{cosec}^2 x\\,dx = -\\cot x$, $\\int \\text{cosec } x\\cot x\\,dx = -\\text{cosec } x$।",
+              "चरण 2: कोष्ठक का गुणा करने पर: $\\int (\\text{cosec}^2 x - \\text{cosec } x\\cot x)\\,dx$",
+              "चरण 3: पद-दर-पद समाकलन: $-\\cot x - (-\\text{cosec } x) + C$",
+              "चरण 4: व्यवस्थित रूप: $\\text{cosec } x - \\cot x + C$",
+              "उत्तर: $\\text{cosec } x - \\cot x + C$"
+            ],
+            "source": "AI"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{\\text{cosec } x}{\\log|\\tan(x/2)|}\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): प्रतिस्थापन प्रारूप $\\int \\frac{f'(x)}{f(x)}\\,dx = \\log|f(x)| + C$।",
+              "चरण 2: माना $\\log|\\tan(x/2)| = t \\implies \\frac{1}{\\tan(x/2)} \\cdot \\sec^2(x/2) \\cdot \\frac{1}{2}\\,dx = dt$",
+              "चरण 3: $\\frac{\\cos(x/2)}{\\sin(x/2)} \\cdot \\frac{1}{\\cos^2(x/2)} \\cdot \\frac{1}{2}\\,dx = \\frac{1}{2\\sin(x/2)\\cos(x/2)}\\,dx = \\frac{1}{\\sin x}\\,dx = \\text{cosec } x\\,dx = dt$",
+              "चरण 4: मान रखने पर: $\\int \\frac{dt}{t} = \\log|t| + C = \\log|\\log|\\tan(x/2)|| + C$",
+              "उत्तर: $\\log|\\log|\\tan(x/2)|| + C$"
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "प्रतिलोम ज्या एवं कोज्या मानक समाकलन सूत्र (Inverse Sine & Cosine Integration)",
+        "formula": "$$\\int \\frac{1}{\\sqrt{1-x^2}}\\,dx = \\sin^{-1}x + C = -\\cos^{-1}x + C \\quad \\text{तथा} \\quad \\int \\frac{1}{\\sqrt{1-(ax)^2}}\\,dx = \\frac{1}{a}\\sin^{-1}(ax) + C$$",
+        "meaning": "1/√(1-x^2) का समाकलन sin^(-1)x + C होता है क्योंकि sin^(-1)x का अवकलज 1/√(1-x^2) होता है; x के साथ अचर गुणांक a होने पर 1/a बाहर आता है।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "समाकलन $\\int \\frac{1}{\\sqrt{1-x^2}}\\,dx$ का मान क्या होगा? [BSEB 2019A, 2024A]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): मानक प्रतिलोम त्रिकोणमितीय सूत्र $\\int \\frac{1}{\\sqrt{1-x^2}}\\,dx = \\sin^{-1}x + C$।",
+              "चरण 2: चूँकि $\\frac{d}{dx}(\\sin^{-1}x) = \\frac{1}{\\sqrt{1-x^2}}$, अतः अवकलन का व्युत्क्रम $\\sin^{-1}x + C$ है।",
+              "उत्तर: $\\sin^{-1}x + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{1}{\\sqrt{1-4x^2}}\\,dx$ का मान ज्ञात कीजिए। [BSEB 2022A]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): सूत्र $\\int \\frac{1}{\\sqrt{1-(ax)^2}}\\,dx = \\frac{1}{a}\\sin^{-1}(ax) + C$ लागू करने पर, जहाँ $4x^2 = (2x)^2$ अतः $a = 2$ है।",
+              "चरण 2: समाकलन रूप लिखना: $\\int \\frac{1}{\\sqrt{1-(2x)^2}}\\,dx$",
+              "चरण 3: सूत्र से सीधा मान: $\\frac{1}{2}\\sin^{-1}(2x) + C$",
+              "उत्तर: $\\frac{1}{2}\\sin^{-1}(2x) + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{1}{\\sqrt{1-9x^2}}\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): सूत्र $\\int \\frac{1}{\\sqrt{1-(ax)^2}}\\,dx = \\frac{1}{a}\\sin^{-1}(ax) + C$ लागू करने पर, यहाँ $9x^2 = (3x)^2$ अतः $a = 3$ है।",
+              "चरण 2: मान प्रतिस्थापित करने पर: $\\frac{1}{3}\\sin^{-1}(3x) + C$",
+              "उत्तर: $\\frac{1}{3}\\sin^{-1}(3x) + C$"
+            ],
+            "source": "AI"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{\\sin^{-1}x}{\\sqrt{1-x^2}}\\,dx$ का मान ज्ञात कीजिए। [BSEB 2024A, NCERT Ex 7.2 Q23]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): प्रतिस्थापन विधि तथा घात नियम $\\int t\\,dt = \\frac{t^2}{2} + C$।",
+              "चरण 2: माना $\\sin^{-1}x = t$, दोनों पक्षों का अवकलन करने पर: $\\frac{1}{\\sqrt{1-x^2}}\\,dx = dt$",
+              "चरण 3: मान प्रतिस्थापित करने पर: $\\int t\\,dt = \\frac{t^2}{2} + C$",
+              "चरण 4: $t = \\sin^{-1}x$ रखने पर: $\\frac{(\\sin^{-1}x)^2}{2} + C$",
+              "उत्तर: $\\frac{(\\sin^{-1}x)^2}{2} + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{x^3}{\\sqrt{1-x^8}}\\,dx$ का मान ज्ञात कीजिए। [NCERT Misc Q12]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): $x^8 = (x^4)^2$ लिखकर प्रतिस्थापन विधि तथा सूत्र $\\int \\frac{1}{\\sqrt{1-t^2}}\\,dt = \\sin^{-1}t + C$।",
+              "चरण 2: रूपान्तरण: $\\int \\frac{x^3}{\\sqrt{1-(x^4)^2}}\\,dx$",
+              "चरण 3: माना $x^4 = t \\implies 4x^3\\,dx = dt \\implies x^3\\,dx = \\frac{1}{4}dt$",
+              "चरण 4: मान रखने पर: $\\frac{1}{4}\\int \\frac{1}{\\sqrt{1-t^2}}\\,dt = \\frac{1}{4}\\sin^{-1}t + C$",
+              "चरण 5: $t = x^4$ रखने पर: $\\frac{1}{4}\\sin^{-1}(x^4) + C$",
+              "उत्तर: $\\frac{1}{4}\\sin^{-1}(x^4) + C$"
+            ],
+            "source": "किताब"
+          }
+        ]
+      },
+      {
+        "name": "प्रतिलोम स्पर्शज्या एवं छेदक मानक समाकलन सूत्र (Inverse Tangent & Secant Integration)",
+        "formula": "$$\\int \\frac{1}{1+x^2}\\,dx = \\tan^{-1}x + C = -\\cot^{-1}x + C \\quad \\text{तथा} \\quad \\int \\frac{1}{x\\sqrt{x^2-1}}\\,dx = \\sec^{-1}x + C$$",
+        "meaning": "1/(1+x^2) का समाकलन tan^(-1)x + C तथा 1/(x√(x^2-1)) का समाकलन sec^(-1)x + C होता है; यह सूत्र अवकलज के सीधे प्रतिलोम हैं।",
+        "unit": "",
+        "examples": [
+          {
+            "question": "समाकलन $\\int \\frac{1}{1+x^2}\\,dx$ का मान क्या होगा? [BSEB 2019A, 2024A]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): मानक प्रतिलोम त्रिकोणमितीय सूत्र $\\int \\frac{1}{1+x^2}\\,dx = \\tan^{-1}x + C$।",
+              "चरण 2: चूँकि $\\frac{d}{dx}(\\tan^{-1}x) = \\frac{1}{1+x^2}$, अतः अवकलन का व्युत्क्रम $\\tan^{-1}x + C$ है।",
+              "उत्तर: $\\tan^{-1}x + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{1}{1+9x^2}\\,dx$ का मान ज्ञात कीजिए।",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): $\\int \\frac{1}{1+(ax)^2}\\,dx = \\frac{1}{a}\\tan^{-1}(ax) + C$ लागू करने पर, यहाँ $9x^2 = (3x)^2$ अतः $a = 3$ है।",
+              "चरण 2: रूपान्तरण: $\\int \\frac{1}{1+(3x)^2}\\,dx$",
+              "चरण 3: सूत्र से सीधा मान: $\\frac{1}{3}\\tan^{-1}(3x) + C$",
+              "उत्तर: $\\frac{1}{3}\\tan^{-1}(3x) + C$"
+            ],
+            "source": "AI"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{e^{\\tan^{-1}x}}{1+x^2}\\,dx$ का मान ज्ञात कीजिए। [NCERT Ex 7.2 Q18]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): प्रतिस्थापन विधि तथा $\\int e^t\\,dt = e^t + C$।",
+              "चरण 2: माना $\\tan^{-1}x = t$, दोनों पक्षों का अवकलन करने पर: $\\frac{1}{1+x^2}\\,dx = dt$",
+              "चरण 3: मान प्रतिस्थापित करने पर: $\\int e^t\\,dt = e^t + C$",
+              "चरण 4: $t = \\tan^{-1}x$ रखने पर: $e^{\\tan^{-1}x} + C$",
+              "उत्तर: $e^{\\tan^{-1}x} + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{x^3}{1+x^8}\\,dx$ का मान ज्ञात कीजिए। [BSEB 2024A, NCERT Ex 7.2 Q37]",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): $x^8 = (x^4)^2$ लिखकर प्रतिस्थापन विधि तथा सूत्र $\\int \\frac{1}{1+t^2}\\,dt = \\tan^{-1}t + C$।",
+              "चरण 2: रूपान्तरण: $\\int \\frac{x^3}{1+(x^4)^2}\\,dx$",
+              "चरण 3: माना $x^4 = t \\implies 4x^3\\,dx = dt \\implies x^3\\,dx = \\frac{1}{4}dt$",
+              "चरण 4: मान रखने पर: $\\frac{1}{4}\\int \\frac{1}{1+t^2}\\,dt = \\frac{1}{4}\\tan^{-1}t + C$",
+              "चरण 5: $t = x^4$ प्रतिस्थापित करने पर: $\\frac{1}{4}\\tan^{-1}(x^4) + C$",
+              "उत्तर: $\\frac{1}{4}\\tan^{-1}(x^4) + C$"
+            ],
+            "source": "किताब"
+          },
+          {
+            "question": "समाकलन $\\int \\frac{1}{x\\sqrt{x^2 - 1}}\\,dx$ का मान क्या होगा?",
+            "solution": [
+              "चरण 1 (प्रयुक्त सूत्र): मानक सूत्र $\\int \\frac{1}{x\\sqrt{x^2-1}}\\,dx = \\sec^{-1}x + C$ अथवा $-\\text{cosec}^{-1}x + C$।",
+              "चरण 2: चूँकि $\\frac{d}{dx}(\\sec^{-1}x) = \\frac{1}{|x|\\sqrt{x^2-1}}$, अतः अवकलन का व्युत्क्रम सीधा $\\sec^{-1}x + C$ है।",
+              "उत्तर: $\\sec^{-1}x + C$"
+            ],
+            "source": "किताब"
+          }
+        ]
+      }
+    ]
+  }
+}
