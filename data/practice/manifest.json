@@ -13,8 +13,8 @@
     {
       "id": "set-02",
       "subject": "physics",
-      "title": "Class 12 Physics - Sent-Up Exam Special Set",
-      "description": "Bihar Board Class 12 Physics Sent-Up Exam All 70 Objective Questions",
+      "title": "कक्षा 12 भौतिकी – सेंट-अप परीक्षा विशेष सेट",
+      "description": "बिहार बोर्ड कक्षा 12 भौतिकी के सेंट-अप परीक्षा के सभी 70 वस्तुनिष्ठ प्रश्न",
       "file": "physics/set-02.json",
       "timeLimitMinutes": 60,
       "totalQuestions": 70
@@ -22,8 +22,8 @@
     {
       "id": "set-03",
       "subject": "physics",
-      "title": "Class 12 Physics - Semiconductor & Communication Systems",
-      "description": "Bihar Board Class 12 Physics Chapter 14 (Ardhchalak aur Yuktiyan) tatha Chapter 15 (Sanchar Vyavastha) ke mahatvapurna objective prashn",
+      "title": "कक्षा 12 भौतिकी - अर्धचालक एवं संचार व्यवस्था",
+      "description": "बिहार बोर्ड कक्षा 12 भौतिकी के अध्याय 14 (अर्धचालक और युक्तियाँ) तथा अध्याय 15 (संचार व्यवस्था) के महत्वपूर्ण वस्तुनिष्ठ प्रश्न",
       "file": "physics/set-03.json",
       "timeLimitMinutes": 60,
       "totalQuestions": 77
@@ -31,8 +31,8 @@
     {
       "id": "set-04",
       "subject": "physics",
-      "title": "Class 12 Physics - 150 VVI Objective Bullet Revision",
-      "description": "Bihar Board Class 12 Physics Full Syllabus Top 150 Objective Questions",
+      "title": "कक्षा 12 भौतिकी – 150 महत्वपूर्ण वस्तुनिष्ठ प्रश्न",
+      "description": "बिहार बोर्ड कक्षा 12 भौतिकी के संपूर्ण पाठ्यक्रम से 150 महत्वपूर्ण वस्तुनिष्ठ प्रश्न",
       "file": "physics/set-04.json",
       "timeLimitMinutes": 120,
       "totalQuestions": 150
@@ -40,8 +40,8 @@
     {
       "id": "set-05",
       "subject": "physics",
-      "title": "Class 12 Physics - Akhand Mega Revision (Ch 1 to 3)",
-      "description": "Bihar Board Class 12 Physics Chapter 1, 2 एवं 3 के महत्वपूर्ण वस्तुनिष्ठ प्रश्न",
+      "title": "कक्षा 12 भौतिकी – अखंड मेगा रिवीजन (अध्याय 1 से 3)",
+      "description": "बिहार बोर्ड कक्षा 12 भौतिकी के अध्याय 1 (वैद्युत आवेश तथा क्षेत्र), अध्याय 2 (स्थिरवैद्युत विभव तथा धारिता) एवं अध्याय 3 (विद्युत धारा) के महत्वपूर्ण वस्तुनिष्ठ प्रश्न",
       "file": "physics/set-05.json",
       "timeLimitMinutes": 120,
       "totalQuestions": 162
@@ -49,8 +49,8 @@
     {
       "id": "set-06",
       "subject": "physics",
-      "title": "Class 12 Physics - Chapters 1, 2, 3 Complete Objective Set",
-      "description": "Bihar Board Class 12 Physics: वैद्युत आवेश तथा क्षेत्र, स्थिर विद्युत विभव तथा धारिता, एवं विद्युत धारा के सभी वस्तुनिष्ठ प्रश्न",
+      "title": "कक्षा 12 भौतिकी – अध्याय 1 से 3: संपूर्ण वस्तुनिष्ठ प्रश्न सेट",
+      "description": "बिहार बोर्ड कक्षा 12 भौतिकी: वैद्युत आवेश तथा क्षेत्र, स्थिरवैद्युत विभव तथा धारिता एवं विद्युत धारा के वस्तुनिष्ठ प्रश्न",
       "file": "physics/set-06.json",
       "timeLimitMinutes": 120,
       "totalQuestions": 141
@@ -58,17 +58,17 @@
     {
       "id": "set-07",
       "subject": "physics",
-      "title": "Class 12 Physics - Top 100 VVI Objective Revision",
-      "description": "Bihar Board Class 12 Physics Chapter 1 se Chapter 8 tak ke sabhi 100 mahatvapurna objective prashn",
+      "title": "कक्षा 12 भौतिकी – 100 अति महत्वपूर्ण वस्तुनिष्ठ प्रश्न",
+      "description": "बिहार बोर्ड कक्षा 12 भौतिकी: अध्याय 1 से 8 तक के 100 महत्वपूर्ण वस्तुनिष्ठ प्रश्नों का पुनरावृत्ति सेट।",
       "file": "physics/set-07.json",
-      "timeLimitMinutes": 80,
+      "timeLimitMinutes": 90,
       "totalQuestions": 100
     },
     {
       "id": "set-08",
       "subject": "physics",
-      "title": "Class 12 Physics - Brahmastra 200+ Mega Objective Set",
-      "description": "Bihar Board Class 12 Physics: Book-1 (अध्याय 1, 2 एवं 3) के संपूर्ण वस्तुनिष्ठ प्रश्नोत्तर",
+      "title": "कक्षा 12 भौतिकी – ब्रह्मास्त्र 205 मेगा वस्तुनिष्ठ प्रश्न सेट",
+      "description": "बिहार बोर्ड कक्षा 12 भौतिकी: अध्याय 1, 2 एवं 3 के वस्तुनिष्ठ प्रश्नोत्तर का संकलन।",
       "file": "physics/set-08.json",
       "timeLimitMinutes": 180,
       "totalQuestions": 205
@@ -76,8 +76,8 @@
     {
       "id": "set-09",
       "subject": "physics",
-      "title": "Class 12 Physics - Book-2 Brahmastra Special Set",
-      "description": "Bihar Board Class 12 Physics: Book-2 (किरण प्रकाशिकी, तरंग प्रकाशिकी, विकिरण तथा द्रव्य की द्वैत प्रकृति, परमाणु, नाभिक, अर्द्धचालक एवं युक्तियाँ) के संपूर्ण वस्तुनिष्ठ प्रश्न",
+      "title": "कक्षा 12 भौतिकी – पुस्तक 2 ब्रह्मास्त्र विशेष प्रश्न सेट",
+      "description": "बिहार बोर्ड कक्षा 12 भौतिकी: पुस्तक 2 के किरण प्रकाशिकी, तरंग प्रकाशिकी, विकिरण तथा द्रव्य की द्वैत प्रकृति, परमाणु, नाभिक एवं अर्द्धचालक और युक्तियाँ अध्यायों के वस्तुनिष्ठ प्रश्न।",
       "file": "physics/set-09.json",
       "timeLimitMinutes": 180,
       "totalQuestions": 200
