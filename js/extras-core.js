@@ -27,7 +27,8 @@
     notes: { url: 'data/notes/manifest.json', listKey: 'notes' },
     pyq: { url: 'data/pyq/manifest.json', listKey: 'pyq' },
     practice: { url: 'data/practice/manifest.json', listKey: 'practice' },
-    vault: { url: 'data/vault/manifest.json', listKey: 'vault' }
+    vault: { url: 'data/vault/manifest.json', listKey: 'vault' },
+    lab: { url: 'data/lab/manifest.json', listKey: 'lab' }
   };
   X.KINDS = KINDS;
 
@@ -68,26 +69,10 @@
   var KATEX_CDN = 'https://cdn.jsdelivr.net/npm/katex@0.16.45/dist/';
   var KATEX_LOCAL = 'lib/katex/';
   var mathP = null;
-  var mathWaiters = [];
-  // Slow/कमज़ोर Internet पर KaTeX देर से (Timeout के बाद भी) Load हो सकती है।
-  // जो भी Page उस समय "Code Text" दिखा चुका है, उसे बाद में सही Formula में अपने-आप बदलने के लिए यह Callback रजिस्टर करो।
-  // अगर KaTeX पहले से मिल चुकी है तो Callback तुरंत चलेगा।
-  X.onMathReady = function (cb) {
-    if (window.katex) { try { cb(); } catch (e) { /* ignore */ } return; }
-    mathWaiters.push(cb);
-  };
-  function notifyMathReady() {
-    if (!window.katex || !mathWaiters.length) return;
-    var list = mathWaiters; mathWaiters = [];
-    list.forEach(function (cb) { try { cb(); } catch (e) { /* ignore */ } });
-  }
   function loadKatexFrom(base) {
     return new Promise(function (resolve) {
       var done = false;
-      // ध्यान: Timeout के बाद भी यह Script Tag DOM में रहता है (हटाया नहीं जाता),
-      // इसलिए अगर Network धीरे-धीरे भी File पूरी Download कर ले, तो onload बाद में भी चलेगा
-      // और notifyMathReady() असली Formula दिखाने वाले Pages को जगा देगा।
-      function fin(v) { if (!done) { done = true; resolve(v); } if (v) notifyMathReady(); }
+      function fin(v) { if (!done) { done = true; resolve(v); } }
       var css = document.createElement('link');
       css.rel = 'stylesheet'; css.href = base + 'katex.min.css';
       document.head.appendChild(css);
@@ -95,8 +80,7 @@
       js.src = base + 'katex.min.js';
       js.onload = function () { fin(!!window.katex); };
       js.onerror = function () { try { css.remove(); js.remove(); } catch (e) { /* ignore */ } fin(false); };
-      // पहले 7 सेकंड था — कमज़ोर Mobile Network (2-3 KB/s जैसा) पर 270KB की Library के लिए बहुत कम पड़ता था
-      setTimeout(function () { fin(!!window.katex); }, 20000);
+      setTimeout(function () { fin(!!window.katex); }, 7000);
       document.head.appendChild(js);
     });
   }
@@ -243,7 +227,7 @@
 
   /* ---------- अपना Storage (पुराने progress से अलग) ---------- */
   var store = null;
-  function blank() { return { v: 1, best: {}, history: [], active: null, read: {}, ng: {} }; }
+  function blank() { return { v: 1, best: {}, history: [], active: null, read: {}, ng: {}, lab: {} }; }
   function isObj(o) { return o && typeof o === 'object' && !Array.isArray(o); }
   function validActive(a) {
     if (!a || typeof a !== 'object' || !Array.isArray(a.questions) || !Array.isArray(a.answers)) return false;
@@ -264,6 +248,7 @@
           if (p.best && typeof p.best === 'object' && !Array.isArray(p.best)) d.best = p.best;
           if (isObj(p.read)) d.read = p.read;
           if (isObj(p.ng)) d.ng = p.ng;
+          if (isObj(p.lab)) d.lab = p.lab;
           if (Array.isArray(p.history)) d.history = p.history.filter(function (h) { return h && typeof h.id === 'string' && typeof h.total === 'number'; }).slice(-30);
           if (validActive(p.active)) d.active = p.active;
         }
@@ -421,7 +406,11 @@
       var vs = M.Vault ? M.Vault.state() : { open: false };
       html += '<button class="x-hub-card" style="--accent:#a78bfa" data-action="nav" data-to="/vault"><span class="x-hub-top"><span class="x-hub-ico">🎁</span>' +
         '<span><strong>Fun Vault</strong><br><span class="x-meta">Chapter Challenge में ' + (M.Vault ? M.Vault.PASS : 95) + '%+ लाओ → चुटकुले खुलते हैं</span></span></span>' +
-        '<span class="x-meta">' + (vs.open ? '🔓 खुला है — ' + M.App.fmtTime(Math.ceil(vs.left / 1000)) + ' बचे' : '🔒 अभी बंद') + '</span></button>' +
+        '<span class="x-meta">' + (vs.open ? '🔓 खुला है — ' + M.App.fmtTime(Math.ceil(vs.left / 1000)) + ' बचे' : '🔒 अभी बंद') + '</span></button>';
+      html += '<button class="x-hub-card" style="--accent:#22d3ee" data-action="nav" data-to="/lab"><span class="x-hub-top"><span class="x-hub-ico">🧪</span>' +
+        '<span><strong>Virtual Lab</strong><br><span class="x-meta">Physics के Experiments — असली Lab जैसा Simulation</span></span></span>' +
+        '<span class="x-meta">Experiments उपलब्ध</span></button>';
+      html +=
               '<div class="card"><h3 class="card-title">🔍 Data Check</h3>' +
         '<p class="muted small">नई JSON फ़ाइलें GitHub पर डालने के बाद यहाँ जाँचो कि वे सही से पढ़ी जा रही हैं या नहीं।</p>' +
         '<button class="btn small ghost" data-action="x-check">अभी जाँचो</button><div id="xCheckOut" class="x-check-out" style="margin-top:10px"></div></div>';
@@ -433,8 +422,8 @@
   /* ---------- Data Check ---------- */
   var STATUS_TXT = { missing: 'फ़ाइल नहीं मिली', error: 'गड़बड़ी', empty: 'फ़ाइल में अभी कुछ नहीं है' };
   X.checkAll = function () {
-    var kinds = ['notes', 'pyq', 'practice', 'vault'];
-    var names = { notes: 'Notes', pyq: 'PYQ', practice: 'Practice', vault: 'Vault' };
+    var kinds = ['notes', 'pyq', 'practice', 'vault', 'lab'];
+    var names = { notes: 'Notes', pyq: 'PYQ', practice: 'Practice', vault: 'Vault', lab: 'Lab' };
     return Promise.all(kinds.map(function (k) { return X.manifest(k); })).then(function (ms) {
       var jobs = [];
       var lines = [];
@@ -445,7 +434,7 @@
         else if (!mf.entries.length) lines.push({ cls: 'ok', t: names[k] + ': manifest सही है, अभी कोई entry नहीं (खाली)' });
         mf.warnings.forEach(function (w) { lines.push({ cls: 'warn', t: names[k] + ' manifest — ' + w }); });
         mf.entries.forEach(function (en) {
-          var loader = k === 'notes' ? M.Notes && M.Notes.load : k === 'pyq' ? M.Pyq && M.Pyq.load : k === 'vault' ? M.Vault && M.Vault.load : M.Practice && M.Practice.load;
+          var loader = k === 'notes' ? M.Notes && M.Notes.load : k === 'pyq' ? M.Pyq && M.Pyq.load : k === 'vault' ? M.Vault && M.Vault.load : k === 'lab' ? M.Lab && M.Lab.load : M.Practice && M.Practice.load;
           if (!loader) return;
           var tag = names[k] + ' · ' + (en.subject || en.id) + (en.chapter ? ' · अध्याय ' + en.chapter + (en.part ? ' (' + en.part + ')' : '') : '') + (en.year ? ' · ' + en.year : '') + (en.id ? ' · ' + en.id : '');
           jobs.push(loader(en).then(function (r) {
