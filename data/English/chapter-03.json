@@ -1,8 +1,969 @@
 {
-  "_help": "प्रश्न इसी 'questions' list में जोड़ो। हर प्रश्न का format data/question-template.json में देखो। अभी यह list खाली है।",
+  "_help": "प्रश्न इसी 'questions' list में जोड़ो।",
   "subject": "english",
   "chapter": 3,
-  "title": "Poetry Section — Now the Leaves Are Falling Fast",
-  "status": "pending-pdf-questions",
-  "questions": []
+  "title": "NOW THE LEAVES ARE FALLING FAST",
+  "status": "ready",
+  "questions": [
+    {
+      "id": "ENG03Q001",
+      "subject": "english",
+      "chapter": 3,
+      "question": "When was W.H. Auden born?",
+      "options": {
+        "A": "1908",
+        "B": "1907",
+        "C": "1917",
+        "D": "1973"
+      },
+      "answer": "B",
+      "explanation": "W.H. Auden ka janam saal 1907 mein hua tha.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q002",
+      "subject": "english",
+      "chapter": 3,
+      "question": "When did W.H. Auden die?",
+      "options": {
+        "A": "1908",
+        "B": "1907",
+        "C": "1917",
+        "D": "1973"
+      },
+      "answer": "D",
+      "explanation": "W.H. Auden ka nidhan saal 1973 mein hua tha.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q003",
+      "subject": "english",
+      "chapter": 3,
+      "question": "Which prize did W.H. Auden win in 1948?",
+      "options": {
+        "A": "Nobel Prize",
+        "B": "Booker Prize",
+        "C": "Padma Bhushan",
+        "D": "Pulitzer Prize"
+      },
+      "answer": "D",
+      "explanation": "W.H. Auden ko saal 1948 mein unki kriti 'The Age of Anxiety' ke liye Pulitzer Prize mila tha.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q004",
+      "subject": "english",
+      "chapter": 3,
+      "question": "For which collection did W.H. Auden win the Pulitzer Prize?",
+      "options": {
+        "A": "The Shield of Achilles",
+        "B": "The Age of Anxiety",
+        "C": "Look, Stranger!",
+        "D": "Spain"
+      },
+      "answer": "B",
+      "explanation": "Auden ne 'The Age of Anxiety' ke liye 1948 mein Pulitzer Prize jeeta tha.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q005",
+      "subject": "english",
+      "chapter": 3,
+      "question": "Which type of poet is W.H. Auden described as?",
+      "options": {
+        "A": "Metaphysical poet",
+        "B": "People's poet",
+        "C": "Intellectually vigorous poet",
+        "D": "Romantic nature poet"
+      },
+      "answer": "C",
+      "explanation": "Auden ko ek intellectually vigorous kavi aur aalochak ke roop mein jaana jaata hai.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q006",
+      "subject": "english",
+      "chapter": 3,
+      "question": "To W.H. Auden, poetry was a ..........",
+      "options": {
+        "A": "Happy pastime",
+        "B": "Sad song",
+        "C": "Serious game",
+        "D": "Political weapon"
+      },
+      "answer": "C",
+      "explanation": "Auden ke anusaar kavita ek gambhir khel yani 'serious game' thi jo aatm-chetna ko gehra karti hai.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q007",
+      "subject": "english",
+      "chapter": 3,
+      "question": "He had a passion for word-coining and using .......... words.",
+      "options": {
+        "A": "simple",
+        "B": "modern slang",
+        "C": "archaic",
+        "D": "foreign"
+      },
+      "answer": "C",
+      "explanation": "Auden ko naye shabd gadhne aur pracheen yaani archaic shabdon ka prayog karne ka shauk tha.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q008",
+      "subject": "english",
+      "chapter": 3,
+      "question": "He left England as early as .......... to settle permanently in the United States.",
+      "options": {
+        "A": "1907",
+        "B": "1973",
+        "C": "1939",
+        "D": "1948"
+      },
+      "answer": "C",
+      "explanation": "Auden ne saal 1939 mein England chhodkar America mein sthayi roop se basne ka faisla kiya tha.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q009",
+      "subject": "english",
+      "chapter": 3,
+      "question": "His notable works are divided into .......... phases.",
+      "options": {
+        "A": "one",
+        "B": "two",
+        "C": "three",
+        "D": "four"
+      },
+      "answer": "B",
+      "explanation": "Unke sahityik jeevan ko do charnon (British phase aur American phase) mein baanta gaya hai.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q010",
+      "subject": "english",
+      "chapter": 3,
+      "question": "'The Age of Anxiety' belongs to Auden's .......... phase.",
+      "options": {
+        "A": "British",
+        "B": "Irish",
+        "C": "Australian",
+        "D": "American"
+      },
+      "answer": "D",
+      "explanation": "'The Age of Anxiety' unke American daur ki rachna hai.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q011",
+      "subject": "english",
+      "chapter": 3,
+      "question": "'Now the Leaves Are Falling Fast' is written by ..........",
+      "options": {
+        "A": "Walt Whitman",
+        "B": "John Keats",
+        "C": "W. H. Auden",
+        "D": "Walter de la Mare"
+      },
+      "answer": "C",
+      "explanation": "Yeh prasiddh kavita W. H. Auden dwara likhi gayi hai.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q012",
+      "subject": "english",
+      "chapter": 3,
+      "question": "'Now the Leaves Are Falling Fast' enacts the .......... inherent in human life.",
+      "options": {
+        "A": "joy",
+        "B": "frustration",
+        "C": "patience",
+        "D": "greed"
+      },
+      "answer": "B",
+      "explanation": "Yeh kavita manav jeevan mein nihit nirasha yani frustration aur akelepan ko vyakt karti hai.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q013",
+      "subject": "english",
+      "chapter": 3,
+      "question": "Frustration in human life arises because our .......... are not fulfilled.",
+      "options": {
+        "A": "crimes",
+        "B": "debts",
+        "C": "aspirations",
+        "D": "illusions"
+      },
+      "answer": "C",
+      "explanation": "Jeevan mein nirasha tab aati hai jab hamari aakankshayein (aspirations) adhuri reh jaati hain.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q014",
+      "subject": "english",
+      "chapter": 3,
+      "question": "'And the prams go .......... on.'",
+      "options": {
+        "A": "running",
+        "B": "moving",
+        "C": "jumping",
+        "D": "rolling"
+      },
+      "answer": "D",
+      "explanation": "Kavita ki mool pankti hai: 'And the prams go rolling on'.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q015",
+      "subject": "english",
+      "chapter": 3,
+      "question": ".......... neighbours, left and right, pluck us from the real delight.",
+      "options": {
+        "A": "Quarrelling",
+        "B": "Whispering",
+        "C": "Shouting",
+        "D": "Laughing"
+      },
+      "answer": "B",
+      "explanation": "Kavita mein 'Whispering neighbours, left and right' ka varnan hai jo yamdoot ka prateek hain.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q016",
+      "subject": "english",
+      "chapter": 3,
+      "question": "Who run scolding for their food through the leafless wood?",
+      "options": {
+        "A": "Wolves",
+        "B": "Lions",
+        "C": "Trolls",
+        "D": "Bears"
+      },
+      "answer": "C",
+      "explanation": "'Trolls run scolding for their food' ke anusaar trolls bhookh se vyakul hokar daudte hain.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q017",
+      "subject": "english",
+      "chapter": 3,
+      "question": "Whose .......... waterfall could bless travellers in their last distress?",
+      "options": {
+        "A": "Golden",
+        "B": "White",
+        "C": "Crystal",
+        "D": "Silver"
+      },
+      "answer": "B",
+      "explanation": "Kavita ki aakhiri panktiyon mein parvat ke safed jharne ('White waterfall') ka zikr hai.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q018",
+      "subject": "english",
+      "chapter": 3,
+      "question": "The .......... has become dumb to see the leafless trees.",
+      "options": {
+        "A": "Cuckoo",
+        "B": "Sparrow",
+        "C": "Nightingale",
+        "D": "Peacock"
+      },
+      "answer": "C",
+      "explanation": "Pankti hai: 'And the nightingale is dumb', arthath gaane wali chidiya maun ho chuki hai.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q019",
+      "subject": "english",
+      "chapter": 3,
+      "question": "Nurse's flowers will not last, nurses to the .......... are gone.",
+      "options": {
+        "A": "forest",
+        "B": "grave",
+        "C": "hospital",
+        "D": "field"
+      },
+      "answer": "B",
+      "explanation": "Kavita ki pankti hai: 'Nurses to the grave are gone'.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q020",
+      "subject": "english",
+      "chapter": 3,
+      "question": "The falling of leaves refers to the speedy arrival of ..........",
+      "options": {
+        "A": "spring",
+        "B": "youth",
+        "C": "old age and death",
+        "D": "rainy season"
+      },
+      "answer": "C",
+      "explanation": "Patton ka tezi se girna manushya ke jeevan ke aakhiri padaav aur mrityu ka sanket hai.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q021",
+      "subject": "english",
+      "chapter": 3,
+      "question": "The 'travellers' in the poem are .......... moving towards their death.",
+      "options": {
+        "A": "angels",
+        "B": "animals",
+        "C": "human beings",
+        "D": "birds"
+      },
+      "answer": "C",
+      "explanation": "Yatri ke roop mein manushya (human beings) hain jo jeevan-yatra poori kar mrityu ki or ja rahe hain.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q022",
+      "subject": "english",
+      "chapter": 3,
+      "question": "Trees shed their leaves primarily in the season of ..........",
+      "options": {
+        "A": "Summer",
+        "B": "Autumn",
+        "C": "Monsoon",
+        "D": "Spring"
+      },
+      "answer": "B",
+      "explanation": "Ped patjhad yaani Autumn ritu mein apne patte gira dete hain.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q023",
+      "subject": "english",
+      "chapter": 3,
+      "question": "In the line 'Follow wooden in our track', 'wooden' refers to ..........",
+      "options": {
+        "A": "wooden toys",
+        "B": "wooden carts",
+        "C": "wooden coffins",
+        "D": "wooden sticks"
+      },
+      "answer": "C",
+      "explanation": "'Wooden' ka sanket lakdi ke taboot (coffins) ki or hai jisme shav rakhe jaate hain.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q024",
+      "subject": "english",
+      "chapter": 3,
+      "question": "'And the angle (angel) will not come' means there will be no ..........",
+      "options": {
+        "A": "divine help or rescue",
+        "B": "guest arriving",
+        "C": "food delivery",
+        "D": "doctor visiting"
+      },
+      "answer": "A",
+      "explanation": "Iska taatparya hai ki aakhiri samay mein manushya ko bachane koi daivi sahayata nahi aati.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q025",
+      "subject": "english",
+      "chapter": 3,
+      "question": "Whose white waterfall could bless travellers in their last ..........?",
+      "options": {
+        "A": "distress",
+        "B": "journey",
+        "C": "moment",
+        "D": "breath"
+      },
+      "answer": "A",
+      "explanation": "Kavita ki aakhiri pankti hai: 'Travellers in their last distress'.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q026",
+      "subject": "english",
+      "chapter": 3,
+      "question": "Continuity amidst .......... is the eternal truth depicted through rolling prams.",
+      "options": {
+        "A": "immorality",
+        "B": "mortality",
+        "C": "wealth",
+        "D": "poverty"
+      },
+      "answer": "B",
+      "explanation": "Nashwarta (mortality) ke bavjood jeevan-chakra ka nirantar chalna is kavita ka mool sandesh hai.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q027",
+      "subject": "english",
+      "chapter": 3,
+      "question": "Troll is an ugly, wicked creature belonging to .......... mythology.",
+      "options": {
+        "A": "Greek",
+        "B": "Roman",
+        "C": "Scandinavian",
+        "D": "Egyptian"
+      },
+      "answer": "C",
+      "explanation": "Trolls Scandinavian (Norse) mythology ke bhayanak aur aam taur par dushit jeev maane jaate hain.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q028",
+      "subject": "english",
+      "chapter": 3,
+      "question": "When death approaches, the active hands must ..........",
+      "options": {
+        "A": "burn",
+        "B": "freeze",
+        "C": "dance",
+        "D": "fold"
+      },
+      "answer": "B",
+      "explanation": "Kavita ke anusaar: 'And the active hands must freeze Lonely on the separate knees'.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q029",
+      "subject": "english",
+      "chapter": 3,
+      "question": "The poet's attitude to life in this poem is not entirely ..........",
+      "options": {
+        "A": "optimistic",
+        "B": "pessimistic",
+        "C": "romantic",
+        "D": "humorous"
+      },
+      "answer": "B",
+      "explanation": "Kavita nirasha se shuru hoti hai kintu ant mein jharna aasha aur mukti darshata hai, atah yeh poori tarah pessimistic nahi hai.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q030",
+      "subject": "english",
+      "chapter": 3,
+      "question": "The lyric 'Now the Leaves Are Falling Fast' is composed in .......... stanzas.",
+      "options": {
+        "A": "three-line",
+        "B": "four-line (quatrains)",
+        "C": "six-line",
+        "D": "eight-line"
+      },
+      "answer": "B",
+      "explanation": "Yeh kavita char-char panktiyon ke padon (quatrains) mein rachit hai jinki rhyme scheme AABB hai.",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q031",
+      "subject": "english",
+      "chapter": 3,
+      "question": "What is the full name of W. H. Auden?",
+      "options": {
+        "A": "William Henry Auden",
+        "B": "Wystan Hugh Auden",
+        "C": "Walter Howard Auden",
+        "D": "Warren Harold Auden"
+      },
+      "answer": "B",
+      "explanation": "W. H. Auden ka poora naam Wystan Hugh Auden hai.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q032",
+      "subject": "english",
+      "chapter": 3,
+      "question": "Which of the following books belongs to Auden's British phase?",
+      "options": {
+        "A": "The Shield of Achilles",
+        "B": "The Age of Anxiety",
+        "C": "The Dance of Death",
+        "D": "For the Time Being"
+      },
+      "answer": "C",
+      "explanation": "'The Dance of Death' Auden ke British daur ki rachna hai.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q033",
+      "subject": "english",
+      "chapter": 3,
+      "question": "Which of the following works was composed during Auden's American phase?",
+      "options": {
+        "A": "The Orators",
+        "B": "Look, Stranger!",
+        "C": "Spain",
+        "D": "The Shield of Achilles"
+      },
+      "answer": "D",
+      "explanation": "'The Shield of Achilles' unke American daur ka prasiddh sangrah hai.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q034",
+      "subject": "english",
+      "chapter": 3,
+      "question": "In the poem, what do 'whispering neighbours' primarily symbolize?",
+      "options": {
+        "A": "Gossip mongers",
+        "B": "Messengers / Agents of death",
+        "C": "Playful children",
+        "D": "Well-wishers"
+      },
+      "answer": "B",
+      "explanation": "'Whispering neighbours' vastav mein mrityu ke duto (messengers of death) ka roopak hain.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q035",
+      "subject": "english",
+      "chapter": 3,
+      "question": "What is the meaning of the word 'Prams'?",
+      "options": {
+        "A": "Small motor cars",
+        "B": "Baby carriages pushed by hand",
+        "C": "Fast trains",
+        "D": "Wooden boats"
+      },
+      "answer": "B",
+      "explanation": "'Prams' bachhon ko ghumane wali char pahiye ki gaadi (perambulator) ko kehte hain.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q036",
+      "subject": "english",
+      "chapter": 3,
+      "question": "What does 'Nurse's flowers will not last' symbolically indicate?",
+      "options": {
+        "A": "Flowers fade quickly in the hot sun",
+        "B": "Mortal life, beauty, and earthly protections are transient",
+        "C": "Nurses are careless gardeners",
+        "D": "Hospitals should not keep flowers"
+      },
+      "answer": "B",
+      "explanation": "Iska symbolic arth yeh hai ki manushya ka jeevan aur saansarik aashray kshanbhangur hain.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q037",
+      "subject": "english",
+      "chapter": 3,
+      "question": "In the line 'Dead in hundreds at the back', what does the poet refer to?",
+      "options": {
+        "A": "Generations of people who have already died",
+        "B": "Soldiers sleeping after a war",
+        "C": "Trees cut down by woodsmen",
+        "D": "Animals killed in winter"
+      },
+      "answer": "A",
+      "explanation": "Peechhe mare pade sainkdon log un pichhli peedhiyon ko darshate hain jo mrityu ko prapt ho chuki hain.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q038",
+      "subject": "english",
+      "chapter": 3,
+      "question": "What does 'leafless wood' symbolize in this lyric?",
+      "options": {
+        "A": "Spring season",
+        "B": "A devastated, barren and helpless society",
+        "C": "A dense fruit garden",
+        "D": "A picnic ground"
+      },
+      "answer": "B",
+      "explanation": "'Leafless wood' manav jeevan ke sukhepan, akelepan aur sansadhanheen sthiti ko darshata hai.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q039",
+      "subject": "english",
+      "chapter": 3,
+      "question": "What is the rhyme scheme of each stanza in 'Now the Leaves Are Falling Fast'?",
+      "options": {
+        "A": "ABAB",
+        "B": "ABBA",
+        "C": "AABB",
+        "D": "ABCB"
+      },
+      "answer": "C",
+      "explanation": "Kavita ke har stanza mein AABB rhyme scheme chalti hai (jaise fast/last, gone/on).",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q040",
+      "subject": "english",
+      "chapter": 3,
+      "question": "In the line 'Arms raised stiffly to reprove', what does 'reprove' mean?",
+      "options": {
+        "A": "To applaud",
+        "B": "To blame or rebuke",
+        "C": "To forgive",
+        "D": "To embrace"
+      },
+      "answer": "B",
+      "explanation": "'Reprove' ka arth daantna, phatkaar lagana ya ninda karna hota hai.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q041",
+      "subject": "english",
+      "chapter": 3,
+      "question": "What does the mountain's white waterfall symbolize in the final stanza?",
+      "options": {
+        "A": "Danger and drowning",
+        "B": "Peace, consolation, and final release from life's agonies",
+        "C": "Extreme bitter cold",
+        "D": "Natural calamity"
+      },
+      "answer": "B",
+      "explanation": "Safed jharna aakhiri kashton se mukti, shanti aur aatmik santosh ka prateek hai.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q042",
+      "subject": "english",
+      "chapter": 3,
+      "question": "What does 'Pluck us from the real delight' mean in context?",
+      "options": {
+        "A": "Offer fresh fruits to eat",
+        "B": "Deprive humans of true joy and vitality of life",
+        "C": "Take people to an amusement park",
+        "D": "Teach spiritual meditation"
+      },
+      "answer": "B",
+      "explanation": "Iska arth hai manushya ko uske aam jeevan ke sachhe anand aur sukhoon se chheen lena.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q043",
+      "subject": "english",
+      "chapter": 3,
+      "question": "Auden's later poems were overtly influenced by ..........",
+      "options": {
+        "A": "Marxism",
+        "B": "Christianity",
+        "C": "Paganism",
+        "D": "Atheism"
+      },
+      "answer": "B",
+      "explanation": "Auden ki baad ki rachnayein spasht roop se Christian aadhyaatm aur vichaaron se prabhavit theen.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q044",
+      "subject": "english",
+      "chapter": 3,
+      "question": "What is the synonym of the word 'Freeze' used in the poem?",
+      "options": {
+        "A": "Melt",
+        "B": "Stiffen / Become rigid",
+        "C": "Boil",
+        "D": "Relax"
+      },
+      "answer": "B",
+      "explanation": "'Freeze' ka arth thanda hokar sunn ya kathor (rigid/stiff) ho jaana hota hai.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q045",
+      "subject": "english",
+      "chapter": 3,
+      "question": "What literary role did W.H. Auden NOT perform?",
+      "options": {
+        "A": "Poet",
+        "B": "Verse dramatist and critic",
+        "C": "Commercial airline pilot",
+        "D": "Translator and editor"
+      },
+      "answer": "C",
+      "explanation": "Auden kavi, natakkar, aalochak aur anuwadak the, parantu commercial pilot nahi the.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q046",
+      "subject": "english",
+      "chapter": 3,
+      "question": "The phrase 'false attitudes of love' satirizes ..........",
+      "options": {
+        "A": "genuine parental love",
+        "B": "hypocritical and artificial social gestures of sympathy",
+        "C": "divine compassion",
+        "D": "love for pets"
+      },
+      "answer": "B",
+      "explanation": "Yeh samaj ke dikhawati prem aur jhuthe aadar-samman ke dhong par vyangya karta hai.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q047",
+      "subject": "english",
+      "chapter": 3,
+      "question": "What does 'scolding for their food' indicate about the trolls?",
+      "options": {
+        "A": "They cook delicious dishes",
+        "B": "Their desperation, greed, and aggressive hunger in difficult times",
+        "C": "They are fasting",
+        "D": "They distribute food to others"
+      },
+      "answer": "B",
+      "explanation": "Yeh dikhata hai ki kathin paristithi mein log bhookh aur lalach ke kaaran kitne aakramak ho jaate hain.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q048",
+      "subject": "english",
+      "chapter": 3,
+      "question": "The dumbness of the nightingale represents the death of ..........",
+      "options": {
+        "A": "political debates",
+        "B": "beauty, joy, music, and artistic expression",
+        "C": "wild hunting",
+        "D": "physical strength"
+      },
+      "answer": "B",
+      "explanation": "Bulbul ka maun hona sundarta, sangeet aur ullas ke samapt hone ka prateek hai.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q049",
+      "subject": "english",
+      "chapter": 3,
+      "question": "In 'Cold, impossible, ahead / Lifts the mountain's lovely head', what does 'cold' mean?",
+      "options": {
+        "A": "Pleasantly breezy",
+        "B": "Distant, challenging, and unfeeling yet majestic",
+        "C": "Liquid ice cream",
+        "D": "Cold drinking water"
+      },
+      "answer": "B",
+      "explanation": "Yeh parvat ki kathin, duruh aur shaant unchayi ko darshata hai.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q050",
+      "subject": "english",
+      "chapter": 3,
+      "question": "Which political event significantly impacted Auden's early works?",
+      "options": {
+        "A": "The Spanish Civil War and political crises of 1930s Europe",
+        "B": "American Civil War",
+        "C": "French Revolution",
+        "D": "Battle of Waterloo"
+      },
+      "answer": "A",
+      "explanation": "1930 ke dashak ke rajneetik sankat aur Spanish Civil War ne unki shuruaati kavitaon ko prabhavit kiya.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q051",
+      "subject": "english",
+      "chapter": 3,
+      "question": "What is the antonym of 'Active' as used in 'active hands must freeze'?",
+      "options": {
+        "A": "Energetic",
+        "B": "Passive / Idle",
+        "C": "Nimble",
+        "D": "Swift"
+      },
+      "answer": "B",
+      "explanation": "'Active' (sakriya) ka vipritarthak shabd 'Passive' ya 'Idle' (nishkriya) hota hai.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q052",
+      "subject": "english",
+      "chapter": 3,
+      "question": "What grammatical class does the word 'stiffly' belong to in 'Arms raised stiffly'?",
+      "options": {
+        "A": "Noun",
+        "B": "Adjective",
+        "C": "Adverb",
+        "D": "Verb"
+      },
+      "answer": "C",
+      "explanation": "'Stiffly' ek Adverb hai jo 'raised' verb ki visheshta batata hai.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q053",
+      "subject": "english",
+      "chapter": 3,
+      "question": "What does the poet mean by 'separate knees' in 'Lonely on the separate knees'?",
+      "options": {
+        "A": "Sitting alone in isolation and helplessness",
+        "B": "Dancing with someone",
+        "C": "Running in a marathon",
+        "D": "Kneeling in a crowd"
+      },
+      "answer": "A",
+      "explanation": "Yeh sharir ke alag-thalag pad jaane aur akelepan mein baithne ki lachar sthiti ko darshata hai.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q054",
+      "subject": "english",
+      "chapter": 3,
+      "question": "The poem 'Now the Leaves Are Falling Fast' contains how many stanzas in total?",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "7"
+      },
+      "answer": "B",
+      "explanation": "Yeh kavita kul 5 padon (stanzas) mein likhi gayi hai, jisme pratyek mein 4 panktiyan hain.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q055",
+      "subject": "english",
+      "chapter": 3,
+      "question": "The total number of lines in 'Now the Leaves Are Falling Fast' is ..........",
+      "options": {
+        "A": "14",
+        "B": "16",
+        "C": "20",
+        "D": "24"
+      },
+      "answer": "C",
+      "explanation": "5 stanzas × 4 lines = kul 20 panktiyan (lines) hain.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q056",
+      "subject": "english",
+      "chapter": 3,
+      "question": "What is the meaning of 'distress' in 'travellers in their last distress'?",
+      "options": {
+        "A": "Extreme pain, sorrow, or dying agony",
+        "B": "Great happiness",
+        "C": "A celebration party",
+        "D": "A casual meeting"
+      },
+      "answer": "A",
+      "explanation": "'Distress' ka arth ghor peeda, kasht ya antim samay ki vedna hota hai.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q057",
+      "subject": "english",
+      "chapter": 3,
+      "question": "Which century did W.H. Auden primarily belong to?",
+      "options": {
+        "A": "18th century",
+        "B": "19th century",
+        "C": "20th century",
+        "D": "21st century"
+      },
+      "answer": "C",
+      "explanation": "Auden ka jivan-kaal 1907 se 1973 tak tha, isliye we 20th century ke mukhya kavi hain.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q058",
+      "subject": "english",
+      "chapter": 3,
+      "question": "According to Auden, poetry should deepen people's ..........",
+      "options": {
+        "A": "greed for money",
+        "B": "self-awareness",
+        "C": "political hatred",
+        "D": "physical strength"
+      },
+      "answer": "B",
+      "explanation": "Auden ke anusar kavita ka uddeshya logon ki aatm-chetna (self-awareness) ko gehra karna hona chahiye.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q059",
+      "subject": "english",
+      "chapter": 3,
+      "question": "What is the primary allegory underlying the poem 'Now the Leaves Are Falling Fast'?",
+      "options": {
+        "A": "A guide to forest management",
+        "B": "The journey of human life from active youth to old age and eventual death",
+        "C": "A scientific analysis of autumn leaves",
+        "D": "A political speech about child nurseries"
+      },
+      "answer": "B",
+      "explanation": "Kavita patton ke jhadne ke madhyam se manav jeevan ke yuvaavastha se budhape aur antatah mrityu tak ki yatra ka roopak prastut karti hai.",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG03Q060",
+      "subject": "english",
+      "chapter": 3,
+      "question": "Which work among the following is a verse play by W. H. Auden and Christopher Isherwood?",
+      "options": {
+        "A": "The Ascent of F6",
+        "B": "Leaves of Grass",
+        "C": "Songs and Sonnets",
+        "D": "The Waste Land"
+      },
+      "answer": "A",
+      "explanation": "'The Ascent of F6' Auden dwara apne sahyogi Christopher Isherwood ke sath likha gaya prasiddh kavya-natak (verse drama) hai.",
+      "source": "CONCEPT",
+      "type": "objective"
+    }
+  ]
 }
