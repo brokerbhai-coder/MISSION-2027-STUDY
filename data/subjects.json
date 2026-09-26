@@ -857,6 +857,36 @@
           "notesUrl": null
         }
       ]
+      },
+    {
+      "id": "history",
+      "nameHi": "इतिहास",
+      "nameEn": "History",
+      "icon": "📜",
+      "color": "#b45309",
+      "status": "available",
+      "progression": "sequential",
+      "chapters": []
+    },
+    {
+      "id": "geography",
+      "nameHi": "भूगोल",
+      "nameEn": "Geography",
+      "icon": "🌍",
+      "color": "#0d9488",
+      "status": "available",
+      "progression": "sequential",
+      "chapters": []
+    },
+    {
+      "id": "political-science",
+      "nameHi": "राजनीति विज्ञान",
+      "nameEn": "Political Science",
+      "icon": "🏛️",
+      "color": "#dc2626",
+      "status": "available",
+      "progression": "sequential",
+      "chapters": []
     }
   ]
 }
