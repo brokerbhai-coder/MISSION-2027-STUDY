@@ -1,8 +1,809 @@
 {
-  "_help": "प्रश्न इसी 'questions' list में जोड़ो। हर प्रश्न का format data/question-template.json में देखो। अभी यह list खाली है।",
-  "subject": "english",
-  "chapter": 15,
-  "title": "Prose Section — Ideas That Have Helped Mankind",
-  "status": "pending-pdf-questions",
-  "questions": []
+"_help": "प्रश्न इसी 'questions' list में जोड़ो।",
+"subject": "english",
+"chapter": 15,
+"title": "Ideas that Have Helped Mankind",
+"status": "ready",
+"questions": [
+{
+"id": "ENG15Q001",
+"subject": "english",
+"chapter": 15,
+"question": "We are able to get a variety of enjoyment due to our ..........",
+"options": {
+"A": "intelligence",
+"B": "riches",
+"C": "physical strength",
+"D": "weapons"
+},
+"answer": "A",
+"explanation": "Manushya apni buddhimatta aur intelligence ke kaaran vibhinn prakaar ke anand prapt karne mein saksham hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q002",
+"subject": "english",
+"chapter": 15,
+"question": "We are more friendly ..........",
+"options": {
+"A": "within the herd",
+"B": "outside the herd",
+"C": "everywhere",
+"D": "nowhere"
+},
+"answer": "A",
+"explanation": "Hum apne samooh ya parivar (within the herd) ke bheetar adhik mitravat aur sahayogi hote hain.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q003",
+"subject": "english",
+"chapter": 15,
+"question": "After language, the second most important thing which helped mankind was ..........",
+"options": {
+"A": "gold",
+"B": "silver",
+"C": "fire",
+"D": "iron"
+},
+"answer": "C",
+"explanation": "Bhasha ke baad aag (fire) ki khoj manav vikas ka doosra sabse bada kadam sidhh hui.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q004",
+"subject": "english",
+"chapter": 15,
+"question": "The taming of domestic animals made human life ..........",
+"options": {
+"A": "Pleasanter",
+"B": "fearful",
+"C": "harmful",
+"D": "dangerous"
+},
+"answer": "A",
+"explanation": "Pashuon ko paaltoo banane se manav jeevan pehle se kahin adhik aasan aur sukhad (pleasanter) ban gaya.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q005",
+"subject": "english",
+"chapter": 15,
+"question": "'Ideas That Have Helped Mankind' has been written by ..........",
+"options": {
+"A": "Germaine Greer",
+"B": "Dorothy L. Sayers",
+"C": "H. E. Bates",
+"D": "Bertrand Russell"
+},
+"answer": "D",
+"explanation": "Is vicharotpadak nibandh ke lekhak prasiddh British darshanik Bertrand Russell hain.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q006",
+"subject": "english",
+"chapter": 15,
+"question": "The two broad categories of ideas that contributed to mankind were knowledge and technique, and ..........",
+"options": {
+"A": "Moral and Science",
+"B": "Moral and Values",
+"C": "Moral and Politics",
+"D": "Moral and Social"
+},
+"answer": "C",
+"explanation": "Russell ne sahayak vicharon ko do hisson mein baanta hai: gyan-takneek aur naitik-rajneetik (moral and politics).",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q007",
+"subject": "english",
+"chapter": 15,
+"question": "Bertrand Russell was awarded the Nobel Prize for ..........",
+"options": {
+"A": "philosophy",
+"B": "literature",
+"C": "medicine",
+"D": "economics"
+},
+"answer": "B",
+"explanation": "Bertrand Russell ko unki sahityik rachnaon ke liye saahitya (literature) ka Nobel Prize mila tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q008",
+"subject": "english",
+"chapter": 15,
+"question": "The most indubitable respect in which ideas have helped mankind is ..........",
+"options": {
+"A": "more knowledge",
+"B": "numbers",
+"C": "happiness",
+"D": "less numbers"
+},
+"answer": "B",
+"explanation": "Sabse nishchit roop se vicharon ne manav sankhya (numbers) ko badhane aur astitva bachane mein sahayata ki.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q009",
+"subject": "english",
+"chapter": 15,
+"question": "Survival for early Homo sapiens primarily was ..........",
+"options": {
+"A": "a problem",
+"B": "never a problem",
+"C": "both of them",
+"D": "very easy"
+},
+"answer": "A",
+"explanation": "Shuruati daur mein vishal aur jangali janwaron ke beech jeevit rehna ek gambhir samasya (a problem) thi.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q010",
+"subject": "english",
+"chapter": 15,
+"question": "Birds die of hunger in large numbers ..........",
+"options": {
+"A": "during summer",
+"B": "during rainy season",
+"C": "during winter",
+"D": "during spring"
+},
+"answer": "C",
+"explanation": "Kadi sardi (winter) ke mausam mein bhojan ki kami se pakshi badi sankhya mein mar jaate hain.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q011",
+"subject": "english",
+"chapter": 15,
+"question": "During summer, birds ..........",
+"options": {
+"A": "remember this catastrophe",
+"B": "forget this catastrophe",
+"C": "fear from this",
+"D": "store extra food"
+},
+"answer": "B",
+"explanation": "Garmiyan aane par pakshi pichhli sardi ki us vipatti (catastrophe) ko poori tarah bhool jaate hain.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q012",
+"subject": "english",
+"chapter": 15,
+"question": "Every human death by starvation is preceded by a long period of ..........",
+"options": {
+"A": "sorrow",
+"B": "anxiety",
+"C": "happiness",
+"D": "peace"
+},
+"answer": "B",
+"explanation": "Bhookh se hone wali manav mrityu se pehle lamba samay chinta aur darr (anxiety) ka hota hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q013",
+"subject": "english",
+"chapter": 15,
+"question": "Animals do NOT get pleasure from ..........",
+"options": {
+"A": "Music",
+"B": "Football",
+"C": "Science",
+"D": "None of these"
+},
+"answer": "D",
+"explanation": "Pashuon ko sangeet, football ya vigyan kisi se bhi manvik anand nahi milta.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q014",
+"subject": "english",
+"chapter": 15,
+"question": ".......... would not help the corn to grow unless he was allowed to feast on the blood of children.",
+"options": {
+"A": "Moloch",
+"B": "Soloch",
+"C": "Cannibal",
+"D": "God"
+},
+"answer": "A",
+"explanation": "Pracheen andhavishwas ke mutabiq devta Moloch bachhon ke balidan ke bina fasal nahi ugne deta tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q015",
+"subject": "english",
+"chapter": 15,
+"question": "Bertrand Russell was a philosopher and a ..........",
+"options": {
+"A": "historian",
+"B": "scientist",
+"C": "doctor",
+"D": "geologist"
+},
+"answer": "A",
+"explanation": "Bertrand Russell ek mahan darshanik ke sath-sath itihaskar (historian) aur ganitagya bhi the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q016",
+"subject": "english",
+"chapter": 15,
+"question": "The invention of .......... was more important than the domestication of animals.",
+"options": {
+"A": "car",
+"B": "fire",
+"C": "agriculture",
+"D": "iron"
+},
+"answer": "C",
+"explanation": "Krishi (agriculture) ka aavishkar pashupalan se bhi kahin adhik moolbhut aur mahatvapurna kadam tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q017",
+"subject": "english",
+"chapter": 15,
+"question": "Civilization has taught us ..........",
+"options": {
+"A": "to be unlawful",
+"B": "to be rude or cruel",
+"C": "to be more friendly towards others",
+"D": "to wage war"
+},
+"answer": "C",
+"explanation": "Sabhyata ne hamein apne samooh mein ek-doosre ke prati adhik mitravat banna sikhaya hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q018",
+"subject": "english",
+"chapter": 15,
+"question": ".......... was a brilliant commentator on a large variety of topics.",
+"options": {
+"A": "Martin Luther King, Jr.",
+"B": "Bertrand Russell",
+"C": "Mahatma Gandhi",
+"D": "Dr. Zakir Husain"
+},
+"answer": "B",
+"explanation": "Bertrand Russell anek vishayon par nishpaksh aur gahri tippani karne wale lekhak the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q019",
+"subject": "english",
+"chapter": 15,
+"question": "Which type of prose piece is 'Ideas That Have Helped Mankind'?",
+"options": {
+"A": "Story",
+"B": "Journey Record",
+"C": "Drama",
+"D": "Essay"
+},
+"answer": "D",
+"explanation": "'Ideas That Have Helped Mankind' sahityik vidha ke roop mein ek nibandh (essay) hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q020",
+"subject": "english",
+"chapter": 15,
+"question": "In .......... the last step in the development of writing was never taken.",
+"options": {
+"A": "India",
+"B": "Germany",
+"C": "China",
+"D": "France"
+},
+"answer": "C",
+"explanation": "China mein chitra-lipi ke baad dhwani-aadharit varna-lipi ka aakhiri kadam nahi uthaya gaya.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q021",
+"subject": "english",
+"chapter": 15,
+"question": "Who offered penetrating comments on diverse topics like Marx, Buddha, and Christ?",
+"options": {
+"A": "Germaine Greer",
+"B": "Dorothy L. Sayers",
+"C": "H. E. Bates",
+"D": "Bertrand Russell"
+},
+"answer": "D",
+"explanation": "Bertrand Russell ne Marx, Buddha aur Christ jaise vyaktitvaon par nishpaksh vichar diye hain.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q022",
+"subject": "english",
+"chapter": 15,
+"question": "Bertrand Russell belonged to which country?",
+"options": {
+"A": "Britain",
+"B": "Germany",
+"C": "Iceland",
+"D": "Ireland"
+},
+"answer": "A",
+"explanation": "Bertrand Russell Britain (United Kingdom) ke nivasi the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q023",
+"subject": "english",
+"chapter": 15,
+"question": "Civilization fundamentally taught humans ..........",
+"options": {
+"A": "to be rude",
+"B": "to be uncivilized",
+"C": "to be human",
+"D": "to be violent"
+},
+"answer": "C",
+"explanation": "Sabhyata ne manushya ko manviya sanskar aur aachar-vyavahar (to be human) sikhaye.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q024",
+"subject": "english",
+"chapter": 15,
+"question": "In which year was Bertrand Russell awarded the Nobel Prize in Literature?",
+"options": {
+"A": "1948",
+"B": "1964",
+"C": "1938",
+"D": "1950"
+},
+"answer": "D",
+"explanation": "Bertrand Russell ko saal 1950 mein Nobel Prize se sammanit kiya gaya tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q025",
+"subject": "english",
+"chapter": 15,
+"question": "Who wrote the famous philosophical piece 'Why I Am Not a Christian'?",
+"options": {
+"A": "H. E. Bates",
+"B": "Germaine Greer",
+"C": "Dorothy L. Sayers",
+"D": "Bertrand Russell"
+},
+"answer": "D",
+"explanation": "'Why I Am Not a Christian' Bertrand Russell ki prasiddh pustak hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q026",
+"subject": "english",
+"chapter": 15,
+"question": "The utilization of .......... proved to be a major milestone in human progress.",
+"options": {
+"A": "Wood",
+"B": "Agriculture",
+"C": "Fire",
+"D": "Wheel"
+},
+"answer": "C",
+"explanation": "Aag ka sadupyog manav sabhyata ki pragati mein meel ka patthar sidhh hua.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q027",
+"subject": "english",
+"chapter": 15,
+"question": "'Roads to Freedom' was authored by ..........",
+"options": {
+"A": "Martin Luther King, Jr.",
+"B": "Bertrand Russell",
+"C": "Pearl S. Buck",
+"D": "Mahatma Gandhi"
+},
+"answer": "B",
+"explanation": "'Roads to Freedom' Bertrand Russell dwara likhi gayi pustak hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q028",
+"subject": "english",
+"chapter": 15,
+"question": "The most important and difficult steps in human development were taken before the dawn of ..........",
+"options": {
+"A": "History",
+"B": "Revolution",
+"C": "Evolution",
+"D": "Agriculture"
+},
+"answer": "A",
+"explanation": "Sabse kathin aur moolbhoot kadam likhit itihas ke shuru hone (dawn of history) se pehle uthaye gaye the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q029",
+"subject": "english",
+"chapter": 15,
+"question": ".......... skills play a more important role in human life than congenital ones.",
+"options": {
+"A": "Congenital",
+"B": "Required",
+"C": "Acquired",
+"D": "Achieving"
+},
+"answer": "C",
+"explanation": "Manushya ke jeevan mein seekhe gaye kaushal (acquired skills) janmjat kshamtaon se zyada asardari hote hain.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG15Q030",
+"subject": "english",
+"chapter": 15,
+"question": "In which year was Bertrand Russell born?",
+"options": {
+"A": "1869",
+"B": "1872",
+"C": "1888",
+"D": "1897"
+},
+"answer": "B",
+"explanation": "Bertrand Russell ka janam saal 1872 mein Wales, United Kingdom mein hua tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG15Q031",
+"subject": "english",
+"chapter": 15,
+"question": "In which year did Bertrand Russell pass away?",
+"options": {
+"A": "1965",
+"B": "1968",
+"C": "1970",
+"D": "1973"
+},
+"answer": "C",
+"explanation": "Bertrand Russell ka nidhan 97 varsh ki aayu mein saal 1970 mein hua tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG15Q032",
+"subject": "english",
+"chapter": 15,
+"question": "Which monumental philosophical survey was written by Bertrand Russell in 1945?",
+"options": {
+"A": "A History of Western Philosophy",
+"B": "The Waste Land",
+"C": "Sons and Lovers",
+"D": "Distant Drum"
+},
+"answer": "A",
+"explanation": "'A History of Western Philosophy' Russell ki vishva-vikhyat pustak hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG15Q033",
+"subject": "english",
+"chapter": 15,
+"question": "What is the unique intellectual power of planning ahead called in human development?",
+"options": {
+"A": "Instinct",
+"B": "Foresight",
+"C": "Dreaming",
+"D": "Forgetfulness"
+},
+"answer": "B",
+"explanation": "Aage ki yojana banane aur khatron ko pehle se bhaampne ki kshamta ko door-darshita (foresight) kehte hain.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG15Q034",
+"subject": "english",
+"chapter": 15,
+"question": "What disadvantage does human foresight bring along with safety?",
+"options": {
+"A": "Physical weakness",
+"B": "Continuous worry, anxiety, and dread of the future",
+"C": "Loss of memory",
+"D": "Blindness"
+},
+"answer": "B",
+"explanation": "Bhavishya ke baare mein sochne ki kshamta manushya ke jeevan mein nirantar chinta aur tanav (anxiety) laati hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG15Q035",
+"subject": "english",
+"chapter": 15,
+"question": "What vital faculty enabled early humans to pass down inventions and tools to their children?",
+"options": {
+"A": "Physical fighting",
+"B": "Language and speech",
+"C": "Running speed",
+"D": "Magic"
+},
+"answer": "B",
+"explanation": "Bhasha (language) ke vikas ne gyan aur aavishkaron ko peedhi-dar-peedhi aage badhane mein madad ki.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG15Q036",
+"subject": "english",
+"chapter": 15,
+"question": "How do civilized human beings still tend to behave towards those outside their herd?",
+"options": {
+"A": "With absolute love and brotherhood",
+"B": "With suspicion, ferocity, and cruelty",
+"C": "With total indifference",
+"D": "With financial aid"
+},
+"answer": "B",
+"explanation": "Samooh ke bahar ke logon ke prati manav vyavahar aksar kathor, aakramak aur hinsa-bhara hota hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG15Q037",
+"subject": "english",
+"chapter": 15,
+"question": "Which book on social and domestic life was written by Bertrand Russell in 1929?",
+"options": {
+"A": "Marriage and Morals",
+"B": "The Princes",
+"C": "Under Orion",
+"D": "The Rainbow"
+},
+"answer": "A",
+"explanation": "'Marriage and Morals' Russell dwara likhi gayi ek prabhavshali pustak hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG15Q038",
+"subject": "english",
+"chapter": 15,
+"question": "What is the meaning of the word 'indubitable' as used in the essay?",
+"options": {
+"A": "Doubtful and weak",
+"B": "Unquestionable and beyond doubt",
+"C": "Harmful",
+"D": "Temporary"
+},
+"answer": "B",
+"explanation": "'Indubitable' ka arth nisandeh ya nishchit (unquestionable) hota hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG15Q039",
+"subject": "english",
+"chapter": 15,
+"question": "What accidentally originated from the regular use of fire by early humans?",
+"options": {
+"A": "Hunting weapons",
+"B": "Cooking",
+"C": "Farming",
+"D": "Writing"
+},
+"answer": "B",
+"explanation": "Aag ke prayog se anjaane mein bhojan pakaane (cooking) ki kala ka aavishkar hua.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG15Q040",
+"subject": "english",
+"chapter": 15,
+"question": "Which of the following works was NOT written by Bertrand Russell?",
+"options": {
+"A": "Conquest of Happiness",
+"B": "In Praise of Idleness",
+"C": "The Waste Land",
+"D": "Authority and the Individual"
+},
+"answer": "C",
+"explanation": "'The Waste Land' T. S. Eliot ki rachna hai, Bertrand Russell ki nahi.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG15Q041",
+"subject": "english",
+"chapter": 15,
+"question": "What was Russell's philosophical stance regarding war and violence?",
+"options": {
+"A": "Militarism",
+"B": "Pacifism and rationalism",
+"C": "Anarchism",
+"D": "Aggressive imperialism"
+},
+"answer": "B",
+"explanation": "Russell shantivadi (pacifist) the aur taksangat vicharon ke prabal samarthak the.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG15Q042",
+"subject": "english",
+"chapter": 15,
+"question": "Why did early humans need an increase in population numbers?",
+"options": {
+"A": "To build huge stone palaces",
+"B": "To survive against harsh elements and terrifying wild beasts",
+"C": "To create armies for foreign invasions",
+"D": "To travel across continents"
+},
+"answer": "B",
+"explanation": "Prakriti aur khatarnak janwaron se suraksha ke liye manav sankhya ka badhna atyant zaroori tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG15Q043",
+"subject": "english",
+"chapter": 15,
+"question": "What is the antonym of the word 'congenital'?",
+"options": {
+"A": "Inborn",
+"B": "Hereditary",
+"C": "Acquired",
+"D": "Natural"
+},
+"answer": "C",
+"explanation": "'Congenital' (janmjat) ka vipritarthak shabd 'Acquired' (arjit kiya gaya) hota hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG15Q044",
+"subject": "english",
+"chapter": 15,
+"question": "The invention of agriculture encouraged mankind to give up nomadic life and ..........",
+"options": {
+"A": "settle down in permanent communities",
+"B": "live permanently in caves",
+"C": "sail across oceans",
+"D": "stop eating food"
+},
+"answer": "A",
+"explanation": "Kheti ne manushya ko bhatakna chhudakar sthayi roop se basne aur samaj banane ke liye prerit kiya.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG15Q045",
+"subject": "english",
+"chapter": 15,
+"question": "What does the word 'catastrophe' mean in the essay?",
+"options": {
+"A": "Great festival",
+"B": "A sudden disaster or widespread calamity",
+"C": "Scientific achievement",
+"D": "Financial gain"
+},
+"answer": "B",
+"explanation": "'Catastrophe' ka arth achanak aayi bhayanak aapatda ya vinash (disaster) hota hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG15Q046",
+"subject": "english",
+"chapter": 15,
+"question": "Russell's prose style is universally admired for being clear, lucid, and ..........",
+"options": {
+"A": "confusing",
+"B": "forceful",
+"C": "dull",
+"D": "slangy"
+},
+"answer": "B",
+"explanation": "Russell ki lekhan-shaili spasht, prabhavshali (forceful) aur tarkik mani jaati hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG15Q047",
+"subject": "english",
+"chapter": 15,
+"question": "Russell was awarded the Nobel Prize in Literature in recognition of his championship of ..........",
+"options": {
+"A": "colonial conquest",
+"B": "humanitarian ideals and freedom of thought",
+"C": "religious dogmas",
+"D": "industrial factories"
+},
+"answer": "B",
+"explanation": "Unhin manavtawadi aadarsho aur vicharon ki aazadi ke samarthan ke liye Nobel samman diya gaya.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG15Q048",
+"subject": "english",
+"chapter": 15,
+"question": "What crucial skill developed after pictographic communication to preserve civilization's history?",
+"options": {
+"A": "Hunting skills",
+"B": "The art of writing",
+"C": "Painting on rocks",
+"D": "Singing songs"
+},
+"answer": "B",
+"explanation": "Lekhan kala (writing) ne gyan ko sanchit karne aur itihas ko aage badhane mein sarvochha bhoomika nibhayi.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG15Q049",
+"subject": "english",
+"chapter": 15,
+"question": "What is the central theme of 'Ideas That Have Helped Mankind'?",
+"options": {
+"A": "Civilization developed through a gradual evolution of practical inventions and moral values",
+"B": "War is necessary for human survival",
+"C": "Animals are intellectually superior to men",
+"D": "Modern machines have completely destroyed mankind"
+},
+"answer": "A",
+"explanation": "Nibandh ka mool vishay yahi hai ki sabhyata gyan, aavishkar aur naitikta ke kramik vikas se bani hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG15Q050",
+"subject": "english",
+"chapter": 15,
+"question": "What distinct emotional problem plagues human beings that animals do not suffer from?",
+"options": {
+"A": "Lack of hunger",
+"B": "Boredom and dread of imaginary future misfortunes",
+"C": "Physical exhaustion",
+"D": "Inability to run"
+},
+"answer": "B",
+"explanation": "Manushya aane wale samay ki kalpanik vipattiyon aur uktahat (boredom) se peedit rehta hai, jo janwaron mein nahi hoti.",
+"source": "CONCEPT",
+"type": "objective"
 }
+]
+}  
