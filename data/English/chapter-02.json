@@ -1,8 +1,969 @@
 {
-  "_help": "प्रश्न इसी 'questions' list में जोड़ो। हर प्रश्न का format data/question-template.json में देखो। अभी यह list खाली है।",
-  "subject": "english",
-  "chapter": 2,
-  "title": "Poetry Section — Song of Myself",
-  "status": "pending-pdf-questions",
-  "questions": []
+"_help": "प्रश्न इसी 'questions' list में जोड़ो।",
+"subject": "english",
+"chapter": 2,
+"title": "SONG OF MYSELF",
+"status": "ready",
+"questions": [
+{
+"id": "ENG02Q001",
+"subject": "english",
+"chapter": 2,
+"question": "Walt Whitman is .......... years old in the poem.",
+"options": {
+"A": "30",
+"B": "25",
+"C": "37",
+"D": "46"
+},
+"answer": "C",
+"explanation": "Kavita mein kavi Walt Whitman batate hain ki unki umra ab 37 saal hai ('I, now thirty-seven years old in perfect health begin').",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG02Q002",
+"subject": "english",
+"chapter": 2,
+"question": "The poet in Song of Myself .......... for himself.",
+"options": {
+"A": "Runs",
+"B": "Sings",
+"C": "Paints",
+"D": "Jumps"
+},
+"answer": "B",
+"explanation": "Kavita ki shuruat mein hi kavi kehte hain: 'I celebrate myself, and sing myself'.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG02Q003",
+"subject": "english",
+"chapter": 2,
+"question": "'I' in the first line of the poem 'Song of Myself' is the poet:",
+"options": {
+"A": "Walt Whitman",
+"B": "Robert Brooke",
+"C": "W.H. Auden",
+"D": "T.S. Eliot"
+},
+"answer": "A",
+"explanation": "Kavita ki pehli line mein 'I' shabd ka istemal kavi Walt Whitman ke liye kiya gaya hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG02Q004",
+"subject": "english",
+"chapter": 2,
+"question": "Walt Whitman worked as a .......... before his twelfth birthday.",
+"options": {
+"A": "teacher",
+"B": "carpenter",
+"C": "waiter",
+"D": "artist"
+},
+"answer": "B",
+"explanation": "Walt Whitman ne 12 saal ki umra se pehle badhai (carpenter) ke roop mein kaam shuru kiya tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG02Q005",
+"subject": "english",
+"chapter": 2,
+"question": "'Leaves of Grass' is known for its free .......... and lack of rhyme.",
+"options": {
+"A": "Music",
+"B": "Lyrics",
+"C": "Vowel",
+"D": "Rhythms"
+},
+"answer": "D",
+"explanation": "'Leaves of Grass' apni mukt lay (free rhythms) aur bina rhyming ke format ke liye jani jati hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG02Q006",
+"subject": "english",
+"chapter": 2,
+"question": "The Reflexive Pronoun of 'I' is ..........",
+"options": {
+"A": "Mineself",
+"B": "Myself",
+"C": "Myselves",
+"D": "meself"
+},
+"answer": "B",
+"explanation": "English grammar ke anusaar 'I' ka reflexive pronoun 'Myself' hota hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG02Q007",
+"subject": "english",
+"chapter": 2,
+"question": "The line 'Hoping to cease not till death' is taken from ..........",
+"options": {
+"A": "Song of Myself",
+"B": "The Soldier",
+"C": "Fire Hymn",
+"D": "None of these"
+},
+"answer": "A",
+"explanation": "Yeh line Walt Whitman ki mashhoor rachna 'Song of Myself' se li gayi hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG02Q008",
+"subject": "english",
+"chapter": 2,
+"question": "The Reflexive Pronoun of 'They' is ..........",
+"options": {
+"A": "Themself",
+"B": "Themselve",
+"C": "Themselves",
+"D": "Theirself"
+},
+"answer": "C",
+"explanation": "'They' ka sahi plural reflexive pronoun 'Themselves' hota hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG02Q009",
+"subject": "english",
+"chapter": 2,
+"question": ".......... Works include 'Leaves of Grass' and Drum Taps.",
+"options": {
+"A": "Walt Whitman's",
+"B": "T.S. Eliot's",
+"C": "D.H. Lawrence's",
+"D": "Walter De la Mare's"
+},
+"answer": "A",
+"explanation": "'Leaves of Grass' aur 'Drum Taps' Walt Whitman ki mukhya rachnayein hain.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG02Q010",
+"subject": "english",
+"chapter": 2,
+"question": "Walt Whitman was a/an ..........",
+"options": {
+"A": "Indian poet",
+"B": "American poet",
+"C": "British poet",
+"D": "Russian poet"
+},
+"answer": "B",
+"explanation": "Walt Whitman America ke kavi the, isliye unhe American poet kaha jata hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG02Q011",
+"subject": "english",
+"chapter": 2,
+"question": "'And what I assume you shall assume' is taken from ..........",
+"options": {
+"A": "Song of Myself",
+"B": "The Soldier",
+"C": "An Epitaph",
+"D": "Fire-Hymn"
+},
+"answer": "A",
+"explanation": "Yeh line kavita 'Song of Myself' ki suruati panktiyon mein se ek hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG02Q012",
+"subject": "english",
+"chapter": 2,
+"question": "Who remained relatively unappreciated in America during his lifetime?",
+"options": {
+"A": "DH Lawrence",
+"B": "Walt Whitman",
+"C": "John Donne",
+"D": "T.S. Eliot"
+},
+"answer": "B",
+"explanation": "Walt Whitman ko apne jivan-kaal ke dauran America mein uchit sarahana nahi mili thi.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG02Q013",
+"subject": "english",
+"chapter": 2,
+"question": "In which year was Walt Whitman born?",
+"options": {
+"A": "1818",
+"B": "1892",
+"C": "1855",
+"D": "1819"
+},
+"answer": "D",
+"explanation": "Walt Whitman ka janam 1819 mein hua tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG02Q014",
+"subject": "english",
+"chapter": 2,
+"question": "Nature without check with original ..........",
+"options": {
+"A": "power",
+"B": "energy",
+"C": "capacity",
+"D": "ability"
+},
+"answer": "B",
+"explanation": "Kavita ki line hai: 'Nature without check with original energy'.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG02Q015",
+"subject": "english",
+"chapter": 2,
+"question": "I observe a spear of .......... grass.",
+"options": {
+"A": "winter",
+"B": "dried",
+"C": "wet",
+"D": "summer"
+},
+"answer": "D",
+"explanation": "Kavita mein kavi kehte hain: 'Observing a spear of summer grass'.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG02Q016",
+"subject": "english",
+"chapter": 2,
+"question": "In which year was the first edition of Leaves of Grass published?",
+"options": {
+"A": "1850",
+"B": "1855",
+"C": "1860",
+"D": "1865"
+},
+"answer": "B",
+"explanation": "'Leaves of Grass' ka pehla edition 1855 mein kavi ke niji kharche par chhapwaya gaya tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG02Q017",
+"subject": "english",
+"chapter": 2,
+"question": "Leaves of grass is a collection of poems by ..........",
+"options": {
+"A": "John Keats",
+"B": "W.H. Auden",
+"C": "John Donne",
+"D": "Walt Whitman"
+},
+"answer": "D",
+"explanation": "'Leaves of Grass' Walt Whitman dwara likhi gayi kavitayon ka sangrah hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG02Q018",
+"subject": "english",
+"chapter": 2,
+"question": "'I celebrate myself and sing myself' is the line from ..........",
+"options": {
+"A": "Song of myself",
+"B": "Fire hymn",
+"C": "Snake",
+"D": "ode to autumn"
+},
+"answer": "A",
+"explanation": "Yeh prasiddh pankti 'Song of Myself' kavita ki sabse pehli line hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG02Q019",
+"subject": "english",
+"chapter": 2,
+"question": "During the civil war Walt Whitman also worked as a ..........",
+"options": {
+"A": "Soldier",
+"B": "Doctor",
+"C": "Volunteer nurse",
+"D": "Lawyer"
+},
+"answer": "C",
+"explanation": "American civil war ke samay unhone aspatalon mein volunteer nurse ke roop mein sewa ki thi.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG02Q020",
+"subject": "english",
+"chapter": 2,
+"question": "Walt Whitman belongs to ..........",
+"options": {
+"A": "Britain",
+"B": "Spain",
+"C": "America",
+"D": "France"
+},
+"answer": "C",
+"explanation": "Walt Whitman America desh se taalluk rakhte the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG02Q021",
+"subject": "english",
+"chapter": 2,
+"question": "What is the theme of the poem?",
+"options": {
+"A": "Love is eternal",
+"B": "Gender equality",
+"C": "Death is inevitable",
+"D": "Universal brotherhood"
+},
+"answer": "D",
+"explanation": "Is kavita ka mukhya vishay Universal brotherhood (sarvbhaumik bhaichara) hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG02Q022",
+"subject": "english",
+"chapter": 2,
+"question": "Walt Whitman is also called ..........",
+"options": {
+"A": "People's poet",
+"B": "The soldier",
+"C": "National poet",
+"D": "Revolutionary poet"
+},
+"answer": "A",
+"explanation": "Aam logon se jude hone ke kaaran Walt Whitman ko 'People's poet' kaha jata hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG02Q023",
+"subject": "english",
+"chapter": 2,
+"question": "In how many sections the complete poem of song of myself has been divided?",
+"options": {
+"A": "42",
+"B": "52",
+"C": "62",
+"D": "72"
+},
+"answer": "B",
+"explanation": "Poori 'Song of Myself' kavita kul 52 sections mein vibhajit hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG02Q024",
+"subject": "english",
+"chapter": 2,
+"question": "Drum Taps was published in ..........",
+"options": {
+"A": "1866",
+"B": "1855",
+"C": "1860",
+"D": "1881"
+},
+"answer": "A",
+"explanation": "Walt Whitman ka sangrah 'Drum Taps' saal 1866 mein publish hua tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG02Q025",
+"subject": "english",
+"chapter": 2,
+"question": "He is considered one of the most .......... poets in American literature.",
+"options": {
+"A": "Notable",
+"B": "Smart",
+"C": "Uneducated",
+"D": "Influential"
+},
+"answer": "D",
+"explanation": "Unhin American literature ke sabse prabhavshali (influential) kaviyon mein gina jata hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG02Q026",
+"subject": "english",
+"chapter": 2,
+"question": "Leaves of Grass finally found a publisher willing to print .........",
+"options": {
+"A": "Carefully",
+"B": "Beautifully",
+"C": "Censored",
+"D": "Uncensored"
+},
+"answer": "D",
+"explanation": "1881 mein bina kisi cut ya censorship ke (uncensored) ise chhapne wala publisher mila.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG02Q027",
+"subject": "english",
+"chapter": 2,
+"question": "In which year did Walt Whitman pass away?",
+"options": {
+"A": "1885",
+"B": "1890",
+"C": "1892",
+"D": "1899"
+},
+"answer": "C",
+"explanation": "Walt Whitman ka nidhan saal 1892 mein hua tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q028",
+"subject": "english",
+"chapter": 2,
+"question": "Where is the resting place (cemetery) of Walt Whitman located?",
+"options": {
+"A": "Westminster Abbey, London",
+"B": "Harleigh Cemetery, Camden, New Jersey",
+"C": "Sleepy Hollow Cemetery, Massachusetts",
+"D": "Green-Wood Cemetery, New York"
+},
+"answer": "B",
+"explanation": "Unka samadhi sthal Harleigh Cemetery, Camden, New Jersey mein sthit hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q029",
+"subject": "english",
+"chapter": 2,
+"question": "What form of poetry is 'Song of Myself' written in?",
+"options": {
+"A": "Heroic Couplet",
+"B": "Blank Verse",
+"C": "Free Verse",
+"D": "Ballad meter"
+},
+"answer": "C",
+"explanation": "'Song of Myself' bina kisi traditional chhand ya rhyming ke Free Verse format mein likhi gayi hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q030",
+"subject": "english",
+"chapter": 2,
+"question": "Approximately how many lines does the complete poem 'Song of Myself' contain?",
+"options": {
+"A": "500 lines",
+"B": "900 lines",
+"C": "1300 lines",
+"D": "2000 lines"
+},
+"answer": "C",
+"explanation": "Mool kavita mein lagbhag 1300 panktiyan (lines) shaamil hain.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q031",
+"subject": "english",
+"chapter": 2,
+"question": "Why did Walt Whitman lose his job after publishing 'Leaves of Grass'?",
+"options": {
+"A": "He stopped going to work",
+"B": "His poems were considered obscene",
+"C": "He criticized the government",
+"D": "He moved to Europe"
+},
+"answer": "B",
+"explanation": "Unki kavitaon ki khuli bhasha ko us samay obscene (ashleel) maankar unhe naukri se nikal diya gaya tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q032",
+"subject": "english",
+"chapter": 2,
+"question": "Which art historian wrote, 'You cannot really understand America without Walt Whitman'?",
+"options": {
+"A": "John Ruskin",
+"B": "Mary Berenson",
+"C": "Walter Pater",
+"D": "Virginia Woolf"
+},
+"answer": "B",
+"explanation": "Kala itihaskar Mary Berenson ne kaha tha ki Whitman aur unki kitabon ko samjhe bina America ko nahi samjha ja sakta.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q033",
+"subject": "english",
+"chapter": 2,
+"question": "According to the poet, what are his tongue and blood formed from?",
+"options": {
+"A": "The ocean and rocks",
+"B": "This soil and this air",
+"C": "Stars and cosmic dust",
+"D": "Books and learning"
+},
+"answer": "B",
+"explanation": "Kavita mein kavi kehte hain ki unka khoon aur jeebh isi mitti aur isi hawa se bane hain ('Formed from this soil, this air').",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q034",
+"subject": "english",
+"chapter": 2,
+"question": "What does the poet mean by 'Creeds and schools in abeyance'?",
+"options": {
+"A": "Schools are permanently closed",
+"B": "Religious sects and academic theories are temporarily set aside",
+"C": "He wants to join a new school",
+"D": "He hates all students"
+},
+"answer": "B",
+"explanation": "'In abeyance' ka matlab hai dharmik maton aur vicharon ko kuch samay ke liye ek taraf rakhna.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q035",
+"subject": "english",
+"chapter": 2,
+"question": "What does the word 'harbour' mean in the line 'I harbour for good or bad'?",
+"options": {
+"A": "To build a ship",
+"B": "To sail across the sea",
+"C": "To give shelter or accommodate in mind",
+"D": "To punish strictly"
+},
+"answer": "C",
+"explanation": "Yahan 'harbour' ka arth achhe aur bure dono vicharon ko man mein sthan dena hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q036",
+"subject": "english",
+"chapter": 2,
+"question": "What does the poet mean by 'every hazard' in 'I permit to speak at every hazard'?",
+"options": {
+"A": "At every danger or circumstance",
+"B": "Only in safe situations",
+"C": "During traffic accidents",
+"D": "Only when permitted by law"
+},
+"answer": "A",
+"explanation": "'At every hazard' ka matlab hai kisi bhi khatre ya mushkil paristithi ki parwah kiye bina bolna.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q037",
+"subject": "english",
+"chapter": 2,
+"question": "Where were the translations of 'Leaves of Grass' enthusiastically received?",
+"options": {
+"A": "Asia",
+"B": "Europe",
+"C": "Africa",
+"D": "Australia"
+},
+"answer": "B",
+"explanation": "'Leaves of Grass' ke anuwadon ka Europe mein kafi utsah ke sath swagat kiya gaya tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q038",
+"subject": "english",
+"chapter": 2,
+"question": "What was the nature of Walt Whitman's funeral?",
+"options": {
+"A": "A completely secret ceremony",
+"B": "A quiet private affair",
+"C": "A public event",
+"D": "A military parade"
+},
+"answer": "C",
+"explanation": "Walt Whitman ka antim sanskar ek bada public event (sarvajanik samaroh) ban gaya tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q039",
+"subject": "english",
+"chapter": 2,
+"question": "Which of the following professions was NOT practiced by Walt Whitman?",
+"options": {
+"A": "Carpenter",
+"B": "Journalist",
+"C": "Pilot",
+"D": "Teacher"
+},
+"answer": "C",
+"explanation": "Unhone badhai, patrakar, shikshak aur clerk ke roop mein kaam kiya, par pilot nahi the.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q040",
+"subject": "english",
+"chapter": 2,
+"question": "In late December 1862, where did Whitman go to care for wounded soldiers?",
+"options": {
+"A": "New York",
+"B": "Washington, D.C.",
+"C": "Boston",
+"D": "Philadelphia"
+},
+"answer": "B",
+"explanation": "Late December 1862 mein we ghayal sainikon ki sewa ke liye Washington, D.C. gaye the.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q041",
+"subject": "english",
+"chapter": 2,
+"question": "What does the speaker celebrate and sing in the poem?",
+"options": {
+"A": "His country only",
+"B": "Nature only",
+"C": "Himself",
+"D": "His ancestors"
+},
+"answer": "C",
+"explanation": "Kavi kehte hain: 'I celebrate myself, and sing myself', jisme poori manavta ka jashn hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q042",
+"subject": "english",
+"chapter": 2,
+"question": "What does the poet mean by saying 'every atom belonging to me as good belongs to you'?",
+"options": {
+"A": "Material goods must be equally divided",
+"B": "All humans share the same physical and spiritual existence",
+"C": "He is giving away his property",
+"D": "Humans are completely different from each other"
+},
+"answer": "B",
+"explanation": "Iska arth hai ki sabhi insaan ek hi prakriti aur anuon se bane hain aur aapas mein jude hain.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q043",
+"subject": "english",
+"chapter": 2,
+"question": "What does the poet invite when he loafs at ease?",
+"options": {
+"A": "His friends",
+"B": "His soul",
+"C": "His relatives",
+"D": "His enemies"
+},
+"answer": "B",
+"explanation": "Pankti hai: 'I loaf and invite my soul' yani we shanti se apni aatma ko aamantrit karte hain.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q044",
+"subject": "english",
+"chapter": 2,
+"question": "What does the word 'spear' symbolize in 'a spear of summer grass'?",
+"options": {
+"A": "A sharp weapon of war",
+"B": "A narrow leaf or blade of grass",
+"C": "A tall mountain",
+"D": "A thorny bush"
+},
+"answer": "B",
+"explanation": "Yahan 'spear' ka matlab ghaas ki nukili patti ya tinke (blade of grass) se hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q045",
+"subject": "english",
+"chapter": 2,
+"question": "What generational continuity does the poet describe regarding his birth?",
+"options": {
+"A": "He was born from parents who came from abroad",
+"B": "He, his parents, and their parents were all born from the same soil",
+"C": "He does not know his ancestors",
+"D": "He was raised in an orphanage"
+},
+"answer": "B",
+"explanation": "Kavi batate hain ki unke mata-pita aur unke purvaj sabhi isi mitti aur vatavaran mein janme hain.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q046",
+"subject": "english",
+"chapter": 2,
+"question": "What is the antonym of the word 'Hazard' used in the poem?",
+"options": {
+"A": "Peril",
+"B": "Safety",
+"C": "Risk",
+"D": "Threat"
+},
+"answer": "B",
+"explanation": "'Hazard' ka matlab khatra hota hai, iska vipritarthak (antonym) 'Safety' (suraksha) hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q047",
+"subject": "english",
+"chapter": 2,
+"question": "In the line 'I loaf and invite my soul', what is the closest meaning of 'loaf'?",
+"options": {
+"A": "To bake bread",
+"B": "To relax and wander idly",
+"C": "To sprint fast",
+"D": "To work hard"
+},
+"answer": "B",
+"explanation": "'Loaf' ka arth aaram se bina kisi jaldbaazi ke tehalna ya vishram karna hota hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q048",
+"subject": "english",
+"chapter": 2,
+"question": "Which century does Walt Whitman primarily belong to as a major literary figure?",
+"options": {
+"A": "17th century",
+"B": "18th century",
+"C": "19th century",
+"D": "20th century"
+},
+"answer": "C",
+"explanation": "Whitman ka jivan (1819–1892) mukhya roop se 19th century mein raha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q049",
+"subject": "english",
+"chapter": 2,
+"question": "What does the poet mean by 'Nature without check'?",
+"options": {
+"A": "Nature restricted by artificial rules",
+"B": "Nature in its pure, unrestricted and wild state",
+"C": "Nature destroyed by humans",
+"D": "Nature kept in a garden"
+},
+"answer": "B",
+"explanation": "'Without check' ka arth prakriti ki aisi shakti se hai jis par koi manav-nirmit rok-tok na ho.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q050",
+"subject": "english",
+"chapter": 2,
+"question": "According to the poet, what should never be forgotten while keeping creeds in abeyance?",
+"options": {
+"A": "That creeds must be permanently burned",
+"B": "Retiring back a while, yet never forgetting what they are",
+"C": "To create a completely new religion",
+"D": "To enforce beliefs on others"
+},
+"answer": "B",
+"explanation": "Kavi kehte hain: 'Retiring back a while sufficed at what they are, but never forgotten'.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q051",
+"subject": "english",
+"chapter": 2,
+"question": "What is the synonym of the word 'Cease' as used in 'Hoping to cease not till death'?",
+"options": {
+"A": "Stop",
+"B": "Continue",
+"C": "Begin",
+"D": "Start"
+},
+"answer": "A",
+"explanation": "'Cease' ka arth rukna ya samapt hona (to stop) hota hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q052",
+"subject": "english",
+"chapter": 2,
+"question": "What type of literary figure is Walt Whitman known as in American literature?",
+"options": {
+"A": "Most pessimistic figure",
+"B": "Most individualistic literary figure",
+"C": "Classical traditionalist",
+"D": "Strict sonneteer"
+},
+"answer": "B",
+"explanation": "Walt Whitman ko America ka sabse vyaktivadi (individualistic) lekhak aur kavi maana jata hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q053",
+"subject": "english",
+"chapter": 2,
+"question": "In the poem, what state of health does the poet claim to begin with?",
+"options": {
+"A": "Weak health",
+"B": "Failing health",
+"C": "Perfect health",
+"D": "Tired health"
+},
+"answer": "C",
+"explanation": "Kavi kehte hain: 'I, now thirty-seven years old in perfect health begin'.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q054",
+"subject": "english",
+"chapter": 2,
+"question": "How does the poet regard every other human being?",
+"options": {
+"A": "As competitors",
+"B": "As inferior to himself",
+"C": "As equal and connected parts of humanity",
+"D": "As strangers"
+},
+"answer": "C",
+"explanation": "Whitman ke anusaar pratyek vyakti saman hai aur aapas mein jude huye hain.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q055",
+"subject": "english",
+"chapter": 2,
+"question": "The collection 'Drum Taps' reflects Whitman's experiences during ..........",
+"options": {
+"A": "The French Revolution",
+"B": "The American Civil War",
+"C": "World War I",
+"D": "The American Independence War"
+},
+"answer": "B",
+"explanation": "'Drum Taps' American Civil War ke dauran unke anubhavon par aadharit hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q056",
+"subject": "english",
+"chapter": 2,
+"question": "What grammatical form is the word 'myself' in the title?",
+"options": {
+"A": "Demonstrative pronoun",
+"B": "Reflexive/Emphatic pronoun",
+"C": "Relative pronoun",
+"D": "Indefinite pronoun"
+},
+"answer": "B",
+"explanation": "'Myself' ek reflexive/emphatic pronoun hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q057",
+"subject": "english",
+"chapter": 2,
+"question": "What is the meaning of the word 'abeyance'?",
+"options": {
+"A": "A state of temporary suspension",
+"B": "Permanent destruction",
+"C": "Complete acceptance",
+"D": "Violent reaction"
+},
+"answer": "A",
+"explanation": "'Abeyance' ka arth kisi cheez ko asthayi roop se sthagit ya vishram mein rakhna hota hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q058",
+"subject": "english",
+"chapter": 2,
+"question": "What does the poet mean by 'original energy' in the final line?",
+"options": {
+"A": "Man-made electricity",
+"B": "The pure and untamed primal force of nature",
+"C": "Physical stamina from exercise",
+"D": "Chemical energy"
+},
+"answer": "B",
+"explanation": "'Original energy' prakriti ki us shuddh aur aadi urja ko darshata hai jo niyam-mukt hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q059",
+"subject": "english",
+"chapter": 2,
+"question": "Who printed the 1855 first edition of 'Leaves of Grass'?",
+"options": {
+"A": "A big publishing house in London",
+"B": "The American government",
+"C": "Walt Whitman himself at his own expense",
+"D": "Oxford University Press"
+},
+"answer": "C",
+"explanation": "Koi publisher tayyar na hone ke kaaran Whitman ne ise swayam apne kharche par chhapwaya tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG02Q060",
+"subject": "english",
+"chapter": 2,
+"question": "What is the overall tone of Walt Whitman in 'Song of Myself'?",
+"options": {
+"A": "Joyful, democratic, and confident",
+"B": "Mournful and depressed",
+"C": "Hostile and furious",
+"D": "Fearful and timid"
+},
+"answer": "A",
+"explanation": "Kavita ka swar anandmay, aatmavishwas se bhara aur loktantrik bhaavna (democratic) se yukta hai.",
+"source": "CONCEPT",
+"type": "objective"
+}
+]
 }
