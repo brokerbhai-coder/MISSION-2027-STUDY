@@ -1,8 +1,1049 @@
 {
-  "_help": "प्रश्न इसी 'questions' list में जोड़ो। हर प्रश्न का format data/question-template.json में देखो। अभी यह list खाली है।",
-  "subject": "english",
-  "chapter": 13,
-  "title": "Prose Section — A Pinch of Snuff",
-  "status": "pending-pdf-questions",
-  "questions": []
+"_help": "Prashn isi 'questions' list mein jodo.",
+"subject": "english",
+"chapter": 13,
+"title": "A Pinch of Snuff",
+"status": "ready",
+"questions": [
+{
+"id": "ENG13Q001",
+"subject": "english",
+"chapter": 13,
+"question": "Who wrote the humorous short story 'A Pinch of Snuff'?",
+"options": {
+"A": "R. K. Narayan",
+"B": "Manohar Malgaonkar",
+"C": "Dr. Zakir Husain",
+"D": "Kamala Das"
+},
+"answer": "B",
+"explanation": "'A Pinch of Snuff' prasiddh lekhak Manohar Malgaonkar dwara likhi gayi ek rochak kahani hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q002",
+"subject": "english",
+"chapter": 13,
+"question": "In which year was Manohar Malgaonkar born?",
+"options": {
+"A": "1913",
+"B": "1914",
+"C": "1915",
+"D": "1912"
+},
+"answer": "A",
+"explanation": "Manohar Malgaonkar ka janam saal 1913 mein hua tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q003",
+"subject": "english",
+"chapter": 13,
+"question": "In which year did Manohar Malgaonkar pass away?",
+"options": {
+"A": "2009",
+"B": "2011",
+"C": "2015",
+"D": "2010"
+},
+"answer": "D",
+"explanation": "Manohar Malgaonkar ka dehavsan saal 2010 mein hua tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q004",
+"subject": "english",
+"chapter": 13,
+"question": "Which type of prose piece is 'A Pinch of Snuff'?",
+"options": {
+"A": "Essay",
+"B": "Play",
+"C": "Short story",
+"D": "Travelogue"
+},
+"answer": "C",
+"explanation": "'A Pinch of Snuff' sahityik vidha ke roop mein ek laghu kahani (short story) hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q005",
+"subject": "english",
+"chapter": 13,
+"question": "Which of these literary compositions is written by Manohar Malgaonkar?",
+"options": {
+"A": "Ode to Autumn",
+"B": "My Grandmother's House",
+"C": "Distant Drum",
+"D": "The Waste Land"
+},
+"answer": "C",
+"explanation": "'Distant Drum' Manohar Malgaonkar ki prasiddh rachnaon mein se ek hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q006",
+"subject": "english",
+"chapter": 13,
+"question": "Who came to Delhi to see a minister?",
+"options": {
+"A": "Hazrat Barkat Ali",
+"B": "Sohanlal Ratiram",
+"C": "Nanukaka",
+"D": "The Under-Secretary"
+},
+"answer": "C",
+"explanation": "Nanukaka kisi mantri se milne ke uddeshya se Delhi aaye the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q007",
+"subject": "english",
+"chapter": 13,
+"question": "In which season did Nanukaka visit Delhi?",
+"options": {
+"A": "Winter",
+"B": "Autumn",
+"C": "Spring",
+"D": "Summer"
+},
+"answer": "D",
+"explanation": "Nanukaka garmiyon ke mausam (Summer) mein Delhi aaye the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q008",
+"subject": "english",
+"chapter": 13,
+"question": "Which of the following books is NOT written by Manohar Malgaonkar?",
+"options": {
+"A": "The Princes",
+"B": "Two Leaves and a Bud",
+"C": "Bombay Beware",
+"D": "Distant Drum"
+},
+"answer": "B",
+"explanation": "'Two Leaves and a Bud' Mulk Raj Anand ki rachna hai, Malgaonkar ki nahi.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q009",
+"subject": "english",
+"chapter": 13,
+"question": "'A Pinch of Snuff' is primarily a .......... story.",
+"options": {
+"A": "Comic",
+"B": "Adventurous",
+"C": "Comic and adventurous",
+"D": "Tragedy"
+},
+"answer": "C",
+"explanation": "Yeh kahani hasya aur chaturai bhare romanch (comic and adventurous) se bharpoor hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q010",
+"subject": "english",
+"chapter": 13,
+"question": "The narrator of 'A Pinch of Snuff' was a/an .......... on probation.",
+"options": {
+"A": "Secretary",
+"B": "Attendant",
+"C": "Under-Secretary",
+"D": "Commissioner"
+},
+"answer": "C",
+"explanation": "Kathavachak mantralaya mein probation par ek Under-Secretary the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q011",
+"subject": "english",
+"chapter": 13,
+"question": "Who was very loyal towards her side of the family?",
+"options": {
+"A": "Aunt",
+"B": "Mother",
+"C": "Grandmother",
+"D": "Sister"
+},
+"answer": "B",
+"explanation": "Lekhak ki maa apne maike aur apne bhai Nanukaka ke prati behad nishthawan theen.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q012",
+"subject": "english",
+"chapter": 13,
+"question": "For how long was Nanukaka supposed to stay in Delhi?",
+"options": {
+"A": "3 or 4 days",
+"B": "2 or 3 days",
+"C": "4 or 5 days",
+"D": "10 or 15 days"
+},
+"answer": "B",
+"explanation": "Maa ne lekhak ko bataya tha ki Nanukaka keval 2 ya 3 din hi rukenge.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q013",
+"subject": "english",
+"chapter": 13,
+"question": "Who informed the Under-Secretary about Nanukaka's arrival?",
+"options": {
+"A": "Grandmother",
+"B": "Sister",
+"C": "Mother",
+"D": "Ticket Collector"
+},
+"answer": "C",
+"explanation": "Lekhak ko Nanukaka ke aane ki suchna unki maa ne di thi.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q014",
+"subject": "english",
+"chapter": 13,
+"question": "Nanukaka was the narrator's ..........",
+"options": {
+"A": "Maternal uncle",
+"B": "Father",
+"C": "Cousin",
+"D": "Brother"
+},
+"answer": "A",
+"explanation": "Nanukaka rishte mein lekhak ke mama (maternal uncle) the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q015",
+"subject": "english",
+"chapter": 13,
+"question": "Who was waiting on the platform when the train arrived?",
+"options": {
+"A": "Mother",
+"B": "Narrator",
+"C": "Minister",
+"D": "Dhobi"
+},
+"answer": "B",
+"explanation": "Train aane par station ke platform par lekhak unka intezar kar rahe the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q016",
+"subject": "english",
+"chapter": 13,
+"question": "Who is the central character of the story 'A Pinch of Snuff'?",
+"options": {
+"A": "Nanukaka",
+"B": "Barkat Ali",
+"C": "Manohar Malgaonkar",
+"D": "Sohanlal Ratiram"
+},
+"answer": "A",
+"explanation": "Kahani ke mukhya aur sabse aakarshak patr Nanukaka hain.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q017",
+"subject": "english",
+"chapter": 13,
+"question": "What animal did Nanukaka bring along with him in a basket?",
+"options": {
+"A": "A puppy",
+"B": "A kid",
+"C": "A kitten",
+"D": "A parrot"
+},
+"answer": "C",
+"explanation": "Nanukaka apne sath ek tokri mein billi ka bachha (kitten) lekar aaye the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q018",
+"subject": "english",
+"chapter": 13,
+"question": "Nanukaka was standing at the doorway of a .......... class carriage.",
+"options": {
+"A": "First",
+"B": "Second",
+"C": "Third",
+"D": "General"
+},
+"answer": "B",
+"explanation": "Nanukaka second class bogie ke darwaze par khade hokar hath hila rahe the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q019",
+"subject": "english",
+"chapter": 13,
+"question": "Who frequently took a pinch of snuff from a silver box?",
+"options": {
+"A": "Sohanlal",
+"B": "Nanukaka",
+"C": "The narrator",
+"D": "Barkat Ali"
+},
+"answer": "B",
+"explanation": "Nanukaka aksar apni chandi ki dibbi se soonghani (snuff) liya karte the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q020",
+"subject": "english",
+"chapter": 13,
+"question": "Who was Ratiram in the story?",
+"options": {
+"A": "Sohanlal's son",
+"B": "Nanukaka's nephew",
+"C": "Welfare Minister's peon",
+"D": "Barkat Ali's secretary"
+},
+"answer": "A",
+"explanation": "Ratiram Lala Sohanlal Ratiram ka beta tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q021",
+"subject": "english",
+"chapter": 13,
+"question": "Lala Sohanlal Ratiram was a prominent .......... in Delhi.",
+"options": {
+"A": "Ambassador",
+"B": "Trade Commissioner",
+"C": "Party boss",
+"D": "Chief Minister"
+},
+"answer": "C",
+"explanation": "Lala Sohanlal Ratiram Delhi ke ek prabhavshali Party Boss the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q022",
+"subject": "english",
+"chapter": 13,
+"question": "What kind of coat did Nanukaka wear on his visits?",
+"options": {
+"A": "Pathani coat",
+"B": "Jodhpuri coat",
+"C": "Rajasthani coat",
+"D": "Western blazer"
+},
+"answer": "B",
+"explanation": "Nanukaka ne band gale ka Jodhpuri coat pehna hua tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q023",
+"subject": "english",
+"chapter": 13,
+"question": "In a linguistic emergency, Nanukaka always turned to his ..........",
+"options": {
+"A": "Gujarati",
+"B": "Mother tongue",
+"C": "Hindi",
+"D": "English"
+},
+"answer": "B",
+"explanation": "Gusse ya aapat sthiti mein Nanukaka hamesha apni matribhasha (mother tongue) bolne lagte the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q024",
+"subject": "english",
+"chapter": 13,
+"question": "Who is the Ambassador mentioned in the story 'A Pinch of Snuff'?",
+"options": {
+"A": "Sohanlal Ratiram",
+"B": "Nanukaka",
+"C": "The narrator",
+"D": "Hazrat Barkat Ali"
+},
+"answer": "D",
+"explanation": "Hazrat Barkat Ali videsh mein Bharat ke rajkoot (Ambassador) the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q025",
+"subject": "english",
+"chapter": 13,
+"question": "Nanukaka had an extraordinary talent for telling ..........",
+"options": {
+"A": "Lies",
+"B": "Truth",
+"C": "Fairy tales",
+"D": "Jokes"
+},
+"answer": "A",
+"explanation": "Nanukaka bina jhijhak ke behad vishwas ke sath jhooth (lies) bolne mein maahir the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q026",
+"subject": "english",
+"chapter": 13,
+"question": "What does the term 'probation' mean in the Under-Secretary's job?",
+"options": {
+"A": "On leave",
+"B": "Permanent job",
+"C": "On French leave",
+"D": "On training or trial period"
+},
+"answer": "D",
+"explanation": "'Probation' ka matlab prashikshan ya aazmaish ke daur (on training/trial) par hona hota hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q027",
+"subject": "english",
+"chapter": 13,
+"question": "According to the narrator, ministers are regarded as .......... steps higher than God.",
+"options": {
+"A": "One",
+"B": "Two",
+"C": "Three",
+"D": "Ten"
+},
+"answer": "B",
+"explanation": "Lekhak ke anusar Under-Secretaries ko sikhaya jata hai ki mantri bhagwan se do kadam unche hote hain.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q028",
+"subject": "english",
+"chapter": 13,
+"question": "The narrator and the son of .......... worked in the same ministry.",
+"options": {
+"A": "Sohanlal Ratiram",
+"B": "Barkat Ali",
+"C": "The Welfare Minister",
+"D": "The Home Minister"
+},
+"answer": "A",
+"explanation": "Lekhak aur Sohanlal ka beta Ratiram ek hi mantralaya mein kaam karte the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q029",
+"subject": "english",
+"chapter": 13,
+"question": "What was Sohanlal Ratiram doing when the narrator and Nanukaka arrived?",
+"options": {
+"A": "Gurgling a hookah",
+"B": "Drinking water",
+"C": "Having coffee",
+"D": "Smoking cigarettes"
+},
+"answer": "A",
+"explanation": "Kamre ke andar Sohanlal aaram se hookah gudguda rahe the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q030",
+"subject": "english",
+"chapter": 13,
+"question": "Who refused the proposal of his daughter's marriage with Sohanlal's son?",
+"options": {
+"A": "Home Minister",
+"B": "Foreign Minister",
+"C": "Welfare Minister",
+"D": "The Ambassador"
+},
+"answer": "C",
+"explanation": "Welfare Minister ne apni beti ki shadi Sohanlal ke bete se karne se inkar kar diya tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q031",
+"subject": "english",
+"chapter": 13,
+"question": "Whom did Nanukaka plan to visit after meeting Lala Sohanlal?",
+"options": {
+"A": "Home Minister",
+"B": "The Ambassador",
+"C": "The President",
+"D": "The Welfare Minister"
+},
+"answer": "D",
+"explanation": "Sohanlal se milne ke baad Nanukaka Welfare Minister se milne ke liye tayyar huye.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q032",
+"subject": "english",
+"chapter": 13,
+"question": "Who disguised himself as a liveried chauffeur?",
+"options": {
+"A": "Nanukaka",
+"B": "The narrator",
+"C": "The dhobi",
+"D": "Ratiram"
+},
+"answer": "B",
+"explanation": "Lekhak ne shahi vardi pehan kar Nanukaka ke driver (chauffeur) ka roop dharan kiya.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q033",
+"subject": "english",
+"chapter": 13,
+"question": "Nanukaka wrote a cheque for .......... rupees to impress the car dealer.",
+"options": {
+"A": "100",
+"B": "500",
+"C": "1000",
+"D": "10000"
+},
+"answer": "C",
+"explanation": "Nanukaka ne ek hazar rupaye (1000 rupees) ka cheque likha tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q034",
+"subject": "english",
+"chapter": 13,
+"question": "After writing the cheque, whom did Nanukaka instruct the narrator to call?",
+"options": {
+"A": "Barber",
+"B": "Cobbler",
+"C": "Milkman",
+"D": "Dhobi"
+},
+"answer": "D",
+"explanation": "Cheque likhne ke baad Nanukaka ne lekhak se dhobi ko bulane ko kaha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q035",
+"subject": "english",
+"chapter": 13,
+"question": "To which car showroom did Nanukaka and the narrator drive?",
+"options": {
+"A": "Tikka Automobiles",
+"B": "Sikka Auto Dealers",
+"C": "Aditya Enterprises",
+"D": "Singh Motors"
+},
+"answer": "B",
+"explanation": "Weh badi car lene ke liye Sikka Auto Dealers ke showroom gaye the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q036",
+"subject": "english",
+"chapter": 13,
+"question": "Who made the dramatic statement: 'There is nothing like honesty'?",
+"options": {
+"A": "The Ambassador",
+"B": "The Under-Secretary",
+"C": "Nanukaka",
+"D": "The car dealer"
+},
+"answer": "C",
+"explanation": "Dhobi se cheque wapas lene ka natak karte huye Nanukaka ne yeh dialogue bola tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q037",
+"subject": "english",
+"chapter": 13,
+"question": "As a reward, what denomination note did Nanukaka hand over to the washerman?",
+"options": {
+"A": "1 rupee",
+"B": "2 rupees",
+"C": "5 rupees",
+"D": "10 rupees"
+},
+"answer": "B",
+"explanation": "Nanukaka ne dhobi ko inam ke taur par 2 rupaye ka note diya tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q038",
+"subject": "english",
+"chapter": 13,
+"question": "In what guise did Nanukaka present himself to the Welfare Minister?",
+"options": {
+"A": "Magician",
+"B": "Doctor",
+"C": "Hereditary Astrologer to the Maharaja of Ninnore",
+"D": "Foreign Diplomat"
+},
+"answer": "C",
+"explanation": "Nanukaka ne khud ko Ninnore ke Maharaja ka vanshanugat jyotishi bataya.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q039",
+"subject": "english",
+"chapter": 13,
+"question": "What did Nanukaka routinely do before speaking in important situations?",
+"options": {
+"A": "Ate biscuits",
+"B": "Drank tea",
+"C": "Inhaled some snuff",
+"D": "Drank cold water"
+},
+"answer": "C",
+"explanation": "Kuchh bhi bolne ya chalne se pehle Nanukaka chutki bhar soonghani soonghte the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q040",
+"subject": "english",
+"chapter": 13,
+"question": "For what underlying purpose had Nanukaka travelled to Delhi?",
+"options": {
+"A": "To see some minister",
+"B": "To pay his debts",
+"C": "To attend a zamindar conference",
+"D": "To buy a house"
+},
+"answer": "A",
+"explanation": "Nanukaka kisi mantri se milne ke maksad se Delhi aaye the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q041",
+"subject": "english",
+"chapter": 13,
+"question": "Nanukaka managed to travel in a second-class carriage on a ticket of ..........",
+"options": {
+"A": "First Class",
+"B": "General Class",
+"C": "Third Class",
+"D": "Sleeper Class"
+},
+"answer": "C",
+"explanation": "Nanukaka ne third-class ke ticket par aaram se second class compartment mein yatra ki.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q042",
+"subject": "english",
+"chapter": 13,
+"question": "Whose Delhi residence address did Nanukaka write in the minister's visitor's book?",
+"options": {
+"A": "The narrator's address",
+"B": "A hotel address",
+"C": "Hazrat Barkat Ali's address",
+"D": "Sohanlal's address"
+},
+"answer": "A",
+"explanation": "Nanukaka ne visitor's book mein lekhak ke ghar ka pata darj kiya tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q043",
+"subject": "english",
+"chapter": 13,
+"question": "Who kept a white angocha draped casually around his shoulders?",
+"options": {
+"A": "The narrator",
+"B": "Nanukaka",
+"C": "Ratiram",
+"D": "The minister"
+},
+"answer": "B",
+"explanation": "Nanukaka ne apne kandhe par safed angocha dala hua tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q044",
+"subject": "english",
+"chapter": 13,
+"question": "What was the specific portfolio of the minister Nanukaka targeted?",
+"options": {
+"A": "Welfare",
+"B": "Transport",
+"C": "Commerce",
+"D": "Home Affairs"
+},
+"answer": "A",
+"explanation": "Weh mantri Welfare (kalyan) vibhag ke prabhari the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q045",
+"subject": "english",
+"chapter": 13,
+"question": "Who assured the narrator that Nanukaka would successfully manage everything?",
+"options": {
+"A": "His mother",
+"B": "His boss",
+"C": "Ratiram",
+"D": "The minister"
+},
+"answer": "A",
+"explanation": "Lekhak ki maa ne bharosa dilaya tha ki Nanukaka sab sambhal lenge.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q046",
+"subject": "english",
+"chapter": 13,
+"question": "From which collection has the short story 'A Pinch of Snuff' been extracted?",
+"options": {
+"A": "Contemporary Indian Short Stories in English",
+"B": "Old Possum's Book of Practical Cats",
+"C": "Songs for Children",
+"D": "Under Orion"
+},
+"answer": "A",
+"explanation": "Yeh kahani 'Contemporary Indian Short Stories in English' sangrah se li gayi hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q047",
+"subject": "english",
+"chapter": 13,
+"question": "Where did Nanukaka and the narrator first go to meet the minister?",
+"options": {
+"A": "North Block",
+"B": "South Block",
+"C": "Rashtrapati Bhavan",
+"D": "Parliament House"
+},
+"answer": "A",
+"explanation": "Mantri se milne ke liye weh sabse pehle North Block gaye the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q048",
+"subject": "english",
+"chapter": 13,
+"question": "What kind of turban did the narrator wear while acting as Nanukaka's chauffeur?",
+"options": {
+"A": "A red Maratha turban",
+"B": "A huge orange turban",
+"C": "A white Gandhi cap",
+"D": "A green turban"
+},
+"answer": "B",
+"explanation": "Lekhak ke sir par bada narangi safa (huge orange turban) bandha gaya tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q049",
+"subject": "english",
+"chapter": 13,
+"question": "Whose daughter was the Welfare Minister's daughter going to marry?",
+"options": {
+"A": "The son of Sohanlal Ratiram",
+"B": "The Prince of Ninnore",
+"C": "Hazrat Barkat Ali's nephew",
+"D": "The Prince of Gwalior"
+},
+"answer": "B",
+"explanation": "Welfare Minister apni beti ka rishta Ninnore ke Rajkumar se tay kar rahe the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q050",
+"subject": "english",
+"chapter": 13,
+"question": "How did the Welfare Minister react after reading Nanukaka's entry in the visitor's book?",
+"options": {
+"A": "He called the police",
+"B": "He personally visited the narrator's house next day",
+"C": "He rejected the request",
+"D": "He tore the visitor's book"
+},
+"answer": "B",
+"explanation": "Ninnore ke shahi jyotishi ka naam dekhkar mantri ji agle hi din khud milne chale aaye.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG13Q051",
+"subject": "english",
+"chapter": 13,
+"question": "In which Indian state was Manohar Malgaonkar born?",
+"options": {
+"A": "Maharashtra",
+"B": "Karnataka",
+"C": "Gujarat",
+"D": "Madhya Pradesh"
+},
+"answer": "B",
+"explanation": "Manohar Malgaonkar ka janmasthan Karnataka rajya mein tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG13Q052",
+"subject": "english",
+"chapter": 13,
+"question": "Over how many publications stand to the credit of Manohar Malgaonkar?",
+"options": {
+"A": "Over 10",
+"B": "Over 15",
+"C": "Over 25",
+"D": "Over 50"
+},
+"answer": "C",
+"explanation": "Manohar Malgaonkar ke naam 25 se adhik pustakein prakashit hain.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG13Q053",
+"subject": "english",
+"chapter": 13,
+"question": "Where did the narrator have to sleep after giving his bedroom to Nanukaka?",
+"options": {
+"A": "In the guest room",
+"B": "On a charpoy in the back verandah",
+"C": "In his office room",
+"D": "In the kitchen"
+},
+"answer": "B",
+"explanation": "Nanukaka ko apna bistar dekar lekhak ko peechhe ke baramde mein khat par sona pada tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG13Q054",
+"subject": "english",
+"chapter": 13,
+"question": "What official post was Ratiram desperately trying to get abroad?",
+"options": {
+"A": "Military Attache",
+"B": "Trade Commissioner in the Indian Embassy",
+"C": "Foreign Secretary",
+"D": "Consul General"
+},
+"answer": "B",
+"explanation": "Ratiram Hazrat Barkat Ali ke dootawas mein Trade Commissioner banne ki koshish kar raha tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG13Q055",
+"subject": "english",
+"chapter": 13,
+"question": "Why was Lala Sohanlal Ratiram deeply offended by the Welfare Minister?",
+"options": {
+"A": "Because the minister refused his son's marriage proposal",
+"B": "Because the minister stole his car",
+"C": "Because the minister took away his party post",
+"D": "Because the minister refused to meet him"
+},
+"answer": "A",
+"explanation": "Mantri ne Sohanlal ke bete ka rishta thukra kar Ninnore ke rajkumar ko chuna tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG13Q056",
+"subject": "english",
+"chapter": 13,
+"question": "How did Nanukaka manage the Ticket Collector regarding his ticket disparity?",
+"options": {
+"A": "By fighting with him",
+"B": "By charming him and settling the matter with the kitten",
+"C": "By running away from the platform",
+"D": "By showing a forged pass"
+},
+"answer": "B",
+"explanation": "Nanukaka ne apni baton se TT ko prabhavit karke mamla suljha liya tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG13Q057",
+"subject": "english",
+"chapter": 13,
+"question": "What did the dhobi bring running into the car dealership?",
+"options": {
+"A": "A stolen watch",
+"B": "An old tweed coat with a thousand-rupee cheque in the pocket",
+"C": "A gold chain",
+"D": "Nanukaka's luggage"
+},
+"answer": "B",
+"explanation": "Dhobi ne purane coat ki jeb se ek hazar ka cheque lakar natak ka hissa poora kiya.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG13Q058",
+"subject": "english",
+"chapter": 13,
+"question": "What was the immediate effect of the cheque drama on the manager of Sikka Auto Dealers?",
+"options": {
+"A": "He called the police",
+"B": "He was completely impressed and readily offered the luxury car",
+"C": "He threw them out",
+"D": "He asked for cash"
+},
+"answer": "B",
+"explanation": "Showroom manager Nanukaka ki jhoothi ameeri se behad prabhavit hokar car dene ko tayyar ho gaya.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG13Q059",
+"subject": "english",
+"chapter": 13,
+"question": "What linguistic background did Nanukaka belong to based on his mother tongue?",
+"options": {
+"A": "Tamil",
+"B": "Marathi",
+"C": "Bengali",
+"D": "Punjabi"
+},
+"answer": "B",
+"explanation": "Nanukaka Maharashtrian Marathi bhasha bolne wale parivar se jude the.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG13Q060",
+"subject": "english",
+"chapter": 13,
+"question": "What was the narrator's constant inner anxiety throughout Nanukaka's deception?",
+"options": {
+"A": "That Nanukaka would fall ill",
+"B": "That his uncle's fabrications would be exposed and cause disaster",
+"C": "That the kitten would die",
+"D": "That the car would break down"
+},
+"answer": "B",
+"explanation": "Lekhak ko har pal dar rehta tha ki jhooth pakde jaane par sabhi phas jayenge.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG13Q061",
+"subject": "english",
+"chapter": 13,
+"question": "Which of the following novels is authored by Manohar Malgaonkar?",
+"options": {
+"A": "A Bend in the Ganges",
+"B": "The Guide",
+"C": "Coolie",
+"D": "Untouchable"
+},
+"answer": "A",
+"explanation": "'A Bend in the Ganges' Manohar Malgaonkar ka ek vishva-prasiddh upanyas hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG13Q062",
+"subject": "english",
+"chapter": 13,
+"question": "What kind of impression did Nanukaka leave on everyone he encountered?",
+"options": {
+"A": "A dull and timid man",
+"B": "An influential, sharp, and aristocratic personality",
+"C": "A beggar",
+"D": "A simple villager"
+},
+"answer": "B",
+"explanation": "Nanukaka ne apni chal-dhal aur baatchit se sabhi ko apna prabhavi roop dikhaya.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG13Q063",
+"subject": "english",
+"chapter": 13,
+"question": "What does the phrase 'a linguistic emergency' signify in the story?",
+"options": {
+"A": "A national grammar test",
+"B": "Involuntary outburst in one's native dialect during overwhelming emotion",
+"C": "Translation work in parliament",
+"D": "Learning foreign languages"
+},
+"answer": "B",
+"explanation": "Achanak krodh ya ghabrahat mein apni matribhasha ki or lautne ko linguistic emergency kaha gaya hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG13Q064",
+"subject": "english",
+"chapter": 13,
+"question": "What role did flattery play in Nanukaka's plans?",
+"options": {
+"A": "It ruined his reputation",
+"B": "It served as a key weapon to disarm opponents and gain access to ministers",
+"C": "It made him look foolish",
+"D": "It had no effect"
+},
+"answer": "B",
+"explanation": "Chaploosi aur jhootha dikhava Nanukaka ka sabse bada hathiyar tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG13Q065",
+"subject": "english",
+"chapter": 13,
+"question": "What was the main purpose of the huge orange turban tied on the narrator?",
+"options": {
+"A": "To protect from winter chill",
+"B": "To give him the authentic regal appearance of an aristocratic chauffeur",
+"C": "To hide his identity completely",
+"D": "To look like a priest"
+},
+"answer": "B",
+"explanation": "Narangi safa lekhak ko ek shahi driver ka dikhavati roop dene ke liye bandha gaya tha.",
+"source": "CONCEPT",
+"type": "objective"
 }
+]
+}  
