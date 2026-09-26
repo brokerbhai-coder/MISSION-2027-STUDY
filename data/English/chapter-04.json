@@ -1,8 +1,809 @@
 {
-  "_help": "प्रश्न इसी 'questions' list में जोड़ो। हर प्रश्न का format data/question-template.json में देखो। अभी यह list खाली है।",
-  "subject": "english",
-  "chapter": 4,
-  "title": "Poetry Section — Ode to Autumn",
-  "status": "pending-pdf-questions",
-  "questions": []
+"_help": "प्रश्न इसी 'questions' list में जोड़ो।",
+"subject": "english",
+"chapter": 4,
+"title": "ODE TO AUTUMN",
+"status": "ready",
+"questions": [
+{
+"id": "ENG04Q001",
+"subject": "english",
+"chapter": 4,
+"question": "John Keats was a great English .......... poet.",
+"options": {
+"A": "Victorian",
+"B": "Elizabethan",
+"C": "Romantic",
+"D": "Renaissance"
+},
+"answer": "C",
+"explanation": "John Keats अंग्रेजी साहित्य के महान Romantic कवियों में से एक थे।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q002",
+"subject": "english",
+"chapter": 4,
+"question": "Where was John Keats born?",
+"options": {
+"A": "Yorkshire, London",
+"B": "Warwick, London",
+"C": "Moonfields, London",
+"D": "Northampton, London"
+},
+"answer": "C",
+"explanation": "John Keats का जन्म Moonfields, London में हुआ था।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q003",
+"subject": "english",
+"chapter": 4,
+"question": "In which year was John Keats born?",
+"options": {
+"A": "1765",
+"B": "1785",
+"C": "1795",
+"D": "1821"
+},
+"answer": "C",
+"explanation": "John Keats का जन्म सन् 1795 में हुआ था।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q004",
+"subject": "english",
+"chapter": 4,
+"question": "When did John Keats pass away?",
+"options": {
+"A": "1821",
+"B": "1825",
+"C": "1838",
+"D": "1820"
+},
+"answer": "A",
+"explanation": "John Keats का निधन सन् 1821 में मात्र 26 वर्ष की आयु में हुआ था।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q005",
+"subject": "english",
+"chapter": 4,
+"question": ""To bend with apples the moss'd cottage trees" is taken from ..........",
+"options": {
+"A": "Snake",
+"B": "The Soldier",
+"C": "Ode to Autumn",
+"D": "An Epitaph"
+},
+"answer": "C",
+"explanation": "यह पंक्ति John Keats द्वारा रचित 'Ode to Autumn' के प्रथम पद से ली गई है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q006",
+"subject": "english",
+"chapter": 4,
+"question": ""Thou watchest the last oozings hours by hours" is from ..........",
+"options": {
+"A": "My Grandmother's House",
+"B": "The Soldier",
+"C": "Ode to Autumn",
+"D": "An Epitaph"
+},
+"answer": "C",
+"explanation": "यह पंक्ति 'Ode to Autumn' के दूसरे पद (Stanza 2) से ली गई है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q007",
+"subject": "english",
+"chapter": 4,
+"question": "Which season is called the season of 'mellow fruitfulness'?",
+"options": {
+"A": "Spring",
+"B": "Rainy",
+"C": "Autumn",
+"D": "Winter"
+},
+"answer": "C",
+"explanation": "कविता की पहली पंक्ति में Autumn (शरद ऋतु) को 'Season of mists and mellow fruitfulness' कहा गया है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q008",
+"subject": "english",
+"chapter": 4,
+"question": "Autumn is conspiring with .......... to load and bless the vines.",
+"options": {
+"A": "the Moon",
+"B": "the Wind",
+"C": "the Fog",
+"D": "the Sun"
+},
+"answer": "D",
+"explanation": "Autumn परिपक्व होते हुए सूर्य (maturing sun) के साथ मिलकर योजना बनाती है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q009",
+"subject": "english",
+"chapter": 4,
+"question": "Where does the vine run around in the poem?",
+"options": {
+"A": "Pole",
+"B": "Wall",
+"C": "Thatch-eaves",
+"D": "Bamboo"
+},
+"answer": "C",
+"explanation": "कविता के अनुसार बेलें घास-फूस की छतों के किनारों (thatch-eaves) के चारों ओर फैली हैं।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q010",
+"subject": "english",
+"chapter": 4,
+"question": "Who is the close bosom-friend of the maturing sun?",
+"options": {
+"A": "Autumn",
+"B": "Winter",
+"C": "Spring",
+"D": "Summer"
+},
+"answer": "A",
+"explanation": "Autumn को परिपक्व होते सूर्य का 'close bosom-friend' बताया गया है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q011",
+"subject": "english",
+"chapter": 4,
+"question": "Who think that warm days will never cease?",
+"options": {
+"A": "Crickets",
+"B": "Bees",
+"C": "Spiders",
+"D": "Flies"
+},
+"answer": "B",
+"explanation": "मधुमक्खियाँ (bees) सोचती हैं कि गर्म दिन कभी समाप्त नहीं होंगे क्योंकि छत्ते शहद से भर चुके हैं।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q012",
+"subject": "english",
+"chapter": 4,
+"question": "Where can Autumn be found sitting careless?",
+"options": {
+"A": "On a granary floor",
+"B": "On a drum",
+"C": "Inside the barn",
+"D": "Under the brook"
+},
+"answer": "A",
+"explanation": "कविता में Autumn को अनाज के भंडार के फर्श (granary floor) पर निश्चिंत बैठे दिखाया गया है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q013",
+"subject": "english",
+"chapter": 4,
+"question": "Autumn is personified as a .......... in the second stanza.",
+"options": {
+"A": "Queen",
+"B": "Bird",
+"C": "Rural Woman / Harvester",
+"D": "Fisherman"
+},
+"answer": "C",
+"explanation": "दूसरे पद में Autumn का मानवीकरण खेत में काम करने वाली ग्रामीण महिला/मजदूर के रूप में किया गया है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q014",
+"subject": "english",
+"chapter": 4,
+"question": "What is Autumn doing on a half-reap'd furrow?",
+"options": {
+"A": "Dancing",
+"B": "Singing",
+"C": "Working",
+"D": "Sound asleep"
+},
+"answer": "D",
+"explanation": "पॉपीज (खसखस) के फूलों की महक से Autumn आधे कटे खेत की मेड़ पर गहरी नींद में सोई हुई दिखाई देती है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q015",
+"subject": "english",
+"chapter": 4,
+"question": "'Lamia' and 'Hyperion' are celebrated works composed by ..........",
+"options": {
+"A": "William Wordsworth",
+"B": "P.B. Shelley",
+"C": "John Keats",
+"D": "S.T. Coleridge"
+},
+"answer": "C",
+"explanation": "'Lamia' और 'Hyperion' जॉन कीट्स की प्रमुख काव्य रचनाएँ हैं।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q016",
+"subject": "english",
+"chapter": 4,
+"question": "Which bird whistles with treble soft from a garden-croft?",
+"options": {
+"A": "Sparrow",
+"B": "Nightingale",
+"C": "Cuckoo",
+"D": "Red-breast (Robin)"
+},
+"answer": "D",
+"explanation": "कविता की पंक्ति है: 'The red-breast whistles from a garden-croft'।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q017",
+"subject": "english",
+"chapter": 4,
+"question": "What are twittering in the skies in the evening?",
+"options": {
+"A": "Swallows",
+"B": "Robins",
+"C": "Larks",
+"D": "Kites"
+},
+"answer": "A",
+"explanation": "कविता की अंतिम पंक्ति है: 'And gathering swallows twitter in the skies'।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q018",
+"subject": "english",
+"chapter": 4,
+"question": "Who has composed the lyrical poem 'Ode to Autumn'?",
+"options": {
+"A": "John Keats",
+"B": "William Wordsworth",
+"C": "S.T. Coleridge",
+"D": "P.B. Shelley"
+},
+"answer": "A",
+"explanation": "'Ode to Autumn' की रचना जॉन कीट्स (John Keats) ने की है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q019",
+"subject": "english",
+"chapter": 4,
+"question": "'Season of mists and mellow fruitfulness' is the opening line of ..........",
+"options": {
+"A": "Song of Myself",
+"B": "An Epitaph",
+"C": "Ode to Autumn",
+"D": "The Soldier"
+},
+"answer": "C",
+"explanation": "यह प्रसिद्ध पंक्ति 'Ode to Autumn' कविता की सबसे पहली पंक्ति है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q020",
+"subject": "english",
+"chapter": 4,
+"question": "'Ode to Autumn' belongs to which poetic genre?",
+"options": {
+"A": "Epic",
+"B": "Elegy",
+"C": "Ode",
+"D": "Ballad"
+},
+"answer": "C",
+"explanation": "'Ode to Autumn' विधा के रूप में एक Ode (प्रशंसा/संबोधन गीत) है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q021",
+"subject": "english",
+"chapter": 4,
+"question": "In 'Ode to Autumn', Keats deals with which season in detail?",
+"options": {
+"A": "Spring",
+"B": "Winter",
+"C": "Summer",
+"D": "Autumn"
+},
+"answer": "D",
+"explanation": "इस कविता में कवि शरद ऋतु (Autumn) के सौंदर्य और समृद्धि का विस्तृत वर्णन करते हैं।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q022",
+"subject": "english",
+"chapter": 4,
+"question": "'Ode to Autumn' consists of how many stanzas in total?",
+"options": {
+"A": "four",
+"B": "three",
+"C": "five",
+"D": "six"
+},
+"answer": "B",
+"explanation": "'Ode to Autumn' कुल तीन पदों (three stanzas) में संरचित है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q023",
+"subject": "english",
+"chapter": 4,
+"question": "The central theme of Autumn in this poem is ..........",
+"options": {
+"A": "Scarcity and decay",
+"B": "Extreme winter cold",
+"C": "Fulfillment, maturity, and abundance",
+"D": "Destruction of life"
+},
+"answer": "C",
+"explanation": "कविता का मुख्य विषय प्रकृति की परिपक्वता, पूर्णता (maturity and abundance) का उत्सव मनाना है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q024",
+"subject": "english",
+"chapter": 4,
+"question": "Which season has been personified throughout 'Ode to Autumn'?",
+"options": {
+"A": "Spring",
+"B": "Autumn",
+"C": "Winter",
+"D": "Summer"
+},
+"answer": "B",
+"explanation": "पूरी कविता में शरद ऋतु (Autumn) का एक सजीव पात्र के रूप में मानवीकरण किया गया है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q025",
+"subject": "english",
+"chapter": 4,
+"question": "In 'Ode to Autumn', Autumn is depicted as a season of mellow ..........",
+"options": {
+"A": "wind",
+"B": "fruitlessness",
+"C": "fruitfulness",
+"D": "coldness"
+},
+"answer": "C",
+"explanation": "कवि ने इसे 'mellow fruitfulness' (फलों की मधुर परिपक्वता) का मौसम कहा है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q026",
+"subject": "english",
+"chapter": 4,
+"question": "Autumn starts with the departure of which season?",
+"options": {
+"A": "Winter",
+"B": "Spring",
+"C": "Rainy",
+"D": "Summer"
+},
+"answer": "D",
+"explanation": "शरद ऋतु गर्मियों (Summer) के खत्म होने के बाद शुरू होती है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q027",
+"subject": "english",
+"chapter": 4,
+"question": "Among the following poets, who was an ardent lover of nature and sensory beauty?",
+"options": {
+"A": "John Keats",
+"B": "John Donne",
+"C": "W.H. Auden",
+"D": "T.S. Eliot"
+},
+"answer": "A",
+"explanation": "जॉन कीट्स प्रकृति के सौंदर्य और इंद्रियगत अनुभवों (sensuous beauty) के अप्रतिम कवि थे।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q028",
+"subject": "english",
+"chapter": 4,
+"question": "In which season do trees shed their leaves and prepare for new buds?",
+"options": {
+"A": "Spring",
+"B": "Autumn",
+"C": "Summer",
+"D": "Monsoon"
+},
+"answer": "B",
+"explanation": "Autumn (पतझड़/शरद) में पेड़ पुराने पत्ते गिराते हैं और फसलें पकती हैं।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q029",
+"subject": "english",
+"chapter": 4,
+"question": "What has over-brimmed the clammy cells of the bees?",
+"options": {
+"A": "Water",
+"B": "Summer",
+"C": "Winter",
+"D": "Air"
+},
+"answer": "B",
+"explanation": "कविता की पंक्ति है: 'For Summer has o'er-brimm'd their clammy cells'।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q030",
+"subject": "english",
+"chapter": 4,
+"question": "Which fruit is specifically mentioned as bending the moss'd cottage trees?",
+"options": {
+"A": "Mangoes",
+"B": "Apples",
+"C": "Pears",
+"D": "Oranges"
+},
+"answer": "B",
+"explanation": "पंक्ति है: 'To bend with apples the moss'd cottage-trees'।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG04Q031",
+"subject": "english",
+"chapter": 4,
+"question": "At what age did John Keats pass away?",
+"options": {
+"A": "22",
+"B": "26",
+"C": "30",
+"D": "35"
+},
+"answer": "B",
+"explanation": "जॉन कीट्स का देहांत मात्र 26 वर्ष की आयु में हो गया था।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG04Q032",
+"subject": "english",
+"chapter": 4,
+"question": "Which fatal disease caused the untimely death of John Keats in 1821?",
+"options": {
+"A": "Cholera",
+"B": "Tuberculosis",
+"C": "Malaria",
+"D": "Typhoid"
+},
+"answer": "B",
+"explanation": "उनकी मृत्यु क्षय रोग यानी Tuberculosis (टीबी) के कारण हुई थी।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG04Q033",
+"subject": "english",
+"chapter": 4,
+"question": "Where did John Keats receive his school education?",
+"options": {
+"A": "Eton College",
+"B": "Clarke's School at Enfield",
+"C": "Harrow School",
+"D": "Westminster School"
+},
+"answer": "B",
+"explanation": "कीट्स ने Enfield स्थित Clarke's School में अपनी स्कूली शिक्षा प्राप्त की थी।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG04Q034",
+"subject": "english",
+"chapter": 4,
+"question": "In which sports was John Keats deeply interested during his school days?",
+"options": {
+"A": "Football and tennis",
+"B": "Cricket and boxing",
+"C": "Hockey and swimming",
+"D": "Rowing and archery"
+},
+"answer": "B",
+"explanation": "वे स्कूल के दिनों में क्रिकेट और मुक्केबाजी (cricket and boxing) में अत्यधिक रुचि रखते थे।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG04Q035",
+"subject": "english",
+"chapter": 4,
+"question": "Keats's ambition to become a poet was fired by reading Edmund Spenser's ..........",
+"options": {
+"A": "Amoretti",
+"B": "The Faerie Queene",
+"C": "Epithalamion",
+"D": "The Shepheardes Calender"
+},
+"answer": "B",
+"explanation": "स्पेंसर की 'The Faerie Queene' पढ़ने के पश्चात कीट्स में कवि बनने की तीव्र लालसा जागी।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG04Q036",
+"subject": "english",
+"chapter": 4,
+"question": "What was the title of John Keats's first published poem in 1814?",
+"options": {
+"A": "To Hope",
+"B": "Lines in Imitation of Spenser",
+"C": "Endymion",
+"D": "Ode on Indolence"
+},
+"answer": "B",
+"explanation": "उनकी पहली प्रकाशित कविता 'Lines in Imitation of Spenser' थी।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG04Q037",
+"subject": "english",
+"chapter": 4,
+"question": "Which poem by Keats published in 1818 was well appreciated by William Wordsworth?",
+"options": {
+"A": "Lamia",
+"B": "Hyperion",
+"C": "Endymion",
+"D": "Isabella"
+},
+"answer": "C",
+"explanation": "कीट्स की रचना 'Endymion' की विलियम वर्ड्सवर्थ ने प्रशंसा की थी।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG04Q038",
+"subject": "english",
+"chapter": 4,
+"question": "Complete the famous quote by Keats: 'A thing of beauty is a ..........'",
+"options": {
+"A": "pleasure for days",
+"B": "joy forever",
+"C": "gift of nature",
+"D": "memory of love"
+},
+"answer": "B",
+"explanation": "जॉन कीट्स का प्रसिद्ध कथन है: 'A thing of beauty is a joy forever'।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG04Q039",
+"subject": "english",
+"chapter": 4,
+"question": "According to Keats in 'Ode on a Grecian Urn', 'Beauty is truth, truth ..........'",
+"options": {
+"A": "god",
+"B": "nature",
+"C": "beauty",
+"D": "eternal"
+},
+"answer": "C",
+"explanation": "कीट्स का प्रसिद्ध काव्यात्मक सूत्र है: 'Beauty is truth, truth beauty'।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG04Q040",
+"subject": "english",
+"chapter": 4,
+"question": "Each of the three stanzas in 'Ode to Autumn' contains how many lines?",
+"options": {
+"A": "10 lines",
+"B": "11 lines",
+"C": "12 lines",
+"D": "14 lines"
+},
+"answer": "B",
+"explanation": "'Ode to Autumn' के प्रत्येक पद में ठीक 11 पंक्तियाँ हैं (कुल 33 पंक्तियाँ)।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG04Q041",
+"subject": "english",
+"chapter": 4,
+"question": "In Stanza 1, what fills all fruit with ripeness to the ..........?",
+"options": {
+"A": "skin",
+"B": "core",
+"C": "seed",
+"D": "top"
+},
+"answer": "B",
+"explanation": "पंक्ति है: 'And fill all fruit with ripeness to the core'।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG04Q042",
+"subject": "english",
+"chapter": 4,
+"question": "What does Autumn swell and plump with a sweet kernel in the first stanza?",
+"options": {
+"A": "The gourd and hazel shells",
+"B": "The melons and mangoes",
+"C": "The grapes and pears",
+"D": "The wheat and barley"
+},
+"answer": "A",
+"explanation": "कविता में लिखा है: 'To swell the gourd, and plump the hazel shells With a sweet kernel'।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG04Q043",
+"subject": "english",
+"chapter": 4,
+"question": "By what is Autumn's hair soft-lifted while sitting on the granary floor?",
+"options": {
+"A": "The stormy breeze",
+"B": "The winnowing wind",
+"C": "The morning chill",
+"D": "The river current"
+},
+"answer": "B",
+"explanation": "पंक्ति है: 'Thy hair soft-lifted by the winnowing wind'।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG04Q044",
+"subject": "english",
+"chapter": 4,
+"question": "Autumn is drowsed with the perfume and fume of which flower?",
+"options": {
+"A": "Roses",
+"B": "Lilies",
+"C": "Poppies",
+"D": "Jasmine"
+},
+"answer": "C",
+"explanation": "खसखस (poppies) के मादक प्रभाव से Autumn आधे कटे खेत पर ऊंघती हुई सो जाती है ('Drowsed with the fume of poppies')।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG04Q045",
+"subject": "english",
+"chapter": 4,
+"question": "In the second stanza, Autumn balances a laden head steadily across a ..........",
+"options": {
+"A": "brook",
+"B": "road",
+"C": "valley",
+"D": "forest"
+},
+"answer": "A",
+"explanation": "पंक्ति है: 'And sometimes like a gleaner thou dost keep Steady thy laden head across a brook'।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG04Q046",
+"subject": "english",
+"chapter": 4,
+"question": "Which apparatus does Autumn watch with patient look for hours together?",
+"options": {
+"A": "A water-wheel",
+"B": "A cider-press",
+"C": "A wind-mill",
+"D": "An oil-mill"
+},
+"answer": "B",
+"explanation": "Autumn सेब का रस टपकने वाले यंत्र (cider-press) के पास घंटों बैठकर अंतिम बूंदें देखती है।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG04Q047",
+"subject": "english",
+"chapter": 4,
+"question": "In the third stanza, barred clouds bloom the soft-dying day and touch the plains with a ..........",
+"options": {
+"A": "golden tint",
+"B": "rosy hue",
+"C": "purple shadow",
+"D": "silver light"
+},
+"answer": "B",
+"explanation": "पंक्ति है: 'And touch the stubble-plains with rosy hue'।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG04Q048",
+"subject": "english",
+"chapter": 4,
+"question": "Which insects mourn in a wailful choir along the river sallows?",
+"options": {
+"A": "Small gnats",
+"B": "Honeybees",
+"C": "Grasshoppers",
+"D": "Wasps"
+},
+"answer": "A",
+"explanation": "नदी के कछारों में छोटे मच्छर (small gnats) शोकपूर्ण सामूहिक स्वर में विलाप करते हैं।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG04Q049",
+"subject": "english",
+"chapter": 4,
+"question": "From where do full-grown lambs loud bleat in the evening?",
+"options": {
+"A": "Hilly bourn",
+"B": "Grassy meadows",
+"C": "Deep forests",
+"D": "Quiet barns"
+},
+"answer": "A",
+"explanation": "पंक्ति है: 'And full-grown lambs loud bleat from hilly bourn'।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG04Q050",
+"subject": "english",
+"chapter": 4,
+"question": "What sound does the hedge-cricket make in the final stanza?",
+"options": {
+"A": "Whistles",
+"B": "Sings",
+"C": "Bleats",
+"D": "Twitters"
+},
+"answer": "B",
+"explanation": "कविता में लिखा है: 'Hedge-crickets sing'।",
+"source": "CONCEPT",
+"type": "objective"
+}
+]
 }
