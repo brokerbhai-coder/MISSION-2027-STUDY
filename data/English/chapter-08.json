@@ -1,8 +1,681 @@
 {
-  "_help": "प्रश्न इसी 'questions' list में जोड़ो। हर प्रश्न का format data/question-template.json में देखो। अभी यह list खाली है।",
-  "subject": "english",
-  "chapter": 8,
-  "title": "Poetry Section — Fire-Hymn",
-  "status": "pending-pdf-questions",
-  "questions": []
+"_help": "प्रश्न इसी 'questions' list में जोड़ो।",
+"subject": "english",
+"chapter": 8,
+"title": "FIRE-HYMN",
+"status": "ready",
+"questions": [
+{
+"id": "ENG08Q001",
+"subject": "english",
+"chapter": 8,
+"question": "Who has violated the tradition of religion by cremating?",
+"options": {
+"A": "D. H. Lawrence",
+"B": "Kamala Das",
+"C": "Keki N. Daruwalla",
+"D": "T.S. Eliot"
+},
+"answer": "C",
+"explanation": "केकी एन. दारूवाला ने पारसी धर्म की परंपरा के विपरीत जाकर मजबूरी में शव का दाह-संस्कार किया था。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG08Q002",
+"subject": "english",
+"chapter": 8,
+"question": "'I swore to save fire From the sin of ..........'",
+"options": {
+"A": "sin",
+"B": "hatred",
+"C": "forgetfulness",
+"D": "blessings"
+},
+"answer": "C",
+"explanation": "कविता में कवि कहते हैं: 'I swore to save fire From the sin of forgetfulness'。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG08Q003",
+"subject": "english",
+"chapter": 8,
+"question": "'Crossing of Rivers' is an important volume of verse written by ..........",
+"options": {
+"A": "Jayanta Mahapatra",
+"B": "Kamala Das",
+"C": "Keki N. Daruwalla",
+"D": "Nissim Ezekiel"
+},
+"answer": "C",
+"explanation": "'Crossing of Rivers' (1976) केकी एन. दारूवाला की प्रसिद्ध काव्य कृति है。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG08Q004",
+"subject": "english",
+"chapter": 8,
+"question": "Tower of Silence is related to ..........",
+"options": {
+"A": "Hindus",
+"B": "Parsis",
+"C": "Sikhs",
+"D": "Christians"
+},
+"answer": "B",
+"explanation": "'Tower of Silence' (दखमा) पारसी (Zoroastrian) धर्म के अंतिम संस्कार से संबंधित स्थान है。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG08Q005",
+"subject": "english",
+"chapter": 8,
+"question": "Who wrote 'Fire-Hymn'?",
+"options": {
+"A": "Rupert Brooke",
+"B": "Kamala Das",
+"C": "T.S. Eliot",
+"D": "Keki N. Daruwalla"
+},
+"answer": "D",
+"explanation": "'Fire-Hymn' कविता प्रसिद्ध भारतीय-अंग्रेजी कवि केकी एन. दारूवाला द्वारा लिखी गई है。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG08Q006",
+"subject": "english",
+"chapter": 8,
+"question": "'Once strolling at dawn past river bank and ghat' is from ..........",
+"options": {
+"A": "My Grandmother's House",
+"B": "Snake",
+"C": "Fire-Hymn",
+"D": "Song of Myself"
+},
+"answer": "C",
+"explanation": "यह पंक्ति 'Fire-Hymn' कविता से ली गई है。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG08Q007",
+"subject": "english",
+"chapter": 8,
+"question": "The speaker in 'Fire-Hymn' belongs to .......... religion.",
+"options": {
+"A": "Indian",
+"B": "African",
+"C": "Zoroastrian",
+"D": "Nigerian"
+},
+"answer": "C",
+"explanation": "कविता के वक्ता पारसी यानी जोरोस्ट्रियन (Zoroastrian) धर्म से संबंधित हैं。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG08Q008",
+"subject": "english",
+"chapter": 8,
+"question": "The ghat is littered with ..........",
+"options": {
+"A": "half-burnt bodies",
+"B": "animals",
+"C": "food",
+"D": "trash"
+},
+"answer": "A",
+"explanation": "घाट पर आग द्वारा अधजले छोड़े गए अंग और शरीर बिखरे पड़े थे。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG08Q009",
+"subject": "english",
+"chapter": 8,
+"question": "Keki N. Daruwalla consigned his firstborn child to the flames for cremation because the nearest tower of silence was .......... miles away.",
+"options": {
+"A": "one thousand",
+"B": "two thousand",
+"C": "one hundred",
+"D": "five hundred"
+},
+"answer": "A",
+"explanation": "निकटतम टॉवर ऑफ साइलेंस एक हजार मील (a thousand miles) दूर था。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG08Q010",
+"subject": "english",
+"chapter": 8,
+"question": "It was the .......... of the poet along with him, passing by the cremation ghat.",
+"options": {
+"A": "father",
+"B": "brother",
+"C": "son",
+"D": "sister"
+},
+"answer": "A",
+"explanation": "श्मशान घाट के पास से सुबह टहलते समय कवि के साथ उनके पिता (father) थे。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG08Q011",
+"subject": "english",
+"chapter": 8,
+"question": "'The burning ghat erupted phosphorescence' is taken from ..........",
+"options": {
+"A": "Fire-Hymn",
+"B": "Song of Myself",
+"C": "Macavity",
+"D": "The Soldier"
+},
+"answer": "A",
+"explanation": "यह पंक्ति केकी एन. दारूवाला की कविता 'Fire-Hymn' की पहली पंक्ति है。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG08Q012",
+"subject": "english",
+"chapter": 8,
+"question": "Keki N. Daruwalla is an .......... poet.",
+"options": {
+"A": "British",
+"B": "American",
+"C": "African",
+"D": "Indo-Anglian"
+},
+"answer": "D",
+"explanation": "केकी एन. दारूवाला एक प्रतिष्ठित भारतीय-अंग्रेजी (Indo-Anglian) कवि हैं。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG08Q013",
+"subject": "english",
+"chapter": 8,
+"question": "Consigning his first-born son to flames took place .......... years ago.",
+"options": {
+"A": "15",
+"B": "16",
+"C": "20",
+"D": "18"
+},
+"answer": "C",
+"explanation": "कविता के अनुसार यह घटना बीस साल पहले ('twenty years since') हुई थी。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG08Q014",
+"subject": "english",
+"chapter": 8,
+"question": "The rituals for the disposal of dead bodies in .......... are somewhat different.",
+"options": {
+"A": "Hindu",
+"B": "Parsi",
+"C": "Muslim",
+"D": "Christian"
+},
+"answer": "B",
+"explanation": "पारसी (Parsi) धर्म में शवों को जलाया या दफनाया नहीं जाता बल्कि टॉवर ऑफ साइलेंस में रखा जाता है。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG08Q015",
+"subject": "english",
+"chapter": 8,
+"question": ".......... swears to save fire from the sin of forgetfulness.",
+"options": {
+"A": "Keki N. Daruwalla",
+"B": "Kamala Das",
+"C": "Rupert Brooke",
+"D": "D.H. Lawrence"
+},
+"answer": "A",
+"explanation": "कवि केकी एन. दारूवाला आग को उसके भूलने के पाप से बचाने की प्रतिज्ञा लेते हैं。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG08Q016",
+"subject": "english",
+"chapter": 8,
+"question": "Keki N. Daruwalla consigned his newborn .......... to flames.",
+"options": {
+"A": "niece",
+"B": "son",
+"C": "nephew",
+"D": "sister"
+},
+"answer": "B",
+"explanation": "कवि ने अपने पहले मृत नवजात पुत्र (first-born son) को आग के हवाले किया था。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG08Q017",
+"subject": "english",
+"chapter": 8,
+"question": "The .......... child was consigned to fire under compulsion.",
+"options": {
+"A": "first born",
+"B": "third born",
+"C": "fourth born",
+"D": "fifth born"
+},
+"answer": "A",
+"explanation": "कवि ने मजबूरी में अपनी पहली संतान (first born) का दाह-संस्कार किया था。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG08Q018",
+"subject": "english",
+"chapter": 8,
+"question": "The poet sees the red hot ..........",
+"options": {
+"A": "embers",
+"B": "furnace",
+"C": "flames",
+"D": "stones"
+},
+"answer": "A",
+"explanation": "कवि दहकते हुए लाल अंगारों (embers) को देखते हैं。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG08Q019",
+"subject": "english",
+"chapter": 8,
+"question": "The .......... forgets its dead because sometimes it leaves the dead body half burnt.",
+"options": {
+"A": "fire",
+"B": "wind",
+"C": "soil",
+"D": "water"
+},
+"answer": "A",
+"explanation": "आग (fire) कभी-कभी शरीर को आधा जला छोड़कर अपने मृतकों को भूल जाती है。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG08Q020",
+"subject": "english",
+"chapter": 8,
+"question": "Keki N. Daruwalla won the prestigious .......... Award.",
+"options": {
+"A": "Nobel Prize",
+"B": "Booker Prize",
+"C": "Commonwealth Poetry",
+"D": "Pulitzer Prize"
+},
+"answer": "C",
+"explanation": "उन्हें राष्ट्रमंडल काव्य पुरस्कार (Commonwealth Poetry Award) से सम्मानित किया गया था。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG08Q021",
+"subject": "english",
+"chapter": 8,
+"question": "Keki N. Daruwalla is called a/an .......... poet of eminence.",
+"options": {
+"A": "People's",
+"B": "Vigorous",
+"C": "Landscape poet",
+"D": "Romantic poet"
+},
+"answer": "C",
+"explanation": "दारूवाला को ग्रामीण और प्राकृतिक दृश्यों का उत्कृष्ट परिदृश्य कवि (Landscape poet) माना जाता है。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG08Q022",
+"subject": "english",
+"chapter": 8,
+"question": "'Crossing of Rivers' was published in the year ..........",
+"options": {
+"A": "1970",
+"B": "1971",
+"C": "1976",
+"D": "1984"
+},
+"answer": "C",
+"explanation": "'Crossing of Rivers' का प्रकाशन सन् 1976 में हुआ था。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG08Q023",
+"subject": "english",
+"chapter": 8,
+"question": "In which year did Keki N. Daruwalla join the Indian Police Service (IPS)?",
+"options": {
+"A": "1950",
+"B": "1954",
+"C": "1958",
+"D": "1962"
+},
+"answer": "C",
+"explanation": "केकी एन. दारूवाला सन् 1958 में भारतीय पुलिस सेवा (IPS) में शामिल हुए थे。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG08Q024",
+"subject": "english",
+"chapter": 8,
+"question": "In which year was Keki N. Daruwalla awarded the Sahitya Akademi Award?",
+"options": {
+"A": "1980",
+"B": "1984",
+"C": "1990",
+"D": "1995"
+},
+"answer": "B",
+"explanation": "उन्हें सन् 1984 में साहित्य अकादमी पुरस्कार से सम्मानित किया गया था。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG08Q025",
+"subject": "english",
+"chapter": 8,
+"question": "Where did Keki N. Daruwalla settle after leaving undivided India in 1945?",
+"options": {
+"A": "Junagarh in Gujarat",
+"B": "Mumbai in Maharashtra",
+"C": "Kolkata in West Bengal",
+"D": "Delhi"
+},
+"answer": "A",
+"explanation": "वे 1945 में अविभाजित भारत छोड़कर गुजरात के जूनागढ़ में आकर बस गए थे。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG08Q026",
+"subject": "english",
+"chapter": 8,
+"question": "Which poetry collection was published by Keki N. Daruwalla in 1970?",
+"options": {
+"A": "Under Orion",
+"B": "Apparition in April",
+"C": "The Waste Land",
+"D": "Leaves of Grass"
+},
+"answer": "A",
+"explanation": "'Under Orion' उनका पहला प्रमुख काव्य संग्रह था जो 1970 में प्रकाशित हुआ。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG08Q027",
+"subject": "english",
+"chapter": 8,
+"question": "'Apparition in April' was published in which year?",
+"options": {
+"A": "1970",
+"B": "1971",
+"C": "1976",
+"D": "1984"
+},
+"answer": "B",
+"explanation": "'Apparition in April' का प्रकाशन सन् 1971 में हुआ था。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG08Q028",
+"subject": "english",
+"chapter": 8,
+"question": "Why is violence considered an unavoidable element in Keki N. Daruwalla's poetry?",
+"options": {
+"A": "Because he fought in World War II",
+"B": "Because he had been in police service",
+"C": "Because he lived in a forest",
+"D": "Because he was a boxer"
+},
+"answer": "B",
+"explanation": "चूँकि वे पुलिस सेवा (IPS) में रहे थे, इसलिए अपराध और हिंसा उनके अनुभवों का अभिन्न हिस्सा थे。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG08Q029",
+"subject": "english",
+"chapter": 8,
+"question": "What is the meaning of the word 'phosphorescence' in the poem?",
+"options": {
+"A": "Heavy black smoke",
+"B": "Luminous glow without combustion produced by burning bones",
+"C": "Rain water on the ghat",
+"D": "Sound of temple bells"
+},
+"answer": "B",
+"explanation": "हड्डियों में मौजूद फास्फोरस के जलने से निकलने वाली रहस्यमयी नीली-सफेद चमक को स्फुरदीप्ति (phosphorescence) कहते हैं。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG08Q030",
+"subject": "english",
+"chapter": 8,
+"question": "What scuttled among the bones at the burning ghat?",
+"options": {
+"A": "Rats",
+"B": "Snakes",
+"C": "Moonlight",
+"D": "Wind"
+},
+"answer": "C",
+"explanation": "कविता की पंक्ति है: 'as moonlight scuttled among the bones'。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG08Q031",
+"subject": "english",
+"chapter": 8,
+"question": "Who were frightened by the wandering ghost lights?",
+"options": {
+"A": "Priests",
+"B": "Passers-by",
+"C": "Animals",
+"D": "Fishermen"
+},
+"answer": "B",
+"explanation": "श्मशान से उठती रहस्यमयी रोशनी वहाँ से गुजरने वाले राहगीरों (passers-by) को डराती थी。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG08Q032",
+"subject": "english",
+"chapter": 8,
+"question": "What does the poet describe as 'the fire's debauchery'?",
+"options": {
+"A": "Burning flowers",
+"B": "Leaving human limbs half-burnt and neglecting its sacred duty",
+"C": "Creating too much smoke",
+"D": "Making loud noises"
+},
+"answer": "B",
+"explanation": "आग का शवों को पूरी तरह राख में न बदलकर अधजला छोड़ देना उसका भ्रष्ट आचरण (debauchery) कहा गया है。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG08Q033",
+"subject": "english",
+"chapter": 8,
+"question": "In the line 'Broken, yet rebellious, I swore this time', what did the poet swear to save fire from?",
+"options": {
+"A": "From the sin of forgetfulness",
+"B": "From the sin of forgiving",
+"C": "From cold water",
+"D": "From high winds"
+},
+"answer": "B",
+"explanation": "दूसरी बार कवि आग को क्षमा करने के पाप ('the sin of forgiving') से बचाने की कसम खाते हैं。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG08Q034",
+"subject": "english",
+"chapter": 8,
+"question": "Why does the poet describe the redness of the fire as 'cruel'?",
+"options": {
+"A": "Because it burns everything beautifully",
+"B": "Because it mercilessly consumes bodies and leaves painful half-cooked remains",
+"C": "Because the fire is cold",
+"D": "Because red is an unlucky colour"
+},
+"answer": "B",
+"explanation": "आग की भीषण लालिमा निर्दयता से मानव शरीर को जलाती है और अधजले अवशेष छोड़ देती है。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG08Q035",
+"subject": "english",
+"chapter": 8,
+"question": "How did the poet's child-fingers react when seeing the half-burnt limbs?",
+"options": {
+"A": "Clapped in joy",
+"B": "Clenched into a little knot of pain",
+"C": "Pointed at the river",
+"D": "Covered his eyes"
+},
+"answer": "B",
+"explanation": "कवि कहते हैं: 'my child-fingers clenched Into a little knot of pain'。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG08Q036",
+"subject": "english",
+"chapter": 8,
+"question": "What is the meaning of 'strolling' in the poem?",
+"options": {
+"A": "Running fast",
+"B": "Walking in a leisurely, relaxed manner",
+"C": "Swimming in the river",
+"D": "Sleeping quietly"
+},
+"answer": "B",
+"explanation": "'Strolling' का अर्थ सुबह के समय शांत भाव से टहलना या चहलकदमी करना होता है。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG08Q037",
+"subject": "english",
+"chapter": 8,
+"question": "Which natural element is personified as forgetting its dead?",
+"options": {
+"A": "The river",
+"B": "The wind",
+"C": "The fire",
+"D": "The moon"
+},
+"answer": "C",
+"explanation": "कवि के पिता कहते हैं कि आग कभी-कभी अपने मृतकों को जलाना भूल जाती है。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG08Q038",
+"subject": "english",
+"chapter": 8,
+"question": "What does Keki N. Daruwalla shun because it 'takes away the power of verse'?",
+"options": {
+"A": "Simplicity",
+"B": "Sophistication",
+"C": "Nature",
+"D": "Rhyme"
+},
+"answer": "B",
+"explanation": "वे बनावटीपन और चमक-दमक (sophistication) से बचते हैं क्योंकि यह कविता की वास्तविक शक्ति छीन लेता है。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG08Q039",
+"subject": "english",
+"chapter": 8,
+"question": "According to the poet, what swallows all the burning embers?",
+"options": {
+"A": "The river water",
+"B": "The grey ash",
+"C": "The dark night",
+"D": "The morning mist"
+},
+"answer": "B",
+"explanation": "पंक्ति है: 'to the grey ash that swallows all'。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG08Q040",
+"subject": "english",
+"chapter": 8,
+"question": "What did the fire-hymn say to the speaker after he cremated his child?",
+"options": {
+"A": "'You are cursed'",
+"B": "'You stand forgiven'",
+"C": "'Do not return here'",
+"D": "'Go to the tower'"
+},
+"answer": "B",
+"explanation": "अग्नि-सूक्त ने कवि से कहा: 'You stand forgiven' यानी तुम्हें क्षमा किया जाता है。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG08Q041",
+"subject": "english",
+"chapter": 8,
+"question": "Keki N. Daruwalla defines his own poetry as a totally impressionistic recording of ..........",
+"options": {
+"A": "scientific facts",
+"B": "subjective responses",
+"C": "historical battles",
+"D": "ancient mythology"
+},
+"answer": "B",
+"explanation": "कवि के अपने शब्दों में उनकी कविता 'a totally impressionistic recording of subjective responses' है。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG08Q042",
+"subject": "english",
+"chapter": 8,
+"question": "The central conflict in 'Fire-Hymn' lies between ..........",
+"options": {
+"A": "rich and poor classes",
+"B": "cultural traditions and personal moral compulsions",
+"C": "police and criminals",
+"D": "science and superstition"
+},
+"answer": "B",
+"explanation": "कविता का मूल द्वंद्व धार्मिक परंपरा (पारसी रीति) और व्यक्तिगत मजबूरी व अपराधबोध के बीच का संघर्ष है。",
+"source": "CONCEPT",
+"type": "objective"
 }
+]
+}  
