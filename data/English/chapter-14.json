@@ -1,8 +1,970 @@
 {
-  "_help": "प्रश्न इसी 'questions' list में जोड़ो। हर प्रश्न का format data/question-template.json में देखो। अभी यह list खाली है।",
-  "subject": "english",
-  "chapter": 14,
-  "title": "Prose Section — I Have a Dream",
-  "status": "pending-pdf-questions",
-  "questions": []
+"_help": "Prashn isi 'questions' list mein jodo.",
+"subject": "english",
+"chapter": 14,
+"title": "I Have a Dream",
+"status": "ready",
+"questions": [
+{
+"id": "ENG14Q001",
+"subject": "english",
+"chapter": 14,
+"question": "'I Have a Dream' is a celebrated speech delivered by ..........",
+"options": {
+"A": "Germaine Greer",
+"B": "Shiga Naoya",
+"C": "H. E. Bates",
+"D": "Martin Luther King, Jr."
+},
+"answer": "D",
+"explanation": "Yeh aitihasik bhashan Martin Luther King, Jr. dwara 28 August 1963 ko diya gaya tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q002",
+"subject": "english",
+"chapter": 14,
+"question": "'And as we walk, we make the pledge that we shall ..........'",
+"options": {
+"A": "always be satisfied",
+"B": "always fight violently",
+"C": "always hate people",
+"D": "always march ahead"
+},
+"answer": "D",
+"explanation": "Bhashan mein kavi kehte hain ki chalte huye hum sankalp lete hain ki hum hamesha aage badhenge aur kabhi peechhe nahi hatenge.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q003",
+"subject": "english",
+"chapter": 14,
+"question": "Who fought tirelessly for the civil rights of Negroes and people living in ghettos?",
+"options": {
+"A": "Abraham Lincoln",
+"B": "William III",
+"C": "Martin Luther King, Jr.",
+"D": "Barack Obama"
+},
+"answer": "C",
+"explanation": "Martin Luther King, Jr. ne America mein ashweton aur bastiyon mein rehne wale logon ke nagrik adhikaaron ke liye ladaai ladi.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q004",
+"subject": "english",
+"chapter": 14,
+"question": "Martin Luther King, Jr. delivered his speech from the steps of the .......... in Washington, D.C.",
+"options": {
+"A": "Lincoln Memorial",
+"B": "Royal Albert Hall",
+"C": "Boston Symphony Hall",
+"D": "Suntory Hall"
+},
+"answer": "A",
+"explanation": "Unhone Washington D.C. mein Lincoln Memorial ki seedhiyon par khade hokar yeh bhashan diya tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q005",
+"subject": "english",
+"chapter": 14,
+"question": "In 1964, Martin Luther King, Jr. became the youngest person to receive the ..........",
+"options": {
+"A": "Booker Prize",
+"B": "Nobel Peace Prize",
+"C": "Pulitzer Prize",
+"D": "National Innovation Award"
+},
+"answer": "B",
+"explanation": "Saal 1964 mein matra 35 saal ki aayu mein unhe Nobel Shanti Puraskar mila aur weh yeh samman paane wale sabse kam umra ke vyakti bane.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q006",
+"subject": "english",
+"chapter": 14,
+"question": "According to the speech, the bank of justice for the Negro people is ..........",
+"options": {
+"A": "ruined",
+"B": "failed",
+"C": "bankrupt",
+"D": "staggered"
+},
+"answer": "C",
+"explanation": "King kehte hain ki hum yeh manne se inkar karte hain ki nyay ka bank diwaliya (bankrupt) ho gaya hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q007",
+"subject": "english",
+"chapter": 14,
+"question": "Martin Luther King, Jr. received the Nobel Prize in which category?",
+"options": {
+"A": "Literature",
+"B": "Peace",
+"C": "Medicine",
+"D": "Economics",
+"type": "objective"
+},
+"answer": "B",
+"explanation": "Unhin nasliya bhedbhav ke khilaf ahinsak andolan ke liye Nobel Peace Prize (Shanti Puraskar) diya gaya tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q008",
+"subject": "english",
+"chapter": 14,
+"question": "President Abraham Lincoln signed the .......... for the freedom of American slaves.",
+"options": {
+"A": "Emancipation Proclamation",
+"B": "Independence Coalition",
+"C": "Apartheid Declaration",
+"D": "Slavery Campaign"
+},
+"answer": "A",
+"explanation": "Abraham Lincoln ne 1 January 1863 ko Emancipation Proclamation par hastakshar kiye the jisse daason ko mukti mili.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q009",
+"subject": "english",
+"chapter": 14,
+"question": "Martin Luther King, Jr. strongly disliked .......... discrimination.",
+"options": {
+"A": "caste",
+"B": "gender",
+"C": "religious",
+"D": "racial"
+},
+"answer": "D",
+"explanation": "Martin Luther King, Jr. ne aajiwan rangbhed aur nasliya bhedbhav (racial discrimination) ka virodh kiya.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q010",
+"subject": "english",
+"chapter": 14,
+"question": "Abraham Lincoln is historically famous for his decisive struggle against ..........",
+"options": {
+"A": "corruption",
+"B": "poetry",
+"C": "slavery",
+"D": "bankruptcy"
+},
+"answer": "C",
+"explanation": "Abraham Lincoln ne America mein das-pratha (slavery) ke un moolan ke liye aitihasik kadam uthaye the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q011",
+"subject": "english",
+"chapter": 14,
+"question": "On which date did Martin Luther King, Jr. deliver his memorable speech 'I Have a Dream'?",
+"options": {
+"A": "25 August 1964",
+"B": "28 August 1963",
+"C": "4 April 1968",
+"D": "28 August 1964"
+},
+"answer": "B",
+"explanation": "Yeh aitihasik bhashan 28 August 1963 ko March on Washington ke dauran diya gaya tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q012",
+"subject": "english",
+"chapter": 14,
+"question": "Who were languishing in the corners of American society and felt like exiles in their own land?",
+"options": {
+"A": "Red Indians",
+"B": "Slaves",
+"C": "The Negroes",
+"D": "Caucasoids"
+},
+"answer": "C",
+"explanation": "Mukti ghoshna ke 100 saal baad bhi ashwet log (Negroes) samaj ke kono mein upekshit jeevan jee rahe the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q013",
+"subject": "english",
+"chapter": 14,
+"question": "America had given the Negro citizens a .......... which came back marked 'insufficient funds'.",
+"options": {
+"A": "new cheque",
+"B": "bounce cheque",
+"C": "bad cheque",
+"D": "empty cheque"
+},
+"answer": "C",
+"explanation": "King kehte hain ki America ne ashweton ko ek 'bad cheque' diya hai jo aparyaapt dhan ke thappe ke sath wapas aa gaya.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q014",
+"subject": "english",
+"chapter": 14,
+"question": "Who is popularly known as the 'Black Gandhi'?",
+"options": {
+"A": "Mahatma Gandhi",
+"B": "Barack Obama",
+"C": "Martin Luther King, Jr.",
+"D": "Nelson Mandela"
+},
+"answer": "C",
+"explanation": "Gandhiji ke ahinsak siddhanton par chalne ke kaaran Martin Luther King, Jr. ko 'Black Gandhi' kaha jata hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q015",
+"subject": "english",
+"chapter": 14,
+"question": "The social and economic condition of the Negroes in America was ..........",
+"options": {
+"A": "appalling",
+"B": "blessed",
+"C": "frightening",
+"D": "comfortable"
+},
+"answer": "A",
+"explanation": "Kavi ashweton ki dainiya sthiti ko 'appalling' (atyant shochneeya aur bhayanak) batate hain.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q016",
+"subject": "english",
+"chapter": 14,
+"question": "Martin Luther King, Jr. consistently advocated .......... struggle.",
+"options": {
+"A": "violent",
+"B": "non-violent",
+"C": "brief",
+"D": "military"
+},
+"answer": "B",
+"explanation": "Unhone hamesha ahinsak sangharsh (non-violent struggle) aur shanti ka marg apnane par zor diya.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q017",
+"subject": "english",
+"chapter": 14,
+"question": "Martin Luther King, Jr. wanted justice to roll down like ..........",
+"options": {
+"A": "honey",
+"B": "milk",
+"C": "waters",
+"D": "stone"
+},
+"answer": "C",
+"explanation": "Bhashan mein kaha gaya hai: 'until justice rolls down like waters and righteousness like a mighty stream'.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q018",
+"subject": "english",
+"chapter": 14,
+"question": "Martin Luther King, Jr. was a great orator and a renowned .......... of America.",
+"options": {
+"A": "philosopher",
+"B": "doctor",
+"C": "politician",
+"D": "civil rights activist"
+},
+"answer": "D",
+"explanation": "Weh America ke ek mahan vakta aur nagrik adhikaar karyakarta (civil rights activist) the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q019",
+"subject": "english",
+"chapter": 14,
+"question": "The governor of which state had lips dripping with the words of interposition and nullification?",
+"options": {
+"A": "Alabama",
+"B": "Louisiana",
+"C": "Colorado",
+"D": "Georgia"
+},
+"answer": "A",
+"explanation": "Bhashan mein Alabama ke governor ki nasliya kattarta ka zikr kiya gaya hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q020",
+"subject": "english",
+"chapter": 14,
+"question": "King dreamed that the desert state of Mississippi would transform into an .......... of freedom and justice.",
+"options": {
+"A": "ocean",
+"B": "oasis",
+"C": "asylum",
+"D": "enclosure"
+},
+"answer": "B",
+"explanation": "King ka sapna tha ki Mississippi ka registani rajya swatantrata aur nyay ke nakhlistan (oasis) mein badal jayega.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q021",
+"subject": "english",
+"chapter": 14,
+"question": "King dreamed that his children would be judged not by the colour of their skin but by the content of their ..........",
+"options": {
+"A": "character",
+"B": "colour",
+"C": "habit",
+"D": "wealth"
+},
+"answer": "A",
+"explanation": "Unhone sapna dekha ki unke char bachho ki pehchan unke charitra (character) ki shuddhata se hogi, twacha ke rang se nahi.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q022",
+"subject": "english",
+"chapter": 14,
+"question": "On which date was Martin Luther King, Jr. assassinated in Memphis, Tennessee?",
+"options": {
+"A": "4 April 1964",
+"B": "4 April 1968",
+"C": "28 August 1964",
+"D": "28 August 1968"
+},
+"answer": "B",
+"explanation": "4 April 1968 ko Memphis ke Lorraine Motel ki balcony mein goli maarkar unki hatya kar di gayi thi.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q023",
+"subject": "english",
+"chapter": 14,
+"question": "One hundred years after the proclamation, the Negro is still sadly crippled by the manacles of ..........",
+"options": {
+"A": "poverty",
+"B": "illiteracy",
+"C": "segregation",
+"D": "jealousy"
+},
+"answer": "C",
+"explanation": "Pankti hai: 'the Negro is still sadly crippled by the manacles of segregation and the chains of discrimination'.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q024",
+"subject": "english",
+"chapter": 14,
+"question": "One hundred years later, the Negro was still .......... in the corners of American society.",
+"options": {
+"A": "complaining",
+"B": "enjoying",
+"C": "languishing",
+"D": "prospering"
+},
+"answer": "C",
+"explanation": "Kavita/bhashan ke anusaar ashwet log samaj ke kono mein narak-sa kasht jhelte huye (languishing) jeevan bita rahe the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q025",
+"subject": "english",
+"chapter": 14,
+"question": "The Emancipation Proclamation gave millions of Negro slaves the beacon light of ..........",
+"options": {
+"A": "sorrow",
+"B": "hope and freedom from slavery",
+"C": "captivity",
+"D": "despair"
+},
+"answer": "B",
+"explanation": "Is dastavez ne karodon gulam ashweton ko daasta se aazadi aur aasha ki kiran dikhayi thi.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q026",
+"subject": "english",
+"chapter": 14,
+"question": "Martin Luther King, Jr. held which profession by training?",
+"options": {
+"A": "Singer",
+"B": "Baptist minister",
+"C": "Professor of Law",
+"D": "Journalist"
+},
+"answer": "B",
+"explanation": "Martin Luther King, Jr. prashikshan se ek Baptist paadri (minister) the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q027",
+"subject": "english",
+"chapter": 14,
+"question": "Which state of the USA was sweltering with the heat of injustice and oppression?",
+"options": {
+"A": "New York",
+"B": "Mississippi",
+"C": "California",
+"D": "Texas"
+},
+"answer": "B",
+"explanation": "Mississippi rajya anyay aur daman ki aag mein tap raha tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q028",
+"subject": "english",
+"chapter": 14,
+"question": "King recognized that the destiny of Black Americans is tied to the destiny of their .......... brothers.",
+"options": {
+"A": "white",
+"B": "French",
+"C": "African",
+"D": "Asian"
+},
+"answer": "A",
+"explanation": "Unhone kaha ki anek gora (white) bhaiyon ne mehsoos kiya hai ki unka bhagya hamare bhagya se bandha hua hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q029",
+"subject": "english",
+"chapter": 14,
+"question": "'Let freedom ring from the snow-capped Rockies of ..........'",
+"options": {
+"A": "Himalayas",
+"B": "California",
+"C": "New York",
+"D": "Colorado"
+},
+"answer": "D",
+"explanation": "Bhashan ki pankti hai: 'Let freedom ring from the snow-capped Rockies of Colorado'.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q030",
+"subject": "english",
+"chapter": 14,
+"question": "Martin Luther King, Jr. belonged racially to the .......... community.",
+"options": {
+"A": "Negro (African-American)",
+"B": "Indian",
+"C": "Caucasian",
+"D": "Australian"
+},
+"answer": "A",
+"explanation": "Weh swayam ek ashwet (Negro/African-American) the aur unhi ke adhikaaron ke neta the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q031",
+"subject": "english",
+"chapter": 14,
+"question": "'Let freedom ring from the Stone Mountain of ..........'",
+"options": {
+"A": "Georgia",
+"B": "Mississippi",
+"C": "Alabama",
+"D": "Tennessee"
+},
+"answer": "A",
+"explanation": "Pankti hai: 'Let freedom ring from the Stone Mountain of Georgia'.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q032",
+"subject": "english",
+"chapter": 14,
+"question": "In which year was the Nobel Peace Prize conferred upon Martin Luther King, Jr.?",
+"options": {
+"A": "1964",
+"B": "1971",
+"C": "1960",
+"D": "1968"
+},
+"answer": "A",
+"explanation": "Unhin saal 1964 mein pratishthit Nobel Shanti Puraskar se nawaza gaya tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q033",
+"subject": "english",
+"chapter": 14,
+"question": "At the time of delivering the speech, the Negroes in America were descendants of former ..........",
+"options": {
+"A": "slaves",
+"B": "sweepers",
+"C": "kings",
+"D": "traders"
+},
+"answer": "A",
+"explanation": "Ashwet log un pracheen gulam daason (slaves) ke vanshaj the jinhe Africa se laya gaya tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q034",
+"subject": "english",
+"chapter": 14,
+"question": "How many children did Martin Luther King, Jr. have?",
+"options": {
+"A": "Four",
+"B": "Five",
+"C": "One",
+"D": "Two"
+},
+"answer": "A",
+"explanation": "Bhashan mein unhone apne chaar chhote bachhon ('my four little children') ka zikr kiya tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG14Q035",
+"subject": "english",
+"chapter": 14,
+"question": "In which year was Martin Luther King, Jr. born?",
+"options": {
+"A": "1919",
+"B": "1929",
+"C": "1939",
+"D": "1948"
+},
+"answer": "B",
+"explanation": "Martin Luther King, Jr. ka janam 15 January 1929 ko Atlanta, Georgia mein hua tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG14Q036",
+"subject": "english",
+"chapter": 14,
+"question": "Between 1955 and 1956, Martin Luther King, Jr. successfully led the famous ..........",
+"options": {
+"A": "Salt March",
+"B": "Montgomery Bus Boycott",
+"C": "Chicago Strike",
+"D": "New York Rally"
+},
+"answer": "B",
+"explanation": "Unhone 5 December 1955 se 20 December 1956 tak chale aitihasik Montgomery Bus Boycott ka netritva kiya tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG14Q037",
+"subject": "english",
+"chapter": 14,
+"question": "Which civil rights organization did Martin Luther King, Jr. help found?",
+"options": {
+"A": "Southern Christian Leadership Conference (SCLC)",
+"B": "Indian National Congress",
+"C": "Labour Union of America",
+"D": "Amnesty International"
+},
+"answer": "A",
+"explanation": "Unhone dakshini isai netritva sammelan (SCLC) ki sthapna mein mukhya bhoomika nibhayi thi.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG14Q038",
+"subject": "english",
+"chapter": 14,
+"question": "Whose philosophy of non-violent resistance had a profound impact on Martin Luther King, Jr.?",
+"options": {
+"A": "Karl Marx",
+"B": "Mahatma Gandhi",
+"C": "George Washington",
+"D": "Vladimir Lenin"
+},
+"answer": "B",
+"explanation": "Mahatma Gandhi ke satyagrah aur ahinsa ke siddhant ne unke man aur aandolan par gahra asar dala tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG14Q039",
+"subject": "english",
+"chapter": 14,
+"question": "At which motel in Memphis, Tennessee was Martin Luther King, Jr. shot dead?",
+"options": {
+"A": "Grand Hotel",
+"B": "Lorraine Motel",
+"C": "Lincoln Plaza",
+"D": "Hilton Motel"
+},
+"answer": "B",
+"explanation": "Unki hatya Lorraine Motel ki balcony par khade rehne ke dauran ki gayi thi.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG14Q040",
+"subject": "english",
+"chapter": 14,
+"question": "Who assassinated Martin Luther King, Jr. on April 4, 1968?",
+"options": {
+"A": "John Wilkes Booth",
+"B": "Lee Harvey Oswald",
+"C": "James Earl Ray",
+"D": "Nathuram Godse"
+},
+"answer": "C",
+"explanation": "James Earl Ray naamak vyakti ne goli maarkar King ki hatya ki thi.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG14Q041",
+"subject": "english",
+"chapter": 14,
+"question": "Which book was authored by Martin Luther King, Jr. in 1958?",
+"options": {
+"A": "Stride Toward Freedom: The Montgomery Story",
+"B": "Why We Can't Wait",
+"C": "Strength to Love",
+"D": "The Waste Land"
+},
+"answer": "A",
+"explanation": "'Stride Toward Freedom: The Montgomery Story' unki 1958 mein aayi prasiddh pustak hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG14Q042",
+"subject": "english",
+"chapter": 14,
+"question": "Which of the following books by Martin Luther King, Jr. was published in 1964?",
+"options": {
+"A": "Why We Can't Wait",
+"B": "Strength to Love",
+"C": "Leaves of Grass",
+"D": "The Princes"
+},
+"answer": "A",
+"explanation": "'Why We Can't Wait' pustak saal 1964 mein prakashit hui thi.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG14Q043",
+"subject": "english",
+"chapter": 14,
+"question": "How many times does the inspirational phrase 'I have a dream' appear in the speech text?",
+"options": {
+"A": "Five times",
+"B": "Six times",
+"C": "Eight times",
+"D": "Ten times"
+},
+"answer": "C",
+"explanation": "Bhashan mein 'I have a dream' vakyaansh ka prayog aath (8) baar hua hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG14Q044",
+"subject": "english",
+"chapter": 14,
+"question": "On which exact date did Abraham Lincoln issue the historic Emancipation Proclamation?",
+"options": {
+"A": "1 January 1863",
+"B": "4 July 1776",
+"C": "28 August 1963",
+"D": "15 August 1947"
+},
+"answer": "A",
+"explanation": "Rashtrapati Abraham Lincoln ne 1 January 1863 ko daso ki mukti ka aadesh lagu kiya tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG14Q045",
+"subject": "english",
+"chapter": 14,
+"question": "What does the term 'segregation' mean in the American civil rights context?",
+"options": {
+"A": "Complete social equality",
+"B": "Forced separation of people based on race or skin colour",
+"C": "Religious unity",
+"D": "Right to vote freely"
+},
+"answer": "B",
+"explanation": "'Segregation' ka arth twacha ke rang ke aadhar par ashweton ko alag-thalag rakhna aur bhedbhav karna hota hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG14Q046",
+"subject": "english",
+"chapter": 14,
+"question": "'Let freedom ring from Lookout Mountain of ..........'",
+"options": {
+"A": "Tennessee",
+"B": "Georgia",
+"C": "Alabama",
+"D": "California"
+},
+"answer": "A",
+"explanation": "Bhashan ki pankti hai: 'Let freedom ring from Lookout Mountain of Tennessee'.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG14Q047",
+"subject": "english",
+"chapter": 14,
+"question": "What did King caution his followers against while demanding their rights?",
+"options": {
+"A": "Drinking coffee",
+"B": "Bitterness, hatred, and physical violence",
+"C": "Going to school",
+"D": "Speaking English"
+},
+"answer": "B",
+"explanation": "Unhone chetavni di ki swatantrata ki pyaas ko krodh aur hinsa ke pyaale se na bujhaya jaye.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG14Q048",
+"subject": "english",
+"chapter": 14,
+"question": "Which uplifting words from an old Negro spiritual song conclude the speech?",
+"options": {
+"A": "'God save the King!'",
+"B": "'Free at last! Free at last! Thank God Almighty, we are free at last!'",
+"C": "'We shall overcome tomorrow'",
+"D": "'Truth alone triumphs'"
+},
+"answer": "B",
+"explanation": "Bhashan ka ant in shabdon se hota hai: 'Free at last! Free at last! Thank God Almighty, we are free at last!'",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG14Q049",
+"subject": "english",
+"chapter": 14,
+"question": "What would be fatal for America according to Martin Luther King, Jr.?",
+"options": {
+"A": "To spend money on railways",
+"B": "To overlook the urgency of the moment and underestimate the Negro's determination",
+"C": "To sign trade treaties",
+"D": "To build schools"
+},
+"answer": "B",
+"explanation": "King ne chetavni di ki ashweton ke sankalp ko kam aankna rashtra ke liye ghatak (fatal) sidhh hoga.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG14Q050",
+"subject": "english",
+"chapter": 14,
+"question": "In the phrase 'manacles of segregation', which figure of speech is used?",
+"options": {
+"A": "Simile",
+"B": "Metaphor",
+"C": "Personification",
+"D": "Hyperbole"
+},
+"answer": "B",
+"explanation": "Bhedbhav ko hathkadiyon ke roop mein prastut kiya gaya hai, atah yeh roopak (Metaphor) alankar hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG14Q051",
+"subject": "english",
+"chapter": 14,
+"question": "What is the meaning of the word 'tribulations' in the phrase 'trials and tribulations'?",
+"options": {
+"A": "Great joy and parties",
+"B": "Severe sufferings, distress, or hardships",
+"C": "Financial profit",
+"D": "Religious prayers"
+},
+"answer": "B",
+"explanation": "'Tribulations' ka matlab ghor kasht, yaatnayein aur kathinaiyan hota hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG14Q052",
+"subject": "english",
+"chapter": 14,
+"question": "The American Constitution and Declaration of Independence were described by King as a .......... note.",
+"options": {
+"A": "promissory",
+"B": "currency",
+"C": "fake",
+"D": "protested"
+},
+"answer": "A",
+"explanation": "King ne Samvidhan aur Swatantrata Ghoshna ko ek pratigya-patra (promissory note) bataya tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG14Q053",
+"subject": "english",
+"chapter": 14,
+"question": "To whom was this promissory note guaranteed according to King?",
+"options": {
+"A": "Only white Americans",
+"B": "All men, black men as well as white men",
+"C": "Only politicians",
+"D": "Only rich businessmen"
+},
+"answer": "B",
+"explanation": "Yeh pratigya sabhi nagrikon ke liye thi, chahe weh gore hon ya kaale.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG14Q054",
+"subject": "english",
+"chapter": 14,
+"question": "What is the meaning of the word 'sweltering' in 'sweltering with the heat of oppression'?",
+"options": {
+"A": "Freezing cold",
+"B": "Unbearably hot and oppressive",
+"C": "Pleasantly breezy",
+"D": "Soaking wet"
+},
+"answer": "B",
+"explanation": "'Sweltering' ka taatparya asahniya garmi ya tapte huye vatavaran se hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG14Q055",
+"subject": "english",
+"chapter": 14,
+"question": "King insisted that the Negro struggle must forever be conducted on the high plane of ..........",
+"options": {
+"A": "dignity and discipline",
+"B": "anger and revenge",
+"C": "secrecy and deceit",
+"D": "weapons and force"
+},
+"answer": "A",
+"explanation": "Unhone nirdesh diya ki aandolan garima aur anushasan (dignity and discipline) ke uchha aadarshon par chale.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG14Q056",
+"subject": "english",
+"chapter": 14,
+"question": "What is the antonym of the word 'despair' as used in 'transform the jangling discords'?",
+"options": {
+"A": "Sorrow",
+"B": "Hope",
+"C": "Gloom",
+"D": "Misery"
+},
+"answer": "B",
+"explanation": "'Despair' (nirasha) ka sahi vilom shabd 'Hope' (aasha) hota hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG14Q057",
+"subject": "english",
+"chapter": 14,
+"question": "Which posthumous book by Martin Luther King, Jr. was published in 1968?",
+"options": {
+"A": "Where Do We Go from Here: Chaos or Community?",
+"B": "The Old Playhouse",
+"C": "Distant Drum",
+"D": "Song of Myself"
+},
+"answer": "A",
+"explanation": "'Where Do We Go from Here: Chaos or Community?' saal 1968 mein aayi unki aakhiri rachna thi.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG14Q058",
+"subject": "english",
+"chapter": 14,
+"question": "What is the primary theme and message of 'I Have a Dream'?",
+"options": {
+"A": "Overthrowing the government by force",
+"B": "Complete racial equality, universal brotherhood, and civil justice through peaceful means",
+"C": "Creating a separate nation for Black people",
+"D": "Promoting foreign trade"
+},
+"answer": "B",
+"explanation": "Bhashan ka mool sandesh bina hinsa ke sabhi ke liye barabari, nyay aur bhaichara sthapit karna hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG14Q059",
+"subject": "english",
+"chapter": 14,
+"question": "In which book did Martin Luther King, Jr. compile his famous sermons on love and faith in 1963?",
+"options": {
+"A": "Strength to Love",
+"B": "The Waste Land",
+"C": "Sons and Lovers",
+"D": "Peacock Pie"
+},
+"answer": "A",
+"explanation": "'Strength to Love' unke aadhyaatmik aur naitik pravachanon ka 1963 ka sangrah hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG14Q060",
+"subject": "english",
+"chapter": 14,
+"question": "King envisioned that one day on the red hills of Georgia, the sons of former slaves and slave owners would ..........",
+"options": {
+"A": "fight a war",
+"B": "sit down together at the table of brotherhood",
+"C": "leave America forever",
+"D": "compete for riches"
+},
+"answer": "B",
+"explanation": "King ka sapna tha ki gulamo aur maalikoh ke bete ek sath bhaichare ki mez par baith sakein.",
+"source": "CONCEPT",
+"type": "objective"
 }
+]
+}  
