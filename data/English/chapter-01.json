@@ -1,8 +1,969 @@
 {
-  "_help": "प्रश्न इसी 'questions' list में जोड़ो। हर प्रश्न का format data/question-template.json में देखो। अभी यह list खाली है।",
+  "_help": "प्रश्न इसी 'questions' list में जोड़ो।",
   "subject": "english",
   "chapter": 1,
-  "title": "Poetry Section — Sweetest Love, I Do Not Goe",
-  "status": "pending-pdf-questions",
-  "questions": []
+  "title": "Sweetest Love I Do not Goe",
+  "status": "ready",
+  "questions": [
+    {
+      "id": "ENG01Q001",
+      "subject": "english",
+      "chapter": 1,
+      "question": "Who is called the pioneer of metaphysical poetry?",
+      "options": {
+        "A": "Samuel Johnson",
+        "B": "Andrew Marvell",
+        "C": "John Donne",
+        "D": "John Dryden"
+      },
+      "answer": "C",
+      "explanation": "जॉन डन (John Donne) को मेटाफिजिकल (Metaphysical) पोएट्री का अग्रदूत (pioneer) माना जाता है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q002",
+      "subject": "english",
+      "chapter": 1,
+      "question": "Who has written the poem 'Sweetest Love I Do not Goe'?",
+      "options": {
+        "A": "John Donne",
+        "B": "W.H. Auden",
+        "C": "D.H. Lawrence",
+        "D": "Walt Whitman"
+      },
+      "answer": "A",
+      "explanation": "'Sweetest Love I Do not Goe' प्रसिद्ध मेटाफिजिकल कवि जॉन डन (John Donne) द्वारा लिखी गई है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q003",
+      "subject": "english",
+      "chapter": 1,
+      "question": "'That thou lov'st mee, as thou say'st' is from which poem?",
+      "options": {
+        "A": "Sweetest Love I Do not Goe",
+        "B": "Fire-Hymn",
+        "C": "The Soldier",
+        "D": "An Epitaph"
+      },
+      "answer": "A",
+      "explanation": "यह पंक्ति 'Sweetest Love I Do not Goe' कविता से ली गई है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q004",
+      "subject": "english",
+      "chapter": 1,
+      "question": "John Donne is a ______ poet.",
+      "options": {
+        "A": "nature",
+        "B": "metaphysical",
+        "C": "romantic",
+        "D": "pessimistic"
+      },
+      "answer": "B",
+      "explanation": "जॉन डन एक प्रसिद्ध मेटाफिजिकल (Metaphysical) कवि हैं।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q005",
+      "subject": "english",
+      "chapter": 1,
+      "question": "Which type of lovers never part away?",
+      "options": {
+        "A": "Romantic lovers",
+        "B": "Noble lovers",
+        "C": "True lovers",
+        "D": "Cute lovers"
+      },
+      "answer": "C",
+      "explanation": "कविता के अनुसार सच्चे प्रेमी (true lovers) आत्मिक रूप से जुड़े रहते हैं और कभी अलग नहीं होते।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q006",
+      "subject": "english",
+      "chapter": 1,
+      "question": "What are the things that the sun does not have?",
+      "options": {
+        "A": "Ability and wish",
+        "B": "Sense and love",
+        "C": "Sense and desire",
+        "D": "Credit and wit"
+      },
+      "answer": "C",
+      "explanation": "कवि के अनुसार सूर्य के पास न तो कोई इच्छा (desire) है और न ही कोई समझ (sense)।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q007",
+      "subject": "english",
+      "chapter": 1,
+      "question": "Who cannot add another hour when good fortune fall?",
+      "options": {
+        "A": "Beloved",
+        "B": "Lover",
+        "C": "Poet",
+        "D": "Man"
+      },
+      "answer": "D",
+      "explanation": "मनुष्य की शक्ति इतनी कमजोर है कि अच्छा समय आने पर भी वह उसमें एक अतिरिक्त घंटा नहीं जोड़ सकता।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q008",
+      "subject": "english",
+      "chapter": 1,
+      "question": "The sun has no desire or short way, but the ______ has.",
+      "options": {
+        "A": "poet",
+        "B": "man",
+        "C": "bride",
+        "D": "sky"
+      },
+      "answer": "A",
+      "explanation": "सूर्य के पास लौटने का कोई कारण या तीव्र इच्छा नहीं है, लेकिन कवि के पास अपनी प्रेमिका के पास वापस लौटने की तीव्र चाहत है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q009",
+      "subject": "english",
+      "chapter": 1,
+      "question": "The speaker's lifeblood doth decay when the beloved ______.",
+      "options": {
+        "A": "sobs",
+        "B": "weeps",
+        "C": "sighs",
+        "D": "laments"
+      },
+      "answer": "B",
+      "explanation": "कविता में कहा गया है कि 'When thou weep'st... My lifes blood doth decay' अर्थात जब प्रेमिका रोती है तो कवि का रक्त क्षीण होता है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q010",
+      "subject": "english",
+      "chapter": 1,
+      "question": "The speaker's soul goes away when the beloved ______.",
+      "options": {
+        "A": "sighs",
+        "B": "repents",
+        "C": "cheats",
+        "D": "weeps"
+      },
+      "answer": "A",
+      "explanation": "कविता की पंक्ति 'When thou sigh'st, thou sigh'st not winde, But sigh'st my soule away' के अनुसार आहें भरने पर ऐसा प्रतीत होता है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q011",
+      "subject": "english",
+      "chapter": 1,
+      "question": "John Donne is well known for his ______.",
+      "options": {
+        "A": "Songs and Sonnets",
+        "B": "free verse",
+        "C": "narratives",
+        "D": "epics"
+      },
+      "answer": "A",
+      "explanation": "जॉन डन अपने 'Songs and Sonnets', Satires, Elegies और Sermons के लिए जाने जाते हैं।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q012",
+      "subject": "english",
+      "chapter": 1,
+      "question": "______ has been described as a metaphysical poet.",
+      "options": {
+        "A": "Kamala Das",
+        "B": "John Donne",
+        "C": "D.H. Lawrence",
+        "D": "T.S. Eliot"
+      },
+      "answer": "B",
+      "explanation": "जॉन डन (John Donne) को मेटाफिजिकल पोएट के रूप में जाना जाता है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q013",
+      "subject": "english",
+      "chapter": 1,
+      "question": "Donne studied law and read ______.",
+      "options": {
+        "A": "theology",
+        "B": "drama",
+        "C": "philosophy",
+        "D": "novels"
+      },
+      "answer": "A",
+      "explanation": "जॉन डन ने कानून की पढ़ाई की और धर्मशास्त्र (theology) का अध्ययन किया।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q014",
+      "subject": "english",
+      "chapter": 1,
+      "question": "The poet (John Donne) promises to make speedier journey than the ______.",
+      "options": {
+        "A": "sun",
+        "B": "stars",
+        "C": "Jupiter",
+        "D": "galaxy"
+      },
+      "answer": "A",
+      "explanation": "कवि का कहना है कि वह सूरज (sun) से भी तेज गति से अपनी यात्रा पूरी करके वापस लौटेगा।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q015",
+      "subject": "english",
+      "chapter": 1,
+      "question": "'Sweetest Love I Do Not Goe' is written by ______.",
+      "options": {
+        "A": "John Donne",
+        "B": "D.H. Lawrence",
+        "C": "Rupert Brooke",
+        "D": "W.H. Auden"
+      },
+      "answer": "A",
+      "explanation": "यह कविता प्रसिद्ध कवि जॉन डन की रचना है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q016",
+      "subject": "english",
+      "chapter": 1,
+      "question": "The poet in 'Sweetest Love I Do Not Goe' is not ______ with his beloved.",
+      "options": {
+        "A": "tired (weary)",
+        "B": "sad for",
+        "C": "happy with",
+        "D": "pleased with"
+      },
+      "answer": "A",
+      "explanation": "कवि अपनी प्रेमिका से इसलिए दूर नहीं जा रहा कि वह उससे ऊब (tired/weary) गया है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q017",
+      "subject": "english",
+      "chapter": 1,
+      "question": "His beloved says that she has a great love for ______.",
+      "options": {
+        "A": "T.S. Eliot",
+        "B": "John Donne",
+        "C": "Rupert Brooke",
+        "D": "D.H. Lawrence"
+      },
+      "answer": "B",
+      "explanation": "कविता में प्रेमिका कवि जॉन डन (John Donne) के प्रति अपना गहरा प्रेम व्यक्त करती है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q018",
+      "subject": "english",
+      "chapter": 1,
+      "question": "John Donne feels that ______ power is very feeble.",
+      "options": {
+        "A": "man's",
+        "B": "horse's",
+        "C": "lion's",
+        "D": "nature's"
+      },
+      "answer": "A",
+      "explanation": "कवि कहता है 'O how feeble is man's power'—मनुष्य की शक्ति अत्यंत कमजोर और असहाय है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q019",
+      "subject": "english",
+      "chapter": 1,
+      "question": "John Donne had seen the sun setting ______ night.",
+      "options": {
+        "A": "next",
+        "B": "yester",
+        "C": "before",
+        "D": "tomorrow"
+      },
+      "answer": "B",
+      "explanation": "कविता की पंक्ति है: 'Yesternight the Sunne went hence, And yet is here to day.'",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q020",
+      "subject": "english",
+      "chapter": 1,
+      "question": "______ wants to gladly accept temporary separation as death's rehearsal.",
+      "options": {
+        "A": "Rupert Brooke",
+        "B": "W.H. Auden",
+        "C": "John Donne",
+        "D": "T.S. Eliot"
+      },
+      "answer": "C",
+      "explanation": "जॉन डन मृत्यु के अपरिहार्य सत्य को स्वीकार करते हुए इस अस्थायी बिछोह को एक अभ्यास मानते हैं।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q021",
+      "subject": "english",
+      "chapter": 1,
+      "question": "John Donne is going on a journey to ______ leaving his wife behind.",
+      "options": {
+        "A": "Germany",
+        "B": "Denmark",
+        "C": "Poland",
+        "D": "Austria"
+      },
+      "answer": "A",
+      "explanation": "ऐतिहासिक संदर्भ और पाठ्यपुस्तक के अनुसार, जॉन डन जर्मनी की यात्रा पर जा रहे थे।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q022",
+      "subject": "english",
+      "chapter": 1,
+      "question": "John Donne thinks that ______ is inevitable.",
+      "options": {
+        "A": "death",
+        "B": "life",
+        "C": "work",
+        "D": "walking"
+      },
+      "answer": "A",
+      "explanation": "डन का मानना है कि मृत्यु (death) निश्चित और अटल है ('since that I Must dye at last').",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q023",
+      "subject": "english",
+      "chapter": 1,
+      "question": "What shows that man's power is feeble?",
+      "options": {
+        "A": "Bad time",
+        "B": "Good time",
+        "C": "Bad chance",
+        "D": "That he cannot add another hour when good fortune falls"
+      },
+      "answer": "D",
+      "explanation": "मनुष्य की कमजोरी यह है कि वह अच्छे भाग्य में भी एक अतिरिक्त घंटा नहीं जोड़ सकता।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q024",
+      "subject": "english",
+      "chapter": 1,
+      "question": "Who will make speedier journeys than the sun?",
+      "options": {
+        "A": "The beloved",
+        "B": "The lady",
+        "C": "The poet",
+        "D": "Man"
+      },
+      "answer": "C",
+      "explanation": "कवि (John Donne) अपनी प्रेमिका से वादा करता है कि वह सूर्य से भी अधिक तीव्र गति से यात्रा करेगा।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q025",
+      "subject": "english",
+      "chapter": 1,
+      "question": "'They who one another keep alive, never ______ be.'",
+      "options": {
+        "A": "together",
+        "B": "parted",
+        "C": "joined",
+        "D": "separated"
+      },
+      "answer": "B",
+      "explanation": "कविता की अंतिम पंक्ति है: 'They who one another keepe Alive, ne'r parted bee.'",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q026",
+      "subject": "english",
+      "chapter": 1,
+      "question": "What is the synonym of 'Feeble'?",
+      "options": {
+        "A": "Life",
+        "B": "Death",
+        "C": "Strong",
+        "D": "Weak"
+      },
+      "answer": "D",
+      "explanation": "'Feeble' का अर्थ कमजोर या शक्तिहीन होता है, इसलिए इसका सही समानार्थी शब्द 'Weak' है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q027",
+      "subject": "english",
+      "chapter": 1,
+      "question": "What is the synonym of 'Weariness'?",
+      "options": {
+        "A": "Put",
+        "B": "Tiredness",
+        "C": "Joy",
+        "D": "Energy"
+      },
+      "answer": "B",
+      "explanation": "'Weariness' का अर्थ थकान या ऊब होता है, जिसका समानार्थी शब्द 'Tiredness' है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q028",
+      "subject": "english",
+      "chapter": 1,
+      "question": "The pioneer of a new kind of lyrical and satirical verse was called ______.",
+      "options": {
+        "A": "Romantic",
+        "B": "Nature",
+        "C": "Metaphysical",
+        "D": "Classical"
+      },
+      "answer": "C",
+      "explanation": "जॉन डन को 'मेटाफिजिकल' प्रकार की गीतात्मक और व्यंग्यात्मक कविता का अग्रदूत कहा जाता है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q029",
+      "subject": "english",
+      "chapter": 1,
+      "question": "When John Donne was born, England was staunchly ______.",
+      "options": {
+        "A": "Protestant-hostile",
+        "B": "Secular",
+        "C": "Anti-Catholic",
+        "D": "Catholic"
+      },
+      "answer": "C",
+      "explanation": "जॉन डन के जन्म के समय इंग्लैंड में कैथोलिक विरोधी (anti-Catholic) माहौल चरम पर था।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q030",
+      "subject": "english",
+      "chapter": 1,
+      "question": "Which university was John Donne forced to leave without a degree?",
+      "options": {
+        "A": "Cambridge",
+        "B": "Oxford",
+        "C": "Harvard",
+        "D": "London"
+      },
+      "answer": "B",
+      "explanation": "कैथोलिक धर्म के कारण जॉन डन को ऑक्सफोर्ड विश्वविद्यालय (Oxford University) बिना डिग्री के छोड़ना पड़ा।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q031",
+      "subject": "english",
+      "chapter": 1,
+      "question": "John Donne participated in two ______ expeditions.",
+      "options": {
+        "A": "Water",
+        "B": "Air",
+        "C": "Naval",
+        "D": "Land"
+      },
+      "answer": "C",
+      "explanation": "जॉन डन ने दो नौसैनिक अभियानों (Naval expeditions) में भाग लिया था।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q032",
+      "subject": "english",
+      "chapter": 1,
+      "question": "John Donne was briefly sent to prison for secretly marrying his ______.",
+      "options": {
+        "A": "Owner's daughter",
+        "B": "Owner's niece",
+        "C": "Patron's niece",
+        "D": "Patron's daughter"
+      },
+      "answer": "C",
+      "explanation": "अपने संरक्षक (patron) की भतीजी से गुप्त विवाह करने के आरोप में डन को कुछ समय जेल में रहना पड़ा था।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q033",
+      "subject": "english",
+      "chapter": 1,
+      "question": "At what age did John Donne accept ordination in the Anglican Church?",
+      "options": {
+        "A": "37",
+        "B": "42",
+        "C": "40",
+        "D": "45"
+      },
+      "answer": "B",
+      "explanation": "1615 ईस्वी में 42 वर्ष की आयु में जॉन डन ने एंग्लिकन चर्च में पादरी का पद स्वीकार किया।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q034",
+      "subject": "english",
+      "chapter": 1,
+      "question": "John Donne became secretary to a powerful ______.",
+      "options": {
+        "A": "Priest",
+        "B": "King",
+        "C": "Noble",
+        "D": "Merchant"
+      },
+      "answer": "C",
+      "explanation": "डन एक शक्तिशाली कुलीन व्यक्ति (powerful noble) के निजी सचिव नियुक्त हुए थे।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q035",
+      "subject": "english",
+      "chapter": 1,
+      "question": "In love-lyricism, John Donne broke completely with the ______ tradition.",
+      "options": {
+        "A": "Shakespearean",
+        "B": "Petrarchan",
+        "C": "Miltonic",
+        "D": "Spenserian"
+      },
+      "answer": "B",
+      "explanation": "प्रेम गीतों में डन ने पारंपरिक पेट्रार्कन परंपरा (Petrarchan tradition) को पूरी तरह तोड़ दिया।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q036",
+      "subject": "english",
+      "chapter": 1,
+      "question": "John Donne is well known for his songs and ______.",
+      "options": {
+        "A": "Poems",
+        "B": "Sonnets",
+        "C": "Odes",
+        "D": "Dramas"
+      },
+      "answer": "B",
+      "explanation": "डन अपने 'Songs and Sonnets' संग्रह के लिए साहित्य जगत में अत्यधिक प्रसिद्ध हैं।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q037",
+      "subject": "english",
+      "chapter": 1,
+      "question": "Besides songs and sonnets, what was John Donne famous for?",
+      "options": {
+        "A": "Speeches and plays",
+        "B": "Satires, Elegies and Sermons",
+        "C": "Epics and novels",
+        "D": "None of these"
+      },
+      "answer": "B",
+      "explanation": "वे सैटायर्स (Satires), एलेजीज़ (Elegies) और धर्मोपदेशों (Sermons) के लिए भी विख्यात हैं।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q038",
+      "subject": "english",
+      "chapter": 1,
+      "question": "Why was John Donne forced to leave Oxford University without a degree?",
+      "options": {
+        "A": "Because of poverty",
+        "B": "Because of misbehaviour",
+        "C": "Because of religion",
+        "D": "Because of illness"
+      },
+      "answer": "C",
+      "explanation": "कैथोलिक धर्म से संबंधित होने के कारण उन्हें ऑक्सफोर्ड विश्वविद्यालय छोड़ने के लिए विवश किया गया था।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q039",
+      "subject": "english",
+      "chapter": 1,
+      "question": "John Donne asks his beloved not to forethink him any ______.",
+      "options": {
+        "A": "bad",
+        "B": "ill",
+        "C": "evil",
+        "D": "harm"
+      },
+      "answer": "B",
+      "explanation": "कविता में कवि कहता है: 'Let not thy divining heart Forethink me any ill.'",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q040",
+      "subject": "english",
+      "chapter": 1,
+      "question": "John Donne became one of the greatest ______ of his time.",
+      "options": {
+        "A": "teachers",
+        "B": "preachers",
+        "C": "rulers",
+        "D": "scientists"
+      },
+      "answer": "B",
+      "explanation": "एंग्लिकन चर्च में शामिल होने के पश्चात डन अपने समय के सर्वश्रेष्ठ उपदेशकों (preachers) में से एक बने।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q041",
+      "subject": "english",
+      "chapter": 1,
+      "question": "In which year was the metaphysical poet John Donne born?",
+      "options": {
+        "A": "1564",
+        "B": "1572",
+        "C": "1615",
+        "D": "1631"
+      },
+      "answer": "B",
+      "explanation": "कवि जॉन डन का जन्म सन् 1572 में लंदन में हुआ था।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q042",
+      "subject": "english",
+      "chapter": 1,
+      "question": "In which year did John Donne die?",
+      "options": {
+        "A": "1615",
+        "B": "1625",
+        "C": "1631",
+        "D": "1642"
+      },
+      "answer": "C",
+      "explanation": "जॉन डन की मृत्यु सन् 1631 में हुई थी।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q043",
+      "subject": "english",
+      "chapter": 1,
+      "question": "In what kind of family was John Donne born in London?",
+      "options": {
+        "A": "Protestant peasant family",
+        "B": "Roman Catholic family of traders",
+        "C": "Royal aristocratic family",
+        "D": "Puritan artisan family"
+      },
+      "answer": "B",
+      "explanation": "डन का जन्म लंदन के एक समृद्ध रोमन कैथोलिक व्यापारी परिवार में हुआ था।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q044",
+      "subject": "english",
+      "chapter": 1,
+      "question": "In 'Sweetest Love I Do Not Goe', temporary separation is compared to ______.",
+      "options": {
+        "A": "a long war",
+        "B": "a practice for death",
+        "C": "an endless journey",
+        "D": "a permanent divorce"
+      },
+      "answer": "B",
+      "explanation": "कवि इस अस्थायी अलगाव को मृत्यु के अंतिम बिछोह की एक छोटी तैयारी या पूर्वाभ्यास मानता है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q045",
+      "subject": "english",
+      "chapter": 1,
+      "question": "What kind of tone did John Donne introduce into love-lyricism?",
+      "options": {
+        "A": "Intellectual and colloquial",
+        "B": "Melancholic and rustic",
+        "C": "Fairy and fantastical",
+        "D": "Simple and pastoral"
+      },
+      "answer": "A",
+      "explanation": "डन ने प्रेम कविताओं में एक बौद्धिक और बोलचाल की भाषा (intellectual and colloquial tone) का समावेश किया।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q046",
+      "subject": "english",
+      "chapter": 1,
+      "question": "What does the poet say about a lost hour?",
+      "options": {
+        "A": "It can easily be recovered",
+        "B": "It can never be recalled",
+        "C": "It can be bought with gold",
+        "D": "It returns every month"
+      },
+      "answer": "B",
+      "explanation": "कविता के अनुसार मनुष्य बीते हुए समय या खोए हुए घंटे को कभी वापस नहीं बुला सकता ('Nor a lost houre recall').",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q047",
+      "subject": "english",
+      "chapter": 1,
+      "question": "How do we react when 'bad chance' comes, according to Donne?",
+      "options": {
+        "A": "We defeat it easily",
+        "B": "We ignore it completely",
+        "C": "We join our strength to it and make it stronger",
+        "D": "We run away from it"
+      },
+      "answer": "C",
+      "explanation": "कवि के अनुसार जब बुरा समय आता है तो हम अपनी चिंता और दुर्बलता जोड़कर उसे और अधिक शक्ति प्रदान कर देते हैं।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q048",
+      "subject": "english",
+      "chapter": 1,
+      "question": "The phrase 'unkindly kinde' in the poem is an example of which literary device?",
+      "options": {
+        "A": "Simile",
+        "B": "Oxymoron",
+        "C": "Personification",
+        "D": "Hyperbole"
+      },
+      "answer": "B",
+      "explanation": "'Unkindly kinde' परस्पर विरोधी शब्दों का संयोग है, जो साहित्यिक भाषा में ऑक्जिमोरोन (Oxymoron) कहलाता है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q049",
+      "subject": "english",
+      "chapter": 1,
+      "question": "What advice does Donne give to his beloved regarding destiny?",
+      "options": {
+        "A": "Destiny may fulfill her fears if she thinks negatively",
+        "B": "Destiny can be changed by continuous weeping",
+        "C": "Destiny is always completely evil",
+        "D": "Destiny has no power over humans"
+      },
+      "answer": "A",
+      "explanation": "कवि अपनी प्रेमिका को सचेत करता है कि नकारात्मक सोचने पर भाग्य उसके भयों को कहीं सच न कर दे।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q050",
+      "subject": "english",
+      "chapter": 1,
+      "question": "According to the poet, lovers who part are merely ______.",
+      "options": {
+        "A": "enemies for life",
+        "B": "turned aside to sleep",
+        "C": "strangers forever",
+        "D": "dead and forgotten"
+      },
+      "answer": "B",
+      "explanation": "कवि कहता है कि उनका अलगाव ऐसा है जैसे दो व्यक्ति एक ही बिस्तर पर करवट बदलकर सो रहे हों।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q051",
+      "subject": "english",
+      "chapter": 1,
+      "question": "What discoveries did Donne use in his love poems to illustrate his arguments?",
+      "options": {
+        "A": "Agriculture and weaving",
+        "B": "Science and geography",
+        "C": "Medicine and surgery",
+        "D": "Music and architecture"
+      },
+      "answer": "B",
+      "explanation": "डन अपनी प्रेम कविताओं में अपनी बात सिद्ध करने के लिए विज्ञान और भूगोल की नई खोजों का उपयोग करते हैं।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q052",
+      "subject": "english",
+      "chapter": 1,
+      "question": "In the line 'since I take more wings and spurred then hee', who does 'hee' refer to?",
+      "options": {
+        "A": "A bird",
+        "B": "The sun",
+        "C": "Death",
+        "D": "Time"
+      },
+      "answer": "B",
+      "explanation": "यहाँ 'hee' शब्द सूर्य (the Sun) के लिए प्रयुक्त हुआ है, जिससे कवि अपनी गति की तुलना कर रहा है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q053",
+      "subject": "english",
+      "chapter": 1,
+      "question": "What is the tone of the poem 'Sweetest Love I Do Not Goe'?",
+      "options": {
+        "A": "Angry and aggressive",
+        "B": "Reassuring, loving, and philosophical",
+        "C": "Mocking and comedic",
+        "D": "Hopeless and tragic"
+      },
+      "answer": "B",
+      "explanation": "कविता का स्वर आश्वस्त करने वाला, गहरा प्रेमपूर्ण और दार्शनिक चिंतन से परिपूर्ण है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q054",
+      "subject": "english",
+      "chapter": 1,
+      "question": "What does the word 'thee' mean in the poem?",
+      "options": {
+        "A": "Them",
+        "B": "You",
+        "C": "There",
+        "D": "Me"
+      },
+      "answer": "B",
+      "explanation": "पुरानी अंग्रेजी में 'thee' का तात्पर्य 'you' (तुम / आपको) से होता है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q055",
+      "subject": "english",
+      "chapter": 1,
+      "question": "What does the speaker say is 'the best of mee'?",
+      "options": {
+        "A": "His wealth",
+        "B": "His books",
+        "C": "His beloved",
+        "D": "His friends"
+      },
+      "answer": "C",
+      "explanation": "कवि अपनी प्रेमिका से कहता है कि 'Thou art the best of mee' अर्थात् तुम मेरे जीवन का श्रेष्ठतम भाग हो।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q056",
+      "subject": "english",
+      "chapter": 1,
+      "question": "How does the poet view dying in the line 'Thus by fain'd deaths to dye'?",
+      "options": {
+        "A": "As real permanent death",
+        "B": "As an imagined or feigned rehearsal for actual death",
+        "C": "As an escape from life",
+        "D": "As an incurable illness"
+      },
+      "answer": "B",
+      "explanation": "'Fain'd deaths' का आशय बिछोह को मृत्यु के पूर्वाभ्यास के रूप में मानकर स्वयं को मानसिक रूप से तैयार करने से है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q057",
+      "subject": "english",
+      "chapter": 1,
+      "question": "Why does the poet say he has more reason to travel fast than the sun?",
+      "options": {
+        "A": "He has wings of passion and desire for his beloved",
+        "B": "He has a fast horse",
+        "C": "He has a shorter sea route",
+        "D": "He is afraid of darkness"
+      },
+      "answer": "A",
+      "explanation": "कवि के पास प्रेम, इच्छा और प्रेमिका के पास शीघ्र लौटने की प्रेरणा रूपी अतिरिक्त पंख हैं।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q058",
+      "subject": "english",
+      "chapter": 1,
+      "question": "In metaphysical poetry, what is a conceit?",
+      "options": {
+        "A": "A simple rhyming couplet",
+        "B": "An ingenious and far-fetched comparison between two unlike things",
+        "C": "A patriotic slogan",
+        "D": "A tragic dialogue"
+      },
+      "answer": "B",
+      "explanation": "मेटाफिजिकल कन्सीट (Conceit) दो सर्वथा भिन्न वस्तुओं के बीच अत्यधिक बौद्धिक और अनूठी तुलना को कहते हैं।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q059",
+      "subject": "english",
+      "chapter": 1,
+      "question": "What is the meaning of the word 'jest' in the poem?",
+      "options": {
+        "A": "Anger",
+        "B": "Seriousness",
+        "C": "Sport, joke, or playfulness",
+        "D": "Grief"
+      },
+      "answer": "C",
+      "explanation": "'Jest' का अर्थ हँसी-मजाक या खेल-खेल में किसी बात को सहजता से लेना होता है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG01Q060",
+      "subject": "english",
+      "chapter": 1,
+      "question": "What central message does John Donne convey about true love?",
+      "options": {
+        "A": "It fades quickly over time",
+        "B": "It depends strictly on physical presence",
+        "C": "It is spiritual and transcends physical distance and death",
+        "D": "It cannot endure hardships"
+      },
+      "answer": "C",
+      "explanation": "कविता का मूल संदेश है कि सच्चा प्रेम आत्मिक होता है जो शारीरिक दूरी और मृत्यु की सीमाओं से परे रहता है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    }
+  ]
 }
