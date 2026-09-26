@@ -89,7 +89,7 @@
 
     var award = M.Rewards.awardQuiz({
       questions: aq.questions, answers: aq.answers, mode: aq.mode,
-      firstCompletion: firstCompletion, firstPass: firstPass
+      firstCompletion: firstCompletion, firstPass: firstPass, key: key
     });
 
     if (rec) {

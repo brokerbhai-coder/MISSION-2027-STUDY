@@ -39,7 +39,7 @@
   function str(v, def, max) { return typeof v === 'string' ? v.slice(0, max || 500) : def; }
 
   function newDaily() {
-    return { date: todayStr(), correct: 0, challengeClaimed: false, goalClaimed: false, replayCount: 0, gameXp: 0 };
+    return { date: todayStr(), correct: 0, challengeClaimed: false, goalClaimed: false, replayCount: 0, gameXp: 0, repeats: {} };
   }
 
   function defaultState() {
@@ -63,6 +63,7 @@
       daily: newDaily(),
       stats: { mistakesFixed: 0, goalDays: 0, challengeDays: 0, correctTotal: 0, answeredTotal: 0 },
       game: { plays: 0, wins: 0, bestMoves: null, best: {}, last: { mode: 'physics', diff: 'easy' } },
+      maze: { current: 1, unlocked: 1 },
       lastChapter: null,
       activeQuiz: null
     };
@@ -84,20 +85,19 @@
     }
     var ans = typeof q.answer === 'string' ? q.answer.trim().toUpperCase() : '';
     if (LETTERS.indexOf(ans) < 0) return { ok: false, error: id + ': answer A/B/C/D में से एक होना चाहिए' };
-    return {
-      ok: true,
-      q: {
-        id: id.slice(0, 40),
-        subject: str(q.subject, '', 40),
-        chapter: int(q.chapter, 0, 0, 999),
-        question: text.slice(0, 3000),
-        options: opts,
-        answer: ans,
-        explanation: str(q.explanation, '', 3000),
-        source: str(q.source, 'PDF', 20).toUpperCase(),
-        type: str(q.type, 'objective', 20)
-      }
+    var out = {
+      id: id.slice(0, 40),
+      subject: str(q.subject, '', 40),
+      chapter: int(q.chapter, 0, 0, 999),
+      question: text.slice(0, 3000),
+      options: opts,
+      answer: ans,
+      explanation: str(q.explanation, '', 3000),
+      source: str(q.source, 'PDF', 20).toUpperCase(),
+      type: str(q.type, 'objective', 20)
     };
+    if (window.M27 && window.M27.Extras && window.M27.Extras.attachQuestionMedia) window.M27.Extras.attachQuestionMedia(out, q);
+    return { ok: true, q: out };
   }
 
   function cleanActiveQuiz(a) {
@@ -249,7 +249,16 @@
         challengeClaimed: raw.daily.challengeClaimed === true,
         goalClaimed: raw.daily.goalClaimed === true,
         replayCount: int(raw.daily.replayCount, 0, 0, 1000),
-        gameXp: int(raw.daily.gameXp, 0, 0, 100000)
+        gameXp: int(raw.daily.gameXp, 0, 0, 100000),
+        repeats: (function () {
+          var out = {}, src = raw.daily.repeats;
+          if (isObj(src)) {
+            Object.keys(src).slice(0, 300).forEach(function (k) {
+              if (typeof k === 'string' && k.length <= 60) out[k] = int(src[k], 0, 0, 1000);
+            });
+          }
+          return out;
+        })()
       };
     }
     if (isObj(raw.stats)) {
@@ -269,6 +278,10 @@
         var lm = str(raw.game.last.mode, 'physics', 20), ld = str(raw.game.last.diff, 'easy', 20);
         d.game.last = { mode: ['physics', 'chem', 'hindi', 'mix'].indexOf(lm) >= 0 ? lm : 'physics', diff: ['easy', 'medium', 'hard'].indexOf(ld) >= 0 ? ld : 'easy' };
       }
+    }
+    if (isObj(raw.maze)) {
+      d.maze.current = int(raw.maze.current, 1, 1, 400);
+      d.maze.unlocked = int(raw.maze.unlocked, 1, 1, 400);
     }
     if (isObj(raw.lastChapter) && typeof raw.lastChapter.subject === 'string') {
       d.lastChapter = { subject: str(raw.lastChapter.subject, '', 40), chapter: int(raw.lastChapter.chapter, 0, 0, 999) };

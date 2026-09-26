@@ -37,14 +37,16 @@
   R.CONST = { CHALLENGE_TARGET: CHALLENGE_TARGET, CHALLENGE_XP: CHALLENGE_XP, GOAL_XP: GOAL_XP, GAME_XP: GAME_XP, GAME_DAILY_CAP: GAME_DAILY_CAP, REPLAY_DAILY_CAP: REPLAY_DAILY_CAP };
 
   /* ---------- Level ---------- */
-  var MAX_LEVEL = 50;
-  var XP_FOR_MAX_LEVEL = 16500;   // ← Level 50 के लिए कुल XP (ऊपर हिसाब देखो)
+  // Level Cap अब 1200 (20 Building Stage × 60 मंज़िल) — कुल ज़रूरी XP (XP_FOR_MAX_LEVEL) वही रखा है,
+  // बस अब वही XP बहुत ज़्यादा, छोटे-छोटे Levels में बँटता है (हर थोड़े XP पर एक नई मंज़िल बनती दिखे)।
+  var MAX_LEVEL = 1200;
+  var XP_FOR_MAX_LEVEL = 16500;   // ← Level के लिए कुल XP (ऊपर हिसाब देखो) — यह नहीं बदला
   var CURVE = 1.2;                // 1 = हर Level बराबर XP, ज़्यादा = ऊपर के Level और महँगे
 
-  // (कम से कम Level, नाम)
+  // (कम से कम Level, नाम) — पुराने 1-50 Scale से 1-1200 Scale पर आनुपातिक रूप से बढ़ाया
   var TITLE_STEPS = [
-    [1, 'नया खिलाड़ी'], [2, 'जिज्ञासु'], [6, 'मेहनती'], [13, 'तेज़ दिमाग़'],
-    [23, 'बोर्ड वॉरियर'], [34, 'टॉपर'], [45, 'लीजेंड']
+    [1, 'नया खिलाड़ी'], [48, 'जिज्ञासु'], [144, 'मेहनती'], [312, 'तेज़ दिमाग़'],
+    [552, 'बोर्ड वॉरियर'], [816, 'टॉपर'], [1080, 'लीजेंड']
   ];
 
   // THRESH[i] = Level (i+1) पर पहुँचने के लिए कुल XP
@@ -92,10 +94,26 @@
     var before = levelOf(st.xp);
     st.xp += n;
     var after = levelOf(st.xp);
-    if (after > before) {
+    if (after > before && M.App && M.App.toast) {
       M.App.toast('🎉 Level ' + after + ' — ' + R.levelInfo(st.xp).title + '!', 'success');
     }
-    if (M.App.refreshHeader) M.App.refreshHeader();
+    if (M.App && M.App.refreshHeader) M.App.refreshHeader();
+  };
+
+  // "जितनी बार वही चीज़ दोबारा करो, उतना कम XP" — पूरी Website पर एक जैसा नियम।
+  // "key" बताता है कि क्या दोबारा हो रहा है (जैसे 'quiz:physics-1', 'game:brain', 'game:maze:12')।
+  // उसी दिन पहली बार पूरा Amount मिलता है, दूसरी बार आधा, तीसरी बार चौथाई... आगे भी ऐसे ही।
+  // अगले दिन अपने-आप फिर से पूरा Amount मिलने लगता है (Daily Reset से)।
+  R.addXpDiminishing = function (key, baseAmount) {
+    if (!baseAmount || baseAmount <= 0 || !key) return 0;
+    M.Storage.ensureToday();
+    var st = M.Storage.state;
+    var times = st.daily.repeats[key] || 0;
+    var give = Math.floor(baseAmount * Math.pow(0.5, times));
+    st.daily.repeats[key] = times + 1;
+    if (give > 0) R.addXp(give);
+    M.Storage.save();
+    return give;
   };
 
   /* ---------- Quiz XP ---------- */
@@ -120,16 +138,17 @@
       if (ctx.firstCompletion) { items.push({ label: 'पहली बार Quiz पूरा किया', xp: XP_FIRST_COMPLETE }); bonusGiven = true; }
       if (ctx.firstPass) { items.push({ label: 'पहली बार पास हुए 🎯', xp: XP_FIRST_PASS }); bonusGiven = true; }
     }
-    if (!bonusGiven) {
-      if (st.daily.replayCount < REPLAY_DAILY_CAP) {
-        st.daily.replayCount += 1;
-        items.push({ label: 'Replay bonus (आज ' + st.daily.replayCount + '/' + REPLAY_DAILY_CAP + ')', xp: XP_REPLAY });
-      } else {
-        items.push({ label: 'आज का Replay bonus पूरा हो चुका', xp: 0 });
-      }
-    }
     items.forEach(function (it) { total += it.xp; });
-    R.addXp(total);
+    R.addXp(total); // यहाँ तक की XP सिर्फ़ एक बार (Fresh/First-Completion/First-Pass) मिलती है, दोबारा नहीं — दोहराने से नहीं घटानी
+
+    // दोबारा वही Chapter करने पर — हर बार आधा होते जाने वाला Replay Bonus (पूरी Website के "बार-बार करने पर कम XP" नियम से)
+    if (!bonusGiven && ctx.key) {
+      var repKey = 'quiz:' + ctx.key;
+      var give = R.addXpDiminishing(repKey, XP_REPLAY);
+      var nth = st.daily.repeats[repKey];
+      items.push({ label: give > 0 ? ('Replay bonus (आज ' + nth + 'वीं बार)') : 'आज इस Chapter का Replay Bonus अब ख़त्म हो चुका', xp: give });
+      total += give;
+    }
     return { total: total, items: items };
   };
 
@@ -167,16 +186,10 @@
   };
 
   /* ---------- Game XP (सीमित) ---------- */
+  /* ---------- Game XP (दोबारा खेलने पर कम होता हुआ) ---------- */
   R.awardGame = function (amount) {
-    var st = M.Storage.state;
-    M.Storage.ensureToday();
     var want = (typeof amount === 'number' && amount > 0) ? Math.floor(amount) : GAME_XP;
-    var left = GAME_DAILY_CAP - st.daily.gameXp;
-    if (left <= 0) return 0;
-    var give = Math.min(want, left);
-    st.daily.gameXp += give;
-    R.addXp(give);
-    return give;
+    return R.addXpDiminishing('game:brain', want);
   };
 
   /* ---------- Achievements ---------- */

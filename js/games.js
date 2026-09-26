@@ -258,7 +258,7 @@
       html += '<div class="banner ok"><strong>🎉 सारी ' + game.total + ' जोड़ियाँ मिल गईं!</strong> ' + stars + '<br>' +
         game.moves + ' चाल · ' + fmt(game.seconds) + ' · गलत जोड़ी ' + game.mistakes + ' · सबसे बड़ा कॉम्बो ×' + game.bestCombo + '<br>' +
         (game.newBest ? '🏆 नया Best रिकॉर्ड!<br>' : '') +
-        (game.reward ? '+' + game.reward + ' XP मिला।' : 'आज का Game XP (' + M.Rewards.CONST.GAME_DAILY_CAP + ') पूरा हो चुका है, पर खेलना जारी रख सकते हो।') + '</div>';
+        (game.reward ? '+' + game.reward + ' XP मिला।' : 'इस बार XP नहीं मिला (आज बहुत बार खेल चुके — बार-बार खेलने पर XP घटता जाता है), पर खेलना जारी रख सकते हो।') + '</div>';
     }
     return html;
   }
@@ -399,7 +399,7 @@
       '<div class="g-label">कौन-सा Game</div><div class="g-chips">' + modeChips + '</div>' +
       '<div class="g-label">स्तर</div><div class="g-chips">' + diffChips + '</div>' +
       '<p class="muted small" style="margin-top:12px">Best: ' + (best ? best.moves + ' चाल · ' + fmt(best.seconds) : '—') +
-      ' · जीत पर +' + d.xp + ' XP (दिन में अधिकतम ' + M.Rewards.CONST.GAME_DAILY_CAP + ' XP) · जीते: ' + st.game.wins + ' / खेले: ' + st.game.plays + '</p></div>' +
+      ' · जीत पर +' + d.xp + ' XP (दिन में बार-बार खेलने पर हर जीत का XP आधा होता जाता है) · जीते: ' + st.game.wins + ' / खेले: ' + st.game.plays + '</p></div>' +
       '<div id="gameArea">' + boardHtml() + '</div>' +
       '<button class="btn ghost block" data-action="game-new">🔄 नया Game</button></section>';
     return { html: html, title: 'Brain Game', back: '/home', tab: 'home', ctx: 'game' };

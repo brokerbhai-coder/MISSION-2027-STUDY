@@ -206,7 +206,7 @@
 
     html += '<div class="hero"><div class="hero-text"><h1>नमस्ते, ' + name + '! 👋</h1><p class="tagline">पढ़ाई को बनाओ अपना गेम!</p>' +
       (isNew ? '<p class="hero-msg">चलो ' + name + ', आज अपनी तैयारी शुरू करते हैं!</p>' : '<p class="hero-msg">Level ' + lv.level + ' · ' + esc(lv.title) + '</p>') +
-      '</div><div class="hero-level"><div class="ring" style="--p:' + lv.pct + '"><span>Lv ' + lv.level + '</span></div></div></div>';
+      '</div><div class="hero-level"><div id="levelBuildingWidget" class="level-building-card" aria-label="Level Progress Building"></div></div></div>';
     html += '<div class="xpbar"><div class="progress"><span style="width:' + lv.pct + '%"></span></div><small>' + lv.into + ' / ' + lv.need + ' XP · अगले Level के लिए ' + lv.toNext + ' XP बाकी</small></div>';
 
     html += reminderHtml();
@@ -243,6 +243,10 @@
       '<p class="muted small">' + (unlocked ? 'राशि और उसका SI मात्रक मिलाओ, थोड़ा XP कमाओ।' : 'एक Quiz पूरा करो, तब यह Game खुलेगा।') + '</p>' +
       '<button class="btn small ' + (unlocked ? '' : 'ghost') + '" data-action="open-game">' + (unlocked ? 'Game खेलो' : 'कैसे खुलेगा?') + '</button></div>';
 
+    html += '<div class="card game-card"><div class="kv"><span>🧩 Brutal Brain Maze</span><b>Lv ' + (st.maze ? st.maze.unlocked : 1) + '</b></div>' +
+      '<p class="muted small">भूलभुलैया पार करो — बीच-बीच में GK Quiz भी हल करनी होगी।</p>' +
+      '<a class="btn small" href="games/brutal-brain-maze/index.html">Game खेलो</a></div>';
+
     html += '<h2 class="sec-title">कमज़ोर Topics</h2>' + M.Progress.weakHtml();
 
     var ach = M.Rewards.achievements();
@@ -262,7 +266,14 @@
         '<button class="btn small ghost" data-action="start-demo">Demo Quiz खेलो</button></div>';
     }
     html += '</section>';
-    return { html: html, title: 'MISSION 2027', sub: 'STUDY ZONE', back: null, tab: 'home', ctx: 'home' };
+    return {
+      html: html, title: 'MISSION 2027', sub: 'STUDY ZONE', back: null, tab: 'home', ctx: 'home',
+      after: function () {
+        if (window.renderLevelBuilding) {
+          window.renderLevelBuilding(document.getElementById('levelBuildingWidget'), { level: lv.level, pct: lv.pct });
+        }
+      }
+    };
   }
 
   /* ==========================================================

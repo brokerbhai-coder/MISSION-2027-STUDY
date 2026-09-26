@@ -160,7 +160,7 @@
       openCard({
         questions: b.questions.slice(0, 3),
         skip: true,
-        xpPerCorrect: 0.1,
+        xpPerCorrect: 1,
         quoteOnPass: true,
         passNeeded: 1,
         retryOnFail: false,
@@ -264,12 +264,11 @@
     }
     function finish() {
       var passed = correct >= cfg.passNeeded;
+      var xpGiven = 0;
       if (cfg.countsForStreak) bumpDailyStreak(); // पूरा किया (Skip नहीं) — आज का दिन गिना
-      if (cfg.xpPerCorrect) {
-        var xp = Math.round(correct * cfg.xpPerCorrect * 10) / 10;
-        var s = store();
-        s.xp = Math.round(((s.xp || 0) + xp) * 10) / 10;
-        X.save();
+      if (cfg.xpPerCorrect && correct > 0 && M.Rewards && M.Rewards.addXpDiminishing) {
+        // असली, पूरी Website वाले XP System में जुड़ता है — दिन में बार-बार करने पर हर बार आधा होते हुए
+        xpGiven = M.Rewards.addXpDiminishing('qc:reading', correct * cfg.xpPerCorrect);
       }
       if (cfg.retryOnFail && !passed) {
         // कम से कम आधे सही होने तक यही सवाल फिर से
@@ -279,7 +278,7 @@
       }
       var quoteHtml = '';
       if (cfg.quoteOnPass && correct >= 1) quoteHtml = '<div class="qc-quote">✨ ' + esc(pickQuote()) + '</div>';
-      var xpLine = cfg.xpPerCorrect ? ' · +' + (Math.round(correct * cfg.xpPerCorrect * 10) / 10) + ' XP' : '';
+      var xpLine = cfg.xpPerCorrect ? ' · +' + xpGiven + ' XP' : '';
       wrap.innerHTML = '<div class="qc-card"><div class="qc-head"><span class="qc-tag">' + (passed ? '✅' : '➖') + ' ' + correct + '/' + qs.length + ' सही' + xpLine + '</span></div>' +
         quoteHtml + '<button class="btn block" id="qcClose" type="button">📖 आगे बढ़ो</button></div>';
       var closeBtn = wrap.querySelector('#qcClose');
