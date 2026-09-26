@@ -1,8 +1,1081 @@
 {
-  "_help": "प्रश्न इसी 'questions' list में जोड़ो। हर प्रश्न का format data/question-template.json में देखो। अभी यह list खाली है।",
-  "subject": "english",
-  "chapter": 12,
-  "title": "Prose Section — Bharat Is My Home",
-  "status": "pending-pdf-questions",
-  "questions": []
+"_help": "Prashn isi 'questions' list mein jodo.",
+"subject": "english",
+"chapter": 12,
+"title": "Bharat is My Home",
+"status": "ready",
+"questions": [
+{
+"id": "ENG12Q001",
+"subject": "english",
+"chapter": 12,
+"question": "According to Dr. Zakir Husain, which is the prime instrument of national purpose?",
+"options": {
+"A": "Business",
+"B": "Service",
+"C": "Politics",
+"D": "Education"
+},
+"answer": "D",
+"explanation": "Dr. Zakir Husain ke anusar rashtriya uddeshya aur rashtra nirman ka sabse mukhya sadhan shiksha (education) hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q002",
+"subject": "english",
+"chapter": 12,
+"question": "Dr. Zakir Husain delivered his speech in the year ..........",
+"options": {
+"A": "1968",
+"B": "1963",
+"C": "1967",
+"D": "1969"
+},
+"answer": "C",
+"explanation": "Dr. Zakir Husain ne yeh bhashan 1967 mein rashtrapati pad ki shapath lene ke turant baad diya tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q003",
+"subject": "english",
+"chapter": 12,
+"question": "Dr. Zakir Husain was a great ..........",
+"options": {
+"A": "Nationalist",
+"B": "Leader",
+"C": "Politician",
+"D": "Thinker"
+},
+"answer": "A",
+"explanation": "Dr. Zakir Husain ek mahan rashtravadi (nationalist) aur swatantrata senani the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q004",
+"subject": "english",
+"chapter": 12,
+"question": "Who said that 'Bharat is my home and its people are my family'?",
+"options": {
+"A": "Sarojini Naidu",
+"B": "Dr. Zakir Husain",
+"C": "Dr. S. Radhakrishnan",
+"D": "V. V. Giri"
+},
+"answer": "B",
+"explanation": "Yeh prasiddh kathan Dr. Zakir Husain ka hai jab unhone poore desh ko apna parivar bataya.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q005",
+"subject": "english",
+"chapter": 12,
+"question": "'For .......... size the tasks ahead of us are so demanding.'",
+"options": {
+"A": "free",
+"B": "large",
+"C": "giant",
+"D": "sheer"
+},
+"answer": "D",
+"explanation": "Speech ki mool line hai: 'For sheer size the tasks ahead of us are so demanding'.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q006",
+"subject": "english",
+"chapter": 12,
+"question": "The family is big and is constantly .......... at a rather inconveniently fast pace.",
+"options": {
+"A": "Developing",
+"B": "Growing",
+"C": "Decreasing",
+"D": "Increasing"
+},
+"answer": "B",
+"explanation": "Bhashan mein kaha gaya hai ki yeh rashtriya parivar asuvidhajanak tez gati se badh (growing) raha hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q007",
+"subject": "english",
+"chapter": 12,
+"question": "'I have just taken the oath of loyalty to the .......... of India.'",
+"options": {
+"A": "Ambition",
+"B": "Connection",
+"C": "Constitution",
+"D": "Institution"
+},
+"answer": "C",
+"explanation": "Dr. Zakir Husain ne Bharat ke Samvidhan (Constitution) ke prati nishtha ki shapath li thi.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q008",
+"subject": "english",
+"chapter": 12,
+"question": "Dr. Zakir Husain delivered his speech in 1967 after taking the oath as the ..........",
+"options": {
+"A": "President",
+"B": "Governor",
+"C": "Speaker",
+"D": "M.P."
+},
+"answer": "A",
+"explanation": "Unhone Bharat ke teesre Rashtrapati (President) ke roop mein shapath lene ke baad yeh bhashan diya tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q009",
+"subject": "english",
+"chapter": 12,
+"question": "Dr. Zakir Husain felt greatly obliged to the people of ..........",
+"options": {
+"A": "Afghanistan",
+"B": "Britain",
+"C": "Bangladesh",
+"D": "India"
+},
+"answer": "D",
+"explanation": "Weh Bharat (India) ki janta ke aabhari the jinhone unhe desh ke sarvochha pad par chuna.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q010",
+"subject": "english",
+"chapter": 12,
+"question": "According to Dr. Zakir Husain, the past is not ..........",
+"options": {
+"A": "Alive and dynamic",
+"B": "Dead and static",
+"C": "Identified",
+"D": "Forgotten"
+},
+"answer": "B",
+"explanation": "Dr. Husain kehte hain ki hamara ateet mara hua ya thhahra hua (dead and static) nahi hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q011",
+"subject": "english",
+"chapter": 12,
+"question": "Dr. Zakir Husain became the President of India in ..........",
+"options": {
+"A": "1967",
+"B": "1969",
+"C": "1968",
+"D": "1962"
+},
+"answer": "A",
+"explanation": "Dr. Zakir Husain 13 May 1967 ko Bharat ke teesre Rashtrapati bane the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q012",
+"subject": "english",
+"chapter": 12,
+"question": ".......... was the role model of Dr. Zakir Husain.",
+"options": {
+"A": "Giani Zail Singh",
+"B": "Dr. S. Radhakrishnan",
+"C": "Indira Gandhi",
+"D": "Sardar Patel"
+},
+"answer": "B",
+"explanation": "Dr. Sarvepalli Radhakrishnan unke aadarsh (role model) the jinki vidwatta ki unhone prashansa ki.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q013",
+"subject": "english",
+"chapter": 12,
+"question": "'Bharat is My Home' is written by ..........",
+"options": {
+"A": "Dr. Zakir Husain",
+"B": "V. V. Giri",
+"C": "Anton Chekhov",
+"D": "Mahatma Gandhi"
+},
+"answer": "A",
+"explanation": "'Bharat is My Home' Dr. Zakir Husain ke 1967 ke bhashan ka mukhya ansh hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q014",
+"subject": "english",
+"chapter": 12,
+"question": ".......... is the prime instrument of nation building.",
+"options": {
+"A": "Trade",
+"B": "Education",
+"C": "Agriculture",
+"D": "Foreign help"
+},
+"answer": "B",
+"explanation": "Rashtra ke vikas aur sanskritik unnati ke liye shiksha (education) mukhya aadhar hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q015",
+"subject": "english",
+"chapter": 12,
+"question": "'The family is big and is constantly growing at a rather inconveniently fast pace' is from ..........",
+"options": {
+"A": "How Free is the Press",
+"B": "Bharat is My Home",
+"C": "The Earth",
+"D": "I Have a Dream"
+},
+"answer": "B",
+"explanation": "Yeh pankti Dr. Zakir Husain ke path 'Bharat is My Home' se li gayi hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q016",
+"subject": "english",
+"chapter": 12,
+"question": "'The people have chosen to make me the head of this family for a certain time.' Who says this?",
+"options": {
+"A": "Dr. Rajendra Prasad",
+"B": "Dr. A. P. J. Abdul Kalam",
+"C": "Dr. S. Radhakrishnan",
+"D": "Dr. Zakir Husain"
+},
+"answer": "D",
+"explanation": "Yeh baat Dr. Zakir Husain ne Rashtrapati banne ke baad janta ke prati aabhar jatate huye kahi thi.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q017",
+"subject": "english",
+"chapter": 12,
+"question": "Which type of prose piece is 'Bharat is My Home'?",
+"options": {
+"A": "Essay",
+"B": "Story",
+"C": "Speech",
+"D": "Journey record"
+},
+"answer": "C",
+"explanation": "'Bharat is My Home' gadhya ki vidha mein ek bhashan (speech) ka ansh hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q018",
+"subject": "english",
+"chapter": 12,
+"question": "Dr. Zakir Husain was born in .......... and died in ..........",
+"options": {
+"A": "1865, 1966",
+"B": "1869, 1967",
+"C": "1897, 1968",
+"D": "1897, 1969"
+},
+"answer": "D",
+"explanation": "Dr. Zakir Husain ka janam 1897 mein aur dehavsan 1969 mein hua tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q019",
+"subject": "english",
+"chapter": 12,
+"question": "Dr. Zakir Husain was born in ..........",
+"options": {
+"A": "Bangalore",
+"B": "Hyderabad",
+"C": "Delhi",
+"D": "Aligarh"
+},
+"answer": "B",
+"explanation": "Dr. Zakir Husain ka janam Hyderabad shahar mein hua tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q020",
+"subject": "english",
+"chapter": 12,
+"question": "Dr. Radhakrishnan never lost his faith in the .......... of man.",
+"options": {
+"A": "essential honesty",
+"B": "essential equality",
+"C": "essential knowledge",
+"D": "essential humanity"
+},
+"answer": "D",
+"explanation": "Dr. Radhakrishnan ne manavta ki moolbhoot aatmiyata (essential humanity) par kabhi vishwas nahi khoya.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q021",
+"subject": "english",
+"chapter": 12,
+"question": "Dr. Zakir Husain sees two aspects of work — social and ..........",
+"options": {
+"A": "Environmental",
+"B": "Educational",
+"C": "Biological",
+"D": "Individual"
+},
+"answer": "D",
+"explanation": "Karyon ke do pehlu hote hain: vyaktigat (individual) aur samajik (social).",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q022",
+"subject": "english",
+"chapter": 12,
+"question": "Dr. Zakir Husain was the .......... and Dr. Radhakrishnan was the .......... President of Bharat.",
+"options": {
+"A": "1st, 3rd",
+"B": "3rd, 1st",
+"C": "3rd, 2nd",
+"D": "2nd, 3rd"
+},
+"answer": "C",
+"explanation": "Dr. Zakir Husain teesre (3rd) aur Dr. S. Radhakrishnan doosre (2nd) Rashtrapati the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q023",
+"subject": "english",
+"chapter": 12,
+"question": "Dr. Zakir Husain had also championed the right of all men to live in ..........",
+"options": {
+"A": "majority",
+"B": "dignity",
+"C": "integrity",
+"D": "spirit"
+},
+"answer": "B",
+"explanation": "Unhone pratyek manushya ke garima (dignity) aur samman se jeene ke adhikar ka samarthan kiya.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q024",
+"subject": "english",
+"chapter": 12,
+"question": "How long did Dr. Zakir Husain live?",
+"options": {
+"A": "70 years",
+"B": "71 years",
+"C": "72 years",
+"D": "73 years"
+},
+"answer": "C",
+"explanation": "Dr. Zakir Husain ka jeevankal lagbhag 72 varsh (1897 se 1969) ka tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q025",
+"subject": "english",
+"chapter": 12,
+"question": "What was the tenure of Dr. Zakir Husain as the President of India?",
+"options": {
+"A": "1967-1969",
+"B": "1966-1969",
+"C": "1965-1969",
+"D": "1964-1969"
+},
+"answer": "A",
+"explanation": "Unhone 13 May 1967 se lekar apne nidhan 3 May 1969 tak rashtrapati ke roop mein karya kiya.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q026",
+"subject": "english",
+"chapter": 12,
+"question": "Dr. Zakir Husain pledges himself to the service of the totality of India's ..........",
+"options": {
+"A": "Constitution",
+"B": "Culture",
+"C": "Civilization",
+"D": "Independence"
+},
+"answer": "B",
+"explanation": "Dr. Husain ne Bharat ki samast sanskriti (totality of India's culture) ki sewa karne ki shapath li.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q027",
+"subject": "english",
+"chapter": 12,
+"question": "As President, Dr. Zakir Husain was preceded by ..........",
+"options": {
+"A": "Dr. Rajendra Prasad",
+"B": "Dr. S. Radhakrishnan",
+"C": "Mahatma Gandhi",
+"D": "V. V. Giri"
+},
+"answer": "B",
+"explanation": "Dr. Zakir Husain se pehle Dr. Sarvepalli Radhakrishnan Bharat ke rashtrapati the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q028",
+"subject": "english",
+"chapter": 12,
+"question": "Dr. Zakir Husain sees .......... aspects of work.",
+"options": {
+"A": "one",
+"B": "two",
+"C": "three",
+"D": "four"
+},
+"answer": "B",
+"explanation": "Unhone kaam ke do mukhya pehlu bataye: aatm-vikas aur samajik sewa.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q029",
+"subject": "english",
+"chapter": 12,
+"question": "On which occasion did Dr. Zakir Husain deliver this speech?",
+"options": {
+"A": "Taking oath as Governor of Bihar",
+"B": "Taking oath as Chief Minister",
+"C": "Taking oath as Prime Minister",
+"D": "Taking oath as the President of Bharat"
+},
+"answer": "D",
+"explanation": "Yeh bhashan Bharat ke Rashtrapati ke roop mein shapath lene ke avsar par diya gaya tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q030",
+"subject": "english",
+"chapter": 12,
+"question": "Dr. Radhakrishnan brought to the Presidency a .......... equipment.",
+"options": {
+"A": "healthy",
+"B": "social",
+"C": "mental",
+"D": "psychological"
+},
+"answer": "C",
+"explanation": "Dr. Radhakrishnan ne rashtrapati pad par mahan bauddhika aur manasik upkaran (mental equipment) pradan kiya.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q031",
+"subject": "english",
+"chapter": 12,
+"question": "Dr. Zakir Husain entered the office in a spirit of .......... humility.",
+"options": {
+"A": "special",
+"B": "prayerful",
+"C": "long",
+"D": "new"
+},
+"answer": "B",
+"explanation": "Unhone prarthnamay vinamrata (prayerful humility) aur nishtha ke sath padbhar grahan kiya.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q032",
+"subject": "english",
+"chapter": 12,
+"question": "In the speech, the past is described as ..........",
+"options": {
+"A": "Dead and static",
+"B": "Alive and dynamic",
+"C": "Useless",
+"D": "Harmful"
+},
+"answer": "B",
+"explanation": "Hamara ateet jeevit aur gatishil (alive and dynamic) hai jo hamare bhavishya ko nirdharit karta hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q033",
+"subject": "english",
+"chapter": 12,
+"question": "The word 'erudition' stands for ..........",
+"options": {
+"A": "knowledge",
+"B": "great personality",
+"C": "great knowledge",
+"D": "honesty"
+},
+"answer": "C",
+"explanation": "'Erudition' ka taatparya gahri vidwatta ya mahan gyan (great knowledge) se hota hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q034",
+"subject": "english",
+"chapter": 12,
+"question": "Dr. Radhakrishnan explained .......... exceptionally throughout his life.",
+"options": {
+"A": "Indian economics",
+"B": "Indian philosophy",
+"C": "Indian politics",
+"D": "Indian civilization"
+},
+"answer": "B",
+"explanation": "Dr. Radhakrishnan ne Bhartiya darshan (Indian philosophy) ko vishva star par adbhut tareeqe se samjhaya.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q035",
+"subject": "english",
+"chapter": 12,
+"question": "Dr. Zakir Husain was long associated with the field of ..........",
+"options": {
+"A": "Sports",
+"B": "Armed Forces",
+"C": "Education",
+"D": "Science"
+},
+"answer": "C",
+"explanation": "Dr. Zakir Husain ka lamba sambandh shiksha (education) ke kshetr se raha tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q036",
+"subject": "english",
+"chapter": 12,
+"question": "The people had chosen him the head of the family for ..........",
+"options": {
+"A": "two years",
+"B": "five years",
+"C": "a certain time",
+"D": "through the life"
+},
+"answer": "C",
+"explanation": "Janta ne unhe ek nishchit samay (a certain time) ke liye is rashtriya parivar ka mukhya chuna tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q037",
+"subject": "english",
+"chapter": 12,
+"question": "As President, Dr. Husain advocated for the growth of ..........",
+"options": {
+"A": "the rich",
+"B": "the poor",
+"C": "only the poor",
+"D": "the whole nation"
+},
+"answer": "D",
+"explanation": "Rashtrapati ke roop mein unhone kisi ek varg nahi balki sampoorna rashtra ke vikas ki vikalat ki.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q038",
+"subject": "english",
+"chapter": 12,
+"question": "This sincere effort will give to the life of our State a special ..........",
+"options": {
+"A": "Ability",
+"B": "Skill",
+"C": "Knowledge",
+"D": "Flavour"
+},
+"answer": "D",
+"explanation": "Line hai: 'This effort will give to the life of our State a special flavour'.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q039",
+"subject": "english",
+"chapter": 12,
+"question": "The word 'peril' stands for ..........",
+"options": {
+"A": "immoral purpose",
+"B": "moral purpose",
+"C": "serious danger",
+"D": "profitable"
+},
+"answer": "C",
+"explanation": "'Peril' ka arth gambhir sankat ya khatra (serious danger) hota hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q040",
+"subject": "english",
+"chapter": 12,
+"question": "The word 'pledge' stands for ..........",
+"options": {
+"A": "truth",
+"B": "danger",
+"C": "honesty",
+"D": "swear"
+},
+"answer": "D",
+"explanation": "'Pledge' ka taatparya shapath lena ya sankalp karna (swear) hota hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q041",
+"subject": "english",
+"chapter": 12,
+"question": "The end-product of work on one's self is a free ..........",
+"options": {
+"A": "Morality",
+"B": "Immorality",
+"C": "False",
+"D": "Moral personality"
+},
+"answer": "D",
+"explanation": "Aatm-vikas ka aakhiri nishkarsh ek swatantra aur naitik vyaktitva (free moral personality) ka nirmaan hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q042",
+"subject": "english",
+"chapter": 12,
+"question": "We can neglect the end-product only at our ..........",
+"options": {
+"A": "own risk",
+"B": "own work",
+"C": "peril",
+"D": "mind"
+},
+"answer": "C",
+"explanation": "Hum naitik vyaktitva ke nirmaan ki andekhi keval apne khatre (at our peril) par hi kar sakte hain.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q043",
+"subject": "english",
+"chapter": 12,
+"question": "We will have to work without distinction of caste, colour and ..........",
+"options": {
+"A": "Creed",
+"B": "Greed",
+"C": "Honesty",
+"D": "Dishonesty"
+},
+"answer": "A",
+"explanation": "Hamein jaati, rang aur dharam-mat (creed) ke bhedbhav ke bina rashtra nirmaan mein judna hoga.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q044",
+"subject": "english",
+"chapter": 12,
+"question": "We shall each one of us have to participate .......... in building its new life.",
+"options": {
+"A": "Unusually",
+"B": "Separately",
+"C": "Together",
+"D": "Unsparingly"
+},
+"answer": "D",
+"explanation": "Pratyek nagrik ko bina kisi aalas ya sankoch ke poore samarpan (unsparingly) se bhag lena hoga.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q045",
+"subject": "english",
+"chapter": 12,
+"question": "'I must confess that I am .......... by the trust my people have placed in me.'",
+"options": {
+"A": "very sad",
+"B": "very happy",
+"C": "over confident",
+"D": "overwhelmed"
+},
+"answer": "D",
+"explanation": "Dr. Husain kehte hain ki janta ke vishwas se weh bhav-vibhोर ya abhibhoot (overwhelmed) hain.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q046",
+"subject": "english",
+"chapter": 12,
+"question": "No one can afford to sit back and just watch or let frustration become .......... in our country.",
+"options": {
+"A": "Pandemic",
+"B": "Endemic",
+"C": "Development",
+"D": "None of these"
+},
+"answer": "B",
+"explanation": "Desh mein nirasha ko sthayi aadat (endemic) nahi banne diya ja sakta.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q047",
+"subject": "english",
+"chapter": 12,
+"question": "During his lifetime, .......... remained devoted to the pursuit of knowledge and truth.",
+"options": {
+"A": "Dr. Rajendra Prasad",
+"B": "Dr. Zakir Husain",
+"C": "Dr. A. P. J. Abdul Kalam",
+"D": "Dr. S. Radhakrishnan"
+},
+"answer": "D",
+"explanation": "Dr. S. Radhakrishnan aajiwan satya aur gyan ki sadhna mein samarpit rahe.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG12Q048",
+"subject": "english",
+"chapter": 12,
+"question": "In which year was Dr. Zakir Husain awarded the highest civilian award 'Bharat Ratna'?",
+"options": {
+"A": "1954",
+"B": "1963",
+"C": "1967",
+"D": "1969"
+},
+"answer": "B",
+"explanation": "Dr. Zakir Husain ko saal 1963 mein Bharat Ratna samman se nawaza gaya tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG12Q049",
+"subject": "english",
+"chapter": 12,
+"question": "In which year was Dr. Zakir Husain honoured with the 'Padma Vibhushan'?",
+"options": {
+"A": "1954",
+"B": "1958",
+"C": "1962",
+"D": "1965"
+},
+"answer": "A",
+"explanation": "Unhin saal 1954 mein Padma Vibhushan se sammanit kiya gaya tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG12Q050",
+"subject": "english",
+"chapter": 12,
+"question": "From which foreign university did Dr. Zakir Husain earn his Ph.D. degree?",
+"options": {
+"A": "Oxford University",
+"B": "Cambridge University",
+"C": "University of Berlin",
+"D": "Harvard University"
+},
+"answer": "C",
+"explanation": "Dr. Zakir Husain ne University of Berlin (Germany) se economics mein doctorate ki degree li thi.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG12Q051",
+"subject": "english",
+"chapter": 12,
+"question": "Who succeeded Dr. Zakir Husain as the President of India after his demise?",
+"options": {
+"A": "Fakhruddin Ali Ahmed",
+"B": "Varahagiri Venkata Giri (V. V. Giri)",
+"C": "Neelam Sanjiva Reddy",
+"D": "Giani Zail Singh"
+},
+"answer": "B",
+"explanation": "Dr. Zakir Husain ke asamayik nidhan ke baad V. V. Giri rashtrapati bane the.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG12Q052",
+"subject": "english",
+"chapter": 12,
+"question": "Before becoming the President of India, Dr. Zakir Husain served as the Governor of ..........",
+"options": {
+"A": "Uttar Pradesh",
+"B": "West Bengal",
+"C": "Bihar",
+"D": "Punjab"
+},
+"answer": "C",
+"explanation": "Rashtrapati banne se pehle weh Bihar ke rajyapala (Governor) ke roop mein sewa de chuke the.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG12Q053",
+"subject": "english",
+"chapter": 12,
+"question": "What was the academic background and profession of Dr. Zakir Husain besides being an educationist?",
+"options": {
+"A": "Civil Engineer",
+"B": "Economist",
+"C": "Surgeon",
+"D": "Barrister"
+},
+"answer": "B",
+"explanation": "Dr. Zakir Husain prashikshit arthashastri (economist) aur mahan shikshavid the.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG12Q054",
+"subject": "english",
+"chapter": 12,
+"question": "Why does Dr. Zakir Husain call India 'the young state of an ancient people'?",
+"options": {
+"A": "Because the population consists only of young children",
+"B": "Because a newly independent modern state inherits an ancient timeless culture",
+"C": "Because the country was founded recently",
+"D": "Because ancient traditions have been discarded"
+},
+"answer": "B",
+"explanation": "Desh naya swatantra rashtra hai lekin iski sanskriti hazaaron saal pracheen aur samriddh hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG12Q055",
+"subject": "english",
+"chapter": 12,
+"question": "Quoting Mahatma Gandhi, Dr. Zakir Husain asserts that power should be used only for .......... purposes.",
+"options": {
+"A": "commercial",
+"B": "political",
+"C": "moral",
+"D": "military"
+},
+"answer": "C",
+"explanation": "Gandhi ji ka manna tha ki shakti ka upyog naitik uddeshya (moral purpose) aur lok kalyan ke liye hona chahiye.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG12Q056",
+"subject": "english",
+"chapter": 12,
+"question": "What did Dr. Radhakrishnan never cease to champion throughout his life?",
+"options": {
+"A": "The right of all men to live in dignity and with justice",
+"B": "Military expansion across borders",
+"C": "Rapid industrial automation",
+"D": "Abolition of ancient texts"
+},
+"answer": "A",
+"explanation": "Dr. Radhakrishnan ne hamesha manav adhikar, nyay aur sammanpoorvak jeevan jeene ka samarthan kiya.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG12Q057",
+"subject": "english",
+"chapter": 12,
+"question": "According to Dr. Zakir Husain, individual work and social work are ..........",
+"options": {
+"A": "mutually hostile",
+"B": "mutually fruitful and complementary",
+"C": "completely independent of each other",
+"D": "unnecessary for national progress"
+},
+"answer": "B",
+"explanation": "Vyaktigat vikas aur samajik vikas ek doosre ke purak hain aur sath-sath chalte hain.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG12Q058",
+"subject": "english",
+"chapter": 12,
+"question": "What is the antonym of the word 'dynamic' as used in 'alive and dynamic'?",
+"options": {
+"A": "Active",
+"B": "Static",
+"C": "Progressive",
+"D": "Energetic"
+},
+"answer": "B",
+"explanation": "'Dynamic' (gatishil) ka vipritarthak shabd 'Static' (sthir/thhahra hua) hota hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG12Q059",
+"subject": "english",
+"chapter": 12,
+"question": "What is the closest synonym of the word 'humility' as used in the speech?",
+"options": {
+"A": "Modesty",
+"B": "Arrogance",
+"C": "Pride",
+"D": "Disrespect"
+},
+"answer": "A",
+"explanation": "'Humility' ka arth namrata ya vinamrata (modesty) hota hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG12Q060",
+"subject": "english",
+"chapter": 12,
+"question": "What was the cause of Dr. Zakir Husain's untimely death on 3 May 1969?",
+"options": {
+"A": "Tuberculosis",
+"B": "Heart Attack",
+"C": "Road accident",
+"D": "Pneumonia"
+},
+"answer": "B",
+"explanation": "Rashtrapati karyakal ke dauran hridayaghat (heart attack) se unka aakasmik nidhan hua tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG12Q061",
+"subject": "english",
+"chapter": 12,
+"question": "Dr. Zakir Husain was the .......... President of India to die while in office.",
+"options": {
+"A": "first",
+"B": "second",
+"C": "third",
+"D": "fourth"
+},
+"answer": "A",
+"explanation": "Dr. Zakir Husain pehle aise Rashtrapati the jinka nidhan unke karyakal ke dauran hua tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG12Q062",
+"subject": "english",
+"chapter": 12,
+"question": "What is the fundamental business of education according to Dr. Zakir Husain?",
+"options": {
+"A": "To earn foreign degrees only",
+"B": "To promote the growth of national culture and develop national character",
+"C": "To train students only for government jobs",
+"D": "To replace moral values with modern machinery"
+},
+"answer": "B",
+"explanation": "Shiksha ka mukhya uddeshya rashtriya sanskriti aur rashtriya charitra ka vikas karna hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG12Q063",
+"subject": "english",
+"chapter": 12,
+"question": "From which university did Dr. Zakir Husain obtain his Master of Arts (M.A.) degree?",
+"options": {
+"A": "University of Delhi",
+"B": "Aligarh Muslim University",
+"C": "University of Allahabad",
+"D": "University of Calcutta"
+},
+"answer": "C",
+"explanation": "Unhone apna M.A. University of Allahabad se poora kiya tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG12Q064",
+"subject": "english",
+"chapter": 12,
+"question": "From which university did Dr. Zakir Husain complete his Bachelor of Arts (B.A.) degree?",
+"options": {
+"A": "University of Lucknow",
+"B": "Patna University",
+"C": "Banaras Hindu University",
+"D": "Bombay University"
+},
+"answer": "A",
+"explanation": "Unhone apna graduation (B.A.) University of Lucknow se kiya tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG12Q065",
+"subject": "english",
+"chapter": 12,
+"question": "What did Dr. Zakir Husain compare the diverse cultural threads forming the national integrity to?",
+"options": {
+"A": "Iron chains of power",
+"B": "Gold coins in a vault",
+"C": "Fibres of different cultures forming a single fabric",
+"D": "Stones in a fortress"
+},
+"answer": "C",
+"explanation": "Unhone vibhinn sanskritiyon ki tulna alag-alag tantuon (fibres) se ki jo milkar ek majboot kapda banate hain.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG12Q066",
+"subject": "english",
+"chapter": 12,
+"question": "What is the meaning of the word 'endemic' in the phrase 'let frustration become endemic'?",
+"options": {
+"A": "Temporary and brief",
+"B": "Regularly found and deeply ingrained among people",
+"C": "Joyful and celebrated",
+"D": "Easily curable"
+},
+"answer": "B",
+"explanation": "'Endemic' ka arth kisi bimari ya dushpravritti ka logon ke beech sthayi roop se bas jana hota hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG12Q067",
+"subject": "english",
+"chapter": 12,
+"question": "What is the primary tone of Dr. Zakir Husain throughout 'Bharat is My Home'?",
+"options": {
+"A": "Solemn, patriotic, humble, and dedicated",
+"B": "Aggressive and demanding",
+"C": "Humorous and playful",
+"D": "Pessimistic and bitter"
+},
+"answer": "A",
+"explanation": "Bhashan ka swar atyant gambhir, rashtrabhakti se paripoorna aur sewa-bhav se yukta hai.",
+"source": "CONCEPT",
+"type": "objective"
 }
+]
+}  
