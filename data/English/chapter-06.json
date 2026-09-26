@@ -1,8 +1,713 @@
 {
-  "_help": "प्रश्न इसी 'questions' list में जोड़ो। हर प्रश्न का format data/question-template.json में देखो। अभी यह list खाली है।",
-  "subject": "english",
-  "chapter": 6,
-  "title": "Poetry Section — The Soldier",
-  "status": "pending-pdf-questions",
-  "questions": []
+"_help": "प्रश्न इसी 'questions' list में जोड़ो।",
+"subject": "english",
+"chapter": 6,
+"title": "THE SOLDIER",
+"status": "ready",
+"questions": [
+{
+"id": "ENG06Q001",
+"subject": "english",
+"chapter": 6,
+"question": "The place where the soldier would be buried should be treated as the part of .......... after his death.",
+"options": {
+"A": "England",
+"B": "Portugal",
+"C": "Holland",
+"D": "Austria"
+},
+"answer": "A",
+"explanation": "सैनिक की इच्छा है कि विदेशी भूमि का वह कोना जहाँ उसे दफनाया जाए, वह सदा के लिए इंग्लैंड का हिस्सा माना जाए।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG06Q002",
+"subject": "english",
+"chapter": 6,
+"question": "The speaker in the poem 'The Soldier' is not afraid of ..........",
+"options": {
+"A": "tiger",
+"B": "storm",
+"C": "death",
+"D": "fear"
+},
+"answer": "C",
+"explanation": "कवि-सैनिक युद्ध में देश के लिए प्राण न्योछावर करने और मृत्यु (death) का सामना करने से भयभीत नहीं है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG06Q003",
+"subject": "english",
+"chapter": 6,
+"question": "In the poem 'The Soldier', the word 'dust' stands for the ..........",
+"options": {
+"A": "plumber",
+"B": "sweeper",
+"C": "carpenter",
+"D": "soldier"
+},
+"answer": "D",
+"explanation": "कविता में 'dust' और 'richer dust' शब्द सैनिक (soldier) के नश्वर मृत शरीर का प्रतीक है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG06Q004",
+"subject": "english",
+"chapter": 6,
+"question": "Rupert Brooke speaks in the guise of an .......... soldier.",
+"options": {
+"A": "Portuguese",
+"B": "English",
+"C": "African",
+"D": "Dutch"
+},
+"answer": "B",
+"explanation": "रूपर्ट ब्रुक स्वयं एक अंग्रेज सैनिक (English soldier) के रूप में अपने देशभक्तिपूर्ण विचार प्रस्तुत करते हैं।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG06Q005",
+"subject": "english",
+"chapter": 6,
+"question": "The images and praises of .......... run through both the stanzas of the poem.",
+"options": {
+"A": "Brazil",
+"B": "England",
+"C": "Australia",
+"D": "Finland"
+},
+"answer": "B",
+"explanation": "पूरी कविता के दोनों पदों (ऑक्टेव और सेस्टेट) में इंग्लैंड की प्रकृति, संस्कृति और प्रशंसा की छवियाँ दिखाई देती हैं।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG06Q006",
+"subject": "english",
+"chapter": 6,
+"question": "The speaker of the poem 'The Soldier' is a ..........",
+"options": {
+"A": "soldier",
+"B": "thief",
+"C": "plumber",
+"D": "sweeper"
+},
+"answer": "A",
+"explanation": "कविता का वक्ता एक देशभक्त सैनिक (soldier) है जो युद्ध के मैदान में अपने विचार साझा कर रहा है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG06Q007",
+"subject": "english",
+"chapter": 6,
+"question": "'The Soldier' is an idealistic .......... poem.",
+"options": {
+"A": "hate",
+"B": "sad",
+"C": "gift",
+"D": "war"
+},
+"answer": "D",
+"explanation": "'The Soldier' प्रथम विश्व युद्ध के आरंभिक दौर में लिखी गई एक प्रसिद्ध युद्ध-कविता (war poem) है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG06Q008",
+"subject": "english",
+"chapter": 6,
+"question": "The line 'In hearts at peace, under an English heaven' is taken from ..........",
+"options": {
+"A": "Ode to Autumn",
+"B": "The Soldier",
+"C": "Song of Myself",
+"D": "Fire-Hymn"
+},
+"answer": "B",
+"explanation": "यह प्रसिद्ध काव्यात्मक पंक्ति रूपर्ट ब्रुक द्वारा रचित 'The Soldier' की अंतिम पंक्ति है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG06Q009",
+"subject": "english",
+"chapter": 6,
+"question": "In 'The Soldier', Rupert Brooke praises his motherland ..........",
+"options": {
+"A": "England",
+"B": "Germany",
+"C": "Russia",
+"D": "America"
+},
+"answer": "A",
+"explanation": "कवि रूपर्ट ब्रुक अपनी मातृभूमि इंग्लैंड (England) के प्राकृतिक सौंदर्य और संस्कारों की प्रशंसा करते हैं।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG06Q010",
+"subject": "english",
+"chapter": 6,
+"question": "Who among the following is remembered as a prominent 'war poet'?",
+"options": {
+"A": "Rupert Brooke",
+"B": "T.S. Eliot",
+"C": "D.H. Lawrence",
+"D": "Walter de la Mare"
+},
+"answer": "A",
+"explanation": "रूपर्ट ब्रुक (Rupert Brooke) को प्रथम विश्व युद्ध के शुरुआती दौर के प्रमुख 'युद्ध-कवि' के रूप में याद किया जाता है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG06Q011",
+"subject": "english",
+"chapter": 6,
+"question": "'A dust whom .......... bore, shaped, made aware.'",
+"options": {
+"A": "Ireland",
+"B": "India",
+"C": "England",
+"D": "Pakistan"
+},
+"answer": "C",
+"explanation": "कविता की मूल पंक्ति है: 'A dust whom England bore, shaped, made aware'।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG06Q012",
+"subject": "english",
+"chapter": 6,
+"question": "The term 'concealed' in 'The Soldier' stands for ..........",
+"options": {
+"A": "hidden",
+"B": "disappeared",
+"C": "opened",
+"D": "appeared"
+},
+"answer": "A",
+"explanation": "'Concealed' का अर्थ गुप्त रहना या मिट्टी के नीचे छिपा हुआ (hidden/buried) होना है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG06Q013",
+"subject": "english",
+"chapter": 6,
+"question": "'The Soldier' is fundamentally a .......... poem.",
+"options": {
+"A": "nature",
+"B": "patriotic/war",
+"C": "love",
+"D": "happy"
+},
+"answer": "B",
+"explanation": "यह कविता देशभक्ति (patriotic) और युद्ध (war) की उदात्त भावनाओं से ओत-प्रोत है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG06Q014",
+"subject": "english",
+"chapter": 6,
+"question": "'The Soldier' was written and published during which major war?",
+"options": {
+"A": "World War I",
+"B": "World War II",
+"C": "The Boer War",
+"D": "The American Civil War"
+},
+"answer": "A",
+"explanation": "यह सॉनेट प्रथम विश्व युद्ध (World War I) के प्रारंभिक चरण (1914-1915) के दौरान लिखा गया था।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG06Q015",
+"subject": "english",
+"chapter": 6,
+"question": "Who described Rupert Brooke as 'the handsomest young man in England'?",
+"options": {
+"A": "William Wordsworth",
+"B": "John Milton",
+"C": "W. B. Yeats",
+"D": "John Keats"
+},
+"answer": "C",
+"explanation": "प्रसिद्ध आयरिश कवि डब्ल्यू. बी. येट्स (W. B. Yeats) ने रूपर्ट ब्रुक को इंग्लैंड का सबसे सुंदर युवक कहा था।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG06Q016",
+"subject": "english",
+"chapter": 6,
+"question": "Structurally, 'The Soldier' is a 14-line poem known as a ..........",
+"options": {
+"A": "Ballad",
+"B": "Sonnet",
+"C": "Epic",
+"D": "Elegy"
+},
+"answer": "B",
+"explanation": "चौदह पंक्तियों की नियमित तुकांत कविता को सॉनेट (sonnet) कहा जाता है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG06Q017",
+"subject": "english",
+"chapter": 6,
+"question": "Rupert Brooke belonged to which country?",
+"options": {
+"A": "America",
+"B": "France",
+"C": "England",
+"D": "Germany"
+},
+"answer": "C",
+"explanation": "रूपर्ट ब्रुक इंग्लैंड (ब्रिटेन) के निवासी थे।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG06Q018",
+"subject": "english",
+"chapter": 6,
+"question": "In the poem and in life, Rupert Brooke served as a ..........",
+"options": {
+"A": "teacher",
+"B": "surgeon",
+"C": "jockey",
+"D": "soldier"
+},
+"answer": "D",
+"explanation": "प्रथम विश्व युद्ध के दौरान रूपर्ट ब्रुक ब्रिटिश सेना में एक अधिकारी/सैनिक (soldier) के रूप में तैनात थे।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG06Q019",
+"subject": "english",
+"chapter": 6,
+"question": "Most of Rupert Brooke's war poetry is inspired by deep ..........",
+"options": {
+"A": "love",
+"B": "passion",
+"C": "patriotism",
+"D": "melancholy"
+},
+"answer": "C",
+"explanation": "ब्रुक की युद्ध कविताओं का मुख्य भाव अपनी मातृभूमि के प्रति गहरी देशभक्ति (patriotism) है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG06Q020",
+"subject": "english",
+"chapter": 6,
+"question": "A Petrarchan sonnet is divided into two parts: an octave and a ..........",
+"options": {
+"A": "elegy",
+"B": "alliteration",
+"C": "couplet",
+"D": "sestet"
+},
+"answer": "D",
+"explanation": "सॉनेट के पहले आठ पंक्तियों के भाग को ऑक्टेव और अंतिम छह पंक्तियों के भाग को सेस्टेट (sestet) कहते हैं।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG06Q021",
+"subject": "english",
+"chapter": 6,
+"question": "A sonnet is a lyric poem of exactly .......... lines.",
+"options": {
+"A": "16",
+"B": "14",
+"C": "18",
+"D": "12"
+},
+"answer": "B",
+"explanation": "सॉनेट अनिवार्य रूप से चौदह (14) पंक्तियों की रचना होती है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG06Q022",
+"subject": "english",
+"chapter": 6,
+"question": "Rupert Brooke's reputation chiefly rests on how many famous war sonnets?",
+"options": {
+"A": "Five",
+"B": "Four",
+"C": "Six",
+"D": "Eight"
+},
+"answer": "A",
+"explanation": "रूपर्ट ब्रुक की साहित्यिक ख्याति मुख्य रूप से उनके 1914 में लिखे गए पाँच युद्ध सॉनेट्स (five war sonnets) पर टिकी है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG06Q023",
+"subject": "english",
+"chapter": 6,
+"question": "The poet considers his mortal body as a richer .......... of England.",
+"options": {
+"A": "gem",
+"B": "pearl",
+"C": "part",
+"D": "dust"
+},
+"answer": "D",
+"explanation": "पंक्ति है: 'In that rich earth a richer dust concealed', जहाँ dust सैनिक के शरीर का द्योतक है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG06Q024",
+"subject": "english",
+"chapter": 6,
+"question": "In 'The Soldier', the poet reflects upon the realities and noble sacrifice of ..........",
+"options": {
+"A": "War",
+"B": "Nature",
+"C": "Friendship",
+"D": "Romance"
+},
+"answer": "A",
+"explanation": "यह कविता युद्ध (War) की परिस्थितियों में देश पर प्राण न्योछावर करने वाले सैनिक के त्याग को दर्शाती है।",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG06Q025",
+"subject": "english",
+"chapter": 6,
+"question": "In which year was Rupert Brooke born?",
+"options": {
+"A": "1887",
+"B": "1873",
+"C": "1895",
+"D": "1915"
+},
+"answer": "A",
+"explanation": "कवि रूपर्ट ब्रुक का जन्म सन् 1887 में हुआ था।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG06Q026",
+"subject": "english",
+"chapter": 6,
+"question": "In which year did Rupert Brooke pass away?",
+"options": {
+"A": "1914",
+"B": "1915",
+"C": "1918",
+"D": "1920"
+},
+"answer": "B",
+"explanation": "रूपर्ट ब्रुक का देहांत 23 अप्रैल 1915 को हुआ था।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG06Q027",
+"subject": "english",
+"chapter": 6,
+"question": "What was the cause of Rupert Brooke's untimely death at the age of 27?",
+"options": {
+"A": "Tuberculosis",
+"B": "Bullet injury in battle",
+"C": "Septicaemia (blood poisoning)",
+"D": "Malaria"
+},
+"answer": "C",
+"explanation": "गैलीपोली जाते समय एजियन सागर में सेप्टीसीमिया (रक्त विषाक्तता) के संक्रमण से उनकी मृत्यु हुई थी।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG06Q028",
+"subject": "english",
+"chapter": 6,
+"question": "Near which island in the Aegean Sea did Rupert Brooke die on his way to battle?",
+"options": {
+"A": "Crete",
+"B": "Lemnos",
+"C": "Cyprus",
+"D": "Sicily"
+},
+"answer": "B",
+"explanation": "उनकी मृत्यु एजियन सागर में स्थित लेमनोस (Lemnos) द्वीप के तट के पास हुई थी।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG06Q029",
+"subject": "english",
+"chapter": 6,
+"question": "Where was Rupert Brooke educated before joining King's College, Cambridge?",
+"options": {
+"A": "Rugby School",
+"B": "Eton College",
+"C": "Harrow School",
+"D": "Clarke's School"
+},
+"answer": "A",
+"explanation": "कैम्ब्रिज जाने से पूर्व उन्होंने रग्बी स्कूल (Rugby School) में अपनी आरंभिक शिक्षा प्राप्त की थी।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG06Q030",
+"subject": "english",
+"chapter": 6,
+"question": "What position did Rupert Brooke's father hold at Rugby School?",
+"options": {
+"A": "Headmaster",
+"B": "Librarian",
+"C": "Housemaster",
+"D": "Sports Coach"
+},
+"answer": "C",
+"explanation": "रूपर्ट ब्रुक के पिता रग्बी स्कूल में हाउसमास्टर (housemaster) के पद पर कार्यरत थे।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG06Q031",
+"subject": "english",
+"chapter": 6,
+"question": "What is the rhyme scheme of the Octave (first 8 lines) in 'The Soldier'?",
+"options": {
+"A": "ABAB CDCD",
+"B": "ABBA ABBA",
+"C": "AABB CCDD",
+"D": "ABCD ABCD"
+},
+"answer": "A",
+"explanation": "कविता के ऑक्टेव की तुकांत योजना (rhyme scheme) ABAB CDCD है।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG06Q032",
+"subject": "english",
+"chapter": 6,
+"question": "What is the rhyme scheme of the Sestet (last 6 lines) in 'The Soldier'?",
+"options": {
+"A": "CDE CDE",
+"B": "EFG EFG",
+"C": "EE FF GG",
+"D": "EFE FEF"
+},
+"answer": "B",
+"explanation": "कविता के सेस्टेट की तुकांत योजना EFG EFG है।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG06Q033",
+"subject": "english",
+"chapter": 6,
+"question": "How many times does the word 'England' specifically appear in the poem 'The Soldier'?",
+"options": {
+"A": "Three times",
+"B": "Four times",
+"C": "Five times",
+"D": "Six times"
+},
+"answer": "C",
+"explanation": "कविता में 'England' शब्द का प्रयोग ठीक 5 बार हुआ है।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG06Q034",
+"subject": "english",
+"chapter": 6,
+"question": "How many times does the word 'English' appear in the poem 'The Soldier'?",
+"options": {
+"A": "Two times",
+"B": "Three times",
+"C": "Four times",
+"D": "Five times"
+},
+"answer": "A",
+"explanation": "कविता में 'English' शब्द (English air, English heaven) का प्रयोग 2 बार हुआ है।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG06Q035",
+"subject": "english",
+"chapter": 6,
+"question": "In total, how many times do the words 'England' and 'English' combined appear in 'The Soldier'?",
+"options": {
+"A": "Five times",
+"B": "Six times",
+"C": "Seven times",
+"D": "Eight times"
+},
+"answer": "C",
+"explanation": "पाँच बार 'England' और दो बार 'English' को मिलाकर यह कुल 7 बार प्रयुक्त हुआ है।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG06Q036",
+"subject": "english",
+"chapter": 6,
+"question": "What does the phrase 'A pulse in the eternal mind' signify in the poem?",
+"options": {
+"A": "The soldier's heart beat stopping completely",
+"B": "The purified soul becoming part of the everlasting divine consciousness",
+"C": "A medical condition during battle",
+"D": "A memory of fear and defeat"
+},
+"answer": "B",
+"explanation": "इसका आशय यह है कि मृत्यु के उपरांत सैनिक की आत्मा परमात्मा की शाश्वत अमर चेतना का अभिन्न अंग बन जाती है।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG06Q037",
+"subject": "english",
+"chapter": 6,
+"question": "According to the poet, what did England give him 'once, to love'?",
+"options": {
+"A": "Her books",
+"B": "Her weapons",
+"C": "Her flowers",
+"D": "Her riches"
+},
+"answer": "C",
+"explanation": "पंक्ति है: 'Gave, once, her flowers to love, her ways to roam'।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG06Q038",
+"subject": "english",
+"chapter": 6,
+"question": "The body of the English soldier was 'washed by the rivers' and blest by ..........",
+"options": {
+"A": "suns of home",
+"B": "winds of ocean",
+"C": "stars of heaven",
+"D": "clouds of sky"
+},
+"answer": "A",
+"explanation": "कविता में लिखा है: 'Washed by the rivers, blest by suns of home'।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG06Q039",
+"subject": "english",
+"chapter": 6,
+"question": "In the sestet, what has the soldier's heart shed away after death?",
+"options": {
+"A": "All memories",
+"B": "All friendship",
+"C": "All knowledge",
+"D": "All evil"
+},
+"answer": "D",
+"explanation": "पंक्ति है: 'And think, this heart, all evil shed away' अर्थात् आत्मा समस्त बुराइयों से मुक्त हो जाती है।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG06Q040",
+"subject": "english",
+"chapter": 6,
+"question": "From whom did the soldier learn 'laughter' during his life in England?",
+"options": {
+"A": "Teachers",
+"B": "Friends",
+"C": "Soldiers",
+"D": "Parents"
+},
+"answer": "B",
+"explanation": "कविता में स्पष्ट लिखा है: 'And laughter, learnt of friends'।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG06Q041",
+"subject": "english",
+"chapter": 6,
+"question": "Which of Rupert Brooke's five war sonnets is considered the best and most anthologised?",
+"options": {
+"A": "The Soldier",
+"B": "Peace",
+"C": "Safety",
+"D": "The Dead"
+},
+"answer": "A",
+"explanation": "'The Soldier' उनके पाँच युद्ध सॉनेट्स में सबसे लोकप्रिय, उत्कृष्ट और संकलित कविता है।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG06Q042",
+"subject": "english",
+"chapter": 6,
+"question": "In the line 'In that rich earth a richer dust concealed', what does 'rich earth' refer to?",
+"options": {
+"A": "A field in England",
+"B": "The foreign land/battlefield where he is buried",
+"C": "A graveyard of kings",
+"D": "A flower garden"
+},
+"answer": "B",
+"explanation": "'Rich earth' उस पराई या विदेशी भूमि (foreign field) को संदर्भित करता है जहाँ सैनिक वीरगति को प्राप्त होता है।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG06Q043",
+"subject": "english",
+"chapter": 6,
+"question": "Rupert Brooke was born into what kind of family?",
+"options": {
+"A": "A poor peasant family",
+"B": "A royal family",
+"C": "A well-to-do academic family",
+"D": "A merchant trading family"
+},
+"answer": "C",
+"explanation": "रूपर्ट ब्रुक का जन्म एक संपन्न और सुशिक्षित शैक्षणिक परिवार (well-to-do academic family) में हुआ था।",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG06Q044",
+"subject": "english",
+"chapter": 6,
+"question": "What overall tone characterizes Rupert Brooke's poem 'The Soldier'?",
+"options": {
+"A": "Patriotic, noble, and serene",
+"B": "Angry, violent, and bitter",
+"C": "Pessimistic and terrified",
+"D": "Satirical and mocking"
+},
+"answer": "A",
+"explanation": "कविता का स्वर अत्यधिक देशभक्तिपूर्ण, शांत, आत्मगौरव से परिपूर्ण और गरिमामयी है।",
+"source": "CONCEPT",
+"type": "objective"
 }
+]
+}  
