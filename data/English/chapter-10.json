@@ -1,8 +1,729 @@
 {
-  "_help": "प्रश्न इसी 'questions' list में जोड़ो। हर प्रश्न का format data/question-template.json में देखो। अभी यह list खाली है।",
-  "subject": "english",
-  "chapter": 10,
-  "title": "Poetry Section — My Grandmother's House",
-  "status": "pending-pdf-questions",
-  "questions": []
+"_help": "Prashn isi 'questions' list mein jodo.",
+"subject": "english",
+"chapter": 10,
+"title": "My Grandmother's House",
+"status": "ready",
+"questions": [
+{
+"id": "ENG10Q001",
+"subject": "english",
+"chapter": 10,
+"question": "Who composed the poem 'My Grandmother's House'?",
+"options": {
+"A": "T. S. Eliot",
+"B": "D. H. Lawrence",
+"C": "Keki N. Daruwalla",
+"D": "Kamala Das"
+},
+"answer": "D",
+"explanation": "'My Grandmother's House' prasiddh Indo-Anglian kavyitri Kamala Das dwara rachi gayi aatmkathatmak kavita hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG10Q002",
+"subject": "english",
+"chapter": 10,
+"question": "Who wrote 'The Old Playhouse and Other Poems'?",
+"options": {
+"A": "T. S. Eliot",
+"B": "D. H. Lawrence",
+"C": "Keki N. Daruwalla",
+"D": "Kamala Das"
+},
+"answer": "D",
+"explanation": "'The Old Playhouse and Other Poems' (1973) Kamala Das ka prasiddh kavya-sangrah hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG10Q003",
+"subject": "english",
+"chapter": 10,
+"question": "Who is the author of 'Summer in Kolkata'?",
+"options": {
+"A": "Kamala Das",
+"B": "T. S. Eliot",
+"C": "Manohar Malgaonkar",
+"D": "Dr. Zakir Hussain"
+},
+"answer": "A",
+"explanation": "'Summer in Kolkata' (1963) Kamala Das ki mahatvapurna angrezi rachna hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG10Q004",
+"subject": "english",
+"chapter": 10,
+"question": "Snakes were seen moving among .......... in my grandmother's house.",
+"options": {
+"A": "bed covers",
+"B": "tables",
+"C": "books",
+"D": "chairs"
+},
+"answer": "C",
+"explanation": "Dadi ki mrityu ke baad sunsan ghar mein kitabon ke beech saamp ghoomte huye dekhe gaye the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG10Q005",
+"subject": "english",
+"chapter": 10,
+"question": "Kamala Das remembers the happy days spent in the sweet company of her ..........",
+"options": {
+"A": "mother",
+"B": "father",
+"C": "grandmother",
+"D": "grandfather"
+},
+"answer": "C",
+"explanation": "Kavyitri apne bachpan ke befikra din apni dadi maa (grandmother) ke sneh aur aashirwad mein bitane ko yaad karti hain.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG10Q006",
+"subject": "english",
+"chapter": 10,
+"question": "The poetess in 'My Grandmother's House' begs for love at .......... doors.",
+"options": {
+"A": "friends'",
+"B": "family's",
+"C": "strangers'",
+"D": "enemies'"
+},
+"answer": "C",
+"explanation": "Vaivahik jeevan mein prem na milne par kavyitri ajanabiyon ke darwazon par prem ki bheekh maangti hain.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG10Q007",
+"subject": "english",
+"chapter": 10,
+"question": ".......... lived with her grandmother during her childhood.",
+"options": {
+"A": "Anita Desai",
+"B": "Arundhati Roy",
+"C": "Mahadevi Verma",
+"D": "Kamala Das"
+},
+"answer": "D",
+"explanation": "Kamala Das apne bachpan ke shuruaati saalon mein apni dadi maa ke ghar par unke sath rehti theen.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG10Q008",
+"subject": "english",
+"chapter": 10,
+"question": "'Among books, I was then too young' is taken from which poem?",
+"options": {
+"A": "The Old Playhouse",
+"B": "My Grandmother's House",
+"C": "The Earth",
+"D": "The Artist"
+},
+"answer": "B",
+"explanation": "Yeh pankti 'My Grandmother's House' kavita se li gayi hai jahan weh kitabein na padh paane ka zikr karti hain.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG10Q009",
+"subject": "english",
+"chapter": 10,
+"question": "The poetess's blood turned cold like the ..........",
+"options": {
+"A": "Sun",
+"B": "Stars",
+"C": "Moon",
+"D": "Sky"
+},
+"answer": "C",
+"explanation": "Kitabon ke beech saamp dekhkar aur dadi ke bichhadne ke dar se unka khoon chaand (moon) ki tarah thanda pad gaya tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG10Q010",
+"subject": "english",
+"chapter": 10,
+"question": "'Darkness to bring it here to lie' is from ..........",
+"options": {
+"A": "Snake",
+"B": "The Soldier",
+"C": "My Grandmother's House",
+"D": "Fire-Hymn"
+},
+"answer": "C",
+"explanation": "Yeh pankti 'My Grandmother's House' se hai jisme weh dadi ke ghar ke andhere ko apne kamre mein laana chahti hain.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG10Q011",
+"subject": "english",
+"chapter": 10,
+"question": "The poetess wanted to keep the memories of darkness behind her bedroom door like a brooding ..........",
+"options": {
+"A": "Cat",
+"B": "Dog",
+"C": "Bird",
+"D": "Calf"
+},
+"answer": "B",
+"explanation": "Pankti hai: 'Behind my bedroom's door like a brooding Dog' jo ek wafadar aur chintan-magn kutte ki tarah baithne ka prateek hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG10Q012",
+"subject": "english",
+"chapter": 10,
+"question": "'There is a house now far away where once I received love' is from the poem ..........",
+"options": {
+"A": "The Soldier",
+"B": "To Autumn",
+"C": "Now the Leaves Are Falling Fast",
+"D": "My Grandmother's House"
+},
+"answer": "D",
+"explanation": "Yeh kavita 'My Grandmother's House' ki pehli aur sabse prasiddh shuruaati pankti hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG10Q013",
+"subject": "english",
+"chapter": 10,
+"question": "In the concluding lines of the poem, the poetess is begging for ..........",
+"options": {
+"A": "Money",
+"B": "Jewellery",
+"C": "Love",
+"D": "Food"
+},
+"answer": "C",
+"explanation": "Kavita ke ant mein kavyitri ajanabiyon ke darwaze par sachhe prem (love) ki bheekh maang rahi hain.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG10Q014",
+"subject": "english",
+"chapter": 10,
+"question": "Kamala Das is an eminent .......... poetess.",
+"options": {
+"A": "American",
+"B": "Indo-Anglian",
+"C": "Pakistani",
+"D": "Nigerian"
+},
+"answer": "B",
+"explanation": "Kamala Das bhartiya-angrezi saahitya ki prasiddh Indo-Anglian kavyitri hain.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG10Q015",
+"subject": "english",
+"chapter": 10,
+"question": "'My way and beg now at strangers' doors' is taken from ..........",
+"options": {
+"A": "My Grandmother's House",
+"B": "To Autumn",
+"C": "Fire-Hymn",
+"D": "Summer in Kolkata"
+},
+"answer": "A",
+"explanation": "Yeh pankti 'My Grandmother's House' se li gayi hai jahan weh apne aatmsamman aur prem ki khoj ka varnan karti hain.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG10Q016",
+"subject": "english",
+"chapter": 10,
+"question": "Kamala Das has earned a respectable place in both English and .......... literature.",
+"options": {
+"A": "Sanskrit",
+"B": "Malayalam",
+"C": "Kannada",
+"D": "Tamil"
+},
+"answer": "B",
+"explanation": "Unhone angrezi aur malayalam dono bhashaon ke saahitya mein atyant sammanit sthan prapt kiya.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG10Q017",
+"subject": "english",
+"chapter": 10,
+"question": "In which year was Kamala Das born?",
+"options": {
+"A": "1934",
+"B": "1947",
+"C": "1928",
+"D": "1950"
+},
+"answer": "A",
+"explanation": "Kamala Das ka janam 31 March 1934 ko Punnayurkulam, Kerala mein hua tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q018",
+"subject": "english",
+"chapter": 10,
+"question": "In which year did Kamala Das pass away?",
+"options": {
+"A": "1999",
+"B": "2005",
+"C": "2009",
+"D": "2015"
+},
+"answer": "C",
+"explanation": "Kamala Das ka nidhan 31 May 2009 ko Pune ke ek aspatal mein hua tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q019",
+"subject": "english",
+"chapter": 10,
+"question": "In which year was Kamala Das's autobiography published that created quite a stir?",
+"options": {
+"A": "1963",
+"B": "1973",
+"C": "1976",
+"D": "1984"
+},
+"answer": "C",
+"explanation": "Unki aatmkatha 'My Story' saal 1976 mein prakashit hui thi jisne sahityik jagat mein hulchul macha di thi.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q020",
+"subject": "english",
+"chapter": 10,
+"question": "In which year was Kamala Das shortlisted for the Nobel Prize for Literature?",
+"options": {
+"A": "1976",
+"B": "1984",
+"C": "1996",
+"D": "2001"
+},
+"answer": "B",
+"explanation": "Saal 1984 mein unhe saahitya ke Nobel Prize ke liye shortlist kiya gaya tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q021",
+"subject": "english",
+"chapter": 10,
+"question": "What happened to the grandmother's house immediately after that woman died?",
+"options": {
+"A": "It was sold to strangers",
+"B": "The house withdrew into silence",
+"C": "It caught fire",
+"D": "It collapsed completely"
+},
+"answer": "B",
+"explanation": "Kavita mein likha hai: 'That woman died, The house withdrew into silence'.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q022",
+"subject": "english",
+"chapter": 10,
+"question": "The figure of speech used in 'my blood turned cold like the moon' is a/an ..........",
+"options": {
+"A": "Metaphor",
+"B": "Simile",
+"C": "Personification",
+"D": "Oxymoron"
+},
+"answer": "B",
+"explanation": "'Like' shabd ka prayog karke khoon ki thandak ki tulna chaand se ki gayi hai, atah yeh Simile (upma alankar) hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q023",
+"subject": "english",
+"chapter": 10,
+"question": "The phrase 'blind eyes of windows' is an example of which literary device?",
+"options": {
+"A": "Personification",
+"B": "Hyperbole",
+"C": "Alliteration",
+"D": "Irony"
+},
+"answer": "A",
+"explanation": "Khidkiyon par dhool jami hone ke kaaran unhe 'andhi aankhein' kehkar manvikaran (Personification) kiya gaya hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q024",
+"subject": "english",
+"chapter": 10,
+"question": "How is the air inside the deserted house described by the poetess?",
+"options": {
+"A": "Warm air",
+"B": "Frozen air",
+"C": "Sweet breeze",
+"D": "Smoky air"
+},
+"answer": "B",
+"explanation": "Kavita mein sunsan ghar ke bheetar ki hawa ko 'frozen air' (jami hui thandi hawa) kaha gaya hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q025",
+"subject": "english",
+"chapter": 10,
+"question": "What does the poetess wish to pick and bring back from the house?",
+"options": {
+"A": "An armful of darkness",
+"B": "Some old books",
+"C": "Gold ornaments",
+"D": "A piece of stone"
+},
+"answer": "A",
+"explanation": "Weh apni dadi ke ghar ki yaadon aur shanti ko 'an armful of darkness' ke roop mein samet kar laana chahti hain.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q026",
+"subject": "english",
+"chapter": 10,
+"question": "Whom is the poetess addressing with the word 'darling' in the poem?",
+"options": {
+"A": "Her grandmother",
+"B": "Her husband or partner",
+"C": "Her son",
+"D": "Her childhood friend"
+},
+"answer": "B",
+"explanation": "Kavyitri apne vartaman jeevansathi (husband) ko sambodhit karte huye kehti hain: 'you cannot believe, darling'.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q027",
+"subject": "english",
+"chapter": 10,
+"question": "What did the poetess feel during her stay at her grandmother's house?",
+"options": {
+"A": "Terrified and helpless",
+"B": "Proud and loved",
+"C": "Ashamed and guilty",
+"D": "Greedy and angry"
+},
+"answer": "B",
+"explanation": "Pankti hai: 'that I lived in such a house and Was proud, and loved'.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q028",
+"subject": "english",
+"chapter": 10,
+"question": "What does the metaphor 'in small change' signify in the poem?",
+"options": {
+"A": "Small coins of silver",
+"B": "Love received in tiny bits, gestures, or fragments",
+"C": "Foreign currency",
+"D": "A discount on goods"
+},
+"answer": "B",
+"explanation": "'Small change' chhote sikko ki tarah thoda sa prem ya aatmiyata milne ki aasha ko darshata hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q029",
+"subject": "english",
+"chapter": 10,
+"question": "Which volume of verse was published by Kamala Das in 1967?",
+"options": {
+"A": "The Descendants",
+"B": "Sirens",
+"C": "Yes, Allah",
+"D": "The Anamalai Poems"
+},
+"answer": "A",
+"explanation": "'The Descendants' ka prakashan saal 1967 mein hua tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q030",
+"subject": "english",
+"chapter": 10,
+"question": "Which poetry collection by Kamala Das appeared in 2001?",
+"options": {
+"A": "Sirens",
+"B": "Yes, Allah",
+"C": "Summer in Kolkata",
+"D": "The Descendants"
+},
+"answer": "B",
+"explanation": "'Yes, Allah' saal 2001 mein aayi unki pramukh rachna hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q031",
+"subject": "english",
+"chapter": 10,
+"question": "What is the primary genre and theme of Kamala Das's poetry?",
+"options": {
+"A": "Political and patriotic battles",
+"B": "Autobiographical expression of a lonely heart seeking love",
+"C": "Scientific discoveries and astronomy",
+"D": "Classical comedy"
+},
+"answer": "B",
+"explanation": "Unki kavita mukhya roop se aatmkathatmak hai jo akele dil ki prem ki tadap ko vyakt karti hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q032",
+"subject": "english",
+"chapter": 10,
+"question": "Under which famous pen name did Kamala Das write in Malayalam literature?",
+"options": {
+"A": "Madhavikutty",
+"B": "Torulata",
+"C": "Asha Poorna",
+"D": "Sarojini"
+},
+"answer": "A",
+"explanation": "Malayalam saahitya mein Kamala Das 'Madhavikutty' ke naam se lekh aur kahaniyan likhti theen.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q033",
+"subject": "english",
+"chapter": 10,
+"question": "Why was the speaker unable to read the books in her grandmother's house?",
+"options": {
+"A": "Because the books were locked in a trunk",
+"B": "Because she was then too young to read",
+"C": "Because she did not like reading",
+"D": "Because there was no lamp"
+},
+"answer": "B",
+"explanation": "Kavita mein likha hai: 'I was then too young To read'.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q034",
+"subject": "english",
+"chapter": 10,
+"question": "What does the intrusion of snakes among books primarily symbolize?",
+"options": {
+"A": "A zoo environment",
+"B": "Decay, loneliness, fear, and death invading innocent memories",
+"C": "A celebration of wildlife",
+"D": "Scientific study"
+},
+"answer": "B",
+"explanation": "Kitabon ke beech saanpo ka aana vidhwans, dar aur parivar ke bikharne ka prateek hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q035",
+"subject": "english",
+"chapter": 10,
+"question": "What is the dominant tone of the poem 'My Grandmother's House'?",
+"options": {
+"A": "Humorous and playful",
+"B": "Nostalgic, melancholy, and yearning",
+"C": "Angry and aggressive",
+"D": "Carefree and indifferent"
+},
+"answer": "B",
+"explanation": "Kavita ka mukhya swar dadi ke ghar ki madhur yaadon aur akelepan ke dard (nostalgic and melancholy) se bhara hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q036",
+"subject": "english",
+"chapter": 10,
+"question": "What contrast is explored between the speaker's childhood and her married adulthood?",
+"options": {
+"A": "Poverty vs immense wealth",
+"B": "Unconditional love and security vs emotional isolation and lovelessness",
+"C": "Illiteracy vs higher education",
+"D": "Rural work vs city jobs"
+},
+"answer": "B",
+"explanation": "Bachpan mein mila nishswarth prem aur badappan mein mila akelapan is kavita ka mool virodhabhas hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q037",
+"subject": "english",
+"chapter": 10,
+"question": "Which poetic work was published by Kamala Das in 1964?",
+"options": {
+"A": "Sirens",
+"B": "The Descendants",
+"C": "Yes, Allah",
+"D": "Summer in Kolkata"
+},
+"answer": "A",
+"explanation": "'Sirens' ka prakashan saal 1964 mein hua tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q038",
+"subject": "english",
+"chapter": 10,
+"question": "What is the meaning of the word 'peer' in 'to peer through blind eyes of windows'?",
+"options": {
+"A": "To break completely",
+"B": "To look narrowly or searchingly",
+"C": "To close shut",
+"D": "To paint neatly"
+},
+"answer": "B",
+"explanation": "'Peer' ka arth dhyaan se ya jhaank kar dekhna hota hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q039",
+"subject": "english",
+"chapter": 10,
+"question": "What does the expression 'lost my way' signify in the poem?",
+"options": {
+"A": "Losing geographical road directions",
+"B": "Emotional disorientation and deprivation of true affection",
+"C": "Missing a train",
+"D": "Forgetting one's home address"
+},
+"answer": "B",
+"explanation": "'Lost my way' ka taatparya jeevan mein aatmiya sahare aur nishswarth prem ke kho jaane se hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q040",
+"subject": "english",
+"chapter": 10,
+"question": "Which Indian state is the ancestral homeland of Kamala Das?",
+"options": {
+"A": "Tamil Nadu",
+"B": "Karnataka",
+"C": "Kerala",
+"D": "Maharashtra"
+},
+"answer": "C",
+"explanation": "Kamala Das ka paitrik ghar aur janmasthan Kerala rajya mein tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q041",
+"subject": "english",
+"chapter": 10,
+"question": "What does 'frozen air' emphasize in the context of the grandmother's house?",
+"options": {
+"A": "Air conditioner cooling",
+"B": "Lifeless stillness, absence of warmth, and abandoned quietude",
+"C": "Snow falling inside the house",
+"D": "Fresh mountain breeze"
+},
+"answer": "B",
+"explanation": "Ghar band hone aur dadi ke na rehne se wahan ki hawa thandi, nishkriya aur sunsan ho chuki hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q042",
+"subject": "english",
+"chapter": 10,
+"question": "In the line 'Behind my bedroom's door like a brooding dog', 'brooding' means ..........",
+"options": {
+"A": "Barking loudly",
+"B": "Deeply thoughtful, mournful, and quietly watchful",
+"C": "Chasing cats",
+"D": "Eating food"
+},
+"answer": "B",
+"explanation": "'Brooding' ka arth chintan mein duba hua, shaant aur shok-magn hona hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q043",
+"subject": "english",
+"chapter": 10,
+"question": "What is the antonym of 'stranger' as used in 'strangers' doors'?",
+"options": {
+"A": "Foreigner",
+"B": "Acquaintance / Known person",
+"C": "Intruder",
+"D": "Outsider"
+},
+"answer": "B",
+"explanation": "'Stranger' (ajanabi) ka vipritarthak shabd 'Acquaintance' ya parichit vyakti hota hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q044",
+"subject": "english",
+"chapter": 10,
+"question": "'Only the Soul Knows How to Sing' was published in which year?",
+"options": {
+"A": "1985",
+"B": "1996",
+"C": "2001",
+"D": "1973"
+},
+"answer": "B",
+"explanation": "Yeh sangrah saal 1996 mein prakashit hua tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG10Q045",
+"subject": "english",
+"chapter": 10,
+"question": "What is the core message of Kamala Das's poem 'My Grandmother's House'?",
+"options": {
+"A": "Old village houses should be sold quickly",
+"B": "Childhood love from family is irreplaceable and deeply mourned when lost",
+"C": "Reading books is dangerous due to snakes",
+"D": "One should never live in a large house"
+},
+"answer": "B",
+"explanation": "Kavita ka mool sandesh yahi hai ki bachpan mein dadi se mila nishkapat prem anmol hota hai jise khone ka dard aajiwan rehta hai.",
+"source": "CONCEPT",
+"type": "objective"
 }
+]
+}  
