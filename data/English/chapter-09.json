@@ -1,8 +1,729 @@
 {
-  "_help": "प्रश्न इसी 'questions' list में जोड़ो। हर प्रश्न का format data/question-template.json में देखो। अभी यह list खाली है।",
-  "subject": "english",
-  "chapter": 9,
-  "title": "Poetry Section — Snake",
-  "status": "pending-pdf-questions",
-  "questions": []
+"_help": "Prashn isi 'questions' list mein jodo.",
+"subject": "english",
+"chapter": 9,
+"title": "Snake",
+"status": "ready",
+"questions": [
+{
+"id": "ENG09Q001",
+"subject": "english",
+"chapter": 9,
+"question": "A .......... came to D. H. Lawrence's water-trough to drink water.",
+"options": {
+"A": "donkey",
+"B": "goat",
+"C": "snake",
+"D": "horse"
+},
+"answer": "C",
+"explanation": "Kavi D.H. Lawrence ke water-trough par ek pyasa saamp paani peene aaya tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG09Q002",
+"subject": "english",
+"chapter": 9,
+"question": "The poet was wearing .......... when he saw the snake at the trough.",
+"options": {
+"A": "pyjamas",
+"B": "t-shirt",
+"C": "sweater",
+"D": "jacket"
+},
+"answer": "A",
+"explanation": "Garmi ka din hone ki wajah se kavi ne us samay pyjamas pehna hua tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG09Q003",
+"subject": "english",
+"chapter": 9,
+"question": "The poet had gone down to the water-trough to fetch and drink ..........",
+"options": {
+"A": "water",
+"B": "juice",
+"C": "tea",
+"D": "milk"
+},
+"answer": "A",
+"explanation": "Kavi apne water-trough par ghada lekar paani lene aur peene gaya tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG09Q004",
+"subject": "english",
+"chapter": 9,
+"question": "A snake appears on the trough of the .......... to sip water.",
+"options": {
+"A": "doctor",
+"B": "farmer",
+"C": "soldier",
+"D": "poet"
+},
+"answer": "D",
+"explanation": "Saamp paani peene ke liye kavi (poet - D.H. Lawrence) ki paani ki naand par aaya tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG09Q005",
+"subject": "english",
+"chapter": 9,
+"question": "The speaker (poet) felt a strange desire to .......... to the snake.",
+"options": {
+"A": "shoot",
+"B": "talk",
+"C": "run",
+"D": "shout"
+},
+"answer": "B",
+"explanation": "Kavi ke man mein saamp se baat karne ('longed to talk to him') ki ichha hui thi.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG09Q006",
+"subject": "english",
+"chapter": 9,
+"question": "The snake met the poet near his water ..........",
+"options": {
+"A": "trough",
+"B": "tumbler",
+"C": "pitcher",
+"D": "canal"
+},
+"answer": "A",
+"explanation": "Saamp kavi se uski paani ki naand (water-trough) ke paas mila tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG09Q007",
+"subject": "english",
+"chapter": 9,
+"question": "The snake seemed like a .......... in exile.",
+"options": {
+"A": "prince",
+"B": "king",
+"C": "jack",
+"D": "vagabond"
+},
+"answer": "B",
+"explanation": "Kavi ko saamp paatal lok ke ek nishkasit raja ('king in exile') ki tarah laga.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG09Q008",
+"subject": "english",
+"chapter": 9,
+"question": "The poet compares the snake to a sea bird named ..........",
+"options": {
+"A": "albatross",
+"B": "seagull",
+"C": "swan",
+"D": "eagle"
+},
+"answer": "A",
+"explanation": "Kavi saamp par lathha phenkne ke baad pachhtawe mein uski tulna 'albatross' pakshi se karta hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG09Q009",
+"subject": "english",
+"chapter": 9,
+"question": "Which tree is explicitly mentioned in the poem 'Snake'?",
+"options": {
+"A": "Eucalyptus",
+"B": "Carob tree",
+"C": "Neem tree",
+"D": "Mango tree"
+},
+"answer": "B",
+"explanation": "Kavita mein carob ke bade aur ghane ped ('great dark Carob tree') ka ullekh hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG09Q010",
+"subject": "english",
+"chapter": 9,
+"question": "The poem 'Snake' has been composed by ..........",
+"options": {
+"A": "Rupert Brooke",
+"B": "T. S. Eliot",
+"C": "D. H. Lawrence",
+"D": "John Keats"
+},
+"answer": "C",
+"explanation": "'Snake' kavita prasiddh lekhak aur kavi D. H. Lawrence dwara likhi gayi hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG09Q011",
+"subject": "english",
+"chapter": 9,
+"question": "In .......... according to the poem 'Snake', black snakes are considered innocent.",
+"options": {
+"A": "England",
+"B": "Sicily",
+"C": "France",
+"D": "Italy"
+},
+"answer": "B",
+"explanation": "Sicily mein yeh maanyata thi ki kaale saamp nirdosh hote hain aur sunahre zahreele hote hain.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG09Q012",
+"subject": "english",
+"chapter": 9,
+"question": "Mount Etna, mentioned as smoking in the poem, is situated in ..........",
+"options": {
+"A": "Sicily",
+"B": "Paris",
+"C": "Moscow",
+"D": "Lisbon"
+},
+"answer": "A",
+"explanation": "Etna jwalamukhi Sicily (Italy) mein sthit hai jahan kavi us samay rah rahe the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG09Q013",
+"subject": "english",
+"chapter": 9,
+"question": "'And stooped and drank a little more' is taken from which poem?",
+"options": {
+"A": "Fire-Hymn",
+"B": "Song of Myself",
+"C": "Snake",
+"D": "Ode to Autumn"
+},
+"answer": "C",
+"explanation": "Yeh pankti D. H. Lawrence ki kavita 'Snake' se li gayi hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG09Q014",
+"subject": "english",
+"chapter": 9,
+"question": "'He lifted his head from his drinking, as cattle do' is from ..........",
+"options": {
+"A": "Snake",
+"B": "Song of Myself",
+"C": "Ode to Autumn",
+"D": "An Epitaph"
+},
+"answer": "A",
+"explanation": "Saamp ke paani peete samay sir uthane ki tulna maveshiyon se 'Snake' kavita mein ki gayi hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG09Q015",
+"subject": "english",
+"chapter": 9,
+"question": "D. H. Lawrence exalts the values of .......... life in the poem 'Snake'.",
+"options": {
+"A": "modern",
+"B": "primitive",
+"C": "industrial",
+"D": "urban"
+},
+"answer": "B",
+"explanation": "Lawrence aadhunik dikhawati jeevan ki jagah aadim aur prakritik (primitive) jeevan ke mulyon ki prashansa karte hain.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG09Q016",
+"subject": "english",
+"chapter": 9,
+"question": "'Someone was before me at my water trough; and I, like a second comer, waiting' is from ..........",
+"options": {
+"A": "The Soldier",
+"B": "Snake",
+"C": "Fire-Hymn",
+"D": "An Epitaph"
+},
+"answer": "B",
+"explanation": "Yeh prasiddh pankti 'Snake' kavita ki hai jisme kavi khud ko doosra aane wala mehmaan maante hain.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG09Q017",
+"subject": "english",
+"chapter": 9,
+"question": "The poet experiences a mixed feeling of awe and being .......... the snake.",
+"options": {
+"A": "laughing at",
+"B": "afraid of",
+"C": "running away from",
+"D": "ready to hide from"
+},
+"answer": "B",
+"explanation": "Kavi saamp ki shaan dekhkar aashcharyachakit bhi the aur sath hi usse bhaybheet (afraid of) bhi the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG09Q018",
+"subject": "english",
+"chapter": 9,
+"question": "In which year was D. H. Lawrence born?",
+"options": {
+"A": "1872",
+"B": "1885",
+"C": "1888",
+"D": "1930"
+},
+"answer": "B",
+"explanation": "D. H. Lawrence ka janam 11 September 1885 ko hua tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q019",
+"subject": "english",
+"chapter": 9,
+"question": "In which year did D. H. Lawrence pass away?",
+"options": {
+"A": "1915",
+"B": "1926",
+"C": "1930",
+"D": "1948"
+},
+"answer": "C",
+"explanation": "D. H. Lawrence ka nidhan saal 1930 mein hua tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q020",
+"subject": "english",
+"chapter": 9,
+"question": "D. H. Lawrence grew up in the mining village of Eastwood in ..........",
+"options": {
+"A": "Nottinghamshire",
+"B": "Yorkshire",
+"C": "Kent",
+"D": "London"
+},
+"answer": "A",
+"explanation": "Lawrence ka bachpan Nottinghamshire ke Eastwood naamak khanik gaon mein beeta tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q021",
+"subject": "english",
+"chapter": 9,
+"question": "In his literary writings, D. H. Lawrence emerged as the champion of ..........",
+"options": {
+"A": "intellectual logic",
+"B": "instinct",
+"C": "industrial machines",
+"D": "political systems"
+},
+"answer": "B",
+"explanation": "Lawrence manav ke bheetar ki swabhavik preranaon aur sahaj pravritti (instinct) ke mukhya champion the.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q022",
+"subject": "english",
+"chapter": 9,
+"question": "Which of the following celebrated novels was authored by D. H. Lawrence?",
+"options": {
+"A": "The Waste Land",
+"B": "Sons and Lovers",
+"C": "The Age of Anxiety",
+"D": "Leaves of Grass"
+},
+"answer": "B",
+"explanation": "'Sons and Lovers' (1913) D. H. Lawrence ka vishva-vikhyat upanyas hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q023",
+"subject": "english",
+"chapter": 9,
+"question": "What object did the poet throw at the water-trough to scare the snake?",
+"options": {
+"A": "A sharp spear",
+"B": "A clumsy log",
+"C": "A stone pitcher",
+"D": "An iron rod"
+},
+"answer": "B",
+"explanation": "Kavi ne saamp ke pichhe ek bedhab lakdi ka lathha ('a clumsy log') utha kar phenka tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q024",
+"subject": "english",
+"chapter": 9,
+"question": "From where did the snake emerge to reach the water-trough?",
+"options": {
+"A": "From the roof",
+"B": "From a fissure in the earth-wall",
+"C": "From the water pipeline",
+"D": "From the carob tree branches"
+},
+"answer": "B",
+"explanation": "Saamp mitti ki deewar ki ek daraar ('a fissure in the earth-wall') se nikal kar aaya tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q025",
+"subject": "english",
+"chapter": 9,
+"question": "How is the colour of the Sicilian snake described in the poem?",
+"options": {
+"A": "Pitch black",
+"B": "Earth-brown and earth-golden",
+"C": "Bright green and blue",
+"D": "Pure white"
+},
+"answer": "B",
+"explanation": "Kavita mein saamp ka rang mitti jaisa bhoora aur sunahra ('earth-brown, earth-golden') bataya gaya hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q026",
+"subject": "english",
+"chapter": 9,
+"question": "What did the voice of the poet's social education command him to do?",
+"options": {
+"A": "To feed the snake",
+"B": "To kill the snake",
+"C": "To worship the snake",
+"D": "To capture the snake"
+},
+"answer": "B",
+"explanation": "Kavi ki manviya shiksha aur samajik soch ne use saamp ko maarne ('He must be killed') ke liye kaha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q027",
+"subject": "english",
+"chapter": 9,
+"question": "How did the poet feel immediately after throwing the log at the snake?",
+"options": {
+"A": "Proud and joyful",
+"B": "Deeply regretful and ashamed",
+"C": "Victorious and relieved",
+"D": "Careless and amused"
+},
+"answer": "B",
+"explanation": "Lathha phenkte hi kavi ko turant ghor aatm-glani aur pachhtawa ('immediately I regretted it') hua.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q028",
+"subject": "english",
+"chapter": 9,
+"question": "The poet severely despised his action as being ..........",
+"options": {
+"A": "brave and heroic",
+"B": "paltry, vulgar, and mean",
+"C": "clever and sensible",
+"D": "lawful and divine"
+},
+"answer": "B",
+"explanation": "Kavi ne apne is kanoon-viheen kaam ko tuchh, ashleel aur neech ('paltry, vulgar, mean act') kaha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q029",
+"subject": "english",
+"chapter": 9,
+"question": "The poet condemned the voices of his .......... for urging him to strike.",
+"options": {
+"A": "accursed human education",
+"B": "school teachers",
+"C": "elder brothers",
+"D": "fellow villagers"
+},
+"answer": "A",
+"explanation": "Kavi ne apni shaapit manviya shiksha ('accursed human education') ko kosa jisne use hinsa sikhayi.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q030",
+"subject": "english",
+"chapter": 9,
+"question": "What did the snake do with its tongue while drinking water?",
+"options": {
+"A": "Flickered its two-forked tongue",
+"B": "Bit the edge of the stone",
+"C": "Hissed loudly at the poet",
+"D": "Kept its mouth closed"
+},
+"answer": "A",
+"explanation": "Saamp ne paani peene ke dauran apni kaali do-munhi jeebh ('two-forked tongue') bahar nikaali.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q031",
+"subject": "english",
+"chapter": 9,
+"question": "The snake looked around like an unseeing .......... into the air.",
+"options": {
+"A": "demon",
+"B": "god",
+"C": "warrior",
+"D": "king"
+},
+"answer": "B",
+"explanation": "Kavi likhte hain ki saamp ne hawa mein bina dekhe ek devta ki tarah ('looked around like a god, unseeing') dekha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q032",
+"subject": "english",
+"chapter": 9,
+"question": "The reference to the albatross bird is an allusion to a famous poem by ..........",
+"options": {
+"A": "John Keats",
+"B": "S. T. Coleridge",
+"C": "William Wordsworth",
+"D": "Lord Byron"
+},
+"answer": "B",
+"explanation": "Albatross ka zikr S.T. Coleridge ki prasiddh kavita 'The Rime of the Ancient Mariner' se juda hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q033",
+"subject": "english",
+"chapter": 9,
+"question": "What did the poet realize he had to expiate at the end of the poem?",
+"options": {
+"A": "A grand sin",
+"B": "A pettiness",
+"C": "A major crime",
+"D": "A broken vow"
+},
+"answer": "B",
+"explanation": "Kavita ke aakhiri hisse mein kavi kehte hain ki unhe apni tuchhta ('A pettiness') ka prayashchit karna hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q034",
+"subject": "english",
+"chapter": 9,
+"question": "The poet felt honoured because the snake sought his ..........",
+"options": {
+"A": "protection",
+"B": "hospitality",
+"C": "blessings",
+"D": "shelter"
+},
+"answer": "B",
+"explanation": "Kavi ko garv hua ki saamp ne zameen ke andhere dware se nikal kar unki mehmaannawazi (hospitality) maangi.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q035",
+"subject": "english",
+"chapter": 9,
+"question": "In which month did the speaker's encounter with the snake occur?",
+"options": {
+"A": "January",
+"B": "July",
+"C": "April",
+"D": "December"
+},
+"answer": "B",
+"explanation": "Yeh ghatna Sicily ki tapte huye mahine July ('Sicilian July with Etna smoking') ke din hui thi.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q036",
+"subject": "english",
+"chapter": 9,
+"question": "What occupation did D. H. Lawrence's father pursue?",
+"options": {
+"A": "School master",
+"B": "Coal miner",
+"C": "Village priest",
+"D": "Police officer"
+},
+"answer": "B",
+"explanation": "D. H. Lawrence ke pita koyle ki khadaan mein kaam karne wale kanooni mazdoor (miner) the.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q037",
+"subject": "english",
+"chapter": 9,
+"question": "Which novel among the following was NOT written by D. H. Lawrence?",
+"options": {
+"A": "The Rainbow",
+"B": "The White Peacock",
+"C": "The Great Gatsby",
+"D": "The Plumed Serpent"
+},
+"answer": "C",
+"explanation": "'The Great Gatsby' F. Scott Fitzgerald ka upanyas hai, jabki baki teeno Lawrence dwara likhe gaye hain.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q038",
+"subject": "english",
+"chapter": 9,
+"question": "How did the snake react when the log struck near the water-trough?",
+"options": {
+"A": "It attacked the poet",
+"B": "It convulsed in undignified haste and writhed like lightning",
+"C": "It lay down unconscious",
+"D": "It hissed softly and stayed"
+},
+"answer": "B",
+"explanation": "Lathha phenke jaane par saamp ka bacha hua sharir bijli ki tarah tadap kar tezi se bil mein sama gaya.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q039",
+"subject": "english",
+"chapter": 9,
+"question": "The poet envisions the snake as a king uncrowned in the ..........",
+"options": {
+"A": "heavens",
+"B": "underworld",
+"C": "palace",
+"D": "mountains"
+},
+"answer": "B",
+"explanation": "Kavi ne saamp ko paatal lok ('uncrowned in the underworld') ka be-taj badshah maana hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q040",
+"subject": "english",
+"chapter": 9,
+"question": "What utensil was the poet carrying when he came down the steps?",
+"options": {
+"A": "A bronze cup",
+"B": "A pitcher",
+"C": "An iron bucket",
+"D": "A glass tumbler"
+},
+"answer": "B",
+"explanation": "Kavi paani bharne ke liye apne haath mein ghada ('pitcher') lekar seedhiyon se utra tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q041",
+"subject": "english",
+"chapter": 9,
+"question": "What does D. H. Lawrence strongly denounce through the poem 'Snake'?",
+"options": {
+"A": "Primitive nature",
+"B": "Shams and artificialities of modern civilized life",
+"C": "Wild jungle animals",
+"D": "Rural lifestyle"
+},
+"answer": "B",
+"explanation": "Lawrence aadhunik sabhyata ke jhoothe aadarsho aur banawatipan ki kadi ninda karte hain.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q042",
+"subject": "english",
+"chapter": 9,
+"question": "How did the snake sip water from the dripping tap?",
+"options": {
+"A": "With violent thrashing",
+"B": "Softly through its straight gums and mouth",
+"C": "Using its curled tail",
+"D": "By rolling on the ground"
+},
+"answer": "B",
+"explanation": "Saamp ne shaanti se apne seedhe masoodon aur munh se paani ki chuski li.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q043",
+"subject": "english",
+"chapter": 9,
+"question": "What central conflict is explored in D. H. Lawrence's 'Snake'?",
+"options": {
+"A": "War between nations",
+"B": "Inner conflict between social conditioning and natural instinct",
+"C": "Class divide between rich and poor",
+"D": "Dispute over natural resources"
+},
+"answer": "B",
+"explanation": "Kavita mein manav ki samajik shiksha aur aatmik sahaj pravritti ke beech ka dwandv dikhaya gaya hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q044",
+"subject": "english",
+"chapter": 9,
+"question": "What is the meaning of the word 'fissure' in the poem?",
+"options": {
+"A": "A narrow crack or split opening",
+"B": "A water spring",
+"C": "A stone bowl",
+"D": "A thick wooden stick"
+},
+"answer": "A",
+"explanation": "'Fissure' ka arth deewar ya chattano mein bani patli daraar ya chhidra hota hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG09Q045",
+"subject": "english",
+"chapter": 9,
+"question": "What is the most suitable antonym of 'pettiness' as used in the poem?",
+"options": {
+"A": "Meanness",
+"B": "Magnanimity",
+"C": "Cowardice",
+"D": "Rudeness"
+},
+"answer": "B",
+"explanation": "'Pettiness' (tuchhta/chhotapan) ka sahi vipritarthak shabd 'Magnanimity' (udaarta/badaapan) hota hai.",
+"source": "CONCEPT",
+"type": "objective"
+}
+]
 }
