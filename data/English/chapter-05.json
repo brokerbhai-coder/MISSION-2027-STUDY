@@ -1,8 +1,729 @@
 {
-  "_help": "प्रश्न इसी 'questions' list में जोड़ो। हर प्रश्न का format data/question-template.json में देखो। अभी यह list खाली है।",
-  "subject": "english",
-  "chapter": 5,
-  "title": "Poetry Section — An Epitaph",
-  "status": "pending-pdf-questions",
-  "questions": []
+"_help": "प्रश्न इसी 'questions' list में जोड़ो।",
+"subject": "english",
+"chapter": 5,
+"title": "AN EPITAPH",
+"status": "ready",
+"questions": [
+{
+"id": "ENG05Q001",
+"subject": "english",
+"chapter": 5,
+"question": "Walter De La Mare composed the poem ..........",
+"options": {
+"A": "Song of Myself",
+"B": "An Epitaph",
+"C": "Sweetest Love I Do Not Goe",
+"D": "The Soldier"
+},
+"answer": "B",
+"explanation": "'An Epitaph' प्रसिद्ध ब्रिटिश कवि वाल्टर डी ला मेर (Walter De La Mare) द्वारा रचित है。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG05Q002",
+"subject": "english",
+"chapter": 5,
+"question": "In which year was Walter De La Mare born?",
+"options": {
+"A": "1873",
+"B": "1874",
+"C": "1885",
+"D": "1956"
+},
+"answer": "A",
+"explanation": "वाल्टर डी ला मेर का जन्म सन् 1873 में हुआ था。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG05Q003",
+"subject": "english",
+"chapter": 5,
+"question": "In which year did Walter De La Mare pass away?",
+"options": {
+"A": "1956",
+"B": "1923",
+"C": "1937",
+"D": "1953"
+},
+"answer": "A",
+"explanation": "वाल्टर डी ला मेर की मृत्यु सन् 1956 में हुई थी。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG05Q004",
+"subject": "english",
+"chapter": 5,
+"question": "Walter De La Mare is particularly famous as a ..........",
+"options": {
+"A": "War poet",
+"B": "Children's poet",
+"C": "Romantic poet",
+"D": "Nature poet"
+},
+"answer": "B",
+"explanation": "वाल्टर डी ला मेर बच्चों की कल्पनाशीलता और सपनों की दुनिया का चित्रण करने के कारण 'Children's poet' के रूप में विख्यात हैं。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG05Q005",
+"subject": "english",
+"chapter": 5,
+"question": "Walter De La Mare lost his father at the age of ..........",
+"options": {
+"A": "Ten",
+"B": "Seven",
+"C": "Three",
+"D": "Four"
+},
+"answer": "D",
+"explanation": "मात्र चार वर्ष की अल्पायु में उनके पिता का निधन हो गया था。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG05Q006",
+"subject": "english",
+"chapter": 5,
+"question": "Who is 'I' in the poem 'An Epitaph'?",
+"options": {
+"A": "The poet",
+"B": "The lady",
+"C": "The grave",
+"D": "The reader"
+},
+"answer": "A",
+"explanation": "कविता में 'I' शब्द का प्रयोग स्वयं कवि (वाल्टर डी ला मेर) के लिए हुआ है。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG05Q007",
+"subject": "english",
+"chapter": 5,
+"question": "In which year was Walter De La Mare awarded the 'Order of Merit'?",
+"options": {
+"A": "1950",
+"B": "1951",
+"C": "1952",
+"D": "1953"
+},
+"answer": "D",
+"explanation": "महारानी एलिजाबेथ द्वितीय ने सन् 1953 में उन्हें प्रतिष्ठित 'Order of Merit' से सम्मानित किया था。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG05Q008",
+"subject": "english",
+"chapter": 5,
+"question": "The famous literary work 'Peacock Pie' was written by ..........",
+"options": {
+"A": "T.S. Eliot",
+"B": "Walter De La Mare",
+"C": "John Keats",
+"D": "Keki N. Daruwalla"
+},
+"answer": "B",
+"explanation": "'Peacock Pie' बच्चों के लिए लिखी गई वाल्टर डी ला मेर की प्रसिद्ध काव्य कृति है。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG05Q009",
+"subject": "english",
+"chapter": 5,
+"question": "An 'epitaph' refers to ..........",
+"options": {
+"A": "an inscription on a tomb",
+"B": "an inscription on a house",
+"C": "an inscription on a boundary",
+"D": "an inscription on a wall"
+},
+"answer": "A",
+"explanation": "मृत व्यक्ति की याद में उसकी समाधि/कब्र पर लिखे गए लेख को 'Epitaph' (समाधि-लेख) कहते हैं。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG05Q010",
+"subject": "english",
+"chapter": 5,
+"question": "Walter De La Mare makes us aware of the ..........",
+"options": {
+"A": "inhuman conditions of modern life",
+"B": "poverty of ancient times",
+"C": "inhuman conditions of ancient life",
+"D": "London lifestyle"
+},
+"answer": "A",
+"explanation": "कवि हमें आधुनिक जीवन की संवेदनहीन और अमानवीय परिस्थितियों (inhuman conditions of modern life) के प्रति सचेत करते हैं。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG05Q011",
+"subject": "english",
+"chapter": 5,
+"question": "The general tone of the poem 'An Epitaph' is ..........",
+"options": {
+"A": "happy",
+"B": "melancholy",
+"C": "romantic",
+"D": "humorous"
+},
+"answer": "B",
+"explanation": "मृत्यु और सौंदर्य की क्षणभंगुरता पर आधारित होने के कारण कविता का भाव उदास और चिंतनशील (melancholy) है。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG05Q012",
+"subject": "english",
+"chapter": 5,
+"question": "Where does the beautiful lady lie in the poem?",
+"options": {
+"A": "In a graveyard / tomb",
+"B": "In a bed",
+"C": "In a public park",
+"D": "In a hotel"
+},
+"answer": "A",
+"explanation": "वह सुंदर महिला अब जीवित नहीं है, वह कब्रिस्तान में अपनी कब्र (graveyard/tomb) में विश्राम कर रही है。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG05Q013",
+"subject": "english",
+"chapter": 5,
+"question": ".......... is an inscription on a tomb in memory of the dead.",
+"options": {
+"A": "An Epitaph",
+"B": "Song of Myself",
+"C": "Macavity: The Mystery Cat",
+"D": "Fire-Hymn"
+},
+"answer": "A",
+"explanation": "समाधि पर मृत व्यक्ति के सम्मान में लिखे गए लेख को 'An Epitaph' कहा जाता है。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG05Q014",
+"subject": "english",
+"chapter": 5,
+"question": "Who was described as 'light of step and heart'?",
+"options": {
+"A": "A most beautiful lady",
+"B": "An ugly lady",
+"C": "An old lady",
+"D": "A mad lady"
+},
+"answer": "A",
+"explanation": "कवि ने वेस्ट कंट्री की अत्यंत सुंदर महिला को 'light of step and heart' कहा है。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG05Q015",
+"subject": "english",
+"chapter": 5,
+"question": "Who is lying dead inside the grave in 'An Epitaph'?",
+"options": {
+"A": "A beautiful lady",
+"B": "A beautiful girl",
+"C": "An ordinary actress",
+"D": "The poet's mother"
+},
+"answer": "A",
+"explanation": "कब्र में पश्चिमी प्रदेश (West Country) की सबसे सुंदर महिला दफन है。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG05Q016",
+"subject": "english",
+"chapter": 5,
+"question": "What is rare in the world, yet not permanent?",
+"options": {
+"A": "Physical beauty",
+"B": "Ugliness",
+"C": "Sadness",
+"D": "Hatred"
+},
+"answer": "A",
+"explanation": "शारीरिक सुंदरता (beauty) चाहे कितनी भी दुर्लभ क्यों न हो, वह नश्वर और अस्थायी होती है。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG05Q017",
+"subject": "english",
+"chapter": 5,
+"question": ""Beauty vanishes, beauty passes" is an expression taken from ..........",
+"options": {
+"A": "An Epitaph by Walter De La Mare",
+"B": "The Soldier by Rupert Brooke",
+"C": "Song of Myself by Walt Whitman",
+"D": "Ode to Autumn by John Keats"
+},
+"answer": "A",
+"explanation": "यह प्रसिद्ध दार्शनिक विचार वाल्टर डी ला मेर की कविता 'An Epitaph' से लिया गया है。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG05Q018",
+"subject": "english",
+"chapter": 5,
+"question": "The poet worries that nobody will .......... the lady after his death.",
+"options": {
+"A": "laugh at",
+"B": "call",
+"C": "invite",
+"D": "remember"
+},
+"answer": "D",
+"explanation": "कवि को चिंता है कि उसकी अपनी मृत्यु के बाद उस महिला को कोई याद (remember) नहीं रखेगा。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG05Q019",
+"subject": "english",
+"chapter": 5,
+"question": "In which region was such a beautiful lady said to have lived?",
+"options": {
+"A": "East Country",
+"B": "West Country",
+"C": "South Country",
+"D": "North Country"
+},
+"answer": "B",
+"explanation": "कविता में स्पष्ट उल्लेख है कि वह महिला 'West Country' (इंग्लैंड के पश्चिमी भाग) की थी。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG05Q020",
+"subject": "english",
+"chapter": 5,
+"question": ""And when I crumble, who will remember?" has been taken from ..........",
+"options": {
+"A": "An Epitaph",
+"B": "Fire-Hymn",
+"C": "Snake",
+"D": "Song of Myself"
+},
+"answer": "A",
+"explanation": "यह पंक्ति वाल्टर डी ला मेर की रचना 'An Epitaph' की अंतिम पंक्तियों में से एक है。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG05Q021",
+"subject": "english",
+"chapter": 5,
+"question": "Who poses the question: "When I crumble, who will remember?"",
+"options": {
+"A": "The poet",
+"B": "The lady",
+"C": "The gravedigger",
+"D": "The passerby"
+},
+"answer": "A",
+"explanation": "यह प्रश्न स्वयं कवि (वाल्टर डी ला मेर) अपनी और महिला की नश्वरता पर विचार करते हुए पूछते हैं。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG05Q022",
+"subject": "english",
+"chapter": 5,
+"question": "In 'An Epitaph', Walter De La Mare expresses deep grief and sorrow for a ..........",
+"options": {
+"A": "neighbour",
+"B": "boy-friend",
+"C": "lady",
+"D": "relative"
+},
+"answer": "C",
+"explanation": "कवि वेस्ट कंट्री की उस मृत सुंदर महिला (lady) के प्रति अपनी उदासी और संवेदना व्यक्त करते हैं。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG05Q023",
+"subject": "english",
+"chapter": 5,
+"question": "Which prestigious decoration was conferred on Walter De La Mare in 1953?",
+"options": {
+"A": "Sahitya Akademi Award",
+"B": "Order of Maturity",
+"C": "Order of Merit",
+"D": "Nobel Prize"
+},
+"answer": "C",
+"explanation": "1953 में ब्रिटिश राजमुकुट द्वारा उन्हें 'Order of Merit' से अलंकृत किया गया था。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG05Q024",
+"subject": "english",
+"chapter": 5,
+"question": "Walter De La Mare primarily belonged to which century?",
+"options": {
+"A": "18th century",
+"B": "19th century",
+"C": "20th century",
+"D": "17th century"
+},
+"answer": "C",
+"explanation": "वाल्टर डी ला मेर का प्रमुख साहित्यिक जीवन और देहांत 20वीं शताब्दी (1956) में हुआ。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG05Q025",
+"subject": "english",
+"chapter": 5,
+"question": "What is the meaning of the word 'vanishes'?",
+"options": {
+"A": "Appears",
+"B": "Disappears",
+"C": "Unhappy",
+"D": "Happy"
+},
+"answer": "B",
+"explanation": "'Vanish' का अर्थ गायब हो जाना, लुप्त हो जाना या नष्ट होना (disappear) होता है。",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG05Q026",
+"subject": "english",
+"chapter": 5,
+"question": "Which monarch conferred the Order of Merit on Walter De La Mare in 1953?",
+"options": {
+"A": "Queen Victoria",
+"B": "Queen Elizabeth II",
+"C": "King George VI",
+"D": "King Edward VII"
+},
+"answer": "B",
+"explanation": "महारानी एलिजाबेथ द्वितीय (Queen Elizabeth II) ने 1953 में उन्हें यह सम्मान प्रदान किया था。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG05Q027",
+"subject": "english",
+"chapter": 5,
+"question": "In which village of Kent, England was Walter De La Mare born?",
+"options": {
+"A": "Charlton",
+"B": "Stratford",
+"C": "Enfield",
+"D": "Camden"
+},
+"answer": "A",
+"explanation": "कवि का जन्म इंग्लैंड के केंट प्रांत के चार्लटन (Charlton) गाँव में हुआ था。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG05Q028",
+"subject": "english",
+"chapter": 5,
+"question": "To which city did the poet move with his family after his father's death?",
+"options": {
+"A": "Oxford",
+"B": "Cambridge",
+"C": "London",
+"D": "Manchester"
+},
+"answer": "C",
+"explanation": "पिता की मृत्यु के बाद चार वर्ष की आयु में उन्हें परिवार सहित लंदन जाना पड़ा。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG05Q029",
+"subject": "english",
+"chapter": 5,
+"question": "Besides the world of children, what other theme is Walter De La Mare famous for depicting?",
+"options": {
+"A": "The world of politics",
+"B": "The world of the supernatural",
+"C": "Industrial revolutions",
+"D": "Modern warfare"
+},
+"answer": "B",
+"explanation": "वे बच्चों के संसार के साथ-साथ अलौकिक व रहस्यमयी विषयों (world of the supernatural) के लिए जाने जाते हैं。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG05Q030",
+"subject": "english",
+"chapter": 5,
+"question": "Along with 'Peacock Pie', which collection by the poet depicts a world of dreams?",
+"options": {
+"A": "Songs for Children",
+"B": "Songs of Innocence",
+"C": "Lyrical Ballads",
+"D": "Leaves of Grass"
+},
+"answer": "A",
+"explanation": "'Songs for Children' और 'Peacock Pie' दोनों सपनों की अनोखी दुनिया का चित्रण करते हैं。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG05Q031",
+"subject": "english",
+"chapter": 5,
+"question": "In the line 'And when I crumble', the word 'crumble' refers to ..........",
+"options": {
+"A": "falling down in fatigue",
+"B": "the poet's death and physical decay",
+"C": "crying in despair",
+"D": "losing one's wealth"
+},
+"answer": "B",
+"explanation": "'Crumble' का लाक्षणिक अर्थ कवि की स्वयं की मृत्यु और शरीर के मिट्टी में मिल जाने से है。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG05Q032",
+"subject": "english",
+"chapter": 5,
+"question": "What is the poetic ambiguity in the phrase 'light of step and heart'?",
+"options": {
+"A": "The lady walked delicately and had a cheerful, kind nature",
+"B": "The lady was weak, dizzy, and sick",
+"C": "The lady carried a lamp while walking",
+"D": "The lady could fly in the air"
+},
+"answer": "A",
+"explanation": "यह पद महिला की चाल की शारीरिक सौम्यता और उसके आंतरिक प्रसन्न व दयालु स्वभाव दोनों को दर्शाता है。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG05Q033",
+"subject": "english",
+"chapter": 5,
+"question": "What moral or philosophical message does 'An Epitaph' convey?",
+"options": {
+"A": "Physical beauty is eternal and never dies",
+"B": "External beauty is transitory; noble deeds and virtues endure",
+"C": "Monuments should only be built for kings",
+"D": "Memory of beauty never fades away"
+},
+"answer": "B",
+"explanation": "कविता सिखाती है कि शारीरिक रूप-रंग क्षणभंगुर है, केवल श्रेष्ठ कर्म और सद्गुण ही स्थायी होते हैं。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG05Q034",
+"subject": "english",
+"chapter": 5,
+"question": "The poem 'An Epitaph' is ironical because ..........",
+"options": {
+"A": "despite her incomparable beauty, the lady will eventually be forgotten",
+"B": "the poet did not know the lady at all",
+"C": "the lady was actually very cruel",
+"D": "the epitaph was written on a wrong grave"
+},
+"answer": "A",
+"explanation": "विडंबना यह है कि इतनी अनुपम सुंदरता होने के बावजूद मृत्यु के बाद उसके हमेशा के लिए भुला दिए जाने की संभावना है。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG05Q035",
+"subject": "english",
+"chapter": 5,
+"question": "In 'However, rare - rare it be', the repetition of 'rare' emphasizes the ..........",
+"options": {
+"A": "ordinary nature of the world",
+"B": "extraordinary and exceptional quality of her beauty",
+"C": "poet's lack of vocabulary",
+"D": "distance of the West Country"
+},
+"answer": "B",
+"explanation": "'Rare' शब्द का दोहराव यह दर्शाता है कि उस महिला का सौंदर्य अत्यंत असाधारण और अद्वितीय था。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG05Q036",
+"subject": "english",
+"chapter": 5,
+"question": "How many lines does the poem 'An Epitaph' contain in total?",
+"options": {
+"A": "6 lines",
+"B": "8 lines",
+"C": "12 lines",
+"D": "14 lines"
+},
+"answer": "B",
+"explanation": "'An Epitaph' एक अत्यंत संक्षिप्त और प्रभावशाली 8 पंक्तियों (eight lines) की कविता है。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG05Q037",
+"subject": "english",
+"chapter": 5,
+"question": "What does the geographical expression 'West Country' mean?",
+"options": {
+"A": "The western region of England",
+"B": "The United States of America",
+"C": "Western European nations",
+"D": "Western Australia"
+},
+"answer": "A",
+"explanation": "'West Country' इंग्लैंड के दक्षिण-पश्चिमी ग्रामीण क्षेत्र को संदर्भित करता है。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG05Q038",
+"subject": "english",
+"chapter": 5,
+"question": "What is the antonym of the word 'Crumble' in the context of survival?",
+"options": {
+"A": "Disintegrate",
+"B": "Perish",
+"C": "Endure / Survive",
+"D": "Decay"
+},
+"answer": "C",
+"explanation": "'Crumble' (नष्ट होकर बिखर जाना) का विलोम शब्द 'Endure' (बने रहना या टिकना) है。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG05Q039",
+"subject": "english",
+"chapter": 5,
+"question": "In 'Light of step and heart was she', which part of speech is 'Light'?",
+"options": {
+"A": "Noun",
+"B": "Adjective",
+"C": "Verb",
+"D": "Adverb"
+},
+"answer": "B",
+"explanation": "यहाँ 'Light' महिला के स्वभाव और कदमों की विशेषता बताने वाला विशेषण (Adjective) है。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG05Q040",
+"subject": "english",
+"chapter": 5,
+"question": "Why does the poet express concern about the lady after his own demise?",
+"options": {
+"A": "Because he is the only one who keeps her memory alive",
+"B": "Because she owed him money",
+"C": "Because her relatives will demolish her tomb",
+"D": "Because nobody knew where she lived"
+},
+"answer": "A",
+"explanation": "कवि ही एकमात्र व्यक्ति है जो उसे याद करता है; उसके जाने के बाद कोई उसे स्मरण करने वाला नहीं बचेगा。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG05Q041",
+"subject": "english",
+"chapter": 5,
+"question": "The tone of melancholia in Walter De La Mare's poetry highlights ..........",
+"options": {
+"A": "the sadness behind dreams and human transience",
+"B": "his anger towards nature",
+"C": "his hatred of children",
+"D": "his rejection of art"
+},
+"answer": "A",
+"explanation": "उनकी कविताओं में उदासी का पुट मानवीय अस्तित्व की नश्वरता और समय के प्रवाह को दर्शाता है。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG05Q042",
+"subject": "english",
+"chapter": 5,
+"question": "What is the primary poetic form of 'An Epitaph'?",
+"options": {
+"A": "A short elegiac lyric",
+"B": "An epic narrative",
+"C": "A comedic satire",
+"D": "A pastoral ode"
+},
+"answer": "A",
+"explanation": "यह मृत्यु और शोक पर केंद्रित एक संक्षिप्त शोक-गीत रूपी भावपूर्ण रचना (elegiac lyric) है。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG05Q043",
+"subject": "english",
+"chapter": 5,
+"question": ""Here lies a most beautiful lady" indicates that the lady is ..........",
+"options": {
+"A": "sleeping at home",
+"B": "dead and buried in her grave",
+"C": "relaxing in a meadow",
+"D": "hiding in a shelter"
+},
+"answer": "B",
+"explanation": "'Here lies' समाधि का पारंपरिक वाक्य है जो दर्शाता है कि महिला मर चुकी है और दफन है。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG05Q044",
+"subject": "english",
+"chapter": 5,
+"question": "Walter De La Mare shows his genius by evincing fresh interest in ..........",
+"options": {
+"A": "industrial machines",
+"B": "old themes",
+"C": "political elections",
+"D": "scientific theories"
+},
+"answer": "B",
+"explanation": "कवि पुराने पारंपरिक विषयों (old themes) में नए दृष्टिकोण और नवीन रुचि जगाकर अपनी प्रतिभा सिद्ध करते हैं。",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG05Q045",
+"subject": "english",
+"chapter": 5,
+"question": "According to the poet, what ultimately conquers external human charm and beauty?",
+"options": {
+"A": "Time and mortality",
+"B": "Gold and wealth",
+"C": "Kings and armies",
+"D": "Pride and vanity"
+},
+"answer": "A",
+"explanation": "समय (Time) और मृत्यु (Mortality) के आगे संसार का कोई भी शारीरिक सौंदर्य स्थायी नहीं रह सकता。",
+"source": "CONCEPT",
+"type": "objective"
 }
+]
+}  
