@@ -1,8 +1,1065 @@
 {
-  "_help": "प्रश्न इसी 'questions' list में जोड़ो। हर प्रश्न का format data/question-template.json में देखो। अभी यह list खाली है।",
-  "subject": "english",
-  "chapter": 11,
-  "title": "Prose Section — Indian Civilization and Culture",
-  "status": "pending-pdf-questions",
-  "questions": []
+"_help": "Prashn isi 'questions' list mein jodo.",
+"subject": "english",
+"chapter": 11,
+"title": "Indian Civilization & Culture",
+"status": "ready",
+"questions": [
+{
+"id": "ENG11Q001",
+"subject": "english",
+"chapter": 11,
+"question": "Modern civilization is primarily the worship of ..........",
+"options": {
+"A": "material",
+"B": "ethical",
+"C": "brotherhood",
+"D": "equality"
+},
+"answer": "A",
+"explanation": "Mahatma Gandhi kehte hain ki aadhunik sabhyata mukhya roop se bhautikta (material) aur aish-o-aaram ki pooja hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q002",
+"subject": "english",
+"chapter": 11,
+"question": "Our forefathers did not invent machinery because ..........",
+"options": {
+"A": "these would have made us lazy and slaves",
+"B": "these would have made us smart",
+"C": "these would have made us proud",
+"D": "these would have made us intelligent"
+},
+"answer": "A",
+"explanation": "Hamare purvaj jante the ki yadi hum machino ke peechhe bhagenge to hum aalasi ban jayenge aur unke gulam ho jayenge.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q003",
+"subject": "english",
+"chapter": 11,
+"question": "'Observing all this, our ancestors dissuaded us from luxuries and pleasures' is from ..........",
+"options": {
+"A": "A Pinch of Snuff",
+"B": "The Earth",
+"C": "Indian Civilization and Culture",
+"D": "India Through a Traveller's Eyes"
+},
+"answer": "C",
+"explanation": "Yeh prasiddh pankti Mahatma Gandhi ke nibandh 'Indian Civilization and Culture' se li gayi hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q004",
+"subject": "english",
+"chapter": 11,
+"question": ".......... were the rulers of ancient Egypt.",
+"options": {
+"A": "Czars",
+"B": "Pharaohs",
+"C": "Sultans",
+"D": "Kaisers"
+},
+"answer": "B",
+"explanation": "Pracheen Misr (Egypt) ke shashakon ko Pharaohs kaha jata tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q005",
+"subject": "english",
+"chapter": 11,
+"question": "Pharaohs ruled over ancient ..........",
+"options": {
+"A": "France",
+"B": "Egypt",
+"C": "India",
+"D": "Greece"
+},
+"answer": "B",
+"explanation": "Pharaohs pracheen Misr (Egypt) par shashan karte the jinki shakti samay ke sath nasht ho gayi.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q006",
+"subject": "english",
+"chapter": 11,
+"question": "'Simple living and high thinking' is the foundation of ..........",
+"options": {
+"A": "Indian Civilization",
+"B": "Mesopotamian Civilization",
+"C": "American Civilization",
+"D": "European Civilization"
+},
+"answer": "A",
+"explanation": "'Sada jeevan aur uchha vichar' (Simple living and high thinking) Bhartiya sabhyata ka mool aadhar hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q007",
+"subject": "english",
+"chapter": 11,
+"question": "The moral values of .......... are glittering and intact even today.",
+"options": {
+"A": "Indian civilization",
+"B": "Roman civilization",
+"C": "Greek civilization",
+"D": "Chinese civilization"
+},
+"answer": "A",
+"explanation": "Duniya ki anya pracheen sabhyataon ke vinash ke bawajood Bhartiya sabhyata ki neev aaj bhi chamak rahi hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q008",
+"subject": "english",
+"chapter": 11,
+"question": "'Plain living and high thinking' is the motto of a celebrated ..........",
+"options": {
+"A": "Eastern philosopher",
+"B": "Western philosopher",
+"C": "Indian philosopher",
+"D": "British politician"
+},
+"answer": "B",
+"explanation": "Gandhi ji batate hain ki 'Plain living and high thinking' ek prasiddh Western philosopher ka niyam/motto raha hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q009",
+"subject": "english",
+"chapter": 11,
+"question": "Gandhiji warned that for India to run after the Golden Fleece is to court certain ..........",
+"options": {
+"A": "victory",
+"B": "progress",
+"C": "death",
+"D": "wealth"
+},
+"answer": "C",
+"explanation": "Bhartiya drishtikon chhodkar bhautikta ke peechhe bhagna Bharat ke liye nishchit vinash ya maut bulana hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q010",
+"subject": "english",
+"chapter": 11,
+"question": "In the essay, Mahatma Gandhi explicitly clarifies: 'I am no hater of the ..........'",
+"options": {
+"A": "East",
+"B": "North",
+"C": "South",
+"D": "West"
+},
+"answer": "D",
+"explanation": "Gandhi ji spasht karte hain ki weh pashchim (West) se nafrat nahi karte, balki uski achhi baatein sikhne ke samarthak hain.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q011",
+"subject": "english",
+"chapter": 11,
+"question": "Our civilization, our culture, and our .......... depend not upon multiplying our wants.",
+"options": {
+"A": "desires",
+"B": "knowledge",
+"C": "Swaraj",
+"D": "wisdom"
+},
+"answer": "C",
+"explanation": "Hamari sabhyata aur hamara Swaraj ichhaon ko badhane par nahi, balki un par aatm-niyantran rakhne par nirbhar karta hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q012",
+"subject": "english",
+"chapter": 11,
+"question": "Sacrifice was the sole aim and ideal of our ancient ..........",
+"options": {
+"A": "Rishis",
+"B": "freedom fighters",
+"C": "scientists",
+"D": "engineers"
+},
+"answer": "A",
+"explanation": "Hamare rishiyon aur muniyon ka mukhya dhyey tyaag (sacrifice) aur aatm-shuddhi tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q013",
+"subject": "english",
+"chapter": 11,
+"question": "'My Experiments with Truth' was written by ..........",
+"options": {
+"A": "Mahatma Gandhi",
+"B": "Netaji Subhash Chandra Bose",
+"C": "Dr. Rajendra Prasad",
+"D": "Jawaharlal Nehru"
+},
+"answer": "A",
+"explanation": "'My Experiments with Truth' Mahatma Gandhi ki vishva-prasiddh aatmkatha (autobiography) hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q014",
+"subject": "english",
+"chapter": 11,
+"question": "Mahatma Gandhi was more of a .......... leader than a conventional politician.",
+"options": {
+"A": "military",
+"B": "business",
+"C": "diplomatic",
+"D": "spiritual"
+},
+"answer": "D",
+"explanation": "Gandhi ji ek rajneeta ki tulna mein ek mahan aadhyatmik neta (spiritual leader) the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q015",
+"subject": "english",
+"chapter": 11,
+"question": "Who is affectionately revered as the Father of the Nation in India?",
+"options": {
+"A": "Jawaharlal Nehru",
+"B": "Mahatma Gandhi",
+"C": "Dr. Rajendra Prasad",
+"D": "Dr. B. R. Ambedkar"
+},
+"answer": "B",
+"explanation": "Mahatma Gandhi ko rashtra ke prati unke amulya yogdan ke kaaran Rashtrapita kaha jata hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q016",
+"subject": "english",
+"chapter": 11,
+"question": "The greatest glory of Indian civilization is that it remains ..........",
+"options": {
+"A": "immovable",
+"B": "movable",
+"C": "uncivilised",
+"D": "fragmented"
+},
+"answer": "A",
+"explanation": "Bhartiya sabhyata ka sabse bada gaurav yeh hai ki anya sabhyataon ke mitne ke baad bhi yeh atal (immovable) bani rahi.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q017",
+"subject": "english",
+"chapter": 11,
+"question": "Wealth and worldly luxuries do not necessarily make a .......... happy.",
+"options": {
+"A": "man",
+"B": "lion",
+"C": "horse",
+"D": "bird"
+},
+"answer": "A",
+"explanation": "Gandhi ji samjhate hain ki dhan aur vilasita akele insaan (man) ko sachha sukh nahi de sakte.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q018",
+"subject": "english",
+"chapter": 11,
+"question": "The people of Europe learn their lessons from the writings of the men of ..........",
+"options": {
+"A": "Germany and Britain",
+"B": "India and China",
+"C": "Spain and Portugal",
+"D": "Greece and Rome"
+},
+"answer": "D",
+"explanation": "Europe ke log Greece aur Rome ke pracheen lekhakon ki rachnaon se sabak lene ki koshish karte hain.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q019",
+"subject": "english",
+"chapter": 11,
+"question": "What is the closest synonym of the word 'Glory' in the context of the chapter?",
+"options": {
+"A": "ugliness",
+"B": "beauty / splendour",
+"C": "sadness",
+"D": "weariness"
+},
+"answer": "B",
+"explanation": "'Glory' ka arth mahan gaurav, saundarya ya vaibhav (splendour/beauty) hota hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q020",
+"subject": "english",
+"chapter": 11,
+"question": ".......... was dead against the blind imitation of Western civilization.",
+"options": {
+"A": "Dr. Ambedkar",
+"B": "Subhash Chandra Bose",
+"C": "Sardar Patel",
+"D": "Mahatma Gandhi"
+},
+"answer": "D",
+"explanation": "Mahatma Gandhi pashchimi sabhyata ki andhadhundh nakal ke sakht khilaf the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q021",
+"subject": "english",
+"chapter": 11,
+"question": "'After all, there is something in Hinduism that has kept it alive up till now' is taken from ..........",
+"options": {
+"A": "The Artist",
+"B": "The Earth",
+"C": "Indian Civilization and Culture",
+"D": "I Have a Dream"
+},
+"answer": "C",
+"explanation": "Yeh pankti Mahatma Gandhi ke nibandh 'Indian Civilization and Culture' se li gayi hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q022",
+"subject": "english",
+"chapter": 11,
+"question": "Our ancestors were satisfied with living in ..........",
+"options": {
+"A": "large towns",
+"B": "small villages",
+"C": "metropolitan cities",
+"D": "foreign lands"
+},
+"answer": "B",
+"explanation": "Hamare purvaj bade shahron ke shor-sharabe aur apradh se door chhote gaon mein shanti se rehne mein santusht the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q023",
+"subject": "english",
+"chapter": 11,
+"question": "'Civilization is that mode of conduct which points out to man the path of duty' is from ..........",
+"options": {
+"A": "Indian Civilization and Culture",
+"B": "A Child is Born",
+"C": "A Marriage Proposal",
+"D": "Bharat is My Home"
+},
+"answer": "A",
+"explanation": "Sabhyata ki yeh sundar paribhasha Mahatma Gandhi ne 'Indian Civilization and Culture' mein di hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q024",
+"subject": "english",
+"chapter": 11,
+"question": "'Some of the immediate and brilliant results of modern inventions are too maddening to resist' is from ..........",
+"options": {
+"A": "Bharat is My Home",
+"B": "A Pinch of Snuff",
+"C": "Indian Civilization and Culture",
+"D": "Ideas That Have Helped Mankind"
+},
+"answer": "C",
+"explanation": "Aadhunik aavishkaron ke aakarshan par chetavni dete huye Gandhi ji ne yeh baat kahi thi.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q025",
+"subject": "english",
+"chapter": 11,
+"question": "What type of prose piece is 'Indian Civilization and Culture'?",
+"options": {
+"A": "A Short Story",
+"B": "A Speech",
+"C": "An Essay",
+"D": "A Drama"
+},
+"answer": "C",
+"explanation": "'Indian Civilization and Culture' ek preranadayak aur vicharotpadak nibandh (essay) hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q026",
+"subject": "english",
+"chapter": 11,
+"question": "Who wrote the famous monumental book 'The Decline and Fall of the Roman Empire'?",
+"options": {
+"A": "Mahatma Gandhi",
+"B": "Edward Gibbon",
+"C": "Jonathan Swift",
+"D": "William Shakespeare"
+},
+"answer": "B",
+"explanation": "Roman samrajya ke patan par prasiddh pustak Edward Gibbon ne likhi thi.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q027",
+"subject": "english",
+"chapter": 11,
+"question": "What does the expression 'to hunt the Golden Fleece' mean?",
+"options": {
+"A": "To seek something difficult or impossible to attain",
+"B": "To search for yellow flowers",
+"C": "To buy expensive clothes",
+"D": "To rear sheep for wool"
+},
+"answer": "A",
+"explanation": "Yunani kathaon ke anusaar 'Golden Fleece' ka taatparya aisi cheez pane ki koshish se hai jo lagbhag asambhav ya behad mushkil ho.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q028",
+"subject": "english",
+"chapter": 11,
+"question": "Attic civilization historically belongs to ancient ..........",
+"options": {
+"A": "China",
+"B": "Rome",
+"C": "India",
+"D": "Greece"
+},
+"answer": "D",
+"explanation": "Attic sabhyata ka sambandh pracheen Greece (Athens) ke kshetr se hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q029",
+"subject": "english",
+"chapter": 11,
+"question": "According to Gandhi ji, civilization is that mode of conduct which points out to man the path of ..........",
+"options": {
+"A": "help",
+"B": "work",
+"C": "duty",
+"D": "pleasure"
+},
+"answer": "C",
+"explanation": "Sabhyata manushya ko kartavya (duty) aur naitikta ke marg par chalna sikhati hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q030",
+"subject": "english",
+"chapter": 11,
+"question": "Hinduism has made marvellous discoveries in things of religion, of the spirit, and of the ..........",
+"options": {
+"A": "passion",
+"B": "soul",
+"C": "body",
+"D": "weapons"
+},
+"answer": "B",
+"explanation": "Gandhi ji batate hain ki Hindu dharam ne aatma (soul), aadhyaatm aur dharamik chetna ke kshetr mein adbhut aavishkar kiye hain.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q031",
+"subject": "english",
+"chapter": 11,
+"question": "What is the closest synonym of the phrase 'Moral fibre'?",
+"options": {
+"A": "Physical strength",
+"B": "Immorality",
+"C": "Character and moral integrity",
+"D": "Wealth"
+},
+"answer": "C",
+"explanation": "'Moral fibre' ka arth manushya ka charitra aur uski naitik dridhata (Character) hota hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q032",
+"subject": "english",
+"chapter": 11,
+"question": "Our ancestors lived independently and enjoyed true .......... rule.",
+"options": {
+"A": "noble",
+"B": "home",
+"C": "foreign",
+"D": "military"
+},
+"answer": "B",
+"explanation": "Hamare purvaj apne gaon mein swatantra rehkar sachhe Swaraj yaani 'Home Rule' ka anand lete the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q033",
+"subject": "english",
+"chapter": 11,
+"question": "The Western charge against Indian people is actually an attack against our ..........",
+"options": {
+"A": "happiness",
+"B": "sadness",
+"C": "wealth",
+"D": "merit"
+},
+"answer": "D",
+"explanation": "Pashchimi aalochak kehte hain ki Bhartiya log asabhya hain aur badlav nahi chahte, par Gandhi ji ise hamari kshamta aur naitikta (merit) par arop maante hain.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q034",
+"subject": "english",
+"chapter": 11,
+"question": "With which of the following journals was Mahatma Gandhi actively associated as an editor?",
+"options": {
+"A": "Young India",
+"B": "Indian Mirror",
+"C": "New India",
+"D": "Bombay Chronicle"
+},
+"answer": "A",
+"explanation": "Mahatma Gandhi ne 'Young India' patrika ke madhyam se apne vichar aur lekh desh ke samne rakhe the.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q035",
+"subject": "english",
+"chapter": 11,
+"question": "Indian civilization fosters and worships ..........",
+"options": {
+"A": "immorality",
+"B": "materialism",
+"C": "selfishness",
+"D": "morality"
+},
+"answer": "D",
+"explanation": "Bhartiya sabhyata bhautik vastuon ke sthan par naitikta (morality) aur sacharitrata ko mahatva deti hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q036",
+"subject": "english",
+"chapter": 11,
+"question": "What does the Gujarati equivalent for civilization literally mean?",
+"options": {
+"A": "Good behaviour",
+"B": "Good manners",
+"C": "Good conduct",
+"D": "Good dress"
+},
+"answer": "C",
+"explanation": "Gujarati bhasha mein sabhyata ka arth 'achha aacharan' yaani 'Good conduct' hota hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q037",
+"subject": "english",
+"chapter": 11,
+"question": "In the words of Gandhiji, the human mind is a ..........",
+"options": {
+"A": "restless book",
+"B": "restless bird",
+"C": "restless horse",
+"D": "quiet lake"
+},
+"answer": "B",
+"explanation": "Gandhi ji kehte hain ki man ek bechain pakshi (restless bird) hai jo jitna pata hai utna hi aur chahta hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q038",
+"subject": "english",
+"chapter": 11,
+"question": "What tendency does modern Western civilization propagate?",
+"options": {
+"A": "immorality",
+"B": "spirituality",
+"C": "brotherhood",
+"D": "self-sacrifice"
+},
+"answer": "A",
+"explanation": "Gandhi ji ke anusaar pashchimi sabhyata bhautikta aur anaitikta (immorality) ko badhava deti hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q039",
+"subject": "english",
+"chapter": 11,
+"question": "Our ancestors saw that kings and their swords were inferior to the sword of ..........",
+"options": {
+"A": "money",
+"B": "politics",
+"C": "ethics",
+"D": "army"
+},
+"answer": "C",
+"explanation": "Hamare purvaj mante the ki rajaon ki talwar naitikta aur aachar-shastra (ethics) ki talwar ke aage tuchh hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q040",
+"subject": "english",
+"chapter": 11,
+"question": "After all, there is something in Hinduism that has kept it .......... till now.",
+"options": {
+"A": "inactive",
+"B": "alive",
+"C": "fading",
+"D": "isolated"
+},
+"answer": "B",
+"explanation": "Duniya ki mahan sabhyataon ke vinash ke bawajood Hinduism ki aadhyaatmik neev ne use aaj tak jeevit (alive) rakha hai.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q041",
+"subject": "english",
+"chapter": 11,
+"question": "The historian Edward Gibbon is associated with the historical study of ..........",
+"options": {
+"A": "Italy and Rome",
+"B": "Russia",
+"C": "Sweden",
+"D": "America"
+},
+"answer": "A",
+"explanation": "Edward Gibbon ne Roman samrajya ke utthan aur patan ka aitihasik adhyayan likha tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q042",
+"subject": "english",
+"chapter": 11,
+"question": "The blind imitation of European civilization would be .......... for India.",
+"options": {
+"A": "profitable",
+"B": "glorious",
+"C": "suicidal",
+"D": "progressive"
+},
+"answer": "C",
+"explanation": "Bhartiya paramparaon ko chhodkar pashchim ki andhi nakal karna desh ke liye aatmaghati (suicidal) sidhh hoga.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q043",
+"subject": "english",
+"chapter": 11,
+"question": "From which year to which year did Mahatma Gandhi completely dominate Indian politics?",
+"options": {
+"A": "1910 to 1940",
+"B": "1915 to 1948",
+"C": "1920 to 1947",
+"D": "1905 to 1935"
+},
+"answer": "B",
+"explanation": "Dakshin Africa se laotne ke baad 1915 se 1948 tak Mahatma Gandhi ne Bhartiya swatantrata sangram ka naitratva kiya.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q044",
+"subject": "english",
+"chapter": 11,
+"question": "What were the chief weapons successfully used by Mahatma Gandhi against British rule?",
+"options": {
+"A": "Truth and Non-violence",
+"B": "Swords and Guns",
+"C": "Boycott and Riots",
+"D": "Money and Diplomacy"
+},
+"answer": "A",
+"explanation": "Gandhi ji ne Satya aur Ahinsa (Truth and Non-violence) ko apna sabse mukhya hathiyar banakar aazadi dilayi.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q045",
+"subject": "english",
+"chapter": 11,
+"question": "In which year was Mahatma Gandhi born?",
+"options": {
+"A": "1869",
+"B": "1879",
+"C": "1885",
+"D": "1892"
+},
+"answer": "A",
+"explanation": "Mahatma Gandhi ka janam 2 October 1869 ko Porbandar, Gujarat mein hua tha.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q046",
+"subject": "english",
+"chapter": 11,
+"question": "In which year did Mahatma Gandhi pass away at the hands of a fanatic?",
+"options": {
+"A": "1947",
+"B": "1948",
+"C": "1950",
+"D": "1952"
+},
+"answer": "B",
+"explanation": "30 January 1948 ko ek kattarpanthi dwara unki hatya kar di gayi thi.",
+"source": "PDF",
+"type": "objective"
+},
+{
+"id": "ENG11Q047",
+"subject": "english",
+"chapter": 11,
+"question": "Why did our ancestors view large cities as snares and useless encumbrances?",
+"options": {
+"A": "Because cities were too expensive",
+"B": "Because they were full of gangs of thieves, robbers, and vice",
+"C": "Because there was no transport",
+"D": "Because cities had no schools"
+},
+"answer": "B",
+"explanation": "Hamare purvaj mante the ki shahron mein chor, dakait aur ameer logon dwara garibon ka shoshan hota hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG11Q048",
+"subject": "english",
+"chapter": 11,
+"question": "How did ordinary people traditionally settle their legal disputes under true Home Rule?",
+"options": {
+"A": "By hiring expensive lawyers in high courts",
+"B": "Within the village community without being lured by touts",
+"C": "By fighting bloody wars",
+"D": "By paying bribes to the British officers"
+},
+"answer": "B",
+"explanation": "Aam log adalaton aur dalalon ke chakkar mein pade bina gaon ke aapsi bhaichare aur panchayat mein vivad suljha lete the.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG11Q049",
+"subject": "english",
+"chapter": 11,
+"question": "What was the primary and honest occupation followed by the vast majority of our ancestors?",
+"options": {
+"A": "Trading and commerce",
+"B": "Agriculture",
+"C": "Military services",
+"D": "Factory labor"
+},
+"answer": "B",
+"explanation": "Hamare purvaj mukhya roop se krishi (agriculture) ka vyavasay karte the aur swatantra jeevan jeete the.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG11Q050",
+"subject": "english",
+"chapter": 11,
+"question": "According to Mahatma Gandhi, true happiness and contentment primarily come from ..........",
+"options": {
+"A": "amassing vast amounts of gold and money",
+"B": "a mental condition of moral restraint and peaceful living",
+"C": "traveling to foreign countries",
+"D": "dominating other nations"
+},
+"answer": "B",
+"explanation": "Gandhi ji spasht karte hain ki sachha sukh manasik santosh aur ichhaon par niyantran se milta hai, dhan se nahi.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG11Q051",
+"subject": "english",
+"chapter": 11,
+"question": "How did our ancestors view professionals like doctors and lawyers?",
+"options": {
+"A": "As superiors to common peasants",
+"B": "As parasites who did not rob people unduly and were dependent on them",
+"C": "As gods on earth",
+"D": "As rulers of the state"
+},
+"answer": "B",
+"explanation": "Purvaj mante the ki vakeel aur vaidhya janta ke aashrit hain aur unhe samaj par haavi hone ki anumati nahi thi.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG11Q052",
+"subject": "english",
+"chapter": 11,
+"question": "The distinguishing characteristic of modern Western civilization is an indefinite multiplicity of ..........",
+"options": {
+"A": "human virtues",
+"B": "human wants",
+"C": "temples and churches",
+"D": "moral laws"
+},
+"answer": "B",
+"explanation": "Aadhunik sabhyata ki sabse badi pehchan manav ki anant ichhaon (human wants) ko badhate jana hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG11Q053",
+"subject": "english",
+"chapter": 11,
+"question": "Civilization, in the real sense of the term, consists in the .......... of wants.",
+"options": {
+"A": "multiplication",
+"B": "deliberate and voluntary restriction",
+"C": "reckless fulfillment",
+"D": "careless expansion"
+},
+"answer": "B",
+"explanation": "Vastavik sabhyata ichhaon ko badhane mein nahi, balki unhe swechha se niyantrit (restriction) karne mein hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG11Q054",
+"subject": "english",
+"chapter": 11,
+"question": "The primary tendency of Indian civilization is to elevate the ..........",
+"options": {
+"A": "moral being",
+"B": "physical body",
+"C": "material wealth",
+"D": "military power"
+},
+"answer": "A",
+"explanation": "Bhartiya sabhyata ka mool uddeshya manushya ke naitik astitva (moral being) ko uncha uthana hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG11Q055",
+"subject": "english",
+"chapter": 11,
+"question": "The inherent tendency of Western civilization is to privilege ..........",
+"options": {
+"A": "spiritualism",
+"B": "materiality",
+"C": "renunciation",
+"D": "brotherhood"
+},
+"answer": "B",
+"explanation": "Pashchimi sabhyata ka mukhy jhukav bhautik sukh-suvidhaon (materiality) ko prathmikta dene mein hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG11Q056",
+"subject": "english",
+"chapter": 11,
+"question": "Why does Gandhiji call the human mind a 'restless bird'?",
+"options": {
+"A": "Because it can fly across oceans",
+"B": "Because the more it gets the more it wants, and still remains unsatisfied",
+"C": "Because it sleeps very little",
+"D": "Because it mimics other creatures"
+},
+"answer": "B",
+"explanation": "Man jitni ichhayein poori karta hai utni hi nayi icchaayein janm leti hain aur weh hamesha asantusht rehta hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG11Q057",
+"subject": "english",
+"chapter": 11,
+"question": "What did our ancestors believe regarding mechanical labor vs hand-and-foot labor?",
+"options": {
+"A": "Manual labor kept the body healthy and morals intact",
+"B": "Machines should immediately replace all farmers",
+"C": "Hand work was inferior to factory production",
+"D": "Work should be avoided altogether"
+},
+"answer": "A",
+"explanation": "Hamare purvaj mante the ki haath-paanv se kaam karne se sharir swasth rehta hai aur naitikta bachi rehti hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG11Q058",
+"subject": "english",
+"chapter": 11,
+"question": "Mahatma Gandhi's writings and speeches reveal him as a great master of chaste, .......... English.",
+"options": {
+"A": "slangy",
+"B": "idiomatic",
+"C": "confusing",
+"D": "artificial"
+},
+"answer": "B",
+"explanation": "Gandhi ji ki angrezi bhasha shuddh, spasht aur muhavaredar (idiomatic) thi.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG11Q059",
+"subject": "english",
+"chapter": 11,
+"question": "Which two ancient classical civilizations are cited as having lost their former power and glory?",
+"options": {
+"A": "Rome and Greece",
+"B": "Russia and Germany",
+"C": "Japan and Korea",
+"D": "Britain and France"
+},
+"answer": "A",
+"explanation": "Gandhi ji pracheen Rome aur Greece ka udaharan dete hain jinki mahan sabhyatayein samay ke sath mit gayi.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG11Q060",
+"subject": "english",
+"chapter": 11,
+"question": "'Nothing can equal the seeds sown by our ancestors' implies that ..........",
+"options": {
+"A": "Indian crops are the biggest in the world",
+"B": "the cultural and spiritual foundation laid by our ancestors is unsurpassed",
+"C": "we should not plant new trees",
+"D": "ancient seeds never perish in soil"
+},
+"answer": "B",
+"explanation": "Iska arth hai ki hamare purvajon dwara sthapit naitik aur aadhyaatmik sanskaron ki tulna koi doosri sabhyata nahi kar sakti.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG11Q061",
+"subject": "english",
+"chapter": 11,
+"question": "What was Gandhiji's balanced perspective on Western science and discoveries?",
+"options": {
+"A": "To reject every scientific book from the West",
+"B": "To assimilate beneficial knowledge while holding fast to our moral roots",
+"C": "To destroy modern technology",
+"D": "To completely convert India into a Western society"
+},
+"answer": "B",
+"explanation": "Gandhi ji pashchimi vigyan se achhi baatein sikhne ke khilaf nahi the, par apni mool sabhyata ko bachaye rakhna chahte the.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG11Q062",
+"subject": "english",
+"chapter": 11,
+"question": "In the text, the person who assassinated Mahatma Gandhi is referred to as a ..........",
+"options": {
+"A": "soldier",
+"B": "foreigner",
+"C": "fanatic",
+"D": "politician"
+},
+"answer": "C",
+"explanation": "Pathya-pustak ke parichay mein likha hai ki unka nidhan ek kattarpanthi vyakti (fanatic) ke hathon hua.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG11Q063",
+"subject": "english",
+"chapter": 11,
+"question": "In 'Young India', Mahatma Gandhi contributed numerous insightful .......... on diverse national issues.",
+"options": {
+"A": "comic strips",
+"B": "articles and essays",
+"C": "dramas",
+"D": "detective stories"
+},
+"answer": "B",
+"explanation": "Gandhi ji ne 'Young India' patrika mein anek prabhavshali lekh aur nibandh likhe the.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG11Q064",
+"subject": "english",
+"chapter": 11,
+"question": "What is the antonym of the word 'Immovable' as applied to Indian civilization?",
+"options": {
+"A": "Movable / Changeable",
+"B": "Permanent",
+"C": "Firm",
+"D": "Steadfast"
+},
+"answer": "A",
+"explanation": "'Immovable' (atal/sthir) ka vipritarthak shabd 'Movable' ya 'Changeable' (chalaayman) hota hai.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG11Q065",
+"subject": "english",
+"chapter": 11,
+"question": "What did true 'Home Rule' mean to our ancestors in everyday life?",
+"options": {
+"A": "Living under British administrative courts",
+"B": "Leading an independent, self-disciplined life following honest ancestral vocations",
+"C": "Building royal palaces in every village",
+"D": "Conquering neighbouring kingdoms"
+},
+"answer": "B",
+"explanation": "Hamare purvajon ke liye sachha Home Rule aatm-anushasan, imandari ki kheti aur aatmnirbharta ka jeevan tha.",
+"source": "CONCEPT",
+"type": "objective"
+},
+{
+"id": "ENG11Q066",
+"subject": "english",
+"chapter": 11,
+"question": "What is the central moral lesson conveyed in 'Indian Civilization and Culture'?",
+"options": {
+"A": "Industrial growth is the only goal of a nation",
+"B": "True civilization consists in moral elevation, voluntary restraint, and spiritual faith",
+"C": "Money and machines are superior to all human virtues",
+"D": "We must completely abandon all modern communication"
+},
+"answer": "B",
+"explanation": "Nibandh ka mool sandesh yahi hai ki vastavik sabhyata naitikta, ichhaon par santosh aur aadhyaatmik vishwas mein nihit hai.",
+"source": "CONCEPT",
+"type": "objective"
 }
+]
+}  
