@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Brutal Brain Maze</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Main Game HUD -->
+        <div id="hud">
+            <a href="../../index.html" id="hud-back" title="वापस Mission 2027 Website पर">← वापस</a>
+            <div class="hud-item">LEVEL <span id="ui-level">01</span></div>
+            <div class="hud-item">TIME <span id="ui-time">0.00</span></div>
+            <div class="hud-item">MOVES <span id="ui-moves">0</span></div>
+        </div>
+
+        <canvas id="game-canvas"></canvas>
+
+        <!-- Debug Overlay -->
+        <div id="debug-overlay" class="hidden"></div>
+
+        <!-- Level Complete Modal -->
+        <div id="level-complete" class="modal hidden">
+            <div class="modal-content">
+                <h2>LEVEL COMPLETE</h2>
+                <p>XP Gained: <span id="lc-xp">0</span></p>
+                <button id="btn-next-level">NEXT LEVEL</button>
+            </div>
+        </div>
+
+        <!-- Quiz Lock Modal -->
+        <div id="quiz-modal" class="modal hidden">
+            <div class="modal-content quiz-content">
+                <div class="quiz-header">
+                    <h2>QUIZ LOCK</h2>
+                    <p>QUESTION <span id="quiz-progress">1 / 10</span></p>
+                    <button id="btn-quiz-skip" class="quiz-skip-btn" title="Skip करने पर XP कटेगा">Skip (−2 XP)</button>
+                </div>
+                <div id="quiz-question" class="quiz-question">Question Text?</div>
+                <div id="quiz-options" class="quiz-options">
+                    <!-- Options injected via JS -->
+                </div>
+                <div id="quiz-feedback" class="quiz-feedback"></div>
+                <button id="btn-quiz-continue" class="hidden">CONTINUE</button>
+            </div>
+        </div>
+        
+        <!-- Controls Overlay (Mobile backup) -->
+        <div id="mobile-controls-hint">Swipe anywhere to move</div>
+    </div>
+
+    <!-- Entry Point -->
+    <!-- मुख्य Website का असली Storage + Rewards System — Module Script से पहले Load होना ज़रूरी है -->
+    <script src="../../js/storage.js"></script>
+    <script src="../../js/rewards.js"></script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
