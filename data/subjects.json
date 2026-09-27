@@ -857,7 +857,7 @@
           "notesUrl": null
         }
       ]
-      },
+    },
     {
       "id": "history",
       "nameHi": "इतिहास",
@@ -869,12 +869,11 @@
       "chapters": [
         {
           "number": 1,
-          "title": "ईट,मनके और अस्थिय ां",
+          "title": "ईंटें, मनके तथा अस्थियाँ",
           "file": "data/history/chapter-01.json",
           "notesReady": false,
           "notesUrl": null
-        },
-        {
+        }
       ]
     },
     {
