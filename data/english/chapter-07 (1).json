@@ -1,0 +1,969 @@
+{
+  "_help": "प्रश्न इसी 'questions' list में जोड़ो।",
+  "subject": "english",
+  "chapter": 7,
+  "title": "MACAVITY: THE MYSTERY CAT",
+  "status": "ready",
+  "questions": [
+    {
+      "id": "ENG07Q001",
+      "subject": "english",
+      "chapter": 7,
+      "question": "'Or when the milk is missing, or another Peke's been stifled' is from ..........",
+      "options": {
+        "A": "Macavity: The Mystery Cat",
+        "B": "Snake",
+        "C": "Fire-Hymn",
+        "D": "The Soldier"
+      },
+      "answer": "A",
+      "explanation": "यह पंक्ति T.S. Eliot की कविता 'Macavity: The Mystery Cat' से ली गई है जिसमें Macavity की शरारतों का वर्णन है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q002",
+      "subject": "english",
+      "chapter": 7,
+      "question": "'His brow is deeply lined with thoughts' — whose brow is the poet talking about?",
+      "options": {
+        "A": "Macavity's",
+        "B": "The poet's",
+        "C": "His neighbour's",
+        "D": "His father's"
+      },
+      "answer": "A",
+      "explanation": "कवि Macavity के माथे की बात कर रहे हैं जो गहरी साजिशों और योजनाओं के कारण रेखाओं से भरा रहता है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q003",
+      "subject": "english",
+      "chapter": 7,
+      "question": "'Macavity: The Mystery Cat' has been taken from ..........",
+      "options": {
+        "A": "Old Alan's Book of Cats",
+        "B": "Old Possum's Book of Practical Cats",
+        "C": "Young Arthur's Cats",
+        "D": "Young Mathew's Dogs and Cats"
+      },
+      "answer": "B",
+      "explanation": "यह कविता T. S. Eliot के काव्य-संग्रह 'Old Possum's Book of Practical Cats' से ली गई है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q004",
+      "subject": "english",
+      "chapter": 7,
+      "question": "Who finds Macavity lazy and half asleep?",
+      "options": {
+        "A": "Kamala Das",
+        "B": "D.H. Lawrence",
+        "C": "T.S. Eliot",
+        "D": "William Blake"
+      },
+      "answer": "C",
+      "explanation": "कविता में कवि T.S. Eliot बताते हैं कि ऊपर से Macavity आधा सोया दिखता है पर वास्तव में वह पूरी तरह सतर्क होता है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q005",
+      "subject": "english",
+      "chapter": 7,
+      "question": "'He's broken every human law, he breaks the law of gravity' is taken from ..........",
+      "options": {
+        "A": "The Soldier",
+        "B": "Fire-Hymn",
+        "C": "Macavity: The Mystery Cat",
+        "D": "Snake"
+      },
+      "answer": "C",
+      "explanation": "यह पंक्ति 'Macavity: The Mystery Cat' से ली गई है, जिसमें उसके गुरुत्वाकर्षण के नियम तोड़ने का वर्णन है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q006",
+      "subject": "english",
+      "chapter": 7,
+      "question": "'Macavity: The Mystery Cat' is written by ..........",
+      "options": {
+        "A": "Rupert Brooke",
+        "B": "T.S. Eliot",
+        "C": "Kamala Das",
+        "D": "John Donne"
+      },
+      "answer": "B",
+      "explanation": "इस कविता के रचयिता 20वीं सदी के महान कवि T. S. Eliot हैं।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q007",
+      "subject": "english",
+      "chapter": 7,
+      "question": "Macavity is a ..........",
+      "options": {
+        "A": "dog",
+        "B": "lion",
+        "C": "cat",
+        "D": "rat"
+      },
+      "answer": "C",
+      "explanation": "Macavity एक चतुर, शातिर और रहस्यमयी बिल्ली (cat) है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q008",
+      "subject": "english",
+      "chapter": 7,
+      "question": "Macavity is called ..........",
+      "options": {
+        "A": "the Hidden Paw",
+        "B": "the Exposed Paw",
+        "C": "the Naughty Paw",
+        "D": "the Mysterious Paw"
+      },
+      "answer": "A",
+      "explanation": "अपराध स्थल पर कोई निशान न छोड़ने के कारण Macavity को 'the Hidden Paw' कहा जाता है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q009",
+      "subject": "english",
+      "chapter": 7,
+      "question": "The poet compares Macavity to ..........",
+      "options": {
+        "A": "Samudragupta",
+        "B": "Bismarck",
+        "C": "Napoleon",
+        "D": "Charles"
+      },
+      "answer": "C",
+      "explanation": "कवि ने अपराध जगत का मास्टरमाइंड मानते हुए Macavity की तुलना नेपोलियन ('Napoleon of Crime') से की है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q010",
+      "subject": "english",
+      "chapter": 7,
+      "question": "Eliot's cat poem was adapted into a hit stage musical by the composer ..........",
+      "options": {
+        "A": "Sir Andrew Lloyd Webber",
+        "B": "Sir Arthur Conan Doyle",
+        "C": "Sir Walter Scott",
+        "D": "Sir John Milton"
+      },
+      "answer": "A",
+      "explanation": "महान संगीतकार Sir Andrew Lloyd Webber ने इस काव्य-संग्रह को प्रसिद्ध संगीतमय नाटक 'Cats' में रूपांतरित किया था।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q011",
+      "subject": "english",
+      "chapter": 7,
+      "question": ".......... is a master criminal who can defy the Law.",
+      "options": {
+        "A": "Macavity",
+        "B": "Racavity",
+        "C": "Nacavity",
+        "D": "Rodger"
+      },
+      "answer": "A",
+      "explanation": "कविता के अनुसार Macavity एक ऐसा मास्टर अपराधी है जो खुलेआम कानून की अवहेलना करता है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q012",
+      "subject": "english",
+      "chapter": 7,
+      "question": "When the police reach the scene of crime, Macavity is ..........",
+      "options": {
+        "A": "always there",
+        "B": "never there",
+        "C": "sleeping there",
+        "D": "fighting there"
+      },
+      "answer": "B",
+      "explanation": "जब भी पुलिस अपराध स्थल पर पहुँचती है, Macavity वहाँ कभी नहीं मिलता ('Macavity's not there')।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q013",
+      "subject": "english",
+      "chapter": 7,
+      "question": "Who wrote 'The Waste Land' and 'Four Quartets'?",
+      "options": {
+        "A": "T.S. Eliot",
+        "B": "John Keats",
+        "C": "W.H. Auden",
+        "D": "John Donne"
+      },
+      "answer": "A",
+      "explanation": "'The Waste Land' और 'Four Quartets' T.S. Eliot की विश्वप्रसिद्ध कालजयी रचनाएँ हैं।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q014",
+      "subject": "english",
+      "chapter": 7,
+      "question": "'You'll be sure to find him resting' is taken from ..........",
+      "options": {
+        "A": "The Soldier",
+        "B": "Macavity: The Mystery Cat",
+        "C": "Snake",
+        "D": "To Autumn"
+      },
+      "answer": "B",
+      "explanation": "यह पंक्ति T.S. Eliot की कविता 'Macavity: The Mystery Cat' से ली गई है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q015",
+      "subject": "english",
+      "chapter": 7,
+      "question": "Macavity is portrayed as the fictional creation of ..........",
+      "options": {
+        "A": "T. S. Eliot",
+        "B": "D. H. Lawrence",
+        "C": "Walt Whitman",
+        "D": "Rupert Brooke"
+      },
+      "answer": "A",
+      "explanation": "Macavity कवि T. S. Eliot के बाल-काव्य संग्रह की एक काल्पनिक और शातिर बिल्ली है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q016",
+      "subject": "english",
+      "chapter": 7,
+      "question": "T. S. Eliot was one of the greatest poets of the ..........",
+      "options": {
+        "A": "Twentieth Century",
+        "B": "Eighteenth Century",
+        "C": "Seventeenth Century",
+        "D": "Sixteenth Century"
+      },
+      "answer": "A",
+      "explanation": "T. S. Eliot बीसवीं सदी (Twentieth Century) के प्रमुख कवियों और विचारकों में से एक थे।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q017",
+      "subject": "english",
+      "chapter": 7,
+      "question": "'He always has an alibi, and one or two to spare' is from ..........",
+      "options": {
+        "A": "My Grandmother's House",
+        "B": "Song of Myself",
+        "C": "Macavity: The Mystery Cat",
+        "D": "The Soldier"
+      },
+      "answer": "C",
+      "explanation": "यह पंक्ति 'Macavity: The Mystery Cat' से ली गई है, जो उसके पास अतिरिक्त बहाने होने को दर्शाती है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q018",
+      "subject": "english",
+      "chapter": 7,
+      "question": "'He's outwardly respectable' — whom is the poet referring to?",
+      "options": {
+        "A": "The Police",
+        "B": "The Citizens",
+        "C": "The King",
+        "D": "Macavity"
+      },
+      "answer": "D",
+      "explanation": "कवि Macavity के बारे में कहते हैं कि वह देखने में अत्यंत शरीफ और सभ्य प्रतीत होता है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q019",
+      "subject": "english",
+      "chapter": 7,
+      "question": "Macavity is the bafflement of ..........",
+      "options": {
+        "A": "Interpol",
+        "B": "Scotland Yard",
+        "C": "FBI",
+        "D": "Local Guards"
+      },
+      "answer": "B",
+      "explanation": "कविता में स्पष्ट कहा गया है: 'He's the bafflement of Scotland Yard'।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q020",
+      "subject": "english",
+      "chapter": 7,
+      "question": "Macavity is full of ..........",
+      "options": {
+        "A": "happiness",
+        "B": "sadness",
+        "C": "deceitfulness",
+        "D": "loyalty"
+      },
+      "answer": "C",
+      "explanation": "कविता के अनुसार Macavity धोखेबाजी और फरेब (deceitfulness) से भरी हुई बिल्ली है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q021",
+      "subject": "english",
+      "chapter": 7,
+      "question": "'The Waste Land' has been composed by ..........",
+      "options": {
+        "A": "T.S. Eliot",
+        "B": "W.H. Auden",
+        "C": "S.T. Coleridge",
+        "D": "John Donne"
+      },
+      "answer": "A",
+      "explanation": "'The Waste Land' (1922) की रचना T.S. Eliot ने की थी।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q022",
+      "subject": "english",
+      "chapter": 7,
+      "question": "Macavity moves his head from side to side like a ..........",
+      "options": {
+        "A": "Cat",
+        "B": "Snake",
+        "C": "Horse",
+        "D": "Deer"
+      },
+      "answer": "B",
+      "explanation": "कविता की पंक्ति है: 'He sways his head from side to side, with movement like a snake'।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q023",
+      "subject": "english",
+      "chapter": 7,
+      "question": "T. S. Eliot is considered one of the pioneers of .......... poetry.",
+      "options": {
+        "A": "Modern",
+        "B": "Ancient",
+        "C": "Medieval",
+        "D": "Romantic"
+      },
+      "answer": "A",
+      "explanation": "T.S. Eliot को आधुनिक कविता (Modern poetry) के पथप्रदर्शकों में गिना जाता है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q024",
+      "subject": "english",
+      "chapter": 7,
+      "question": "The poem 'Macavity: The Mystery Cat' is written in a .......... vein.",
+      "options": {
+        "A": "tragic",
+        "B": "mock-heroic",
+        "C": "solemn",
+        "D": "mournful"
+      },
+      "answer": "B",
+      "explanation": "यह कविता हास्य और व्यंग्य से भरी Mock-heroic (नकली वीर रस) शैली में लिखी गई है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q025",
+      "subject": "english",
+      "chapter": 7,
+      "question": "How are Macavity's eyes physically described?",
+      "options": {
+        "A": "Popping out",
+        "B": "Swollen",
+        "C": "Red and fiery",
+        "D": "Sunken in"
+      },
+      "answer": "D",
+      "explanation": "कविता में लिखा है: 'for his eyes are sunken in' यानी उसकी आँखें अंदर धंसी हुई हैं।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q026",
+      "subject": "english",
+      "chapter": 7,
+      "question": "People say that Macavity cheats at ..........",
+      "options": {
+        "A": "races",
+        "B": "business",
+        "C": "cards",
+        "D": "dice"
+      },
+      "answer": "C",
+      "explanation": "कविता की पंक्ति है: 'They say he cheats at cards'।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q027",
+      "subject": "english",
+      "chapter": 7,
+      "question": "What is the meaning of 'larder' in the poem?",
+      "options": {
+        "A": "Meat stall",
+        "B": "A cupboard or room for storing food",
+        "C": "Dining table",
+        "D": "Kitchen stove"
+      },
+      "answer": "B",
+      "explanation": "'Larder' का अर्थ खाद्य सामग्री और रसद रखने की सुरक्षित अलमारी या कक्ष होता है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q028",
+      "subject": "english",
+      "chapter": 7,
+      "question": "Whose despair is Macavity when crimes take place?",
+      "options": {
+        "A": "Local Guards",
+        "B": "The Military",
+        "C": "The Flying Squad",
+        "D": "Traffic Police"
+      },
+      "answer": "C",
+      "explanation": "पंक्ति है: 'the Flying Squad's despair' यानी त्वरित पुलिस दल भी उसे पकड़ने में निराश रहता है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q029",
+      "subject": "english",
+      "chapter": 7,
+      "question": "Macavity's powers of .......... would make a fakir stare.",
+      "options": {
+        "A": "gravity",
+        "B": "levitation",
+        "C": "singing",
+        "D": "invisibility"
+      },
+      "answer": "B",
+      "explanation": "हवा में तैरने या ऊपर उठने की उसकी शक्ति (powers of levitation) फकीरों को भी हैरान कर देती है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q030",
+      "subject": "english",
+      "chapter": 7,
+      "question": "Macavity has broken every human law and also breaks the law of ..........",
+      "options": {
+        "A": "gravity",
+        "B": "nature",
+        "C": "motion",
+        "D": "friction"
+      },
+      "answer": "A",
+      "explanation": "कविता में कहा गया है: 'he breaks the law of gravity'।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q031",
+      "subject": "english",
+      "chapter": 7,
+      "question": "In which year was T. S. Eliot awarded the Nobel Prize in Literature?",
+      "options": {
+        "A": "1938",
+        "B": "1948",
+        "C": "1953",
+        "D": "1965"
+      },
+      "answer": "B",
+      "explanation": "T. S. Eliot को सन् 1948 में साहित्य के नोबेल पुरस्कार से सम्मानित किया गया था।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q032",
+      "subject": "english",
+      "chapter": 7,
+      "question": "T. S. Eliot received the Nobel Prize in which field?",
+      "options": {
+        "A": "Peace",
+        "B": "Economics",
+        "C": "Literature",
+        "D": "Physics"
+      },
+      "answer": "C",
+      "explanation": "उन्हें साहित्य (Literature) के क्षेत्र में उनके अप्रतिम योगदान के लिए नोबेल पुरस्कार मिला।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q033",
+      "subject": "english",
+      "chapter": 7,
+      "question": "The charm of 'Macavity: The Mystery Cat' comes from its neat rhymes and ..........",
+      "options": {
+        "A": "galloping rhythm",
+        "B": "sad melody",
+        "C": "heavy meter",
+        "D": "tragic story"
+      },
+      "answer": "A",
+      "explanation": "कविता का आकर्षण इसके तुकांत और तेज दौड़ती लय (galloping rhythm) में निहित है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q034",
+      "subject": "english",
+      "chapter": 7,
+      "question": "T. S. Eliot was born in USA but eventually settled permanently in ..........",
+      "options": {
+        "A": "France",
+        "B": "England",
+        "C": "Australia",
+        "D": "Ireland"
+      },
+      "answer": "B",
+      "explanation": "T. S. Eliot अमेरिका में जन्मे थे किंतु बाद में इंग्लैंड में स्थायी रूप से बस गए।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q035",
+      "subject": "english",
+      "chapter": 7,
+      "question": "Besides being a poet, T. S. Eliot was a distinguished critic and a ..........",
+      "options": {
+        "A": "dramatist",
+        "B": "painter",
+        "C": "sculptor",
+        "D": "novelist"
+      },
+      "answer": "A",
+      "explanation": "T. S. Eliot एक प्रसिद्ध कवि के साथ-साथ प्रतिष्ठित आलोचक और नाटककार (dramatist) भी थे।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q036",
+      "subject": "english",
+      "chapter": 7,
+      "question": "In which year was T. S. Eliot born?",
+      "options": {
+        "A": "1888",
+        "B": "1873",
+        "C": "1895",
+        "D": "1907"
+      },
+      "answer": "A",
+      "explanation": "T. S. Eliot का जन्म सन् 1888 में हुआ था।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q037",
+      "subject": "english",
+      "chapter": 7,
+      "question": "In which year did T. S. Eliot pass away?",
+      "options": {
+        "A": "1956",
+        "B": "1960",
+        "C": "1965",
+        "D": "1973"
+      },
+      "answer": "C",
+      "explanation": "T. S. Eliot की मृत्यु सन् 1965 में हुई थी।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q038",
+      "subject": "english",
+      "chapter": 7,
+      "question": "T. S. Eliot described himself in religion as an ..........",
+      "options": {
+        "A": "Roman Catholic",
+        "B": "Anglo-Catholic",
+        "C": "Protestant Puritan",
+        "D": "Atheist"
+      },
+      "answer": "B",
+      "explanation": "धार्मिक दृष्टिकोण से टी. एस. एलियट ने स्वयं को 'Anglo-Catholic' बताया था।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q039",
+      "subject": "english",
+      "chapter": 7,
+      "question": "What is the synonym of 'disclose'?",
+      "options": {
+        "A": "Hide",
+        "B": "Close",
+        "C": "Reveal",
+        "D": "Forget"
+      },
+      "answer": "C",
+      "explanation": "'Disclose' का अर्थ सामने लाना या प्रकट करना होता है, जिसका सही समानार्थी 'Reveal' है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q040",
+      "subject": "english",
+      "chapter": 7,
+      "question": "What does the legal term 'alibi' mean?",
+      "options": {
+        "A": "A confession of crime",
+        "B": "A plea or proof of being elsewhere during a crime",
+        "C": "A police witness",
+        "D": "A judicial punishment"
+      },
+      "answer": "B",
+      "explanation": "'Alibi' का अर्थ अपराध के समय किसी अन्य स्थान पर उपस्थित होने का अकाट्य प्रमाण या बहाना होता है।",
+      "source": "PDF",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q041",
+      "subject": "english",
+      "chapter": 7,
+      "question": "In which American city and state was T. S. Eliot born?",
+      "options": {
+        "A": "St. Louis, Missouri",
+        "B": "Boston, Massachusetts",
+        "C": "Chicago, Illinois",
+        "D": "New York City"
+      },
+      "answer": "A",
+      "explanation": "उनका जन्म अमेरिका के सेंट लुइस, मिसौरी (St. Louis, Missouri) में हुआ था।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q042",
+      "subject": "english",
+      "chapter": 7,
+      "question": "In politics, T. S. Eliot openly identified himself as a ..........",
+      "options": {
+        "A": "Democrat",
+        "B": "Royalist",
+        "C": "Socialist",
+        "D": "Republican"
+      },
+      "answer": "B",
+      "explanation": "राजनीति में वे राजतंत्र के समर्थक यानी 'Royalist' थे।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q043",
+      "subject": "english",
+      "chapter": 7,
+      "question": "In literature, T. S. Eliot declared himself to be a ..........",
+      "options": {
+        "A": "Classicist",
+        "B": "Romanticist",
+        "C": "Surrealist",
+        "D": "Naturalist"
+      },
+      "answer": "A",
+      "explanation": "साहित्य के क्षेत्र में वे शास्त्रीयता के पक्षधर यानी 'Classicist' थे।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q044",
+      "subject": "english",
+      "chapter": 7,
+      "question": "How is Macavity physically described in terms of color and build?",
+      "options": {
+        "A": "A fat black cat",
+        "B": "A ginger cat, very tall and thin",
+        "C": "A tiny white kitten",
+        "D": "A grey stout cat"
+      },
+      "answer": "B",
+      "explanation": "कविता के अनुसार Macavity एक लंबी, पतली और अदरक-रंग (ginger) की बिल्ली है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q045",
+      "subject": "english",
+      "chapter": 7,
+      "question": "Why is Macavity's coat dusty in appearance?",
+      "options": {
+        "A": "From playing outside",
+        "B": "From neglect",
+        "C": "From chimney smoke",
+        "D": "From chalk powder"
+      },
+      "answer": "B",
+      "explanation": "पंक्ति है: 'His coat is dusty from neglect' क्योंकि वह अपने शरीर की परवाह नहीं करता।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q046",
+      "subject": "english",
+      "chapter": 7,
+      "question": "How are Macavity's whiskers described in the poem?",
+      "options": {
+        "A": "Uncombed",
+        "B": "Neatly trimmed",
+        "C": "Curled",
+        "D": "Shaved"
+      },
+      "answer": "A",
+      "explanation": "कविता में लिखा है: 'his whiskers are uncombed'।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q047",
+      "subject": "english",
+      "chapter": 7,
+      "question": "How is Macavity's head shaped?",
+      "options": {
+        "A": "Flat",
+        "B": "Square",
+        "C": "Highly domed",
+        "D": "Pointed"
+      },
+      "answer": "C",
+      "explanation": "पंक्ति है: 'his head is highly domed' यानी उसका सिर गुंबद की तरह उभरा हुआ है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q048",
+      "subject": "english",
+      "chapter": 7,
+      "question": "When people think Macavity is half asleep, what is he in reality?",
+      "options": {
+        "A": "Fast asleep",
+        "B": "Always wide awake",
+        "C": "Dreaming peacefully",
+        "D": "Fainting"
+      },
+      "answer": "B",
+      "explanation": "कविता के अनुसार जब लगता है कि वह ऊंघ रहा है, वास्तव में वह पूरी तरह सतर्क (wide awake) होता है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q049",
+      "subject": "english",
+      "chapter": 7,
+      "question": "Which small pet dog is mentioned as being stifled in the poem?",
+      "options": {
+        "A": "Bulldog",
+        "B": "Peke (Pekingese)",
+        "C": "Terrier",
+        "D": "Poodle"
+      },
+      "answer": "B",
+      "explanation": "कविता की पंक्ति है: 'or another Peke's been stifled'।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q050",
+      "subject": "english",
+      "chapter": 7,
+      "question": "What important document goes missing from the Foreign Office?",
+      "options": {
+        "A": "A royal decree",
+        "B": "A Treaty gone astray",
+        "C": "A map of London",
+        "D": "The national budget"
+      },
+      "answer": "B",
+      "explanation": "विदेश मंत्रालय की एक महत्वपूर्ण संधि (Treaty) गायब हो जाती है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q051",
+      "subject": "english",
+      "chapter": 7,
+      "question": "What loss does the Admiralty suffer on the way?",
+      "options": {
+        "A": "Some plans and drawings",
+        "B": "A warship",
+        "C": "Gold bars",
+        "D": "Secret radio codes"
+      },
+      "answer": "A",
+      "explanation": "नौसेना विभाग के गुप्त नक्शे और योजनाएँ (plans and drawings) गायब हो जाती हैं।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q052",
+      "subject": "english",
+      "chapter": 7,
+      "question": "When any mysterious crime occurs, what does the Secret Service say?",
+      "options": {
+        "A": "'Catch the dog!'",
+        "B": "'It must have been Macavity!'",
+        "C": "'Call the military!'",
+        "D": "'Macavity is innocent!'"
+      },
+      "answer": "B",
+      "explanation": "गुप्तचर विभाग का निष्कर्ष हमेशा यही होता है: 'It must have been Macavity!'",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q053",
+      "subject": "english",
+      "chapter": 7,
+      "question": "When investigated, what innocent activity is Macavity found engaged in miles away?",
+      "options": {
+        "A": "Hunting mice",
+        "B": "Licking his thumbs or doing division sums",
+        "C": "Fighting street dogs",
+        "D": "Climbing trees"
+      },
+      "answer": "B",
+      "explanation": "वह अपराध स्थल से दूर बैठकर शांति से अंगूठे चाटता या गणित के भाग हल करता पाया जाता है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q054",
+      "subject": "english",
+      "chapter": 7,
+      "question": "Which other two notorious cats are mentioned in the poem?",
+      "options": {
+        "A": "Tom and Jerry",
+        "B": "Mungojerrie and Griddlebone",
+        "C": "Bismarck and Caesar",
+        "D": "Ginger and Peke"
+      },
+      "answer": "B",
+      "explanation": "कवि दो अन्य बिल्लियों मुंगोजेरी और ग्रिडलहोन (Mungojerrie and Griddlebone) का नाम लेते हैं।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q055",
+      "subject": "english",
+      "chapter": 7,
+      "question": "What is the relationship of Mungojerrie and Griddlebone to Macavity?",
+      "options": {
+        "A": "They are his owners",
+        "B": "They are his sworn enemies",
+        "C": "They are merely agents doing operations for him",
+        "D": "They are detective inspectors"
+      },
+      "answer": "C",
+      "explanation": "वे दोनों केवल उसके मोहरे (agents) हैं जो मैकैविटी के इशारे पर काम करते हैं।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q056",
+      "subject": "english",
+      "chapter": 7,
+      "question": "Why is Macavity nicknamed the 'Napoleon of Crime'?",
+      "options": {
+        "A": "Because he was born in France",
+        "B": "Because he is the mastermind controlling all criminal operations",
+        "C": "Because he is very short in height",
+        "D": "Because he wears an emperor's coat"
+      },
+      "answer": "B",
+      "explanation": "वह सभी बिल्लियों के अपराधों का प्रमुख रणनीतिकार और मास्टरमाइंड है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q057",
+      "subject": "english",
+      "chapter": 7,
+      "question": "In the phrase 'a monster of depravity', what does 'depravity' mean?",
+      "options": {
+        "A": "Kindness",
+        "B": "Moral corruption and wickedness",
+        "C": "Extreme poverty",
+        "D": "Innocence"
+      },
+      "answer": "B",
+      "explanation": "'Depravity' का अर्थ घोर दुराचार, नैतिक पतन या बुराई होता है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q058",
+      "subject": "english",
+      "chapter": 7,
+      "question": "What does the word 'fiend' mean in the line 'he's a fiend in feline shape'?",
+      "options": {
+        "A": "A dear companion",
+        "B": "An evil demon or devil",
+        "C": "A cute kitten",
+        "D": "A trained guardian"
+      },
+      "answer": "B",
+      "explanation": "'Fiend' का अर्थ दुष्ट राक्षस या शैतान (devil/demon) होता है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q059",
+      "subject": "english",
+      "chapter": 7,
+      "question": "What does the physical phenomenon of 'levitation' refer to in the poem?",
+      "options": {
+        "A": "Running at high speed",
+        "B": "Rising and floating in the air without physical support",
+        "C": "Swimming deep underwater",
+        "D": "Digging underground tunnels"
+      },
+      "answer": "B",
+      "explanation": "'Levitation' का अर्थ बिना किसी सहारे के हवा में ऊपर उठना या तैरना होता है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "ENG07Q060",
+      "subject": "english",
+      "chapter": 7,
+      "question": "Where are Macavity's footprints never found?",
+      "options": {
+        "A": "On the carpet",
+        "B": "In any file of Scotland Yard",
+        "C": "On the roof",
+        "D": "In the street"
+      },
+      "answer": "B",
+      "explanation": "कविता में लिखा है: 'his footprints are not found in any file of Scotland Yard'।",
+      "source": "CONCEPT",
+      "type": "objective"
+    }
+  ]
+}
