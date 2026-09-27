@@ -1,0 +1,1709 @@
+{
+  "_help": "Physics Chapter 9 question bank",
+  "subject": "physics",
+  "chapter": 9,
+  "title": "किरण प्रकाशिकी एवं प्रकाशिक यंत्र",
+  "status": "ready",
+  "questions": [
+    {
+      "id": "PHY09Q001",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "समतल दर्पण की फोकस दूरी होती है:",
+      "options": {
+        "A": "शून्य",
+        "B": "अनन्त",
+        "C": "25 cm",
+        "D": "-5 cm"
+      },
+      "answer": "B",
+      "explanation": "समतल दर्पण की वक्रता त्रिज्या और फोकस दूरी दोनों अनन्त होती हैं।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q002",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "उत्तल दर्पण द्वारा बना प्रतिबिंब सदैव होता है:",
+      "options": {
+        "A": "वास्तविक और सीधा",
+        "B": "आभासी और सीधा",
+        "C": "वास्तविक और उल्टा",
+        "D": "आभासी और उल्टा"
+      },
+      "answer": "B",
+      "explanation": "उत्तल दर्पण हमेशा आभासी, सीधा तथा वस्तु से छोटा प्रतिबिंब बनाता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q003",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "यदि किसी वस्तु को अवतल दर्पण के वक्रता केंद्र (C) पर रखा जाए, तो उसका प्रतिबिंब बनेगाः",
+      "options": {
+        "A": "फोकस पर",
+        "B": "अनन्त पर",
+        "C": "वक्रता केंद्र (C) पर",
+        "D": "ध्रुव पर"
+      },
+      "answer": "C",
+      "explanation": "वक्रता केंद्र पर रखी वस्तु का प्रतिबिंब वक्रता केंद्र पर ही वास्तविक, उल्टा और बराबर बनता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q004",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "20 cm वक्रता त्रिज्या वाले अवतल दर्पण की फोकस दूरी होगी:",
+      "options": {
+        "A": "+20 cm",
+        "B": "-10 cm",
+        "C": "+10 cm",
+        "D": "-20 cm"
+      },
+      "answer": "B",
+      "explanation": "f = R/2 से अवतल दर्पण की फोकस दूरी ऋणात्मक होती है, अतः f = -20/2 = -10 cm।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q005",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "सोलर कुकर में किस दर्पण का उपयोग किया जाता है?",
+      "options": {
+        "A": "उत्तल दर्पण",
+        "B": "समतल दर्पण",
+        "C": "अवतल दर्पण",
+        "D": "इनमें से कोई नहीं"
+      },
+      "answer": "C",
+      "explanation": "अवतल दर्पण प्रकाश की किरणों को एक बिंदु पर केंद्रित करता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q006",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "गाड़ी के साइड मिरर (Rear view mirror) के रूप में प्रयुक्त होता है:",
+      "options": {
+        "A": "अवतल दर्पण",
+        "B": "उत्तल दर्पण",
+        "C": "समतल दर्पण",
+        "D": "बेलनाकार दर्पण"
+      },
+      "answer": "B",
+      "explanation": "उत्तल दर्पण का दृष्टि-क्षेत्र बड़ा होता है और यह सीधा प्रतिबिंब बनाता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q007",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "एक समतल दर्पण के सामने 5 cm की दूरी पर रखी वस्तु का प्रतिबिंब दर्पण से कितनी दूरी पर बनेगा?",
+      "options": {
+        "A": "2.5 cm",
+        "B": "5 cm",
+        "C": "10 cm",
+        "D": "अनन्त"
+      },
+      "answer": "B",
+      "explanation": "समतल दर्पण में वस्तु की दूरी और प्रतिबिंब की दूरी समान होती है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q008",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "हवा में प्रकाश की चाल c है और पानी का अपवर्तनांक 4/3 है। पानी में प्रकाश की चाल होगी:",
+      "options": {
+        "A": "3c/4",
+        "B": "4c/3",
+        "C": "c",
+        "D": "3c/2"
+      },
+      "answer": "A",
+      "explanation": "v = c/n = 3c/4।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q009",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "काँच (μ = 1.5) में प्रकाश की चाल कितनी होगी? (c = 3 × 10^8 m/s)",
+      "options": {
+        "A": "3 × 10^8 m/s",
+        "B": "2 × 10^8 m/s",
+        "C": "1.5 × 10^8 m/s",
+        "D": "2.25 × 10^8 m/s"
+      },
+      "answer": "B",
+      "explanation": "v = c/μ = 2 × 10^8 m/s।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q010",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "जब प्रकाश की किरण सघन माध्यम से विरल माध्यम में प्रवेश करती है, तो वहः",
+      "options": {
+        "A": "अभिलंब की ओर झुकती है",
+        "B": "अभिलंब से दूर हटती है",
+        "C": "सीधी निकल जाती है",
+        "D": "पुनः लौट आती है"
+      },
+      "answer": "B",
+      "explanation": "सघन से विरल माध्यम में जाने पर किरण अभिलंब से दूर हटती है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q011",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "प्रकाशिक तंतु (Optical Fibre) किस सिद्धांत पर कार्य करता है?",
+      "options": {
+        "A": "अपवर्तन",
+        "B": "प्रकीर्णन",
+        "C": "पूर्ण आंतरिक परावर्तन",
+        "D": "व्यतिकरण"
+      },
+      "answer": "C",
+      "explanation": "ऑप्टिकल फाइबर पूर्ण आंतरिक परावर्तन के सिद्धांत पर कार्य करता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q012",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "मृगमरीचिका (Mirage) का कारण है:",
+      "options": {
+        "A": "अपवर्तन और पूर्ण आंतरिक परावर्तन",
+        "B": "विवर्तन",
+        "C": "प्रकीर्णन",
+        "D": "व्यतिकरण"
+      },
+      "answer": "A",
+      "explanation": "वायु की विभिन्न परतों से अपवर्तन एवं अंततः पूर्ण आंतरिक परावर्तन के कारण मरीचिका दिखाई देती है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q013",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "हीरा का अपवर्तनांक लगभग होता है:",
+      "options": {
+        "A": "1.0",
+        "B": "1.33",
+        "C": "1.5",
+        "D": "2.42"
+      },
+      "answer": "D",
+      "explanation": "हीरे का अपवर्तनांक लगभग 2.42 होता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q014",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "यदि सघन माध्यम का अपवर्तनांक μ = 2 है, तो क्रांतिक कोण (θc) का मान होगाः",
+      "options": {
+        "A": "30°",
+        "B": "45°",
+        "C": "60°",
+        "D": "90°"
+      },
+      "answer": "A",
+      "explanation": "sin C = 1/μ = 1/2, अतः C = 30°।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q015",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "किसी जल पात्र में पेंदी पर रखा सिक्का थोड़ा ऊपर उठा हुआ प्रतीत होता है, इसका कारण है:",
+      "options": {
+        "A": "परावर्तन",
+        "B": "अपवर्तन",
+        "C": "विवर्तन",
+        "D": "प्रकीर्णन"
+      },
+      "answer": "B",
+      "explanation": "प्रकाश के अपवर्तन के कारण वस्तु ऊपर उठी प्रतीत होती है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q016",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "पानी की वास्तविक गहराई 12 cm है। यदि पानी का अपवर्तनांक 4/3 हो, तो आभासी गहराई होगी:",
+      "options": {
+        "A": "16 cm",
+        "B": "9 cm",
+        "C": "12 cm",
+        "D": "3 cm"
+      },
+      "answer": "B",
+      "explanation": "आभासी गहराई = 12/(4/3) = 9 cm।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q017",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "लेंस मेकर सूत्र (Lens Maker's Formula) है:",
+      "options": {
+        "A": "1/f = (μ - 1)(1/R1 - 1/R2)",
+        "B": "1/f = (μ + 1)(1/R1 + 1/R2)",
+        "C": "1/f = (μ - 1)/(R1 + R2)",
+        "D": "1/f = 1/v - 1/u"
+      },
+      "answer": "A",
+      "explanation": "पतले लेंस के लिए 1/f = (μ - 1)(1/R1 - 1/R2)।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q018",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "लेंस की क्षमता (Power of Lens) का SI मात्रक होता है:",
+      "options": {
+        "A": "जूल",
+        "B": "वाट",
+        "C": "डायोप्टर (D)",
+        "D": "कैंडेला"
+      },
+      "answer": "C",
+      "explanation": "लेंस की क्षमता का मात्रक डायोप्टर (m^-1) है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q019",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "+2 D तथा -4 D क्षमता वाले दो लेंसों को संपर्क में रखने पर समतुल्य क्षमता होगी:",
+      "options": {
+        "A": "+2 D",
+        "B": "-2 D",
+        "C": "+6 D",
+        "D": "-6 D"
+      },
+      "answer": "B",
+      "explanation": "P = P1 + P2 = -2 D।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q020",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "20 cm फोकस दूरी वाले उत्तल लेंस की क्षमता होगी:",
+      "options": {
+        "A": "+5 D",
+        "B": "-5 D",
+        "C": "+2 D",
+        "D": "-2 D"
+      },
+      "answer": "A",
+      "explanation": "P = 100/f(cm) = 100/20 = +5 D।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q021",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "एक उत्तल लेंस को ऐसे द्रव में डुबोया जाता है जिसका अपवर्तनांक लेंस के काँच के अपवर्तनांक के बराबर है, तो लेंस की फोकस दूरी हो जाएगीः",
+      "options": {
+        "A": "शून्य",
+        "B": "अनन्त",
+        "C": "अपरिवर्तित",
+        "D": "ऋणात्मक"
+      },
+      "answer": "B",
+      "explanation": "माध्यम और लेंस का अपवर्तनांक समान होने पर लेंस की फोकस दूरी अनन्त हो जाती है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q022",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "हवा में बने काँच के उत्तल लेंस को जल में डुबोने पर इसकी क्षमताः",
+      "options": {
+        "A": "बढ़ती है",
+        "B": "घटती है",
+        "C": "वही रहती है",
+        "D": "शून्य हो जाती है"
+      },
+      "answer": "B",
+      "explanation": "जल में लेंस की फोकस दूरी बढ़ती है, इसलिए क्षमता घटती है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q023",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "यदि दो पतले लेंस जिनकी फोकस दूरियाँ f1 = 20 cm और f2 = 30 cm हैं, परस्पर संपर्क में रखे हों, तो संयुक्त लेंस की फोकस दूरी होगी:",
+      "options": {
+        "A": "50 cm",
+        "B": "12 cm",
+        "C": "10 cm",
+        "D": "25 cm"
+      },
+      "answer": "B",
+      "explanation": "F = (20×30)/(20+30) = 12 cm।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q024",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "उत्तल लेंस द्वारा बना प्रतिबिंब वास्तविक और आवर्धित होगा यदि वस्तु रखी होः",
+      "options": {
+        "A": "F और 2F के बीच",
+        "B": "अनन्त पर",
+        "C": "2F से परे",
+        "D": "प्रकाशिक केंद्र और F के बीच"
+      },
+      "answer": "A",
+      "explanation": "F और 2F के बीच वस्तु रखने पर प्रतिबिंब वास्तविक, उल्टा और बड़ा बनता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q025",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "-5 D क्षमता वाले अवतल लेंस की फोकस दूरी होगी:",
+      "options": {
+        "A": "-20 cm",
+        "B": "-50 cm",
+        "C": "+20 cm",
+        "D": "-5 cm"
+      },
+      "answer": "A",
+      "explanation": "f = 100/P = -20 cm।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q026",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "द्वि-उत्तल (Biconvex) लेंस को यदि बीच से क्षैतिज रूप से काट दिया जाए, तो प्रत्येक आधे भाग की फोकस दूरी होगी:",
+      "options": {
+        "A": "दोगुनी",
+        "B": "आधी",
+        "C": "अपरिवर्तित",
+        "D": "चार गुनी"
+      },
+      "answer": "C",
+      "explanation": "क्षैतिज काटने पर वक्रता त्रिज्या नहीं बदलती, इसलिए फोकस दूरी अपरिवर्तित रहती है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q027",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "द्वि-उत्तल लेंस को यदि ऊर्ध्वाधर रूप से काट दिया जाए, तो प्रत्येक आधे भाग की फोकस दूरी होगी:",
+      "options": {
+        "A": "दोगुनी",
+        "B": "आधी",
+        "C": "वही रहेगी",
+        "D": "शून्य"
+      },
+      "answer": "A",
+      "explanation": "ऊर्ध्वाधर काटने पर समतलोत्तल लेंस बनता है और फोकस दूरी दोगुनी होती है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q028",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "किसी पतले प्रिज्म का न्यूनतम विचलन कोण (δm) होता है:",
+      "options": {
+        "A": "(μ - 1)A",
+        "B": "(μ + 1)A",
+        "C": "(μ - 1)/A",
+        "D": "A/(μ - 1)"
+      },
+      "answer": "A",
+      "explanation": "पतले प्रिज्म के लिए δm = (μ - 1)A।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q029",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "6° प्रिज्म कोण वाले पतले प्रिज्म का अपवर्तनांक 1.5 है। इसका न्यूनतम विचलन कोण होगा:",
+      "options": {
+        "A": "3°",
+        "B": "6°",
+        "C": "9°",
+        "D": "1.5°"
+      },
+      "answer": "A",
+      "explanation": "δm = (1.5 - 1)×6° = 3°।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q030",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "श्वेत प्रकाश जब प्रिज्म से गुजरता है, तो किस रंग का विचलन सबसे अधिक होता है?",
+      "options": {
+        "A": "लाल",
+        "B": "पीला",
+        "C": "बैगनी",
+        "D": "हरा"
+      },
+      "answer": "C",
+      "explanation": "बैंगनी का अपवर्तनांक सबसे अधिक होने से उसका विचलन सबसे अधिक होता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q031",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "श्वेत प्रकाश के प्रिज्म से गुजरने पर किस रंग का विचलन सबसे कम होता है?",
+      "options": {
+        "A": "बैगनी",
+        "B": "लाल",
+        "C": "हरा",
+        "D": "नीला"
+      },
+      "answer": "B",
+      "explanation": "लाल का अपवर्तनांक सबसे कम होने से उसका विचलन सबसे कम होता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q032",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "कोणीय वर्ण विक्षेपण (θ) बराबर होता है:",
+      "options": {
+        "A": "δv - δr",
+        "B": "δv + δr",
+        "C": "δv / δr",
+        "D": "(μv + μr)A"
+      },
+      "answer": "A",
+      "explanation": "दो रंगों के विचलन कोणों के अंतर को कोणीय वर्ण विक्षेपण कहते हैं।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q033",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "वर्ण-विक्षेपण क्षमता (ω) निर्भर करती है:",
+      "options": {
+        "A": "प्रिज्म के कोण पर",
+        "B": "प्रिज्म के पदार्थ की प्रकृति पर",
+        "C": "आपतन कोण पर",
+        "D": "इनमें से कोई नहीं"
+      },
+      "answer": "B",
+      "explanation": "वर्ण-विक्षेपण क्षमता मुख्यतः प्रिज्म के पदार्थ की प्रकृति पर निर्भर करती है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q034",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "यदि लाल, पीले और बैंगनी रंग के लिए अपवर्तनांक क्रमशः 1.51, 1.52 और 1.53 हों, तो वर्ण विक्षेपण क्षमता होगी:",
+      "options": {
+        "A": "0.0385",
+        "B": "0.02",
+        "C": "0.05",
+        "D": "0.1"
+      },
+      "answer": "A",
+      "explanation": "ω = (1.53 - 1.51)/(1.52 - 1) ≈ 0.0385।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q035",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "इंद्रधनुष (Rainbow) बनने का कारण है:",
+      "options": {
+        "A": "केवल परावर्तन",
+        "B": "अपवर्तन तथा पूर्ण आंतरिक परावर्तन",
+        "C": "केवल विवर्तन",
+        "D": "केवल प्रकीर्णन"
+      },
+      "answer": "B",
+      "explanation": "जल की बूंदों में अपवर्तन, परिक्षेपण और पूर्ण आंतरिक परावर्तन से इंद्रधनुष बनता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q036",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "प्राथमिक इंद्रधनुष में बाहर की ओर कौन-सा रंग होता है?",
+      "options": {
+        "A": "बैगनी",
+        "B": "लाल",
+        "C": "हरा",
+        "D": "पीला"
+      },
+      "answer": "B",
+      "explanation": "प्राथमिक इंद्रधनुष में बाहरी किनारे पर लाल रंग होता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q037",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "द्वितीयक इंद्रधनुष (Secondary Rainbow) में प्रकाश का जल की बूंद के अंदर कितनी बार पूर्ण आंतरिक परावर्तन होता है?",
+      "options": {
+        "A": "1 बार",
+        "B": "2 बार",
+        "C": "3 बार",
+        "D": "4 बार"
+      },
+      "answer": "B",
+      "explanation": "द्वितीयक इंद्रधनुष में दो बार पूर्ण आंतरिक परावर्तन होता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q038",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "सामान्य संयोजन के लिए स्पष्ट दृष्टि की न्यूनतम दूरी होती है:",
+      "options": {
+        "A": "25 m",
+        "B": "2.5 cm",
+        "C": "25 cm",
+        "D": "अनन्त"
+      },
+      "answer": "C",
+      "explanation": "स्वस्थ आँख का निकट बिंदु 25 cm माना जाता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q039",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "मानव नेत्र की समंजन क्षमता (Power of Accommodation) का कारण है:",
+      "options": {
+        "A": "सिलियरी (पक्ष्माभी) मांसपेशियों का सिकुड़ना/फैलना",
+        "B": "पुतली का आकार बदलना",
+        "C": "कॉर्निया का मुड़ना",
+        "D": "रेटिना का खिसकना"
+      },
+      "answer": "A",
+      "explanation": "सिलियरी मांसपेशियां नेत्र लेंस की वक्रता बदलती हैं।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q040",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "निकट दृष्टि दोष (Myopia) के निवारण के लिए प्रयुक्त होता है:",
+      "options": {
+        "A": "उत्तल लेंस",
+        "B": "अवतल लेंस",
+        "C": "बेलनाकार लेंस",
+        "D": "द्विफोक्सी (Bifocal) लेंस"
+      },
+      "answer": "B",
+      "explanation": "निकट दृष्टि दोष को अपसारी अवतल लेंस से ठीक किया जाता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q041",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "दूर दृष्टि दोष (Hypermetropia) को दूर करने के लिए कौन-सा लेंस उपयोग किया जाता है?",
+      "options": {
+        "A": "अवतल लेंस",
+        "B": "उत्तल लेंस",
+        "C": "समतल-अवतल",
+        "D": "बेलनाकार"
+      },
+      "answer": "B",
+      "explanation": "दूर दृष्टि दोष के लिए अभिसारी उत्तल लेंस प्रयुक्त होता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q042",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "जरा-दृष्टि दोष (Presbyopia) के उपचार के लिए प्रयुक्त होता है:",
+      "options": {
+        "A": "उत्तल लेंस",
+        "B": "अवतल लेंस",
+        "C": "बाइफोकल (Bifocal) लेंस",
+        "D": "बेलनाकार लेंस"
+      },
+      "answer": "C",
+      "explanation": "जरा-दृष्टि दोष में द्विफोकसी लेंस उपयोगी होता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q043",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "अबिन्दुकता (Astigmatism) दृष्टि दोष के निवारण के लिए किस लेंस का प्रयोग किया जाता है?",
+      "options": {
+        "A": "उत्तल लेंस",
+        "B": "अवतल लेंस",
+        "C": "बेलनाकार (Cylindrical) लेंस",
+        "D": "संपर्क लेंस"
+      },
+      "answer": "C",
+      "explanation": "अबिन्दुकता को बेलनाकार लेंस से ठीक किया जाता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q044",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "एक व्यक्ति 50 cm से अधिक दूरी पर स्थित वस्तुओं को स्पष्ट नहीं देख पाता। उसकी दृष्टि दोष निवारण के लिए प्रयुक्त लेंस की क्षमता होगी:",
+      "options": {
+        "A": "-2 D",
+        "B": "+2 D",
+        "C": "-0.5 D",
+        "D": "+0.5 D"
+      },
+      "answer": "A",
+      "explanation": "दूर बिंदु 50 cm होने पर f = -0.5 m और P = -2 D।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q045",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "स्वस्थ मानव आंख के लिए दूर बिंदु (Far Point) होता है:",
+      "options": {
+        "A": "25 cm",
+        "B": "100 cm",
+        "C": "अनन्त",
+        "D": "50 cm"
+      },
+      "answer": "C",
+      "explanation": "सामान्य स्वस्थ आँख का दूर बिंदु अनन्त माना जाता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q046",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "आँख के किस भाग पर वस्तु का वास्तविक एवं उल्टा प्रतिबिंब बनता है?",
+      "options": {
+        "A": "कॉर्निया",
+        "B": "आइरिस",
+        "C": "पुतली",
+        "D": "रेटिना (दृष्टि पटल)"
+      },
+      "answer": "D",
+      "explanation": "नेत्र लेंस द्वारा वास्तविक और उल्टा प्रतिबिंब रेटिना पर बनता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q047",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "सरल सूक्ष्मदर्शी (Simple Microscope) की आवर्धन क्षमता (m) होती है (जब अंतिम प्रतिबिंब D पर बने):",
+      "options": {
+        "A": "1 + D/f",
+        "B": "1 - D/f",
+        "C": "f/D",
+        "D": "1 + f/D"
+      },
+      "answer": "A",
+      "explanation": "अंतिम प्रतिबिंब D पर होने पर m = 1 + D/f।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q048",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "5 cm फोकस दूरी वाले उत्तल लेंस से बने सरल सूक्ष्मदर्शी की अधिकतम आवर्धन क्षमता होगी (D = 25 cm):",
+      "options": {
+        "A": "5",
+        "B": "6",
+        "C": "4",
+        "D": "10"
+      },
+      "answer": "B",
+      "explanation": "m = 1 + 25/5 = 6।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q049",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "यौगिक सूक्ष्मदर्शी (Compound Microscope) की नली की लंबाई बढ़ाने पर इसकी आवर्धन क्षमताः",
+      "options": {
+        "A": "बढ़ती है",
+        "B": "घटती है",
+        "C": "शून्य हो जाती है",
+        "D": "अपरिवर्तित रहती है"
+      },
+      "answer": "A",
+      "explanation": "नली की लंबाई बढ़ने पर कुल आवर्धन क्षमता बढ़ती है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q050",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "खगोलीय दूरदर्शी (Astronomical Telescope) में अभिदृश्यक (Objective) लेंस की फोकस दूरी (fo) तथा नेत्रिका (fe) की फोकस दूरी में संबंध होता है:",
+      "options": {
+        "A": "fo > fe",
+        "B": "fo < fe",
+        "C": "fo = fe",
+        "D": "fo = 0"
+      },
+      "answer": "A",
+      "explanation": "खगोलीय दूरदर्शी में objective की फोकस दूरी eyepiece से बड़ी होती है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q051",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "खगोलीय दूरदर्शी के सामान्य समायोजन (Normal Adjustment) में आवर्धन क्षमता का परिमाण होता है:",
+      "options": {
+        "A": "fo / fe",
+        "B": "fo × fe",
+        "C": "fo + fe",
+        "D": "fe / fo"
+      },
+      "answer": "A",
+      "explanation": "सामान्य समायोजन में आवर्धन क्षमता का परिमाण fo/fe होता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q052",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "खगोलीय दूरदर्शी की नली की लंबाई (L) सामान्य समायोजन में होती है:",
+      "options": {
+        "A": "fo + fe",
+        "B": "fo - fe",
+        "C": "fo × fe",
+        "D": "fo / fe"
+      },
+      "answer": "A",
+      "explanation": "सामान्य समायोजन में L = fo + fe।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q053",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "एक खगोलीय दूरदर्शी के अभिदृश्यक की फोकस दूरी 100 cm तथा नेत्रिका की फोकस दूरी 5 cm है। सामान्य समायोजन में इसकी आवर्धन क्षमता होगी:",
+      "options": {
+        "A": "20",
+        "B": "500",
+        "C": "105",
+        "D": "95"
+      },
+      "answer": "A",
+      "explanation": "m = fo/fe = 100/5 = 20।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q054",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "उपर्युक्त प्रश्न में दूरदर्शी की नली की लंबाई कितनी होगी?",
+      "options": {
+        "A": "20 cm",
+        "B": "95 cm",
+        "C": "105 cm",
+        "D": "500 cm"
+      },
+      "answer": "C",
+      "explanation": "L = fo + fe = 100 + 5 = 105 cm।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q055",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "परावर्ती दूरदर्शी (Reflecting Telescope) में मुख्य दर्पण के रूप में किसका उपयोग होता है?",
+      "options": {
+        "A": "अवतल दर्पण (परवलयाकार)",
+        "B": "उत्तल दर्पण",
+        "C": "समतल दर्पण",
+        "D": "उत्तल लेंस"
+      },
+      "answer": "A",
+      "explanation": "परावर्ती दूरदर्शी में बड़े द्वारक वाले अवतल परवलयाकार दर्पण का उपयोग होता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q056",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "संयुक्त सूक्ष्मदर्शी में अभिदृश्यक (Objective) द्वारा बना प्रतिबिंब होता है:",
+      "options": {
+        "A": "आभासी और छोटा",
+        "B": "वास्तविक और बड़ा (आवर्धित)",
+        "C": "वास्तविक और छोटा",
+        "D": "आभासी और बड़ा"
+      },
+      "answer": "B",
+      "explanation": "अभिदृश्यक वस्तु का वास्तविक, उल्टा और बड़ा प्रतिबिंब बनाता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q057",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "दृश्य प्रकाश की तरंगदैर्ध्य परास लगभग कितनी होती है?",
+      "options": {
+        "A": "1000 Å से 2000 Å",
+        "B": "3900 Å से 7800 Å",
+        "C": "8000 Å से 10000 Å",
+        "D": "100 Å से 500 Å"
+      },
+      "answer": "B",
+      "explanation": "दृश्य प्रकाश की तरंगदैर्ध्य लगभग 3900 Å से 7800 Å मानी जाती है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q058",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "1 ऐंग्स्ट्रॉम (1 Å) का मान मीटर में कितना होता है?",
+      "options": {
+        "A": "10^-8 m",
+        "B": "10^-10 m",
+        "C": "10^-12 m",
+        "D": "10^-6 m"
+      },
+      "answer": "B",
+      "explanation": "1 Å = 10^-10 m।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q059",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "निर्वात में प्रकाश की चाल (c) कितनी होती है?",
+      "options": {
+        "A": "3 × 10^8 m/s",
+        "B": "3 × 10^6 m/s",
+        "C": "2 × 10^8 m/s",
+        "D": "3 × 10^10 m/s"
+      },
+      "answer": "A",
+      "explanation": "निर्वात में प्रकाश की चाल लगभग 3 × 10^8 m/s है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q060",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "प्रकाश के परावर्तन का दूसरा नियम क्या व्यक्त करता है?",
+      "options": {
+        "A": "i > r",
+        "B": "i < r",
+        "C": "i = r",
+        "D": "i + r = 90°"
+      },
+      "answer": "C",
+      "explanation": "परावर्तन के नियम के अनुसार आपतन कोण परावर्तन कोण के बराबर होता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q061",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "जब प्रकाश किरणें परावर्तन के बाद किसी बिंदु पर वास्तव में मिलती हैं, तो कौन-सा प्रतिबिंब बनता है?",
+      "options": {
+        "A": "आभासी प्रतिबिंब",
+        "B": "वास्तविक प्रतिबिंब",
+        "C": "सीधा प्रतिबिंब",
+        "D": "काल्पनिक प्रतिबिंब"
+      },
+      "answer": "B",
+      "explanation": "किरणों के वास्तव में मिलने पर वास्तविक प्रतिबिंब बनता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q062",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "दर्पण के परावर्तक पृष्ठ के व्यास को क्या कहते हैं?",
+      "options": {
+        "A": "वक्रता त्रिज्या",
+        "B": "फोकस दूरी",
+        "C": "द्वारक (Aperture)",
+        "D": "मुख्य अक्ष"
+      },
+      "answer": "C",
+      "explanation": "गोलीय दर्पण के परावर्तक पृष्ठ के सीमांत व्यास को द्वारक कहते हैं।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q063",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "गोलीय दर्पण के द्वारक के मध्य बिंदु को क्या कहा जाता है?",
+      "options": {
+        "A": "वक्रता केंद्र",
+        "B": "ध्रुव (Pole)",
+        "C": "फोकस",
+        "D": "प्रकाशिक केंद्र"
+      },
+      "answer": "B",
+      "explanation": "दर्पण के परावर्तक तल के मध्य बिंदु को ध्रुव कहते हैं।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q064",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "गोलीय दर्पण की फोकस दूरी (f) और वक्रता त्रिज्या (R) में क्या संबंध होता है?",
+      "options": {
+        "A": "f = 2R",
+        "B": "f = R/2",
+        "C": "f = R/4",
+        "D": "f = R^2"
+      },
+      "answer": "B",
+      "explanation": "छोटे द्वारक वाले गोलीय दर्पण के लिए f = R/2।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q065",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "गोलीय दर्पण के लिए दर्पण सूत्र (Mirror formula) क्या है?",
+      "options": {
+        "A": "1/v - 1/u = 1/f",
+        "B": "1/v + 1/u = 1/f",
+        "C": "1/f = (n - 1)(1/R1 - 1/R2)",
+        "D": "v/u = f"
+      },
+      "answer": "B",
+      "explanation": "गोलीय दर्पण के लिए 1/u + 1/v = 1/f।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q066",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "यदि दो समतल दर्पण परस्पर 90° के कोण पर झुके हों, तो उनके बीच रखी वस्तु के कुल कितने प्रतिबिंब बनेंगे?",
+      "options": {
+        "A": "4",
+        "B": "3",
+        "C": "2",
+        "D": "5"
+      },
+      "answer": "B",
+      "explanation": "90° पर n = 360/90 = 4 और प्रतिबिंबों की संख्या 4 - 1 = 3।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q067",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "यदि दो समतल दर्पण एक-दूसरे के समांतर (θ = 0°) रखे हों, तो उनके बीच बनने वाले प्रतिबिंबों की संख्या होगी:",
+      "options": {
+        "A": "शून्य",
+        "B": "1",
+        "C": "2",
+        "D": "अनन्त"
+      },
+      "answer": "D",
+      "explanation": "समांतर दर्पणों के बीच अनन्त प्रतिबिंब बनते हैं।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q068",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "प्रकाश के अपवर्तन के दौरान निम्नलिखित में से कौन-सी राशि अपरिवर्तित रहती है?",
+      "options": {
+        "A": "चाल",
+        "B": "तरंगदैर्ध्य",
+        "C": "आवृत्ति",
+        "D": "तीव्रता"
+      },
+      "answer": "C",
+      "explanation": "माध्यम बदलने पर प्रकाश की आवृत्ति अपरिवर्तित रहती है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q069",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "स्नेल का नियम (Snell's Law) किस समीकरण द्वारा दिया जाता है?",
+      "options": {
+        "A": "sin i × sin r = नियतांक",
+        "B": "sin i / sin r = n2/n1",
+        "C": "sin r / sin i = n2/n1",
+        "D": "i / r = नियतांक"
+      },
+      "answer": "B",
+      "explanation": "सापेक्ष अपवर्तनांक n2/n1 = sin i/sin r।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q070",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "जब प्रकाश की किरण वायु से काँच में प्रवेश करती है, तो इसकी तरंगदैर्ध्यः",
+      "options": {
+        "A": "बढ़ती है",
+        "B": "घटती है",
+        "C": "अपरिवर्तित रहती है",
+        "D": "शून्य हो जाती है"
+      },
+      "answer": "B",
+      "explanation": "सघन माध्यम में चाल घटने से λ = v/ν के अनुसार तरंगदैर्ध्य घटती है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q071",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "यदि माध्यम 1 के सापेक्ष माध्यम 2 का अपवर्तनांक 1n2 हो, तो 1n2 × 2n1 का मान होगा:",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "-1",
+        "D": "2"
+      },
+      "answer": "B",
+      "explanation": "उत्क्रमणीयता के कारण 1n2 × 2n1 = 1।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q072",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "क्रांतिक कोण की स्थिति में विरल माध्यम में अपवर्तन कोण का मान कितना होता है?",
+      "options": {
+        "A": "0°",
+        "B": "45°",
+        "C": "90°",
+        "D": "180°"
+      },
+      "answer": "C",
+      "explanation": "क्रांतिक कोण पर विरल माध्यम में अपवर्तन कोण 90° होता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q073",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "पूर्ण आंतरिक परावर्तन के लिए आवश्यक शर्त क्या है?",
+      "options": {
+        "A": "प्रकाश विरल से सघन माध्यम में जाए",
+        "B": "प्रकाश सघन से विरल माध्यम में जाए और आपतन कोण क्रांतिक कोण से बड़ा हो",
+        "C": "आपतन कोण अपवर्तन कोण के बराबर हो",
+        "D": "आपतन कोण शून्य हो"
+      },
+      "answer": "B",
+      "explanation": "पूर्ण आंतरिक परावर्तन के लिए सघन से विरल माध्यम और i > C आवश्यक है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q074",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "जल-वायु पृष्ठ के लिए क्रांतिक कोण का मान लगभग कितना होता है?",
+      "options": {
+        "A": "24°",
+        "B": "42°",
+        "C": "48°39'",
+        "D": "90°"
+      },
+      "answer": "C",
+      "explanation": "जल-वायु युग्म के लिए क्रांतिक कोण लगभग 48°39' होता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q075",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "काँच-वायु पृष्ठ के लिए क्रांतिक कोण का मान लगभग कितना होता है?",
+      "options": {
+        "A": "41°49'",
+        "B": "48°39'",
+        "C": "24°",
+        "D": "60°"
+      },
+      "answer": "A",
+      "explanation": "काँच-वायु के लिए क्रांतिक कोण लगभग 41°49' होता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q076",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "किस रंग के प्रकाश के लिए काँच का अपवर्तनांक अधिकतम होता है?",
+      "options": {
+        "A": "लाल",
+        "B": "पीला",
+        "C": "हरा",
+        "D": "बैंगनी"
+      },
+      "answer": "D",
+      "explanation": "बैंगनी की तरंगदैर्ध्य सबसे कम होने से उसका अपवर्तनांक अधिकतम होता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q077",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "किस रंग के प्रकाश के लिए क्रांतिक कोण का मान सबसे अधिक होता है?",
+      "options": {
+        "A": "बैंगनी",
+        "B": "नीला",
+        "C": "लाल",
+        "D": "पीला"
+      },
+      "answer": "C",
+      "explanation": "लाल का अपवर्तनांक न्यूनतम होने से उसका क्रांतिक कोण अधिकतम होता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q078",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "जल के अंदर स्थित किसी मछली को संपूर्ण बाहरी संसार कितने शीर्ष कोण के शंकु में दिखाई देता है?",
+      "options": {
+        "A": "49°",
+        "B": "90° (लगभग 98°)",
+        "C": "180°",
+        "D": "60°"
+      },
+      "answer": "B",
+      "explanation": "दृश्य शंकु का शीर्ष कोण 2C, लगभग 98°, होता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q079",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "किसी उत्तल गोलीय पृष्ठ पर विरल से सघन माध्यम में अपवर्तन का सही सूत्र क्या है?",
+      "options": {
+        "A": "n2/v - n1/u = (n2 - n1)/R",
+        "B": "n1/v - n2/u = (n2 - n1)/R",
+        "C": "n2/u - n1/v = (n2 - n1)/R",
+        "D": "1/v - 1/u = 1/R"
+      },
+      "answer": "A",
+      "explanation": "गोलीय पृष्ठ पर अपवर्तन का सूत्र n2/v - n1/u = (n2 - n1)/R है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q080",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "जो लेंस बीच में मोटे तथा किनारों पर पतले होते हैं, उन्हें क्या कहते हैं?",
+      "options": {
+        "A": "अवतल लेंस",
+        "B": "उत्तल लेंस",
+        "C": "समतल लेंस",
+        "D": "बेलनाकार लेंस"
+      },
+      "answer": "B",
+      "explanation": "बीच में मोटे और किनारों पर पतले लेंस उत्तल लेंस कहलाते हैं।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q081",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "उत्तल लेंस की फोकस दूरी का चिन्ह क्या होता है?",
+      "options": {
+        "A": "ऋणात्मक",
+        "B": "धनात्मक",
+        "C": "शून्य",
+        "D": "अनन्त"
+      },
+      "answer": "B",
+      "explanation": "चिन्ह परिपाटी में उत्तल लेंस की फोकस दूरी धनात्मक होती है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q082",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "अवतल लेंस की फोकस दूरी का चिन्ह क्या होता है?",
+      "options": {
+        "A": "धनात्मक",
+        "B": "ऋणात्मक",
+        "C": "दोनों",
+        "D": "इनमें से कोई नहीं"
+      },
+      "answer": "B",
+      "explanation": "अवतल लेंस की फोकस दूरी ऋणात्मक होती है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q083",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "लेंस के लिए पतले लेंस का सूत्र (Lens formula) क्या है?",
+      "options": {
+        "A": "1/v + 1/u = 1/f",
+        "B": "1/v - 1/u = 1/f",
+        "C": "1/f = 1/u - 1/v",
+        "D": "v/u = 1/f"
+      },
+      "answer": "B",
+      "explanation": "लेंस सूत्र 1/v - 1/u = 1/f होता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q084",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "लेंस के रेखीय आवर्धन (Linear magnification) m का सूत्र क्या है?",
+      "options": {
+        "A": "-v/u",
+        "B": "v/u",
+        "C": "u/v",
+        "D": "-u/v"
+      },
+      "answer": "B",
+      "explanation": "लेंस के लिए रेखीय आवर्धन m = h2/h1 = v/u होता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q085",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "जब दो पतले लेंस (f1 और f2) परस्पर संपर्क में रखे हों, तो संयुक्त क्षमता P का मान क्या होगा?",
+      "options": {
+        "A": "P1 × P2",
+        "B": "P1 - P2",
+        "C": "P1 + P2",
+        "D": "P1 / P2"
+      },
+      "answer": "C",
+      "explanation": "संपर्क में रखे लेंसों की संयुक्त क्षमता P = P1 + P2 होती है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q086",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "प्रिज्म के अपवर्तनांक का सूत्र क्या होता है?",
+      "options": {
+        "A": "n = sin((A + δm)/2) / sin(A/2)",
+        "B": "n = sin(A/2) / sin((A + δm)/2)",
+        "C": "n = sin(A + δm) / sin(A)",
+        "D": "n = (A + δm) / A"
+      },
+      "answer": "A",
+      "explanation": "प्रिज्म सूत्र n = sin((A + δm)/2) / sin(A/2) है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q087",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "अल्पतम विचलन की स्थिति में आपतन कोण (i) और निर्गत कोण (e) में क्या संबंध होता है?",
+      "options": {
+        "A": "i > e",
+        "B": "i < e",
+        "C": "i = e",
+        "D": "i + e = 90°"
+      },
+      "answer": "C",
+      "explanation": "न्यूनतम विचलन पर आपतन कोण और निर्गमन कोण बराबर होते हैं।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q088",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "प्रिज्म द्वारा श्वेत प्रकाश के अपने अवयवी रंगों में विभक्त होने की प्रक्रिया को क्या कहते हैं?",
+      "options": {
+        "A": "प्रकीर्णन",
+        "B": "विवर्तन",
+        "C": "वर्ण विक्षेपण",
+        "D": "अपवर्तन"
+      },
+      "answer": "C",
+      "explanation": "श्वेत प्रकाश का विभिन्न रंगों में विभक्त होना वर्ण विक्षेपण कहलाता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q089",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "स्पेक्ट्रम में किस रंग को माध्य या मध्यवर्ती रंग (Mean color) माना जाता है?",
+      "options": {
+        "A": "हरा",
+        "B": "पीला",
+        "C": "लाल",
+        "D": "नीला"
+      },
+      "answer": "B",
+      "explanation": "वर्ण विक्षेपण में पीले रंग को मध्यवर्ती रंग माना जाता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q090",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "रैले के प्रकीर्णन नियम के अनुसार प्रकीर्णित प्रकाश की तीव्रता (I) और तरंगदैर्ध्य (λ) में क्या संबंध है?",
+      "options": {
+        "A": "I ∝ λ^4",
+        "B": "I ∝ 1/λ^4",
+        "C": "I ∝ 1/λ^2",
+        "D": "I ∝ λ^2"
+      },
+      "answer": "B",
+      "explanation": "रैले के अनुसार I ∝ 1/λ^4।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q091",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "खतरे का संकेत लाल रंग का क्यों बनाया जाता है?",
+      "options": {
+        "A": "लाल रंग की चाल सबसे कम होती है",
+        "B": "लाल रंग का प्रकीर्णन सबसे कम होता है",
+        "C": "लाल रंग का विचलन सबसे अधिक होता है",
+        "D": "यह आँखों को चुभता है"
+      },
+      "answer": "B",
+      "explanation": "लाल रंग की तरंगदैर्ध्य अधिक होने से उसका प्रकीर्णन कम होता है और वह दूर से दिखाई देता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q092",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "स्पष्ट दृष्टि की न्यूनतम दूरी पर स्वस्थ नेत्र के लिए विभेदन सीमा का मान कितना होता है?",
+      "options": {
+        "A": "1°",
+        "B": "1' (1 मिनट)",
+        "C": "1\" (1 सेकंड)",
+        "D": "10'"
+      },
+      "answer": "B",
+      "explanation": "सामान्य स्वस्थ आँख के लिए विभेदन सीमा लगभग 1 मिनट होती है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q093",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "किसी प्रकाशिक यंत्र की विभेदन क्षमता उसकी विभेदन सीमा की क्या होती है?",
+      "options": {
+        "A": "समानुपाती",
+        "B": "व्युत्क्रमानुपाती",
+        "C": "बराबर",
+        "D": "वर्ग के बराबर"
+      },
+      "answer": "B",
+      "explanation": "विभेदन क्षमता = 1/विभेदन सीमा।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q094",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "सरल सूक्ष्मदर्शी में किस प्रकार के लेंस का उपयोग किया जाता है?",
+      "options": {
+        "A": "अधिक फोकस दूरी का अवतल लेंस",
+        "B": "कम फोकस दूरी का उत्तल लेंस",
+        "C": "अधिक फोकस दूरी का उत्तल लेंस",
+        "D": "बेलनाकार लेंस"
+      },
+      "answer": "B",
+      "explanation": "सरल सूक्ष्मदर्शी में कम फोकस दूरी वाले उत्तल लेंस का उपयोग होता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q095",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "संयुक्त सूक्ष्मदर्शी में नेत्रिका लेंस (Eye lens) की फोकस दूरी अभिदृश्यक लेंस की तुलना में कैसी होती है?",
+      "options": {
+        "A": "कम",
+        "B": "अधिक",
+        "C": "बराबर",
+        "D": "शून्य"
+      },
+      "answer": "B",
+      "explanation": "संयुक्त सूक्ष्मदर्शी में नेत्रिका की फोकस दूरी अभिदृश्यक से अधिक होती है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q096",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "संयुक्त सूक्ष्मदर्शी द्वारा बना अंतिम प्रतिबिंब कैसा होता है?",
+      "options": {
+        "A": "वास्तविक, सीधा और बड़ा",
+        "B": "आभासी, उल्टा और आवर्धित",
+        "C": "वास्तविक, उल्टा और छोटा",
+        "D": "आभासी, सीधा और छोटा"
+      },
+      "answer": "B",
+      "explanation": "अंतिम प्रतिबिंब वस्तु के सापेक्ष आभासी, उल्टा और आवर्धित होता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q097",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "खगोलीय दूरदर्शी में अंतिम प्रतिबिंब कैसा बनता है?",
+      "options": {
+        "A": "आभासी और उल्टा",
+        "B": "आभासी और सीधा",
+        "C": "वास्तविक और सीधा",
+        "D": "वास्तविक और बराबर"
+      },
+      "answer": "A",
+      "explanation": "खगोलीय दूरदर्शी का अंतिम प्रतिबिंब आभासी और उल्टा होता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q098",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "एक उत्तल लेंस की फोकस दूरी 50 cm है, इसकी क्षमता क्या होगी?",
+      "options": {
+        "A": "+2 D",
+        "B": "-2 D",
+        "C": "+0.5 D",
+        "D": "-0.5 D"
+      },
+      "answer": "A",
+      "explanation": "P = 100/50 = +2 D।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q099",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "अवतल दर्पण के सामने वस्तु फोकस (F) पर रखी हो, तो उसका प्रतिबिंब कहाँ बनेगा?",
+      "options": {
+        "A": "ध्रुव पर",
+        "B": "वक्रता केंद्र पर",
+        "C": "अनन्त पर",
+        "D": "फोकस पर"
+      },
+      "answer": "C",
+      "explanation": "फोकस पर रखी वस्तु से परावर्तित किरणें समांतर हो जाती हैं, इसलिए प्रतिबिंब अनन्त पर बनता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    },
+    {
+      "id": "PHY09Q100",
+      "subject": "physics",
+      "chapter": 9,
+      "question": "जब वस्तु अवतल दर्पण के फोकस (F) और ध्रुव (P) के बीच स्थित हो, तो प्रतिबिंब बनता है:",
+      "options": {
+        "A": "वास्तविक और उल्टा",
+        "B": "आभासी, सीधा और बड़ा",
+        "C": "वक्रता केंद्र पर",
+        "D": "अनन्त पर"
+      },
+      "answer": "B",
+      "explanation": "F और P के बीच वस्तु रखने पर प्रतिबिंब दर्पण के पीछे आभासी, सीधा और आवर्धित बनता है।",
+      "source": "User-provided content",
+      "type": "objective",
+      "timer": 30
+    }
+  ]
+}
