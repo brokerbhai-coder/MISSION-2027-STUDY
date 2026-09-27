@@ -866,7 +866,16 @@
       "color": "#b45309",
       "status": "available",
       "progression": "sequential",
-      "chapters": []
+      "chapters": [
+        {
+          "number": 1,
+          "title": "ईट,मनके और अस्थिय ां",
+          "file": "data/history/chapter-01.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+      ]
     },
     {
       "id": "geography",
