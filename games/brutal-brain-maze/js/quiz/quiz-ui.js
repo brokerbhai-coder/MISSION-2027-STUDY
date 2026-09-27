@@ -66,25 +66,33 @@ export class QuizUI {
     }
 
     handleAnswer(i) {
+        const q = this.quizLock.getCurrentQuestion();
+        const correctIndex = q.shuffledOptions.findIndex(o => o.isCorrect);
         const result = this.quizLock.submitAnswer(i);
-        
+
+        // हर Option को Disable करके सही वाले को हरा, गलत चुने हुए को लाल दिखाओ
+        const btns = this.optionsContainer.querySelectorAll('.quiz-option-btn');
+        btns.forEach((btn, idx) => {
+            btn.disabled = true;
+            if (idx === correctIndex) btn.classList.add('opt-correct');
+            else if (idx === i) btn.classList.add('opt-wrong');
+        });
+
         if (result.correct) {
             if (result.complete) {
-                this.optionsContainer.innerHTML = '';
                 this.feedbackEl.className = 'quiz-feedback feedback-success';
                 this.feedbackEl.innerText = "10/10 सही! गेम अनलॉक हो गया। (10/10 Correct! Game Unlocked.)";
                 this.btnContinue.classList.remove('hidden');
             } else {
-                this.renderCurrentQuestion();
+                setTimeout(() => this.renderCurrentQuestion(), 700); // सही होने पर भी थोड़ा रुककर हरा रंग दिखे
             }
         } else {
-            this.optionsContainer.innerHTML = '';
             this.feedbackEl.className = 'quiz-feedback feedback-error';
-            this.feedbackEl.innerText = "गलत उत्तर! प्रश्नोत्तरी फिर से शुरू हो रही है। (Wrong! Restarting...)";
+            this.feedbackEl.innerText = `❌ ग़लत! सही उत्तर था: ${q.shuffledOptions[correctIndex].text}`;
             setTimeout(() => {
                 this.quizLock.generateQuiz(); // Force restart
                 this.renderCurrentQuestion();
-            }, 2000);
+            }, 5000); // 5 सेकंड सही उत्तर दिखे, ताकि याद हो जाए
         }
     }
 }
