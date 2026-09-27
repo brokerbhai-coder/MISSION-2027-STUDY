@@ -43,5 +43,9 @@
     { "subject": "mathematics", "chapter": 7, "part": "20", "file": "data/notes/mathematics/chapter-07-part-20.json" },
     { "subject": "mathematics", "chapter": 7, "part": "21", "file": "data/notes/mathematics/chapter-07-part-21.json" },
     { "subject": "mathematics", "chapter": 7, "part": "22", "file": "data/notes/mathematics/chapter-07-part-22.json" }
-  ]
-}
+    { "subject": "physics", "chapter": 9, "part": "1", "file": "data/notes/physics/chapter-09-part-1.json" },
+    { "subject": "physics", "chapter": 9, "part": "2", "file": "data/notes/physics/chapter-09-part-2.json" },
+    { "subject": "physics", "chapter": 9, "part": "3", "file": "data/notes/physics/chapter-09-part-3.json" },
+    { "subject": "physics", "chapter": 9, "part": "4", "file": "data/notes/physics/chapter-09-part-4.json" }
+    ]
+    
