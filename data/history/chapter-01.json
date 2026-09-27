@@ -1,0 +1,2404 @@
+{
+  "questions": [
+    {
+      "id": "HIS01Q001",
+      "subject": "history",
+      "chapter": 1,
+      "question": "Harappa की खोज का प्रथम वर्ष कौन-सा था?",
+      "options": {
+        "A": "1921",
+        "B": "1922",
+        "C": "1931",
+        "D": "1955"
+      },
+      "answer": "A",
+      "explanation": "1921 में राय बहादुर दयाराम साहनी ने हड़प्पा में उत्खनन किया।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q002",
+      "subject": "history",
+      "chapter": 1,
+      "question": "हड़प्पा का प्रथम उत्खनन किसने किया था?",
+      "options": {
+        "A": "राखालदास बनर्जी",
+        "B": "दयाराम साहनी",
+        "C": "सर जॉन मार्शल",
+        "D": "एस. आर. राव"
+      },
+      "answer": "B",
+      "explanation": "हड़प्पा का प्रारंभिक उत्खनन दयाराम साहनी ने किया था।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q003",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मोहनजोदड़ो की खोज 1922 में किसने की थी?",
+      "options": {
+        "A": "दयाराम साहनी",
+        "B": "यज्ञदत्त शर्मा",
+        "C": "राखालदास बनर्जी",
+        "D": "सूरजभान"
+      },
+      "answer": "C",
+      "explanation": "1922 में राखालदास बनर्जी ने मोहनजोदड़ो की खोज की।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q004",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मोहनजोदड़ो का अर्थ क्या है?",
+      "options": {
+        "A": "जीवन का टीला",
+        "B": "नवाबों का शहर",
+        "C": "देवताओं का बाग",
+        "D": "मृतकों का टीला"
+      },
+      "answer": "D",
+      "explanation": "मोहनजोदड़ो का अर्थ 'मृतकों का टीला' है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q005",
+      "subject": "history",
+      "chapter": 1,
+      "question": "हड़प्पा किस नदी के किनारे स्थित था?",
+      "options": {
+        "A": "रावी",
+        "B": "सिंधु",
+        "C": "भोगवा",
+        "D": "सरस्वती"
+      },
+      "answer": "A",
+      "explanation": "हड़प्पा रावी नदी के किनारे स्थित था।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q006",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मोहनजोदड़ो किस नदी के किनारे स्थित था?",
+      "options": {
+        "A": "सतलुज",
+        "B": "सिंधु",
+        "C": "हिंडन",
+        "D": "चेनाब"
+      },
+      "answer": "B",
+      "explanation": "मोहनजोदड़ो सिंधु नदी के किनारे स्थित था।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q007",
+      "subject": "history",
+      "chapter": 1,
+      "question": "हड़प्पा और मोहनजोदड़ो के बीच लगभग कितनी दूरी थी?",
+      "options": {
+        "A": "550 किमी",
+        "B": "600 किमी",
+        "C": "670 किमी",
+        "D": "720 किमी"
+      },
+      "answer": "C",
+      "explanation": "दोनों प्रमुख नगरों के बीच लगभग 670 किमी की दूरी बताई गई है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q008",
+      "subject": "history",
+      "chapter": 1,
+      "question": "हड़प्पा और मोहनजोदड़ो को किस रूप में कहा गया है?",
+      "options": {
+        "A": "प्रमुख बंदरगाह",
+        "B": "धार्मिक केंद्र",
+        "C": "व्यापारिक चौकियाँ",
+        "D": "जुड़वाँ राजधानियाँ"
+      },
+      "answer": "D",
+      "explanation": "हड़प्पा और मोहनजोदड़ो को जुड़वाँ राजधानियों के रूप में बताया गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q009",
+      "subject": "history",
+      "chapter": 1,
+      "question": "रंगनाथ राव के अनुसार हड़प्पा सभ्यता का क्षेत्रफल लगभग कितना था?",
+      "options": {
+        "A": "12,99,600 वर्ग किमी",
+        "B": "15,20,000 वर्ग किमी",
+        "C": "10,50,000 वर्ग किमी",
+        "D": "16,00,000 वर्ग किमी"
+      },
+      "answer": "A",
+      "explanation": "रंगनाथ राव के अनुसार क्षेत्रफल लगभग 12,99,600 वर्ग किमी था।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q010",
+      "subject": "history",
+      "chapter": 1,
+      "question": "हड़प्पा सभ्यता का पूर्व-पश्चिम विस्तार लगभग कितना था?",
+      "options": {
+        "A": "1100 किमी",
+        "B": "1600 किमी",
+        "C": "1300 किमी",
+        "D": "1900 किमी"
+      },
+      "answer": "B",
+      "explanation": "पूर्व-पश्चिम विस्तार लगभग 1600 किमी बताया गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q011",
+      "subject": "history",
+      "chapter": 1,
+      "question": "हड़प्पा सभ्यता का भौगोलिक आकार कैसा था?",
+      "options": {
+        "A": "आयताकार",
+        "B": "वृत्ताकार",
+        "C": "त्रिभुजाकार",
+        "D": "वर्गाकार"
+      },
+      "answer": "C",
+      "explanation": "सभ्यता का क्षेत्र मोटे तौर पर त्रिभुजाकार बताया गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q012",
+      "subject": "history",
+      "chapter": 1,
+      "question": "सुत्कागेंडोर किस नदी के किनारे था?",
+      "options": {
+        "A": "रावी",
+        "B": "सरस्वती",
+        "C": "सिंधु",
+        "D": "दाश्क नदी"
+      },
+      "answer": "D",
+      "explanation": "सुत्कागेंडोर दाश्क नदी के क्षेत्र में स्थित था।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q013",
+      "subject": "history",
+      "chapter": 1,
+      "question": "कालीबंगा किस राज्य में स्थित है?",
+      "options": {
+        "A": "राजस्थान",
+        "B": "गुजरात",
+        "C": "हरियाणा",
+        "D": "पंजाब"
+      },
+      "answer": "A",
+      "explanation": "कालीबंगा राजस्थान में स्थित है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q014",
+      "subject": "history",
+      "chapter": 1,
+      "question": "लोथल किस नदी के किनारे था?",
+      "options": {
+        "A": "सिंधु",
+        "B": "भोगवा",
+        "C": "सतलुज",
+        "D": "हिंडन"
+      },
+      "answer": "B",
+      "explanation": "लोथल भोगवा नदी के किनारे स्थित था।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q015",
+      "subject": "history",
+      "chapter": 1,
+      "question": "जुते हुए खेत का प्रमाण कहाँ मिला?",
+      "options": {
+        "A": "लोथल",
+        "B": "बनावली",
+        "C": "कालीबंगा",
+        "D": "मोहनजोदड़ो"
+      },
+      "answer": "C",
+      "explanation": "जुते हुए खेत का प्रमाण कालीबंगा से मिला।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q016",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मिट्टी के हल के नमूने कहाँ मिले?",
+      "options": {
+        "A": "रंगपुर/रोपड़",
+        "B": "हड़प्पा/लोथल",
+        "C": "कालीबंगा/मांडा",
+        "D": "बनावली/चोलिस्तान"
+      },
+      "answer": "D",
+      "explanation": "मिट्टी के हल के नमूने बनावली और चोलिस्तान से जुड़े हैं।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q017",
+      "subject": "history",
+      "chapter": 1,
+      "question": "नहर के अवशेष कहाँ मिले?",
+      "options": {
+        "A": "शॉर्टुगई, अफगानिस्तान",
+        "B": "लोथल",
+        "C": "कालीबंगा",
+        "D": "धोलावीरा"
+      },
+      "answer": "A",
+      "explanation": "नहर के अवशेष शॉर्टुगई, अफगानिस्तान से मिले हैं।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q018",
+      "subject": "history",
+      "chapter": 1,
+      "question": "विशाल जलाशय किस स्थल की विशेषता है?",
+      "options": {
+        "A": "चन्हुदड़ो",
+        "B": "धोलावीरा",
+        "C": "बनावली",
+        "D": "आलमगीरपुर"
+      },
+      "answer": "B",
+      "explanation": "धोलावीरा अपने विशाल जलाशयों के लिए प्रसिद्ध है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q019",
+      "subject": "history",
+      "chapter": 1,
+      "question": "महान स्नानागार कहाँ मिला?",
+      "options": {
+        "A": "हड़प्पा",
+        "B": "लोथल",
+        "C": "मोहनजोदड़ो",
+        "D": "कालीबंगा"
+      },
+      "answer": "C",
+      "explanation": "महान स्नानागार मोहनजोदड़ो में मिला।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q020",
+      "subject": "history",
+      "chapter": 1,
+      "question": "महान स्नानागार को जलरोधक बनाने में क्या प्रयोग किया गया?",
+      "options": {
+        "A": "चूना+रेत",
+        "B": "डामर",
+        "C": "मुल्तानी मिट्टी",
+        "D": "जिप्सम मोर्टार"
+      },
+      "answer": "D",
+      "explanation": "महान स्नानागार में जिप्सम मोर्टार का प्रयोग बताया गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q021",
+      "subject": "history",
+      "chapter": 1,
+      "question": "कांस्य की नर्तकी की मूर्ति कहाँ मिली?",
+      "options": {
+        "A": "मोहनजोदड़ो",
+        "B": "हड़प्पा",
+        "C": "चन्हुदड़ो",
+        "D": "लोथल"
+      },
+      "answer": "A",
+      "explanation": "कांस्य नर्तकी की प्रसिद्ध मूर्ति मोहनजोदड़ो से मिली।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q022",
+      "subject": "history",
+      "chapter": 1,
+      "question": "पुरोहित-राजा की मूर्ति कहाँ मिली?",
+      "options": {
+        "A": "हड़प्पा",
+        "B": "मोहनजोदड़ो",
+        "C": "लोथल",
+        "D": "कालीबंगा"
+      },
+      "answer": "B",
+      "explanation": "पुरोहित-राजा की मूर्ति मोहनजोदड़ो से मिली।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q023",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मनका बनाने का प्रमुख केंद्र कौन-सा था?",
+      "options": {
+        "A": "कालीबंगा",
+        "B": "रोपड़",
+        "C": "चन्हुदड़ो",
+        "D": "आलमगीरपुर"
+      },
+      "answer": "C",
+      "explanation": "चन्हुदड़ो मनका निर्माण के प्रमुख केंद्र के रूप में जाना जाता है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q024",
+      "subject": "history",
+      "chapter": 1,
+      "question": "शंख शिल्प के तटीय केंद्र कौन-से थे?",
+      "options": {
+        "A": "हड़प्पा/मोहनजोदड़ो",
+        "B": "बनावली/राखीगढ़ी",
+        "C": "आलमगीरपुर/मांडा",
+        "D": "नागेश्वर/बालाकोट"
+      },
+      "answer": "D",
+      "explanation": "नागेश्वर और बालाकोट तटीय शंख-शिल्प केंद्र थे।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q025",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मुहरें मुख्यतः किस पदार्थ की बनी थीं?",
+      "options": {
+        "A": "स्टीटाइट",
+        "B": "चूना पत्थर",
+        "C": "ग्रेनाइट",
+        "D": "संगमरमर"
+      },
+      "answer": "A",
+      "explanation": "हड़प्पाई मुहरें मुख्यतः स्टीटाइट की बनी थीं।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q026",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मेसोपोटामिया में सिंधु क्षेत्र के लिए कौन-सा शब्द प्रयोग हुआ?",
+      "options": {
+        "A": "दिलमुन",
+        "B": "मेलुह्हा",
+        "C": "मगन",
+        "D": "सुमेर"
+      },
+      "answer": "B",
+      "explanation": "मेसोपोटामियाई स्रोतों में मेलुह्हा शब्द मिलता है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q027",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मेलुह्हा का 'हाजा पक्षी' किसे माना गया?",
+      "options": {
+        "A": "कबूतर",
+        "B": "तोता",
+        "C": "मोर",
+        "D": "बगुला"
+      },
+      "answer": "C",
+      "explanation": "दिए गए स्रोत में हाजा पक्षी को मोर से जोड़ा गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q028",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मगन आधुनिक किस देश से संबंधित है?",
+      "options": {
+        "A": "बहरीन",
+        "B": "अफगानिस्तान",
+        "C": "मिस्र",
+        "D": "ओमान"
+      },
+      "answer": "D",
+      "explanation": "मगन को आधुनिक ओमान से जोड़ा गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q029",
+      "subject": "history",
+      "chapter": 1,
+      "question": "राजस्थान में तांबे का प्रमुख स्रोत कौन-सा था?",
+      "options": {
+        "A": "खेतड़ी",
+        "B": "नागौर",
+        "C": "उदयपुर",
+        "D": "अजमेर"
+      },
+      "answer": "A",
+      "explanation": "खेतड़ी क्षेत्र तांबे के स्रोत के रूप में जाना जाता है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q030",
+      "subject": "history",
+      "chapter": 1,
+      "question": "लैपिस लाजुली का स्रोत कहाँ था?",
+      "options": {
+        "A": "खेतड़ी",
+        "B": "शॉर्टुगई, अफगानिस्तान",
+        "C": "दक्षिण भारत",
+        "D": "लोथल"
+      },
+      "answer": "B",
+      "explanation": "लैपिस लाजुली का स्रोत शॉर्टुगई, अफगानिस्तान बताया गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q031",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मानकीकृत पत्थर के बाट किस पदार्थ के थे?",
+      "options": {
+        "A": "जैस्पर",
+        "B": "स्टीटाइट",
+        "C": "चर्ट",
+        "D": "संगमरमर"
+      },
+      "answer": "C",
+      "explanation": "मानकीकृत बाटों के लिए चर्ट का उल्लेख है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q032",
+      "subject": "history",
+      "chapter": 1,
+      "question": "निचले भारों की प्रणाली कैसी थी?",
+      "options": {
+        "A": "दशमलव",
+        "B": "त्रिगुणित",
+        "C": "षोडशाधारी",
+        "D": "द्विआधारी"
+      },
+      "answer": "D",
+      "explanation": "निचले भारों की प्रणाली द्विआधारी बताई गई है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q033",
+      "subject": "history",
+      "chapter": 1,
+      "question": "हड़प्पाई लिपि की दिशा क्या थी?",
+      "options": {
+        "A": "ऊपर से नीचे",
+        "B": "दाएँ से बाएँ",
+        "C": "बाएँ से दाएँ",
+        "D": "नीचे से ऊपर"
+      },
+      "answer": "B",
+      "explanation": "दिए गए स्रोत के अनुसार हड़प्पाई लिपि दाएँ से बाएँ लिखी जाती थी।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q034",
+      "subject": "history",
+      "chapter": 1,
+      "question": "NCERT के अनुसार विकसित हड़प्पा काल की तिथि क्या है?",
+      "options": {
+        "A": "3250–2750 ई.पू.",
+        "B": "2800–2500 ई.पू.",
+        "C": "2600–1900 ई.पू.",
+        "D": "1500–1000 ई.पू."
+      },
+      "answer": "C",
+      "explanation": "दिए गए स्रोत में विकसित हड़प्पा काल 2600–1900 ई.पू. है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q035",
+      "subject": "history",
+      "chapter": 1,
+      "question": "रेडियोकार्बन तिथि के अनुसार बताई गई अवधि क्या है?",
+      "options": {
+        "A": "3200–2750 ई.पू.",
+        "B": "2800–2500 ई.पू.",
+        "C": "2700–2500 ई.पू.",
+        "D": "2500–1750 ई.पू."
+      },
+      "answer": "D",
+      "explanation": "दिए गए स्रोत में यह अवधि 2500–1750 ई.पू. दी गई है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q036",
+      "subject": "history",
+      "chapter": 1,
+      "question": "1946 में C-14 की खोज किसने की?",
+      "options": {
+        "A": "B.F. Libby",
+        "B": "दयाराम साहनी",
+        "C": "जॉन मार्शल",
+        "D": "मोर्टिमर व्हीलर"
+      },
+      "answer": "A",
+      "explanation": "1946 में B.F. Libby ने C-14 विधि से संबंधित खोज की।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q037",
+      "subject": "history",
+      "chapter": 1,
+      "question": "जॉन मार्शल की काल-निर्धारण योजना क्या थी?",
+      "options": {
+        "A": "2500–1750 ई.पू.",
+        "B": "3250–2750 ई.पू.",
+        "C": "2800–2500 ई.पू.",
+        "D": "2600–1900 ई.पू."
+      },
+      "answer": "B",
+      "explanation": "दिए गए स्रोत में जॉन मार्शल की अवधि 3250–2750 ई.पू. है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q038",
+      "subject": "history",
+      "chapter": 1,
+      "question": "ASI के प्रथम महानिदेशक कौन थे?",
+      "options": {
+        "A": "जॉन मार्शल",
+        "B": "मोर्टिमर व्हीलर",
+        "C": "अलेक्जेंडर कनिंघम",
+        "D": "विलियम जोन्स"
+      },
+      "answer": "C",
+      "explanation": "अलेक्जेंडर कनिंघम ASI के प्रथम महानिदेशक थे।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q039",
+      "subject": "history",
+      "chapter": 1,
+      "question": "एशियाटिक सोसाइटी की स्थापना 15 जनवरी 1784 को किसने की?",
+      "options": {
+        "A": "कर्जन",
+        "B": "कनिंघम",
+        "C": "साहनी",
+        "D": "विलियम जोन्स"
+      },
+      "answer": "D",
+      "explanation": "15 जनवरी 1784 को विलियम जोन्स ने एशियाटिक सोसाइटी की स्थापना की।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q040",
+      "subject": "history",
+      "chapter": 1,
+      "question": "जॉन मार्शल ने औपचारिक घोषणा किस वर्ष की?",
+      "options": {
+        "A": "1924",
+        "B": "1921",
+        "C": "1922",
+        "D": "1925"
+      },
+      "answer": "A",
+      "explanation": "जॉन मार्शल की औपचारिक घोषणा 1924 में हुई।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q041",
+      "subject": "history",
+      "chapter": 1,
+      "question": "1944 में स्तरीकरण पर विशेष ध्यान किसने दिया?",
+      "options": {
+        "A": "कनिंघम",
+        "B": "R.E.M. Wheeler",
+        "C": "अर्नेस्ट मैके",
+        "D": "मार्शल"
+      },
+      "answer": "B",
+      "explanation": "1944 में R.E.M. Wheeler ने स्तरीकरण पर विशेष ध्यान दिया।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q042",
+      "subject": "history",
+      "chapter": 1,
+      "question": "1826 में हड़प्पा टीले का पहला उल्लेख किसने किया?",
+      "options": {
+        "A": "जॉन ब्रैटन",
+        "B": "कनिंघम",
+        "C": "चार्ल्स मैसन",
+        "D": "विलियम ब्रैटन"
+      },
+      "answer": "C",
+      "explanation": "1826 में चार्ल्स मैसन ने हड़प्पा टीले का उल्लेख किया।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q043",
+      "subject": "history",
+      "chapter": 1,
+      "question": "1856 में रेलवे के लिए हड़प्पा की ईंटें किससे संबंधित हैं?",
+      "options": {
+        "A": "मार्शल/मैके",
+        "B": "कनिंघम/व्हीलर",
+        "C": "साहनी/बनर्जी",
+        "D": "जॉन ब्रैटन/विलियम ब्रैटन"
+      },
+      "answer": "D",
+      "explanation": "दिए गए स्रोत में 1856 की रेलवे ईंटों का संबंध जॉन ब्रैटन और विलियम ब्रैटन से है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q044",
+      "subject": "history",
+      "chapter": 1,
+      "question": "डॉकयार्ड कहाँ मिला?",
+      "options": {
+        "A": "लोथल",
+        "B": "कालीबंगा",
+        "C": "रोपड़",
+        "D": "आलमगीरपुर"
+      },
+      "answer": "A",
+      "explanation": "प्रसिद्ध डॉकयार्ड लोथल में मिला।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q045",
+      "subject": "history",
+      "chapter": 1,
+      "question": "धोलावीरा का उत्खनन 1990–91 में किसने किया?",
+      "options": {
+        "A": "S.R. Rao",
+        "B": "रवींद्र सिंह बिष्ट",
+        "C": "यज्ञदत्त शर्मा",
+        "D": "फजल अहमद"
+      },
+      "answer": "B",
+      "explanation": "धोलावीरा का उत्खनन रवींद्र सिंह बिष्ट ने किया।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q046",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मांडा के उत्तर में कौन-सी नदी थी?",
+      "options": {
+        "A": "झेलम",
+        "B": "सिंधु",
+        "C": "चेनाब",
+        "D": "सतलुज"
+      },
+      "answer": "C",
+      "explanation": "दिए गए स्रोत में मांडा के उत्तर में चेनाब नदी का उल्लेख है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q047",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मेरठ में हिंडन नदी पर कौन-सा स्थल है?",
+      "options": {
+        "A": "मीताथल",
+        "B": "भगवानपुरा",
+        "C": "राखीगढ़ी",
+        "D": "आलमगीरपुर"
+      },
+      "answer": "D",
+      "explanation": "आलमगीरपुर मेरठ में हिंडन नदी के किनारे स्थित है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q048",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मार्शल ने बैठे हुए योगिक देवता को क्या नाम दिया?",
+      "options": {
+        "A": "प्रोटो-शिव",
+        "B": "इंद्र",
+        "C": "वरुण",
+        "D": "प्रजापति"
+      },
+      "answer": "A",
+      "explanation": "मार्शल ने इसे प्रोटो-शिव नाम दिया था।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q049",
+      "subject": "history",
+      "chapter": 1,
+      "question": "1947 में इंद्र/पुरंदर द्वारा विनाश का सिद्धांत किसने दिया?",
+      "options": {
+        "A": "George F. Dales",
+        "B": "R.E.M. Wheeler",
+        "C": "Marshall",
+        "D": "Sahni"
+      },
+      "answer": "B",
+      "explanation": "दिए गए स्रोत में यह सिद्धांत R.E.M. Wheeler से जोड़ा गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q050",
+      "subject": "history",
+      "chapter": 1,
+      "question": "1937 में अनाज पीसने वाले अवतल पत्थरों का वर्णन किसने किया?",
+      "options": {
+        "A": "साहनी",
+        "B": "बनर्जी",
+        "C": "अर्नेस्ट मैके",
+        "D": "R.S. बिष्ट"
+      },
+      "answer": "C",
+      "explanation": "दिए गए स्रोत में 1937 का यह वर्णन अर्नेस्ट मैके से संबंधित है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q051",
+      "subject": "history",
+      "chapter": 1,
+      "question": "चार प्राचीन नदी घाटी सभ्यताओं में केवल शहरी सभ्यता कौन-सी थी?",
+      "options": {
+        "A": "मेसोपोटामिया",
+        "B": "मिस्र",
+        "C": "सिंधु घाटी",
+        "D": "चीनी"
+      },
+      "answer": "C",
+      "explanation": "दिए गए प्रश्न-स्रोत के अनुसार सिंधु घाटी सभ्यता को केवल शहरी सभ्यता बताया गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q052",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मेसोपोटामिया की प्रमुख नदियाँ कौन-सी थीं?",
+      "options": {
+        "A": "नील/अमेजन",
+        "B": "टिगरिस/यूफ्रेट्स",
+        "C": "सिंधु/सरस्वती",
+        "D": "ह्वांग हो/यांग्त्से"
+      },
+      "answer": "B",
+      "explanation": "मेसोपोटामिया टिगरिस और यूफ्रेट्स नदियों के क्षेत्र में था।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q053",
+      "subject": "history",
+      "chapter": 1,
+      "question": "प्राचीन चीनी सभ्यता किस नदी से संबंधित थी?",
+      "options": {
+        "A": "ह्वांग हो",
+        "B": "मेकांग",
+        "C": "इरावदी",
+        "D": "ब्रह्मपुत्र"
+      },
+      "answer": "A",
+      "explanation": "प्राचीन चीनी सभ्यता का संबंध ह्वांग हो से बताया गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q054",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मिस्र में वैज्ञानिक पुरातत्व की नींव (1835–1902) से किसका नाम जुड़ा है?",
+      "options": {
+        "A": "कनिंघम",
+        "B": "विलियम जोन्स",
+        "C": "मार्शल",
+        "D": "पिट रिवर्स"
+      },
+      "answer": "D",
+      "explanation": "दिए गए स्रोत में वैज्ञानिक पुरातत्व की नींव से पिट रिवर्स का नाम जोड़ा गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q055",
+      "subject": "history",
+      "chapter": 1,
+      "question": "जॉन मार्शल को ASI का महानिदेशक कब नियुक्त किया गया?",
+      "options": {
+        "A": "1902",
+        "B": "1861",
+        "C": "1921",
+        "D": "1944"
+      },
+      "answer": "A",
+      "explanation": "जॉन मार्शल को 1902 में ASI का महानिदेशक नियुक्त किया गया।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q056",
+      "subject": "history",
+      "chapter": 1,
+      "question": "रंगनाथ राव के अनुसार दक्षिणी विस्तार किस नदी तक था?",
+      "options": {
+        "A": "गोदावरी",
+        "B": "नर्मदा",
+        "C": "कावेरी",
+        "D": "कृष्णा"
+      },
+      "answer": "B",
+      "explanation": "दिए गए स्रोत के अनुसार दक्षिणी विस्तार नर्मदा तक था।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q057",
+      "subject": "history",
+      "chapter": 1,
+      "question": "हड़प्पा सभ्यता का उत्तर-दक्षिण विस्तार लगभग कितना था?",
+      "options": {
+        "A": "1600 किमी",
+        "B": "1400 किमी",
+        "C": "1100 किमी",
+        "D": "1200 किमी"
+      },
+      "answer": "C",
+      "explanation": "उत्तर-दक्षिण विस्तार लगभग 1100 किमी बताया गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q058",
+      "subject": "history",
+      "chapter": 1,
+      "question": "अर्नेस्ट मैके की काल-निर्धारण अवधि क्या थी?",
+      "options": {
+        "A": "3250–2750 ई.पू.",
+        "B": "3200–2750 ई.पू.",
+        "C": "2700–2500 ई.पू.",
+        "D": "2800–2500 ई.पू."
+      },
+      "answer": "D",
+      "explanation": "दिए गए स्रोत में अर्नेस्ट मैके की अवधि 2800–2500 ई.पू. है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q059",
+      "subject": "history",
+      "chapter": 1,
+      "question": "माधव स्वरूप वत्स की काल-निर्धारण अवधि क्या थी?",
+      "options": {
+        "A": "2700–2500 ई.पू.",
+        "B": "2500–1500 ई.पू.",
+        "C": "3250–2750 ई.पू.",
+        "D": "2500–1750 ई.पू."
+      },
+      "answer": "A",
+      "explanation": "दिए गए स्रोत में माधव स्वरूप वत्स की अवधि 2700–2500 ई.पू. है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q060",
+      "subject": "history",
+      "chapter": 1,
+      "question": "C-14 विधि में स्थिर समस्थानिक कौन-सा है?",
+      "options": {
+        "A": "C-14",
+        "B": "C-12",
+        "C": "C-13",
+        "D": "C-16"
+      },
+      "answer": "B",
+      "explanation": "दिए गए प्रश्न में C-12 को स्थिर समस्थानिक के रूप में चुना गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q061",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मोहनजोदड़ो से लगभग कितनी मुहरें मिली हैं?",
+      "options": {
+        "A": "500",
+        "B": "1000",
+        "C": "1398",
+        "D": "2000"
+      },
+      "answer": "C",
+      "explanation": "दिए गए स्रोत में मोहनजोदड़ो से 1398 मुहरों का उल्लेख है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q062",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मोहनजोदड़ो से किस वस्त्र के अवशेष मिले?",
+      "options": {
+        "A": "रेशम",
+        "B": "ऊन",
+        "C": "सन",
+        "D": "कपास"
+      },
+      "answer": "D",
+      "explanation": "कपास के वस्त्र के अवशेष मिलने का उल्लेख है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q063",
+      "subject": "history",
+      "chapter": 1,
+      "question": "हाथीदाँत की स्केल और शंख की माप किस स्थल से मिली?",
+      "options": {
+        "A": "मोहनजोदड़ो",
+        "B": "कालीबंगा",
+        "C": "चन्हुदड़ो",
+        "D": "रोपड़"
+      },
+      "answer": "A",
+      "explanation": "दिए गए स्रोत में यह प्रमाण मोहनजोदड़ो से जुड़ा है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q064",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मोहनजोदड़ो में विदेशी मुहरें किसकी मिलीं?",
+      "options": {
+        "A": "चीनी",
+        "B": "मेसोपोटामियाई",
+        "C": "यूनानी",
+        "D": "रोमन"
+      },
+      "answer": "B",
+      "explanation": "मोहनजोदड़ो में मेसोपोटामियाई विदेशी मुहरों का उल्लेख है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q065",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मोहनजोदड़ो को किस उपनाम से भी कहा गया?",
+      "options": {
+        "A": "राजस्थान का मरुद्यान",
+        "B": "भारत का प्रवेशद्वार",
+        "C": "सिंध का बाग",
+        "D": "हड़प्पा का जुड़वाँ शहर"
+      },
+      "answer": "C",
+      "explanation": "दिए गए स्रोत में इसे 'सिंध का बाग' कहा गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q066",
+      "subject": "history",
+      "chapter": 1,
+      "question": "हड़प्पा वर्तमान में किस जिले में है?",
+      "options": {
+        "A": "लरकाना",
+        "B": "कराची",
+        "C": "लाहौर",
+        "D": "मॉन्टगोमरी (साहीवाल)"
+      },
+      "answer": "D",
+      "explanation": "दिए गए स्रोत में हड़प्पा को मॉन्टगोमरी (साहीवाल) जिले से जोड़ा गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q067",
+      "subject": "history",
+      "chapter": 1,
+      "question": "1931 में N.G. Majumdar ने किस स्थल का उत्खनन किया?",
+      "options": {
+        "A": "चन्हुदड़ो",
+        "B": "कोट दिजी",
+        "C": "सुत्कागेंडोर",
+        "D": "रंगपुर"
+      },
+      "answer": "A",
+      "explanation": "दिए गए स्रोत के अनुसार 1931 में N.G. Majumdar ने चन्हुदड़ो में उत्खनन किया।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q068",
+      "subject": "history",
+      "chapter": 1,
+      "question": "रंगपुर का उत्खनन किसने किया?",
+      "options": {
+        "A": "साहनी",
+        "B": "माधव स्वरूप वत्स एवं ब्रज बासी लाल",
+        "C": "बनर्जी",
+        "D": "फजल अहमद"
+      },
+      "answer": "B",
+      "explanation": "रंगपुर के उत्खनन का संबंध माधव स्वरूप वत्स एवं ब्रज बासी लाल से बताया गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q069",
+      "subject": "history",
+      "chapter": 1,
+      "question": "रोपड़ की 1953 की खोज किससे संबंधित है?",
+      "options": {
+        "A": "S.R. Rao",
+        "B": "सूरजभान",
+        "C": "यज्ञदत्त शर्मा",
+        "D": "जगतपति जोशी"
+      },
+      "answer": "C",
+      "explanation": "दिए गए स्रोत में 1953 की रोपड़ खोज यज्ञदत्त शर्मा से जुड़ी है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q070",
+      "subject": "history",
+      "chapter": 1,
+      "question": "कोट दिजी का 1955 का उत्खनन किसने किया?",
+      "options": {
+        "A": "R.S. Bisht",
+        "B": "साहनी",
+        "C": "N.G. Majumdar",
+        "D": "फजल अहमद"
+      },
+      "answer": "D",
+      "explanation": "दिए गए स्रोत में कोट दिजी के 1955 उत्खनन का संबंध फजल अहमद से है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q071",
+      "subject": "history",
+      "chapter": 1,
+      "question": "देसलपुर का उत्खनन 1964 में किसने किया?",
+      "options": {
+        "A": "K.V. Soundarya Rajan",
+        "B": "यज्ञदत्त शर्मा",
+        "C": "S.R. Rao",
+        "D": "सूरजभान"
+      },
+      "answer": "A",
+      "explanation": "देसलपुर के 1964 उत्खनन का संबंध K.V. Soundarya Rajan से है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q072",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मीताथल का उत्खनन 1968 में किसने किया?",
+      "options": {
+        "A": "जगतपति जोशी",
+        "B": "सूरजभान",
+        "C": "R.S. Bisht",
+        "D": "B.B. Lal"
+      },
+      "answer": "B",
+      "explanation": "दिए गए स्रोत में मीताथल के 1968 उत्खनन का संबंध सूरजभान से है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q073",
+      "subject": "history",
+      "chapter": 1,
+      "question": "सुरकोटड़ा का उत्खनन 1972 में किसने किया?",
+      "options": {
+        "A": "फजल अहमद",
+        "B": "K.V. Soundarya Rajan",
+        "C": "जगतपति जोशी",
+        "D": "यज्ञदत्त शर्मा"
+      },
+      "answer": "C",
+      "explanation": "सुरकोटड़ा के 1972 उत्खनन का संबंध जगतपति जोशी से है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q074",
+      "subject": "history",
+      "chapter": 1,
+      "question": "बनावली का उत्खनन 1973 में किसने किया?",
+      "options": {
+        "A": "माधव स्वरूप वत्स",
+        "B": "बनर्जी",
+        "C": "S.R. Rao",
+        "D": "R.S. Bisht"
+      },
+      "answer": "D",
+      "explanation": "बनावली के 1973 उत्खनन का संबंध R.S. Bisht से है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q075",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मांडा का उत्खनन 1982 में किसने किया?",
+      "options": {
+        "A": "जगतपति जोशी",
+        "B": "साहनी",
+        "C": "यज्ञदत्त शर्मा",
+        "D": "सूरजभान"
+      },
+      "answer": "A",
+      "explanation": "मांडा के 1982 उत्खनन का संबंध जगतपति जोशी से है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q076",
+      "subject": "history",
+      "chapter": 1,
+      "question": "भगवानपुरा का संबंध किससे है?",
+      "options": {
+        "A": "B.B. Lal",
+        "B": "जगतपति जोशी",
+        "C": "फजल अहमद",
+        "D": "साहनी"
+      },
+      "answer": "B",
+      "explanation": "दिए गए स्रोत में भगवानपुरा का संबंध जगतपति जोशी से है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q077",
+      "subject": "history",
+      "chapter": 1,
+      "question": "राखीगढ़ी की खोज किससे संबंधित है?",
+      "options": {
+        "A": "बनर्जी",
+        "B": "मार्शल",
+        "C": "सूरजभान",
+        "D": "R.S. Bisht"
+      },
+      "answer": "C",
+      "explanation": "दिए गए स्रोत में राखीगढ़ी की खोज सूरजभान से जोड़ी गई है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q078",
+      "subject": "history",
+      "chapter": 1,
+      "question": "आहार के प्रमाण में क्या महत्वपूर्ण है?",
+      "options": {
+        "A": "तांबे की प्लेटें",
+        "B": "विदेशी यात्री",
+        "C": "टेराकोटा मूर्तियाँ",
+        "D": "जले हुए अनाज/बीज"
+      },
+      "answer": "D",
+      "explanation": "जले हुए अनाज और बीज आहार के प्रमाण देते हैं।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q079",
+      "subject": "history",
+      "chapter": 1,
+      "question": "बाजरा किन स्थलों पर प्रचुर मात्रा में मिला?",
+      "options": {
+        "A": "गुजरात के स्थल",
+        "B": "पंजाब",
+        "C": "जम्मू",
+        "D": "सिंध"
+      },
+      "answer": "A",
+      "explanation": "दिए गए स्रोत में गुजरात के स्थलों पर बाजरे की प्रचुरता बताई गई है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q080",
+      "subject": "history",
+      "chapter": 1,
+      "question": "पालतू पशुओं की हड्डियों में कौन-कौन से पशु मिले?",
+      "options": {
+        "A": "केवल घोड़ा/ऊँट",
+        "B": "गाय/भेड़/बकरी/भैंस/सूअर",
+        "C": "केवल हिरण/मगरमच्छ",
+        "D": "केवल जंगली सूअर"
+      },
+      "answer": "B",
+      "explanation": "दिए गए स्रोत में इन पालतू पशुओं की हड्डियों का उल्लेख है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q081",
+      "subject": "history",
+      "chapter": 1,
+      "question": "कालीबंगा में हल की रेखाएँ किस कोण पर काटती थीं?",
+      "options": {
+        "A": "45°",
+        "B": "60°",
+        "C": "समकोण 90°",
+        "D": "180°"
+      },
+      "answer": "C",
+      "explanation": "कालीबंगा में हल की रेखाएँ समकोण पर काटती हुई मिलीं।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q082",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मोहनजोदड़ो में लगभग कितने कुएँ थे?",
+      "options": {
+        "A": "100",
+        "B": "300",
+        "C": "500",
+        "D": "700"
+      },
+      "answer": "D",
+      "explanation": "दिए गए स्रोत में लगभग 700 कुओं का उल्लेख है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q083",
+      "subject": "history",
+      "chapter": 1,
+      "question": "गोपनीयता की विशेषता क्या थी?",
+      "options": {
+        "A": "भूतल पर बाहरी खिड़कियाँ नहीं",
+        "B": "बहुमंजिला भवन",
+        "C": "केवल एक दरवाजा",
+        "D": "समतल छत"
+      },
+      "answer": "A",
+      "explanation": "घर की गोपनीयता के लिए भूतल पर बाहरी खिड़कियाँ न होने का उल्लेख है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q084",
+      "subject": "history",
+      "chapter": 1,
+      "question": "अन्नागार के निचले ईंट वाले भाग के बचने का कारण क्या था?",
+      "options": {
+        "A": "आक्रमणकारियों ने ऊपरी भाग जला दिया",
+        "B": "ऊपरी भाग लकड़ी का था और सड़ गया",
+        "C": "ऊपरी भाग पत्थर का था",
+        "D": "भवन अधूरा था"
+      },
+      "answer": "B",
+      "explanation": "ऊपरी भाग लकड़ी का होने के कारण वह समय के साथ नष्ट हो गया।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q085",
+      "subject": "history",
+      "chapter": 1,
+      "question": "दफनाने की दिशा क्या थी?",
+      "options": {
+        "A": "पूर्व-पश्चिम",
+        "B": "पश्चिम-पूर्व",
+        "C": "उत्तर-दक्षिण",
+        "D": "दक्षिण-उत्तर"
+      },
+      "answer": "C",
+      "explanation": "दिए गए स्रोत में उत्तर-दक्षिण दिशा का उल्लेख है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q086",
+      "subject": "history",
+      "chapter": 1,
+      "question": "फैयेंस क्या था?",
+      "options": {
+        "A": "प्राकृतिक रत्न",
+        "B": "तांबे का सिक्का",
+        "C": "सोना-चाँदी मिश्रधातु",
+        "D": "पिसी रेत/रंग/चिपचिपे पदार्थ का पकाया मिश्रण"
+      },
+      "answer": "D",
+      "explanation": "फैयेंस को पिसी रेत, रंग और चिपचिपे पदार्थ के मिश्रण को पकाकर बनाया जाता था।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q087",
+      "subject": "history",
+      "chapter": 1,
+      "question": "शिल्प उत्पादन का सबसे मजबूत प्रमाण क्या था?",
+      "options": {
+        "A": "कचरा/अवशेष",
+        "B": "महल",
+        "C": "चौड़ी ईंट की सड़कें",
+        "D": "अनाज भंडार"
+      },
+      "answer": "A",
+      "explanation": "उत्पादन से निकला कचरा और अवशेष शिल्प उत्पादन का मजबूत प्रमाण हैं।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q088",
+      "subject": "history",
+      "chapter": 1,
+      "question": "कार्नेलियन का लाल रंग कैसे प्राप्त किया जाता था?",
+      "options": {
+        "A": "सीधे नदी से",
+        "B": "पीले कच्चे पदार्थ को गर्म करके",
+        "C": "स्टीटाइट को रंगकर",
+        "D": "तांबे के साथ गर्म करके"
+      },
+      "answer": "B",
+      "explanation": "दिए गए स्रोत के अनुसार गर्म करने की प्रक्रिया से कार्नेलियन का लाल रंग प्राप्त किया जाता था।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q089",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मनका बनाने के ड्रिल कहाँ मिले?",
+      "options": {
+        "A": "हड़प्पा/मोहनजोदड़ो/रोपड़",
+        "B": "मांडा/आलमगीरपुर/सुत्कागेंडोर",
+        "C": "चन्हुदड़ो/लोथल/धोलावीरा",
+        "D": "कालीबंगा/बनावली/रंगपुर"
+      },
+      "answer": "C",
+      "explanation": "मनका निर्माण के ड्रिल चन्हुदड़ो, लोथल और धोलावीरा से जुड़े हैं।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q090",
+      "subject": "history",
+      "chapter": 1,
+      "question": "सोने का स्रोत संभवतः कहाँ था?",
+      "options": {
+        "A": "मध्य एशिया",
+        "B": "राजस्थान",
+        "C": "अफगानिस्तान",
+        "D": "दक्षिण भारत"
+      },
+      "answer": "D",
+      "explanation": "दिए गए स्रोत में सोने का संभावित स्रोत दक्षिण भारत बताया गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q091",
+      "subject": "history",
+      "chapter": 1,
+      "question": "खेतड़ी तांबा किस स्थानीय संस्कृति से संबंधित था?",
+      "options": {
+        "A": "गणेश्वर-जोधपुरा",
+        "B": "सोत्थी",
+        "C": "मालवा",
+        "D": "जोरवे"
+      },
+      "answer": "A",
+      "explanation": "खेतड़ी के तांबे का संबंध गणेश्वर-जोधपुरा संस्कृति से बताया गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q092",
+      "subject": "history",
+      "chapter": 1,
+      "question": "सबसे लंबा हड़प्पाई अभिलेख कितने संकेतों का था?",
+      "options": {
+        "A": "15",
+        "B": "26",
+        "C": "45",
+        "D": "84"
+      },
+      "answer": "B",
+      "explanation": "दिए गए स्रोत में सबसे लंबा अभिलेख 26 संकेतों का बताया गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q093",
+      "subject": "history",
+      "chapter": 1,
+      "question": "हड़प्पाई लिपि के कुल मूल संकेत लगभग कितने थे?",
+      "options": {
+        "A": "50–100",
+        "B": "100–200",
+        "C": "375–400",
+        "D": ">500"
+      },
+      "answer": "C",
+      "explanation": "हड़प्पाई लिपि में लगभग 375–400 मूल संकेत बताए गए हैं।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q094",
+      "subject": "history",
+      "chapter": 1,
+      "question": "भारी बाटों की प्रणाली कैसी थी?",
+      "options": {
+        "A": "त्रिगुणित",
+        "B": "अष्टाधारी",
+        "C": "षोडशाधारी",
+        "D": "दशमलव"
+      },
+      "answer": "D",
+      "explanation": "भारी बाटों की प्रणाली दशमलव बताई गई है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q095",
+      "subject": "history",
+      "chapter": 1,
+      "question": "कनिंघम की गलत धारणा क्या थी?",
+      "options": {
+        "A": "भारतीय इतिहास गंगा के नगरों से शुरू हुआ",
+        "B": "उसे कोई हड़प्पाई वस्तु नहीं मिली",
+        "C": "उसने केवल दक्षिण भारत देखा",
+        "D": "उसने कभी टीला नहीं देखा"
+      },
+      "answer": "A",
+      "explanation": "कनिंघम की धारणा थी कि भारतीय इतिहास का प्रारंभ गंगा क्षेत्र के नगरों से हुआ।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q096",
+      "subject": "history",
+      "chapter": 1,
+      "question": "कनिंघम ने किन यात्रियों के वृत्तांतों का उपयोग किया?",
+      "options": {
+        "A": "यूनानी राजदूत",
+        "B": "चीनी बौद्ध यात्री फा-हियेन/युआन च्वांग",
+        "C": "अरब यात्री",
+        "D": "यूरोपीय यात्री"
+      },
+      "answer": "B",
+      "explanation": "कनिंघम ने चीनी बौद्ध यात्रियों के विवरणों का उपयोग किया।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q097",
+      "subject": "history",
+      "chapter": 1,
+      "question": "अग्निवेदियाँ कहाँ मिलीं?",
+      "options": {
+        "A": "हड़प्पा/मोहनजोदड़ो",
+        "B": "चन्हुदड़ो/रोपड़",
+        "C": "कालीबंगा/लोथल",
+        "D": "बनावली/सुत्कागेंडोर"
+      },
+      "answer": "C",
+      "explanation": "अग्निवेदियों के प्रमाण कालीबंगा और लोथल से जुड़े हैं।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q098",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मुहरों पर सबसे सामान्य पशु कौन-सा था?",
+      "options": {
+        "A": "गाय",
+        "B": "घोड़ा",
+        "C": "सिंह",
+        "D": "एक-सींग वाला पशु"
+      },
+      "answer": "D",
+      "explanation": "हड़प्पाई मुहरों पर एक-सींग वाला पशु सबसे सामान्य बताया गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q099",
+      "subject": "history",
+      "chapter": 1,
+      "question": "शमन किसे कहा जाता था?",
+      "options": {
+        "A": "जादुई/उपचार शक्तियों का दावा करने वाले पुरुष/महिलाएँ",
+        "B": "व्यापारी",
+        "C": "सेनापति",
+        "D": "कर अधिकारी"
+      },
+      "answer": "A",
+      "explanation": "शमन ऐसे पुरुष या महिलाएँ माने जाते थे जो जादुई या उपचार शक्तियों का दावा करते थे।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q100",
+      "subject": "history",
+      "chapter": 1,
+      "question": "R-37 में पुरुष खोपड़ी के साथ क्या मिला?",
+      "options": {
+        "A": "सोने का मुकुट",
+        "B": "तीन शंख की अंगूठियाँ, जैस्पर मनका और सैकड़ों छोटे मनके",
+        "C": "लोहे की तलवार",
+        "D": "चाँदी के सिक्के"
+      },
+      "answer": "B",
+      "explanation": "दिए गए स्रोत में R-37 से इन वस्तुओं का उल्लेख है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q101",
+      "subject": "history",
+      "chapter": 1,
+      "question": "संस्कृति की परिभाषा किस विकल्प में दी गई है?",
+      "options": {
+        "A": "केवल धार्मिक विश्वास",
+        "B": "केवल कला",
+        "C": "मानव जीवन की भौतिक और सामाजिक अभिव्यक्तियों का समुच्चय",
+        "D": "केवल कृषि"
+      },
+      "answer": "C",
+      "explanation": "दिए गए स्रोत के अनुसार सही विकल्प C है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q102",
+      "subject": "history",
+      "chapter": 1,
+      "question": "हड़प्पाई लोगों के प्रमुख अनाजों में क्या शामिल था?",
+      "options": {
+        "A": "केवल चावल",
+        "B": "गेहूँ और जौ",
+        "C": "केवल मक्का",
+        "D": "केवल बाजरा"
+      },
+      "answer": "B",
+      "explanation": "दिए गए स्रोत के अनुसार गेहूँ और जौ प्रमुख अनाजों में थे।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q103",
+      "subject": "history",
+      "chapter": 1,
+      "question": "हड़प्पाई स्थलों से जंगली पशुओं की हड्डियों का प्रमाण किस विकल्प में है?",
+      "options": {
+        "A": "केवल घोड़ा",
+        "B": "केवल ऊँट",
+        "C": "जंगली पशुओं की हड्डियाँ",
+        "D": "केवल हाथी"
+      },
+      "answer": "C",
+      "explanation": "दिए गए स्रोत के अनुसार जंगली पशुओं की हड्डियों का प्रमाण मिला है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q104",
+      "subject": "history",
+      "chapter": 1,
+      "question": "क्रम में टूटन का प्रमाण किससे संबंधित है?",
+      "options": {
+        "A": "एक ही प्रकार की मुहर",
+        "B": "एक ही प्रकार के घर",
+        "C": "एक ही प्रकार के बाट",
+        "D": "पुरातात्विक स्तरों में क्रम का टूटना"
+      },
+      "answer": "D",
+      "explanation": "दिए गए स्रोत में क्रम टूटने का संबंध पुरातात्विक स्तरों से है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q105",
+      "subject": "history",
+      "chapter": 1,
+      "question": "BCE का पूर्ण रूप क्या है?",
+      "options": {
+        "A": "Before Common Era",
+        "B": "Before Current Earth",
+        "C": "British Common Era",
+        "D": "Before Christian Empire"
+      },
+      "answer": "A",
+      "explanation": "BCE का पूर्ण रूप Before Common Era है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q106",
+      "subject": "history",
+      "chapter": 1,
+      "question": "BP का अर्थ क्या है?",
+      "options": {
+        "A": "Before Present",
+        "B": "Before Past",
+        "C": "British Period",
+        "D": "Before People"
+      },
+      "answer": "B",
+      "explanation": "BP का अर्थ Before Present है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q107",
+      "subject": "history",
+      "chapter": 1,
+      "question": "AD का अर्थ क्या है?",
+      "options": {
+        "A": "Ancient Date",
+        "B": "After Death",
+        "C": "Anno Domini",
+        "D": "Archaeological Date"
+      },
+      "answer": "B",
+      "explanation": "दिए गए स्रोत में सही विकल्प B दिया गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q108",
+      "subject": "history",
+      "chapter": 1,
+      "question": "चोलिस्तान में परिपक्व हड़प्पा स्थलों की संख्या कितनी बताई गई है?",
+      "options": {
+        "A": "36",
+        "B": "86",
+        "C": "136",
+        "D": "236"
+      },
+      "answer": "C",
+      "explanation": "दिए गए स्रोत में संख्या 136 बताई गई है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q109",
+      "subject": "history",
+      "chapter": 1,
+      "question": "पुरातत्व की परिभाषा क्या है?",
+      "options": {
+        "A": "केवल प्राचीन ग्रंथों का अध्ययन",
+        "B": "भौतिक अवशेषों के आधार पर अतीत का अध्ययन",
+        "C": "केवल शिलालेख पढ़ना",
+        "D": "केवल सिक्कों का अध्ययन"
+      },
+      "answer": "B",
+      "explanation": "पुरातत्व भौतिक अवशेषों के आधार पर अतीत का अध्ययन करता है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q110",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मिस्र की सभ्यता किस नदी से संबंधित थी?",
+      "options": {
+        "A": "नील",
+        "B": "टिगरिस",
+        "C": "सिंधु",
+        "D": "ह्वांग हो"
+      },
+      "answer": "A",
+      "explanation": "प्राचीन मिस्र की सभ्यता नील नदी से संबंधित थी।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q111",
+      "subject": "history",
+      "chapter": 1,
+      "question": "राधाकुमुद मुखर्जी के अनुसार कालक्रम क्या था?",
+      "options": {
+        "A": "2500–1750 ई.पू.",
+        "B": "3200–2750 ई.पू.",
+        "C": "2800–2500 ई.पू.",
+        "D": "2600–1900 ई.पू."
+      },
+      "answer": "B",
+      "explanation": "दिए गए स्रोत में राधाकुमुद मुखर्जी का कालक्रम 3200–2750 ई.पू. है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q112",
+      "subject": "history",
+      "chapter": 1,
+      "question": "V.A. Smith के अनुसार कालक्रम क्या था?",
+      "options": {
+        "A": "3200–2750 ई.पू.",
+        "B": "2800–2500 ई.पू.",
+        "C": "2500–1500 ई.पू.",
+        "D": "2600–1900 ई.पू."
+      },
+      "answer": "C",
+      "explanation": "दिए गए स्रोत में V.A. Smith की अवधि 2500–1500 ई.पू. है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q113",
+      "subject": "history",
+      "chapter": 1,
+      "question": "R.E.M. Wheeler के अनुसार कालक्रम क्या था?",
+      "options": {
+        "A": "2500–1750 ई.पू.",
+        "B": "3200–2750 ई.पू.",
+        "C": "2800–2500 ई.पू.",
+        "D": "2600–1900 ई.पू."
+      },
+      "answer": "A",
+      "explanation": "दिए गए स्रोत में R.E.M. Wheeler की अवधि 2500–1750 ई.पू. है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q114",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मोहनजोदड़ो में मोम के साँचे किससे संबंधित थे?",
+      "options": {
+        "A": "कपड़ा",
+        "B": "ईंट",
+        "C": "मनका",
+        "D": "धातु ढलाई"
+      },
+      "answer": "D",
+      "explanation": "दिए गए स्रोत में मोम के साँचे मोहनजोदड़ो से जुड़े धातु-ढलाई प्रमाण हैं।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q115",
+      "subject": "history",
+      "chapter": 1,
+      "question": "सभा भवन कहाँ मिला?",
+      "options": {
+        "A": "हड़प्पा",
+        "B": "मोहनजोदड़ो",
+        "C": "लोथल",
+        "D": "कालीबंगा"
+      },
+      "answer": "B",
+      "explanation": "दिए गए स्रोत के अनुसार सभा भवन मोहनजोदड़ो से संबंधित है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q116",
+      "subject": "history",
+      "chapter": 1,
+      "question": "जहाज का खिलौना/चित्र, शिलाजीत और पहिए वाली गाड़ी का प्रमाण कहाँ मिला?",
+      "options": {
+        "A": "मोहनजोदड़ो",
+        "B": "हड़प्पा",
+        "C": "लोथल",
+        "D": "धोलावीरा"
+      },
+      "answer": "A",
+      "explanation": "दिए गए स्रोत में ये प्रमाण मोहनजोदड़ो से जुड़े हैं।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q117",
+      "subject": "history",
+      "chapter": 1,
+      "question": "हाथी की खोपड़ी कहाँ मिली?",
+      "options": {
+        "A": "हड़प्पा",
+        "B": "मोहनजोदड़ो",
+        "C": "लोथल",
+        "D": "कालीबंगा"
+      },
+      "answer": "B",
+      "explanation": "दिए गए स्रोत में हाथी की खोपड़ी मोहनजोदड़ो से मिली बताई गई है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q118",
+      "subject": "history",
+      "chapter": 1,
+      "question": "तीन-मुख वाले पशुपति की मुहर कहाँ मिली?",
+      "options": {
+        "A": "मोहनजोदड़ो",
+        "B": "हड़प्पा",
+        "C": "लोथल",
+        "D": "कालीबंगा"
+      },
+      "answer": "A",
+      "explanation": "पशुपति की प्रसिद्ध तीन-मुख वाली मुहर मोहनजोदड़ो से संबंधित है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q119",
+      "subject": "history",
+      "chapter": 1,
+      "question": "आलमगीरपुर कहाँ स्थित है?",
+      "options": {
+        "A": "राजस्थान",
+        "B": "गुजरात",
+        "C": "उत्तर प्रदेश, मेरठ",
+        "D": "हरियाणा"
+      },
+      "answer": "C",
+      "explanation": "आलमगीरपुर उत्तर प्रदेश के मेरठ क्षेत्र में स्थित है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q120",
+      "subject": "history",
+      "chapter": 1,
+      "question": "सुत्कागेंडोर कहाँ स्थित था?",
+      "options": {
+        "A": "भारत, राजस्थान",
+        "B": "पाकिस्तान, बलूचिस्तान/मकरान",
+        "C": "भारत, गुजरात",
+        "D": "अफगानिस्तान"
+      },
+      "answer": "C",
+      "explanation": "दिए गए स्रोत में सुत्कागेंडोर को पाकिस्तान के बलूचिस्तान/मकरान क्षेत्र से जोड़ा गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q121",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मांडा कहाँ स्थित था?",
+      "options": {
+        "A": "पंजाब, अमृतसर",
+        "B": "जम्मू, अखनूर",
+        "C": "हरियाणा, हिसार",
+        "D": "सिंध, लरकाना"
+      },
+      "answer": "B",
+      "explanation": "दिए गए स्रोत में मांडा जम्मू के अखनूर क्षेत्र में बताया गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q122",
+      "subject": "history",
+      "chapter": 1,
+      "question": "रंगपुर किस नदी से संबंधित था?",
+      "options": {
+        "A": "रावी",
+        "B": "मदार/भादर",
+        "C": "सिंधु",
+        "D": "हिंडन"
+      },
+      "answer": "B",
+      "explanation": "रंगपुर को मदार/भादर नदी से जोड़ा गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q123",
+      "subject": "history",
+      "chapter": 1,
+      "question": "धोलावीरा किस नदी से संबंधित है?",
+      "options": {
+        "A": "रावी",
+        "B": "भोगवा",
+        "C": "लूनी",
+        "D": "सरस्वती"
+      },
+      "answer": "C",
+      "explanation": "दिए गए स्रोत में धोलावीरा का संबंध लूनी नदी से बताया गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q124",
+      "subject": "history",
+      "chapter": 1,
+      "question": "देसलपुर किस नदी से संबंधित था?",
+      "options": {
+        "A": "सिंधु",
+        "B": "सरस्वती",
+        "C": "रावी",
+        "D": "चेनाब"
+      },
+      "answer": "B",
+      "explanation": "दिए गए स्रोत में देसलपुर का संबंध सरस्वती नदी से है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q125",
+      "subject": "history",
+      "chapter": 1,
+      "question": "हड़प्पाई ईंटों का सामान्य अनुपात क्या था?",
+      "options": {
+        "A": "1:1:1",
+        "B": "1:3:5",
+        "C": "1:2:4",
+        "D": "2:3:4"
+      },
+      "answer": "C",
+      "explanation": "हड़प्पाई ईंटों का अनुपात 1:2:4 बताया गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q126",
+      "subject": "history",
+      "chapter": 1,
+      "question": "दुर्ग या Citadel क्या था?",
+      "options": {
+        "A": "नीचे बसा बाजार",
+        "B": "ऊँचे मिट्टी-ईंट के चबूतरे पर बना छोटा सुदृढ़ भाग",
+        "C": "केवल जलाशय",
+        "D": "कृषि क्षेत्र"
+      },
+      "answer": "B",
+      "explanation": "दुर्ग ऊँचे मिट्टी-ईंट के प्लेटफॉर्म पर बना सुदृढ़ भाग था।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q127",
+      "subject": "history",
+      "chapter": 1,
+      "question": "हड़प्पाई नगरों में जल निकासी की योजना कैसी थी?",
+      "options": {
+        "A": "पहले घर और बाद में नालियाँ",
+        "B": "केवल मुख्य सड़क पर नाली",
+        "C": "पहले सड़कें/नालियाँ, फिर उनके साथ घर",
+        "D": "कोई नियोजित नाली नहीं"
+      },
+      "answer": "C",
+      "explanation": "दिए गए स्रोत के अनुसार पहले सड़कें और नालियाँ बनाई जाती थीं, फिर घर उनके साथ बनाए जाते थे।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q128",
+      "subject": "history",
+      "chapter": 1,
+      "question": "1948 की 'Early Indus Civilization' के लेखक कौन थे?",
+      "options": {
+        "A": "John Marshall",
+        "B": "Ernest Mackay",
+        "C": "R.E.M. Wheeler",
+        "D": "B.B. Lal"
+      },
+      "answer": "B",
+      "explanation": "दिए गए स्रोत में 1948 की पुस्तक/रचना का संबंध Ernest Mackay से है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q129",
+      "subject": "history",
+      "chapter": 1,
+      "question": "'करी स्टोन' क्या था?",
+      "options": {
+        "A": "धातु की मुहर",
+        "B": "सालन पीसने का पत्थर",
+        "C": "ईंट बनाने का साँचा",
+        "D": "मापने का उपकरण"
+      },
+      "answer": "B",
+      "explanation": "दिए गए स्रोत में करी स्टोन को सलन पीसने वाले पत्थर के रूप में दिया गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q130",
+      "subject": "history",
+      "chapter": 1,
+      "question": "महान स्नानागार की सीढ़ियाँ कहाँ थीं?",
+      "options": {
+        "A": "पूर्व और पश्चिम",
+        "B": "उत्तर और दक्षिण",
+        "C": "उत्तर और पूर्व",
+        "D": "दक्षिण और पश्चिम"
+      },
+      "answer": "B",
+      "explanation": "महान स्नानागार में उत्तर और दक्षिण दिशा में सीढ़ियों का उल्लेख है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q131",
+      "subject": "history",
+      "chapter": 1,
+      "question": "महान स्नानागार में कितने स्नान कक्ष बताए गए हैं?",
+      "options": {
+        "A": "4",
+        "B": "6",
+        "C": "8",
+        "D": "10"
+      },
+      "answer": "C",
+      "explanation": "दिए गए स्रोत में 8 स्नान कक्ष बताए गए हैं।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q132",
+      "subject": "history",
+      "chapter": 1,
+      "question": "तांबे का दर्पण कहाँ मिला?",
+      "options": {
+        "A": "हड़प्पा",
+        "B": "लोथल",
+        "C": "मोहनजोदड़ो",
+        "D": "कालीबंगा"
+      },
+      "answer": "C",
+      "explanation": "दिए गए स्रोत में तांबे का दर्पण मोहनजोदड़ो से संबंधित है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q133",
+      "subject": "history",
+      "chapter": 1,
+      "question": "'Hoards' से क्या तात्पर्य था?",
+      "options": {
+        "A": "सार्वजनिक भवन",
+        "B": "पात्रों में छिपाकर रखी गई मूल्यवान वस्तुएँ",
+        "C": "कृषि उपकरण",
+        "D": "माप के बाट"
+      },
+      "answer": "B",
+      "explanation": "Hoards से छिपाकर रखी गई मूल्यवान वस्तुओं के भंडार का अर्थ है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q134",
+      "subject": "history",
+      "chapter": 1,
+      "question": "जैस्पर, क्वार्ट्ज और अगेट किससे संबंधित थे?",
+      "options": {
+        "A": "धातु के हथियार",
+        "B": "मनके/पत्थर शिल्प",
+        "C": "ईंट निर्माण",
+        "D": "कृषि उपकरण"
+      },
+      "answer": "B",
+      "explanation": "ये पत्थर मनका निर्माण और पत्थर शिल्प से जुड़े थे।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q135",
+      "subject": "history",
+      "chapter": 1,
+      "question": "निम्न में से कौन-सा मनके का आकार नहीं था?",
+      "options": {
+        "A": "गोल",
+        "B": "बेलनाकार",
+        "C": "ताराकार",
+        "D": "त्रिकोणीय तारा"
+      },
+      "answer": "D",
+      "explanation": "दिए गए स्रोत में त्रिकोणीय तारा मनके के आकार के रूप में नहीं था।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q136",
+      "subject": "history",
+      "chapter": 1,
+      "question": "स्थलीय परिवहन का प्रमाण क्या था?",
+      "options": {
+        "A": "टेराकोटा के खिलौना रथ/पहिए",
+        "B": "केवल जहाज",
+        "C": "केवल घोड़े",
+        "D": "केवल हाथी"
+      },
+      "answer": "A",
+      "explanation": "टेराकोटा के खिलौना रथ और पहिए स्थलीय परिवहन के प्रमाण देते हैं।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q137",
+      "subject": "history",
+      "chapter": 1,
+      "question": "ओमान और हड़प्पाई तांबे के संबंध में कौन-सा तत्व महत्वपूर्ण था?",
+      "options": {
+        "A": "सोना",
+        "B": "निकेल",
+        "C": "लोहा",
+        "D": "चाँदी"
+      },
+      "answer": "B",
+      "explanation": "दिए गए स्रोत में तांबे में निकेल की उपस्थिति को महत्वपूर्ण बताया गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q138",
+      "subject": "history",
+      "chapter": 1,
+      "question": "ओमान से संबंधित हड़प्पाई पात्र कैसा था?",
+      "options": {
+        "A": "पतला लाल पात्र",
+        "B": "सफेद पत्थर का पात्र",
+        "C": "मोटी काली मिट्टी से लेपित जार",
+        "D": "लकड़ी का पात्र"
+      },
+      "answer": "C",
+      "explanation": "दिए गए स्रोत में मोटी काली मिट्टी से लेपित जार का उल्लेख है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q139",
+      "subject": "history",
+      "chapter": 1,
+      "question": "फारस की खाड़ी की गोल मुहर किससे संबंधित थी?",
+      "options": {
+        "A": "दिलमुन/बहरीन",
+        "B": "मगन/ओमान",
+        "C": "मेलुह्हा/भारत",
+        "D": "सुमेर"
+      },
+      "answer": "A",
+      "explanation": "फारस की खाड़ी की गोल मुहर को दिलमुन/बहरीन से जोड़ा गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q140",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मुहरबंद थैलियों का उद्देश्य क्या था?",
+      "options": {
+        "A": "सजावट",
+        "B": "भेजने वाले की पहचान और छेड़छाड़ का प्रमाण",
+        "C": "वजन बढ़ाना",
+        "D": "अनाज सुखाना"
+      },
+      "answer": "B",
+      "explanation": "मुहरें भेजने वाले की पहचान और छेड़छाड़ का पता लगाने में सहायक थीं।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q141",
+      "subject": "history",
+      "chapter": 1,
+      "question": "हड़प्पाई लिपि अभी तक क्यों नहीं पढ़ी जा सकी?",
+      "options": {
+        "A": "लिपि बहुत लंबी है",
+        "B": "सभी संकेत नष्ट हो गए",
+        "C": "लिपि अपठित है और संकेतों की संख्या बहुत अधिक है",
+        "D": "कोई मुहर नहीं मिली"
+      },
+      "answer": "C",
+      "explanation": "दिए गए स्रोत के अनुसार लिपि अभी अपठित है और संकेतों की विविधता अधिक है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q142",
+      "subject": "history",
+      "chapter": 1,
+      "question": "निचले द्विआधारी बाट किसके गुणज थे?",
+      "options": {
+        "A": "16",
+        "B": "10",
+        "C": "12",
+        "D": "8"
+      },
+      "answer": "A",
+      "explanation": "दिए गए स्रोत में निचले द्विआधारी बाटों को 16 के गुणज बताया गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q143",
+      "subject": "history",
+      "chapter": 1,
+      "question": "तराजू के पलड़े किस धातु के थे?",
+      "options": {
+        "A": "सोना",
+        "B": "तांबा/कांसा",
+        "C": "लोहा",
+        "D": "चाँदी"
+      },
+      "answer": "B",
+      "explanation": "दिए गए स्रोत में तराजू के पलड़ों के लिए तांबा/कांसा बताया गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q144",
+      "subject": "history",
+      "chapter": 1,
+      "question": "पुरोहित-राजा की मूर्ति किस पदार्थ की थी?",
+      "options": {
+        "A": "कांसा",
+        "B": "स्टीटाइट",
+        "C": "सोना",
+        "D": "लकड़ी"
+      },
+      "answer": "B",
+      "explanation": "पुरोहित-राजा की मूर्ति स्टीटाइट की बताई गई है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q145",
+      "subject": "history",
+      "chapter": 1,
+      "question": "उसे 'Priest-King' क्यों कहा गया?",
+      "options": {
+        "A": "उसका नाम ज्ञात था",
+        "B": "पुरातत्वविदों को मेसोपोटामियाई पुरोहित-राजाओं से समानता लगी",
+        "C": "उसके पास मुकुट था",
+        "D": "उसके हाथ में तलवार थी"
+      },
+      "answer": "B",
+      "explanation": "यह नाम पुरातत्वविदों द्वारा मेसोपोटामियाई पुरोहित-राजाओं से समानता के आधार पर दिया गया।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q146",
+      "subject": "history",
+      "chapter": 1,
+      "question": "George F. Dales ने 1964 में किस सिद्धांत का खंडन किया?",
+      "options": {
+        "A": "कृषि की शुरुआत",
+        "B": "Wheeler के नरसंहार/Aryan invasion सिद्धांत",
+        "C": "व्यापार सिद्धांत",
+        "D": "लिपि सिद्धांत"
+      },
+      "answer": "B",
+      "explanation": "दिए गए स्रोत में George F. Dales ने Wheeler के नरसंहार/Aryan invasion सिद्धांत को चुनौती दी।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q147",
+      "subject": "history",
+      "chapter": 1,
+      "question": "मार्शल की खुदाई की प्रमुख त्रुटि क्या थी?",
+      "options": {
+        "A": "उन्होंने खुदाई नहीं की",
+        "B": "उन्होंने स्तरीकरण की उपेक्षा कर क्षैतिज खुदाई पर जोर दिया",
+        "C": "उन्होंने केवल तांबा खोजा",
+        "D": "उन्होंने सभी मुहरें नष्ट कर दीं"
+      },
+      "answer": "B",
+      "explanation": "दिए गए स्रोत में मार्शल की त्रुटि स्तरीकरण की उपेक्षा और क्षैतिज खुदाई बताई गई है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q148",
+      "subject": "history",
+      "chapter": 1,
+      "question": "1947 के बाद नए स्थलों की खोज क्यों बढ़ी?",
+      "options": {
+        "A": "नई तकनीक आई",
+        "B": "हड़प्पा और मोहनजोदड़ो पाकिस्तान में चले गए",
+        "C": "भारत में नदियाँ बदल गईं",
+        "D": "विदेशी व्यापार बंद हुआ"
+      },
+      "answer": "B",
+      "explanation": "विभाजन के बाद हड़प्पा और मोहनजोदड़ो पाकिस्तान में चले जाने के कारण भारत में नए स्थलों की खोज बढ़ी।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q149",
+      "subject": "history",
+      "chapter": 1,
+      "question": "ऋग्वैदिक रुद्र और प्रोटो-शिव में क्या अंतर बताया गया?",
+      "options": {
+        "A": "रुद्र को पशुपति/योगी के रूप में वर्णित नहीं किया गया",
+        "B": "रुद्र का कोई नाम नहीं था",
+        "C": "प्रोटो-शिव केवल योद्धा था",
+        "D": "दोनों बिल्कुल समान थे"
+      },
+      "answer": "A",
+      "explanation": "दिए गए स्रोत में रुद्र को पशुपति/योगी के रूप में वर्णित न किए जाने का अंतर बताया गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    },
+    {
+      "id": "HIS01Q150",
+      "subject": "history",
+      "chapter": 1,
+      "question": "छोटे शंक्वाकार पत्थरों को किस रूप में माना गया?",
+      "options": {
+        "A": "सिक्के",
+        "B": "शिवलिंग या खेल के गोटे",
+        "C": "माप के बाट",
+        "D": "अग्निवेदी"
+      },
+      "answer": "B",
+      "explanation": "दिए गए स्रोत में इन्हें शिवलिंग या खेल के गोटों के रूप में माना गया है।",
+      "source": "CONCEPT",
+      "type": "objective"
+    }
+  ]
+}
