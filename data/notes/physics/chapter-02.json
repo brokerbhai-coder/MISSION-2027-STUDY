@@ -1,5 +1,5 @@
 {
-  "_help": "Chapter 2 Notes; chapter-01.json schema ke anusaar. NCERT Hindi textbook aur Target Board notes par aadharit.",
+  "_help": "एक Chapter की Notes फ़ाइल का नमूना। सिर्फ़ वही categories रखो जो उस Chapter में काम की हैं — जो खाली या गैर-ज़रूरी हों उन्हें पूरा हटा दो। इसे data/notes/<subject>/chapter-XX.json नाम से सेव करो और data/notes/manifest.json में entry जोड़ो। Text में **मोटा** लिख सकते हो।",
   "schemaVersion": 1,
   "subject": "physics",
   "chapter": 2,
@@ -7,1392 +7,1037 @@
   "categories": {
     "chapterNotes": [
       {
-        "heading": "विद्युत स्थितिज ऊर्जा व विभव",
+        "heading": "2.1 भूमिका एवं स्थिरवैद्युत स्थितिज ऊर्जा",
         "content": [
-          "स्थिरवैद्युत बल संरक्षी बल है; किया गया कार्य केवल प्रारंभिक और अंतिम स्थितियों पर निर्भर करता है।",
-          "बाह्य बल द्वारा धीरे-धीरे आवेश ले जाने का कार्य स्थितिज ऊर्जा में परिवर्तन के बराबर है।",
-          "विद्युत विभव प्रति इकाई धन परीक्षण आवेश को अनंत से बिंदु तक लाने में बाह्य बल का कार्य है।"
+          "Coulomb force between stationary point charges is conservative like gravity.",
+          "External work to move test charge slowly between two points equals electrostatic potential-energy difference.",
+          "Work by electrostatic field depends only on initial/final points, not path."
         ],
         "points": [
-          "ΔU=W_external",
-          "V=U/q",
-          "V_B−V_A=W_external/q",
-          "W_field=q(V_A−V_B)"
+          "closed-path integral ∮ E · dr = 0; U∞=0; ΔU = U_P - U_R = W_RP."
         ]
       },
       {
-        "heading": "बिंदु आवेश व आवेश निकाय का विभव",
+        "heading": "2.2 स्थिरवैद्युत विभव एवं विभवांतर",
         "content": [
-          "बिंदु आवेश Q से r दूरी पर विभव V=kQ/r होता है; धन Q पर V धनात्मक तथा ऋण Q पर ऋणात्मक होता है।",
-          "विभव अदिश है, इसलिए अनेक आवेशों के विभव बीजीय रूप से जुड़ते हैं।"
+          "Potential difference = external work per unit positive test charge between two points.",
+          "Potential = external work to bring unit positive test charge from infinity to point.",
+          "Potential is scalar; SI J/C or V."
         ],
         "points": [
-          "k=1/(4πε₀)≈9×10⁹ N·m²/C²",
-          "V=Σkqᵢ/rᵢ",
-          "सतत वितरण: V=∫k dq/r"
+          "V_A - V_B = W/q₀; V=W/q₀ since V∞=0; dimensions [M L² T⁻³ A⁻¹]."
         ]
       },
       {
-        "heading": "विद्युत द्विध्रुव का विभव",
+        "heading": "2.3 बिंदु आवेश के कारण वैद्युत विभव",
         "content": [
-          "द्विध्रुव में +q और −q अल्प दूरी 2a पर होते हैं। द्विध्रुव आघूर्ण p=2qa की दिशा −q से +q की ओर है।",
-          "दूरस्थ बिंदु (r≫a) पर विभव V=kp cosθ/r² है। विषुवतीय तल पर θ=90° होने से विभव शून्य होता है।"
+          "Point charge Q at distance r: V=(1/4πε₀)(Q/r).",
+          "Positive charge gives positive potential, negative charge negative.",
+          "E∝1/r²; V∝1/r."
         ],
         "points": [
-          "अक्षीय दिशा: V=±kp/r²",
-          "दूरस्थ द्विध्रुव विभव ∝1/r²"
+          "medium dielectric K gives V_medium=V_vacuum/K; V→0 at infinity."
         ]
       },
       {
-        "heading": "समविभव पृष्ठ",
+        "heading": "2.4 वैद्युत द्विध्रुव के कारण वैद्युत विभव",
         "content": [
-          "जिस पृष्ठ के प्रत्येक बिंदु पर विभव समान हो, वह समविभव पृष्ठ है।",
-          "समविभव पृष्ठ पर आवेश को ले जाने में कार्य शून्य है। विद्युत क्षेत्र पृष्ठ के लंबवत होता है।",
-          "दो समविभव पृष्ठ एक-दूसरे को नहीं काटते।"
+          "At r, angle θ from dipole axis: V=(1/4πε₀)(p cosθ/r²).",
+          "Axial θ=0°/180°: V_axial=±(1/4πε₀)(p/r²).",
+          "Equatorial θ=90°: V=0."
         ],
         "points": [
-          "E=−dV/dr (क्षेत्र की दिशा में)",
-          "एकसमान क्षेत्र में समविभव तल, क्षेत्र के लंबवत होते हैं"
+          "V∝1/r²; equatorial V=0 while E nonzero."
         ]
       },
       {
-        "heading": "आवेश निकाय की स्थितिज ऊर्जा व द्विध्रुव",
+        "heading": "2.5 समविभव पृष्ठ तथा विभव प्रवणता",
         "content": [
-          "दो आवेशों की स्थितिज ऊर्जा U=kq₁q₂/r है। अनेक आवेशों के लिए सभी अलग-अलग युग्मों की ऊर्जा का योग लेते हैं।",
-          "एकसमान विद्युत क्षेत्र में द्विध्रुव पर बल-आघूर्ण लगता है; वह द्विध्रुव को क्षेत्र के साथ संरेखित करने का प्रयास करता है।"
+          "Equipotential surface = same potential everywhere.",
+          "Work on equipotential = 0, W=qΔV=0.",
+          "Field lines perpendicular to equipotential.",
+          "Potential gradient and E=-dV/dr."
         ],
         "points": [
-          "U=Σᵢ<ⱼ kqᵢqⱼ/rᵢⱼ",
-          "τ=pE sinθ",
-          "U=−pE cosθ"
+          "equipotential surfaces never intersect; closer surfaces indicate stronger field."
         ]
       },
       {
-        "heading": "चालक, परावैद्युत व संधारित्र",
+        "heading": "2.6 आवेशों के निकाय की स्थिरवैद्युत स्थितिज ऊर्जा",
         "content": [
-          "स्थिरवैद्युत साम्य में चालक के भीतर विद्युत क्षेत्र शून्य और चालक समान विभव पर होता है; अतिरिक्त आवेश सतह पर रहता है।",
-          "संधारित्र दो चालकों की व्यवस्था है जिसमें समान परिमाण के विपरीत आवेश संचित होते हैं। धारिता C=Q/V है।",
-          "समांतर-पट्ट संधारित्र में किनारी प्रभाव नगण्य होने पर C=ε₀A/d; परावैद्युतांक K का पदार्थ पूर्णतः भरने पर C=Kε₀A/d।"
+          "System potential energy = work to assemble charges from infinity.",
+          "Two charges U=(1/4πε₀)(q₁q₂/r₁₂).",
+          "Like charges closer => U increases; unlike => decreases."
         ],
         "points": [
-          "धारिता की SI इकाई फैरड (F)",
-          "1 F=1 C/V",
-          "C₀=ε₀A/d; C=Kε₀A/d"
+          "3 charges U=U₁₂+U₂₃+U₃₁; scalar and charge signs matter."
         ]
       },
       {
-        "heading": "संधारित्र संयोजन व ऊर्जा",
+        "heading": "2.7 बाह्य विद्युत क्षेत्र में द्विध्रुव की स्थितिज ऊर्जा एवं कार्य",
         "content": [
-          "समांतर संयोजन में सभी संधारित्रों पर विभवांतर समान होता है और धारिताएँ जुड़ती हैं।",
-          "श्रेणी संयोजन में प्रत्येक पर आवेश समान होता है और व्युत्क्रम धारिताएँ जुड़ती हैं।",
-          "आवेशित संधारित्र में कार्य विद्युत क्षेत्र की ऊर्जा के रूप में संचित रहता है।"
+          "Rotate dipole θ₁→θ₂ in uniform E: W=pE(cosθ₁-cosθ₂).",
+          "U=-p·E=-pE cosθ with U=0 at θ=90°.",
+          "θ=0° gives minimum U=-pE stable equilibrium.",
+          "θ=180° gives maximum U=+pE unstable equilibrium."
         ],
         "points": [
-          "समांतर: C_eq=ΣCᵢ",
-          "श्रेणी: 1/C_eq=Σ(1/Cᵢ)",
-          "U=½CV²=½QV=Q²/(2C)",
-          "निर्वात में ऊर्जा घनत्व u=½ε₀E²"
+          "U=0 at 90°; work for 180° rotation from equilibrium =2pE."
         ]
       },
       {
-        "heading": "पुनरावृत्ति हेतु संपूर्ण सूत्र-संबंध",
+        "heading": "2.8 चालक-स्थिरवैद्युतिकी एवं स्थिरवैद्युत परिरक्षण",
         "content": [
-          "विभव ऊर्जा का परिवर्तन बाह्य बल के कार्य के बराबर तथा विद्युत क्षेत्र के कार्य के विपरीत होता है।",
-          "स्थिरवैद्युत विभव अदिश है और आवेश-विन्यास के विभवों का बीजीय योग लिया जाता है।",
-          "धारिता केवल चालक की रचना और माध्यम पर निर्भर करती है; आदर्श स्थिति में संग्रहित आवेश पर नहीं।"
+          "In electrostatic equilibrium, E=0 inside conductor.",
+          "Potential constant throughout conductor and equals surface potential.",
+          "Just outside conductor E=σ/ε₀ normal to surface.",
+          "Hollow conductor cavity is shielded from external electric fields."
         ],
         "points": [
-          "ΔU=Wबाह्य=−Wक्षेत्र",
-          "V=U/q",
-          "Vबिंदु=Q/(4πε₀r)",
-          "Vद्विध्रुव=p cosθ/(4πε₀r²)",
-          "C=Q/V",
-          "Cसमांतर=εA/d",
-          "U=Q²/(2C)=½CV²"
+          "extra charge stays on outer surface; closed metal car/bus protection during lightning."
+        ]
+      },
+      {
+        "heading": "2.9 परावैद्युत पदार्थ एवं ध्रुवण",
+        "content": [
+          "Dielectrics are insulators that transmit electrostatic effects without conduction.",
+          "Nonpolar molecules: charge centers coincide, permanent dipole moment zero, examples H₂,O₂,CO₂.",
+          "Polar molecules: centers separated, permanent dipole moment nonzero, examples HCl,H₂O.",
+          "External field induces dipole moment and reduces internal field: E=E₀/K."
+        ],
+        "points": [
+          "polarization vector P = χ_e E; dielectric strength = maximum field without breakdown."
+        ]
+      },
+      {
+        "heading": "2.10 संधारित्र एवं धारिता की संकल्पना",
+        "content": [
+          "Capacitance measures ability to store charge/energy.",
+          "C=Q/V.",
+          "Capacitor = arrangement of two nearby conductors increasing capacitance without changing conductor shape."
+        ],
+        "points": [
+          "SI farad; 1 μF=10⁻⁶F, 1 pF=10⁻¹²F."
+        ]
+      },
+      {
+        "heading": "2.11 समांतर पट्टिका संधारित्र",
+        "content": [
+          "Parallel plates area A, distance d.",
+          "Vacuum/air C₀=ε₀A/d.",
+          "Full dielectric K: C=Kε₀A/d."
+        ],
+        "points": [
+          "E=σ/ε₀=Q/(ε₀A); edge fringing effect."
+        ]
+      },
+      {
+        "heading": "2.12 संधारित्रों का संयोजन",
+        "content": [
+          "Series: same Q, voltage divides; 1/C_s=1/C₁+...+1/C_n.",
+          "Parallel: same V, charge divides; C_p=C₁+...+C_n."
+        ],
+        "points": [
+          "series equivalent less than smallest; parallel greater than largest."
+        ]
+      },
+      {
+        "heading": "2.13 संधारित्र में संचित ऊर्जा एवं ऊर्जा घनत्व",
+        "content": [
+          "Work by battery stored as electrostatic potential energy.",
+          "U=(1/2)Q²/C=(1/2)CV²=(1/2)QV.",
+          "Energy density u=(1/2)ε₀E²."
+        ],
+        "points": [
+          "battery total energy QV, exactly 50% stored and 50% heat; energy density J/m³."
+        ]
+      },
+      {
+        "heading": "2.14 चालकों के संयोजन में आवेश पुनर्वितरण एवं ऊर्जा ह्रास",
+        "content": [
+          "Connect conductors of different potentials; charge flows high→low until equal.",
+          "Common potential V=(C₁V₁+C₂V₂)/(C₁+C₂).",
+          "Charge conserved; energy lost due to resistance/spark as heat/light."
+        ],
+        "points": [
+          "q₁'/q₂'=C₁/C₂; ΔU=(1/2)[C₁C₂/(C₁+C₂)](V₁-V₂)²."
+        ]
+      },
+      {
+        "heading": "2.15 वान डे ग्राफ जनित्र",
+        "content": [
+          "Generates 10⁶ V or more.",
+          "Principle 1: sharp tips, high surface charge density, air ionization/corona discharge.",
+          "Principle 2: touching internal charged sphere to hollow conductor transfers charge to outer surface."
+        ],
+        "points": [
+          "accelerates protons/deuterons; enclosed in steel tank at high pressure with inert gas such as N₂ or Freon."
         ]
       }
     ],
     "oneLiners": [
       {
-        "question": "विद्युत विभव किस प्रकार की राशि है?",
-        "answer": "अदिश राशि।"
+        "question": "स्थिरवैद्युत बल किस प्रकार का बल है?",
+        "answer": "संरक्षी तथा केंद्रीय बल।"
       },
       {
-        "question": "विभव का SI मात्रक क्या है?",
-        "answer": "वोल्ट (V)।"
-      },
-      {
-        "question": "एक वोल्ट किसके बराबर है?",
-        "answer": "1 J/C।"
-      },
-      {
-        "question": "बिंदु आवेश Q से r दूरी पर विभव?",
-        "answer": "V=kQ/r।"
-      },
-      {
-        "question": "ऋण आवेश के कारण विभव का चिह्न?",
-        "answer": "ऋणात्मक।"
-      },
-      {
-        "question": "द्विध्रुव आघूर्ण की दिशा?",
-        "answer": "ऋण आवेश से धन आवेश की ओर।"
-      },
-      {
-        "question": "द्विध्रुव के निरक्षीय बिंदु पर विभव?",
+        "question": "अनंत पर स्थिरवैद्युत विभव का मानक मान?",
         "answer": "शून्य।"
       },
       {
-        "question": "समविभव पृष्ठ पर आवेश ले जाने में कार्य?",
-        "answer": "शून्य।"
+        "question": "वैद्युत विभव अदिश/सदिश?",
+        "answer": "अदिश।"
       },
       {
-        "question": "विद्युत क्षेत्र समविभव पृष्ठ से किस कोण पर होता है?",
-        "answer": "लंबवत (90°)।"
+        "question": "SI unit?",
+        "answer": "वोल्ट/J per C."
       },
       {
-        "question": "धारिता का SI मात्रक?",
-        "answer": "फैरड (F)।"
+        "question": "dimensional formula",
+        "answer": "[M L² T⁻³ A⁻¹]."
       },
       {
-        "question": "1 माइक्रोफैरड कितने फैरड?",
-        "answer": "10⁻⁶ F।"
+        "question": "1 eV",
+        "answer": "1.6×10⁻¹⁹ J."
       },
       {
-        "question": "1 पिकोफैरड कितने फैरड?",
-        "answer": "10⁻¹² F।"
+        "question": "point charge potential dependency",
+        "answer": "1/r."
       },
       {
-        "question": "धारिता C का सूत्र?",
-        "answer": "C=Q/V।"
+        "question": "dipole potential dependency",
+        "answer": "1/r²."
       },
       {
-        "question": "समांतर प्लेट संधारित्र की धारिता?",
-        "answer": "C=ε₀A/d।"
+        "question": "dipole equatorial potential",
+        "answer": "0."
       },
       {
-        "question": "प्लेट क्षेत्रफल दोगुना करने पर C?",
-        "answer": "दोगुनी।"
+        "question": "E=0 but V≠0 possible?",
+        "answer": "yes, charged hollow sphere interior."
       },
       {
-        "question": "प्लेट दूरी दोगुनी करने पर C?",
-        "answer": "आधी।"
+        "question": "V=0 but E≠0 possible?",
+        "answer": "yes, dipole equatorial."
       },
       {
-        "question": "समांतर संयोजन में कौन समान रहता है?",
-        "answer": "प्रत्येक संधारित्र का विभवांतर।"
+        "question": "work on equipotential",
+        "answer": "0."
       },
       {
-        "question": "श्रेणी संयोजन में कौन समान रहता है?",
-        "answer": "प्रत्येक संधारित्र पर आवेश।"
+        "question": "equipotential/field angle",
+        "answer": "90°."
       },
       {
-        "question": "संधारित्र की ऊर्जा का सूत्र?",
-        "answer": "U=½CV²।"
+        "question": "equipotential surfaces of point charge",
+        "answer": "concentric spheres."
       },
       {
-        "question": "स्थिरवैद्युत साम्य में चालक के भीतर E?",
-        "answer": "शून्य।"
+        "question": "equipotential surfaces in uniform field",
+        "answer": "parallel planes."
       },
       {
-        "question": "परावैद्युतांक K का संबंध?",
-        "answer": "K=ε/ε₀।"
+        "question": "relation E and gradient",
+        "answer": "E=-dV/dr."
       },
       {
-        "question": "बाह्य क्षेत्र में द्विध्रुव पर आघूर्ण?",
-        "answer": "τ=pE sinθ।"
+        "question": "gradient unit",
+        "answer": "V/m."
       },
       {
-        "question": "द्विध्रुव की स्थितिज ऊर्जा?",
-        "answer": "U=−pE cosθ।"
+        "question": "conductor interior E",
+        "answer": "0."
       },
       {
-        "question": "समांतर संयोजन की तुल्य धारिता?",
-        "answer": "Ceq=C₁+C₂+…।"
+        "question": "conductor interior vs surface V",
+        "answer": "equal."
       },
       {
-        "question": "श्रेणी संयोजन की तुल्य धारिता?",
-        "answer": "1/Ceq=1/C₁+1/C₂+…।"
+        "question": "just outside conductor E",
+        "answer": "σ/ε₀."
       },
       {
-        "question": "विद्युत विभव की परिभाषा क्या है?",
-        "answer": "अनंत से इकाई धन परीक्षण आवेश को किसी बिंदु तक लाने में बाह्य बल द्वारा किया गया कार्य।"
+        "question": "hollow conductor shielding",
+        "answer": "electrostatic shielding."
       },
       {
-        "question": "विद्युत विभव का एस.आई. मात्रक क्या है?",
-        "answer": "वोल्ट।"
+        "question": "Earth potential standard",
+        "answer": "0."
       },
       {
-        "question": "विद्युत विभव कैसी राशि है?",
-        "answer": "अदिश राशि।"
+        "question": "Earth capacitance",
+        "answer": "about 711 μF."
       },
       {
-        "question": "विद्युत विभव का विमीय सूत्र क्या है?",
-        "answer": "[ML²T⁻³A⁻¹]।"
+        "question": "capacitance SI",
+        "answer": "F."
       },
       {
-        "question": "विभवांतर किसे कहते हैं?",
-        "answer": "दो बिंदुओं के विभवों का अंतर।"
+        "question": "1 F",
+        "answer": "1 C/V."
       },
       {
-        "question": "विद्युत क्षेत्र द्वारा किया गया कार्य किसके बराबर है?",
-        "answer": "आवेश × प्रारंभिक और अंतिम विभव का अंतर।"
+        "question": "isolated spherical conductor C=4πε₀R",
+        "answer": "C=4πε₀R."
       },
       {
-        "question": "स्थिरवैद्युत बल कैसा बल है?",
-        "answer": "संरक्षी बल।"
+        "question": "parallel plate C vs d",
+        "answer": "inverse."
       },
       {
-        "question": "संरक्षी बल के विरुद्ध बाह्य कार्य किसमें संचित होता है?",
-        "answer": "स्थितिज ऊर्जा में।"
+        "question": "dielectric K in capacitor",
+        "answer": "C increases K times."
       },
       {
-        "question": "विद्युत स्थितिज ऊर्जा का शून्य सामान्यतः कहाँ लिया जाता है?",
-        "answer": "अनंत पर।"
+        "question": "metal sheet between plates",
+        "answer": "capacitance increases."
       },
       {
-        "question": "बिंदु आवेश के कारण विभव का सूत्र क्या है?",
-        "answer": "V = (1/4πε₀)(Q/r)।"
+        "question": "series combination same quantity",
+        "answer": "charge Q."
       },
       {
-        "question": "बिंदु आवेश का विभव दूरी के साथ किस प्रकार बदलता है?",
-        "answer": "1/r के समानुपाती।"
+        "question": "parallel same quantity",
+        "answer": "voltage V."
       },
       {
-        "question": "बिंदु आवेश का विद्युत क्षेत्र दूरी के साथ किस प्रकार बदलता है?",
-        "answer": "1/r² के समानुपाती।"
+        "question": "energy stored location",
+        "answer": "electric field between plates."
       },
       {
-        "question": "ऋण आवेश के कारण विभव का चिह्न क्या होता है?",
-        "answer": "ऋणात्मक।"
+        "question": "energy density",
+        "answer": "u=(1/2)ε₀E²."
       },
       {
-        "question": "धन आवेश के कारण विभव का चिह्न क्या होता है?",
-        "answer": "धनात्मक।"
+        "question": "battery energy stored percentage",
+        "answer": "50%."
       },
       {
-        "question": "अनंत पर विभव का मान क्या माना जाता है?",
-        "answer": "शून्य।"
+        "question": "energy loss when conductors connected",
+        "answer": "heat/light/sound."
       },
       {
-        "question": "विभव शून्य होने का क्या अर्थ है?",
-        "answer": "चुने गए संदर्भ के सापेक्ष विभव शून्य है; क्षेत्र आवश्यकतः शून्य नहीं।"
+        "question": "Van de Graaff purpose",
+        "answer": "very high potential difference."
       },
       {
-        "question": "विद्युत विभव किस पर निर्भर करता है?",
-        "answer": "स्रोत आवेश-विन्यास और संदर्भ विभव पर।"
+        "question": "air dielectric strength",
+        "answer": "~3×10⁶ V/m."
       },
       {
-        "question": "परीक्षण आवेश बदलने पर किसी निश्चित बिंदु का विभव बदलता है?",
-        "answer": "नहीं।"
+        "question": "stable equilibrium dipole",
+        "answer": "θ=0°."
       },
       {
-        "question": "विभव का अध्यारोपण सिद्धांत क्या कहता है?",
-        "answer": "कुल विभव सभी स्रोत आवेशों के विभवों का बीजीय योग है।"
+        "question": "maximum dipole potential energy",
+        "answer": "θ=180°."
       },
       {
-        "question": "आवेश निकाय के कारण विभव का सामान्य सूत्र क्या है?",
-        "answer": "V = (1/4πε₀)Σ(qᵢ/rᵢ)।"
-      },
-      {
-        "question": "विद्युत द्विध्रुव किससे बनता है?",
-        "answer": "समान परिमाण के विपरीत चिह्न वाले दो आवेशों से।"
-      },
-      {
-        "question": "विद्युत द्विध्रुव का कुल आवेश कितना होता है?",
-        "answer": "शून्य।"
-      },
-      {
-        "question": "द्विध्रुव आघूर्ण का परिमाण क्या है?",
-        "answer": "p = q(2a)।"
-      },
-      {
-        "question": "द्विध्रुव आघूर्ण की दिशा क्या है?",
-        "answer": "ऋण आवेश से धन आवेश की ओर।"
-      },
-      {
-        "question": "द्विध्रुव आघूर्ण का एस.आई. मात्रक क्या है?",
-        "answer": "कूलॉम-मीटर।"
-      },
-      {
-        "question": "दूरस्थ बिंदु पर द्विध्रुव विभव किस पर निर्भर करता है?",
-        "answer": "द्विध्रुव आघूर्ण, दूरी और अक्ष से कोण पर।"
-      },
-      {
-        "question": "द्विध्रुव के निरक्षीय तल पर विभव कितना होता है?",
-        "answer": "शून्य।"
-      },
-      {
-        "question": "द्विध्रुव अक्ष पर दूरस्थ विभव का सूत्र क्या है?",
-        "answer": "V = ±p/(4πε₀r²)।"
-      },
-      {
-        "question": "दूरस्थ द्विध्रुव विभव दूरी के किस घात के व्युत्क्रमानुपाती है?",
-        "answer": "r² के।"
-      },
-      {
-        "question": "समविभव पृष्ठ क्या है?",
-        "answer": "ऐसा पृष्ठ जिसके प्रत्येक बिंदु पर विभव समान हो।"
-      },
-      {
-        "question": "समविभव पृष्ठ पर आवेश को ले जाने में कार्य कितना है?",
-        "answer": "शून्य।"
-      },
-      {
-        "question": "विद्युत क्षेत्र समविभव पृष्ठ पर कैसा होता है?",
-        "answer": "लंबवत।"
-      },
-      {
-        "question": "दो समविभव पृष्ठ एक-दूसरे को काट सकते हैं?",
-        "answer": "नहीं।"
-      },
-      {
-        "question": "समान विद्युत क्षेत्र के समविभव पृष्ठ कैसे होते हैं?",
-        "answer": "क्षेत्र के लंबवत समानांतर तल।"
-      },
-      {
-        "question": "एक बिंदु आवेश के समविभव पृष्ठ कैसे होते हैं?",
-        "answer": "आवेश-केंद्रित संकेंद्री गोले।"
-      },
-      {
-        "question": "विद्युत क्षेत्र की दिशा में विभव कैसे बदलता है?",
-        "answer": "घटता है।"
-      },
-      {
-        "question": "विद्युत क्षेत्र और विभव का संबंध क्या है?",
-        "answer": "E = −dV/dr (एक-विमीय स्थिति में)।"
-      },
-      {
-        "question": "विभव-प्रवणता का अर्थ क्या है?",
-        "answer": "प्रति इकाई दूरी विभव में परिवर्तन।"
-      },
-      {
-        "question": "विद्युत क्षेत्र का मात्रक क्या है?",
-        "answer": "न्यूटन प्रति कूलॉम अथवा वोल्ट प्रति मीटर।"
-      },
-      {
-        "question": "स्थिरवैद्युत संतुलन में चालक के भीतर विद्युत क्षेत्र कितना है?",
-        "answer": "शून्य।"
-      },
-      {
-        "question": "स्थिरवैद्युत संतुलन में चालक का विभव कैसा रहता है?",
-        "answer": "संपूर्ण चालक में समान।"
-      },
-      {
-        "question": "अतिरिक्त आवेश चालक पर कहाँ रहता है?",
-        "answer": "उसकी बाहरी सतह पर।"
-      },
-      {
-        "question": "चालक की सतह के ठीक बाहर विद्युत क्षेत्र किस दिशा में होता है?",
-        "answer": "सतह के लंबवत।"
-      },
-      {
-        "question": "आवेशित चालक के भीतर विभव कितना होता है?",
-        "answer": "सतह के विभव के बराबर, अर्थात नियत।"
-      },
-      {
-        "question": "धारिता की परिभाषा क्या है?",
-        "answer": "चालक का आवेश और विभव का अनुपात।"
-      },
-      {
-        "question": "धारिता का सूत्र क्या है?",
-        "answer": "C = Q/V।"
-      },
-      {
-        "question": "धारिता का एस.आई. मात्रक क्या है?",
-        "answer": "फैरड।"
-      },
-      {
-        "question": "एक फैरड किसके बराबर है?",
-        "answer": "एक कूलॉम प्रति वोल्ट।"
-      },
-      {
-        "question": "धारिता किन कारकों पर निर्भर करती है?",
-        "answer": "चालक की ज्यामिति, आकार, दूरी और माध्यम की परावैद्युतता पर।"
-      },
-      {
-        "question": "धारिता आवेश पर निर्भर करती है?",
-        "answer": "नियत ज्यामिति और माध्यम के लिए नहीं।"
-      },
-      {
-        "question": "एक पृथक गोलाकार चालक की धारिता क्या है?",
-        "answer": "C = 4πε₀R।"
-      },
-      {
-        "question": "पृथक गोलाकार चालक की धारिता किसके समानुपाती है?",
-        "answer": "उसकी त्रिज्या के।"
-      },
-      {
-        "question": "समांतर-पट्टिका संधारित्र की धारिता क्या है?",
-        "answer": "C = ε₀A/d।"
-      },
-      {
-        "question": "प्लेटों का क्षेत्रफल बढ़ाने पर धारिता क्या होती है?",
-        "answer": "बढ़ती है।"
-      },
-      {
-        "question": "प्लेटों के बीच दूरी बढ़ाने पर धारिता क्या होती है?",
-        "answer": "घटती है।"
-      },
-      {
-        "question": "निर्वात की परावैद्युतता का प्रतीक क्या है?",
-        "answer": "ε₀।"
-      },
-      {
-        "question": "परावैद्युतांक K की परिभाषा क्या है?",
-        "answer": "ε/ε₀।"
-      },
-      {
-        "question": "परावैद्युत पदार्थ रखने पर धारिता क्या होती है?",
-        "answer": "K गुना बढ़ जाती है, पूर्ण भराव की स्थिति में।"
-      },
-      {
-        "question": "संधारित्र का कार्य क्या है?",
-        "answer": "विद्युत आवेश और ऊर्जा का संचय।"
-      },
-      {
-        "question": "संधारित्र की प्लेटों पर आवेश कैसे होते हैं?",
-        "answer": "बराबर परिमाण के विपरीत चिह्न वाले।"
-      },
-      {
-        "question": "श्रेणीक्रम में संधारित्रों पर आवेश कैसा होता है?",
-        "answer": "प्रत्येक पर समान।"
-      },
-      {
-        "question": "श्रेणीक्रम में तुल्य धारिता का व्यंजक क्या है?",
-        "answer": "1/Cₑq = Σ(1/Cᵢ)।"
-      },
-      {
-        "question": "श्रेणीक्रम की तुल्य धारिता सबसे छोटी धारिता से कैसी होती है?",
-        "answer": "उससे भी कम।"
-      },
-      {
-        "question": "समांतर क्रम में संधारित्रों का विभवांतर कैसा होता है?",
-        "answer": "सभी पर समान।"
-      },
-      {
-        "question": "समांतर क्रम में तुल्य धारिता क्या है?",
-        "answer": "Cₑq = ΣCᵢ।"
-      },
-      {
-        "question": "समान संधारित्रों की n इकाइयाँ श्रेणी में हों तो तुल्य धारिता?",
-        "answer": "C/n।"
-      },
-      {
-        "question": "समान संधारित्रों की n इकाइयाँ समांतर में हों तो तुल्य धारिता?",
-        "answer": "nC।"
-      },
-      {
-        "question": "संधारित्र में संचित ऊर्जा का सूत्र क्या है?",
-        "answer": "U = ½CV²।"
-      },
-      {
-        "question": "संधारित्र की ऊर्जा के अन्य सूत्र क्या हैं?",
-        "answer": "U = Q²/(2C) = ½QV।"
-      },
-      {
-        "question": "संधारित्र की ऊर्जा कहाँ संचित होती है?",
-        "answer": "विद्युत क्षेत्र में।"
-      },
-      {
-        "question": "समांतर-पट्टिका संधारित्र के क्षेत्र की ऊर्जा-घनता क्या है?",
-        "answer": "u = ½ε₀E² (निर्वात में)।"
-      },
-      {
-        "question": "संधारित्र को बैटरी से जोड़े रखने पर क्या नियत रहता है?",
-        "answer": "विभवांतर।"
-      },
-      {
-        "question": "बैटरी से अलग संधारित्र में क्या नियत रहता है?",
-        "answer": "आवेश।"
-      },
-      {
-        "question": "बैटरी से जुड़े संधारित्र में परावैद्युत डालने पर आवेश?",
-        "answer": "बढ़ता है।"
-      },
-      {
-        "question": "पृथक संधारित्र में परावैद्युत डालने पर विभवांतर?",
-        "answer": "घटता है।"
-      },
-      {
-        "question": "बैटरी से जुड़े संधारित्र में परावैद्युत डालने पर ऊर्जा?",
-        "answer": "बढ़ती है।"
-      },
-      {
-        "question": "पृथक संधारित्र में परावैद्युत डालने पर ऊर्जा?",
-        "answer": "घटती है।"
-      },
-      {
-        "question": "इलेक्ट्रॉन-वोल्ट किसका मात्रक है?",
-        "answer": "ऊर्जा का।"
-      },
-      {
-        "question": "एक इलेक्ट्रॉन-वोल्ट कितने जूल के बराबर है?",
-        "answer": "1.6×10⁻¹⁹ जूल।"
-      },
-      {
-        "question": "एक किलो इलेक्ट्रॉन-वोल्ट कितने इलेक्ट्रॉन-वोल्ट है?",
-        "answer": "10³ इलेक्ट्रॉन-वोल्ट।"
-      },
-      {
-        "question": "एक मेगा इलेक्ट्रॉन-वोल्ट कितने इलेक्ट्रॉन-वोल्ट है?",
-        "answer": "10⁶ इलेक्ट्रॉन-वोल्ट।"
-      },
-      {
-        "question": "एक गीगा इलेक्ट्रॉन-वोल्ट कितने इलेक्ट्रॉन-वोल्ट है?",
-        "answer": "10⁹ इलेक्ट्रॉन-वोल्ट।"
-      },
-      {
-        "question": "एकसमान बाह्य विद्युत क्षेत्र में द्विध्रुव पर परिणामी बल?",
-        "answer": "शून्य।"
-      },
-      {
-        "question": "एकसमान विद्युत क्षेत्र में द्विध्रुव पर बल-आघूर्ण?",
-        "answer": "τ = pE sinθ।"
-      },
-      {
-        "question": "द्विध्रुव की स्थितिज ऊर्जा का सूत्र क्या है?",
-        "answer": "U = −pE cosθ।"
-      },
-      {
-        "question": "द्विध्रुव की स्थायी संतुलन स्थिति कौन-सी है?",
-        "answer": "p और E समानांतर, θ = 0।"
-      },
-      {
-        "question": "द्विध्रुव की अस्थायी संतुलन स्थिति कौन-सी है?",
-        "answer": "p और E विपरीत समानांतर, θ = π।"
-      },
-      {
-        "question": "द्विध्रुव की स्थितिज ऊर्जा न्यूनतम कब होती है?",
-        "answer": "θ = 0 पर।"
-      },
-      {
-        "question": "द्विध्रुव की स्थितिज ऊर्जा अधिकतम कब होती है?",
-        "answer": "θ = π पर।"
-      },
-      {
-        "question": "किसी आवेश q की बाह्य विभव V में स्थितिज ऊर्जा?",
-        "answer": "U = qV।"
-      },
-      {
-        "question": "दो बिंदु आवेशों की पारस्परिक स्थितिज ऊर्जा?",
-        "answer": "U = q₁q₂/(4πε₀r)।"
-      },
-      {
-        "question": "समान चिह्न वाले आवेशों की पारस्परिक स्थितिज ऊर्जा का चिह्न?",
-        "answer": "धनात्मक।"
-      },
-      {
-        "question": "विपरीत चिह्न वाले आवेशों की पारस्परिक स्थितिज ऊर्जा का चिह्न?",
-        "answer": "ऋणात्मक।"
-      },
-      {
-        "question": "आवेश निकाय की कुल स्थितिज ऊर्जा किसका योग है?",
-        "answer": "सभी अद्वितीय आवेश-युग्मों की पारस्परिक ऊर्जाओं का।"
-      },
-      {
-        "question": "विभव शून्य हो लेकिन विद्युत क्षेत्र अशून्य हो सकता है?",
-        "answer": "हाँ।"
-      },
-      {
-        "question": "विद्युत क्षेत्र शून्य हो लेकिन विभव अशून्य हो सकता है?",
-        "answer": "हाँ।"
-      },
-      {
-        "question": "विद्युत क्षेत्र का रेखा-समाकलन स्थिरवैद्युत क्षेत्र में बंद पथ पर?",
-        "answer": "शून्य।"
-      },
-      {
-        "question": "विभवांतर पथ पर निर्भर करता है?",
-        "answer": "नहीं, केवल प्रारंभिक और अंतिम बिंदुओं पर।"
-      },
-      {
-        "question": "संधारित्र की प्लेटों के बीच क्षेत्र (किनारी प्रभाव उपेक्षित) कैसा होता है?",
-        "answer": "लगभग एकसमान।"
-      },
-      {
-        "question": "किनारी प्रभाव क्या है?",
-        "answer": "प्लेटों के किनारों पर क्षेत्र रेखाओं का बाहर की ओर मुड़ना।"
-      },
-      {
-        "question": "समांतर-पट्टिका संधारित्र में प्लेटों का क्षेत्रफल किस इकाई में लिया जाता है?",
-        "answer": "वर्ग मीटर।"
-      },
-      {
-        "question": "धारिता का विमीय सूत्र क्या है?",
-        "answer": "[M⁻¹L⁻²T⁴A²]।"
-      },
-      {
-        "question": "विभव-प्रवणता का मात्रक क्या है?",
-        "answer": "वोल्ट प्रति मीटर।"
-      },
-      {
-        "question": "किसी बिंदु पर अनेक आवेशों के विभव जोड़ते समय चिह्न कैसे लिए जाते हैं?",
-        "answer": "आवेश के चिह्न सहित बीजीय योग।"
-      },
-      {
-        "question": "आवेशित गोलाकार खोल के भीतर विद्युत क्षेत्र?",
-        "answer": "शून्य।"
-      },
-      {
-        "question": "आवेशित गोलाकार खोल के भीतर विभव?",
-        "answer": "नियत और सतह के विभव के बराबर।"
-      },
-      {
-        "question": "बिंदु आवेश के कारण विभव अनंत पर?",
-        "answer": "शून्य।"
-      },
-      {
-        "question": "किसी चालक की धारिता बढ़ाने के लिए पास में क्या रखा जा सकता है?",
-        "answer": "उचित रूप से भू-संपर्कित चालक।"
-      },
-      {
-        "question": "परावैद्युत पदार्थ का मुख्य प्रभाव क्या है?",
-        "answer": "विद्युत क्षेत्र को कम करके धारिता बढ़ाना।"
-      },
-      {
-        "question": "विद्युत विभव की गणना में अदिश अध्यारोपण क्यों सरल है?",
-        "answer": "क्योंकि विभव का दिशा-घटक नहीं होता।"
-      },
-      {
-        "question": "विद्युत क्षेत्र किस दिशा में विभव का अधिकतम ह्रास होता है?",
-        "answer": "विद्युत क्षेत्र की दिशा में।"
-      },
-      {
-        "question": "स्थिरवैद्युत क्षेत्र में समविभव पृष्ठ पर गति के लिए कार्य?",
-        "answer": "शून्य।"
-      },
-      {
-        "question": "आवेश को उच्च विभव से निम्न विभव तक ले जाने पर धन आवेश की स्थितिज ऊर्जा?",
-        "answer": "घटती है।"
-      },
-      {
-        "question": "ऋण आवेश की स्थितिज ऊर्जा किस दिशा में गति करने पर घट सकती है?",
-        "answer": "उच्च विभव की ओर।"
-      },
-      {
-        "question": "संधारित्र की ऊर्जा आवेश के साथ कैसे बदलती है, C नियत हो?",
-        "answer": "U ∝ Q²।"
-      },
-      {
-        "question": "संधारित्र की ऊर्जा विभव के साथ कैसे बदलती है, C नियत हो?",
-        "answer": "U ∝ V²।"
-      },
-      {
-        "question": "आवेश दोगुना करने पर नियत धारिता की ऊर्जा कितनी गुनी?",
-        "answer": "चार गुनी।"
-      },
-      {
-        "question": "विभव दोगुना करने पर नियत धारिता की ऊर्जा कितनी गुनी?",
-        "answer": "चार गुनी।"
-      },
-      {
-        "question": "धारिता दोगुनी और विभव नियत हो तो ऊर्जा?",
-        "answer": "दोगुनी।"
-      },
-      {
-        "question": "धारिता दोगुनी और आवेश नियत हो तो ऊर्जा?",
-        "answer": "आधी।"
-      },
-      {
-        "question": "एक वोल्ट किसके बराबर होता है?",
-        "answer": "एक जूल प्रति कूलॉम।"
-      },
-      {
-        "question": "अनंत पर पृथक बिंदु आवेश का विभव कितना माना जाता है?",
-        "answer": "शून्य।"
-      },
-      {
-        "question": "बिंदु आवेश के कारण विभव दूरी के किस घात के व्युत्क्रमानुपाती है?",
-        "answer": "प्रथम घात के।"
-      },
-      {
-        "question": "अनेक बिंदु आवेशों के कारण कुल विभव कैसे ज्ञात करते हैं?",
-        "answer": "प्रत्येक आवेश के विभवों का बीजीय योग लेकर।"
-      },
-      {
-        "question": "विद्युत विभवांतर की परिभाषा में कार्य किस बल के विरुद्ध लिया जाता है?",
-        "answer": "वैद्युत बल के विरुद्ध बाह्य बल द्वारा किया गया कार्य।"
-      },
-      {
-        "question": "स्थिरवैद्युत क्षेत्र में बंद पथ पर कुल कार्य कितना होता है?",
-        "answer": "शून्य।"
-      },
-      {
-        "question": "स्थिरवैद्युत बल संरक्षी है या अ-संरक्षी?",
-        "answer": "संरक्षी।"
-      },
-      {
-        "question": "द्विध्रुव आघूर्ण की दिशा किस आवेश से किस आवेश की ओर होती है?",
-        "answer": "ऋण आवेश से धन आवेश की ओर।"
-      },
-      {
-        "question": "विद्युत द्विध्रुव आघूर्ण का SI मात्रक क्या है?",
-        "answer": "कूलॉम-मीटर।"
-      },
-      {
-        "question": "द्विध्रुव के विषुवतीय तल पर विभव कितना होता है?",
-        "answer": "शून्य।"
-      },
-      {
-        "question": "दूरस्थ द्विध्रुव के विभव का दूरी पर निर्भरता नियम क्या है?",
-        "answer": "V ∝ 1/r²।"
-      },
-      {
-        "question": "समविभव पृष्ठ पर दो बिंदुओं के बीच विभवांतर कितना होता है?",
-        "answer": "शून्य।"
-      },
-      {
-        "question": "समविभव पृष्ठ पर आवेश ले जाने में कितना कार्य होता है?",
-        "answer": "शून्य।"
-      },
-      {
-        "question": "विद्युत क्षेत्र समविभव पृष्ठ से किस दिशा में होता है?",
-        "answer": "लंबवत।"
-      },
-      {
-        "question": "विद्युत क्षेत्र और विभव के बीच एक विमीय संबंध क्या है?",
-        "answer": "Eₓ = −dV/dx।"
-      },
-      {
-        "question": "विद्युत क्षेत्र की दिशा में विभव किस प्रकार बदलता है?",
-        "answer": "घटता है।"
-      },
-      {
-        "question": "विद्युत क्षेत्र शून्य होने पर किसी जुड़े क्षेत्र में विभव कैसा होता है?",
-        "answer": "स्थिर।"
-      },
-      {
-        "question": "दो बिंदु आवेशों की स्थितिज ऊर्जा का सूत्र क्या है?",
-        "answer": "U = kq₁q₂/r।"
-      },
-      {
-        "question": "आवेश-निकाय की कुल स्थितिज ऊर्जा कैसे प्राप्त होती है?",
-        "answer": "सभी अलग-अलग आवेश-युग्मों की ऊर्जा के योग से।"
-      },
-      {
-        "question": "एकसमान क्षेत्र में द्विध्रुव पर बल-आघूर्ण का परिमाण क्या है?",
-        "answer": "τ = pE sinθ।"
-      },
-      {
-        "question": "एकसमान क्षेत्र में द्विध्रुव की स्थितिज ऊर्जा क्या है?",
-        "answer": "U = −pE cosθ।"
-      },
-      {
-        "question": "स्थिरवैद्युत साम्य में चालक के भीतर विद्युत क्षेत्र कितना होता है?",
-        "answer": "शून्य।"
-      },
-      {
-        "question": "स्थिरवैद्युत साम्य में चालक का विभव कैसा होता है?",
-        "answer": "संपूर्ण चालक में समान।"
-      },
-      {
-        "question": "चालक पर अतिरिक्त आवेश कहाँ रहता है?",
-        "answer": "उसकी बाहरी सतह पर।"
-      },
-      {
-        "question": "चालक की सतह के ठीक बाहर विद्युत क्षेत्र की दिशा कैसी होती है?",
-        "answer": "सतह के लंबवत।"
-      },
-      {
-        "question": "परावैद्युतांक K की प्रकृति क्या है?",
-        "answer": "विमाहीन अदिश राशि।"
-      },
-      {
-        "question": "निर्वात का परावैद्युतांक कितना है?",
-        "answer": "सापेक्ष परावैद्युतांक 1।"
-      },
-      {
-        "question": "धारिता की परिभाषा का सूत्र क्या है?",
-        "answer": "C = Q/V।"
-      },
-      {
-        "question": "धारिता का SI मात्रक क्या है?",
-        "answer": "फैरड।"
-      },
-      {
-        "question": "एक फैरड की परिभाषा क्या है?",
-        "answer": "जब 1 कूलॉम आवेश से 1 वोल्ट विभवांतर बने।"
-      },
-      {
-        "question": "आदर्श संधारित्र की धारिता आवेश पर निर्भर करती है?",
-        "answer": "नहीं।"
-      },
-      {
-        "question": "समांतर-पट्ट संधारित्र की निर्वात धारिता क्या है?",
-        "answer": "C₀ = ε₀A/d।"
-      },
-      {
-        "question": "प्लेटों के बीच पूर्ण परावैद्युत भरने पर धारिता क्या होगी?",
-        "answer": "C = Kε₀A/d।"
-      },
-      {
-        "question": "प्लेटों का क्षेत्रफल बढ़ाने पर धारिता पर क्या प्रभाव पड़ता है?",
-        "answer": "धारिता बढ़ती है।"
-      },
-      {
-        "question": "प्लेटों के बीच दूरी बढ़ाने पर धारिता पर क्या प्रभाव पड़ता है?",
-        "answer": "धारिता घटती है।"
-      },
-      {
-        "question": "संधारित्र में परावैद्युत डालने पर धारिता कितने गुना होती है?",
-        "answer": "K गुना।"
-      },
-      {
-        "question": "श्रेणीक्रम में जुड़े संधारित्रों पर कौन-सी राशि समान रहती है?",
-        "answer": "प्रत्येक पर आवेश।"
-      },
-      {
-        "question": "समांतर क्रम में जुड़े संधारित्रों पर कौन-सी राशि समान रहती है?",
-        "answer": "प्रत्येक के सिरों के बीच विभवांतर।"
-      },
-      {
-        "question": "श्रेणी संयोजन की तुल्य धारिता कैसी होती है?",
-        "answer": "सबसे छोटी धारिता से भी कम।"
-      },
-      {
-        "question": "समांतर संयोजन की तुल्य धारिता कैसे ज्ञात होती है?",
-        "answer": "सभी धारिताओं के योग से।"
-      },
-      {
-        "question": "संधारित्र में ऊर्जा कहाँ संचित रहती है?",
-        "answer": "विद्युत क्षेत्र में।"
-      },
-      {
-        "question": "ऊर्जा घनत्व का सूत्र क्या है?",
-        "answer": "u = ½ε₀E² (निर्वात में)।"
-      },
-      {
-        "question": "पृथक गोलाकार चालक की धारिता क्या है?",
-        "answer": "C = 4πε₀R।"
-      },
-      {
-        "question": "पृथ्वी की धारिता का अनुमानित मान किस सूत्र से मिलता है?",
-        "answer": "C = 4πε₀R।"
-      },
-      {
-        "question": "बैटरी से जुड़े संधारित्र में परावैद्युत डालने पर विभवांतर कैसा रहता है?",
-        "answer": "स्थिर।"
-      },
-      {
-        "question": "बैटरी से अलग संधारित्र में परावैद्युत डालने पर आवेश कैसा रहता है?",
-        "answer": "स्थिर।"
-      },
-      {
-        "question": "बैटरी से अलग संधारित्र में परावैद्युत डालने पर विभवांतर का क्या होता है?",
-        "answer": "घटता है।"
-      },
-      {
-        "question": "बैटरी से जुड़े संधारित्र में परावैद्युत डालने पर आवेश का क्या होता है?",
-        "answer": "बढ़ता है।"
-      },
-      {
-        "question": "संधारित्र का उपयोग ऊर्जा संचय के अतिरिक्त किसलिए होता है?",
-        "answer": "विद्युत परिपथों में आवेश/विभव परिवर्तन नियंत्रित करने के लिए।"
+        "question": "double plate area",
+        "answer": "capacitance doubles."
       }
     ],
     "theory": [
       {
-        "title": "विद्युत विभव एवं विभवांतर",
+        "title": "बिंदु आवेश के कारण किसी बिंदु पर वैद्युत विभव का समाकलन द्वारा निगमन",
         "content": [
-          "विद्युत विभव किसी बिंदु पर प्रति इकाई धन परीक्षण आवेश की विद्युत स्थितिज ऊर्जा है।",
-          "विभवांतर दो बिंदुओं के बीच प्रति इकाई आवेश बाह्य कार्य है।"
+          "Point +Q at O, P at r.",
+          "test charge q₀; intermediate x.",
+          "F_e=(1/4πε₀)(Qq₀/x²).",
+          "external force opposite, dW=-F_e dx.",
+          "W=-∫∞→r [(1/4πε₀)(Qq₀/x²)]dx = (1/4πε₀)(Qq₀/r).",
+          "V=W/q₀=(1/4πε₀)(Q/r)."
         ],
         "points": [
-          "V=U/q",
-          "V_B−V_A=W_ext/q",
-          "विद्युत क्षेत्र का कार्य=q(V_A−V_B)"
+          "steps 1–4."
         ]
       },
       {
-        "title": "संधारित्र व धारिता",
+        "title": "वैद्युत द्विध्रुव की अक्षीय स्थिति में वैद्युत विभव का निगमन",
         "content": [
-          "संधारित्र विपरीत आवेश संचित करने वाले दो चालकों की व्यवस्था है।",
-          "धारिता Q/V है तथा आदर्श रैखिक माध्यम में ज्यामिति और माध्यम पर निर्भर करती है।"
+          "Dipole ±q, separation 2a, point P at r on axis.",
+          "distances r-a and r+a.",
+          "V₁=+(1/4πε₀)[q/(r-a)], V₂=-(1/4πε₀)[q/(r+a)].",
+          "sum = (q/4πε₀)[1/(r-a)-1/(r+a)] = (1/4πε₀)[p/(r²-a²)].",
+          "for r≫a, V=(1/4πε₀)(p/r²); on negative side sign negative."
         ],
         "points": [
-          "C=Q/V; इकाई F",
-          "समांतर प्लेट: C=ε₀A/d",
-          "डाइलेक्ट्रिक भरने पर C=Kε₀A/d"
+          "steps 1–4."
         ]
       },
       {
-        "title": "बिहार बोर्ड परीक्षा उन्मुख अवधारणाएँ",
+        "title": "वैद्युत द्विध्रुव की निरक्षीय (विषुवतीय) रेखा पर वैद्युत विभव का निगमन",
         "content": [
-          "उपलब्ध BSEB-लेबल्ड प्रश्न-संग्रहों में इस अध्याय से विभव-प्रवणता, समांतर-पट्ट संधारित्र, बिंदु आवेश का विभव, द्विध्रुव के निरक्षीय विभव, धारिता की निर्भरता, पिकोफैरड तथा संधारित्र की ऊर्जा जैसे सीधे सूत्र/अवधारणा आधारित प्रश्न मिलते हैं।",
-          "यह सूची PYQ-थीम विश्लेषण है; नीचे दिए अभ्यास प्रश्नों को किसी विशिष्ट वर्ष/सेट का हूबहू प्रश्न तभी मानें जब अलग से वर्ष-स्रोत दिया हो।"
+          "P on perpendicular bisector, AP=BP=√(r²+a²).",
+          "V₁ positive and V₂ negative equal magnitude.",
+          "total V=0."
         ],
         "points": [
-          "सूत्र + SI इकाई + अनुपात परिवर्तन का अभ्यास करें।",
-          "ऊर्जा, संयोजन, द्विध्रुव और समविभव पृष्ठ को न छोड़ें।"
+          "steps 1–3."
         ]
       },
       {
-        "title": "समविभव पृष्ठ एवं विभव-क्षेत्र संबंध",
+        "title": "वैद्युत द्विध्रुव के कारण किसी व्यापक बिंदु (r, θ) पर वैद्युत विभव का निगमन",
         "content": [
-          "समविभव पृष्ठ वह पृष्ठ है जिसके प्रत्येक बिंदु पर विद्युत विभव समान होता है। ऐसे पृष्ठ पर आवेश को विस्थापित करने में कार्य शून्य है।",
-          "विद्युत क्षेत्र समविभव पृष्ठ के लंबवत होता है; क्षेत्र की दिशा में विभव घटता है।"
+          "Dipole moment p at center O, point P(r,θ).",
+          "Decompose p into p cosθ along OP and p sinθ perpendicular.",
+          "p cosθ component gives V₁=(1/4πε₀)(p cosθ/r²), p sinθ gives V₂=0.",
+          "total V=(1/4πε₀)(p cosθ/r²); vector form (1/4πε₀)(p·rhat/r²).",
+          "θ=0 gives +, θ=90 gives 0."
         ],
         "points": [
-          "Eₓ=−dV/dx",
-          "समविभव पृष्ठ पर ΔV=0",
-          "दो समविभव पृष्ठ परस्पर नहीं काटते।"
+          "steps 1–4."
         ]
       },
       {
-        "title": "चालक का स्थिरवैद्युत साम्य",
+        "title": "विद्युत क्षेत्र की तीव्रता तथा विभव प्रवणता के मध्य संबंध (E = -dV/dr) का निगमन",
         "content": [
-          "साम्यावस्था में चालक के भीतर विद्युत क्षेत्र शून्य होता है। चालक का प्रत्येक बिंदु समान विभव पर होता है। अतिरिक्त स्थिर आवेश बाहरी सतह पर रहता है।",
-          "चालक की सतह के ठीक बाहर क्षेत्र सतह के अभिलंबवत होता है।"
+          "Two equipotential surfaces A/B separated dr, potentials V and V-dV.",
+          "Unit positive test charge moved B→A against field.",
+          "F_ext=-E, dW=(-E)dr.",
+          "dW=V_A-V_B=dV.",
+          "-Edr=dV => E=-dV/dr.",
+          "negative sign means field points from high to low potential."
         ],
         "points": [
-          "Eअंदर=0",
-          "V=नियत",
-          "अतिरिक्त आवेश सतह पर"
+          "steps 1–4."
         ]
       },
       {
-        "title": "संधारित्रों में ऊर्जा एवं परावैद्युत",
+        "title": "दो बिंदु आवेशों के निकाय की स्थिरवैद्युत स्थितिज ऊर्जा का निगमन",
         "content": [
-          "संधारित्र की ऊर्जा आवेशित करने में किए गए कार्य के रूप में संचित होती है और विद्युत क्षेत्र में रहती है।",
-          "परावैद्युत पदार्थ डालने पर धारिता बढ़ती है। बैटरी जुड़े होने और अलग होने की दशाओं में आवेश तथा विभव के परिवर्तन अलग-अलग होते हैं।"
+          "Charges q₁,q₂ separated r₁₂, assemble from infinity.",
+          "W₁=0, V₁=(1/4πε₀)(q₁/r₁₂).",
+          "W₂=q₂V₁=(1/4πε₀)(q₁q₂/r₁₂).",
+          "U=W_total=(1/4πε₀)(q₁q₂/r₁₂)."
         ],
         "points": [
-          "U=Q²/(2C)=½QV=½CV²",
-          "u=½ε₀E²",
-          "बैटरी जुड़ी: V नियत; पृथक: Q नियत"
+          "steps 1–4."
+        ]
+      },
+      {
+        "title": "एकसमान विद्युत क्षेत्र में वैद्युत द्विध्रुव की स्थितिज ऊर्जा का निगमन",
+        "content": [
+          "Dipole p in uniform E at θ.",
+          "torque τ=pE sinθ.",
+          "dW=τdθ.",
+          "integrate θ₁→θ₂: W=pE(cosθ₁-cosθ₂).",
+          "reference U=0 at 90°, so U=-pE cosθ=-p·E."
+        ],
+        "points": [
+          "steps 1–4."
+        ]
+      },
+      {
+        "title": "R त्रिज्या के विलगित गोलीय चालक की वैद्युत धारिता का निगमन",
+        "content": [
+          "Isolated spherical conductor radius R, charge +Q.",
+          "surface potential V=(1/4πε₀)(Q/R).",
+          "C=Q/V=4πε₀R.",
+          "medium K: C=4πε₀KR."
+        ],
+        "points": [
+          "conclusion C∝R.",
+          "steps 1–4."
+        ]
+      },
+      {
+        "title": "समांतर पट्टिका संधारित्र की धारिता का चरणबद्ध निगमन",
+        "content": [
+          "plates area A, separation d, ±Q.",
+          "σ=Q/A.",
+          "outside fields cancel, inside E=σ/ε₀=Q/(ε₀A).",
+          "V=Ed=Qd/(ε₀A).",
+          "C₀=ε₀A/d.",
+          "full dielectric K: C=Kε₀A/d."
+        ],
+        "points": [
+          "steps 1–4."
+        ]
+      },
+      {
+        "title": "पट्टिकाओं के मध्य t मोटाई की परावैद्युत पट्टी होने पर समांतर संधारित्र की धारिता का निगमन",
+        "content": [
+          "Plate area A, gap d, dielectric slab thickness t, K.",
+          "air region E₀=Q/(ε₀A), dielectric E=E₀/K.",
+          "V=E₀(d-t)+Et=E₀[d-t(1-1/K)].",
+          "C=ε₀A/[d-t(1-1/K)].",
+          "special t=d => Kε₀A/d; metal K=∞ => ε₀A/(d-t)."
+        ],
+        "points": [
+          "steps 1–4."
+        ]
+      },
+      {
+        "title": "संधारित्र में संचित स्थिरवैद्युत स्थितिज ऊर्जा (U = 1/2 CV²) का समाकलन द्वारा निगमन",
+        "content": [
+          "Intermediate q′, V′=q′/C, dW=(q′/C)dq′.",
+          "integrate 0→Q => U=Q²/(2C).",
+          "alternatives 1/2 CV², 1/2 QV."
+        ],
+        "points": [
+          "steps 1–4."
+        ]
+      },
+      {
+        "title": "दो आवेशित चालकों को जोड़ने पर उभयनिष्ठ विभव एवं ऊर्जा ह्रास का निगमन",
+        "content": [
+          "C₁,C₂, initial V₁,V₂, q=C V.",
+          "common V=(C₁V₁+C₂V₂)/(C₁+C₂).",
+          "U_i=(1/2)C₁V₁²+(1/2)C₂V₂².",
+          "U_f=(1/2)(C₁+C₂)V².",
+          "ΔU=(1/2)[C₁C₂/(C₁+C₂)](V₁-V₂)²."
+        ],
+        "points": [
+          "steps 1–4."
         ]
       }
     ],
     "shortAnswers": [
       {
-        "question": "विद्युत विभव और विभवांतर में अंतर लिखिए।",
+        "question": "स्थिरवैद्युत विभव तथा विभवांतर में मूल अंतर:",
         "answer": [
-          "किसी बिंदु का विभव अनंत के सापेक्ष प्रति इकाई आवेश की स्थितिज ऊर्जा है।",
-          "विभवांतर दो बिंदुओं के विभवों का अंतर है; V_B−V_A=W_ext/q।"
+          "Two points potential difference = work per unit positive test charge, V_A-V_B=W/q₀.",
+          "Potential is special case with infinity as reference, V=W∞/q₀."
         ]
       },
       {
-        "question": "समविभव पृष्ठ के तीन गुण लिखिए।",
+        "question": "Equipotential work zero:",
         "answer": [
-          "प्रत्येक बिंदु पर विभव समान होता है।",
-          "पृष्ठ पर आवेश ले जाने में कार्य शून्य है।",
-          "विद्युत क्षेत्र पृष्ठ के लंबवत होता है।"
+          "V_A=V_B => ΔV=0.",
+          "W=q₀ΔV=0."
         ]
       },
       {
-        "question": "धारिता किन कारकों पर निर्भर करती है?",
+        "question": "Two characteristics of equipotential:",
         "answer": [
-          "चालकों की आकृति/आकार, उनके बीच दूरी तथा बीच के माध्यम की परावैद्युतता पर।",
-          "आदर्श संधारित्र की धारिता संचित Q या V के स्वतंत्र रूप से निर्धारित होती है।"
+          "field lines perpendicular.",
+          "equipotential surfaces never intersect."
         ]
       },
       {
-        "question": "श्रेणी और समांतर संयोजन के नियम लिखिए।",
+        "question": "E and gradient:",
         "answer": [
-          "श्रेणी: 1/Ceq=Σ(1/Ci), आवेश समान।",
-          "समांतर: Ceq=ΣCi, विभवांतर समान।"
+          "E=-dV/dr.",
+          "negative means field from high to low potential."
         ]
       },
       {
-        "question": "बैटरी हटाने और जुड़े रहने पर परावैद्युत डालने का प्रभाव बताइए।",
+        "question": "E=0 but V≠0:",
         "answer": [
-          "बैटरी हटाने पर Q स्थिर रहता है; C बढ़ने से V घटता है।",
-          "बैटरी जुड़े रहने पर V स्थिर रहता है; C बढ़ने से Q बढ़ता है।"
+          "yes, inside charged hollow sphere E=0.",
+          "potential constant nonzero, V=(1/4πε₀)(q/R)."
         ]
       },
       {
-        "question": "यदि 2 μC आवेश से 3 m दूरी पर विभव ज्ञात करें।",
+        "question": "Dipole equatorial V and E:",
         "answer": [
-          "V=9×10⁹×2×10⁻⁶/3=6×10³ V।"
+          "V=0.",
+          "E=(1/4πε₀)(p/r³), direction opposite p."
         ]
       },
       {
-        "question": "4 μF संधारित्र को 12 V से जोड़ने पर आवेश ज्ञात करें।",
+        "question": "Electrostatic shielding:",
         "answer": [
-          "Q=CV=4×10⁻⁶×12=48 μC।"
+          "hollow conductor cavity safe from external field.",
+          "example user says closed metal car/bus during lightning is “पूर्णतः सुरक्षित”; preserve wording if using source, do not silently alter."
         ]
       },
       {
-        "question": "2 μF और 3 μF समांतर जुड़े हैं। तुल्य धारिता ज्ञात करें।",
+        "question": "Polar vs nonpolar:",
         "answer": [
-          "Ceq=2+3=5 μF।"
+          "polar: centers noncoincident, permanent dipole, HCl/H₂O.",
+          "nonpolar: centers coincide, zero without external field, H₂/CO₂."
         ]
       },
       {
-        "question": "2 μF और 3 μF श्रेणी में जुड़े हैं। तुल्य धारिता ज्ञात करें।",
+        "question": "Capacitance definition and 3 factors:",
         "answer": [
-          "Ceq=(2×3)/(2+3)=1.2 μF।"
+          "C=Q/V, SI F.",
+          "factors A, d inverse, K."
         ]
       },
       {
-        "question": "5 μF संधारित्र पर 100 V है। संचित ऊर्जा ज्ञात करें।",
+        "question": "Why dielectric increases C:",
         "answer": [
-          "U=½CV²=½×5×10⁻⁶×10⁴=0.025 J।"
+          "polarization induces opposite internal field.",
+          "resultant field and V=V₀/K reduce; C=Q/V gives C=KC₀."
         ]
       },
       {
-        "question": "10 μF संधारित्र पर 20 μC आवेश है। विभवांतर ज्ञात करें।",
+        "question": "Series vs parallel:",
         "answer": [
-          "V=Q/C=20/10=2 V।"
+          "series same Q, voltage divides, reciprocal formula.",
+          "parallel same V, charge divides, sum formula."
         ]
       },
       {
-        "question": "प्लेट क्षेत्रफल दोगुना और दूरी आधी करने पर धारिता कितनी होगी?",
+        "question": "Half battery energy stored:",
         "answer": [
-          "C∝A/d; नई धारिता 4 गुनी होगी।"
+          "battery work QV.",
+          "stored U=(1/2)QV; remaining 50% heat/spark."
         ]
       },
       {
-        "question": "3 μF संधारित्र को 2 μF के साथ समांतर जोड़ने पर कुल धारिता?",
+        "question": "Energy density:",
         "answer": [
-          "5 μF।"
+          "energy per unit volume.",
+          "u=(1/2)ε₀E² vacuum or (1/2)Kε₀E² dielectric; J/m³."
         ]
       },
       {
-        "question": "6 μF और 3 μF श्रेणी में हों तो तुल्य धारिता?",
+        "question": "Why energy loss connecting conductors:",
         "answer": [
-          "Ceq=18/9=2 μF।"
+          "charge flows high→low until equal.",
+          "resistance causes heat/light/sound."
         ]
       },
       {
-        "question": "यदि किसी बिंदु पर V=0 है, क्या वहाँ E भी शून्य होगा?",
+        "question": "Van de Graaff principles:",
         "answer": [
-          "नहीं। शून्य विभव से विद्युत क्षेत्र का शून्य होना आवश्यक नहीं।"
+          "sharp tips/corona discharge.",
+          "hollow conductor transfers internal charge to outer surface."
         ]
       }
     ],
     "longAnswers": [
       {
-        "question": "बिंदु आवेश के कारण विद्युत विभव का व्यंजक स्थापित कीजिए।",
+        "question": "Single point charge potential derivation:",
         "answer": [
-          "अनंत पर विभव शून्य मानें। q₀ परीक्षण आवेश को r दूरी तक लाने में बाह्य कार्य प्रति इकाई आवेश विभव है।",
-          "V=−∫∞ʳ E·dr; बिंदु आवेश के लिए E=kQ/r²।",
-          "समाकलन से V=kQ/r प्राप्त होता है। अतः V=Q/(4πε₀r)।"
+          "Q at O, P at r.",
+          "intermediate x; F_e=(1/4πε₀)(Qq₀/x²).",
+          "external work dW=-F_e dx.",
+          "integrate infinity to r, W=(1/4πε₀)(Qq₀/r).",
+          "V=W/q₀=(1/4πε₀)(Q/r); negative Q gives negative."
         ]
       },
       {
-        "question": "समांतर-पट्ट संधारित्र की धारिता का सूत्र प्राप्त कीजिए।",
+        "question": "Dipole axial potential derivation:",
         "answer": [
-          "प्लेटों पर ±Q तथा क्षेत्रफल A हो, तो σ=Q/A।",
-          "किनारी प्रभाव नगण्य होने पर E=σ/ε₀=Q/(ε₀A)।",
-          "प्लेटों के बीच V=Ed=Qd/(ε₀A)।",
-          "C=Q/V=ε₀A/d। परावैद्युत K पूर्णतः भरने पर C=Kε₀A/d।"
+          "±q, separation 2a, P at r.",
+          "distances r-a, r+a.",
+          "V=V₁+V₂=(q/4πε₀)[1/(r-a)-1/(r+a)].",
+          "= (1/4πε₀)[p/(r²-a²)].",
+          "r≫a => (1/4πε₀)(p/r²)."
         ]
       },
       {
-        "question": "संधारित्र में संचित ऊर्जा का व्यंजक प्राप्त कीजिए।",
+        "question": "General dipole potential:",
         "answer": [
-          "आवेश q पर विभव v=q/C। अतः अल्प कार्य dW=(q/C)dq।",
-          "U=∫₀Q(q/C)dq=Q²/(2C)।",
-          "Q=CV रखने पर U=½CV²=½QV।"
+          "p, P(r,θ).",
+          "decompose p into p cosθ and p sinθ.",
+          "V₁=(1/4πε₀)(p cosθ/r²), V₂=0.",
+          "total V=(1/4πε₀)(p cosθ/r²).",
+          "axial ±; equatorial 0."
         ]
       },
       {
-        "question": "बाह्य एकसमान विद्युत क्षेत्र में द्विध्रुव की स्थितिज ऊर्जा लिखकर समझाइए।",
+        "question": "Parallel plate capacitor derivation:",
         "answer": [
-          "द्विध्रुव पर बल-आघूर्ण τ=pE sinθ होता है।",
-          "द्विध्रुव को θ से संदर्भ स्थिति तक घुमाने के कार्य से U=−pE cosθ (शून्य ऊर्जा θ=90° पर) मिलता है।",
-          "θ=0 पर ऊर्जा न्यूनतम (स्थिर संतुलन) तथा θ=180° पर अधिकतम (अस्थिर संतुलन) होती है।"
+          "plates area A distance d, ±Q.",
+          "σ=Q/A.",
+          "E=σ/ε₀=Q/(ε₀A).",
+          "V=Qd/(ε₀A).",
+          "C₀=ε₀A/d.",
+          "dielectric K => C=Kε₀A/d=KC₀."
         ]
       },
       {
-        "question": "द्विध्रुव के कारण दूरस्थ बिंदु पर विभव का सूत्र स्थापित कीजिए।",
+        "question": "Partial dielectric slab:",
         "answer": [
-          "द्विध्रुव के आवेश +q और −q की केंद्र से दूरी a है।",
-          "V=(1/4πε₀)(q/r₁−q/r₂)।",
-          "r≫a पर प्रथम कोटि सन्निकटन से V=p cosθ/(4πε₀r²)।"
+          "air d-t, dielectric t.",
+          "E₀=Q/(ε₀A), E=E₀/K.",
+          "V=E₀(d-t)+Et=E₀[d-t(1-1/K)].",
+          "C=ε₀A/[d-t(1-1/K)].",
+          "metal K=∞ => ε₀A/(d-t)."
         ]
       },
       {
-        "question": "विद्युत क्षेत्र और विभव के बीच संबंध स्थापित कीजिए।",
+        "question": "Stored energy and energy density:",
         "answer": [
-          "सूक्ष्म विस्थापन dl में क्षेत्र द्वारा कार्य dW=qE·dl है।",
-          "विभव परिवर्तन dV=−E·dl।",
-          "एक-विमीय स्थिति में Eₓ=−dV/dx।"
+          "intermediate q′, V′=q′/C, dW=(q′/C)dq′.",
+          "integrate => U=Q²/(2C)=1/2CV²=1/2QV.",
+          "volume Ad; C=ε₀A/d, V=Ed => U=1/2 ε₀E²Ad.",
+          "u=1/2 ε₀E²."
         ]
       },
       {
-        "question": "समांतर-पट्टिका संधारित्र की धारिता का सूत्र प्राप्त कीजिए।",
+        "question": "Connecting two charged conductors:",
         "answer": [
-          "प्लेटों का क्षेत्रफल A, दूरी d तथा आवेश ±Q मानें।",
-          "पृष्ठीय आवेश घनत्व σ=Q/A और क्षेत्र E=σ/ε₀।",
-          "विभवांतर V=Ed=Qd/(ε₀A), अतः C=Q/V=ε₀A/d।"
-        ]
-      },
-      {
-        "question": "श्रेणीक्रम में संधारित्रों की तुल्य धारिता का सूत्र प्राप्त कीजिए।",
-        "answer": [
-          "श्रेणीक्रम में प्रत्येक संधारित्र पर आवेश Q समान होता है।",
-          "कुल विभव V=ΣVᵢ=Σ(Q/Cᵢ)।",
-          "Q/V= Cₑq, अतः 1/Cₑq=Σ(1/Cᵢ)।"
-        ]
-      },
-      {
-        "question": "समांतर क्रम में संधारित्रों की तुल्य धारिता का सूत्र प्राप्त कीजिए।",
-        "answer": [
-          "समांतर क्रम में प्रत्येक संधारित्र पर विभव V समान है।",
-          "कुल आवेश Q=ΣQᵢ=VΣCᵢ।",
-          "Cₑq=Q/V=ΣCᵢ।"
-        ]
-      },
-      {
-        "question": "एकसमान बाह्य क्षेत्र में द्विध्रुव की स्थितिज ऊर्जा प्राप्त कीजिए।",
-        "answer": [
-          "द्विध्रुव पर बल-आघूर्ण τ=pE sinθ है।",
-          "धीरे घुमाने में बाह्य कार्य dW=pE sinθ dθ।",
-          "U(θ)−U(π/2)=−pE cosθ, अतः U=−pE cosθ।"
-        ]
-      },
-      {
-        "question": "बिंदु आवेश के कारण विद्युत विभव का व्यंजक की व्युत्पत्ति कीजिए।",
-        "answer": [
-          "अनंत से r दूरी तक परीक्षण आवेश q₀ को लाने में बाह्य कार्य W=∫∞ʳ kQq₀/x² dx = kQq₀(1/r)। अतः V=W/q₀=kQ/r=Q/(4πε₀r)।"
-        ]
-      },
-      {
-        "question": "विद्युत द्विध्रुव के अक्षीय बिंदु पर विभव की व्युत्पत्ति कीजिए।",
-        "answer": [
-          "केंद्र से r दूरी पर अक्षीय बिंदु के लिए दूरियाँ r−a तथा r+a हैं। V=kq/(r−a)−kq/(r+a)=k(2qa)/(r²−a²)=kp/(r²−a²)। r≫a पर V≈kp/r²।"
-        ]
-      },
-      {
-        "question": "विद्युत द्विध्रुव के विषुवतीय बिंदु पर विभव की व्युत्पत्ति कीजिए।",
-        "answer": [
-          "विषुवतीय बिंदु दोनों आवेशों से समान दूरी √(r²+a²) पर है। अतः V=kq/s−kq/s=0।"
-        ]
-      },
-      {
-        "question": "विद्युत क्षेत्र और विभव का संबंध की व्युत्पत्ति कीजिए।",
-        "answer": [
-          "क्षेत्र की दिशा में dx विस्थापन पर dW_field=qE dx तथा dV=−dW_field/q। इसलिए E=−dV/dx; सदिश रूप में E⃗=−∇V।"
-        ]
-      },
-      {
-        "question": "दो बिंदु आवेशों की स्थितिज ऊर्जा की व्युत्पत्ति कीजिए।",
-        "answer": [
-          "पहले आवेश q₁ को स्थापित करने में कार्य शून्य मानें। दूसरे आवेश q₂ को q₁ से r दूरी पर लाने में W=q₂V₁=kq₁q₂/r। अतः U=kq₁q₂/r।"
-        ]
-      },
-      {
-        "question": "एकसमान क्षेत्र में द्विध्रुव की स्थितिज ऊर्जा की व्युत्पत्ति कीजिए।",
-        "answer": [
-          "द्विध्रुव को θ₁ से θ₂ तक घुमाने में बाह्य कार्य W=∫θ₁θ₂ pE sinθ dθ=pE(cosθ₁−cosθ₂)। संदर्भ U(90°)=0 लेने पर U=−pE cosθ।"
-        ]
-      },
-      {
-        "question": "समांतर-पट्ट संधारित्र की धारिता की व्युत्पत्ति कीजिए।",
-        "answer": [
-          "प्लेटों पर ±Q आवेश, क्षेत्रफल A और दूरी d है। E=σ/ε₀=Q/(ε₀A), तथा V=Ed=Qd/(ε₀A)। C=Q/V=ε₀A/d।"
-        ]
-      },
-      {
-        "question": "परावैद्युत सहित समांतर-पट्ट संधारित्र की व्युत्पत्ति कीजिए।",
-        "answer": [
-          "पूर्ण परावैद्युत भरने पर E=σ/(Kε₀)। अतः V=Qd/(Kε₀A), और C=Q/V=Kε₀A/d=KC₀।"
-        ]
-      },
-      {
-        "question": "श्रेणीक्रम में संधारित्रों की तुल्य धारिता की व्युत्पत्ति कीजिए।",
-        "answer": [
-          "श्रेणी में प्रत्येक पर आवेश Q समान तथा कुल विभव V=ΣVᵢ=Σ(Q/Cᵢ)। V=Q/Ceq से 1/Ceq=Σ(1/Cᵢ)।"
-        ]
-      },
-      {
-        "question": "समांतर क्रम में संधारित्रों की तुल्य धारिता की व्युत्पत्ति कीजिए।",
-        "answer": [
-          "समांतर में प्रत्येक पर विभव V समान। कुल आवेश Q=ΣQᵢ=Σ(CᵢV)। Q=CeqV से Ceq=ΣCᵢ।"
-        ]
-      },
-      {
-        "question": "आवेशित संधारित्र में संचित ऊर्जा की व्युत्पत्ति कीजिए।",
-        "answer": [
-          "क्षणिक विभव V=q/C पर dq आवेश लाने में dW=(q/C)dq। शून्य से Q तक U=∫₀Q(q/C)dq=Q²/(2C)=½QV=½CV²।"
-        ]
-      },
-      {
-        "question": "पृथक गोलाकार चालक की धारिता की व्युत्पत्ति कीजिए।",
-        "answer": [
-          "त्रिज्या R के गोलाकार चालक का विभव V=Q/(4πε₀R)। इसलिए C=Q/V=4πε₀R।"
-        ]
-      },
-      {
-        "question": "विद्युत क्षेत्र की ऊर्जा घनत्व की व्युत्पत्ति कीजिए।",
-        "answer": [
-          "समांतर-पट्ट संधारित्र में U=½CV², C=ε₀A/d और V=Ed। अतः U=½ε₀E²Ad। आयतन Ad से भाग देने पर u=½ε₀E²।"
+          "C₁,C₂, initial V₁,V₂.",
+          "common V=(C₁V₁+C₂V₂)/(C₁+C₂).",
+          "U_i=1/2 C₁V₁²+1/2 C₂V₂².",
+          "U_f=1/2(C₁+C₂)V².",
+          "ΔU=1/2[C₁C₂/(C₁+C₂)](V₁-V₂)²."
         ]
       }
     ],
     "definitions": [
       {
-        "term": "विद्युत विभव",
-        "definition": "अनंत से इकाई धन परीक्षण आवेश को किसी बिंदु तक लाने में बाह्य बल द्वारा किया गया कार्य।"
+        "term": "स्थिरवैद्युत विभव (Electrostatic Potential)",
+        "definition": "एकांक धन परीक्षण आवेश को अनंत से विद्युत क्षेत्र के किसी बिंदु तक बिना त्वरित किए लाने में बाह्य बल द्वारा किए गए कार्य को उस बिंदु का स्थिरवैद्युत विभव कहते हैं।"
       },
       {
-        "term": "समविभव पृष्ठ",
-        "definition": "ऐसा पृष्ठ जिसके प्रत्येक बिंदु पर विद्युत विभव समान हो।"
+        "term": "वैद्युत विभवांतर (Electric Potential Difference)",
+        "definition": "विद्युत क्षेत्र में एकांक धन परीक्षण आवेश को एक बिंदु से दूसरे बिंदु तक ले जाने में स्थिरवैद्युत बल के विरुद्ध किए गए कार्य को उन बिंदुओं के मध्य का विभवांतर कहते हैं।"
       },
       {
-        "term": "विद्युत द्विध्रुव",
-        "definition": "समान परिमाण के विपरीत चिह्न वाले दो निकट स्थित आवेशों का युग्म।"
+        "term": "एक वोल्ट (One Volt)",
+        "definition": "यदि एक कूलॉम धन आवेश को अनंत से विद्युत क्षेत्र के किसी बिंदु तक लाने में एक जूल बाह्य कार्य करना पड़े, तो उस बिंदु का विभव एक वोल्ट कहलाता है।"
       },
       {
-        "term": "धारिता",
-        "definition": "आवेश और विभवांतर का अनुपात C=Q/V।"
+        "term": "इलेक्ट्रॉन वोल्ट (Electron Volt - eV)",
+        "definition": "ऊर्जा का वह मान जो कोई इलेक्ट्रॉन एक वोल्ट विभवांतर द्वारा त्वरित होने पर अर्जित करता है (1 eV = 1.6 × 10⁻¹⁹ J)।"
       },
       {
-        "term": "परावैद्युतांक",
-        "definition": "माध्यम की परावैद्युतता और निर्वात की परावैद्युतता का अनुपात K=ε/ε₀।"
+        "term": "समविभव पृष्ठ (Equipotential Surface)",
+        "definition": "विद्युत क्षेत्र में स्थित वह काल्पनिक अथवा वास्तविक पृष्ठ जिसके प्रत्येक बिंदु पर वैद्युत विभव का मान एकसमान होता है।"
+      },
+      {
+        "term": "विभव प्रवणता (Potential Gradient)",
+        "definition": "विद्युत क्षेत्र में दूरी के सापेक्ष विभव में होने वाले परिवर्तन की दर को विभव प्रवणता कहते हैं।"
+      },
+      {
+        "term": "स्थिरवैद्युत स्थितिज ऊर्जा (Electrostatic Potential Energy)",
+        "definition": "आवेशों के किसी निकाय को अनंत से उनकी अभीष्ट परस्पर स्थितियों तक लाकर निकाय निर्मित करने में बाह्य कारक द्वारा किया गया कुल संचित कार्य।"
+      },
+      {
+        "term": "स्थिरवैद्युत परिरक्षण (Electrostatic Shielding)",
+        "definition": "किसी खोखले चालक के आंतरिक कोटर (गुहा) को बाहरी विद्युत क्षेत्रों के प्रभाव से सर्वथा सुरक्षित रखने की परिघटना।"
+      },
+      {
+        "term": "परावैद्युत पदार्थ (Dielectric Material)",
+        "definition": "वे विद्युतरोधी पदार्थ जो अपने भीतर से आवेश का संवहन किए बिना केवल स्थिरवैद्युत प्रभावों को प्रदर्शित तथा संचारित करते हैं।"
+      },
+      {
+        "term": "अध्रुवी अणु (Non-Polar Molecule)",
+        "definition": "वे अणु जिनमें धनावेशों तथा ऋणावेशों के द्रव्यमान केंद्र परस्पर संपाती होते हैं और जिनका स्थायी द्विध्रुव आघूर्ण शून्य होता है।"
+      },
+      {
+        "term": "ध्रुवी अणु (Polar Molecule)",
+        "definition": "वे अणु जिनमें धनावेशों तथा ऋणावेशों के केंद्र संपाती न होकर अल्प दूरी पर पृथक होते हैं और जिनका अपना स्थायी द्विध्रुव आघूर्ण होता है।"
+      },
+      {
+        "term": "वैद्युत ध्रुवण सदिश (Electric Polarization Vector)",
+        "definition": "बाह्य विद्युत क्षेत्र की उपस्थिति में किसी परावैद्युत पदार्थ के प्रति एकांक आयतन में उत्पन्न प्रेरित कुल द्विध्रुव आघूर्ण।"
+      },
+      {
+        "term": "परावैद्युत सामर्थ्य (Dielectric Strength)",
+        "definition": "किसी परावैद्युत माध्यम द्वारा बिना विद्युत भंजन के सहन किया जा सकने वाला अधिकतम विद्युत क्षेत्र।"
+      },
+      {
+        "term": "भंजक विभवांतर (Breakdown Potential)",
+        "definition": "किसी संधारित्र या परावैद्युत की पट्टियों के मध्य आरोपित वह न्यूनतम विभवांतर जिस पर परावैद्युत का विद्युतरोधन समाप्त हो जाता है।"
+      },
+      {
+        "term": "वैद्युत धारिता (Electric Capacitance)",
+        "definition": "किसी चालक को दिए गए आवेश तथा उसके फलस्वरूप विभव में होने वाली वृद्धि के अनुपात को चालक की वैद्युत धारिता कहते हैं।"
+      },
+      {
+        "term": "एक फैरड (One Farad)",
+        "definition": "यदि किसी चालक को एक कूलॉम आवेश देने पर उसके विभव में एक वोल्ट की वृद्धि हो, तो उस चालक की धारिता एक फैरड कहलाती है।"
+      },
+      {
+        "term": "संधारित्र (Capacitor)",
+        "definition": "दो ऐसे निकटवर्ती चालकों का विन्यास जो एक-दूसरे से विद्युतरोधी माध्यम द्वारा पृथक हों और आवेश तथा ऊर्जा संचित करने में सक्षम हों।"
+      },
+      {
+        "term": "समांतर पट्टिका संधारित्र (Parallel Plate Capacitor)",
+        "definition": "समान क्षेत्रफल की दो समतल धातु प्लेटों का युग्म जो एक-दूसरे से अल्प दूरी पर परस्पर समांतर रखी गई हों।"
+      },
+      {
+        "term": "उपांत प्रभाव (Fringing Effect)",
+        "definition": "संधारित्र की प्लेटों के किनारों पर विद्युत क्षेत्र रेखाओं का बाहर की ओर मुड़कर असममित हो जाने का प्रभाव।"
+      },
+      {
+        "term": "श्रेणीक्रम संयोजन (Series Combination of Capacitors)",
+        "definition": "संधारित्रों का ऐसा संयोजन जिसमें प्रत्येक संधारित्र पर आवेश का मान समान रहता है परंतु कुल विभवांतर उनकी धारिताओं के अनुसार विभाजित होता है।"
+      },
+      {
+        "term": "समांतरक्रम संयोजन (Parallel Combination of Capacitors)",
+        "definition": "संधारित्रों का ऐसा संयोजन जिसमें सभी संधारित्रों की प्लेटों के सिरों पर विभवांतर समान रहता है परंतु कुल आवेश उनकी धारिताओं के अनुसार बँटता है।"
+      },
+      {
+        "term": "स्थिरवैद्युत ऊर्जा घनत्व (Electrostatic Energy Density)",
+        "definition": "संधारित्र की पट्टिकाओं के मध्य विद्युत क्षेत्र में प्रति एकांक आयतन में संचित स्थिरवैद्युत स्थितिज ऊर्जा।"
+      },
+      {
+        "term": "उभयनिष्ठ विभव (Common Potential)",
+        "definition": "दो भिन्न विभवों वाले आवेशित चालकों को परस्पर जोड़ने पर आवेश पुनर्वितरण के पश्चात दोनों पर स्थापित समान अंतिम विभव।"
+      },
+      {
+        "term": "कोरोना विसर्जन (Corona Discharge)",
+        "definition": "किसी आवेशित चालक के अत्यधिक नुकीले सिरों पर उच्च पृष्ठीय आवेश घनत्व के कारण समीपवर्ती वायु का आयनित होकर आवेश क्षरण करना।"
+      },
+      {
+        "term": "वान डे ग्राफ जनित्र (Van de Graaff Generator)",
+        "definition": "स्थिरवैद्युत प्रेरण तथा नुकीले सिरों की क्रिया पर आधारित वह उपकरण जिसकी सहायता से कई मिलियन वोल्ट का उच्च विभवांतर उत्पन्न किया जाता है।"
+      },
+      {
+        "term": "गोलीय संधारित्र (Spherical Capacitor)",
+        "definition": "दो संकेंद्रीय गोलीय चालकों से निर्मित वह संधारित्र जिसका एक गोला आवेशित तथा दूसरा गोला भूसंपर्कित होता है।"
       }
     ],
     "formulas": [
       {
-        "name": "कूलॉम नियतांक",
-        "formula": "k=1/(4πε₀)",
-        "meaning": "निर्वात में",
-        "unit": "N·m²/C²"
+        "name": "वैद्युत विभवांतर",
+        "formula": "V_A - V_B = W / q₀",
+        "meaning": "",
+        "unit": "वोल्ट (V) या J/C"
       },
       {
-        "name": "विद्युत विभव",
-        "formula": "V=U/q",
-        "meaning": "स्थितिज ऊर्जा प्रति इकाई आवेश",
-        "unit": "V"
+        "name": "एकल बिंदु आवेश का विभव",
+        "formula": "V = (1 / 4πε₀) × (Q / r)",
+        "meaning": ""
       },
       {
-        "name": "बिंदु आवेश का विभव",
-        "formula": "V=kQ/r",
-        "meaning": "अनंत पर V=0",
-        "unit": "V"
+        "name": "द्विध्रुव के कारण व्यापक विभव",
+        "formula": "V = (1 / 4πε₀) × (p cosθ / r²)",
+        "meaning": ""
       },
       {
-        "name": "आवेश निकाय का विभव",
-        "formula": "V=Σkqᵢ/rᵢ",
-        "meaning": "विभवों का बीजीय योग",
-        "unit": "V"
+        "name": "द्विध्रुव की अक्षीय रेखा पर विभव",
+        "formula": "V_अक्षीय = ± (1 / 4πε₀) × (p / r²)",
+        "meaning": ""
       },
       {
-        "name": "द्विध्रुव आघूर्ण",
-        "formula": "p=q(2a)",
-        "meaning": "दिशा −q से +q",
-        "unit": "C·m"
+        "name": "द्विध्रुव की निरक्षीय रेखा पर विभव",
+        "formula": "V_निरक्षीय = 0",
+        "meaning": ""
       },
       {
-        "name": "दूरस्थ द्विध्रुव विभव",
-        "formula": "V=kp cosθ/r²",
-        "meaning": "r≫a",
-        "unit": "V"
+        "name": "विद्युत क्षेत्र एवं विभव प्रवणता संबंध",
+        "formula": "E = - dV / dr",
+        "meaning": ""
       },
       {
-        "name": "दो आवेशों की स्थितिज ऊर्जा",
-        "formula": "U=kq₁q₂/r",
-        "meaning": "अनंत पर U=0",
-        "unit": "J"
+        "name": "दो बिंदु आवेशों की स्थितिज ऊर्जा",
+        "formula": "U = (1 / 4πε₀) × (q₁q₂ / r₁₂)",
+        "meaning": ""
       },
       {
-        "name": "द्विध्रुव पर बल-आघूर्ण",
-        "formula": "τ=pE sinθ",
-        "meaning": "एकसमान क्षेत्र",
-        "unit": "N·m"
+        "name": "तीन बिंदु आवेशों की ऊर्जा",
+        "formula": "U = (1 / 4πε₀) × [ (q₁q₂ / r₁₂) + (q₂q₃ / r₂₃) + (q₃q₁ / r₃₁) ]",
+        "meaning": ""
       },
       {
-        "name": "द्विध्रुव की स्थितिज ऊर्जा",
-        "formula": "U=−pE cosθ",
-        "meaning": "शून्य स्तर θ=90°",
-        "unit": "J"
+        "name": "द्विध्रुव को घुमाने का कार्य",
+        "formula": "W = pE (cosθ₁ - cosθ₂)",
+        "meaning": ""
+      },
+      {
+        "name": "बाह्य क्षेत्र में द्विध्रुव U",
+        "formula": "U = - p · E = - pE cosθ",
+        "meaning": ""
+      },
+      {
+        "name": "चालक पृष्ठ के ठीक बाहर",
+        "formula": "E = (σ / ε₀) n̂",
+        "meaning": ""
       },
       {
         "name": "धारिता",
-        "formula": "C=Q/V",
-        "meaning": "आवेश/विभवांतर",
-        "unit": "F"
+        "formula": "C = Q / V",
+        "meaning": ""
       },
       {
-        "name": "समांतर प्लेट धारिता",
-        "formula": "C=ε₀A/d",
-        "meaning": "निर्वात/वायु, edge effect नगण्य",
-        "unit": "F"
+        "name": "विलगित गोलीय चालक",
+        "formula": "C = 4πε₀ R",
+        "meaning": ""
       },
       {
-        "name": "परावैद्युत सहित धारिता",
-        "formula": "C=Kε₀A/d",
-        "meaning": "पूर्णतः भरा माध्यम",
-        "unit": "F"
+        "name": "माध्यम में विलगित गोला",
+        "formula": "C_माध्यम = 4πε₀ K R = K C_निर्वात",
+        "meaning": ""
       },
       {
-        "name": "श्रेणी संयोजन",
-        "formula": "1/Ceq=Σ(1/Cᵢ)",
-        "meaning": "प्रत्येक पर Q समान",
-        "unit": "F"
+        "name": "Parallel plate air",
+        "formula": "C₀ = ε₀ A / d",
+        "meaning": ""
       },
       {
-        "name": "समांतर संयोजन",
-        "formula": "Ceq=ΣCᵢ",
-        "meaning": "प्रत्येक पर V समान",
-        "unit": "F"
+        "name": "Full dielectric",
+        "formula": "C = K ε₀ A / d = K C₀",
+        "meaning": ""
       },
       {
-        "name": "संधारित्र ऊर्जा",
-        "formula": "U=½CV²=½QV=Q²/(2C)",
-        "meaning": "संचित विद्युत ऊर्जा",
-        "unit": "J"
+        "name": "Partial dielectric slab",
+        "formula": "C = ε₀ A / [ d - t (1 - 1/K) ]",
+        "meaning": ""
       },
       {
-        "name": "ऊर्जा घनत्व",
-        "formula": "u=½ε₀E²",
-        "meaning": "निर्वात में",
-        "unit": "J/m³"
+        "name": "Series",
+        "formula": "1 / C_s = 1 / C₁ + 1 / C₂ + ... + 1 / C_n",
+        "meaning": ""
+      },
+      {
+        "name": "Two series",
+        "formula": "C_s = (C₁ C₂) / (C₁ + C₂)",
+        "meaning": ""
+      },
+      {
+        "name": "Parallel",
+        "formula": "C_p = C₁ + C₂ + ... + C_n",
+        "meaning": ""
+      },
+      {
+        "name": "Stored energy",
+        "formula": "U = (1/2) (Q² / C) = (1/2) C V² = (1/2) Q V",
+        "meaning": ""
+      },
+      {
+        "name": "Energy density",
+        "formula": "u = (1/2) ε₀ E²",
+        "meaning": ""
+      },
+      {
+        "name": "Plate attraction force",
+        "formula": "F = (1/2) Q E = (1/2) ε₀ E² A = Q² / (2 ε₀ A)",
+        "meaning": ""
+      },
+      {
+        "name": "Common potential",
+        "formula": "V = (C₁V₁ + C₂V₂) / (C₁ + C₂)",
+        "meaning": ""
+      },
+      {
+        "name": "Energy loss",
+        "formula": "ΔU = (1/2) [ (C₁ C₂) / (C₁ + C₂) ] (V₁ - V₂)²",
+        "meaning": ""
+      },
+      {
+        "name": "Spherical capacitor",
+        "formula": "C = 4πε₀ K [ (r₁ r₂) / (r₁ - r₂) ]",
+        "meaning": ""
+      },
+      {
+        "name": "Cylindrical capacitor per length",
+        "formula": "C / l = 2πε₀ / ln(b / a)",
+        "meaning": ""
       }
     ],
     "diagrams": [
       {
-        "title": "बिंदु आवेश के समविभव पृष्ठ",
-        "description": "बिंदु आवेश के चारों ओर संकेंद्री गोलाकार पृष्ठ।"
+        "title": "एकल बिंदु आवेश के कारण विभव निगमन (Potential due to Point Charge)",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 260'><defs><marker id='m1' markerWidth='8' markerHeight='6' refX='6' refY='3' orient='auto'><polygon points='0 0, 8 3, 0 6' fill='#222'/></marker></defs><line x1='40' y1='120' x2='380' y2='120' stroke='#888' stroke-width='1.5'/><circle cx='60' cy='120' r='14' fill='#ffebee' stroke='#c62828' stroke-width='2'/><text x='60' y='125' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#c62828'>+Q</text><text x='60' y='150' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#222'>O</text><circle cx='180' cy='120' r='4' fill='#222'/><text x='180' y='145' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#222'>P</text><circle cx='280' cy='120' r='10' fill='#e3f2fd' stroke='#1565c0' stroke-width='1.5'/><text x='280' y='124' font-family='sans-serif' font-size='10' text-anchor='middle' fill='#1565c0'>q₀</text><text x='280' y='145' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#222'>A</text><line x1='280' y1='100' x2='340' y2='100' stroke='#c62828' stroke-width='2' marker-end='url(#m1)'/><text x='345' y='105' font-family='sans-serif' font-size='11' fill='#c62828'>Fe</text><line x1='280' y1='100' x2='230' y2='100' stroke='#1565c0' stroke-width='2' marker-end='url(#m1)'/><text x='210' y='95' font-family='sans-serif' font-size='11' fill='#1565c0'>Fext</text><line x1='60' y1='170' x2='180' y2='170' stroke='#222' stroke-width='1.2' marker-end='url(#m1)'/><text x='120' y='188' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#222'>r</text><line x1='60' y1='205' x2='280' y2='205' stroke='#222' stroke-width='1.2' marker-end='url(#m1)'/><text x='170' y='222' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#222'>x</text><text x='355' y='140' font-family='sans-serif' font-size='12' fill='#666'>∞ से</text><text x='200' y='250' font-family='sans-serif' font-size='13' text-anchor='middle' fill='#222'>V = (1 / 4πε₀) × (Q / r)</text></svg>",
+        "caption": "स्रोत आवेश +Q से x दूरी पर स्थित परीक्षण आवेश q₀ को अनंत से बिंदु P (दूरी r) तक लाने में किए गए कार्य का समाकलन आरेख।"
       },
       {
-        "title": "एकसमान क्षेत्र के समविभव पृष्ठ",
-        "description": "विद्युत क्षेत्र के लंबवत समांतर समविभव तल।"
+        "title": "वैद्युत द्विध्रुव की अक्षीय स्थिति में विभव (Axial Potential)",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 260'><defs><marker id='m2' markerWidth='8' markerHeight='6' refX='6' refY='3' orient='auto'><polygon points='0 0, 8 3, 0 6' fill='#222'/></marker></defs><line x1='40' y1='120' x2='370' y2='120' stroke='#888' stroke-width='1.5'/><circle cx='80' cy='120' r='14' fill='#ffebee' stroke='#c62828' stroke-width='2'/><text x='80' y='125' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#c62828'>-q</text><circle cx='180' cy='120' r='14' fill='#e8f5e9' stroke='#2e7d32' stroke-width='2'/><text x='180' y='125' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#2e7d32'>+q</text><circle cx='130' cy='120' r='3' fill='#222'/><text x='130' y='140' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#222'>O</text><circle cx='320' cy='120' r='4' fill='#222'/><text x='320' y='140' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#222'>P</text><line x1='130' y1='165' x2='320' y2='165' stroke='#222' stroke-width='1.2' marker-end='url(#m2)'/><text x='225' y='182' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#222'>r</text><line x1='180' y1='90' x2='320' y2='90' stroke='#2e7d32' stroke-width='1.2' marker-end='url(#m2)'/><text x='250' y='82' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#2e7d32'>r - a</text><line x1='80' y1='55' x2='320' y2='55' stroke='#c62828' stroke-width='1.2' marker-end='url(#m2)'/><text x='200' y='48' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#c62828'>r + a</text><text x='200' y='235' font-family='sans-serif' font-size='13' text-anchor='middle' fill='#222'>V_अक्षीय = (1 / 4πε₀) × (p / r²)</text></svg>",
+        "caption": "द्विध्रुव केंद्र O से अक्षीय दूरी r पर बिंदु P का विभव दोनों आवेशों के विभवों के बीजगणितीय योग द्वारा प्राप्त होता है।"
       },
       {
-        "title": "समांतर-पट्ट संधारित्र",
-        "description": "दो प्लेटों पर +Q और −Q आवेश; बीच में लगभग एकसमान क्षेत्र।"
+        "title": "वैद्युत द्विध्रुव की निरक्षीय रेखा पर विभव (Equatorial Potential)",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 260'><line x1='90' y1='190' x2='310' y2='190' stroke='#888' stroke-width='1.5'/><line x1='200' y1='190' x2='200' y2='60' stroke='#888' stroke-width='1.5' stroke-dasharray='4,4'/><line x1='90' y1='190' x2='200' y2='60' stroke='#c62828' stroke-width='1.5'/><line x1='310' y1='190' x2='200' y2='60' stroke='#2e7d32' stroke-width='1.5'/><circle cx='90' cy='190' r='14' fill='#ffebee' stroke='#c62828' stroke-width='2'/><text x='90' y='195' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#c62828'>-q</text><circle cx='310' cy='190' r='14' fill='#e8f5e9' stroke='#2e7d32' stroke-width='2'/><text x='310' y='195' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#2e7d32'>+q</text><circle cx='200' cy='190' r='3' fill='#222'/><text x='200' y='210' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#222'>O</text><circle cx='200' cy='60' r='4' fill='#222'/><text x='215' y='65' font-family='sans-serif' font-size='12' fill='#222'>P</text><text x='130' y='120' font-family='sans-serif' font-size='11' fill='#c62828'>√(r²+a²)</text><text x='260' y='120' font-family='sans-serif' font-size='11' fill='#2e7d32'>√(r²+a²)</text><text x='190' y='130' font-family='sans-serif' font-size='11' fill='#222'>r</text><text x='200' y='245' font-family='sans-serif' font-size='13' text-anchor='middle' fill='#222'>V = V₁ + V₂ = 0 (निरक्षीय विभव सर्वदा शून्य)</text></svg>",
+        "caption": "निरक्षीय रेखा पर बिंदु P की दोनों विपरीत आवेशों से दूरियाँ समान होने के कारण कुल विभव शून्य हो जाता है।"
       },
       {
-        "title": "श्रेणी व समांतर संधारित्र संयोजन",
-        "description": "श्रेणी में एक के बाद एक; समांतर में समान दो नोडों के बीच जुड़े संधारित्र।"
+        "title": "विद्युत क्षेत्र एवं विभव प्रवणता संबंध (E = -dV/dr)",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 260'><defs><marker id='m3' markerWidth='8' markerHeight='6' refX='6' refY='3' orient='auto'><polygon points='0 0, 8 3, 0 6' fill='#222'/></marker></defs><ellipse cx='140' cy='130' rx='35' ry='80' fill='#e3f2fd' stroke='#1565c0' stroke-width='2'/><text x='140' y='40' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#1565c0'>पृष्ठ A (विभव V)</text><ellipse cx='260' cy='130' rx='35' ry='80' fill='#e3f2fd' stroke='#1565c0' stroke-width='2'/><text x='260' y='40' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#1565c0'>पृष्ठ B (विभव V - dV)</text><line x1='140' y1='130' x2='340' y2='130' stroke='#222' stroke-width='2' marker-end='url(#m3)'/><text x='345' y='135' font-family='sans-serif' font-size='12' fill='#222'>E</text><line x1='260' y1='155' x2='140' y2='155' stroke='#d32f2f' stroke-width='1.8' marker-end='url(#m3)'/><text x='200' y='172' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#d32f2f'>dr (एकांक आवेश विस्थापन)</text><text x='200' y='240' font-family='sans-serif' font-size='13' text-anchor='middle' fill='#222'>E = - dV / dr (घटते विभव की दिशा)</text></svg>",
+        "caption": "अल्प दूरी dr पर स्थित दो समविभव पृष्ठों के मध्य एकांक आवेश विस्थापन द्वारा व्युत्पन्न संबंध E = -dV/dr।"
+      },
+      {
+        "title": "समांतर पट्टिका संधारित्र की धारिता (Parallel Plate Capacitor)",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 260'><defs><marker id='m4' markerWidth='8' markerHeight='6' refX='6' refY='3' orient='auto'><polygon points='0 0, 8 3, 0 6' fill='#222'/></marker></defs><rect x='110' y='40' width='14' height='150' fill='#ffebee' stroke='#c62828' stroke-width='2'/><text x='90' y='115' font-family='sans-serif' font-size='12' fill='#c62828'>+Q</text><rect x='260' y='40' width='14' height='150' fill='#e3f2fd' stroke='#1565c0' stroke-width='2'/><text x='285' y='115' font-family='sans-serif' font-size='12' fill='#1565c0'>-Q</text><line x1='124' y1='80' x2='260' y2='80' stroke='#888' stroke-width='1.5' marker-end='url(#m4)'/><line x1='124' y1='115' x2='260' y2='115' stroke='#888' stroke-width='1.5' marker-end='url(#m4)'/><line x1='124' y1='150' x2='260' y2='150' stroke='#888' stroke-width='1.5' marker-end='url(#m4)'/><text x='190' y='105' font-family='sans-serif' font-size='12' fill='#222'>E = σ/ε₀</text><line x1='117' y1='210' x2='267' y2='210' stroke='#222' stroke-width='1.2' marker-end='url(#m4)'/><line x1='267' y1='210' x2='117' y2='210' stroke='#222' stroke-width='1.2' marker-end='url(#m4)'/><text x='192' y='225' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#222'>दूरी d</text><line x1='274' y1='115' x2='320' y2='115' stroke='#222' stroke-width='1.5'/><line x1='320' y1='105' x2='320' y2='125' stroke='#222' stroke-width='2'/><line x1='325' y1='109' x2='325' y2='121' stroke='#222' stroke-width='1.5'/><line x1='330' y1='113' x2='330' y2='117' stroke='#222' stroke-width='1'/><text x='200' y='250' font-family='sans-serif' font-size='13' text-anchor='middle' fill='#222'>C₀ = ε₀ A / d</text></svg>",
+        "caption": "समान क्षेत्रफल A और दूरी d की दो समांतर प्लेटों के बीच एकसमान विद्युत क्षेत्र तथा धारिता C₀ = ε₀A/d।"
+      },
+      {
+        "title": "आंशिक परावैद्युत पट्टी युक्त संधारित्र (Dielectric Slab in Capacitor)",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 260'><defs><marker id='m5' markerWidth='8' markerHeight='6' refX='6' refY='3' orient='auto'><polygon points='0 0, 8 3, 0 6' fill='#222'/></marker></defs><rect x='80' y='40' width='12' height='150' fill='#ffebee' stroke='#c62828' stroke-width='2'/><text x='60' y='115' font-family='sans-serif' font-size='12' fill='#c62828'>+σ</text><rect x='300' y='40' width='12' height='150' fill='#e3f2fd' stroke='#1565c0' stroke-width='2'/><text x='320' y='115' font-family='sans-serif' font-size='12' fill='#1565c0'>-σ</text><rect x='160' y='40' width='70' height='150' fill='#fff8e1' stroke='#f57f17' stroke-width='1.5'/><text x='195' y='115' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#f57f17'>परावैद्युत (K)</text><text x='195' y='135' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#f57f17'>E = E₀/K</text><line x1='92' y1='80' x2='160' y2='80' stroke='#888' stroke-width='1.5' marker-end='url(#m5)'/><text x='125' y='75' font-family='sans-serif' font-size='10' text-anchor='middle' fill='#222'>E₀</text><line x1='160' y1='205' x2='230' y2='205' stroke='#f57f17' stroke-width='1.5'/><text x='195' y='220' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#f57f17'>मोटाई t</text><line x1='86' y1='235' x2='306' y2='235' stroke='#222' stroke-width='1.2'/><text x='195' y='250' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#222'>कुल दूरी d</text></svg>",
+        "caption": "प्लेटों के मध्य t मोटाई की परावैद्युत पट्टी रखने पर वायु क्षेत्र (d-t) तथा पट्टी क्षेत्र में विभवांतर का विभाजन।"
+      },
+      {
+        "title": "संधारित्रों का श्रेणीक्रम संयोजन (Series Combination)",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 260'><line x1='40' y1='100' x2='110' y2='100' stroke='#222' stroke-width='2'/><line x1='110' y1='75' x2='110' y2='125' stroke='#1565c0' stroke-width='3'/><line x1='130' y1='75' x2='130' y2='125' stroke='#1565c0' stroke-width='3'/><line x1='130' y1='100' x2='200' y2='100' stroke='#222' stroke-width='2'/><line x1='200' y1='75' x2='200' y2='125' stroke='#1565c0' stroke-width='3'/><line x1='220' y1='75' x2='220' y2='125' stroke='#1565c0' stroke-width='3'/><line x1='220' y1='100' x2='290' y2='100' stroke='#222' stroke-width='2'/><line x1='290' y1='75' x2='290' y2='125' stroke='#1565c0' stroke-width='3'/><line x1='310' y1='75' x2='310' y2='125' stroke='#1565c0' stroke-width='3'/><line x1='310' y1='100' x2='360' y2='100' stroke='#222' stroke-width='2'/><text x='120' y='65' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#222'>C₁</text><text x='210' y='65' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#222'>C₂</text><text x='300' y='65' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#222'>C₃</text><text x='120' y='145' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#666'>V₁</text><text x='210' y='145' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#666'>V₂</text><text x='300' y='145' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#666'>V₃</text><text x='200' y='185' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#d32f2f'>प्रत्येक संधारित्र पर समान आवेश Q</text><text x='200' y='230' font-family='sans-serif' font-size='13' text-anchor='middle' fill='#222'>1/C_s = 1/C₁ + 1/C₂ + 1/C₃</text></svg>",
+        "caption": "श्रेणीक्रम संयोजन में सभी संधारित्रों पर आवेश समान रहता है तथा कुल विभवांतर V = V₁ + V₂ + V₃ बँटता है।"
+      },
+      {
+        "title": "संधारित्रों का समांतरक्रम संयोजन (Parallel Combination)",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 260'><line x1='40' y1='130' x2='120' y2='130' stroke='#222' stroke-width='2'/><line x1='120' y1='60' x2='120' y2='200' stroke='#222' stroke-width='2'/><line x1='120' y1='60' x2='175' y2='60' stroke='#222' stroke-width='2'/><line x1='175' y1='45' x2='175' y2='75' stroke='#1565c0' stroke-width='3'/><line x1='195' y1='45' x2='195' y2='75' stroke='#1565c0' stroke-width='3'/><line x1='195' y1='60' x2='260' y2='60' stroke='#222' stroke-width='2'/><line x1='120' y1='130' x2='175' y2='130' stroke='#222' stroke-width='2'/><line x1='175' y1='115' x2='175' y2='145' stroke='#1565c0' stroke-width='3'/><line x1='195' y1='115' x2='195' y2='145' stroke='#1565c0' stroke-width='3'/><line x1='195' y1='130' x2='260' y2='130' stroke='#222' stroke-width='2'/><line x1='120' y1='200' x2='175' y2='200' stroke='#222' stroke-width='2'/><line x1='175' y1='185' x2='175' y2='215' stroke='#1565c0' stroke-width='3'/><line x1='195' y1='185' x2='195' y2='215' stroke='#1565c0' stroke-width='3'/><line x1='195' y1='200' x2='260' y2='200' stroke='#222' stroke-width='2'/><line x1='260' y1='60' x2='260' y2='200' stroke='#222' stroke-width='2'/><line x1='260' y1='130' x2='350' y2='130' stroke='#222' stroke-width='2'/><text x='185' y='38' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#222'>C₁ (Q₁)</text><text x='185' y='108' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#222'>C₂ (Q₂)</text><text x='185' y='178' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#222'>C₃ (Q₃)</text><text x='200' y='248' font-family='sans-serif' font-size='13' text-anchor='middle' fill='#222'>C_p = C₁ + C₂ + C₃ (समान विभवांतर V)</text></svg>",
+        "caption": "समांतरक्रम संयोजन में सभी संधारित्रों पर विभवांतर समान रहता है तथा कुल आवेश Q = Q₁ + Q₂ + Q₃ होता है।"
+      },
+      {
+        "title": "आवेशित चालकों के संयोजन में उभयनिष्ठ विभव (Common Potential)",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 260'><circle cx='100' cy='120' r='45' fill='#e3f2fd' stroke='#1565c0' stroke-width='2'/><text x='100' y='115' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#1565c0'>C₁, V₁</text><text x='100' y='135' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#1565c0'>q₁ = C₁V₁</text><circle cx='300' cy='120' r='35' fill='#e8f5e9' stroke='#2e7d32' stroke-width='2'/><text x='300' y='115' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#2e7d32'>C₂, V₂</text><text x='300' y='135' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#2e7d32'>q₂ = C₂V₂</text><line x1='145' y1='120' x2='265' y2='120' stroke='#d32f2f' stroke-width='2'/><circle cx='205' cy='120' r='4' fill='#d32f2f'/><text x='205' y='105' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#d32f2f'>संयोजक तार</text><text x='200' y='195' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#222'>उभयनिष्ठ विभव V = (C₁V₁ + C₂V₂) / (C₁ + C₂)</text><text x='200' y='235' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#c62828'>ऊर्जा ह्रास ΔU = (1/2) [C₁C₂/(C₁+C₂)] (V₁ - V₂)²</text></svg>",
+        "caption": "विभिन्न विभवों के चालकों को जोड़ने पर आवेश के पुनर्वितरण द्वारा उभयनिष्ठ विभव तथा ऊर्जा ह्रास का निरूपण।"
+      },
+      {
+        "title": "वान डे ग्राफ जनित्र की संरचना (Van de Graaff Generator)",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 260'><circle cx='200' cy='65' r='50' fill='#fbe9e7' stroke='#d84315' stroke-width='2.5'/><rect x='185' y='95' width='30' height='120' fill='#e0e0e0' stroke='#616161' stroke-width='1.5'/><circle cx='200' cy='65' r='10' fill='#fff' stroke='#222' stroke-width='1.5'/><circle cx='200' cy='195' r='10' fill='#fff' stroke='#222' stroke-width='1.5'/><line x1='190' y1='65' x2='190' y2='195' stroke='#1565c0' stroke-width='2'/><line x1='210' y1='65' x2='210' y2='195' stroke='#1565c0' stroke-width='2'/><line x1='215' y1='195' x2='235' y2='195' stroke='#c62828' stroke-width='1.5'/><text x='245' y='200' font-family='sans-serif' font-size='10' fill='#c62828'>फुहार कंघी (HT)</text><line x1='215' y1='65' x2='235' y2='65' stroke='#2e7d32' stroke-width='1.5'/><text x='245' y='68' font-family='sans-serif' font-size='10' fill='#2e7d32'>संग्राहक कंघी</text><text x='200' y='40' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#d84315'>गोलीय चालक खोल</text><text x='200' y='245' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#222'>कोरोना विसर्जन द्वारा उच्च विभव (10⁶ V) उत्पत्ति</text></svg>",
+        "caption": "घूर्णित विद्युतरोधी पट्टे, तीक्ष्ण कंघियों तथा वृहद् गोलीय कोश द्वारा उच्च विभव उत्पन्न करने का रेखाचित्र।"
+      },
+      {
+        "title": "आवेशित खोखले गोले (गोलीय खोल) के विभव की व्युत्पत्ति आरेख",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 260'><circle cx='180' cy='125' r='55' fill='#ffebee' stroke='#c62828' stroke-width='2'/><circle cx='180' cy='125' r='3' fill='#222'/><text x='180' y='142' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#222'>O</text><text x='180' y='105' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#c62828'>+Q आवेश</text><line x1='180' y1='125' x2='235' y2='125' stroke='#c62828' stroke-width='1.5'/><text x='207' y='118' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#c62828'>R</text><circle cx='180' cy='125' r='90' fill='none' stroke='#1565c0' stroke-width='1.5' stroke-dasharray='4,4'/><circle cx='270' cy='125' r='4' fill='#1565c0'/><text x='280' y='120' font-family='sans-serif' font-size='11' fill='#1565c0'>P (बाहर)</text><line x1='180' y1='125' x2='270' y2='125' stroke='#222' stroke-width='1.2'/><text x='250' y='140' font-family='sans-serif' font-size='11' fill='#222'>r</text><circle cx='140' cy='125' r='3' fill='#2e7d32'/><text x='140' y='145' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#2e7d32'>P' (भीतर)</text><text x='200' y='225' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#222'>बाहर (r ≥ R): V = (1/4πε₀)(Q/r)</text><text x='200' y='245' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#2e7d32'>भीतर (r &lt; R): E = 0 ⇒ dV/dr = 0 ⇒ V = (1/4πε₀)(Q/R) [नियत]</text></svg>",
+        "caption": "चालक गोलीय खोल के भीतर विद्युत क्षेत्र शून्य होने के कारण पृष्ठ से केंद्र तक प्रत्येक बिंदु पर विभव पृष्ठ के विभव के बराबर नियत रहता है।"
+      },
+      {
+        "title": "तीक्ष्ण अग्र क्रिया एवं कोरोना विसर्जन (Action of Sharp Points)",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 260'><defs><marker id='ahe1' markerWidth='8' markerHeight='6' refX='6' refY='3' orient='auto'><polygon points='0 0, 8 3, 0 6' fill='#1565c0'/></marker></defs><path d='M 60 70 Q 200 90 320 125 Q 200 160 60 180 Z' fill='#e3f2fd' stroke='#1565c0' stroke-width='2'/><circle cx='320' cy='125' r='2' fill='#d32f2f'/><text x='325' y='110' font-family='sans-serif' font-size='11' fill='#d32f2f'>नुकीला सिरा (r ≈ 0)</text><text x='330' y='130' font-family='sans-serif' font-size='10' fill='#d32f2f'>σ = Q/A → अत्यधिक</text><text x='120' y='130' font-family='sans-serif' font-size='12' fill='#1565c0'>विस्तृत भाग (निम्न σ)</text><line x1='335' y1='120' x2='375' y2='105' stroke='#1565c0' stroke-width='1.5' marker-end='url(#ahe1)'/><line x1='335' y1='125' x2='385' y2='125' stroke='#1565c0' stroke-width='1.5' marker-end='url(#ahe1)'/><line x1='335' y1='130' x2='375' y2='145' stroke='#1565c0' stroke-width='1.5' marker-end='url(#ahe1)'/><text x='365' y='90' font-family='sans-serif' font-size='10' fill='#1565c0'>विद्युत पवन</text><text x='200' y='225' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#222'>वक्रता त्रिज्या कम होने पर पृष्ठीय आवेश घनत्व σ अत्यधिक बढ़ जाता है</text><text x='200' y='245' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#d32f2f'>तीव्र क्षेत्र के कारण निकटवर्ती वायु का आयनीकरण (कोरोना विसर्जन)</text></svg>",
+        "caption": "नुकीले सिरों पर अत्यधिक पृष्ठीय आवेश घनत्व के कारण वायु आयनित होकर विद्युत पवन और कोरोना विसर्जन उत्पन्न करती है।"
+      },
+      {
+        "title": "वान डे ग्राफ जनित्र: आंतरिक व बाह्य गोलीय कोश विभव सिद्धांत",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 260'><circle cx='190' cy='120' r='85' fill='#fbe9e7' stroke='#d84315' stroke-width='2'/><circle cx='190' cy='120' r='35' fill='#ffebee' stroke='#c62828' stroke-width='2'/><circle cx='190' cy='120' r='3' fill='#222'/><text x='190' y='110' font-family='sans-serif' font-size='10' text-anchor='middle' fill='#c62828'>लघु गोला (त्रिज्या r, आवेश q)</text><text x='190' y='190' font-family='sans-serif' font-size='10' text-anchor='middle' fill='#d84315'>वृहद् खोल (त्रिज्या R, आवेश Q)</text><line x1='190' y1='85' x2='190' y2='35' stroke='#222' stroke-width='2'/><circle cx='190' cy='60' r='3' fill='#222'/><text x='245' y='65' font-family='sans-serif' font-size='10' fill='#222'>सुचालक संयोजक तार</text><text x='200' y='230' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#222'>V(r) - V(R) = (q / 4πε₀) [ 1/r - 1/R ]</text><text x='200' y='248' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#d32f2f'>विभवांतर Q पर निर्भर नहीं करता; आंतरिक गोला सदैव उच्च विभव पर रहता है</text></svg>",
+        "caption": "आंतरिक गोले पर धनावेश होने पर उसका विभव बाह्य खोल से सदैव अधिक रहता है, जिससे तार जोड़ने पर आवेश स्वतः बाहर चला जाता है।"
+      },
+      {
+        "title": "दो आवेशित चालकों को जोड़ने से पूर्व एवं पश्चात अवस्था",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 260'><rect x='20' y='25' width='165' height='175' rx='6' fill='#fafafa' stroke='#bdbdbd' stroke-width='1.2'/><text x='102' y='45' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#222'>(a) जोड़ने से पूर्व</text><circle cx='65' cy='105' r='25' fill='#e3f2fd' stroke='#1565c0' stroke-width='1.5'/><text x='65' y='108' font-family='sans-serif' font-size='9' text-anchor='middle' fill='#1565c0'>C₁, V₁</text><circle cx='140' cy='105' r='20' fill='#e8f5e9' stroke='#2e7d32' stroke-width='1.5'/><text x='140' y='108' font-family='sans-serif' font-size='9' text-anchor='middle' fill='#2e7d32'>C₂, V₂</text><text x='102' y='155' font-family='sans-serif' font-size='10' text-anchor='middle' fill='#666'>Q_कुल = C₁V₁ + C₂V₂</text><text x='102' y='175' font-family='sans-serif' font-size='10' text-anchor='middle' fill='#666'>U_i = 1/2 C₁V₁² + 1/2 C₂V₂²</text><rect x='215' y='25' width='165' height='175' rx='6' fill='#fafafa' stroke='#bdbdbd' stroke-width='1.2'/><text x='297' y='45' font-family='sans-serif' font-size='11' text-anchor='middle' fill='#222'>(b) जोड़ने के पश्चात</text><circle cx='260' cy='105' r='25' fill='#e3f2fd' stroke='#1565c0' stroke-width='1.5'/><text x='260' y='108' font-family='sans-serif' font-size='9' text-anchor='middle' fill='#1565c0'>C₁, V</text><circle cx='335' cy='105' r='20' fill='#e8f5e9' stroke='#2e7d32' stroke-width='1.5'/><text x='335' y='108' font-family='sans-serif' font-size='9' text-anchor='middle' fill='#2e7d32'>C₂, V</text><line x1='285' y1='105' x2='315' y2='105' stroke='#d32f2f' stroke-width='2'/><text x='297' y='155' font-family='sans-serif' font-size='10' text-anchor='middle' fill='#1565c0'>V = (C₁V₁ + C₂V₂) / (C₁ + C₂)</text><text x='297' y='175' font-family='sans-serif' font-size='10' text-anchor='middle' fill='#c62828'>q₁'/q₂' = C₁/C₂</text><text x='200' y='235' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#222'>आवेश पुनर्वितरण में उभयनिष्ठ विभव स्थापित होता है तथा ऊर्जा ह्रास होता है</text></svg>",
+        "caption": "चालकों को जोड़ने से पूर्व और पश्चात आवेश पुनर्वितरण की अवस्थाएँ, जो उभयनिष्ठ विभव तथा ऊर्जा ह्रास को प्रदर्शित करती हैं।"
       }
     ],
     "revision": [
       {
-        "title": "अध्याय का त्वरित माइंड मैप",
+        "title": "प्रमुख सूत्र सारणी (Quick Formula Summary)",
         "points": [
-          "विभव → बिंदु आवेश/द्विध्रुव → विभवों का अध्यारोपण → समविभव पृष्ठ",
-          "स्थितिज ऊर्जा → आवेश निकाय → बाह्य क्षेत्र में द्विध्रुव",
-          "धारिता → समांतर प्लेट → परावैद्युत → श्रेणी/समांतर संयोजन → ऊर्जा"
+          "वैद्युत विभवांतर: V_A - V_B = W / q₀ [मात्रक: वोल्ट (V) या J/C]",
+          "बिंदु आवेश का विभव: V = (1 / 4πε₀) × (Q / r)",
+          "वैद्युत द्विध्रुव का विभव (व्यापक): V = (1 / 4πε₀) × (p cosθ / r²)",
+          "द्विध्रुव अक्षीय विभव: V = (1 / 4πε₀) × (p / r²); निरक्षीय विभव: V = 0",
+          "विभव प्रवणता संबंध: E = - dV / dr",
+          "दो आवेशों की स्थितिज ऊर्जा: U = (1 / 4πε₀) × (q₁q₂ / r₁₂)",
+          "द्विध्रुव को घुमाने में कार्य: W = pE (cosθ₁ - cosθ₂)",
+          "द्विध्रुव की स्थितिज ऊर्जा: U = - p · E = - pE cosθ",
+          "चालक पृष्ठ पर विद्युत क्षेत्र: E = σ / ε₀",
+          "वैद्युत धारिता: C = Q / V [मात्रक: फैरड (F)]",
+          "विलगित गोलीय चालक की धारिता: C = 4πε₀ R",
+          "समांतर पट्टिका वायु संधारित्र: C₀ = ε₀ A / d",
+          "परावैद्युत युक्त संधारित्र: C = K ε₀ A / d",
+          "आंशिक परावैद्युत पट्टी युक्त धारिता: C = ε₀ A / [ d - t (1 - 1/K) ]",
+          "श्रेणीक्रम तुल्य धारिता: 1/C_s = 1/C₁ + 1/C₂ + ... + 1/C_n",
+          "समांतरक्रम तुल्य धारिता: C_p = C₁ + C₂ + ... + C_n",
+          "संधारित्र में संचित ऊर्जा: U = (1/2) Q²/C = (1/2) C V² = (1/2) Q V",
+          "ऊर्जा घनत्व: u = (1/2) ε₀ E²",
+          "उभयनिष्ठ विभव: V = (C₁V₁ + C₂V₂) / (C₁ + C₂)",
+          "ऊर्जा ह्रास: ΔU = (1/2) [C₁C₂ / (C₁ + C₂)] (V₁ - V₂)²"
         ]
       },
       {
-        "title": "BSEB अभ्यास प्राथमिकता (PYQ-theme आधारित, prediction नहीं)",
+        "title": "परीक्षा उपयोगी महत्वपूर्ण स्मरणीय बिंदु (High-Yield Points)",
         "points": [
-          "बिंदु आवेश का विभव और विभव-प्रवणता",
-          "समांतर-पट्ट संधारित्र का सूत्र व निर्भरता",
-          "द्विध्रुव का निरक्षीय विभव",
-          "धारिता की इकाइयाँ: μF, pF",
-          "संधारित्र की ऊर्जा के सूत्र और संख्यात्मक प्रश्न",
-          "श्रेणी/समांतर संयोजन व समविभव पृष्ठ"
+          "स्थिरवैद्युत बल संरक्षी बल है, अतः विस्थापन में किया गया कार्य पथ पर निर्भर नहीं करता।",
+          "वैद्युत विभव एक अदिश राशि है और इसका विमीय सूत्र [M L² T⁻³ A⁻¹] होता है।",
+          "समविभव पृष्ठ पर किसी आवेश को ले जाने में किया गया कुल कार्य शून्य होता है।",
+          "विद्युत क्षेत्र रेखाएं सदैव समविभव पृष्ठ के लंबवत तथा घटते विभव की दिशा में होती हैं।",
+          "आवेशित चालक खोखले गोले के भीतर विद्युत क्षेत्र शून्य होता है, परंतु विभव पृष्ठ के विभव के बराबर नियत रहता है।",
+          "द्विध्रुव की निरक्षीय रेखा पर प्रत्येक बिंदु पर विभव शून्य होता है, परंतु विद्युत क्षेत्र अशून्य होता है।",
+          "खोखले चालक के भीतर बाहरी विद्युत क्षेत्रों से सुरक्षा की परिघटना को स्थिरवैद्युत परिरक्षण कहते हैं।",
+          "संधारित्र की प्लेटों के बीच परावैद्युत पट्टिका रखने पर विद्युत क्षेत्र घटता है और धारिता K गुना बढ़ जाती है।",
+          "बैटरी द्वारा संधारित्र के आवेशन में दी गई कुल ऊर्जा QV का केवल आधा भाग (50%) ही संधारित्र में संचित होता है।",
+          "दो आवेशित चालकों को जोड़ने पर आवेश सदैव संरक्षित रहता है, परंतु ऊर्जा का सदैव ह्रास (ऊष्मा/प्रकाश के रूप में) होता है।"
         ]
       },
       {
-        "title": "परीक्षा-पूर्व त्वरित पुनरावृत्ति",
+        "title": "अध्याय 2: संपूर्ण आरेख सांख्यिकी व संकलन",
         "points": [
-          "V=W/q तथा बिंदु आवेश के लिए V=kq/r याद रखें।",
-          "द्विध्रुव का दूरस्थ विभव V=kp cosθ/r²; विषुवतीय तल पर शून्य।",
-          "E=−dV/dx; क्षेत्र की दिशा में विभव घटता है।",
-          "समविभव पृष्ठ पर कार्य शून्य तथा E लंबवत।",
-          "चालक के भीतर E=0 और चालक समान विभव पर होता है।",
-          "C=Q/V; समांतर-पट्ट के लिए C=ε₀A/d।",
-          "श्रेणी: 1/Ceq=Σ1/Ci; समांतर: Ceq=ΣCi।",
-          "ऊर्जा के तीनों रूप U=½CV²=½QV=Q²/(2C)।",
-          "परावैद्युत से धारिता K गुना; बैटरी जुड़े/पृथक मामलों में नियत राशि पहचानें।",
-          "व्युत्पत्तियों में पहले क्षेत्र/विभव, फिर कार्य/विभवांतर, अंत में अपेक्षित सूत्र लिखें।"
+          "भाग 4 में 10 मुख्य आरेख दिए गए (बिंदु आवेश विभव, अक्षीय/निरक्षीय विभव, E व dV/dr, समांतर संधारित्र, परावैद्युत पट्टी, श्रेणी/समांतर परिपथ, चालकों का संयोजन, वान डे ग्राफ संरचना)。",
+          "भाग 4ब में 9 व्युत्पत्ति आरेख दिए गए (व्यापक विभव p cosθ, 2 व 3 आवेश स्थितिज ऊर्जा, द्विध्रुव घूर्णन कार्य, चालक सतह पिलबॉक्स E=σ/ε₀, गोलीय खोल ग्राफ, विलगित गोला धारिता, प्लेट आकर्षण बल, गोलीय संधारित्र)。",
+          "भाग 4स में 5 संकल्पना आरेख दिए गए (एकल आवेश समविभव पृष्ठ, द्विध्रुव/युगल समविभव पृष्ठ, परावैद्युत आंतरिक ध्रुवण ±σp, बेलनाकार संधारित्र, स्थिरवैद्युत परिरक्षण)।",
+          "भाग 4द में 4 तुलनात्मक व आवेशन आरेख दिए गए (V व E का तुलनात्मक वक्र, बाह्य क्षेत्र में दो आवेश, ध्रुवी/अध्रुवी अणु, dq' सूक्ष्म आवेशन कार्य)।",
+          "इस अंतिम भाग 4य में शेष 4 आरेख दिए गए (गोलीय खोल विभव व्युत्पत्ति, तीक्ष्ण अग्र कोरोना विसर्जन, संकेंद्रीय कोश विभव अंतर, चालकों के संयोजन का पूर्व-पश्चात आरेख)।",
+          "इसके साथ ही Chapter Map के सभी 33 आरेख 100% चरणबद्ध रूप से पूरे हो चुके हैं।"
         ]
       }
     ]
