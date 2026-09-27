@@ -57,6 +57,9 @@ body, html {
     cursor: pointer; transition: 0.2s;
 }
 .quiz-option-btn:active { background: #0ff; color: #000; }
+.quiz-option-btn:disabled { cursor: default; opacity: 0.85; }
+.quiz-option-btn.opt-correct { background: rgba(51,255,51,0.18); border-color: #33ff33; color: #9fffa0; }
+.quiz-option-btn.opt-wrong { background: rgba(255,51,51,0.18); border-color: #ff3333; color: #ffb3b3; }
 .quiz-feedback { margin-top: 15px; font-size: 16px; font-weight: bold; min-height: 24px; }
 .feedback-error { color: #ff3333; }
 .feedback-success { color: #33ff33; }
