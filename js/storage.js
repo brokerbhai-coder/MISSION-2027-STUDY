@@ -48,6 +48,7 @@
       version: VERSION,
       createdAt: new Date().toISOString(),
       student: { name: 'Ankit' },
+      stream: null, // 'arts' | 'science' | null (अभी नहीं चुना)
       xp: 0,
       dailyGoalMinutes: 60,
       quizSize: 10,
@@ -137,6 +138,7 @@
     var d = defaultState();
     d.createdAt = str(raw.createdAt, d.createdAt, 40);
     if (isObj(raw.student)) d.student.name = str(raw.student.name, 'Ankit', 30).trim() || 'Ankit';
+    d.stream = (raw.stream === 'arts' || raw.stream === 'science') ? raw.stream : null;
     d.xp = int(raw.xp, 0, 0, 1e9);
     d.dailyGoalMinutes = int(raw.dailyGoalMinutes, 60, 10, 600);
     d.quizSize = int(raw.quizSize, 10, 0, 100);
