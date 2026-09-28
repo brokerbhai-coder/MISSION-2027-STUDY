@@ -13,8 +13,8 @@
 
 // एक Level पूरा होने पर ज़्यादा से ज़्यादा कितना XP (पहली बार) — दोबारा उसी Level पर हर बार आधा होता जाएगा
 const GAME_XP_PER_LEVEL = 10;
-// Quiz को "Skip" करने की हर कोशिश पर इतना XP कटेगा
-const SKIP_PENALTY = 2;
+// Quiz में हर ग़लत जवाब पर Background में इतना XP अपने-आप कटेगा (कोई Button/Choice नहीं)
+const WRONG_PENALTY = 10;
 
 function M27() { return window.M27; }
 function ready() { return !!(M27() && M27().Storage && M27().Storage.state); }
@@ -45,13 +45,13 @@ export const Storage = {
         var key = 'game:maze:level-' + (levelNumber || 0);
         return M27().Rewards.addXpDiminishing(key, GAME_XP_PER_LEVEL);
     },
-    // Quiz Skip करने की हर कोशिश पर XP काटो (0 से नीचे नहीं जाएगा)
-    penalizeSkip() {
+    // हर ग़लत जवाब पर XP काटो (0 से नीचे नहीं जाएगा) — Background में, चुपचाप
+    penalizeWrong() {
         if (!ready()) return 0;
         var app = M27();
         var st = app.Storage.state;
         var before = st.xp;
-        st.xp = Math.max(0, st.xp - SKIP_PENALTY);
+        st.xp = Math.max(0, st.xp - WRONG_PENALTY);
         app.Storage.save();
         return before - st.xp;
     },
