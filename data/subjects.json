@@ -122,7 +122,8 @@
           "notesReady": false,
           "notesUrl": null
         }
-      ]
+      ],
+      "stream": "science"
     },
     {
       "id": "chemistry",
@@ -245,7 +246,8 @@
           "notesReady": false,
           "notesUrl": null
         }
-      ]
+      ],
+      "stream": "science"
     },
     {
       "id": "mathematics",
@@ -347,7 +349,8 @@
           "notesReady": false,
           "notesUrl": null
         }
-      ]
+      ],
+      "stream": "science"
     },
     {
       "id": "biology",
@@ -470,7 +473,8 @@
           "notesReady": false,
           "notesUrl": null
         }
-      ]
+      ],
+      "stream": "science"
     },
     {
       "id": "hindi",
@@ -663,7 +667,8 @@
           "notesReady": false,
           "notesUrl": null
         }
-      ]
+      ],
+      "stream": "common"
     },
     {
       "id": "english",
@@ -856,7 +861,8 @@
           "notesReady": false,
           "notesUrl": null
         }
-      ]
+      ],
+      "stream": "common"
     },
     {
       "id": "history",
@@ -868,13 +874,12 @@
       "progression": "sequential",
       "chapters": [
         {
-          "number": 1,
-          "title": "ईंटें, मनके तथा अस्थियाँ",
-          "file": "data/history/chapter-01.json",
-          "notesReady": false,
-          "notesUrl": null
+          "id": "1",
+          "chapterNumber": 1,
+          "title": "ईंटें, मनके तथा अस्थियाँ"
         }
-      ]
+      ],
+      "stream": "arts"
     },
     {
       "id": "geography",
@@ -884,7 +889,8 @@
       "color": "#0d9488",
       "status": "available",
       "progression": "sequential",
-      "chapters": []
+      "chapters": [],
+      "stream": "arts"
     },
     {
       "id": "political-science",
@@ -894,7 +900,8 @@
       "color": "#dc2626",
       "status": "available",
       "progression": "sequential",
-      "chapters": []
+      "chapters": [],
+      "stream": "arts"
     }
   ]
 }
