@@ -52,6 +52,7 @@
           status: s.status === 'available' ? 'available' : 'coming_soon',
           progression: s.progression === 'sequential' ? 'sequential' : 'free',
           passPercent: Number(s.passPercent) || 0,
+          stream: (s.stream === 'arts' || s.stream === 'science') ? s.stream : 'common',
           futureChapters: (s.futureChapters && s.futureChapters.from && s.futureChapters.to) ? { from: +s.futureChapters.from, to: +s.futureChapters.to } : null,
           chapters: chapters
         });
@@ -61,9 +62,18 @@
   };
 
   /* ---------- Lookup helpers ---------- */
-  Sub.list = function () { return Sub.config ? Sub.config.subjects : []; };
+  // Sub.list() सिर्फ़ विद्यार्थी के चुने हुए Stream (Arts/Science) के Subject लौटाता है + Hindi/English हमेशा
+  // (Stream अभी तक न चुना हो तो सब दिखेंगे — Prompt अपने-आप एक बार पूछ लेगा)
+  Sub.list = function () {
+    var all = Sub.config ? Sub.config.subjects : [];
+    var stream = M.Storage.state && M.Storage.state.stream;
+    if (!stream) return all;
+    return all.filter(function (s) { return s.stream === 'common' || s.stream === stream; });
+  };
+  // पूरी, बिना Stream-Filter वाली List — किसी खास (जैसे दूसरे Stream के पुराने) Subject को ढूँढ़ने के लिए
+  Sub.allSubjects = function () { return Sub.config ? Sub.config.subjects : []; };
   Sub.get = function (id) {
-    var l = Sub.list();
+    var l = Sub.allSubjects();
     for (var i = 0; i < l.length; i++) if (l[i].id === id) return l[i];
     return null;
   };
