@@ -304,6 +304,12 @@
       [30, 45, 60, 90, 120, 180].map(function (m) { return '<option value="' + m + '"' + (m === st.dailyGoalMinutes ? ' selected' : '') + '>' + m + ' मिनट</option>'; }).join('') +
       '</select></label><button class="btn" data-action="save-profile">सेव करो</button></div>';
 
+    html += '<div class="card"><h3 class="card-title">🎓 Stream</h3><p class="muted small">इसके हिसाब से Home/Notes/PYQ/Practice में सिर्फ़ आपके Stream के Subject दिखेंगे (Hindi/English हमेशा दिखते हैं)।</p>' +
+      '<label class="field"><span>मेरा Stream</span><select id="streamSelect">' +
+      '<option value="arts"' + (st.stream === 'arts' ? ' selected' : '') + '>🎨 Arts</option>' +
+      '<option value="science"' + (st.stream === 'science' ? ' selected' : '') + '>🔬 Science</option>' +
+      '</select></label><button class="btn" data-action="save-stream">सेव करो</button></div>';
+
     html += '<div class="card"><h3 class="card-title">💾 Backup (Export / Import)</h3>' +
       '<p class="muted small">तुम्हारा progress सिर्फ़ इसी phone के इसी browser में सेव है। यह अपने-आप दूसरे फ़ोन/browser में नहीं जाता। इसलिए बीच-बीच में Backup ले लो।</p>' +
       '<div class="btn-stack"><button class="btn" data-action="export-backup">⬇️ Backup file डाउनलोड करो</button>' +
@@ -383,6 +389,14 @@
     M.Storage.save();
     M.App.toast('सेव हो गया ✅', 'success');
     M.Router.refresh(true);
+  };
+
+  A['save-stream'] = function () {
+    var v = $('streamSelect').value;
+    M.Storage.state.stream = (v === 'arts') ? 'arts' : 'science';
+    M.Storage.save();
+    M.App.toast('Stream बदल गया ✅', 'success');
+    M.Router.go('/home');
   };
 
   A['export-backup'] = function () {
@@ -534,12 +548,31 @@
     M.Subjects.load().then(function () {
       return M.Chapters.preloadAll();
     }).then(function () {
+      return App.ensureStreamChosen();
+    }).then(function () {
       M.Router.start();
       missedDayToast();
     }).catch(function (err) {
       App.showFatal(err);
     });
   }
+
+  // पहली बार Website खोलने पर एक बार पूछो — Arts या Science? (फिर हमेशा याद रहेगा, Settings में बदल सकते हो)
+  App.ensureStreamChosen = function () {
+    if (M.Storage.state.stream) return Promise.resolve();
+    return App.dialog({
+      title: 'आप किस Stream में हैं?',
+      message: 'इसके हिसाब से आपको सही Subject दिखेंगे — Hindi/English दोनों में हमेशा दिखेंगे। बाद में Settings से बदल सकते हो।',
+      buttons: [
+        { label: '🎨 Arts (History/Geography/Pol. Science)', value: 'arts', cls: 'primary' },
+        { label: '🔬 Science (Physics/Chemistry/Bio/Math)', value: 'science', cls: 'primary' }
+      ],
+      cancelValue: null
+    }).then(function (choice) {
+      M.Storage.state.stream = (choice === 'arts' || choice === 'science') ? choice : 'science';
+      M.Storage.save();
+    });
+  };
 
   M.App = App;
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
