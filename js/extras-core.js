@@ -307,6 +307,66 @@
 
   /* ---------- प्रश्न की जाँच ---------- */
   // allowText = true हो तो short/long (बिना options वाले) प्रश्न भी मान्य (PYQ के लिए)
+  // SVG Diagram को Data-URI Image में बदलने से पहले HTML Entity (जैसे &pi;) को असली अक्षर में बदल दो —
+  // data:image/svg+xml को Browser सख़्त XML की तरह पढ़ता है, जहाँ सिर्फ़ 5 Basic Entity ही मान्य हैं।
+  var entityBox = null;
+  X.decodeEntities = function (s) {
+    if (typeof s !== 'string' || s.indexOf('&') < 0) return s;
+    if (!entityBox) entityBox = document.createElement('textarea');
+    entityBox.innerHTML = s;
+    return entityBox.value;
+  };
+  // JSON में दिए "image"/"svg"/"embed" में से जो भी मिले, उसे एक common {type, ...} रूप में बदल दो
+  X.buildMedia = function (it) {
+    if (!it || typeof it !== 'object') return null;
+    var img = X.safeAsset ? X.safeAsset(it.image) : (typeof it.image === 'string' ? it.image : '');
+    if (img) return { type: 'image', src: img };
+    if (typeof it.svg === 'string' && /^\s*<svg[\s>]/i.test(it.svg) && it.svg.length < 200000) return { type: 'svg', svg: it.svg };
+    var emb = X.safeAsset ? X.safeAsset(it.embed) : (typeof it.embed === 'string' ? it.embed : '');
+    if (emb) return { type: 'embed', src: emb, height: (typeof it.height === 'number' && it.height > 0) ? it.height : 260 };
+    return null;
+  };
+  X.mediaHtml = function (m, title) {
+    if (!m) return '';
+    var esc = M.App.esc;
+    if (m.type === 'image') return '<img class="nt-media" loading="lazy" src="' + esc(m.src) + '" alt="' + esc(title) + '">';
+    if (m.type === 'svg') return '<img class="nt-media" alt="' + esc(title) + '" src="data:image/svg+xml;charset=utf-8,' + encodeURIComponent(X.decodeEntities(m.svg)) + '">';
+    return '<iframe class="nt-embed" loading="lazy" sandbox="allow-scripts" src="' + esc(m.src) + '" title="' + esc(title) + '" style="height:' + m.height + 'px"></iframe>';
+  };
+  // किसी Question के साथ लगा Diagram (एक या Step-by-Step) — दिखाने के लिए तैयार HTML
+  X.questionMediaHtml = function (q) {
+    if (!q) return '';
+    var html = '';
+    if (q.diagram) {
+      html += '<div class="nt-inline-diagram">' + X.mediaHtml(q.diagram.media, q.question) +
+        (q.diagram.caption ? '<p class="nt-cap">' + M.App.esc(q.diagram.caption) + '</p>' : '') + '</div>';
+    }
+    if (q.diagramSteps && q.diagramSteps.length) {
+      html += '<div class="nt-step-diagrams">' + q.diagramSteps.map(function (s, i) {
+        return '<div class="nt-step"><span class="nt-step-num">चित्र ' + (i + 1) + '</span>' +
+          X.mediaHtml(s.media, q.question + ' — चित्र ' + (i + 1)) +
+          (s.caption ? '<p class="nt-cap">' + M.App.esc(s.caption) + '</p>' : '') + '</div>';
+      }).join('') + '</div>';
+    }
+    return html;
+  };
+  // Raw JSON के "diagram"/"diagramSteps" को Question Object पर बनाकर जोड़ता है (मौजूद हो तभी)
+  X.attachQuestionMedia = function (out, q) {
+    if (q.diagram && typeof q.diagram === 'object') {
+      var dm = X.buildMedia(q.diagram);
+      if (dm) out.diagram = { media: dm, caption: typeof q.diagram.caption === 'string' ? q.diagram.caption.trim() : '' };
+    }
+    if (Array.isArray(q.diagramSteps)) {
+      var steps = [];
+      q.diagramSteps.forEach(function (st) {
+        if (!st || typeof st !== 'object') return;
+        var sm = X.buildMedia(st);
+        if (sm) steps.push({ media: sm, caption: typeof st.caption === 'string' ? st.caption.trim() : '' });
+      });
+      if (steps.length) out.diagramSteps = steps;
+    }
+  };
+
   X.cleanQuestion = function (q, allowText) {
     if (!q || typeof q !== 'object' || Array.isArray(q)) return { ok: false, error: 'प्रश्न का format गलत है' };
     var id = (typeof q.id === 'string' || typeof q.id === 'number') ? String(q.id).trim() : '';
@@ -334,6 +394,7 @@
       out.type = 'objective';
       out.options = opts;
       out.answer = ans;
+      X.attachQuestionMedia(out, q);
       return { ok: true, q: out };
     }
     if (!allowText) return { ok: false, error: id + ': यहाँ सिर्फ़ objective (A-D) प्रश्न चलते हैं' };
@@ -445,6 +506,9 @@
       html += '<button class="x-hub-card" style="--accent:#a78bfa" data-action="nav" data-to="/vault"><span class="x-hub-top"><span class="x-hub-ico">🎁</span>' +
         '<span><strong>Fun Vault</strong><br><span class="x-meta">Chapter Challenge में ' + (M.Vault ? M.Vault.PASS : 95) + '%+ लाओ → चुटकुले खुलते हैं</span></span></span>' +
         '<span class="x-meta">' + (vs.open ? '🔓 खुला है — ' + M.App.fmtTime(Math.ceil(vs.left / 1000)) + ' बचे' : '🔒 अभी बंद') + '</span></button>';
+      html += '<button class="x-hub-card" style="--accent:#f97316" data-action="nav" data-to="/books"><span class="x-hub-top"><span class="x-hub-ico">📚</span>' +
+        '<span><strong>Book Reading</strong><br><span class="x-meta">आत्म-विकास किताबों के सार</span></span></span>' +
+        '<span class="x-meta">' + (M.Books && M.Books.isUnlocked() ? '🔓 खुला है' : '🔒 बंद') + '</span></button>';
       html += '<button class="x-hub-card" style="--accent:#22d3ee" data-action="nav" data-to="/lab"><span class="x-hub-top"><span class="x-hub-ico">🧪</span>' +
         '<span><strong>Virtual Lab</strong><br><span class="x-meta">Physics के Experiments — असली Lab जैसा Simulation</span></span></span>' +
         '<span class="x-meta">Experiments उपलब्ध</span></button>';
