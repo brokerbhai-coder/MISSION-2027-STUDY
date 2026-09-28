@@ -47,11 +47,19 @@ function fromQuestionsArray(raw, onlyObjective) {
     return out;
 }
 
+function currentStream() {
+    var w = window.M27;
+    return (w && w.Storage && w.Storage.state && w.Storage.state.stream) || null; // null = अभी तय नहीं, तब सब Subject चलेंगे
+}
+
 function loadChapterQuizPool() {
     return getJson('data/subjects.json').then(function (data) {
         if (!data || !Array.isArray(data.subjects)) return [];
+        var stream = currentStream();
         var jobs = [];
         data.subjects.forEach(function (s) {
+            // Arts वाले को Science के Chapter नहीं, Science वाले को Arts के नहीं — Hindi/English ("common") हमेशा
+            if (stream && s.stream && s.stream !== 'common' && s.stream !== stream) return;
             (s.chapters || []).forEach(function (c) {
                 if (!c.file) return;
                 jobs.push(getJson(c.file).then(function (raw) {

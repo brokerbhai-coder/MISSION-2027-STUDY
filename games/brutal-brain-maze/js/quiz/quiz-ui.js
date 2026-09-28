@@ -11,25 +11,11 @@ export class QuizUI {
         this.optionsContainer = document.getElementById('quiz-options');
         this.feedbackEl = document.getElementById('quiz-feedback');
         this.btnContinue = document.getElementById('btn-quiz-continue');
-        this.btnSkip = document.getElementById('btn-quiz-skip');
 
         this.btnContinue.addEventListener('click', () => {
             this.modal.classList.add('hidden');
             this.onComplete();
         });
-
-        if (this.btnSkip) {
-            this.btnSkip.addEventListener('click', () => {
-                const cut = Storage.penalizeSkip();
-                this.optionsContainer.innerHTML = '';
-                this.feedbackEl.className = 'quiz-feedback feedback-error';
-                this.feedbackEl.innerText = cut > 0
-                    ? `Skip किया — ${cut} XP कट गया। (Skipped — ${cut} XP deducted.)`
-                    : `Skip किया। (Skipped.)`;
-                this.btnSkip.classList.add('hidden');
-                this.btnContinue.classList.remove('hidden');
-            });
-        }
     }
 
     open() {
@@ -40,7 +26,6 @@ export class QuizUI {
         }
         this.modal.classList.remove('hidden');
         this.btnContinue.classList.add('hidden');
-        if (this.btnSkip) this.btnSkip.classList.remove('hidden');
         this.feedbackEl.innerText = "";
         this.quizLock.generateQuiz();
         this.renderCurrentQuestion();
@@ -87,10 +72,12 @@ export class QuizUI {
                 setTimeout(() => this.renderCurrentQuestion(), 700); // सही होने पर भी थोड़ा रुककर हरा रंग दिखे
             }
         } else {
+            // Background में चुपचाप XP कटता है — कोई Button/Choice नहीं, बस हर ग़लत जवाब पर
+            const cut = Storage.penalizeWrong();
             this.feedbackEl.className = 'quiz-feedback feedback-error';
-            this.feedbackEl.innerText = `❌ ग़लत! सही उत्तर था: ${q.shuffledOptions[correctIndex].text}`;
+            this.feedbackEl.innerText = `❌ ग़लत! सही उत्तर था: ${q.shuffledOptions[correctIndex].text}` + (cut > 0 ? ` (−${cut} XP)` : '');
             setTimeout(() => {
-                this.quizLock.generateQuiz(); // Force restart
+                this.quizLock.restartSameQuiz(); // वही 10 Question फिर से — नए Random नहीं
                 this.renderCurrentQuestion();
             }, 5000); // 5 सेकंड सही उत्तर दिखे, ताकि याद हो जाए
         }

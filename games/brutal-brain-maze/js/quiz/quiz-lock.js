@@ -15,8 +15,16 @@ export class QuizLock {
         let pool = [...this.pool];
         pool.sort(() => Math.random() - 0.5);
         this.questions = pool.slice(0, 10);
+        this.reshuffleOptions();
+    }
 
-        // Shuffle options and remap correct answer
+    // Wrong Answer के बाद यही 10 Question दोबारा — नए Random 10 नहीं (सिर्फ़ Option का क्रम फिर से बदलता है)
+    restartSameQuiz() {
+        this.currentIndex = 0;
+        this.reshuffleOptions();
+    }
+
+    reshuffleOptions() {
         this.questions.forEach(q => {
             let optionsObj = q.options.map((opt, i) => ({ text: opt, isCorrect: i === q.ans }));
             optionsObj.sort(() => Math.random() - 0.5);
