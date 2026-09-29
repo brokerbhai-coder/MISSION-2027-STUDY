@@ -9,12 +9,14 @@
 
   var Mk = {};
   function esc(s) { return M.App.esc(s); }
+  // Formula ($...$) अब Mistake Notebook में भी दिखेगा — KaTeX न हो तो सामान्य Text जैसा ही दिखता है
+  function rich(s) { return (M.Extras && M.Extras.rich) ? M.Extras.rich(s) : esc(s); }
 
   // गलत उत्तर दर्ज करो (Quiz में जवाब देते ही)
   Mk.record = function (q, chosen) {
     var st = M.Storage.state;
     var prev = st.mistakes[q.id];
-    st.mistakes[q.id] = {
+    var rec = {
       id: q.id, subject: q.subject, chapter: q.chapter, question: q.question,
       options: q.options, answer: q.answer, explanation: q.explanation, source: q.source, type: q.type,
       wrong: chosen,
@@ -22,6 +24,9 @@
       lastDate: M.Storage.todayStr(),
       resolved: false
     };
+    if (q.diagram) rec.diagram = q.diagram;             // Diagram भी Mistake Notebook में साथ आए
+    if (q.diagramSteps) rec.diagramSteps = q.diagramSteps;
+    st.mistakes[q.id] = rec;
   };
 
   // बाद में वही प्रश्न सही हो गया तो "सुधारी हुई गलती" मानो
@@ -58,8 +63,11 @@
     var open = Mk.list(filter).filter(function (m) { return !m.resolved; });
     if (!open.length) { M.App.toast('अभी कोई बाकी गलती नहीं है 👏', 'info'); return; }
     var qs = open.slice(0, 200).map(function (m) {
-      return { id: m.id, subject: m.subject, chapter: m.chapter, question: m.question, options: m.options,
+      var q = { id: m.id, subject: m.subject, chapter: m.chapter, question: m.question, options: m.options,
         answer: m.answer, explanation: m.explanation, source: m.source, type: m.type };
+      if (m.diagram) q.diagram = m.diagram;
+      if (m.diagramSteps) q.diagramSteps = m.diagramSteps;
+      return q;
     });
     M.Quiz.start({
       mode: 'retry',
@@ -118,15 +126,21 @@
       html += '<article class="card mistake' + (m.resolved ? ' resolved' : '') + '">' +
         '<div class="mk-head"><span class="chip">' + esc(M.Subjects.subjectName(m.subject)) + (m.chapter ? ' · अध्याय ' + m.chapter : '') + '</span>' +
         (m.resolved ? '<span class="chip ok">सुधारी ✓</span>' : '<span class="chip bad">बाकी</span>') + '</div>' +
-        '<p class="q-text">' + esc(m.question) + '</p>' +
-        '<p class="ans bad">❌ तुम्हारा उत्तर: ' + (m.wrong ? esc(m.wrong + ') ' + (m.options[m.wrong] || '')) : '—') + '</p>' +
-        '<p class="ans ok">✅ सही उत्तर: ' + esc(m.answer + ') ' + m.options[m.answer]) + '</p>' +
-        '<p class="expl">' + esc(m.explanation || 'व्याख्या उपलब्ध नहीं है।') + '</p>' +
+        '<p class="q-text">' + rich(m.question) + '</p>' + (M.Extras && M.Extras.questionMediaHtml ? M.Extras.questionMediaHtml(m) : '') +
+        '<p class="ans bad">❌ तुम्हारा उत्तर: ' + (m.wrong ? rich(m.wrong + ') ' + (m.options[m.wrong] || '')) : '—') + '</p>' +
+        '<p class="ans ok">✅ सही उत्तर: ' + rich(m.answer + ') ' + m.options[m.answer]) + '</p>' +
+        '<p class="expl">' + rich(m.explanation || 'व्याख्या उपलब्ध नहीं है।') + '</p>' +
         '<small class="muted">' + m.count + ' बार गलत · आख़िरी: ' + esc(M.App.fmtDate(m.lastDate)) + ' · ID: ' + esc(m.id) + '</small></article>';
     });
     if (shown.length > 100) html += '<p class="muted small center">सिर्फ़ पहली 100 गलतियाँ दिखाई गई हैं।</p>';
     html += '</section>';
-    return { html: html, title: 'Mistake Notebook', back: null, tab: 'mistakes', ctx: 'mistakes' };
+    var meta = { title: 'Mistake Notebook', back: null, tab: 'mistakes', ctx: 'mistakes' };
+    if (!M.Extras || !M.Extras.ensureMathFor) { meta.html = html; return meta; }
+    return M.Extras.ensureMathFor(shown.slice(0, 100)).then(function (mathOk) {
+      if (!mathOk) M.Extras.onMathReady(function () { if (M.Router.currentPath && M.Router.currentPath.indexOf('/mistakes') === 0) M.Router.refresh(true); });
+      meta.html = html;
+      return meta;
+    });
   };
 
   M.Mistakes = Mk;
