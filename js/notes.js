@@ -67,10 +67,27 @@
         }
         return o.title && (o.content.length || o.points.length) ? o : null;
       case 'oneLiners':
+        o = { question: str(it.question), answer: X.paras(it.answer) };
+        return o.question && o.answer.length ? o : null;
       case 'shortAnswers':
       case 'longAnswers':
         o = { question: str(it.question), answer: X.paras(it.answer) };
-        return o.question && o.answer.length ? o : null;
+        if (!(o.question && o.answer.length)) return null;
+        // 2/5-अंक वाले Subjective Question के साथ भी अब Diagram लगा सकते हो (Theory जैसा ही)
+        if (it.diagram && typeof it.diagram === 'object') {
+          var dm2 = media(it.diagram);
+          if (dm2) o.diagram = { media: dm2, caption: str(it.diagram.caption) };
+        }
+        if (Array.isArray(it.diagramSteps)) {
+          var steps2 = [];
+          it.diagramSteps.forEach(function (st) {
+            if (!st || typeof st !== 'object') return;
+            var sm2 = media(st);
+            if (sm2) steps2.push({ media: sm2, caption: str(st.caption) });
+          });
+          if (steps2.length) o.diagramSteps = steps2;
+        }
+        return o;
       case 'definitions':
         o = { term: str(it.term), definition: X.paras(it.definition) };
         return o.term && o.definition.length ? o : null;
@@ -182,14 +199,15 @@
   // 'chapterNotes'/'theory' के Point के साथ लगा Diagram (सीधा एक, या Step-by-Step) — Text के ठीक नीचे
   function inlineDiagramHtml(it) {
     var html = '';
+    var altBase = it.title || it.question || '';
     if (it.diagram) {
-      html += '<div class="nt-inline-diagram">' + mediaHtml(it.diagram.media, it.title) +
+      html += '<div class="nt-inline-diagram">' + mediaHtml(it.diagram.media, altBase) +
         (it.diagram.caption ? '<p class="nt-cap">' + esc(it.diagram.caption) + '</p>' : '') + '</div>';
     }
     if (it.diagramSteps && it.diagramSteps.length) {
       html += '<div class="nt-step-diagrams">' + it.diagramSteps.map(function (s, i) {
         return '<div class="nt-step"><span class="nt-step-num">चित्र ' + (i + 1) + '</span>' +
-          mediaHtml(s.media, it.title + ' — चित्र ' + (i + 1)) +
+          mediaHtml(s.media, altBase + ' — चित्र ' + (i + 1)) +
           (s.caption ? '<p class="nt-cap">' + esc(s.caption) + '</p>' : '') + '</div>';
       }).join('') + '</div>';
     }
@@ -203,9 +221,10 @@
       case 'revision':
         inner = '<h3>' + esc(it.title) + '</h3>' + paraHtml(it.content) + pointsHtml(it.points) + inlineDiagramHtml(it); break;
       case 'oneLiners':
+        inner = '<p class="nt-q">प्र. ' + X.rich(it.question) + '</p><div class="nt-a">' + paraHtml(it.answer) + '</div>'; break;
       case 'shortAnswers':
       case 'longAnswers':
-        inner = '<p class="nt-q">प्र. ' + X.rich(it.question) + '</p><div class="nt-a">' + paraHtml(it.answer) + '</div>'; break;
+        inner = '<p class="nt-q">प्र. ' + X.rich(it.question) + '</p><div class="nt-a">' + paraHtml(it.answer) + '</div>' + inlineDiagramHtml(it); break;
       case 'definitions':
         inner = '<p><span class="nt-term">' + X.rich(it.term) + '</span></p>' + paraHtml(it.definition); break;
       case 'formulas':

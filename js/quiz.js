@@ -12,6 +12,8 @@
   var Q = { active: null };
   var finishing = false;
   function esc(s) { return M.App.esc(s); }
+  // Formula ($...$) अब Chapter Quiz में भी दिखेगा — KaTeX न हो तो सामान्य Text जैसा ही दिखता है, कुछ टूटता नहीं
+  function rich(s) { return (M.Extras && M.Extras.rich) ? M.Extras.rich(s) : esc(s); }
 
   Q.restore = function () { Q.active = M.Storage.state.activeQuiz || null; };
 
@@ -88,7 +90,7 @@
       '<span class="chip src src-' + esc(q.source.toLowerCase()) + '">' + esc(q.source) + '</span>' +
       '<span class="quiz-timer" id="quizTimer">⏱ ' + M.App.fmtTime(a.elapsed) + '</span></div>' +
       '<div class="progress"><span style="width:' + Math.round(done * 100 / total) + '%"></span></div>' +
-      '<div class="card q-card"><p class="q-text">' + esc(q.question) + '</p></div><div class="options">';
+      '<div class="card q-card"><p class="q-text">' + rich(q.question) + '</p>' + (M.Extras && M.Extras.questionMediaHtml ? M.Extras.questionMediaHtml(q) : '') + '</div><div class="options">';
     ['A', 'B', 'C', 'D'].forEach(function (L) {
       var cls = 'opt';
       if (ans) {
@@ -97,14 +99,14 @@
         else cls += ' dim';
       }
       html += '<button class="' + cls + '" data-action="answer" data-opt="' + L + '"' + (ans ? ' disabled' : '') + '>' +
-        '<span class="opt-key">' + L + '</span><span class="opt-text">' + esc(q.options[L]) + '</span></button>';
+        '<span class="opt-key">' + L + '</span><span class="opt-text">' + rich(q.options[L]) + '</span></button>';
     });
     html += '</div>';
     if (ans) {
       html += '<div class="feedback ' + (ans.correct ? 'ok' : 'bad') + '" role="status">' +
         '<strong>' + (ans.correct ? '✅ सही जवाब!' : '❌ गलत जवाब') + '</strong>' +
-        (ans.correct ? '' : '<p>सही उत्तर: <b>' + q.answer + ') ' + esc(q.options[q.answer]) + '</b></p>') +
-        '<p class="expl">' + esc(q.explanation || 'व्याख्या उपलब्ध नहीं है।') + '</p></div>';
+        (ans.correct ? '' : '<p>सही उत्तर: <b>' + q.answer + ') ' + rich(q.options[q.answer]) + '</b></p>') +
+        '<p class="expl">' + rich(q.explanation || 'व्याख्या उपलब्ध नहीं है।') + '</p></div>';
     } else {
       html += '<p class="muted small center">एक विकल्प चुनो, फिर सही जवाब और explanation दिखेगा।</p>';
     }
@@ -136,10 +138,17 @@
         title: 'Quiz', back: '/home', tab: 'subjects', ctx: 'quiz'
       };
     }
-    return {
-      html: '<section class="page"><div id="quizBody">' + bodyHtml() + '</div></section>',
-      title: 'Quiz', sub: a.title, backAction: 'quiz-leave', tab: 'subjects', ctx: 'quiz'
-    };
+    var meta = { title: 'Quiz', sub: a.title, backAction: 'quiz-leave', tab: 'subjects', ctx: 'quiz' };
+    if (!M.Extras || !M.Extras.ensureMathFor) {
+      meta.html = '<section class="page"><div id="quizBody">' + bodyHtml() + '</div></section>';
+      return meta;
+    }
+    // Formula ($...$) के लिए KaTeX तैयार करके ही दिखाओ; देर से आए तो Page अपने-आप ठीक हो जाएगा
+    return M.Extras.ensureMathFor(a.questions).then(function (mathOk) {
+      if (!mathOk) M.Extras.onMathReady(function () { if (M.Router.currentPath === '/quiz') M.Router.refresh(true); });
+      meta.html = '<section class="page"><div id="quizBody">' + bodyHtml() + '</div></section>';
+      return meta;
+    });
   };
 
   /* ---------- Quiz की actions ---------- */
@@ -305,10 +314,10 @@
       shown += 1;
       html += '<article class="card review ' + (ok ? 'ok' : 'bad') + '"><div class="mk-head"><span class="chip">प्रश्न ' + (i + 1) + '</span>' +
         '<span class="chip ' + (ok ? 'ok' : 'bad') + '">' + (ok ? 'सही' : 'गलत') + '</span></div>' +
-        '<p class="q-text">' + esc(q.question) + '</p>' +
-        '<p class="ans ' + (ok ? 'ok' : 'bad') + '">तुम्हारा उत्तर: ' + esc(r.chosen ? r.chosen + ') ' + q.options[r.chosen] : '—') + '</p>' +
-        (ok ? '' : '<p class="ans ok">सही उत्तर: ' + esc(q.answer + ') ' + q.options[q.answer]) + '</p>') +
-        '<p class="expl">' + esc(q.explanation || 'व्याख्या उपलब्ध नहीं है।') + '</p></article>';
+        '<p class="q-text">' + rich(q.question) + '</p>' + (M.Extras && M.Extras.questionMediaHtml ? M.Extras.questionMediaHtml(q) : '') +
+        '<p class="ans ' + (ok ? 'ok' : 'bad') + '">तुम्हारा उत्तर: ' + rich(r.chosen ? r.chosen + ') ' + q.options[r.chosen] : '—') + '</p>' +
+        (ok ? '' : '<p class="ans ok">सही उत्तर: ' + rich(q.answer + ') ' + q.options[q.answer]) + '</p>') +
+        '<p class="expl">' + rich(q.explanation || 'व्याख्या उपलब्ध नहीं है।') + '</p></article>';
     });
     if (!shown) html += '<div class="empty ok-box"><p>👏 कोई गलत जवाब नहीं — पूरा सही!</p></div>';
     html += '</section>';
