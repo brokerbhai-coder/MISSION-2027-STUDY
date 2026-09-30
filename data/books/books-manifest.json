@@ -1,4 +1,95 @@
 {
   "_help": "हर किताब के लिए एक entry: {\"id\":\"atomic-habits\",\"title\":\"...\",\"author\":\"...\",\"file\":\"data/books/atomic-habits.json\"}। नमूना: AI-PROMPT-BOOKS-SUMMARY.md",
-  "books": []
+  "books": [
+    {
+      "id": "atomic-habits-part-1",
+      "title": "Atomic Habits - Part 1 (बुनियादी नियम एवं पहचान आधारित आदतें)",
+      "author": "James Clear",
+      "file": "data/books/atomic-habits-part-1.json"
+    },
+    {
+      "id": "atomic-habits-part-2",
+      "title": "Atomic Habits - Part 2 (पहला नियम: इसे स्पष्ट बनाएँ)",
+      "author": "James Clear",
+      "file": "data/books/atomic-habits-part-2.json"
+    },
+    {
+      "id": "atomic-habits-part-3",
+      "title": "Atomic Habits - Part 3 (दूसरा नियम: इसे आकर्षक बनाएँ)",
+      "author": "James Clear",
+      "file": "data/books/atomic-habits-part-3.json"
+    },
+    {
+      "id": "atomic-habits-part-4",
+      "title": "Atomic Habits - Part 4 (तीसरा नियम: इसे आसान बनाएँ)",
+      "author": "James Clear",
+      "file": "data/books/atomic-habits-part-4.json"
+    },
+    {
+      "id": "atomic-habits-part-5",
+      "title": "Atomic Habits - Part 5 (चौथा नियम: इसे संतोषजनक बनाएँ)",
+      "author": "James Clear",
+      "file": "data/books/atomic-habits-part-5.json"
+    },
+    {
+      "id": "atomic-habits-part-6",
+      "title": "Atomic Habits - Part 6 (उन्नत तकनीकें एवं निरंतर सुधार)",
+      "author": "James Clear",
+      "file": "data/books/atomic-habits-part-6.json"
+    },
+    {
+      "id": "deep-work-part-1",
+      "title": "Deep Work - Part 1 (एकाग्रता का विज्ञान एवं आर्थिक मूल्य)",
+      "author": "Cal Newport",
+      "file": "data/books/deep-work-part-1.json"
+    },
+    {
+      "id": "deep-work-part-2",
+      "title": "Deep Work - Part 2 (गहन कार्य की दुर्लभता और भटकाव का अर्थशास्त्र)",
+      "author": "Cal Newport",
+      "file": "data/books/deep-work-part-2.json"
+    },
+    {
+      "id": "deep-work-part-3",
+      "title": "Deep Work - Part 3 (गहन कार्य की सार्थकता — तंत्रिका विज्ञान, मनोविज्ञान और दर्शन)",
+      "author": "Cal Newport",
+      "file": "data/books/deep-work-part-3.json"
+    },
+    {
+      "id": "deep-work-part-4",
+      "title": "Deep Work - Part 4 (नियम 1: गहन कार्य के चार शेड्यूलिंग दर्शन)",
+      "author": "Cal Newport",
+      "file": "data/books/deep-work-part-4.json"
+    },
+    {
+      "id": "deep-work-part-5",
+      "title": "Deep Work - Part 5 (नियम 1: गहन कार्य के अनुष्ठान, 4DX और शटडाउन प्रणाली)",
+      "author": "Cal Newport",
+      "file": "data/books/deep-work-part-5.json"
+    },
+    {
+      "id": "deep-work-part-6",
+      "title": "Deep Work - Part 6 (नियम 2: बोरियत को अपनाना और एकाग्रता का कड़ा प्रशिक्षण)",
+      "author": "Cal Newport",
+      "file": "data/books/deep-work-part-6.json"
+    },
+    {
+      "id": "deep-work-part-7",
+      "title": "Deep Work - Part 7 (नियम 3: सोशल मीडिया को अलविदा कहें)",
+      "author": "Cal Newport",
+      "file": "data/books/deep-work-part-7.json"
+    },
+    {
+      "id": "deep-work-part-8",
+      "title": "Deep Work - Part 8 (नियम 4: उथले काम को घटाना और समय का कड़ा नियंत्रण)",
+      "author": "Cal Newport",
+      "file": "data/books/deep-work-part-8.json"
+    },
+    {
+      "id": "deep-work-part-9",
+      "title": "Deep Work - Part 9 (नियम 4 भाग ख एवं निष्कर्ष — ईमेल नियंत्रण और गहन जीवन का संकल्प)",
+      "author": "Cal Newport",
+      "file": "data/books/deep-work-part-9.json"
+    }
+  ]
 }
