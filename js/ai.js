@@ -17,7 +17,7 @@
   'use strict';
 
   var AI = {};
-  var DEFAULT_MODEL = 'gemini-2.0-flash';
+  var DEFAULT_MODEL = 'gemini-3.8-flash';
   var session = []; // { role: 'user'|'model', text }
   var pendingPrompt = null; // Notes/Mistakes से "AI से समझाओ" दबाने पर यहाँ भर जाता है
 
