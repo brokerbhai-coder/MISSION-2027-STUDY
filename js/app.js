@@ -247,6 +247,10 @@
       '<p class="muted small">भूलभुलैया पार करो — बीच-बीच में GK Quiz भी हल करनी होगी।</p>' +
       '<a class="btn small" href="games/brutal-brain-maze/index.html">Game खेलो</a></div>';
 
+    html += '<div class="card"><div class="kv"><span>🤖 AI से पूछो</span><b>' + (M.AI && M.AI.hasKey() ? 'तैयार' : 'Setup करो') + '</b></div>' +
+      '<p class="muted small">कोई Doubt पूछो, किसी Chapter को आसान भाषा में समझो, या गलत हुए Question की Explanation विस्तार से लो।</p>' +
+      '<button class="btn small" data-action="nav" data-to="/ai">AI से पूछो</button></div>';
+
     html += '<h2 class="sec-title">कमज़ोर Topics</h2>' + M.Progress.weakHtml();
 
     var ach = M.Rewards.achievements();
@@ -310,6 +314,11 @@
       '<option value="science"' + (st.stream === 'science' ? ' selected' : '') + '>🔬 Science</option>' +
       '</select></label><button class="btn" data-action="save-stream">सेव करो</button></div>';
 
+    html += '<div class="card"><h3 class="card-title">🤖 AI Setup</h3>' +
+      '<p class="muted small">"AI से पूछो" के लिए मुफ़्त Gemini API Key। <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">यहाँ से बनाओ</a>। यह Key सिर्फ़ तुम्हारे इस Phone/Browser में रहती है।</p>' +
+      '<label class="field"><span>Gemini API Key</span><input id="aiKeySettings" type="password" placeholder="AIza..." value="' + esc(M.AI && M.AI.hasKey() ? '••••••••' : '') + '" autocomplete="off"></label>' +
+      '<button class="btn" data-action="save-ai-key">सेव करो</button></div>';
+
     html += '<div class="card"><h3 class="card-title">💾 Backup (Export / Import)</h3>' +
       '<p class="muted small">तुम्हारा progress सिर्फ़ इसी phone के इसी browser में सेव है। यह अपने-आप दूसरे फ़ोन/browser में नहीं जाता। इसलिए बीच-बीच में Backup ले लो।</p>' +
       '<div class="btn-stack"><button class="btn" data-action="export-backup">⬇️ Backup file डाउनलोड करो</button>' +
@@ -357,6 +366,17 @@
   A['retry-mistakes'] = function (el) {
     M.Mistakes.startRetry({ subject: el.dataset.subject || '', chapter: parseInt(el.dataset.chapter, 10) || 0 });
   };
+  A['ai-explain-mistake'] = function (el) {
+    var id = el.dataset.id;
+    var m = M.Mistakes.list({}).filter(function (x) { return x.id === id; })[0];
+    if (!m) return;
+    var prompt = 'मुझे यह सवाल समझाओ, मैंने गलत जवाब दिया था:\n\n' + m.question + '\n\n' +
+      Object.keys(m.options || {}).map(function (L) { return L + ') ' + m.options[L]; }).join('\n') +
+      '\n\nसही उत्तर: ' + m.answer + ') ' + (m.options ? m.options[m.answer] : '') +
+      (m.wrong ? ('\nमैंने चुना था: ' + m.wrong + ') ' + (m.options ? m.options[m.wrong] : '')) : '') +
+      '\n\nकृपया बताओ कि सही उत्तर क्यों सही है, और मेरी गलती कहाँ हुई — आसान हिंदी में समझाओ।';
+    M.AI.askAbout(prompt);
+  };
   A['resume-quiz'] = function () { M.Router.go('/quiz'); };
   A['discard-active'] = function () {
     App.confirm('Quiz रद्द करें?', 'अधूरा Quiz हट जाएगा। इसका कोई XP/score नहीं मिलेगा।', 'हाँ, रद्द करो', true).then(function (yes) {
@@ -389,6 +409,15 @@
     M.Storage.save();
     M.App.toast('सेव हो गया ✅', 'success');
     M.Router.refresh(true);
+  };
+
+  A['save-ai-key'] = function () {
+    var v = ($('aiKeySettings').value || '').trim();
+    if (v === '••••••••') { M.Router.go('/settings'); return; } // नहीं बदला, जैसा था वैसा रहने दो
+    if (!v) { M.App.toast('Key खाली नहीं हो सकती', 'error'); return; }
+    M.AI.saveSettings(v, (M.Extras.store().ai || {}).model);
+    M.App.toast('AI Key सेव हो गई ✅', 'success');
+    M.Router.go('/settings');
   };
 
   A['save-stream'] = function () {
@@ -520,6 +549,7 @@
     R.add('/progress', M.Progress.viewProgress);
     R.add('/game', M.Games.view);
     R.add('/settings', viewSettings);
+    R.add('/ai', M.AI.view);
   }
 
   function missedDayToast() {

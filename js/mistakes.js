@@ -130,6 +130,7 @@
         '<p class="ans bad">❌ तुम्हारा उत्तर: ' + (m.wrong ? rich(m.wrong + ') ' + (m.options[m.wrong] || '')) : '—') + '</p>' +
         '<p class="ans ok">✅ सही उत्तर: ' + rich(m.answer + ') ' + m.options[m.answer]) + '</p>' +
         '<p class="expl">' + rich(m.explanation || 'व्याख्या उपलब्ध नहीं है।') + '</p>' +
+        (M.AI ? '<button class="btn small ghost" type="button" data-action="ai-explain-mistake" data-id="' + esc(m.id) + '">🤖 AI से विस्तार से समझो</button>' : '') +
         '<small class="muted">' + m.count + ' बार गलत · आख़िरी: ' + esc(M.App.fmtDate(m.lastDate)) + ' · ID: ' + esc(m.id) + '</small></article>';
     });
     if (shown.length > 100) html += '<p class="muted small center">सिर्फ़ पहली 100 गलतियाँ दिखाई गई हैं।</p>';

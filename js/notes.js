@@ -324,7 +324,8 @@
         var keys = CATS.filter(function (c) { return L.cats[c.key]; });
         ui.cat = keys[0].key;
         ui.text = '';
-        var html = '<div class="card nt-head"><span class="chip x-new">नया · Notes</span><h2>' + esc(label) + '</h2><p class="muted small">' + esc(L.title || s.nameHi) + ' · कुल ' + L.count + ' आइटम</p></div>';
+        var html = '<div class="card nt-head"><span class="chip x-new">नया · Notes</span><h2>' + esc(label) + '</h2><p class="muted small">' + esc(L.title || s.nameHi) + ' · कुल ' + L.count + ' आइटम</p>' +
+          (M.AI ? '<button class="btn small ghost" type="button" data-action="ai-explain-chapter" data-subject="' + esc(s.id) + '" data-chapter="' + esc(no) + '" data-title="' + esc(L.title || label) + '">🤖 AI से आसान भाषा में समझो</button>' : '') + '</div>';
         html += '<div class="chips scroll" id="ntChips">' + keys.map(function (c, i) {
           return '<button class="chip-btn' + (i === 0 ? ' on' : '') + '" data-action="nt-cat" data-cat="' + c.key + '">' + c.icon + ' ' + esc(c.label) + ' (' + L.cats[c.key].length + ')</button>';
         }).join('') + '</div>';
@@ -377,6 +378,11 @@
   }
 
   X.onReady(function (A) {
+    A['ai-explain-chapter'] = function (el) {
+      var sName = M.Subjects.subjectName ? M.Subjects.subjectName(el.dataset.subject) : el.dataset.subject;
+      var prompt = 'मुझे "' + sName + '" विषय के "' + el.dataset.title + '" (अध्याय ' + el.dataset.chapter + ') को आसान हिंदी में, सरल उदाहरणों के साथ समझाओ — जैसे किसी कक्षा 12 के विद्यार्थी को समझाया जाता है।';
+      M.AI.askAbout(prompt);
+    };
     A['nt-cat'] = function (el) {
       ui.cat = el.dataset.cat;
       var chips = document.querySelectorAll('#ntChips .chip-btn');
