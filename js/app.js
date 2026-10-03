@@ -154,20 +154,28 @@
      HOME DASHBOARD
      ========================================================== */
   function reminderHtml() {
+    var html = '';
     var st = M.Storage.state;
     var last = st.lastStudyDate;
-    if (!last) return '';
-    var today = M.Storage.todayStr();
-    var diff = M.Storage.dayDiff(today, last);
-    var name = esc(st.student.name);
-    if (diff >= 2) {
-      var when = diff === 2 ? 'कल' : 'पिछले ' + (diff - 1) + ' दिन';
-      return '<div class="banner warn">अरे ' + name + ' भाई! ' + when + ' पढ़ाई से छुट्टी मार ली थी क्या? 😄 कोई बात नहीं, आज फिर शुरुआत करते हैं!</div>';
+    if (last) {
+      var today = M.Storage.todayStr();
+      var diff = M.Storage.dayDiff(today, last);
+      var name = esc(st.student.name);
+      if (diff >= 2) {
+        var when = diff === 2 ? 'कल' : 'पिछले ' + (diff - 1) + ' दिन';
+        html += '<div class="banner warn">अरे ' + name + ' भाई! ' + when + ' पढ़ाई से छुट्टी मार ली थी क्या? 😄 कोई बात नहीं, आज फिर शुरुआत करते हैं!</div>';
+      } else if (diff === 1 && M.Timer.todaySeconds() < 60) {
+        html += '<div class="banner info">कल तुमने पढ़ाई की थी 👏 आज भी थोड़ी पढ़ाई करके अपनी streak बचा लो!</div>';
+      }
     }
-    if (diff === 1 && M.Timer.todaySeconds() < 60) {
-      return '<div class="banner info">कल तुमने पढ़ाई की थी 👏 आज भी थोड़ी पढ़ाई करके अपनी streak बचा लो!</div>';
+    // 7 दिन से बिना सुधरी पड़ी गलतियाँ — याद दिला दो
+    if (M.Mistakes && M.Mistakes.staleList) {
+      var stale = M.Mistakes.staleList(7);
+      if (stale.length) {
+        html += '<div class="banner warn">📒 इन <b>' + stale.length + '</b> पुरानी गलतियों को सुधारो — 7+ दिन से बाकी हैं। <button class="btn small ghost" type="button" data-action="nav" data-to="/mistakes">अभी देखो</button></div>';
+      }
     }
-    return '';
+    return html;
   }
 
   function continueHtml() {
@@ -319,7 +327,8 @@
       '<label class="field"><span>Gemini API Key</span><input id="aiKeySettings" type="password" placeholder="AIza..." value="' + esc(M.AI && M.AI.hasKey() ? '••••••••' : '') + '" autocomplete="off"></label>' +
       '<label class="field"><span>Model का नाम</span><input id="aiModelSettings" type="text" placeholder="gemini-2.0-flash" value="' + esc(M.AI ? M.AI.getModel() : '') + '" autocomplete="off"></label>' +
       '<p class="muted small">Google कभी नया Model Free करे तो यहीं नाम बदल दो — Code बदलवाने की ज़रूरत नहीं।</p>' +
-      '<button class="btn" data-action="save-ai-key">सेव करो</button></div>';
+      '<button class="btn" data-action="save-ai-key">सेव करो</button>' +
+      (M.AI && M.AI.hasKey() ? '<button class="btn ghost small" type="button" style="margin-top:8px" data-action="nav" data-to="/ai-quiz-maker">📋 Text से Quiz बनाओ (सिर्फ़ आपके लिए)</button>' : '') + '</div>';
 
     html += '<div class="card"><h3 class="card-title">💾 Backup (Export / Import)</h3>' +
       '<p class="muted small">तुम्हारा progress सिर्फ़ इसी phone के इसी browser में सेव है। यह अपने-आप दूसरे फ़ोन/browser में नहीं जाता। इसलिए बीच-बीच में Backup ले लो।</p>' +
@@ -553,6 +562,7 @@
     R.add('/game', M.Games.view);
     R.add('/settings', viewSettings);
     R.add('/ai', M.AI.view);
+    R.add('/ai-quiz-maker', M.AI.makerView);
   }
 
   function missedDayToast() {

@@ -21,6 +21,7 @@
       options: q.options, answer: q.answer, explanation: q.explanation, source: q.source, type: q.type,
       wrong: chosen,
       count: (prev ? prev.count : 0) + 1,
+      firstDate: prev && prev.firstDate ? prev.firstDate : M.Storage.todayStr(), // पहली बार कब गलती हुई — 7-दिन Reminder के लिए
       lastDate: M.Storage.todayStr(),
       resolved: false
     };
@@ -34,9 +35,8 @@
     var st = M.Storage.state;
     var m = st.mistakes[q.id];
     if (m && !m.resolved) {
-      m.resolved = true;
-      m.lastDate = M.Storage.todayStr();
       st.stats.mistakesFixed += 1;
+      delete st.mistakes[q.id]; // सुधर गई गलती पूरी तरह हटा दो — Storage हल्का रहे
     }
   };
 
@@ -55,6 +55,16 @@
 
   Mk.unresolvedCount = function (subject, chapter) {
     return Mk.list({ subject: subject, chapter: chapter }).filter(function (m) { return !m.resolved; }).length;
+  };
+
+  // 7 दिन से बिना सुधरी पड़ी गलतियाँ — Home पर Reminder दिखाने के लिए
+  Mk.staleList = function (days) {
+    var limit = days || 7;
+    var today = M.Storage.todayStr();
+    return Mk.list({}).filter(function (m) {
+      if (m.resolved || !m.firstDate) return false;
+      return M.Storage.dayDiff(today, m.firstDate) >= limit;
+    });
   };
 
   // बाकी गलतियों से एक retry Quiz शुरू करो

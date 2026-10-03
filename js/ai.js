@@ -74,6 +74,25 @@
     });
   };
 
+  /* ---------- Text से Quiz JSON बनाने वाला Tool (सिर्फ़ आपके लिए, Students के लिए नहीं) ---------- */
+  var makerOutput = '';
+  var lastMk = { subject: '', chapter: '', text: '' };
+  AI.makerView = function () {
+    if (!store().key) return AI.view(); // पहले Key Setup करनी होगी
+    var html = '<section class="page ai-page"><div class="card"><h3 class="card-title">📋 Text से Quiz बनाओ</h3>' +
+      '<p class="muted small">कोई भी Text Paste करो (चाहे जैसा भी लिखा हो) — AI उसे सही JSON Format में बदल देगा। नीचे से Copy करके अपनी Chapter/Practice File में डाल दो।</p>' +
+      '<label class="field"><span>Subject ID</span><input id="mkSubject" type="text" placeholder="जैसे: physics, history" value="' + esc(lastMk.subject) + '"></label>' +
+      '<label class="field"><span>Chapter नंबर</span><input id="mkChapter" type="number" placeholder="जैसे: 5" value="' + esc(lastMk.chapter) + '"></label>' +
+      '<label class="field"><span>Text Paste करो</span><textarea id="mkText" rows="8" placeholder="यहाँ सवाल/जानकारी Paste करो...">' + esc(lastMk.text) + '</textarea></label>' +
+      '<button class="btn block" type="button" data-action="ai-make-quiz">AI से JSON बनाओ</button></div>';
+    if (makerOutput) {
+      html += '<div class="card"><h3 class="card-title">नतीजा</h3><textarea id="mkOutput" rows="14" readonly>' + esc(makerOutput) + '</textarea>' +
+        '<button class="btn small ghost" type="button" data-action="ai-copy-quiz" style="margin-top:8px">📋 Copy करो</button></div>';
+    }
+    html += '</section>';
+    return { html: html, title: '📋 Text से Quiz बनाओ', back: '/settings', tab: 'settings', ctx: 'ai' };
+  };
+
   /* ---------- Notes/Mistakes से सीधे यहाँ भेजने के लिए ---------- */
   AI.askAbout = function (prompt) {
     pendingPrompt = prompt;
@@ -142,6 +161,32 @@
       AI.saveSettings(v, mv);
       M.App.toast('Save हो गया ✅', 'success');
       M.Router.refresh(true);
+    };
+    A['ai-make-quiz'] = function () {
+      var subject = (document.getElementById('mkSubject').value || '').trim();
+      var chapter = (document.getElementById('mkChapter').value || '').trim();
+      var text = (document.getElementById('mkText').value || '').trim();
+      if (!text) { M.App.toast('पहले Text Paste करो', 'error'); return; }
+      lastMk = { subject: subject, chapter: chapter, text: text };
+      var schemaPrompt = 'नीचे दिए Text से MISSION 2027 Website के लिए Objective Quiz Questions बनाओ। सिर्फ़ नीचे दिए JSON Format में जवाब दो — कोई अतिरिक्त बात, कोई Markdown Code-Fence (```),  कुछ और मत लिखो, सिर्फ़ Valid JSON:\n\n' +
+        '{\n  "questions": [\n    { "id": "' + (subject || 'subject') + '-' + (chapter || '1') + '-q1", "subject": "' + (subject || 'subject-id') + '", "chapter": ' + (parseInt(chapter, 10) || 1) + ', "question": "...", "options": {"A":"...","B":"...","C":"...","D":"..."}, "answer": "A", "explanation": "...", "source": "AI", "type": "objective" }\n  ]\n}\n\n' +
+        'नियम:\n- सिर्फ़ उसी जानकारी से सवाल बनाओ जो नीचे Text में दी गई है, अपनी तरफ़ से नया Fact मत जोड़ो।\n- हर Question का "id" अलग-अलग हो (q1, q2, q3...)।\n- "answer" सिर्फ़ A/B/C/D में से एक अक्षर हो।\n- जितने भी अच्छे Objective Question बन सकें, सारे बनाओ।\n\nText:\n' + text;
+      makerOutput = '…बन रहा है';
+      M.Router.refresh(true);
+      AI.ask(schemaPrompt).then(function (reply) {
+        makerOutput = reply.replace(/^```(json)?/i, '').replace(/```$/, '').trim();
+        M.Router.refresh(true);
+      }).catch(function (err) {
+        makerOutput = '⚠️ Error: ' + (err && err.message ? err.message : 'कुछ गड़बड़ हुई');
+        M.Router.refresh(true);
+      });
+    };
+    A['ai-copy-quiz'] = function () {
+      var ta = document.getElementById('mkOutput');
+      if (!ta) return;
+      ta.select();
+      try { document.execCommand('copy'); M.App.toast('Copy हो गया ✅', 'success'); }
+      catch (e) { M.App.toast('Copy नहीं हो पाया, खुद Select करके Copy करो', 'warn'); }
     };
     A['ai-send'] = function () {
       var inp = document.getElementById('aiInput');

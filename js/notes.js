@@ -226,7 +226,7 @@
       case 'longAnswers':
         inner = '<p class="nt-q">प्र. ' + X.rich(it.question) + '</p><div class="nt-a">' + paraHtml(it.answer) + '</div>' + inlineDiagramHtml(it); break;
       case 'definitions':
-        inner = '<p><span class="nt-term">' + X.rich(it.term) + '</span></p>' + paraHtml(it.definition); break;
+        inner = '<p>' + (M.AI ? '<button type="button" class="nt-term nt-term-tap" data-action="ai-explain-term" data-term="' + esc(it.term) + '" data-def="' + esc((it.definition || []).join(' ')) + '">' + X.rich(it.term) + ' 🤖</button>' : '<span class="nt-term">' + X.rich(it.term) + '</span>') + '</p>' + paraHtml(it.definition); break;
       case 'formulas':
         inner = '<h3>' + X.rich(it.name) + '</h3><div class="nt-formula">' + X.rich(it.formula) + '</div>' + paraHtml(it.meaning) + (it.unit ? '<p class="muted small">मात्रक / Unit: ' + X.rich(it.unit) + '</p>' : '') + examplesHtml(it.examples); break;
       case 'diagrams':
@@ -378,6 +378,11 @@
   }
 
   X.onReady(function (A) {
+    A['ai-explain-term'] = function (el) {
+      var term = el.dataset.term, def = el.dataset.def;
+      var prompt = '"' + term + '" को विस्तार से समझाओ — ' + (def ? 'अभी इतना पता है: "' + def + '"। इसे और आसान उदाहरणों, महत्व और संबंधित बातों के साथ और गहराई से समझाओ।' : 'आसान उदाहरणों के साथ समझाओ।');
+      M.AI.askAbout(prompt);
+    };
     A['ai-explain-chapter'] = function (el) {
       var sName = M.Subjects.subjectName ? M.Subjects.subjectName(el.dataset.subject) : el.dataset.subject;
       var prompt = 'मुझे "' + sName + '" विषय के "' + el.dataset.title + '" (अध्याय ' + el.dataset.chapter + ') को आसान हिंदी में, सरल उदाहरणों के साथ समझाओ — जैसे किसी कक्षा 12 के विद्यार्थी को समझाया जाता है।';
