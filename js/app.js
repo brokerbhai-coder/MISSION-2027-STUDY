@@ -317,6 +317,8 @@
     html += '<div class="card"><h3 class="card-title">🤖 AI Setup</h3>' +
       '<p class="muted small">"AI से पूछो" के लिए मुफ़्त Gemini API Key। <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">यहाँ से बनाओ</a>। यह Key सिर्फ़ तुम्हारे इस Phone/Browser में रहती है।</p>' +
       '<label class="field"><span>Gemini API Key</span><input id="aiKeySettings" type="password" placeholder="AIza..." value="' + esc(M.AI && M.AI.hasKey() ? '••••••••' : '') + '" autocomplete="off"></label>' +
+      '<label class="field"><span>Model का नाम</span><input id="aiModelSettings" type="text" placeholder="gemini-2.0-flash" value="' + esc(M.AI ? M.AI.getModel() : '') + '" autocomplete="off"></label>' +
+      '<p class="muted small">Google कभी नया Model Free करे तो यहीं नाम बदल दो — Code बदलवाने की ज़रूरत नहीं।</p>' +
       '<button class="btn" data-action="save-ai-key">सेव करो</button></div>';
 
     html += '<div class="card"><h3 class="card-title">💾 Backup (Export / Import)</h3>' +
@@ -413,10 +415,11 @@
 
   A['save-ai-key'] = function () {
     var v = ($('aiKeySettings').value || '').trim();
-    if (v === '••••••••') { M.Router.go('/settings'); return; } // नहीं बदला, जैसा था वैसा रहने दो
-    if (!v) { M.App.toast('Key खाली नहीं हो सकती', 'error'); return; }
-    M.AI.saveSettings(v, (M.Extras.store().ai || {}).model);
-    M.App.toast('AI Key सेव हो गई ✅', 'success');
+    var mv = ($('aiModelSettings').value || '').trim();
+    var keyUnchanged = v === '••••••••'; // Mask जस का तस है — मतलब Key नहीं बदली
+    if (!keyUnchanged && !v) { M.App.toast('Key खाली नहीं हो सकती', 'error'); return; }
+    M.AI.saveSettings(keyUnchanged ? (M.Extras.store().ai || {}).key : v, mv);
+    M.App.toast('AI Setting सेव हो गई ✅', 'success');
     M.Router.go('/settings');
   };
 

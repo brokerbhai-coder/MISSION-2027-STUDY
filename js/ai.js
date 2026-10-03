@@ -17,7 +17,7 @@
   'use strict';
 
   var AI = {};
-  var DEFAULT_MODEL = 'gemini-3.8-flash';
+  var DEFAULT_MODEL = 'gemini-2.0-flash';
   var session = []; // { role: 'user'|'model', text }
   var pendingPrompt = null; // Notes/Mistakes से "AI से समझाओ" दबाने पर यहाँ भर जाता है
 
@@ -32,6 +32,7 @@
   }
 
   AI.hasKey = function () { return !!store().key; };
+  AI.getModel = function () { return store().model; };
 
   AI.saveSettings = function (key, model) {
     var s = store();
@@ -39,6 +40,16 @@
     s.model = (model || '').trim() || DEFAULT_MODEL;
     X().save();
   };
+
+  // AI के जवाब में Markdown (### Heading, * Bullet) होता है, जो X.rich() अकेले नहीं समझता (वो सिर्फ़
+  // $...$ Formula और **bold** समझता है) — यहाँ पहले Heading/Bullet को उसी **bold**/• रूप में बदल देते हैं,
+  // फिर बाकी काम (Formula + Bold + Line-break) X.rich() खुद कर देता है।
+  function aiRich(raw) {
+    var s = String(raw == null ? '' : raw);
+    s = s.replace(/^#{1,6}\s*(.+)$/gm, '**$1**');
+    s = s.replace(/^\s*[*-]\s+/gm, '• ');
+    return X().rich(s);
+  }
 
   /* ---------- असली API Call ---------- */
   AI.ask = function (prompt) {
@@ -78,6 +89,8 @@
       html += '<div class="card"><h3 class="card-title">🤖 AI से पूछो — पहले Setup करो</h3>' +
         '<p class="muted small">यह Feature चलाने के लिए एक मुफ़्त Gemini API Key चाहिए। <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">यहाँ से बनाओ</a> (Google Account से 1 मिनट में बन जाती है), फिर नीचे Paste कर दो।</p>' +
         '<label class="field"><span>Gemini API Key</span><input id="aiKeyInput" type="password" placeholder="AIza..." autocomplete="off"></label>' +
+        '<label class="field"><span>Model का नाम</span><input id="aiModelInput" type="text" placeholder="' + esc(DEFAULT_MODEL) + '" value="' + esc(s.model) + '" autocomplete="off"></label>' +
+        '<p class="muted small">Model का सही नाम नहीं पता तो खाली छोड़ दो, यही (' + esc(DEFAULT_MODEL) + ') चलेगा। आगे कभी Google कोई नया/बेहतर Model Free कर दे, तो यहीं बदल सकते हो — मुझसे Code बदलवाने की ज़रूरत नहीं।</p>' +
         '<button class="btn block" type="button" data-action="ai-save-key">Save करके शुरू करो</button>' +
         '<p class="muted small" style="margin-top:8px">यह Key सिर्फ़ तुम्हारे इसी Phone/Browser में Save रहती है — कहीं और नहीं जाती।</p></div>';
       html += '</section>';
@@ -93,6 +106,10 @@
     return {
       html: html, title: '🤖 AI से पूछो', back: '/home', tab: 'home', ctx: 'ai',
       after: function () {
+        // Formula ($...$) के लिए KaTeX पहले से लोड करवा दो (जवाब आने तक अक्सर तैयार हो जाती है)
+        X().ensureMath().then(function (ok) {
+          if (!ok) X().onMathReady(function () { if (M.Router.currentPath === '/ai') M.Router.refresh(true); });
+        });
         var box = document.getElementById('aiChat');
         if (box) box.scrollTop = box.scrollHeight;
         var inp = document.getElementById('aiInput');
@@ -112,7 +129,7 @@
       return '<div class="empty"><p>👋 कुछ भी पूछो — किसी Chapter को आसान भाषा में समझने को कहो, कोई Doubt पूछो, या कोई Question हल करने को कहो।</p></div>';
     }
     return session.map(function (m) {
-      return '<div class="ai-msg ai-' + m.role + '">' + (m.role === 'user' ? esc(m.text) : X().rich(m.text)) + '</div>';
+      return '<div class="ai-msg ai-' + m.role + '">' + (m.role === 'user' ? esc(m.text) : aiRich(m.text)) + '</div>';
     }).join('');
   }
 
@@ -120,8 +137,9 @@
   X().onReady(function (A) {
     A['ai-save-key'] = function () {
       var v = (document.getElementById('aiKeyInput') || {}).value || '';
+      var mv = (document.getElementById('aiModelInput') || {}).value || '';
       if (!v.trim()) { M.App.toast('Key डालना ज़रूरी है', 'error'); return; }
-      AI.saveSettings(v, store().model);
+      AI.saveSettings(v, mv);
       M.App.toast('Save हो गया ✅', 'success');
       M.Router.refresh(true);
     };

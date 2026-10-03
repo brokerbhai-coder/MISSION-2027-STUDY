@@ -287,6 +287,8 @@
           if (isObj(p.read)) d.read = p.read;
           if (isObj(p.ng)) d.ng = p.ng;
           if (isObj(p.lab)) d.lab = p.lab;
+          if (isObj(p.qc)) d.qc = p.qc;
+          if (isObj(p.ai)) d.ai = p.ai;
           if (Array.isArray(p.history)) d.history = p.history.filter(function (h) { return h && typeof h.id === 'string' && typeof h.total === 'number'; }).slice(-30);
           if (validActive(p.active)) d.active = p.active;
         }
