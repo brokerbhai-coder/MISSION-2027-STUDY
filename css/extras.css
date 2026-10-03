@@ -136,3 +136,6 @@
 .ai-inputbar { position: sticky; bottom: 0; display: flex; gap: 8px; background: var(--surface); padding: 8px 0 4px; }
 .ai-inputbar input { flex: 1; background: var(--surface-2); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; color: var(--text); font-size: 0.98rem; }
 .ai-inputbar .btn { flex-shrink: 0; }
+
+/* ---------- Definitions के Term पर Tap करके AI से समझो ---------- */
+.nt-term-tap { background: none; border: none; padding: 0; font: inherit; font-weight: 800; color: var(--green); cursor: pointer; text-decoration: underline dotted; text-underline-offset: 3px; }
