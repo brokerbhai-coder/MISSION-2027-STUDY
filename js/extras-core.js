@@ -141,7 +141,8 @@
   }
   function mathHtml(tex, display) {
     if (window.katex) {
-      try { return window.katex.renderToString(tex.trim(), { throwOnError: false, displayMode: display, strict: 'ignore', trust: false }); } catch (e) { /* नीचे सादा text */ }
+      // throwOnError: true — आधा-अधूरा/ग़लत Formula हो तो साफ़ Fallback (नीचे Plain Text) हो, लाल Error-रंग में टूटा हुआ न दिखे
+      try { return window.katex.renderToString(tex.trim(), { throwOnError: true, displayMode: display, strict: 'ignore', trust: false }); } catch (e) { /* नीचे सादा text */ }
     }
     return '<code class="x-tex">' + esc((display ? '$$' : '$') + tex + (display ? '$$' : '$')) + '</code>';
   }
