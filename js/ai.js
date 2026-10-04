@@ -57,14 +57,19 @@
   }
   function aiRich(raw) {
     var s = String(raw == null ? '' : raw);
-    var out = '', last = 0, m;
+    // पहले हर Formula ($...$) को एक छोटे, सुरक्षित Placeholder से बदल देते हैं — ताकि **Bold** जैसे Markdown
+    // जो किसी Formula को अंदर लपेटे हों (जैसे "**उपसारणिक ($M_{ij}$):**"), टूटें नहीं (Formula अब सिर्फ़ एक
+    // साधारण-सा Token है, कोई * या Newline नहीं जो Markdown को confuse करे)।
+    var maths = [];
     var re = /\$\$([\s\S]+?)\$\$|\$([^$\n]+?)\$/g;
-    while ((m = re.exec(s))) {
-      out += mdToHtml(s.slice(last, m.index));
-      out += X().rich(m[0]); // सिर्फ़ यही एक Formula, अलग से — कुछ और टकराएगा नहीं
-      last = re.lastIndex;
-    }
-    return out + mdToHtml(s.slice(last));
+    var placeholdered = s.replace(re, function (whole) {
+      var idx = maths.length;
+      maths.push(whole);
+      return '\u0002' + idx + '\u0003';
+    });
+    var html = mdToHtml(placeholdered);
+    // अब असली Formula वापस (Render करके) बिठा देते हैं
+    return html.replace(/\u0002(\d+)\u0003/g, function (_, idx) { return X().rich(maths[+idx]); });
   }
 
   /* ---------- असली API Call ---------- */
