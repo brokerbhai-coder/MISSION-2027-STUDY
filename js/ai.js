@@ -44,22 +44,43 @@
   // AI के जवाब में Markdown (### Heading, * Bullet) होता है, जो X.rich() अकेले नहीं समझता (वो सिर्फ़
   // $...$ Formula और **bold** समझता है) — यहाँ पहले Heading/Bullet को उसी **bold**/• रूप में बदल देते हैं,
   // फिर बाकी काम (Formula + Bold + Line-break) X.rich() खुद कर देता है।
+  // Markdown (### Heading, **Bold**, * Bullet) + $...$ Formula — दोनों एक-साथ, आसपास मिले होने पर भी सही बनें,
+  // इसलिए पहले Formula वाले हिस्सों को पूरी तरह अलग निकाल लेते हैं (और उन्हें X.rich() से बनवाते हैं, जो इसी काम का
+  // माहिर है), बाकी बचे सादे Text में अपना Markdown लगाते हैं — दोनों को आख़िर में जोड़ देते हैं।
+  function mdToHtml(text) {
+    var esc2 = M.App.esc;
+    var s = esc2(text); // पहले सुरक्षित बनाओ (< > & वगैरह)
+    s = s.replace(/^#{1,6}\s*(.+)$/gm, '<strong>$1</strong>');
+    s = s.replace(/\*\*([^*\n]+)\*\*/g, '<strong>$1</strong>');
+    s = s.replace(/^\s*[*-]\s+/gm, '• ');
+    return s.replace(/\n/g, '<br>');
+  }
   function aiRich(raw) {
     var s = String(raw == null ? '' : raw);
-    s = s.replace(/^#{1,6}\s*(.+)$/gm, '**$1**');
-    s = s.replace(/^\s*[*-]\s+/gm, '• ');
-    return X().rich(s);
+    var out = '', last = 0, m;
+    var re = /\$\$([\s\S]+?)\$\$|\$([^$\n]+?)\$/g;
+    while ((m = re.exec(s))) {
+      out += mdToHtml(s.slice(last, m.index));
+      out += X().rich(m[0]); // सिर्फ़ यही एक Formula, अलग से — कुछ और टकराएगा नहीं
+      last = re.lastIndex;
+    }
+    return out + mdToHtml(s.slice(last));
   }
 
   /* ---------- असली API Call ---------- */
+  var HISTORY_LIMIT = 16; // पुराना Chat ज़्यादा लंबा न हो जाए, इतने हाल के Message ही साथ भेजो
+  // prompt: एक अकेला सवाल (string) भी दे सकते हो, या पिछली पूरी बातचीत (array of {role,text}) भी —
+  // Array देने पर AI को पिछली बात याद रहती है (Chat वाले Page में यही इस्तेमाल होता है)
   AI.ask = function (prompt) {
     var s = store();
     if (!s.key) return Promise.reject(new Error('पहले Settings में अपनी API Key डालो।'));
+    var history = Array.isArray(prompt) ? prompt.slice(-HISTORY_LIMIT) : [{ role: 'user', text: prompt }];
+    var contents = history.map(function (m) { return { role: m.role === 'model' ? 'model' : 'user', parts: [{ text: m.text }] }; });
     var url = 'https://generativelanguage.googleapis.com/v1beta/models/' + encodeURIComponent(s.model) + ':generateContent';
     return fetch(url, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'x-goog-api-key': s.key },
-      body: JSON.stringify({ contents: [{ role: 'user', parts: [{ text: prompt }] }] })
+      body: JSON.stringify({ contents: contents })
     }).then(function (res) {
       return res.json().then(function (data) {
         if (!res.ok) {
@@ -195,11 +216,12 @@
       pendingPrompt = null;
       session.push({ role: 'user', text: text });
       if (inp) inp.value = '';
+      var historySnapshot = session.slice(); // अभी तक की पूरी बातचीत (नया सवाल सहित) — ताकि AI पिछली बात याद रखे
       M.Router.refresh(true);
       session.push({ role: 'model', text: '…सोच रहा है' });
       var thinkingIdx = session.length - 1;
       M.Router.refresh(true);
-      AI.ask(text).then(function (reply) {
+      AI.ask(historySnapshot).then(function (reply) {
         session[thinkingIdx] = { role: 'model', text: reply };
         M.Router.refresh(true);
       }).catch(function (err) {
