@@ -3,682 +3,828 @@
     {
       "subject": "physics",
       "chapter": 1,
-      "file": "data/physics/chapter-01.json"
+      "file": "data/notes/physics/chapter-01.json"
     },
     {
       "subject": "physics",
       "chapter": 2,
-      "file": "data/physics/chapter-02.json"
+      "file": "data/notes/physics/chapter-02.json"
     },
     {
       "subject": "physics",
       "chapter": 3,
-      "file": "data/physics/chapter-03.json"
+      "file": "data/notes/physics/chapter-03.json"
     },
     {
       "subject": "physics",
       "chapter": 4,
-      "file": "data/physics/chapter-04.json"
+      "file": "data/notes/physics/chapter-04.json"
     },
     {
       "subject": "physics",
       "chapter": 5,
-      "file": "data/physics/chapter-05.json"
+      "file": "data/notes/physics/chapter-05.json"
     },
     {
       "subject": "physics",
       "chapter": 6,
-      "file": "data/physics/chapter-06.json"
+      "file": "data/notes/physics/chapter-06.json"
     },
     {
       "subject": "physics",
       "chapter": 7,
-      "file": "data/physics/chapter-07.json"
+      "file": "data/notes/physics/chapter-07.json"
     },
     {
       "subject": "physics",
       "chapter": 8,
-      "file": "data/physics/chapter-08.json"
+      "file": "data/notes/physics/chapter-08.json"
+    },
+    {
+      "subject": "biology",
+      "chapter": 1,
+      "file": "data/notes/biology/chapter-01.json"
+    },
+    {
+      "subject": "biology",
+      "chapter": 2,
+      "file": "data/notes/biology/chapter-02.json"
+    },
+    {
+      "subject": "biology",
+      "chapter": 3,
+      "file": "data/notes/biology/chapter-03.json"
+    },
+    {
+      "subject": "biology",
+      "chapter": 4,
+      "file": "data/notes/biology/chapter-04.json"
+    },
+    {
+      "subject": "biology",
+      "chapter": 5,
+      "file": "data/notes/biology/chapter-05.json"
+    },
+    {
+      "subject": "biology",
+      "chapter": 6,
+      "file": "data/notes/biology/chapter-06.json"
+    },
+    {
+      "subject": "biology",
+      "chapter": 7,
+      "file": "data/notes/biology/chapter-07.json"
+    },
+    {
+      "subject": "biology",
+      "chapter": 8,
+      "file": "data/notes/biology/chapter-08.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 1,
+      "file": "data/notes/mathematics/chapter-01.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 2,
+      "file": "data/notes/mathematics/chapter-02.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 3,
+      "file": "data/notes/mathematics/chapter-03.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 4,
+      "file": "data/notes/mathematics/chapter-04.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 5,
+      "file": "data/notes/mathematics/chapter-05.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 7,
+      "part": "01",
+      "file": "data/notes/mathematics/chapter-07-part-01.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 7,
+      "part": "02",
+      "file": "data/notes/mathematics/chapter-07-part-02.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 7,
+      "part": "03",
+      "file": "data/notes/mathematics/chapter-07-part-03.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 7,
+      "part": "04",
+      "file": "data/notes/mathematics/chapter-07-part-04.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 7,
+      "part": "05",
+      "file": "data/notes/mathematics/chapter-07-part-05.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 7,
+      "part": "06",
+      "file": "data/notes/mathematics/chapter-07-part-06.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 7,
+      "part": "07",
+      "file": "data/notes/mathematics/chapter-07-part-07.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 7,
+      "part": "08",
+      "file": "data/notes/mathematics/chapter-07-part-08.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 7,
+      "part": "09",
+      "file": "data/notes/mathematics/chapter-07-part-09.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 7,
+      "part": "10",
+      "file": "data/notes/mathematics/chapter-07-part-10.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 7,
+      "part": "11",
+      "file": "data/notes/mathematics/chapter-07-part-11.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 7,
+      "part": "12",
+      "file": "data/notes/mathematics/chapter-07-part-12.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 7,
+      "part": "13",
+      "file": "data/notes/mathematics/chapter-07-part-13.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 7,
+      "part": "14",
+      "file": "data/notes/mathematics/chapter-07-part-14.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 7,
+      "part": "15",
+      "file": "data/notes/mathematics/chapter-07-part-15.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 7,
+      "part": "16",
+      "file": "data/notes/mathematics/chapter-07-part-16.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 7,
+      "part": "17",
+      "file": "data/notes/mathematics/chapter-07-part-17.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 7,
+      "part": "18",
+      "file": "data/notes/mathematics/chapter-07-part-18.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 7,
+      "part": "19",
+      "file": "data/notes/mathematics/chapter-07-part-19.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 7,
+      "part": "20",
+      "file": "data/notes/mathematics/chapter-07-part-20.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 7,
+      "part": "21",
+      "file": "data/notes/mathematics/chapter-07-part-21.json"
+    },
+    {
+      "subject": "mathematics",
+      "chapter": 7,
+      "part": "22",
+      "file": "data/notes/mathematics/chapter-07-part-22.json"
     },
     {
       "subject": "physics",
       "chapter": 9,
-      "file": "data/physics/chapter-09.json"
+      "part": "1",
+      "file": "data/notes/physics/chapter-09-part-1.json"
+    },
+    {
+      "subject": "physics",
+      "chapter": 9,
+      "part": "2",
+      "file": "data/notes/physics/chapter-09-part-2.json"
+    },
+    {
+      "subject": "physics",
+      "chapter": 9,
+      "part": "3",
+      "file": "data/notes/physics/chapter-09-part-3.json"
+    },
+    {
+      "subject": "physics",
+      "chapter": 9,
+      "part": "4",
+      "file": "data/notes/physics/chapter-09-part-4.json"
     },
     {
       "subject": "physics",
       "chapter": 10,
-      "file": "data/physics/chapter-10.json"
+      "file": "data/notes/physics/chapter-10.json"
     },
     {
       "subject": "physics",
       "chapter": 11,
-      "file": "data/physics/chapter-11.json"
+      "file": "data/notes/physics/chapter-11.json"
     },
     {
       "subject": "physics",
       "chapter": 12,
-      "file": "data/physics/chapter-12.json"
+      "file": "data/notes/physics/chapter-12.json"
     },
     {
       "subject": "physics",
       "chapter": 13,
-      "file": "data/physics/chapter-13.json"
+      "file": "data/notes/physics/chapter-13.json"
     },
     {
       "subject": "physics",
       "chapter": 14,
-      "file": "data/physics/chapter-14.json"
+      "file": "data/notes/physics/chapter-14.json"
     },
     {
       "subject": "physics",
       "chapter": 15,
-      "file": "data/physics/chapter-15.json"
+      "file": "data/notes/physics/chapter-15.json"
     },
     {
       "subject": "chemistry",
       "chapter": 1,
-      "file": "data/chemistry/chapter-01.json"
+      "file": "data/notes/chemistry/chapter-01.json"
     },
     {
       "subject": "chemistry",
       "chapter": 2,
-      "file": "data/chemistry/chapter-02.json"
+      "file": "data/notes/chemistry/chapter-02.json"
     },
     {
       "subject": "chemistry",
       "chapter": 3,
-      "file": "data/chemistry/chapter-03.json"
+      "file": "data/notes/chemistry/chapter-03.json"
     },
     {
       "subject": "chemistry",
       "chapter": 4,
-      "file": "data/chemistry/chapter-04.json"
+      "file": "data/notes/chemistry/chapter-04.json"
     },
     {
       "subject": "chemistry",
       "chapter": 5,
-      "file": "data/chemistry/chapter-05.json"
+      "file": "data/notes/chemistry/chapter-05.json"
     },
     {
       "subject": "chemistry",
       "chapter": 6,
-      "file": "data/chemistry/chapter-06.json"
+      "file": "data/notes/chemistry/chapter-06.json"
     },
     {
       "subject": "chemistry",
       "chapter": 7,
-      "file": "data/chemistry/chapter-07.json"
+      "file": "data/notes/chemistry/chapter-07.json"
     },
     {
       "subject": "chemistry",
       "chapter": 8,
-      "file": "data/chemistry/chapter-08.json"
+      "file": "data/notes/chemistry/chapter-08.json"
     },
     {
       "subject": "chemistry",
       "chapter": 9,
-      "file": "data/chemistry/chapter-09.json"
+      "file": "data/notes/chemistry/chapter-09.json"
     },
     {
       "subject": "chemistry",
       "chapter": 10,
-      "file": "data/chemistry/chapter-10.json"
+      "file": "data/notes/chemistry/chapter-10.json"
     },
     {
       "subject": "chemistry",
       "chapter": 11,
-      "file": "data/chemistry/chapter-11.json"
+      "file": "data/notes/chemistry/chapter-11.json"
     },
     {
       "subject": "chemistry",
       "chapter": 12,
-      "file": "data/chemistry/chapter-12.json"
+      "file": "data/notes/chemistry/chapter-12.json"
     },
     {
       "subject": "chemistry",
       "chapter": 13,
-      "file": "data/chemistry/chapter-13.json"
+      "file": "data/notes/chemistry/chapter-13.json"
     },
     {
       "subject": "chemistry",
       "chapter": 14,
-      "file": "data/chemistry/chapter-14.json"
+      "file": "data/notes/chemistry/chapter-14.json"
     },
     {
       "subject": "chemistry",
       "chapter": 15,
-      "file": "data/chemistry/chapter-15.json"
+      "file": "data/notes/chemistry/chapter-15.json"
     },
     {
       "subject": "chemistry",
       "chapter": 16,
-      "file": "data/chemistry/chapter-16.json"
-    },
-    {
-      "subject": "mathematics",
-      "chapter": 1,
-      "file": "data/mathematics/chapter-01.json"
-    },
-    {
-      "subject": "mathematics",
-      "chapter": 2,
-      "file": "data/mathematics/chapter-02.json"
-    },
-    {
-      "subject": "mathematics",
-      "chapter": 3,
-      "file": "data/mathematics/chapter-03.json"
-    },
-    {
-      "subject": "mathematics",
-      "chapter": 4,
-      "file": "data/mathematics/chapter-04.json"
-    },
-    {
-      "subject": "mathematics",
-      "chapter": 5,
-      "file": "data/mathematics/chapter-05.json"
+      "file": "data/notes/chemistry/chapter-16.json"
     },
     {
       "subject": "mathematics",
       "chapter": 6,
-      "file": "data/mathematics/chapter-06.json"
-    },
-    {
-      "subject": "mathematics",
-      "chapter": 7,
-      "file": "data/mathematics/chapter-07.json"
+      "file": "data/notes/mathematics/chapter-06.json"
     },
     {
       "subject": "mathematics",
       "chapter": 8,
-      "file": "data/mathematics/chapter-08.json"
+      "file": "data/notes/mathematics/chapter-08.json"
     },
     {
       "subject": "mathematics",
       "chapter": 9,
-      "file": "data/mathematics/chapter-09.json"
+      "file": "data/notes/mathematics/chapter-09.json"
     },
     {
       "subject": "mathematics",
       "chapter": 10,
-      "file": "data/mathematics/chapter-10.json"
+      "file": "data/notes/mathematics/chapter-10.json"
     },
     {
       "subject": "mathematics",
       "chapter": 11,
-      "file": "data/mathematics/chapter-11.json"
+      "file": "data/notes/mathematics/chapter-11.json"
     },
     {
       "subject": "mathematics",
       "chapter": 12,
-      "file": "data/mathematics/chapter-12.json"
+      "file": "data/notes/mathematics/chapter-12.json"
     },
     {
       "subject": "mathematics",
       "chapter": 13,
-      "file": "data/mathematics/chapter-13.json"
-    },
-    {
-      "subject": "biology",
-      "chapter": 1,
-      "file": "data/biology/chapter-01.json"
-    },
-    {
-      "subject": "biology",
-      "chapter": 2,
-      "file": "data/biology/chapter-02.json"
-    },
-    {
-      "subject": "biology",
-      "chapter": 3,
-      "file": "data/biology/chapter-03.json"
-    },
-    {
-      "subject": "biology",
-      "chapter": 4,
-      "file": "data/biology/chapter-04.json"
-    },
-    {
-      "subject": "biology",
-      "chapter": 5,
-      "file": "data/biology/chapter-05.json"
-    },
-    {
-      "subject": "biology",
-      "chapter": 6,
-      "file": "data/biology/chapter-06.json"
-    },
-    {
-      "subject": "biology",
-      "chapter": 7,
-      "file": "data/biology/chapter-07.json"
-    },
-    {
-      "subject": "biology",
-      "chapter": 8,
-      "file": "data/biology/chapter-08.json"
+      "file": "data/notes/mathematics/chapter-13.json"
     },
     {
       "subject": "biology",
       "chapter": 9,
-      "file": "data/biology/chapter-09.json"
+      "file": "data/notes/biology/chapter-09.json"
     },
     {
       "subject": "biology",
       "chapter": 10,
-      "file": "data/biology/chapter-10.json"
+      "file": "data/notes/biology/chapter-10.json"
     },
     {
       "subject": "biology",
       "chapter": 11,
-      "file": "data/biology/chapter-11.json"
+      "file": "data/notes/biology/chapter-11.json"
     },
     {
       "subject": "biology",
       "chapter": 12,
-      "file": "data/biology/chapter-12.json"
+      "file": "data/notes/biology/chapter-12.json"
     },
     {
       "subject": "biology",
       "chapter": 13,
-      "file": "data/biology/chapter-13.json"
+      "file": "data/notes/biology/chapter-13.json"
     },
     {
       "subject": "biology",
       "chapter": 14,
-      "file": "data/biology/chapter-14.json"
+      "file": "data/notes/biology/chapter-14.json"
     },
     {
       "subject": "biology",
       "chapter": 15,
-      "file": "data/biology/chapter-15.json"
+      "file": "data/notes/biology/chapter-15.json"
     },
     {
       "subject": "biology",
       "chapter": 16,
-      "file": "data/biology/chapter-16.json"
+      "file": "data/notes/biology/chapter-16.json"
     },
     {
       "subject": "hindi",
       "chapter": 1,
-      "file": "data/hindi/chapter-01.json"
+      "file": "data/notes/hindi/chapter-01.json"
     },
     {
       "subject": "hindi",
       "chapter": 2,
-      "file": "data/hindi/chapter-02.json"
+      "file": "data/notes/hindi/chapter-02.json"
     },
     {
       "subject": "hindi",
       "chapter": 3,
-      "file": "data/hindi/chapter-03.json"
+      "file": "data/notes/hindi/chapter-03.json"
     },
     {
       "subject": "hindi",
       "chapter": 4,
-      "file": "data/hindi/chapter-04.json"
+      "file": "data/notes/hindi/chapter-04.json"
     },
     {
       "subject": "hindi",
       "chapter": 5,
-      "file": "data/hindi/chapter-05.json"
+      "file": "data/notes/hindi/chapter-05.json"
     },
     {
       "subject": "hindi",
       "chapter": 6,
-      "file": "data/hindi/chapter-06.json"
+      "file": "data/notes/hindi/chapter-06.json"
     },
     {
       "subject": "hindi",
       "chapter": 7,
-      "file": "data/hindi/chapter-07.json"
+      "file": "data/notes/hindi/chapter-07.json"
     },
     {
       "subject": "hindi",
       "chapter": 8,
-      "file": "data/hindi/chapter-08.json"
+      "file": "data/notes/hindi/chapter-08.json"
     },
     {
       "subject": "hindi",
       "chapter": 9,
-      "file": "data/hindi/chapter-09.json"
+      "file": "data/notes/hindi/chapter-09.json"
     },
     {
       "subject": "hindi",
       "chapter": 10,
-      "file": "data/hindi/chapter-10.json"
+      "file": "data/notes/hindi/chapter-10.json"
     },
     {
       "subject": "hindi",
       "chapter": 11,
-      "file": "data/hindi/chapter-11.json"
+      "file": "data/notes/hindi/chapter-11.json"
     },
     {
       "subject": "hindi",
       "chapter": 12,
-      "file": "data/hindi/chapter-12.json"
+      "file": "data/notes/hindi/chapter-12.json"
     },
     {
       "subject": "hindi",
       "chapter": 13,
-      "file": "data/hindi/chapter-13.json"
+      "file": "data/notes/hindi/chapter-13.json"
     },
     {
       "subject": "hindi",
       "chapter": 14,
-      "file": "data/hindi/chapter-14.json"
+      "file": "data/notes/hindi/chapter-14.json"
     },
     {
       "subject": "hindi",
       "chapter": 15,
-      "file": "data/hindi/chapter-15.json"
+      "file": "data/notes/hindi/chapter-15.json"
     },
     {
       "subject": "hindi",
       "chapter": 16,
-      "file": "data/hindi/chapter-16.json"
+      "file": "data/notes/hindi/chapter-16.json"
     },
     {
       "subject": "hindi",
       "chapter": 17,
-      "file": "data/hindi/chapter-17.json"
+      "file": "data/notes/hindi/chapter-17.json"
     },
     {
       "subject": "hindi",
       "chapter": 18,
-      "file": "data/hindi/chapter-18.json"
+      "file": "data/notes/hindi/chapter-18.json"
     },
     {
       "subject": "hindi",
       "chapter": 19,
-      "file": "data/hindi/chapter-19.json"
+      "file": "data/notes/hindi/chapter-19.json"
     },
     {
       "subject": "hindi",
       "chapter": 20,
-      "file": "data/hindi/chapter-20.json"
+      "file": "data/notes/hindi/chapter-20.json"
     },
     {
       "subject": "hindi",
       "chapter": 21,
-      "file": "data/hindi/chapter-21.json"
+      "file": "data/notes/hindi/chapter-21.json"
     },
     {
       "subject": "hindi",
       "chapter": 22,
-      "file": "data/hindi/chapter-22.json"
+      "file": "data/notes/hindi/chapter-22.json"
     },
     {
       "subject": "hindi",
       "chapter": 23,
-      "file": "data/hindi/chapter-23.json"
+      "file": "data/notes/hindi/chapter-23.json"
     },
     {
       "subject": "hindi",
       "chapter": 24,
-      "file": "data/hindi/chapter-24.json"
+      "file": "data/notes/hindi/chapter-24.json"
     },
     {
       "subject": "hindi",
       "chapter": 25,
-      "file": "data/hindi/chapter-25.json"
+      "file": "data/notes/hindi/chapter-25.json"
     },
     {
       "subject": "hindi",
       "chapter": 26,
-      "file": "data/hindi/chapter-26.json"
+      "file": "data/notes/hindi/chapter-26.json"
     },
     {
       "subject": "hindi",
       "chapter": 27,
-      "file": "data/hindi/chapter-27.json"
+      "file": "data/notes/hindi/chapter-27.json"
     },
     {
       "subject": "hindi",
       "chapter": 28,
-      "file": "data/hindi/chapter-28.json"
+      "file": "data/notes/hindi/chapter-28.json"
     },
     {
       "subject": "hindi",
       "chapter": 29,
-      "file": "data/hindi/chapter-29.json"
+      "file": "data/notes/hindi/chapter-29.json"
     },
     {
       "subject": "hindi",
       "chapter": 30,
-      "file": "data/hindi/chapter-30.json"
+      "file": "data/notes/hindi/chapter-30.json"
     },
     {
       "subject": "hindi",
       "chapter": 31,
-      "file": "data/hindi/chapter-31.json"
+      "file": "data/notes/hindi/chapter-31.json"
     },
     {
       "subject": "hindi",
       "chapter": 32,
-      "file": "data/hindi/chapter-32.json"
+      "file": "data/notes/hindi/chapter-32.json"
     },
     {
       "subject": "hindi",
       "chapter": 33,
-      "file": "data/hindi/chapter-33.json"
+      "file": "data/notes/hindi/chapter-33.json"
     },
     {
       "subject": "english",
       "chapter": 1,
-      "file": "data/english/chapter-01.json"
+      "file": "data/notes/english/chapter-01.json"
     },
     {
       "subject": "english",
       "chapter": 2,
-      "file": "data/english/chapter-02.json"
+      "file": "data/notes/english/chapter-02.json"
     },
     {
       "subject": "english",
       "chapter": 3,
-      "file": "data/english/chapter-03.json"
+      "file": "data/notes/english/chapter-03.json"
     },
     {
       "subject": "english",
       "chapter": 4,
-      "file": "data/english/chapter-04.json"
+      "file": "data/notes/english/chapter-04.json"
     },
     {
       "subject": "english",
       "chapter": 5,
-      "file": "data/english/chapter-05.json"
+      "file": "data/notes/english/chapter-05.json"
     },
     {
       "subject": "english",
       "chapter": 6,
-      "file": "data/english/chapter-06.json"
+      "file": "data/notes/english/chapter-06.json"
     },
     {
       "subject": "english",
       "chapter": 7,
-      "file": "data/english/chapter-07.json"
+      "file": "data/notes/english/chapter-07.json"
     },
     {
       "subject": "english",
       "chapter": 8,
-      "file": "data/english/chapter-08.json"
+      "file": "data/notes/english/chapter-08.json"
     },
     {
       "subject": "english",
       "chapter": 9,
-      "file": "data/english/chapter-09.json"
+      "file": "data/notes/english/chapter-09.json"
     },
     {
       "subject": "english",
       "chapter": 10,
-      "file": "data/english/chapter-10.json"
+      "file": "data/notes/english/chapter-10.json"
     },
     {
       "subject": "english",
       "chapter": 11,
-      "file": "data/english/chapter-11.json"
+      "file": "data/notes/english/chapter-11.json"
     },
     {
       "subject": "english",
       "chapter": 12,
-      "file": "data/english/chapter-12.json"
+      "file": "data/notes/english/chapter-12.json"
     },
     {
       "subject": "english",
       "chapter": 13,
-      "file": "data/english/chapter-13.json"
+      "file": "data/notes/english/chapter-13.json"
     },
     {
       "subject": "english",
       "chapter": 14,
-      "file": "data/english/chapter-14.json"
+      "file": "data/notes/english/chapter-14.json"
     },
     {
       "subject": "english",
       "chapter": 15,
-      "file": "data/english/chapter-15.json"
+      "file": "data/notes/english/chapter-15.json"
     },
     {
       "subject": "english",
       "chapter": 16,
-      "file": "data/english/chapter-16.json"
+      "file": "data/notes/english/chapter-16.json"
     },
     {
       "subject": "english",
       "chapter": 17,
-      "file": "data/english/chapter-17.json"
+      "file": "data/notes/english/chapter-17.json"
     },
     {
       "subject": "english",
       "chapter": 18,
-      "file": "data/english/chapter-18.json"
+      "file": "data/notes/english/chapter-18.json"
     },
     {
       "subject": "english",
       "chapter": 19,
-      "file": "data/english/chapter-19.json"
+      "file": "data/notes/english/chapter-19.json"
     },
     {
       "subject": "english",
       "chapter": 20,
-      "file": "data/english/chapter-20.json"
+      "file": "data/notes/english/chapter-20.json"
     },
     {
       "subject": "english",
       "chapter": 21,
-      "file": "data/english/chapter-21.json"
+      "file": "data/notes/english/chapter-21.json"
     },
     {
       "subject": "english",
       "chapter": 22,
-      "file": "data/english/chapter-22.json"
+      "file": "data/notes/english/chapter-22.json"
     },
     {
       "subject": "english",
       "chapter": 23,
-      "file": "data/english/chapter-23.json"
+      "file": "data/notes/english/chapter-23.json"
     },
     {
       "subject": "english",
       "chapter": 24,
-      "file": "data/english/chapter-24.json"
+      "file": "data/notes/english/chapter-24.json"
     },
     {
       "subject": "english",
       "chapter": 25,
-      "file": "data/english/chapter-25.json"
+      "file": "data/notes/english/chapter-25.json"
     },
     {
       "subject": "english",
       "chapter": 26,
-      "file": "data/english/chapter-26.json"
+      "file": "data/notes/english/chapter-26.json"
     },
     {
       "subject": "english",
       "chapter": 27,
-      "file": "data/english/chapter-27.json"
+      "file": "data/notes/english/chapter-27.json"
     },
     {
       "subject": "english",
       "chapter": 28,
-      "file": "data/english/chapter-28.json"
+      "file": "data/notes/english/chapter-28.json"
     },
     {
       "subject": "english",
       "chapter": 29,
-      "file": "data/english/chapter-29.json"
+      "file": "data/notes/english/chapter-29.json"
     },
     {
       "subject": "english",
       "chapter": 30,
-      "file": "data/english/chapter-30.json"
+      "file": "data/notes/english/chapter-30.json"
     },
     {
       "subject": "english",
       "chapter": 31,
-      "file": "data/english/chapter-31.json"
+      "file": "data/notes/english/chapter-31.json"
     },
     {
       "subject": "english",
       "chapter": 32,
-      "file": "data/english/chapter-32.json"
+      "file": "data/notes/english/chapter-32.json"
     },
     {
       "subject": "english",
       "chapter": 33,
-      "file": "data/english/chapter-33.json"
+      "file": "data/notes/english/chapter-33.json"
     },
     {
       "subject": "english",
       "chapter": 34,
-      "file": "data/english/chapter-34.json"
+      "file": "data/notes/english/chapter-34.json"
     },
     {
       "subject": "english",
       "chapter": 35,
-      "file": "data/english/chapter-35.json"
+      "file": "data/notes/english/chapter-35.json"
     },
     {
       "subject": "english",
       "chapter": 36,
-      "file": "data/english/chapter-36.json"
+      "file": "data/notes/english/chapter-36.json"
     },
     {
       "subject": "english",
       "chapter": 37,
-      "file": "data/english/chapter-37.json"
+      "file": "data/notes/english/chapter-37.json"
     },
     {
       "subject": "english",
       "chapter": 38,
-      "file": "data/english/chapter-38.json"
+      "file": "data/notes/english/chapter-38.json"
     },
     {
       "subject": "english",
       "chapter": 39,
-      "file": "data/english/chapter-39.json"
+      "file": "data/notes/english/chapter-39.json"
     },
     {
       "subject": "english",
       "chapter": 40,
-      "file": "data/english/chapter-40.json"
+      "file": "data/notes/english/chapter-40.json"
     },
     {
       "subject": "english",
       "chapter": 41,
-      "file": "data/english/chapter-41.json"
+      "file": "data/notes/english/chapter-41.json"
     },
     {
       "subject": "english",
       "chapter": 42,
-      "file": "data/english/chapter-42.json"
+      "file": "data/notes/english/chapter-42.json"
     },
     {
       "subject": "english",
       "chapter": 43,
-      "file": "data/english/chapter-43.json"
+      "file": "data/notes/english/chapter-43.json"
     }
   ]
 }
