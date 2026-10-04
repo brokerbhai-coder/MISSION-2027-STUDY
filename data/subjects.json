@@ -666,60 +666,58 @@
           "file": "data/hindi/chapter-26.json",
           "notesReady": false,
           "notesUrl": null
+        },
+        {
+          "number": 27,
+          "title": "भाषा एवं लिपि",
+          "file": "data/hindi/chapter-27.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 28,
+          "title": "वर्ण विचार एवं उच्चारण स्थान",
+          "file": "data/hindi/chapter-28.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 29,
+          "title": "शब्द विचार",
+          "file": "data/hindi/chapter-29.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 30,
+          "title": "वाक्य विचार",
+          "file": "data/hindi/chapter-30.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 31,
+          "title": "संज्ञा",
+          "file": "data/hindi/chapter-31.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 32,
+          "title": "सर्वनाम",
+          "file": "data/hindi/chapter-32.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 33,
+          "title": "विशेषण",
+          "file": "data/hindi/chapter-33.json",
+          "notesReady": false,
+          "notesUrl": null
         }
       ],
-      "stream": "common",
-      "grammar": [
-        {
-          "number": 1,
-          "title": "भाषा एवं लिपि",
-          "file": "data/hindi/grammar/bhasha-lipi.json",
-          "notesReady": false,
-          "notesUrl": null
-        },
-        {
-          "number": 2,
-          "title": "वर्ण विचार एवं उच्चारण स्थान",
-          "file": "data/hindi/grammar/varna-vichar-uchcharan-sthan.json",
-          "notesReady": false,
-          "notesUrl": null
-        },
-        {
-          "number": 3,
-          "title": "शब्द विचार",
-          "file": "data/hindi/grammar/shabd-vichar.json",
-          "notesReady": false,
-          "notesUrl": null
-        },
-        {
-          "number": 4,
-          "title": "वाक्य विचार",
-          "file": "data/hindi/grammar/vakya-vichar.json",
-          "notesReady": false,
-          "notesUrl": null
-        },
-        {
-          "number": 5,
-          "title": "संज्ञा",
-          "file": "data/hindi/grammar/sangya.json",
-          "notesReady": false,
-          "notesUrl": null
-        },
-        {
-          "number": 6,
-          "title": "सर्वनाम",
-          "file": "data/hindi/grammar/sarvanam.json",
-          "notesReady": false,
-          "notesUrl": null
-        },
-        {
-          "number": 7,
-          "title": "विशेषण",
-          "file": "data/hindi/grammar/visheshan.json",
-          "notesReady": false,
-          "notesUrl": null
-        }
-      ]
+      "stream": "common"
     },
     {
       "id": "english",
@@ -911,130 +909,128 @@
           "file": "data/english/chapter-26.json",
           "notesReady": false,
           "notesUrl": null
+        },
+        {
+          "number": 27,
+          "title": "Subject-Verb Agreement",
+          "file": "data/english/chapter-27.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 28,
+          "title": "Articles",
+          "file": "data/english/chapter-28.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 29,
+          "title": "Tenses",
+          "file": "data/english/chapter-29.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 30,
+          "title": "Modal Verbs",
+          "file": "data/english/chapter-30.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 31,
+          "title": "Voice",
+          "file": "data/english/chapter-31.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 32,
+          "title": "Narration",
+          "file": "data/english/chapter-32.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 33,
+          "title": "Phrases",
+          "file": "data/english/chapter-33.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 34,
+          "title": "Prepositions",
+          "file": "data/english/chapter-34.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 35,
+          "title": "Synthesis",
+          "file": "data/english/chapter-35.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 36,
+          "title": "Antonyms",
+          "file": "data/english/chapter-36.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 37,
+          "title": "Synonyms",
+          "file": "data/english/chapter-37.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 38,
+          "title": "One Word Substitution",
+          "file": "data/english/chapter-38.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 39,
+          "title": "Correct Sentence",
+          "file": "data/english/chapter-39.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 40,
+          "title": "Correct Spelling",
+          "file": "data/english/chapter-40.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 41,
+          "title": "Essay Writing",
+          "file": "data/english/chapter-41.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 42,
+          "title": "Letter Writing",
+          "file": "data/english/chapter-42.json",
+          "notesReady": false,
+          "notesUrl": null
+        },
+        {
+          "number": 43,
+          "title": "Precis Writing",
+          "file": "data/english/chapter-43.json",
+          "notesReady": false,
+          "notesUrl": null
         }
       ],
-      "stream": "common",
-      "grammar": [
-        {
-          "number": 1,
-          "title": "Subject-Verb Agreement",
-          "file": "data/english/grammar/subject-verb-agreement.json",
-          "notesReady": false,
-          "notesUrl": null
-        },
-        {
-          "number": 2,
-          "title": "Articles",
-          "file": "data/english/grammar/article.json",
-          "notesReady": false,
-          "notesUrl": null
-        },
-        {
-          "number": 3,
-          "title": "Tenses",
-          "file": "data/english/grammar/tense.json",
-          "notesReady": false,
-          "notesUrl": null
-        },
-        {
-          "number": 4,
-          "title": "Modal Verbs",
-          "file": "data/english/grammar/modal-verb.json",
-          "notesReady": false,
-          "notesUrl": null
-        },
-        {
-          "number": 5,
-          "title": "Voice",
-          "file": "data/english/grammar/voice.json",
-          "notesReady": false,
-          "notesUrl": null
-        },
-        {
-          "number": 6,
-          "title": "Narration",
-          "file": "data/english/grammar/narration.json",
-          "notesReady": false,
-          "notesUrl": null
-        },
-        {
-          "number": 7,
-          "title": "Phrases",
-          "file": "data/english/grammar/phrase.json",
-          "notesReady": false,
-          "notesUrl": null
-        },
-        {
-          "number": 8,
-          "title": "Prepositions",
-          "file": "data/english/grammar/preposition.json",
-          "notesReady": false,
-          "notesUrl": null
-        },
-        {
-          "number": 9,
-          "title": "Synthesis",
-          "file": "data/english/grammar/synthesis.json",
-          "notesReady": false,
-          "notesUrl": null
-        },
-        {
-          "number": 10,
-          "title": "Antonyms",
-          "file": "data/english/grammar/antonyms.json",
-          "notesReady": false,
-          "notesUrl": null
-        },
-        {
-          "number": 11,
-          "title": "Synonyms",
-          "file": "data/english/grammar/synonyms.json",
-          "notesReady": false,
-          "notesUrl": null
-        },
-        {
-          "number": 12,
-          "title": "One Word Substitution",
-          "file": "data/english/grammar/one-word-substitution.json",
-          "notesReady": false,
-          "notesUrl": null
-        },
-        {
-          "number": 13,
-          "title": "Correct Sentence",
-          "file": "data/english/grammar/correct-sentence.json",
-          "notesReady": false,
-          "notesUrl": null
-        },
-        {
-          "number": 14,
-          "title": "Correct Spelling",
-          "file": "data/english/grammar/correct-spelling.json",
-          "notesReady": false,
-          "notesUrl": null
-        },
-        {
-          "number": 15,
-          "title": "Essay Writing",
-          "file": "data/english/grammar/essay-writing.json",
-          "notesReady": false,
-          "notesUrl": null
-        },
-        {
-          "number": 16,
-          "title": "Letter Writing",
-          "file": "data/english/grammar/letter-writing.json",
-          "notesReady": false,
-          "notesUrl": null
-        },
-        {
-          "number": 17,
-          "title": "Precis Writing",
-          "file": "data/english/grammar/precis-writing.json",
-          "notesReady": false,
-          "notesUrl": null
-        }
-      ]
+      "stream": "common"
     },
     {
       "id": "history",
