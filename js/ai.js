@@ -113,7 +113,9 @@
       '<button class="btn block" type="button" data-action="ai-make-quiz">AI से JSON बनाओ</button></div>';
     if (makerOutput) {
       html += '<div class="card"><h3 class="card-title">नतीजा</h3><textarea id="mkOutput" rows="14" readonly>' + esc(makerOutput) + '</textarea>' +
-        '<button class="btn small ghost" type="button" data-action="ai-copy-quiz" style="margin-top:8px">📋 Copy करो</button></div>';
+        '<button class="btn block" type="button" data-action="ai-play-quiz" style="margin-top:8px">▶ अभी Quiz खेलो</button>' +
+        '<button class="btn small ghost" type="button" data-action="ai-copy-quiz" style="margin-top:8px">📋 बाद में File में डालने के लिए Copy करो</button>' +
+        '<p class="muted small" style="margin-top:6px">"अभी Quiz खेलो" — कहीं Save नहीं होता, बस तुरंत खेलने के लिए है। File में हमेशा के लिए जोड़ने के लिए नीचे Copy वाला Button इस्तेमाल करो।</p></div>';
     }
     html += '</section>';
     return { html: html, title: '📋 Text से Quiz बनाओ', back: '/settings', tab: 'settings', ctx: 'ai' };
@@ -194,18 +196,40 @@
       var text = (document.getElementById('mkText').value || '').trim();
       if (!text) { M.App.toast('पहले Text Paste करो', 'error'); return; }
       lastMk = { subject: subject, chapter: chapter, text: text };
-      var schemaPrompt = 'नीचे दिए Text से MISSION 2027 Website के लिए Objective Quiz Questions बनाओ। सिर्फ़ नीचे दिए JSON Format में जवाब दो — कोई अतिरिक्त बात, कोई Markdown Code-Fence (```),  कुछ और मत लिखो, सिर्फ़ Valid JSON:\n\n' +
+      var schemaPrompt = 'नीचे "ASLI TEXT" में जो Objective Question (MCQ) पहले से लिखे हुए हैं, सिर्फ़ उन्हीं को नीचे दिए JSON Format में बदल दो। यह Convert करने का काम है, नया Content बनाने का नहीं।\n\n' +
+        '⚠️ सबसे ज़रूरी नियम (बहुत ध्यान से पालन करो):\n' +
+        '1. "ASLI TEXT" में जितने Question मौजूद हैं, ठीक उतने ही Question बनाओ — न कम, न ज़्यादा। अगर सिर्फ़ 1 Question है, तो सिर्फ़ 1 ही JSON Object बनाओ।\n' +
+        '2. अपनी तरफ़ से, अपने ज्ञान से, कोई भी नया/अतिरिक्त Question कभी मत जोड़ो — चाहे वो Topic से कितना भी सही-सही जुड़ा हुआ क्यों न लगे। सिर्फ़ वही बदलो जो नीचे लिखा मिला है।\n' +
+        '3. Question/Options का शब्द-दर-शब्द अर्थ मत बदलो, सिर्फ़ सही JSON Structure में डालो।\n' +
+        '4. जवाब में सिर्फ़ Valid JSON हो — कोई Intro, कोई Explanation-बाहर की बात, कोई ```json जैसा Code-Fence कुछ भी मत लिखो, पहला Character सीधे { से शुरू हो।\n\n' +
+        'JSON Format:\n' +
         '{\n  "questions": [\n    { "id": "' + (subject || 'subject') + '-' + (chapter || '1') + '-q1", "subject": "' + (subject || 'subject-id') + '", "chapter": ' + (parseInt(chapter, 10) || 1) + ', "question": "...", "options": {"A":"...","B":"...","C":"...","D":"..."}, "answer": "A", "explanation": "...", "source": "AI", "type": "objective" }\n  ]\n}\n\n' +
-        'नियम:\n- सिर्फ़ उसी जानकारी से सवाल बनाओ जो नीचे Text में दी गई है, अपनी तरफ़ से नया Fact मत जोड़ो।\n- हर Question का "id" अलग-अलग हो (q1, q2, q3...)।\n- "answer" सिर्फ़ A/B/C/D में से एक अक्षर हो।\n- जितने भी अच्छे Objective Question बन सकें, सारे बनाओ।\n\nText:\n' + text;
+        '(हर Question का "id" अलग-अलग हो: q1, q2, q3... "answer" सिर्फ़ A/B/C/D में से एक अक्षर हो)\n\n' +
+        'ASLI TEXT (सिर्फ़ यहाँ जितने Question हैं, उतने ही बनाने हैं):\n' + text;
       makerOutput = '…बन रहा है';
       M.Router.refresh(true);
       AI.ask(schemaPrompt).then(function (reply) {
-        makerOutput = reply.replace(/^```(json)?/i, '').replace(/```$/, '').trim();
+        // AI कभी-कभी आगे-पीछे कुछ Text/Fence जोड़ देता है — पहली { से आख़िरी } तक ही असली JSON मानो
+        var a = reply.indexOf('{'), b = reply.lastIndexOf('}');
+        makerOutput = (a >= 0 && b > a) ? reply.slice(a, b + 1) : reply.trim();
         M.Router.refresh(true);
       }).catch(function (err) {
         makerOutput = '⚠️ Error: ' + (err && err.message ? err.message : 'कुछ गड़बड़ हुई');
         M.Router.refresh(true);
       });
+    };
+    A['ai-play-quiz'] = function () {
+      var parsed;
+      try { parsed = JSON.parse(makerOutput); } catch (e) { M.App.toast('JSON सही नहीं है, पहले ठीक करो', 'error'); return; }
+      var raw = (parsed && Array.isArray(parsed.questions)) ? parsed.questions : [];
+      var qs = [];
+      raw.forEach(function (q) {
+        var c = M.Storage.cleanQuestion(q);
+        if (c.ok) qs.push(c.q);
+      });
+      if (!qs.length) { M.App.toast('कोई ठीक Question नहीं मिला Quiz बनाने के लिए', 'error'); return; }
+      // यह सिर्फ़ अभी के लिए है — कहीं Save नहीं होता (Subject "mixed" होने से असली Chapter Progress नहीं छूता)
+      M.Quiz.start({ questions: qs, size: qs.length, mode: 'ai-temp', subject: 'mixed', chapter: 0, title: '🤖 AI से बनी Quiz' });
     };
     A['ai-copy-quiz'] = function () {
       var ta = document.getElementById('mkOutput');
