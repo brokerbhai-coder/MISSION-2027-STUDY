@@ -1,4 +1,77 @@
 {
   "_help": "हर विषय-साल (या Set) की PYQ फ़ाइल यहाँ एक entry से जुड़ती है। एक साल में कई Set हों तो अलग entry और अलग \"label\" लिखो। नमूना data/templates/manifest-examples.json में है।",
-  "pyq": []
+  "pyq": [
+    {
+      "subject": "physics",
+      "year": "2015",
+      "label": "2015 (A)",
+      "file": "data/pyq/physics/2015.json"
+    },
+    {
+      "subject": "physics",
+      "year": "2016",
+      "label": "2016 (A)",
+      "file": "data/pyq/physics/2016.json"
+    },
+    {
+      "subject": "physics",
+      "year": "2017",
+      "label": "2017 (A)",
+      "file": "data/pyq/physics/2017.json"
+    },
+    {
+      "subject": "physics",
+      "year": "2018",
+      "label": "2018 (A)",
+      "file": "data/pyq/physics/2018.json"
+    },
+    {
+      "subject": "physics",
+      "year": "2019",
+      "label": "2019 (A)",
+      "file": "data/pyq/physics/2019.json"
+    },
+    {
+      "subject": "physics",
+      "year": "2020",
+      "label": "2020 (A)",
+      "file": "data/pyq/physics/2020.json"
+    },
+    {
+      "subject": "physics",
+      "year": "2021",
+      "label": "2021 (A)",
+      "file": "data/pyq/physics/2021.json"
+    },
+    {
+      "subject": "physics",
+      "year": "2022",
+      "label": "2022 (A)",
+      "file": "data/pyq/physics/2022.json"
+    },
+    {
+      "subject": "physics",
+      "year": "2023",
+      "label": "2023 (A)",
+      "file": "data/pyq/physics/2023.json"
+    },
+    {
+      "subject": "physics",
+      "year": "2024",
+      "label": "2024 (A)",
+      "file": "data/pyq/physics/2024.json"
+    },
+    {
+      "subject": "physics",
+      "year": "2025",
+      "label": "2025 (A)",
+      "file": "data/pyq/physics/2025.json"
+    },
+    {
+      "subject": "physics",
+      "year": "2026",
+      "label": "2026 (A)",
+      "file": "data/pyq/physics/2026.json"
+    }
+  ]
 }
