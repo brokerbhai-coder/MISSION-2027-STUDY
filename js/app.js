@@ -259,6 +259,10 @@
       '<p class="muted small">कोई Doubt पूछो, किसी Chapter को आसान भाषा में समझो, या गलत हुए Question की Explanation विस्तार से लो।</p>' +
       '<button class="btn small" data-action="nav" data-to="/ai">AI से पूछो</button></div>';
 
+    html += '<div class="card"><div class="kv"><span>📑 Quick Reference</span></div>' +
+      '<p class="muted small">हर Subject के सभी Chapter के Formula/लेखक-परिचय एक साथ — Revision के लिए।</p>' +
+      '<button class="btn small" data-action="nav" data-to="/reference">देखो</button></div>';
+
     html += '<h2 class="sec-title">कमज़ोर Topics</h2>' + M.Progress.weakHtml();
 
     var ach = M.Rewards.achievements();
@@ -562,6 +566,8 @@
     R.add('/game', M.Games.view);
     R.add('/settings', viewSettings);
     R.add('/ai', M.AI.view);
+    R.add('/reference', M.Reference.viewHub);
+    R.add('/reference/:subject', M.Reference.view);
     R.add('/ai-quiz-maker', M.AI.makerView);
   }
 

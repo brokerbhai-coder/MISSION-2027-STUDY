@@ -18,6 +18,7 @@
   // Notes की categories (क्रम यही रहेगा)
   var CATS = [
     { key: 'chapterNotes', icon: '📘', label: 'Chapter Notes' },
+    { key: 'authorIntro', icon: '✍️', label: 'लेखक/कवि परिचय' },
     { key: 'oneLiners', icon: '⚡', label: 'One-Liner Q&A' },
     { key: 'theory', icon: '📖', label: 'Topic-wise Theory' },
     { key: 'shortAnswers', icon: '✏️', label: 'Short Answer' },
@@ -49,6 +50,7 @@
     switch (cat) {
       case 'chapterNotes':
       case 'theory':
+      case 'authorIntro':
         o = { title: str(it.heading) || str(it.title), content: X.paras(it.content), points: pointsOf(it.points) };
         // वैकल्पिक: इसी Point के साथ लगा एक Diagram (जैसे एक Triangle दिखाना)
         if (it.diagram && typeof it.diagram === 'object') {
@@ -219,6 +221,7 @@
       case 'chapterNotes':
       case 'theory':
       case 'revision':
+      case 'authorIntro':
         inner = '<h3>' + esc(it.title) + '</h3>' + paraHtml(it.content) + pointsHtml(it.points) + inlineDiagramHtml(it); break;
       case 'oneLiners':
         inner = '<p class="nt-q">प्र. ' + X.rich(it.question) + '</p><div class="nt-a">' + paraHtml(it.answer) + '</div>'; break;
@@ -408,5 +411,6 @@
     M.Router.add('/notes/:subject/:no', viewChapter);
   }
 
+  N.itemHtml = itemHtml; // Quick Reference Page जैसी जगहों से भी इस्तेमाल हो सके, Formula/Author-Intro दोबारा लिखना न पड़े
   M.Notes = N;
 })(window.M27 = window.M27 || {});

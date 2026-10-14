@@ -13,6 +13,8 @@
   var Pq = {};
   var flt = { type: 'all', text: '' };
   function esc(s) { return M.App.esc(s); }
+  // Formula ($...$) अब PYQ Browse करते वक़्त भी दिखेगा — KaTeX न हो तो सामान्य Text जैसा ही दिखता है
+  function rich(s) { return X.rich ? X.rich(s) : esc(s); }
 
   var TYPE_LABEL = { objective: 'Objective', short: 'Short', long: 'Long', other: 'अन्य' };
 
@@ -128,16 +130,16 @@
       (q.topic ? '<span class="chip tiny">' + esc(q.topic) + '</span>' : '') +
       (q.marks ? '<span class="chip tiny">' + q.marks + ' अंक</span>' : '') +
       '<span class="chip tiny">' + esc(TYPE_LABEL[q.type] || q.type) + '</span></div>' +
-      '<p class="q-text">' + esc(q.question) + '</p>';
+      '<p class="q-text">' + rich(q.question) + '</p>' + (M.Extras && M.Extras.questionMediaHtml ? M.Extras.questionMediaHtml(q) : '');
     if (q.type === 'objective') {
       h += '<div class="pq-opts">' + ['A', 'B', 'C', 'D'].map(function (L) {
-        return '<div class="pq-opt" data-correct="' + (L === q.answer ? '1' : '0') + '"><b>' + L + '</b><span>' + esc(q.options[L]) + '</span></div>';
+        return '<div class="pq-opt" data-correct="' + (L === q.answer ? '1' : '0') + '"><b>' + L + '</b><span>' + rich(q.options[L]) + '</span></div>';
       }).join('') + '</div>';
     }
     h += '<button class="btn small ghost" data-action="pq-reveal">उत्तर देखो</button><div class="pq-ans" hidden>';
-    if (q.type === 'objective') h += '<p><b>सही उत्तर: ' + q.answer + ') ' + esc(q.options[q.answer]) + '</b></p>';
-    else h += '<p>' + (q.answer ? esc(q.answer) : 'इस प्रश्न का उत्तर अभी उपलब्ध नहीं है।') + '</p>';
-    if (q.explanation) h += '<p class="expl">' + esc(q.explanation) + '</p>';
+    if (q.type === 'objective') h += '<p><b>सही उत्तर: ' + rich(q.answer + ') ' + q.options[q.answer]) + '</b></p>';
+    else h += '<p>' + (q.answer ? rich(q.answer) : 'इस प्रश्न का उत्तर अभी उपलब्ध नहीं है।') + '</p>';
+    if (q.explanation) h += '<p class="expl">' + rich(q.explanation) + '</p>';
     return h + '</div></article>';
   }
 
@@ -162,9 +164,15 @@
         }
         html += '<input id="pqSearch" class="x-search" type="search" placeholder="इस प्रश्न-पत्र में खोजो…" autocomplete="off">';
         html += '<div class="btn-row"><button class="btn small ghost" data-action="pq-all" data-show="1">👁 सारे उत्तर दिखाओ</button><button class="btn small ghost" data-action="pq-all" data-show="0">🙈 सारे उत्तर छिपाओ</button></div>';
-        html += '<div id="pqList" class="x-list">' + L.questions.map(function (q, i) { return questionHtml(q, i + 1, en.year, en.subject); }).join('') + '</div>';
-        html += '<p id="pqNone" class="empty" hidden>कोई प्रश्न नहीं मिला।</p>';
-        html += X.warnHtml(L.skipped, 'कुछ प्रश्न गलत format की वजह से छोड़े गए');
+        var here = '/pyq/' + en.subject + '/' + encodeURIComponent(en.year); // Router.currentPath में Query String नहीं होती, इसलिए अलग से बनाया
+        return (X.ensureMathFor ? X.ensureMathFor(L.questions) : Promise.resolve(true)).then(function (mathOk) {
+          if (!mathOk && X.onMathReady) X.onMathReady(function () { if (M.Router.currentPath === here) M.Router.refresh(true); });
+          html += '<div id="pqList" class="x-list">' + L.questions.map(function (q, i) { return questionHtml(q, i + 1, en.year, en.subject); }).join('') + '</div>';
+          html += '<p id="pqNone" class="empty" hidden>कोई प्रश्न नहीं मिला।</p>';
+          html += X.warnHtml(L.skipped, 'कुछ प्रश्न गलत format की वजह से छोड़े गए');
+          html += '</section>';
+          return X.view({ html: html, title: 'PYQ', sub: s.nameHi + ' · ' + en.year, back: back });
+        });
       }
       html += '</section>';
       return X.view({ html: html, title: 'PYQ', sub: s.nameHi + ' · ' + en.year, back: back });
